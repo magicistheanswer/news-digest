@@ -1,0 +1,69 @@
+# Quellen-Konfiguration
+# category: "core" = professional bubble (Adobe/Martech/AI),
+#           "outside" = deliberately outside (Schweiz, Weltgeschehen, Sport)
+# tags: topic labels, used for scoring and the outside sub-mix
+
+feeds:
+  # --- Core: Adobe / Martech / AI ---
+  - name: "CMSWire"
+    url: "https://www.cmswire.com/rss/"
+    category: core
+    tags: [martech, cdp, cx]
+
+  - name: "MarTech.org"
+    url: "https://martech.org/feed/"
+    category: core
+    tags: [martech, marketing-ops]
+
+  - name: "Adobe Experience Cloud Blog"
+    url: "https://blog.adobe.com/en/topics/experience-cloud/feed.xml"
+    category: core
+    tags: [adobe, aep]
+
+  - name: "MeasureCamp / Analytics community"
+    url: "https://www.measurecamp.org/feed/"
+    category: core
+    tags: [analytics, community]
+
+  - name: "MIT Technology Review"
+    url: "https://www.technologyreview.com/feed/"
+    category: core
+    tags: [ai, tech]
+
+  # --- Outside: Schweiz ---
+  - name: "SRF News - Schweiz"
+    url: "https://www.srf.ch/news/bnf/rss/1890"
+    category: outside
+    tags: [schweiz]
+
+  # --- Outside: Weltgeschehen ---
+  - name: "SRF News - International/Uebersicht"
+    url: "https://www.srf.ch/news/bnf/rss/1646"
+    category: outside
+    tags: [world]
+
+  - name: "BBC News - World"
+    url: "https://feeds.bbci.co.uk/news/world/rss.xml"
+    category: outside
+    tags: [world]
+
+  # --- Outside: Sport ---
+  - name: "SRF Sport - Fussball (Super League + international)"
+    url: "https://www.srf.ch/sport/bnf/rss/2562"
+    category: outside
+    tags: [sport, super-league]
+
+  - name: "Kicker - Bundesliga"
+    url: "https://newsfeed.kicker.de/news/bundesliga"
+    category: outside
+    tags: [sport, bundesliga]
+
+  - name: "BBC Sport - Football" # primarily Premier League, some other leagues too
+    url: "https://feeds.bbci.co.uk/sport/football/rss.xml"
+    category: outside
+    tags: [sport, premier-league]
+
+mix:
+  total_articles: 15
+  core_ratio: 0.75
+  outside_sub_topics: [schweiz, world, sport]

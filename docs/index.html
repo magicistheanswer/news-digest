@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morning News Digest — 2026-08-31</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fafaf8;
+    --fg: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #b1452f;
+    --card-bg: #ffffff;
+    --border: #e4e0da;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16151a;
+      --fg: #e9e6e0;
+      --muted: #9a968e;
+      --accent: #e08a6e;
+      --card-bg: #1f1e24;
+      --border: #322f36;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  header { margin-bottom: 2rem; }
+  header h1 { font-size: 1.6rem; margin: 0 0 0.25rem; }
+  header .date { color: var(--muted); font-size: 0.95rem; }
+  h2.section {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin: 2.5rem 0 1rem;
+  }
+  article.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.9rem;
+  }
+  article.card h3 { margin: 0 0 0.3rem; font-size: 1.05rem; line-height: 1.35; }
+  article.card h3 a { color: var(--fg); text-decoration: none; }
+  article.card h3 a:hover { color: var(--accent); text-decoration: underline; }
+  .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+  .why { display: inline-block; font-size: 0.75rem; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0.05rem 0.4rem; margin-bottom: 0.5rem; }
+  p.summary { margin: 0.4rem 0 0; font-size: 0.95rem; }
+  footer { margin-top: 3rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<!--
+  Run notes (2026-08-31, first run):
+  - Direct RSS/Atom fetching of the sources in feeds.yaml was not possible from this
+    sandboxed environment: outbound HTTPS is restricted to an allowlist and every feed
+    domain (cmswire.com, martech.org, blog.adobe.com, measurecamp.org, technologyreview.com,
+    srf.ch, kicker.de, bbci.co.uk) was rejected by the egress proxy (403 on CONNECT).
+  - Fallback used this run: WebSearch scoped to each source's domain, to approximate
+    "fetch recent items from this source". This is a workaround for the sandbox network
+    policy, not the intended long-term design.
+  - Skipped entirely: "BBC News - World" and "BBC Sport - Football" (feeds.bbci.co.uk /
+    bbc.co.uk / bbc.com) - not reachable via WebSearch either (blocked for the search
+    crawler). Substituted comparable outside coverage: a general world-news roundup for
+    the "world" slot, and Sky Sports for the "Premier League" slot.
+  - No feed failed silently: the two skips above are the only ones, and are called out
+    here per the "handle failures gracefully" requirement.
+-->
+<div class="wrap">
+  <header>
+    <h1>Morning News Digest</h1>
+    <div class="date">Sunday, August 31, 2026 · 15 articles</div>
+  </header>
+
+  <h2 class="section">Core — Adobe / Martech / AI</h2>
+
+  <article class="card">
+    <h3><a href="https://www.cmswire.com/customer-experience/meet-the-newest-martech-member-databricks-via-cdp/">Databricks Makes Its Martech Move: An Agentic CDP Embedded in the Lakehouse</a></h3>
+    <div class="meta">CMSWire</div>
+    <div class="why">core / martech · CDP market shift</div>
+    <p class="summary">Databricks unveiled CustomerLake, an agentic customer data platform built directly into its lakehouse rather than bolted on as a separate tool, so customer data never has to be duplicated into a standalone CDP. Analysts read it as part of a broader shift toward CDP capability being absorbed into general data platforms, with Gartner predicting most new enterprise CDP deployments will be embedded rather than standalone by 2030. For CMOs, that turns CDP selection into an infrastructure decision rather than a pure marketing-tool purchase.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://www.cmswire.com/customer-data-platforms/customer-data-platforms-see-growth-lack-new-players/">Customer Data Platforms See Growth But Composable Still Trails</a></h3>
+    <div class="meta">CMSWire</div>
+    <div class="why">core / martech · CDP consolidation</div>
+    <p class="summary">CMSWire's CDP market guide finds continued investment in data-platform capability, but "composable" CDP architectures are losing ground to increasingly consolidated engagement suites. Six major acquisitions, including Informatica and Lytics, mean CDP functionality is being folded into broader platforms rather than sold as standalone software, leaving fewer new independent vendors entering the market even as demand for the underlying capability keeps growing.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://martech.org/why-ai-adoption-is-high-but-integration-is-failing-in-martech/">Why AI adoption is high but integration is failing in martech</a></h3>
+    <div class="meta">MarTech.org</div>
+    <div class="why">core / martech · AI adoption gap</div>
+    <p class="summary">A MarTech.org analysis finds 90.3% of marketing organizations already using AI agents in some form, yet only 23.3% have moved any of them into full production. The gap comes down to integration: stitching agent output into governed, system-of-record workflows is proving far harder than switching the agents on in the first place — a reminder that adoption stats alone say little about actual operational change.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://martech.org/how-agentic-ai-is-changing-the-future-of-marketing/">How agentic AI is changing the future of marketing</a></h3>
+    <div class="meta">MarTech.org</div>
+    <div class="why">core / martech · agentic AI</div>
+    <p class="summary">MarTech.org sketches three emerging categories of marketing AI agents: ones built for marketers to use, ones that interact directly with customers under marketer-set rules, and a new "agents of customers" category that operates entirely outside brand control, researching and deciding on the customer's own terms. That third category is the one marketers seem least prepared for, since it sits outside their usual levers of influence.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://martech.org/the-truth-about-martech-in-2026/">The truth about martech in 2026</a></h3>
+    <div class="meta">MarTech.org</div>
+    <div class="why">core / martech · industry reset</div>
+    <p class="summary">A MarTech.org retrospective argues 2026's defining martech story isn't any single new tool category but an AI-driven industry reset that's forcing marketers to rethink stacks built for a pre-agent era. The piece frames the current moment as more disruptive to how budgets and vendor relationships get evaluated than any individual product launch this year.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://news.adobe.com/news/2026/06/adobe-announces-general-availability-of-cx-enterprise-coworker">Adobe Announces General Availability of CX Enterprise Coworker</a></h3>
+    <div class="meta">Adobe News</div>
+    <div class="why">core / adobe · agentic AI launch</div>
+    <p class="summary">Adobe announced general availability of CX Enterprise Coworker, an agentic AI layer meant to sit inside marketing and customer-experience workflows and automate hand-offs between teams and systems. It builds on Adobe Experience Platform's Agent Orchestrator, extending Adobe's push to make AI agents a standard part of how CX work gets done rather than a chat assistant bolted on top.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest">Adobe Experience Platform Release Notes — August 2026</a></h3>
+    <div class="meta">Adobe Experience Platform</div>
+    <div class="why">core / adobe · AEP platform update</div>
+    <p class="summary">August's AEP release adds dataset-level access labels, so admins can control read/write permissions per dataset using existing Adobe-defined or custom labels instead of coarser controls. Batch ingestion limits also increased, to 25,000 files and up to 1 TB per batch, and audiences can now trigger an on-demand resend of their full current membership to a streaming destination without waiting for the next qualification cycle.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://measurecamp.org/measurecamp-calendar/">MeasureCamp Calendar 2026: 11 events confirmed, more planned</a></h3>
+    <div class="meta">MeasureCamp</div>
+    <div class="why">core / analytics community · MeasureCamp growth</div>
+    <p class="summary">MeasureCamp's 2026 calendar now counts 11 confirmed unconferences worldwide, with organizers hoping to reach 30-plus, including a new Los Angeles edition and Melbourne's return after sitting out 2025. Demand looks strong: the first free ticket batch for MeasureCamp Spain in Madrid sold out within half a day.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://www.technologyreview.com/2026/08/21/1142627/when-ai-designs-a-drug-who-gets-the-credit/">When AI designs a drug, who gets the credit?</a></h3>
+    <div class="meta">MIT Technology Review</div>
+    <div class="why">core / ai · AI authorship &amp; IP</div>
+    <p class="summary">MIT Technology Review digs into a credit dispute at Insilico Medicine, which publicly marketed a pulmonary-fibrosis drug candidate as "discovered by" its generative AI platform — but named five human scientists, not the AI, as inventors on the actual patent filing. The mismatch highlights an unresolved question in AI-assisted science: how much real intellectual and legal credit should go to the model versus the people who built and steered it.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://www.technologyreview.com/2026/07/23/1140346/how-ai-helps-scientists-design-the-next-generation-of-medicines/">How AI helps scientists design the next generation of medicines</a></h3>
+    <div class="meta">MIT Technology Review</div>
+    <div class="why">core / ai · AI in research</div>
+    <p class="summary">Away from headline-grabbing generative AI, this piece reports that machine-learning models are quietly compressing decade-long drug discovery timelines by solving chemistry and structural problems that were previously intractable. The argument: this less flashy, deeply embedded AI may end up mattering more for medicine than chatbot-style tools.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://www.technologyreview.com/2026/07/27/1140724/the-path-to-artificial-superintelligence/">The path to artificial superintelligence</a></h3>
+    <div class="meta">MIT Technology Review</div>
+    <div class="why">core / ai · capability trajectory</div>
+    <p class="summary">MIT Technology Review lays out competing views on what it would actually take to get from today's large language models to artificial superintelligence, and why many researchers doubt that scaling current architectures alone gets there. It's a useful check against both hype and dismissal, grounding the ASI debate in what current systems can and can't actually do.</p>
+  </article>
+
+  <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
+
+  <article class="card">
+    <h3><a href="https://www.srf.ch/news/schweiz/verrutschter-lastwagen-furka-bahnstrecke-duerfte-am-freitag-wieder-oeffnen">Verrutschter Lastwagen — Furka-Bahnstrecke dürfte am Freitag wieder öffnen</a></h3>
+    <div class="meta">SRF News — Schweiz</div>
+    <div class="why">outside / schweiz</div>
+    <p class="summary">A truck slid onto the Furka mountain railway line, forcing a closure of the route; SRF reports the line is expected to reopen by Friday. A small but telling reminder of how exposed Switzerland's alpine transport links are to single incidents.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://www.10things.news/p/10-things-global-news-31st-august">10 Things Global News — 31st August 2026</a></h3>
+    <div class="meta">World news roundup</div>
+    <div class="why">outside / world</div>
+    <p class="summary">A world-news roundup for August 31 covers a rapid escalation between the US and Iran in the Strait of Hormuz, a newly announced US deal to develop a majority stake in Venezuela's oil reserves, catastrophic flooding in Nepal with thousands still missing days later, and a Russian drone strike near Kyiv that killed at least 37 people. It also notes Iceland's referendum trending against EU membership — several separate geopolitical fronts flaring at once.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-hadjam-von-yb-zu-brighton-vierfacher-nasenbeinbruch-bei-kamberi">News aus der Super League — Hadjam von YB zu Brighton</a></h3>
+    <div class="meta">SRF Sport — Fussball</div>
+    <div class="why">outside / sport — Swiss Super League</div>
+    <p class="summary">Swiss Super League news this week is dominated by player movement: Jaouen Hadjam left Young Boys for Brighton &amp; Hove Albion in the Premier League, Michael Heule moved from Thun to FC Heidenheim in Germany's second division, and Julian von Moos transferred from Servette to Grasshoppers within the league. SRF also notes two Round 4 fixtures were postponed so Lugano and Grasshoppers could prepare for upcoming European playoff matches.</p>
+  </article>
+
+  <article class="card">
+    <h3><a href="https://www.skysports.com/football/news/11095/13546618/transfer-news-summer-transfer-window-2026-premier-league-deals-ins-and-outs">Transfer news: Summer transfer window 2026 — Premier League deals, ins and outs</a></h3>
+    <div class="meta">Sky Sports</div>
+    <div class="why">outside / sport — Premier League</div>
+    <p class="summary">With the Premier League's 2026 summer transfer window closing at 11pm UK time on September 1, Sky Sports' deadline-day tracker shows all 20 clubs still finalizing moves, including Newcastle's £75m signing of Bruno Guimarães. Arsenal enter the new season, which kicked off on August 22, as defending champions.</p>
+  </article>
+
+  <footer>
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>).
+  </footer>
+</div>
+</body>
+</html>
