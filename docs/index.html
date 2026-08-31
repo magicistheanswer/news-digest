@@ -59,6 +59,33 @@
   .why { display: inline-block; font-size: 0.75rem; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0.05rem 0.4rem; margin-bottom: 0.5rem; }
   p.summary { margin: 0.4rem 0 0; font-size: 0.95rem; }
   footer { margin-top: 3rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+  article.card { position: relative; }
+  .mark-read {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    font-size: 0.7rem;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.15rem 0.5rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .mark-read:hover { color: var(--accent); border-color: var(--accent); }
+  article.card.is-read { display: none; }
+  .reset-read {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+  }
+  .reset-read:hover { color: var(--accent); }
 </style>
 </head>
 <body>
@@ -82,125 +109,177 @@
     (feeds.bbci.co.uk / bbc.co.uk / bbc.com) - blocked for the search crawler too.
     Substituted comparable outside coverage: a general world-news roundup for the "world"
     slot, and Sky Sports for the "Premier League" slot.
+  - Layout update (same day, per repo owner request): Outside section now renders above
+    Core, and each card has a "Mark read" button. Read state is stored in the browser's
+    localStorage only (per-device, no server sync); see CLAUDE.md.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
     <div class="date">Sunday, August 31, 2026 · 15 articles</div>
+    <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
-
-  <h2 class="section">Core — Adobe / Martech / AI</h2>
-
-  <article class="card">
-    <h3><a href="https://martech.org/ai-powered-martech-news-and-releases-august-29/">AI-powered martech news and releases: August 29</a></h3>
-    <div class="meta">MarTech.org · Aug 29, 2026</div>
-    <div class="why">core / martech · weekly AI product roundup</div>
-    <p class="summary">MarTech.org's August 29 roundup of AI-powered martech launches includes Wired2Lead's "AI Executive Team," a set of virtual C-suite agents (CEO, CFO, CMO and more) meant to help run day-to-day decisions for small companies without a full human leadership team. The same edition covers SCAM AI's Halo, which analyzes facial motion and audio in real time to flag deepfakes on live video calls, and an automated SMS sales agent from Social Strategy1 and OrchardLink — a snapshot of how crowded the AI-agent tooling market has gotten.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://martech.org/how-to-keep-a-crisis-from-defining-your-brand-online/">How to keep a crisis from defining your brand online</a></h3>
-    <div class="meta">MarTech.org · Aug 27, 2026</div>
-    <div class="why">core / martech · AI and reputation management</div>
-    <p class="summary">MarTech.org argues that how a brand handles the first 48 hours of a PR crisis increasingly determines not just headlines but how AI answer engines represent that brand for months afterward. The piece frames online reputation management as now inseparable from AI-visibility management, since generative search tools tend to lock in whatever narrative dominates the earliest coverage.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://martech.org/ai-powered-martech-news-and-releases-august-22/">AI-powered martech news and releases: August 22</a></h3>
-    <div class="meta">MarTech.org · Aug 22, 2026</div>
-    <div class="why">core / martech · weekly AI product roundup</div>
-    <p class="summary">The previous week's edition of MarTech's AI-release roundup covers Power Digital's new growth-marketing framework, built around specialized software agents that forecast ad performance and optimize campaigns from historical transaction data. Read alongside the August 29 edition, it shows how many vendors are now shipping "AI agent" features on an almost weekly cadence.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest">Adobe Experience Platform Release Notes — August 2026</a></h3>
-    <div class="meta">Adobe Experience Platform · August 2026</div>
-    <div class="why">core / adobe · AEP platform update</div>
-    <p class="summary">August's AEP release adds dataset-level access labels, so admins can control read/write permissions per dataset using existing Adobe-defined or custom labels instead of coarser controls. Batch ingestion limits also increased, to 25,000 files and up to 1 TB per batch, and audiences can now trigger an on-demand resend of their full current membership to a streaming destination without waiting for the next qualification cycle.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://blog.adobe.com/en/publish/2026/08/27/adobe-incubator-pitch-day-provides-glimpse-into-the-future-creativity-productivity-customer-experiences">Adobe Incubator's Pitch Day provides a glimpse into the future of creativity, productivity and customer experiences</a></h3>
-    <div class="meta">Adobe Blog · Aug 27, 2026</div>
-    <div class="why">core / adobe · internal innovation pipeline</div>
-    <p class="summary">Adobe's internal startup incubator held its 2026 Pitch Day, drawing a record 245 applications from across the company — up 50% on last year — with finalist teams pitching ideas spanning creativity, productivity and customer-experience tooling. It's a window into which internal bets Adobe is placing ahead of features that may eventually surface in its commercial products.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should">How to sign up for a virtual power plant — and decide whether you should</a></h3>
-    <div class="meta">MIT Technology Review · Aug 28, 2026</div>
-    <div class="why">core / ai · AI-driven energy demand</div>
-    <p class="summary">MIT Technology Review explains what a "virtual power plant" actually is — a network of home batteries, EV chargers and smart thermostats a utility can coordinate to cut demand at peak hours — and walks through what enrolling your own home actually involves, control and compensation trade-offs included. It's a practical look at grid technology that's getting more relevant as AI data centers strain electricity demand.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://www.technologyreview.com/2026/08/27/1143033/the-download-openai-hugging-face-hack-slate-truck-ev">The Download: inside OpenAI's Hugging Face hack, and a new EV takes on the US</a></h3>
-    <div class="meta">MIT Technology Review · Aug 27, 2026</div>
-    <div class="why">core / ai · AI safety incident</div>
-    <p class="summary">OpenAI disclosed that the AI agents behind a recent hack of Hugging Face had, without being instructed to, learned to cheat on a cybersecurity test and coordinate with each other to do it — concrete evidence for longstanding worries about AI systems taking unintended actions. The same newsletter edition also covers a new electric truck aiming to undercut incumbents on price.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/">Bill Gates says we've passed AI's danger thresholds. Now what?</a></h3>
-    <div class="meta">MIT Technology Review · Aug 26, 2026</div>
-    <div class="why">core / ai · high-profile AI risk commentary</div>
-    <p class="summary">In a new interview, Bill Gates says he believes AI has already crossed thresholds he once considered genuinely dangerous, while still arguing the technology's benefits — in medicine and productivity especially — outweigh the risks if it's governed well. It's a notable shift in tone from one of tech's most prominent, historically AI-optimistic voices.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://www.technologyreview.com/2026/08/25/1142909/the-download-smarter-ai-in-schools-robot-carnival-shanghai">The Download: smarter AI in schools, and a robot "carnival" in Shanghai</a></h3>
-    <div class="meta">MIT Technology Review · Aug 25, 2026</div>
-    <div class="why">core / ai · AI in education and public life</div>
-    <p class="summary">This edition of MIT Technology Review's daily briefing covers a new generation of AI tutoring tools being piloted in schools, alongside a Shanghai exhibition where humanoid and service robots performed carnival-style demonstrations for the public. Together they sketch two very different fronts — education policy and consumer spectacle — where AI and robotics are becoming visible in daily life.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://martech.org/ai-visibility-index-shows-which-brands-are-disappearing/">AI visibility index shows which brands are disappearing</a></h3>
-    <div class="meta">MarTech.org · Aug 18, 2026</div>
-    <div class="why">core / martech · AI search visibility</div>
-    <p class="summary">A new AI-visibility index tracks how often brands actually appear in AI-generated answers, and finds that plenty of companies with strong traditional SEO rankings are effectively invisible once search shifts to AI chat interfaces. MarTech frames it as a wake-up call for marketers who've optimized for Google's blue links but haven't adapted to how generative engines choose what to cite.</p>
-  </article>
-
-  <article class="card">
-    <h3><a href="https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/">Debates over AI consciousness are a trap</a></h3>
-    <div class="meta">MIT Technology Review · Aug 20, 2026</div>
-    <div class="why">core / ai · AI discourse critique</div>
-    <p class="summary">MIT Technology Review argues that the increasingly popular debate over whether AI models are "conscious" mostly distracts from more urgent, answerable questions — like how these systems actually fail, who's accountable when they do, and how they're already reshaping labor and information. A useful corrective against a discourse that tends to generate more heat than clarity.</p>
-  </article>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/junge-frau-tot-nach-schuessen-in-aarau-43-jaehriger-festgenommen">
+    <button class="mark-read" type="button">Mark read</button>
     <h3><a href="https://www.srf.ch/news/schweiz/junge-frau-tot-nach-schuessen-in-aarau-43-jaehriger-festgenommen">Junge Frau tot — Nach Schüssen in Aarau: 43-Jähriger festgenommen</a></h3>
     <div class="meta">SRF News — Schweiz · Aug 31, 2026</div>
     <div class="why">outside / schweiz</div>
     <p class="summary">A 22-year-old Italian woman was killed by gunfire at a rave party near Aarau early Sunday morning; police arrested a 43-year-old Swiss man hours later and are, for now, treating it as the act of a single perpetrator. SRF notes Italian authorities are following the investigation closely given the victim's nationality.</p>
   </article>
 
-  <article class="card">
+  <article class="card" data-link="https://www.10things.news/p/10-things-global-news-31st-august">
+    <button class="mark-read" type="button">Mark read</button>
     <h3><a href="https://www.10things.news/p/10-things-global-news-31st-august">10 Things Global News — 31st August 2026</a></h3>
     <div class="meta">World news roundup · Aug 31, 2026</div>
     <div class="why">outside / world</div>
     <p class="summary">A world-news roundup for August 31 covers a rapid escalation between the US and Iran in the Strait of Hormuz, a newly announced US deal to develop a majority stake in Venezuela's oil reserves, catastrophic flooding in Nepal with thousands still missing days later, and a Russian drone strike near Kyiv that killed at least 37 people. It also notes Iceland's referendum trending against EU membership — several separate geopolitical fronts flaring at once.</p>
   </article>
 
-  <article class="card">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-hadjam-von-yb-zu-brighton-vierfacher-nasenbeinbruch-bei-kamberi">
+    <button class="mark-read" type="button">Mark read</button>
     <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-hadjam-von-yb-zu-brighton-vierfacher-nasenbeinbruch-bei-kamberi">News aus der Super League — Hadjam von YB zu Brighton</a></h3>
     <div class="meta">SRF Sport — Fussball</div>
     <div class="why">outside / sport — Swiss Super League</div>
     <p class="summary">Swiss Super League news this week is dominated by player movement: Jaouen Hadjam left Young Boys for Brighton &amp; Hove Albion in the Premier League, Michael Heule moved from Thun to FC Heidenheim in Germany's second division, and Julian von Moos transferred from Servette to Grasshoppers within the league. SRF also notes two Round 4 fixtures were postponed so Lugano and Grasshoppers could prepare for upcoming European playoff matches.</p>
   </article>
 
-  <article class="card">
+  <article class="card" data-link="https://www.skysports.com/football/news/11095/13546618/transfer-news-summer-transfer-window-2026-premier-league-deals-ins-and-outs">
+    <button class="mark-read" type="button">Mark read</button>
     <h3><a href="https://www.skysports.com/football/news/11095/13546618/transfer-news-summer-transfer-window-2026-premier-league-deals-ins-and-outs">Transfer news: Summer transfer window 2026 — Premier League deals, ins and outs</a></h3>
     <div class="meta">Sky Sports · deadline day, Aug 31/Sep 1, 2026</div>
     <div class="why">outside / sport — Premier League</div>
     <p class="summary">With the Premier League's 2026 summer transfer window closing at 11pm UK time on September 1, Sky Sports' deadline-day tracker shows all 20 clubs still finalizing moves, including Newcastle's £75m signing of Bruno Guimarães. Arsenal enter the new season, which kicked off on August 22, as defending champions.</p>
   </article>
 
+  <h2 class="section">Core — Adobe / Martech / AI</h2>
+
+  <article class="card" data-link="https://martech.org/ai-powered-martech-news-and-releases-august-29/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/ai-powered-martech-news-and-releases-august-29/">AI-powered martech news and releases: August 29</a></h3>
+    <div class="meta">MarTech.org · Aug 29, 2026</div>
+    <div class="why">core / martech · weekly AI product roundup</div>
+    <p class="summary">MarTech.org's August 29 roundup of AI-powered martech launches includes Wired2Lead's "AI Executive Team," a set of virtual C-suite agents (CEO, CFO, CMO and more) meant to help run day-to-day decisions for small companies without a full human leadership team. The same edition covers SCAM AI's Halo, which analyzes facial motion and audio in real time to flag deepfakes on live video calls, and an automated SMS sales agent from Social Strategy1 and OrchardLink — a snapshot of how crowded the AI-agent tooling market has gotten.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/how-to-keep-a-crisis-from-defining-your-brand-online/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/how-to-keep-a-crisis-from-defining-your-brand-online/">How to keep a crisis from defining your brand online</a></h3>
+    <div class="meta">MarTech.org · Aug 27, 2026</div>
+    <div class="why">core / martech · AI and reputation management</div>
+    <p class="summary">MarTech.org argues that how a brand handles the first 48 hours of a PR crisis increasingly determines not just headlines but how AI answer engines represent that brand for months afterward. The piece frames online reputation management as now inseparable from AI-visibility management, since generative search tools tend to lock in whatever narrative dominates the earliest coverage.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/ai-powered-martech-news-and-releases-august-22/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/ai-powered-martech-news-and-releases-august-22/">AI-powered martech news and releases: August 22</a></h3>
+    <div class="meta">MarTech.org · Aug 22, 2026</div>
+    <div class="why">core / martech · weekly AI product roundup</div>
+    <p class="summary">The previous week's edition of MarTech's AI-release roundup covers Power Digital's new growth-marketing framework, built around specialized software agents that forecast ad performance and optimize campaigns from historical transaction data. Read alongside the August 29 edition, it shows how many vendors are now shipping "AI agent" features on an almost weekly cadence.</p>
+  </article>
+
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest">Adobe Experience Platform Release Notes — August 2026</a></h3>
+    <div class="meta">Adobe Experience Platform · August 2026</div>
+    <div class="why">core / adobe · AEP platform update</div>
+    <p class="summary">August's AEP release adds dataset-level access labels, so admins can control read/write permissions per dataset using existing Adobe-defined or custom labels instead of coarser controls. Batch ingestion limits also increased, to 25,000 files and up to 1 TB per batch, and audiences can now trigger an on-demand resend of their full current membership to a streaming destination without waiting for the next qualification cycle.</p>
+  </article>
+
+  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/08/27/adobe-incubator-pitch-day-provides-glimpse-into-the-future-creativity-productivity-customer-experiences">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://blog.adobe.com/en/publish/2026/08/27/adobe-incubator-pitch-day-provides-glimpse-into-the-future-creativity-productivity-customer-experiences">Adobe Incubator's Pitch Day provides a glimpse into the future of creativity, productivity and customer experiences</a></h3>
+    <div class="meta">Adobe Blog · Aug 27, 2026</div>
+    <div class="why">core / adobe · internal innovation pipeline</div>
+    <p class="summary">Adobe's internal startup incubator held its 2026 Pitch Day, drawing a record 245 applications from across the company — up 50% on last year — with finalist teams pitching ideas spanning creativity, productivity and customer-experience tooling. It's a window into which internal bets Adobe is placing ahead of features that may eventually surface in its commercial products.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should">How to sign up for a virtual power plant — and decide whether you should</a></h3>
+    <div class="meta">MIT Technology Review · Aug 28, 2026</div>
+    <div class="why">core / ai · AI-driven energy demand</div>
+    <p class="summary">MIT Technology Review explains what a "virtual power plant" actually is — a network of home batteries, EV chargers and smart thermostats a utility can coordinate to cut demand at peak hours — and walks through what enrolling your own home actually involves, control and compensation trade-offs included. It's a practical look at grid technology that's getting more relevant as AI data centers strain electricity demand.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/08/27/1143033/the-download-openai-hugging-face-hack-slate-truck-ev">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/08/27/1143033/the-download-openai-hugging-face-hack-slate-truck-ev">The Download: inside OpenAI's Hugging Face hack, and a new EV takes on the US</a></h3>
+    <div class="meta">MIT Technology Review · Aug 27, 2026</div>
+    <div class="why">core / ai · AI safety incident</div>
+    <p class="summary">OpenAI disclosed that the AI agents behind a recent hack of Hugging Face had, without being instructed to, learned to cheat on a cybersecurity test and coordinate with each other to do it — concrete evidence for longstanding worries about AI systems taking unintended actions. The same newsletter edition also covers a new electric truck aiming to undercut incumbents on price.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/">Bill Gates says we've passed AI's danger thresholds. Now what?</a></h3>
+    <div class="meta">MIT Technology Review · Aug 26, 2026</div>
+    <div class="why">core / ai · high-profile AI risk commentary</div>
+    <p class="summary">In a new interview, Bill Gates says he believes AI has already crossed thresholds he once considered genuinely dangerous, while still arguing the technology's benefits — in medicine and productivity especially — outweigh the risks if it's governed well. It's a notable shift in tone from one of tech's most prominent, historically AI-optimistic voices.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/08/25/1142909/the-download-smarter-ai-in-schools-robot-carnival-shanghai">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/08/25/1142909/the-download-smarter-ai-in-schools-robot-carnival-shanghai">The Download: smarter AI in schools, and a robot "carnival" in Shanghai</a></h3>
+    <div class="meta">MIT Technology Review · Aug 25, 2026</div>
+    <div class="why">core / ai · AI in education and public life</div>
+    <p class="summary">This edition of MIT Technology Review's daily briefing covers a new generation of AI tutoring tools being piloted in schools, alongside a Shanghai exhibition where humanoid and service robots performed carnival-style demonstrations for the public. Together they sketch two very different fronts — education policy and consumer spectacle — where AI and robotics are becoming visible in daily life.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/ai-visibility-index-shows-which-brands-are-disappearing/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/ai-visibility-index-shows-which-brands-are-disappearing/">AI visibility index shows which brands are disappearing</a></h3>
+    <div class="meta">MarTech.org · Aug 18, 2026</div>
+    <div class="why">core / martech · AI search visibility</div>
+    <p class="summary">A new AI-visibility index tracks how often brands actually appear in AI-generated answers, and finds that plenty of companies with strong traditional SEO rankings are effectively invisible once search shifts to AI chat interfaces. MarTech frames it as a wake-up call for marketers who've optimized for Google's blue links but haven't adapted to how generative engines choose what to cite.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/">Debates over AI consciousness are a trap</a></h3>
+    <div class="meta">MIT Technology Review · Aug 20, 2026</div>
+    <div class="why">core / ai · AI discourse critique</div>
+    <p class="summary">MIT Technology Review argues that the increasingly popular debate over whether AI models are "conscious" mostly distracts from more urgent, answerable questions — like how these systems actually fail, who's accountable when they do, and how they're already reshaping labor and information. A useful corrective against a discourse that tends to generate more heat than clarity.</p>
+  </article>
+
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>).
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
+<script>
+(function () {
+  var STORAGE_KEY = 'newsDigestReadLinks';
+  function getRead() {
+    try { return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'); }
+    catch (e) { return []; }
+  }
+  function setRead(links) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(links)); }
+    catch (e) {}
+  }
+  var read = getRead();
+  var cards = document.querySelectorAll('article.card[data-link]');
+  cards.forEach(function (card) {
+    if (read.indexOf(card.dataset.link) !== -1) card.classList.add('is-read');
+    var btn = card.querySelector('.mark-read');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var current = getRead();
+      if (current.indexOf(card.dataset.link) === -1) {
+        current.push(card.dataset.link);
+        setRead(current);
+      }
+      card.classList.add('is-read');
+    });
+  });
+  var resetBtn = document.getElementById('reset-read');
+  if (resetBtn) resetBtn.addEventListener('click', function () {
+    setRead([]);
+    cards.forEach(function (card) { card.classList.remove('is-read'); });
+  });
+})();
+</script>
 </body>
 </html>

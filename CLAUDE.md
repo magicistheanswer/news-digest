@@ -42,3 +42,21 @@ Do not repeat that: before adding any article to the digest,
    `docs/index.html` (which sources were skipped and why) - do not fill
    the slot with an older article just to hit the 15-article target.
    Freshness beats quota.
+
+## Page layout (confirmed by the repo owner on 2026-08-31)
+
+- **Section order**: render the "Outside — Schweiz / Weltgeschehen / Sport"
+  section **above** "Core — Adobe / Martech / AI", not below. This is a
+  standing preference, not a one-off - keep it this way on every future run.
+- **Mark read**: every article `<article class="card">` carries a
+  `data-link="<article url>"` attribute and a `<button class="mark-read">`.
+  A small inline `<script>` at the end of `<body>` stores clicked links in
+  the visitor's `localStorage` (key `newsDigestReadLinks`) and hides
+  matching cards on load; a "Reset read articles" button in the header
+  clears it. This is client-side only - per-browser/per-device, no backend,
+  nothing sent anywhere, and it does not affect `data/history.json` or what
+  future digests include. GitHub Pages is static hosting with no
+  server-side state, so this (or something equally client-side, e.g.
+  IndexedDB) is the only way to offer a "mark as read" affordance without
+  adding a backend - keep this script (or an equivalent) in the template on
+  every future run rather than dropping it.
