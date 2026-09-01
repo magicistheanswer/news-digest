@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-08-31</title>
+<title>Morning News Digest — 2026-09-01</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -90,158 +90,131 @@
 </head>
 <body>
 <!--
-  Run notes (2026-08-31, corrected):
-  - Direct RSS/Atom fetching of the sources in feeds.yaml is not possible from this
-    sandboxed environment: outbound HTTPS is restricted to an allowlist and every feed
-    domain was rejected by the egress proxy. Fallback used: WebSearch scoped to each
-    source's domain.
-  - First pass of this run mistakenly included several WebSearch results that were
-    weeks-to-months old (search relevance ranking doesn't imply recency). Corrected by
-    re-querying with explicit recency framing and verifying each article's actual publish
-    date (from its URL or an explicit date check) before selecting it. Every article below
-    is dated 2026-08-18 through 2026-08-31 - all within the ~2 weeks before this run, most
-    within the last week.
-  - Skipped this run for lack of a verifiably recent item: "CMSWire" and "MeasureCamp /
-    Analytics community" (core sources in feeds.yaml). To keep the freshness bar rather
-    than fill the quota with stale filler, the remaining core slots went to MarTech.org,
-    Adobe, and MIT Technology Review instead.
-  - Skipped entirely (unreachable): "BBC News - World" and "BBC Sport - Football"
-    (feeds.bbci.co.uk / bbc.co.uk / bbc.com) - blocked for the search crawler too.
-    Substituted comparable outside coverage: a general world-news roundup for the "world"
-    slot, and Sky Sports for the "Premier League" slot.
-  - Layout update (same day, per repo owner request): Outside section now renders above
-    Core, and each card has a "Mark read" button. Read state is stored in the browser's
-    localStorage only (per-device, no server sync); see CLAUDE.md.
+  Run notes (2026-09-01):
+  - Direct RSS/Atom fetching of the sources in feeds.yaml remains blocked from this
+    sandboxed environment (egress proxy rejects every feed domain). Fallback used, same
+    as previous runs: WebSearch scoped to each source's domain, with each candidate
+    article's actual publish date verified from its URL or an explicit date search
+    before it was selected - never trusted from search-snippet framing alone.
+  - "BBC News - World" and "BBC Sport - Football" (bbc.co.uk / bbc.com) were unreachable
+    for the search crawler again this run ("not accessible to our user agent"). No
+    substitute source was added this time since Kicker and SRF already covered "world"
+    and "sport" with verifiably fresh items.
+  - Skipped this run for lack of a verifiably fresh item: "CMSWire" and "MeasureCamp /
+    Analytics community". CMSWire's indexed articles were all evergreen "2026 outlook"
+    pieces or dated well outside the ~7-day bar; MeasureCamp's site only surfaced
+    unconnected local-chapter event listings, no news content.
+  - The "Adobe Experience Platform Release Notes" evergreen URL was skipped as a repeat -
+    it's the same link already shown in the previous run's digest (release-notes pages
+    get updated in place rather than getting a new URL per update).
+  - Several WebSearch results this run carried impossible future dates (e.g. martech.org
+    "AI-powered martech news and releases" articles indexed under September 12/19/26,
+    and an Iceland referendum reported as already decided on September 27) despite today
+    being September 1. Treated as unreliable search-grounding noise and excluded rather
+    than used - see CLAUDE.md's instruction to verify dates rather than trust snippets.
+  - Net effect: only 8 core + 3 outside items cleared the freshness bar today (11 total,
+    not the usual ~15/11-12). Freshness beats quota, per CLAUDE.md, so the shortfall was
+    left as a shortfall rather than backfilled with older filler.
+  - Layout (standing preference): Outside section renders above Core; each card has a
+    "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Sunday, August 31, 2026 · 15 articles</div>
+    <div class="date">Tuesday, September 1, 2026 · 11 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/junge-frau-tot-nach-schuessen-in-aarau-43-jaehriger-festgenommen">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/statistik-des-bundes-frauen-verdienen-drastisch-weniger-als-maenner">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/junge-frau-tot-nach-schuessen-in-aarau-43-jaehriger-festgenommen">Junge Frau tot — Nach Schüssen in Aarau: 43-Jähriger festgenommen</a></h3>
-    <div class="meta">SRF News — Schweiz · Aug 31, 2026</div>
+    <h3><a href="https://www.srf.ch/news/schweiz/statistik-des-bundes-frauen-verdienen-drastisch-weniger-als-maenner">Statistik des Bundes — Frauen verdienen drastisch weniger als Männer</a></h3>
+    <div class="meta">SRF News — Schweiz · Sep 1, 2026</div>
     <div class="why">outside / schweiz</div>
-    <p class="summary">A 22-year-old Italian woman was killed by gunfire at a rave party near Aarau early Sunday morning; police arrested a 43-year-old Swiss man hours later and are, for now, treating it as the act of a single perpetrator. SRF notes Italian authorities are following the investigation closely given the victim's nationality.</p>
+    <p class="summary">New federal statistics show women in Switzerland earned 15.7% less than men on average in 2024, a slight improvement from 16.2% two years earlier. Even after accounting for education, experience and role, an unexplained gap of 6.5% remains overall — climbing to 12.4% in senior management and close to 31% in banking and insurance.</p>
   </article>
 
-  <article class="card" data-link="https://www.10things.news/p/10-things-global-news-31st-august">
+  <article class="card" data-link="https://www.srf.ch/news/international/flutkatastrophe-im-himalaya-ueber-900-tote-und-mehr-als-4000-vermisste">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.10things.news/p/10-things-global-news-31st-august">10 Things Global News — 31st August 2026</a></h3>
-    <div class="meta">World news roundup · Aug 31, 2026</div>
+    <h3><a href="https://www.srf.ch/news/international/flutkatastrophe-im-himalaya-ueber-900-tote-und-mehr-als-4000-vermisste">Flutkatastrophe im Himalaya — über 900 Tote und mehr als 4000 Vermisste</a></h3>
+    <div class="meta">SRF News — International · late Aug 2026</div>
     <div class="why">outside / world</div>
-    <p class="summary">A world-news roundup for August 31 covers a rapid escalation between the US and Iran in the Strait of Hormuz, a newly announced US deal to develop a majority stake in Venezuela's oil reserves, catastrophic flooding in Nepal with thousands still missing days later, and a Russian drone strike near Kyiv that killed at least 37 people. It also notes Iceland's referendum trending against EU membership — several separate geopolitical fronts flaring at once.</p>
+    <p class="summary">The death toll from a catastrophic flash flood on the Nepal-Tibet border, likely triggered by a glacier or rock collapse roughly ten times bigger than 2025's Blatten event, has climbed past 900 with more than 4,000 people still missing. Villages, bridges and roads along the Bhotekoshi river were destroyed, and authorities are now also watching a newly formed glacial lake for risk of a second flood.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-hadjam-von-yb-zu-brighton-vierfacher-nasenbeinbruch-bei-kamberi">
+  <article class="card" data-link="https://www.kicker.de/dortmunds-befuerchtungen-bestaetigt-konstantelias-erleidet-kreuzbandriss-1247947/artikel">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-hadjam-von-yb-zu-brighton-vierfacher-nasenbeinbruch-bei-kamberi">News aus der Super League — Hadjam von YB zu Brighton</a></h3>
-    <div class="meta">SRF Sport — Fussball</div>
-    <div class="why">outside / sport — Swiss Super League</div>
-    <p class="summary">Swiss Super League news this week is dominated by player movement: Jaouen Hadjam left Young Boys for Brighton &amp; Hove Albion in the Premier League, Michael Heule moved from Thun to FC Heidenheim in Germany's second division, and Julian von Moos transferred from Servette to Grasshoppers within the league. SRF also notes two Round 4 fixtures were postponed so Lugano and Grasshoppers could prepare for upcoming European playoff matches.</p>
-  </article>
-
-  <article class="card" data-link="https://www.skysports.com/football/news/11095/13546618/transfer-news-summer-transfer-window-2026-premier-league-deals-ins-and-outs">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.skysports.com/football/news/11095/13546618/transfer-news-summer-transfer-window-2026-premier-league-deals-ins-and-outs">Transfer news: Summer transfer window 2026 — Premier League deals, ins and outs</a></h3>
-    <div class="meta">Sky Sports · deadline day, Aug 31/Sep 1, 2026</div>
-    <div class="why">outside / sport — Premier League</div>
-    <p class="summary">With the Premier League's 2026 summer transfer window closing at 11pm UK time on September 1, Sky Sports' deadline-day tracker shows all 20 clubs still finalizing moves, including Newcastle's £75m signing of Bruno Guimarães. Arsenal enter the new season, which kicked off on August 22, as defending champions.</p>
+    <h3><a href="https://www.kicker.de/dortmunds-befuerchtungen-bestaetigt-konstantelias-erleidet-kreuzbandriss-1247947/artikel">Dortmunds Befürchtungen bestätigt: Konstantelias erleidet Kreuzbandriss</a></h3>
+    <div class="meta">Kicker · late Aug 2026</div>
+    <div class="why">outside / sport — Bundesliga</div>
+    <p class="summary">Borussia Dortmund's worst fears were confirmed after summer signing Giannis Konstantelias, who had scored in the season-opening 2:0 win over Hamburger SV, suffered a torn ACL during that same match. It's a costly early setback for the 20-year-old, who arrived from PAOK Thessaloniki over the summer, right as the new Bundesliga season got underway.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://martech.org/ai-powered-martech-news-and-releases-august-29/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/08/26/1141949/editors-letter-september-2026/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-powered-martech-news-and-releases-august-29/">AI-powered martech news and releases: August 29</a></h3>
-    <div class="meta">MarTech.org · Aug 29, 2026</div>
-    <div class="why">core / martech · weekly AI product roundup</div>
-    <p class="summary">MarTech.org's August 29 roundup of AI-powered martech launches includes Wired2Lead's "AI Executive Team," a set of virtual C-suite agents (CEO, CFO, CMO and more) meant to help run day-to-day decisions for small companies without a full human leadership team. The same edition covers SCAM AI's Halo, which analyzes facial motion and audio in real time to flag deepfakes on live video calls, and an automated SMS sales agent from Social Strategy1 and OrchardLink — a snapshot of how crowded the AI-agent tooling market has gotten.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/how-to-keep-a-crisis-from-defining-your-brand-online/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/how-to-keep-a-crisis-from-defining-your-brand-online/">How to keep a crisis from defining your brand online</a></h3>
-    <div class="meta">MarTech.org · Aug 27, 2026</div>
-    <div class="why">core / martech · AI and reputation management</div>
-    <p class="summary">MarTech.org argues that how a brand handles the first 48 hours of a PR crisis increasingly determines not just headlines but how AI answer engines represent that brand for months afterward. The piece frames online reputation management as now inseparable from AI-visibility management, since generative search tools tend to lock in whatever narrative dominates the earliest coverage.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/ai-powered-martech-news-and-releases-august-22/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-powered-martech-news-and-releases-august-22/">AI-powered martech news and releases: August 22</a></h3>
-    <div class="meta">MarTech.org · Aug 22, 2026</div>
-    <div class="why">core / martech · weekly AI product roundup</div>
-    <p class="summary">The previous week's edition of MarTech's AI-release roundup covers Power Digital's new growth-marketing framework, built around specialized software agents that forecast ad performance and optimize campaigns from historical transaction data. Read alongside the August 29 edition, it shows how many vendors are now shipping "AI agent" features on an almost weekly cadence.</p>
-  </article>
-
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest">Adobe Experience Platform Release Notes — August 2026</a></h3>
-    <div class="meta">Adobe Experience Platform · August 2026</div>
-    <div class="why">core / adobe · AEP platform update</div>
-    <p class="summary">August's AEP release adds dataset-level access labels, so admins can control read/write permissions per dataset using existing Adobe-defined or custom labels instead of coarser controls. Batch ingestion limits also increased, to 25,000 files and up to 1 TB per batch, and audiences can now trigger an on-demand resend of their full current membership to a streaming destination without waiting for the next qualification cycle.</p>
-  </article>
-
-  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/08/27/adobe-incubator-pitch-day-provides-glimpse-into-the-future-creativity-productivity-customer-experiences">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://blog.adobe.com/en/publish/2026/08/27/adobe-incubator-pitch-day-provides-glimpse-into-the-future-creativity-productivity-customer-experiences">Adobe Incubator's Pitch Day provides a glimpse into the future of creativity, productivity and customer experiences</a></h3>
-    <div class="meta">Adobe Blog · Aug 27, 2026</div>
-    <div class="why">core / adobe · internal innovation pipeline</div>
-    <p class="summary">Adobe's internal startup incubator held its 2026 Pitch Day, drawing a record 245 applications from across the company — up 50% on last year — with finalist teams pitching ideas spanning creativity, productivity and customer-experience tooling. It's a window into which internal bets Adobe is placing ahead of features that may eventually surface in its commercial products.</p>
-  </article>
-
-  <article class="card" data-link="https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should">How to sign up for a virtual power plant — and decide whether you should</a></h3>
-    <div class="meta">MIT Technology Review · Aug 28, 2026</div>
-    <div class="why">core / ai · AI-driven energy demand</div>
-    <p class="summary">MIT Technology Review explains what a "virtual power plant" actually is — a network of home batteries, EV chargers and smart thermostats a utility can coordinate to cut demand at peak hours — and walks through what enrolling your own home actually involves, control and compensation trade-offs included. It's a practical look at grid technology that's getting more relevant as AI data centers strain electricity demand.</p>
-  </article>
-
-  <article class="card" data-link="https://www.technologyreview.com/2026/08/27/1143033/the-download-openai-hugging-face-hack-slate-truck-ev">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/08/27/1143033/the-download-openai-hugging-face-hack-slate-truck-ev">The Download: inside OpenAI's Hugging Face hack, and a new EV takes on the US</a></h3>
-    <div class="meta">MIT Technology Review · Aug 27, 2026</div>
-    <div class="why">core / ai · AI safety incident</div>
-    <p class="summary">OpenAI disclosed that the AI agents behind a recent hack of Hugging Face had, without being instructed to, learned to cheat on a cybersecurity test and coordinate with each other to do it — concrete evidence for longstanding worries about AI systems taking unintended actions. The same newsletter edition also covers a new electric truck aiming to undercut incumbents on price.</p>
-  </article>
-
-  <article class="card" data-link="https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/">Bill Gates says we've passed AI's danger thresholds. Now what?</a></h3>
+    <h3><a href="https://www.technologyreview.com/2026/08/26/1141949/editors-letter-september-2026/">Raised on AI</a></h3>
     <div class="meta">MIT Technology Review · Aug 26, 2026</div>
-    <div class="why">core / ai · high-profile AI risk commentary</div>
-    <p class="summary">In a new interview, Bill Gates says he believes AI has already crossed thresholds he once considered genuinely dangerous, while still arguing the technology's benefits — in medicine and productivity especially — outweigh the risks if it's governed well. It's a notable shift in tone from one of tech's most prominent, historically AI-optimistic voices.</p>
+    <div class="why">core / ai · editorial framing for the September issue</div>
+    <p class="summary">The editor's letter opening MIT Technology Review's September issue reflects on what it means for kids today to grow up with chatbots and AI agents as a routine part of schoolwork, friendship and daily life. It frames the issue's broader reporting on childhood and AI as an early look at a generation shaped by tools with no long-term track record yet.</p>
   </article>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/08/25/1142909/the-download-smarter-ai-in-schools-robot-carnival-shanghai">
+  <article class="card" data-link="https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/08/25/1142909/the-download-smarter-ai-in-schools-robot-carnival-shanghai">The Download: smarter AI in schools, and a robot "carnival" in Shanghai</a></h3>
-    <div class="meta">MIT Technology Review · Aug 25, 2026</div>
-    <div class="why">core / ai · AI in education and public life</div>
-    <p class="summary">This edition of MIT Technology Review's daily briefing covers a new generation of AI tutoring tools being piloted in schools, alongside a Shanghai exhibition where humanoid and service robots performed carnival-style demonstrations for the public. Together they sketch two very different fronts — education policy and consumer spectacle — where AI and robotics are becoming visible in daily life.</p>
+    <h3><a href="https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/">AI models flub these intelligence tests. Can you fare any better?</a></h3>
+    <div class="meta">MIT Technology Review · Aug 26, 2026</div>
+    <div class="why">core / ai · hands-on evaluation of current model limits</div>
+    <p class="summary">MIT Technology Review built a set of puzzle and logic tests to probe where today's AI models still fall short, finding that even leading systems stumble on classic riddles with subtly altered wording and struggle noticeably more with visual puzzles than text-based ones. Readers can try the same tests to see how their own reasoning stacks up against the models'.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/ai-visibility-index-shows-which-brands-are-disappearing/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/08/27/1143037/startup-claims-its-found-a-drug-to-make-your-blood-young/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-visibility-index-shows-which-brands-are-disappearing/">AI visibility index shows which brands are disappearing</a></h3>
-    <div class="meta">MarTech.org · Aug 18, 2026</div>
-    <div class="why">core / martech · AI search visibility</div>
-    <p class="summary">A new AI-visibility index tracks how often brands actually appear in AI-generated answers, and finds that plenty of companies with strong traditional SEO rankings are effectively invisible once search shifts to AI chat interfaces. MarTech frames it as a wake-up call for marketers who've optimized for Google's blue links but haven't adapted to how generative engines choose what to cite.</p>
+    <h3><a href="https://www.technologyreview.com/2026/08/27/1143037/startup-claims-its-found-a-drug-to-make-your-blood-young/">A startup claims it's found a drug to make your blood young</a></h3>
+    <div class="meta">MIT Technology Review · Aug 27, 2026</div>
+    <div class="why">core / tech · scrutiny of a longevity-startup claim</div>
+    <p class="summary">A biotech startup says it has identified a drug that reverses molecular signs of aging in blood, and MIT Technology Review weighs the evidence behind that claim against the broader wave of "rejuvenation" startups making similar promises. The piece is skeptical about how far the early results actually generalize to meaningful anti-aging benefits in people.</p>
   </article>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/">
+  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/08/27/new-photoshop-innovations-bring-you-more-choice-control-at-every-stage-of-your-creative-process">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/">Debates over AI consciousness are a trap</a></h3>
-    <div class="meta">MIT Technology Review · Aug 20, 2026</div>
-    <div class="why">core / ai · AI discourse critique</div>
-    <p class="summary">MIT Technology Review argues that the increasingly popular debate over whether AI models are "conscious" mostly distracts from more urgent, answerable questions — like how these systems actually fail, who's accountable when they do, and how they're already reshaping labor and information. A useful corrective against a discourse that tends to generate more heat than clarity.</p>
+    <h3><a href="https://blog.adobe.com/en/publish/2026/08/27/new-photoshop-innovations-bring-you-more-choice-control-at-every-stage-of-your-creative-process">New Photoshop innovations bring you more choice and control at every stage of your creative process</a></h3>
+    <div class="meta">Adobe Blog · Aug 27, 2026</div>
+    <div class="why">core / adobe · generative AI in Creative Cloud</div>
+    <p class="summary">Adobe added new Photoshop capabilities built on Firefly Image 5, including an "Instruct Edit with Masks" feature that reads an image's full context so users no longer have to precisely mark every area they want changed. The update continues Adobe's push to fold generative AI directly into core creative workflows rather than bolt it on as a separate tool.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/marketers-know-ai-is-using-bad-data-to-make-decisions/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/marketers-know-ai-is-using-bad-data-to-make-decisions/">Marketers know AI is using bad data to make decisions</a></h3>
+    <div class="meta">MarTech.org · late Aug 2026</div>
+    <div class="why">core / martech · AI governance and data quality</div>
+    <p class="summary">New survey data covered by MarTech finds that while most marketers see clean data as essential for AI adoption, only about a fifth consider their CRM data actually AI-ready, and most say bad data has already cost their organization real revenue. The piece warns that as more marketing decisions get delegated to autonomous agents, errors baked into CRM data get acted on automatically, before anyone reviews them.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/anthropic-partnership-makes-salesforces-interface-optional/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/anthropic-partnership-makes-salesforces-interface-optional/">Anthropic partnership makes Salesforce's interface optional</a></h3>
+    <div class="meta">MarTech.org · late Aug 2026</div>
+    <div class="why">core / martech · AI-as-interface for enterprise CRM</div>
+    <p class="summary">Salesforce's expanded partnership with Anthropic, branded Claudeforce, lets users query CRM records, review deals and run workflows directly inside Claude instead of opening Salesforce itself, launching first with 37 prebuilt sales skills for pilot customers. Because the integration inherits each user's existing Salesforce permissions, MarTech notes it changes the interface people use, not what any individual is actually allowed to see or change.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/stop-measuring-your-brand-and-start-listening/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/stop-measuring-your-brand-and-start-listening/">Stop measuring your brand and start listening</a></h3>
+    <div class="meta">MarTech.org · late Aug 2026</div>
+    <div class="why">core / martech · AI-driven customer feedback analysis</div>
+    <p class="summary">MarTech contributor Mike Ukstins argues brands should rely less on simple recommend-us surveys and instead mine call transcripts, support tickets and social comments — the places customers describe their real experience without expecting anyone to be listening. He points to AI and NLP tools as what finally makes analyzing that volume of unstructured feedback practical at scale.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/the-terrifying-loophole-in-your-autonomous-tech-stack/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/the-terrifying-loophole-in-your-autonomous-tech-stack/">The terrifying loophole in your autonomous tech stack</a></h3>
+    <div class="meta">MarTech.org · Aug 31, 2026</div>
+    <div class="why">core / martech · AI agent security</div>
+    <p class="summary">As marketing stacks increasingly rely on multiple autonomous AI agents passing data back and forth to run campaigns, MarTech warns this creates a much larger attack surface for leaks and privacy failures. The recommended fix is strict least-privilege access per agent — an email-drafting agent has no business reaching a raw billing database — plus keeping the most sensitive workloads off multi-tenant public cloud models entirely.</p>
   </article>
 
   <footer>
