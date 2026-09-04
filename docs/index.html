@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-03</title>
+<title>Morning News Digest — 2026-09-04</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -90,130 +90,89 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-03):
+  Run notes (2026-09-04):
   - Direct RSS/Atom fetching of the sources in feeds.yaml remains blocked from this
-    sandboxed environment (egress proxy rejects every feed domain - confirmed again this
-    run via a direct WebFetch attempt against martech.org, technologyreview.com,
-    cmswire.com, blog.adobe.com, srf.ch and kicker.de, all of which returned
-    EGRESS_BLOCKED). Fallback used, same as previous runs: WebSearch scoped to each
-    source's domain, with every candidate's actual publish date checked against its URL,
-    page metadata, or an explicit "how old is this" search before selection - never taken
-    from a search-snippet's framing alone.
+    sandboxed environment - re-confirmed this run via a direct WebFetch attempt against
+    martech.org/feed/, which returned EGRESS_BLOCKED, consistent with every prior run.
+    Fallback used, same as previous runs: WebSearch scoped to each source's domain, with
+    every candidate's actual publish date checked via an explicit "how old is this" /
+    "publish date" follow-up search before selection - never taken from a search
+    snippet's framing alone.
   - "BBC News - World" and "BBC Sport - Football" (bbc.co.uk / bbc.com) were unreachable
-    for the search crawler again this run ("not accessible to our user agent"). No
-    substitute was added for "world" beyond the SRF International pick below.
-  - Skipped this run for lack of a verifiably fresh item: "MeasureCamp / Analytics
-    community" (search kept surfacing only local-chapter event calendars, no news
-    content) and "CMSWire" (every AI/martech/CX piece found was either a duplicate of an
-    already-shown article, an undated "2026 trends" evergreen piece, or explicitly dated
-    weeks-to-months old - nothing cleared the ~7-day bar).
-  - One search return for "AI-powered martech news and releases: September 26" (and a
-    "September 19" edition) was treated as unreliable and not used: those dates are in
-    the future relative to this run and read as a search-index artifact rather than a
-    real publish date, so neither was included without a corroborating date signal.
-  - The SRF Wirtschaft pick ("Schweizer Tech-Industrie wegen US-Zöllen unter Druck") sits
-    right at the ~7-day freshness edge (~Aug 27, per two independent "how old" searches);
-    kept because it's the only verifiably-dated pure Schweiz (non-sport) story found this
-    run - SRF's other Schweiz candidates were either already shown (Aargau groundwater,
-    Aarau shooting) or turned out on closer date-checking to be month- or year-old
-    reference pieces (mortgage rate, banknote redesign, Duma election preview).
-  - Net effect: 6 core + 4 outside cleared the freshness bar today (10 total, not the
-    usual ~15/11-12, and a thinner core/outside split than the usual 75/25). Freshness
-    beats quota per CLAUDE.md, so the shortfall was left as a shortfall rather than
-    backfilled with older filler or padded with an extra "outside" pick just to even out
-    the ratio.
+    to the search crawler again this run (WebSearch rejected both domains as
+    "not accessible to our user agent"). No substitute was added for either slot.
+  - Core sources were unusually thin today: CMSWire, MarTech.org and the Adobe blog each
+    turned up plenty of AI/martech/CX content, but on date-checking nearly everything was
+    either (a) a duplicate link of an article already shown in the last 7 days (e.g.
+    MarTech's "OpenAI's audacious ad revenue claim" and "Stop treating lead quality and
+    volume as opposites", Adobe's "Introducing Adobe for Slack"), or (b) explicitly dated
+    weeks-to-months old despite ranking highly for these queries (CMSWire's Adobe Summit,
+    Optimizely, Klaviyo, Jasper and Salesforce Agentforce pieces all dated April-July
+    2026; MarTech's Databricks CustomerLake and IAB disclosure-framework pieces similarly
+    old; several "AI-powered martech news and releases: September 19/26" results were
+    again index artifacts, not real forthcoming publish dates). "MeasureCamp / Analytics
+    community" again had no news content, only event-calendar listings - skipped.
+  - A Kicker Bundesliga item ("Neue Unruhe in Frankfurt", ~Aug 29) was considered but
+    dropped: it's an earlier, since-superseded rumor stage of the same Krösche/Frankfurt
+    story already resolved in the 2026-09-03 digest, so running it now would read as a
+    step backwards rather than new news.
+  - Net effect: only 2 core + 3 outside cleared the freshness bar today (5 total) - the
+    thinnest run yet, and for the first time outside outnumbers core. Freshness beats
+    quota per CLAUDE.md, so this was left as a shortfall rather than backfilled with
+    older filler; the 3 outside picks did land one per sub-topic (schweiz/world/sport),
+    so at least that part of the mix stayed balanced.
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Thursday, September 3, 2026 · 10 articles</div>
+    <div class="date">Friday, September 4, 2026 · 5 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/schweizer-tech-industrie-neue-maerkte-als-ausweg-aus-dem-us-zollstreit">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/wegen-hitze-und-trockenheit-schweizer-kartoffelernte-faellt-auf-rekordtief">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/wirtschaft/schweizer-tech-industrie-neue-maerkte-als-ausweg-aus-dem-us-zollstreit">Schweizer Tech-Industrie wegen US-Zöllen unter Druck</a></h3>
-    <div class="meta">SRF News — Wirtschaft · ~Aug 27, 2026</div>
+    <h3><a href="https://www.srf.ch/news/schweiz/wegen-hitze-und-trockenheit-schweizer-kartoffelernte-faellt-auf-rekordtief">Schweizer Kartoffelernte fällt auf Rekordtief</a></h3>
+    <div class="meta">SRF News — Schweiz · Sep 3–4, 2026</div>
     <div class="why">outside / schweiz</div>
-    <p class="summary">The US now levies a 12.5% tariff on Swiss tech goods - 2.5 points higher than what EU-made products face - and Swiss firms are looking for other markets to absorb the hit. The article points to the recently refreshed free-trade agreement with China as one option, estimating that phasing out the remaining tariffs there could save Swiss exporters roughly CHF 250 million a year.</p>
+    <p class="summary">Switzerland's 2026 potato harvest came in at roughly 333,000 tonnes - the lowest total since record-keeping began over a century ago, and nearly 20% below the five-year average - after a hot, dry summer stressed the plants. It's the latest in a run of difficult seasons for Swiss potato growers, and points to tighter domestic supply heading into autumn.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/nach-der-flutkatastrophe-mehr-als-tausend-tote-in-nepal-gesundheitsgefahren-wachsen">
+  <article class="card" data-link="https://www.srf.ch/news/international/nach-brandattacke-in-muenchen-anschlag-auf-ruestungsfirma-vermutet-zwei-personen-festgenommen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/nach-der-flutkatastrophe-mehr-als-tausend-tote-in-nepal-gesundheitsgefahren-wachsen">Nach der Flutkatastrophe: Mehr als tausend Tote in Nepal und China</a></h3>
-    <div class="meta">SRF News — International · Sep 2, 2026</div>
+    <h3><a href="https://www.srf.ch/news/international/nach-brandattacke-in-muenchen-anschlag-auf-ruestungsfirma-vermutet-zwei-personen-festgenommen">Nach Brandattacke in München — Anschlag auf Rüstungsfirma vermutet, zwei Personen festgenommen</a></h3>
+    <div class="meta">SRF News — International · Sep 4, 2026</div>
     <div class="why">outside / world</div>
-    <p class="summary">The death toll from the Himalayan flood disaster has passed 1,000 across Nepal and China, with thousands still unaccounted for, as roughly 200 million cubic meters of rock, ice, mud and water swept down from a massive rockfall near 5,000 meters that also tore away part of a glacier. SRF's South Asia correspondent, reporting from hard-hit Rasuwa district, describes growing health risks for survivors who lost their homes and are now sheltering in crowded conditions.</p>
+    <p class="summary">Bavarian state police are investigating a possible political motive after several incendiary devices were thrown onto a Munich construction site linked to a defense contractor overnight. Two people were later arrested at a nearby petrol station, though authorities say it's still unclear whether they're connected to the attack.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/6-runde-der-super-league-jubilar-fassnacht-schiesst-den-fcz-im-alleingang-ab">
+  <article class="card" data-link="https://www.srf.ch/sport/resultcenter/live/football/1844923">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/6-runde-der-super-league-jubilar-fassnacht-schiesst-den-fcz-im-alleingang-ab">6. Runde der Super League — Jubilar Fassnacht schiesst den FCZ im Alleingang ab</a></h3>
-    <div class="meta">SRF Sport — Fussball · Sep 1, 2026</div>
+    <h3><a href="https://www.srf.ch/sport/resultcenter/live/football/1844923">Video-Highlights: FC Lugano vs Servette FC</a></h3>
+    <div class="meta">SRF Sport — Fussball · Sep 3, 2026</div>
     <div class="why">outside / sport — Super League</div>
-    <p class="summary">Young Boys beat FC Zürich 4:2 at the Letzigrund in round 6 of the Super League, with Christian Fassnacht single-handedly turning the game around after FCZ's early lead - his second-half strikes took him to exactly 100 career Super League goals. Alan Virginius added a fourth for YB in the 73rd minute to seal the win on a night that doubled as a personal milestone for Fassnacht.</p>
-  </article>
-
-  <article class="card" data-link="https://kicker.de/aufsichtsratssitzung-ohne-grossen-knall-kroesche-analysiert-anspruchsvolle-transferphase-1249051/artikel">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://kicker.de/aufsichtsratssitzung-ohne-grossen-knall-kroesche-analysiert-anspruchsvolle-transferphase-1249051/artikel">Aufsichtsratssitzung ohne großen Knall — Krösche analysiert anspruchsvolle Transferphase</a></h3>
-    <div class="meta">Kicker — Bundesliga · Sep 2–3, 2026</div>
-    <div class="why">outside / sport — Bundesliga</div>
-    <p class="summary">Eintracht Frankfurt's long-planned supervisory board meeting came and went without the dramatic split from sporting director Markus Krösche that had been rumored - he stays on for now, with the board reviewing a demanding summer transfer window. Krösche used the session to walk through the window's results, including closing out the goalkeeper position with Noah Atubolu and closing in on defender Lilian Brassier from Stade Rennes for a reported €9m.</p>
+    <p class="summary">In a rescheduled round-6 fixture played Thursday evening, home side Lugano beat Servette 1:0 thanks to a goal deep in stoppage time. The result closes out the last outstanding match from round 6 of the Super League.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/01/1143195/microbe-fertilizer-switch-bioworks/">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/webflow-launches-source-agentic-workspace-for-marketers/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/01/1143195/microbe-fertilizer-switch-bioworks/">How engineered microbes could help feed the world's crops</a></h3>
-    <div class="meta">MIT Technology Review · Sep 1, 2026</div>
-    <div class="why">core / ai · climate tech</div>
-    <p class="summary">Startup Switch Bioworks is trialing a genetically engineered microbe in six US states that first establishes itself and grows before flipping into nitrogen-fixing mode - addressing the core problem that making ammonia is so energetically costly it normally stunts a microbe's own growth. It's early days for field results, but the company's modeling suggests the approach could eventually displace around half of the synthetic fertilizer used today, cutting both cost and emissions tied to conventional fertilizer production.</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/webflow-launches-source-agentic-workspace-for-marketers/">Webflow Source Gives AI Agents Governed Code Access</a></h3>
+    <div class="meta">CMSWire · Sep 2, 2026</div>
+    <div class="why">core / martech · AI agents</div>
+    <p class="summary">Webflow unveiled Source, a limited research-preview workspace that gives marketing teams and AI agents shared, governed access to a site's underlying code instead of routing every change through Webflow's visual builder. It connects to a team's existing codebase and martech stack, which Webflow frames as a way to let agents work directly on real code rather than getting boxed in by a no-code abstraction layer.</p>
   </article>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/02/1143283/the-download-ai-puzzles-alpha-centauri-mission/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/03/1143385/the-download-rethinking-child-safety-online-fossil-fuels-farming">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/02/1143283/the-download-ai-puzzles-alpha-centauri-mission/">The Download: AI puzzles and a path to our nearest star system</a></h3>
-    <div class="meta">MIT Technology Review · Sep 2, 2026</div>
+    <h3><a href="https://www.technologyreview.com/2026/09/03/1143385/the-download-rethinking-child-safety-online-fossil-fuels-farming">The Download: rethinking child safety online, and fossil-fueled farming</a></h3>
+    <div class="meta">MIT Technology Review · Sep 3, 2026</div>
     <div class="why">core / ai</div>
-    <p class="summary">This Download edition traces how quickly AI models have gone from solving under a fifth of NYT Connections-style puzzles to nearly acing them within about a year, alongside two harder-edged items: OpenAI restricting rollout of its newest model after internal testing flagged it as a "critical" cyber risk capable of automating attacks, and a Pentagon official overseeing military AI cashing out millions in AI-linked stock. It's a snapshot of how fast AI capability, AI risk-testing and the people profiting from both are all moving at once.</p>
-  </article>
-
-  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/09/02/introducing-adobe-for-slack">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://blog.adobe.com/en/publish/2026/09/02/introducing-adobe-for-slack">Introducing Adobe for Slack: Turn Your Ideas and Conversations into High-quality Content</a></h3>
-    <div class="meta">Adobe Blog · Sep 2, 2026</div>
-    <div class="why">core / adobe</div>
-    <p class="summary">Adobe is bringing more than 70 of its professional creative and productivity tools directly into Slack, letting teams turn a conversation thread into a finished document, image or design without leaving the chat. It's the latest move in Adobe's push to meet people inside the apps where work already happens - following similar integrations it shipped for ChatGPT earlier this summer.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/openais-audacious-claim-about-ad-revenue/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/openais-audacious-claim-about-ad-revenue/">OpenAI's audacious ad revenue claim</a></h3>
-    <div class="meta">MarTech.org · Sep 2, 2026</div>
-    <div class="why">core / martech · AI advertising</div>
-    <p class="summary">OpenAI has redesigned ChatGPT's ad onboarding so that feeding it a business's website is enough to generate a full campaign - audience suggestions, creative and copy included - in under a minute, and ChatGPT Ads has already reached a $1 billion annualized revenue run rate. The piece is skeptical that easier buying gets OpenAI anywhere close to its projected $100 billion in ad spend by 2030, arguing a smoother checkout doesn't by itself prove advertisers will commit budget at that scale.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/integrate-buys-calibermind-and-hopes-to-close-the-b2b-demand-gen-loop/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/integrate-buys-calibermind-and-hopes-to-close-the-b2b-demand-gen-loop/">Integrate buys CaliberMind and hopes to close the B2B demand gen loop</a></h3>
-    <div class="meta">MarTech.org · Sep 2, 2026</div>
-    <div class="why">core / martech · M&A</div>
-    <p class="summary">B2B demand-gen platform Integrate, which ingests and cleans up leads from content syndication, events, paid media and other channels, is acquiring CaliberMind for its multi-touch attribution, account-journey analytics and revenue-intelligence capabilities. CaliberMind stays a distinct product line for now, with native integrations rolling out over the coming months - the pitch is pairing lead capture with the analytics needed to prove what that spend actually generated, rather than leaving attribution to a separate, disconnected tool.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/your-influencer-marketing-strategy-is-broken/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/your-influencer-marketing-strategy-is-broken/">Your influencer marketing strategy is broken</a></h3>
-    <div class="meta">MarTech.org · Sep 1, 2026</div>
-    <div class="why">core / martech · creator marketing</div>
-    <p class="summary">The argument here is that marketers keep buying influencer reach as a proxy for sales impact even though platform algorithms now push creator content heavily to non-followers - the piece cites data showing 60% of creators' Instagram Reels views come from people who don't follow them. That disconnect means a creator's follower count and average views say increasingly little about their actual ability to convert an audience into buyers, so the recommendation is to shift evaluation toward conversion-linked metrics instead.</p>
+    <p class="summary">This edition leads with US parents' growing reliance on AI monitoring apps that scan kids' texts and photos for warning signs - tools that have caught real threats but also produce false alarms and dented trust - alongside New York City's new one-year ban on AI tools in elementary and middle schools, covering roughly 600,000 students. It also notes a US judge rejecting a forced breakup of Google's ad-tech business in favor of narrower behavioral remedies, and a report that Serbian activists and officials were targeted with mercenary spyware following recent elections.</p>
   </article>
 
   <footer>
