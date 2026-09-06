@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-05</title>
+<title>Morning News Digest — 2026-09-06</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -90,130 +90,129 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-05):
-  - Direct RSS/Atom fetching of feeds.yaml sources remains blocked from this sandbox
-    (re-confirmed via a direct WebFetch attempt against martech.org, which returned
-    EGRESS_BLOCKED). Fallback used, same as every prior run: WebSearch scoped to each
-    source's domain via allowed_domains, with an explicit follow-up "publish date" /
-    "veroeffentlicht" search for every candidate before selection - nothing taken from
-    a snippet's framing alone.
+  Run notes (2026-09-06):
+  - Direct RSS/Atom fetching of feeds.yaml sources remains blocked from this sandbox.
+    Fallback used, same as every prior run: WebSearch scoped to each source's domain
+    via allowed_domains, with an explicit follow-up "publish date" / "veroeffentlicht"
+    search for every candidate before selection - nothing taken from a snippet's
+    framing alone.
   - "BBC News - World" and "BBC Sport - Football" (bbc.co.uk / bbc.com) were rejected
     again this run: WebSearch returned "not accessible to our user agent" for both
     domains, consistent with every prior run. No substitute was added for either slot.
   - "MeasureCamp / Analytics community" again returned only event-calendar listings,
     no news content - skipped, as on every prior run.
-  - Several strong-looking CMSWire/MarTech candidates were dropped after date-checking
-    surfaced them as old articles resurfacing in search (search snippets did not flag
-    this): CMSWire's "Google Struggles to Support Anthropic" and "Google's Latest Move:
-    AI Chat Feature" (both Feb 2026), "Salesforce Data Cloud Momentum Soars" (Sep 2024),
-    "DX Newsbytes: California..." (Nov 2020), "Adobe Ties CX Enterprise Coworker" (Jun
-    2026), "AI Traffic Growth Nears 100%" (Jun 2026); MarTech's "Google Ad-Tech Monopoly
-    Ruling" piece (Apr 2025) - the underlying story was already covered via the
-    2026-09-04 digest's TechReview Download pick, so a fresh martech.org take on the
-    same ruling would also have been a same-story repeat even had it been current.
-    MarTech's "OpenAI's audacious ad revenue claim" was rejected as an exact duplicate
-    already shown 2026-09-03.
-  - Kicker (Bundesliga) was skipped this run: every candidate either resolved to a
-    clearly stale article (an "HSV muss laenger auf Hwang warten" piece turned out to
-    be from 2018 under a reused-looking URL) or produced internally inconsistent
-    matchday/date details across searches that could not be reconciled with confidence
-    (a "2. Spieltag" recap naming a Dortmund-Hamburg result that doesn't match this
-    matchday's actual fixture list). Rather than risk a wrong scoreline, no Bundesliga
-    item was included today.
-  - SRF Sport: the first candidate found (Lekoueiry ACL injury / reschedule roundup)
-    date-checked to "published two weeks ago" once directly queried - too old despite
-    ranking well - so it was dropped in favor of a confirmed 2026-09-02 Super League
-    result (GC 2:0 St. Gallen) not yet shown.
-  - Net effect: 6 core + 3 outside cleared the freshness bar today (9 total, vs the
-    15-article target) - thin again, mainly because so many high-ranking CMSWire/MarTech
-    results this run turned out to be old articles re-surfacing for current-sounding
-    queries. Freshness beats quota per CLAUDE.md, so this was left as a shortfall
-    rather than backfilled with older filler. The 3 outside picks landed one per
-    sub-topic (schweiz/world/sport), keeping that part of the mix balanced.
+  - "Adobe Experience Cloud Blog" had no new post since the Sep 2 "Adobe for Slack"
+    piece already shown 2026-09-03 - skipped rather than reused.
+  - Several strong-looking candidates were dropped after date-checking surfaced them
+    as old or already-covered: MarTech's "Adobe rebrands Experience Cloud as CX
+    Enterprise" (May 5, 2026), "In an age of AI excess, trust becomes the real
+    differentiator" (Sep 2025), "How Clayton Christensen's theory..." (Sep 2025),
+    and the "Marketing without signals" conference write-up (published ~3 weeks
+    ago despite describing a Sep 2 session). CMSWire's Adobe CX-Enterprise-Coworker
+    and "Salesforce Data Cloud Momentum" pieces were likewise stale re-surfacing
+    search hits. The Experience Platform release-notes URL was skipped as an
+    exact-link repeat of the one already shown 2026-08-31 (within the 7-day window).
+  - MIT Technology Review had no fresh non-"Download" piece and no Download edition
+    newer than the one already shown 2026-09-05 (Sep 4 edition); "Architecting memory
+    and storage in the AI era" (Sep 4, standalone feature) was used instead.
+  - Net effect: only 5 core stories cleared the freshness bar today (vs. the
+    11-12 target) - a Sunday morning run finds MarTech/CMSWire noticeably quieter
+    than a weekday. Freshness beats quota per CLAUDE.md, so this was left as a
+    shortfall rather than backfilled with older filler. To keep the 15-slot target
+    from skewing the mix further, 4 outside picks were used instead of the usual
+    3-4 (one Super League game, one Bundesliga game, one Schweiz, one world), so
+    today's ratio is closer to 55/45 than 75/25.
+  - Sport: two Super League round-7 SRF pieces existed (a Zuercher Derby GC-FCZ
+    2:2 and a YB-Luzern 3:3) but the derby write-up only had a video/highlight
+    URL, not a text article - the YB-Luzern text article was used instead so the
+    "always link to the original article" rule holds. Kicker's own transfer/recap
+    pieces this week were all from before the Sep 1 deadline day and already
+    stale, so today's Bundesliga slot came from a fresh Sep 5 match report
+    instead (Schalke 1:1 Bayern).
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Saturday, September 5, 2026 · 9 articles</div>
+    <div class="date">Sunday, September 6, 2026 · 9 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/botschaft-geht-ans-parlament-bund-hilft-mit-100-millionen-bei-sanierung-von-berghotels">
+  <article class="card" data-link="https://www.srf.ch/sport/schwingen/kilchberger-schwinget-2026-ueberragender-giger-schafft-die-kilchberg-titelverteidigung">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/botschaft-geht-ans-parlament-bund-hilft-mit-100-millionen-bei-sanierung-von-berghotels">Bundesrat will Hotels in Berggebieten mit 100 Millionen fördern</a></h3>
-    <div class="meta">SRF News — Schweiz · Sep 2, 2026</div>
-    <div class="why">outside / schweiz</div>
-    <p class="summary">The Federal Council wants to spend 100 million francs between 2028 and 2035 to help modernize lodging businesses in Swiss mountain regions, with the corresponding message now going to parliament for approval. Funding is conditional on energy-efficient renovation, so only accommodations that upgrade accordingly will qualify.</p>
+    <h3><a href="https://www.srf.ch/sport/schwingen/kilchberger-schwinget-2026-ueberragender-giger-schafft-die-kilchberg-titelverteidigung">Kilchberger Schwinget 2026: Überragender Giger schafft die Kilchberg-Titelverteidigung</a></h3>
+    <div class="meta">SRF Sport — Schwingen · Sep 5, 2026</div>
+    <div class="why">outside / schweiz — Kilchberger Schwinget</div>
+    <p class="summary">Samuel Giger won the 18th Kilchberger Schwinget, one of Swiss wrestling's biggest one-off events (held only every six years), beating surprise finalist Marcel Bieri in the final bout. It makes Giger only the second wrestler after Karl Meli in the 1960s/70s to defend the Kilchberg title successfully.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/kiew-unter-dauerbeschuss-srf-korrespondentin-zivilbevoelkerung-wird-maximal-terrorisiert">
+  <article class="card" data-link="https://www.srf.ch/news/international/ukraine/krieg-in-der-ukraine-wegen-besuch-der-us-unterhaendler-dreitaegige-waffenruhe-fuer-kiew">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/kiew-unter-dauerbeschuss-srf-korrespondentin-zivilbevoelkerung-wird-maximal-terrorisiert">Kiew unter Dauerbeschuss — Zivilbevölkerung wird maximal terrorisiert</a></h3>
-    <div class="meta">SRF News — International · Sep 4, 2026</div>
+    <h3><a href="https://www.srf.ch/news/international/ukraine/krieg-in-der-ukraine-wegen-besuch-der-us-unterhaendler-dreitaegige-waffenruhe-fuer-kiew">Krieg in der Ukraine — Wegen Besuch der US-Unterhändler: Dreitägige Waffenruhe für Kiew</a></h3>
+    <div class="meta">SRF News — International · Sep 6, 2026</div>
     <div class="why">outside / world — Ukraine</div>
-    <p class="summary">SRF's Eastern Europe correspondent reports that Kyiv is increasingly being treated as a front-line target itself, not because Russian ground troops have advanced, but because drone and missile strikes have widened to hit the capital directly and repeatedly. Residents describe daily life becoming close to unbearable under the sustained bombardment.</p>
+    <p class="summary">Russia has agreed to a three-day pause in strikes on Kyiv to coincide with a visit from US negotiators Steve Witkoff and Jared Kushner, who arrived in Moscow and are expected in Ukraine on Sunday. Separately, the IAEA has brokered a local ceasefire around the Zaporizhzhia nuclear plant so repair crews can access damaged equipment.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/6-runde-der-super-league-eine-legende-trifft-eine-andere-schaut-zu-gc-schlaegt-st-gallen">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/7-runde-der-super-league-naechstes-torfestival-aber-kein-sieger-im-wankdorf">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/6-runde-der-super-league-eine-legende-trifft-eine-andere-schaut-zu-gc-schlaegt-st-gallen">6. Runde der Super League: GC schlägt St. Gallen</a></h3>
-    <div class="meta">SRF Sport — Fussball · Sep 2, 2026</div>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/7-runde-der-super-league-naechstes-torfestival-aber-kein-sieger-im-wankdorf">7. Runde der Super League: Nächstes Torfestival, aber kein Sieger im Wankdorf</a></h3>
+    <div class="meta">SRF Sport — Fussball · Sep 5, 2026</div>
     <div class="why">outside / sport — Super League</div>
-    <p class="summary">Grasshoppers beat FC St. Gallen 2:0 at home in round 6, with veteran midfielder Amir Abrashi opening the scoring before Young-Jun Lee doubled the lead from a tight angle after the break. It's GC's second win of the young season.</p>
+    <p class="summary">YB and Luzern shared the points in a wild 3:3 in Bern, with substitute Kaly Sène snatching a last-gasp 88th-minute equalizer for the home side off a Herba Guirassy assist. It's the second high-scoring draw of the round for YB after last week's 3:3 against Basel.</p>
+  </article>
+
+  <article class="card" data-link="https://www.kicker.de/schalke-gegen-bayern-2026-bundesliga-5226825/spielbericht">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.kicker.de/schalke-gegen-bayern-2026-bundesliga-5226825/spielbericht">Karius nicht zu überwinden: Schalke trotzt Bayern einen Punkt ab</a></h3>
+    <div class="meta">Kicker — Bundesliga · Sep 5, 2026</div>
+    <div class="why">outside / sport — Bundesliga</div>
+    <p class="summary">Newly promoted Schalke 04 held league favorites Bayern Munich to a 1:1 draw on matchday 2, with goalkeeper Loris Karius standing firm against a dominant Bayern side. It's a strong early-season result for Schalke in their return to the top flight.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/04/1143457/the-download-ukraine-selling-drone-data-ai-reshaping-language/">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/adobe-hands-the-ceo-keys-to-its-customer-experience-leader/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/04/1143457/the-download-ukraine-selling-drone-data-ai-reshaping-language/">The Download: selling battlefield drone data, and AI reshaping language</a></h3>
+    <h3><a href="https://www.cmswire.com/digital-experience/adobe-hands-the-ceo-keys-to-its-customer-experience-leader/">After 18 Years, Narayen Hands Adobe to Its Customer Experience Chief</a></h3>
+    <div class="meta">CMSWire · Sep 5, 2026</div>
+    <div class="why">core / adobe — leadership</div>
+    <p class="summary">Adobe named Anil Chakravarthy — currently head of its customer-experience orchestration business — as president and CEO effective December 1, ending Shantanu Narayen's 18-year run in which he grew revenue from roughly $3 billion to more than $25 billion. Narayen moves to executive chair; observers read the pick as a signal that Adobe now sees its biggest enterprise growth in CX orchestration rather than pure creative or media tools.</p>
+  </article>
+
+  <article class="card" data-link="https://www.cmswire.com/digital-marketing/optimizelys-agentic-marketing-vision-exposes-the-readiness-gap/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/digital-marketing/optimizelys-agentic-marketing-vision-exposes-the-readiness-gap/">Optimizely's Opticon 2026: Why the Agentic Marketing Vision Exposes the Readiness Gap</a></h3>
+    <div class="meta">CMSWire · Sep 4, 2026</div>
+    <div class="why">core / martech — agentic AI</div>
+    <p class="summary">Coverage of Optimizely's Opticon 2026 conference argues that while the company's agentic-AI pitch — including treating websites as serving both human and AI-agent visitors — is compelling, most marketing teams' data, content governance and workflows aren't yet mature enough to actually run on it. The piece frames this "readiness gap" as the real story behind most 2026 agentic-marketing launches, not just Optimizely's.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/google-loses-the-ad-monopoly-case-but-keeps-the-monopoly/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/google-loses-the-ad-monopoly-case-but-keeps-the-monopoly/">Google loses the ad monopoly case, but keeps the monopoly</a></h3>
+    <div class="meta">MarTech.org · Sep 3, 2026</div>
+    <div class="why">core / martech — adtech/legal</div>
+    <p class="summary">US District Judge Leonie Brinkema ruled that Google illegally monopolized key ad-tech markets, but rejected the government's push to force a breakup of Google's ad businesses in favor of behavioral remedies instead. MarTech's analysis argues the ruling establishes the illegality but leaves Google's structural dominance over publisher and advertiser tooling largely intact.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/rapid-ai-changes-mean-geo-is-a-weekly-job-now/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/rapid-ai-changes-mean-geo-is-a-weekly-job-now/">Rapid AI changes mean GEO is a weekly job now</a></h3>
+    <div class="meta">MarTech.org · Sep 3, 2026</div>
+    <div class="why">core / martech — SEO/GEO</div>
+    <p class="summary">Because AI answer engines increasingly resolve buyer questions without a click-through, MarTech argues that PR, SEO and content teams need to abandon quarterly planning cadences for a standing weekly loop that tracks which prompts are surfacing, which sources get cited, and how that shifts week to week. It's a practical push to replace one-off "AI visibility" audits with continuous monitoring.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era">Architecting memory and storage in the AI era</a></h3>
     <div class="meta">MIT Technology Review · Sep 4, 2026</div>
-    <div class="why">core / ai</div>
-    <p class="summary">Ukraine has begun offering military contractors and commercial firms access to the millions of data points gathered from tens of thousands of drone flights, effectively turning the front line into an AI training ground and a quick way to attract funding and partnerships. The same roundup covers OpenAI's launch of Astra, billed as its most capable model yet, alongside other AI-policy and Anthropic-regulation items.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/ai-powered-martech-news-and-releases-september-5/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-powered-martech-news-and-releases-september-5/">AI-powered martech news and releases: September 5</a></h3>
-    <div class="meta">MarTech.org · Sep 5, 2026</div>
-    <div class="why">core / adobe · martech</div>
-    <p class="summary">Adobe quietly acquired Indian AI startup Rilo, folding its natural-language workflow tools for competitor intelligence, content repurposing and lead generation into Adobe's push toward agentic marketing automation; Rilo's standalone product is being shut down. The same roundup covers Adobe's new Workfront AI Collaborators, which let AI agents draft on-brand copy and handle content localization straight from project briefs, plus Attentive's new AI Grow tool for timing sign-up prompts to shopper behavior.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/10-salesforce-winter-27-updates-marketers-need-to-know/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/10-salesforce-winter-27-updates-marketers-need-to-know/">10 Salesforce Winter '27 updates marketers need to know</a></h3>
-    <div class="meta">MarTech.org · Sep 4, 2026</div>
-    <div class="why">core / martech — Salesforce</div>
-    <p class="summary">MarTech rounds up the ten Salesforce Winter '27 changes marketing teams should plan around ahead of the October 12 general-availability date, from expanded Agentforce campaign-creation tools to cleaner reporting. It's aimed at marketing-ops teams who need to budget configuration time before the release lands.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/software-buyers-are-moving-faster-than-software-sellers/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/software-buyers-are-moving-faster-than-software-sellers/">Software buyers are moving faster than software sellers</a></h3>
-    <div class="meta">MarTech.org · Sep 4, 2026</div>
-    <div class="why">core / martech — buying behavior</div>
-    <p class="summary">A new buyer survey finds AI is speeding up how quickly marketing teams evaluate software, but old-school sales friction — waiting on quotes, internal approvals, back-and-forth over contract terms — is stalling deals buyers are otherwise ready to close. 84% of buyers say they'd prefer a self-service purchase path, yet only 17% of vendors currently offer one.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/the-next-cdp-decision-goes-beyond-the-cdp/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/the-next-cdp-decision-goes-beyond-the-cdp/">The next CDP decision goes beyond the CDP</a></h3>
-    <div class="meta">MarTech.org · Sep 4, 2026</div>
-    <div class="why">core / cdp — strategy</div>
-    <p class="summary">Gartner analyst Julia Multedo argues that as composability becomes the default, the real strategic choice for CMOs isn't which CDP to buy but where customer data, intelligence and decision-making authority should live — inside one integrated platform, or spread across autonomous agents working off a shared data foundation. The piece lays out both paths and what each implies for how marketing teams operationalize AI.</p>
-  </article>
-
-  <article class="card" data-link="https://www.cmswire.com/contact-center/genesys-touts-nearly-2-9b-in-cloud-arr-unveils-new-agentic-orchestration-tools-at-xperience-2026/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/contact-center/genesys-touts-nearly-2-9b-in-cloud-arr-unveils-new-agentic-orchestration-tools-at-xperience-2026/">Genesys Touts Nearly $2.9B in Cloud ARR, Unveils Agentic Orchestration Tools at Xperience 2026</a></h3>
-    <div class="meta">CMSWire · Sep 2, 2026</div>
-    <div class="why">core / cx — contact center AI</div>
-    <p class="summary">At its Xperience 2026 conference in Las Vegas, Genesys reported cloud ARR approaching $2.9 billion and unveiled new agentic-orchestration tools, an expanded Agentic Virtual Agent, and a broadened partner ecosystem. The announcements push the company further into agentic AI for contact-center and customer-experience orchestration.</p>
+    <div class="why">core / ai — infrastructure</div>
+    <p class="summary">As AI inference rather than training increasingly drives enterprise compute workloads, the piece argues that organizations need to rethink memory and storage architecture for speed, efficiency and performance-per-watt rather than just raw capacity. It's aimed at technical leaders sizing infrastructure for production AI systems rather than one-off model training runs.</p>
   </article>
 
   <footer>
