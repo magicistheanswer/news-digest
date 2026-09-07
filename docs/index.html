@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-06</title>
+<title>Morning News Digest — 2026-09-07</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -41,47 +41,55 @@
     text-transform: uppercase;
     letter-spacing: 0.04em;
     color: var(--accent);
-    border-bottom: 1px solid var(--border);
+    margin: 2.25rem 0 1rem;
     padding-bottom: 0.4rem;
-    margin: 2.5rem 0 1rem;
+    border-bottom: 1px solid var(--border);
   }
   article.card {
+    position: relative;
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1rem 1.2rem;
-    margin-bottom: 0.9rem;
+    border-radius: 10px;
+    padding: 1rem 1.1rem 1.1rem;
+    margin-bottom: 1rem;
   }
-  article.card h3 { margin: 0 0 0.3rem; font-size: 1.05rem; line-height: 1.35; }
-  article.card h3 a { color: var(--fg); text-decoration: none; }
-  article.card h3 a:hover { color: var(--accent); text-decoration: underline; }
-  .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
-  .why { display: inline-block; font-size: 0.75rem; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 0.05rem 0.4rem; margin-bottom: 0.5rem; }
-  p.summary { margin: 0.4rem 0 0; font-size: 0.95rem; }
-  footer { margin-top: 3rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
-  article.card { position: relative; }
+  article.card.is-read { opacity: 0.4; }
+  article.card h3 { margin: 0 0 0.35rem; font-size: 1.05rem; padding-right: 5.5rem; }
+  article.card h3 a { color: inherit; text-decoration: none; }
+  article.card h3 a:hover { text-decoration: underline; }
+  article.card .meta { color: var(--muted); font-size: 0.82rem; margin-bottom: 0.5rem; }
+  article.card .why {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    border-radius: 999px;
+    padding: 0.15rem 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  article.card .summary { margin: 0; font-size: 0.95rem; }
   .mark-read {
     position: absolute;
-    top: 0.7rem;
-    right: 0.7rem;
-    font-size: 0.7rem;
-    color: var(--muted);
+    top: 1rem;
+    right: 1.1rem;
+    font-size: 0.75rem;
     background: transparent;
     border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 0.15rem 0.5rem;
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 0.25rem 0.65rem;
     cursor: pointer;
-    font-family: inherit;
   }
-  .mark-read:hover { color: var(--accent); border-color: var(--accent); }
-  article.card.is-read { display: none; }
+  .mark-read:hover { border-color: var(--accent); color: var(--accent); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: 0.82rem; border-top: 1px solid var(--border); padding-top: 1rem; }
   .reset-read {
     background: none;
     border: none;
     color: var(--muted);
-    font-size: 0.8rem;
     text-decoration: underline;
     cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
     padding: 0;
     font-family: inherit;
   }
@@ -90,133 +98,121 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-06):
+  Run notes (2026-09-07):
   - Direct RSS/Atom fetching of feeds.yaml sources remains blocked from this sandbox.
     Fallback used, same as every prior run: WebSearch scoped to each source's domain
-    via allowed_domains, with an explicit follow-up "publish date" / "veroeffentlicht"
-    search for every candidate before selection - nothing taken from a snippet's
-    framing alone.
+    via allowed_domains, with explicit follow-up "publish date" / "veroeffentlicht"
+    / byline-timestamp searches for every candidate before selection.
   - "BBC News - World" and "BBC Sport - Football" (bbc.co.uk / bbc.com) were rejected
-    again this run: WebSearch returned "not accessible to our user agent" for both
-    domains, consistent with every prior run. No substitute was added for either slot.
-  - "MeasureCamp / Analytics community" again returned only event-calendar listings,
-    no news content - skipped, as on every prior run.
-  - "Adobe Experience Cloud Blog" had no new post since the Sep 2 "Adobe for Slack"
-    piece already shown 2026-09-03 - skipped rather than reused.
-  - Several strong-looking candidates were dropped after date-checking surfaced them
-    as old or already-covered: MarTech's "Adobe rebrands Experience Cloud as CX
-    Enterprise" (May 5, 2026), "In an age of AI excess, trust becomes the real
-    differentiator" (Sep 2025), "How Clayton Christensen's theory..." (Sep 2025),
-    and the "Marketing without signals" conference write-up (published ~3 weeks
-    ago despite describing a Sep 2 session). CMSWire's Adobe CX-Enterprise-Coworker
-    and "Salesforce Data Cloud Momentum" pieces were likewise stale re-surfacing
-    search hits. The Experience Platform release-notes URL was skipped as an
-    exact-link repeat of the one already shown 2026-08-31 (within the 7-day window).
-  - MIT Technology Review had no fresh non-"Download" piece and no Download edition
-    newer than the one already shown 2026-09-05 (Sep 4 edition); "Architecting memory
-    and storage in the AI era" (Sep 4, standalone feature) was used instead.
-  - Net effect: only 5 core stories cleared the freshness bar today (vs. the
-    11-12 target) - a Sunday morning run finds MarTech/CMSWire noticeably quieter
-    than a weekday. Freshness beats quota per CLAUDE.md, so this was left as a
-    shortfall rather than backfilled with older filler. To keep the 15-slot target
-    from skewing the mix further, 4 outside picks were used instead of the usual
-    3-4 (one Super League game, one Bundesliga game, one Schweiz, one world), so
-    today's ratio is closer to 55/45 than 75/25.
-  - Sport: two Super League round-7 SRF pieces existed (a Zuercher Derby GC-FCZ
-    2:2 and a YB-Luzern 3:3) but the derby write-up only had a video/highlight
-    URL, not a text article - the YB-Luzern text article was used instead so the
-    "always link to the original article" rule holds. Kicker's own transfer/recap
-    pieces this week were all from before the Sep 1 deadline day and already
-    stale, so today's Bundesliga slot came from a fresh Sep 5 match report
-    instead (Schalke 1:1 Bayern).
+    again: WebSearch returned "not accessible to our user agent" for both domains,
+    consistent with every prior run. No substitute was added for either slot.
+  - "MeasureCamp / Analytics community" again returned only event-calendar listings
+    (Czechia Sep 12, Auckland Sep 19, London Sep 26), no news content - skipped, as
+    on every prior run.
+  - "Adobe Experience Cloud Blog" had no post newer than "Introducing Adobe for
+    Slack" (Sep 2), already shown 2026-09-03 - skipped rather than reused.
+  - CMSWire and MarTech.org: this was the weakest core day yet. Byline-timestamp
+    searches (which reliably surfaced exact author + date + time on martech.org in
+    prior runs) topped out at Sep 4, 2026 for both sources - every one of those
+    Sep 3-4 stories (Salesforce Winter '27 recap, "software buyers moving faster
+    than sellers", "the next CDP decision", Google ad-monopoly ruling, GEO-as-a-
+    weekly-job) was already shown in the last 7 days. No CMSWire or MarTech.org
+    story cleared the freshness bar today.
+  - Adobe's acquisition of AI startup Rilo (confirmed real and recent via
+    TechCrunch, Sep 2) and Adobe's "Workfront AI Collaborators" release were both
+    dropped: neither has a discrete, stable martech.org article URL - both only
+    appear inside "the-latest-ai-powered-martech-news-and-releases", a
+    continuously-updated hub page, not a fixed dated article. Linking to a hub
+    page that keeps changing would break "always link to the original article"
+    and next-run dedup, so both were skipped rather than cited via that URL.
+  - Several strong-looking candidates were dropped after date-checking exposed
+    them as stale despite fresh-sounding search snippets/metadata: CMSWire's
+    "Google's AI Search Playbook" (actually May 19, 2026), "OpenAI Pauses ChatGPT
+    Plus Subscriptions" (a 2023 story resurfacing), "Optimizely Debuts Role-Based
+    AI Teammates" (snippet said "1 week ago", body text says launched June 10,
+    2026), "The Future of CX Lies in Segmentation" (2020), and "Shoptalk 2026"
+    retail recap (March 2026). MarTech's "10 of the best insights from the
+    September MarTech Conference" read as brand new but is dated Sep 22, 2025.
+    "Marketing without signals" was re-checked and confirmed still stale, as
+    flagged on 2026-09-06. This run's search snippets contradicted each other on
+    "days ago" labels more than once, so every date was cross-checked before use
+    and nothing was taken on a single snippet's word.
+  - MIT Technology Review was the only core source with confirmed-fresh, URL-dated,
+    not-yet-shown pieces: "Scaling agentic AI pilots across the enterprise" (Sep 3)
+    and "Data from drones in Ukraine is fueling a new Wild West marketplace" (Sep
+    4) both cleared the bar. The latter's underlying story was mentioned as one
+    bullet in the Sep 5 "Download" digest already shown, but this is the full
+    standalone feature at a different URL, not a repeat of that link.
+  - Net effect: only 2 core stories cleared the bar today (vs. the 11-12 target).
+    Freshness beats quota per CLAUDE.md, so this was left as a shortfall rather
+    than backfilled with older filler - today's ratio is close to 40/60, the
+    opposite skew of a normal day.
+  - Outside: one pick per sub-topic today. Schweiz: Zurich's Sep 27 high-rise
+    zoning vote (article itself published ~Sep 5). World: today's freshest
+    available story, this morning's manhunt in the Hambacher Forst near Cologne
+    for the German power-grid sabotage suspect (published ~13 hours ago per
+    search metadata). Sport: no Swiss Super League news - round 7 (already shown
+    2026-09-06) is still the latest played round, round 8 is Sep 12-13 - so the
+    sport slot went to Bundesliga matchday 2 (HSV 0:3 Mainz, Sep 6) instead. A
+    Sep-2025-dated "8. Runde" SRF article and a 2025/26-season Frankfurt-Augsburg
+    kicker report both surfaced in search but were confirmed as prior-season
+    reruns and rejected.
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Sunday, September 6, 2026 · 9 articles</div>
+    <div class="date">Monday, September 7, 2026 · 5 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/sport/schwingen/kilchberger-schwinget-2026-ueberragender-giger-schafft-die-kilchberg-titelverteidigung">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/abstimmung-in-der-stadt-zuerich-wo-sollen-in-zuerich-kuenftig-hochhaeuser-gebaut-werden-duerfen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/schwingen/kilchberger-schwinget-2026-ueberragender-giger-schafft-die-kilchberg-titelverteidigung">Kilchberger Schwinget 2026: Überragender Giger schafft die Kilchberg-Titelverteidigung</a></h3>
-    <div class="meta">SRF Sport — Schwingen · Sep 5, 2026</div>
-    <div class="why">outside / schweiz — Kilchberger Schwinget</div>
-    <p class="summary">Samuel Giger won the 18th Kilchberger Schwinget, one of Swiss wrestling's biggest one-off events (held only every six years), beating surprise finalist Marcel Bieri in the final bout. It makes Giger only the second wrestler after Karl Meli in the 1960s/70s to defend the Kilchberg title successfully.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/abstimmung-in-der-stadt-zuerich-wo-sollen-in-zuerich-kuenftig-hochhaeuser-gebaut-werden-duerfen">Abstimmung über Hochhäuser: Zürich vor wegweisender Entscheidung</a></h3>
+    <div class="meta">SRF News — Schweiz · Sep 5, 2026</div>
+    <div class="why">outside / schweiz — Stadtentwicklung</div>
+    <p class="summary">Zürich stimmt am 27. September darüber ab, wo künftig Hochhäuser bis 40, 60 oder 80 Metern gebaut werden dürfen — zwei Varianten stehen sich gegenüber. Der Stadtrat will die heutigen Hochhausgebiete etwa gleich gross belassen und mehr Zonen für 40-Meter-Bauten öffnen, während das Parlament diese Gebiete deutlich verkleinern und 40-Meter-Bauten nur an ausgewählten Standorten zulassen will.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/ukraine/krieg-in-der-ukraine-wegen-besuch-der-us-unterhaendler-dreitaegige-waffenruhe-fuer-kiew">
+  <article class="card" data-link="https://www.srf.ch/news/international/intensive-polizeisuche-strom-sabotage-polizei-sucht-im-hambacher-forst-nach-taeter">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/ukraine/krieg-in-der-ukraine-wegen-besuch-der-us-unterhaendler-dreitaegige-waffenruhe-fuer-kiew">Krieg in der Ukraine — Wegen Besuch der US-Unterhändler: Dreitägige Waffenruhe für Kiew</a></h3>
-    <div class="meta">SRF News — International · Sep 6, 2026</div>
-    <div class="why">outside / world — Ukraine</div>
-    <p class="summary">Russia has agreed to a three-day pause in strikes on Kyiv to coincide with a visit from US negotiators Steve Witkoff and Jared Kushner, who arrived in Moscow and are expected in Ukraine on Sunday. Separately, the IAEA has brokered a local ceasefire around the Zaporizhzhia nuclear plant so repair crews can access damaged equipment.</p>
+    <h3><a href="https://www.srf.ch/news/international/intensive-polizeisuche-strom-sabotage-polizei-sucht-im-hambacher-forst-nach-taeter">Strom-Sabotage: Polizei sucht im Wald bei Köln nach dem Tatverdächtigen</a></h3>
+    <div class="meta">SRF News — International · Sep 7, 2026</div>
+    <div class="why">outside / world — Deutschland</div>
+    <p class="summary">Die deutsche Polizei durchkämmt den Hambacher Forst bei Köln auf der Suche nach einem Verdächtigen, der für eine Serie von Sabotageakten am Stromnetz in Brandenburg, Sachsen und Nordrhein-Westfalen verantwortlich sein soll. Ermittler prüfen ein Bekennerschreiben mit dem Motiv "Klimaterrorismus" und ermitteln unter anderem wegen Bildung einer terroristischen Vereinigung.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/7-runde-der-super-league-naechstes-torfestival-aber-kein-sieger-im-wankdorf">
+  <article class="card" data-link="https://www.kicker.de/hsv-gegen-mainz-2026-bundesliga-5226823/spielbericht">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/7-runde-der-super-league-naechstes-torfestival-aber-kein-sieger-im-wankdorf">7. Runde der Super League: Nächstes Torfestival, aber kein Sieger im Wankdorf</a></h3>
-    <div class="meta">SRF Sport — Fussball · Sep 5, 2026</div>
-    <div class="why">outside / sport — Super League</div>
-    <p class="summary">YB and Luzern shared the points in a wild 3:3 in Bern, with substitute Kaly Sène snatching a last-gasp 88th-minute equalizer for the home side off a Herba Guirassy assist. It's the second high-scoring draw of the round for YB after last week's 3:3 against Basel.</p>
-  </article>
-
-  <article class="card" data-link="https://www.kicker.de/schalke-gegen-bayern-2026-bundesliga-5226825/spielbericht">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.kicker.de/schalke-gegen-bayern-2026-bundesliga-5226825/spielbericht">Karius nicht zu überwinden: Schalke trotzt Bayern einen Punkt ab</a></h3>
-    <div class="meta">Kicker — Bundesliga · Sep 5, 2026</div>
+    <h3><a href="https://www.kicker.de/hsv-gegen-mainz-2026-bundesliga-5226823/spielbericht">Hamburger SV – 1. FSV Mainz 05 0:3</a></h3>
+    <div class="meta">Kicker — Bundesliga · Sep 6, 2026</div>
     <div class="why">outside / sport — Bundesliga</div>
-    <p class="summary">Newly promoted Schalke 04 held league favorites Bayern Munich to a 1:1 draw on matchday 2, with goalkeeper Loris Karius standing firm against a dominant Bayern side. It's a strong early-season result for Schalke in their return to the top flight.</p>
+    <p class="summary">Aufsteiger Hamburger SV kassierte am 2. Spieltag der neuen Bundesliga-Saison eine deutliche 0:3-Heimniederlage gegen den 1. FSV Mainz 05, der zur Pause bereits mit zwei Toren führte und im zweiten Durchgang nachlegte. Für den HSV ist es der zweite sieglose Auftakt in Folge nach dem Wiederaufstieg.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/adobe-hands-the-ceo-keys-to-its-customer-experience-leader/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/adobe-hands-the-ceo-keys-to-its-customer-experience-leader/">After 18 Years, Narayen Hands Adobe to Its Customer Experience Chief</a></h3>
-    <div class="meta">CMSWire · Sep 5, 2026</div>
-    <div class="why">core / adobe — leadership</div>
-    <p class="summary">Adobe named Anil Chakravarthy — currently head of its customer-experience orchestration business — as president and CEO effective December 1, ending Shantanu Narayen's 18-year run in which he grew revenue from roughly $3 billion to more than $25 billion. Narayen moves to executive chair; observers read the pick as a signal that Adobe now sees its biggest enterprise growth in CX orchestration rather than pure creative or media tools.</p>
+    <h3><a href="https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/">Scaling agentic AI pilots across the enterprise</a></h3>
+    <div class="meta">MIT Technology Review · Sep 3, 2026</div>
+    <div class="why">core / ai — enterprise adoption</div>
+    <p class="summary">Even though roughly 80% of Fortune 500 companies have adopted some form of agentic AI, most deployments remain stuck as isolated pilots rather than scaling company-wide, according to NiCE COO Arun Chandra. The piece argues the fix isn't chasing every possible use case at once, but building a connected strategy around high-value workflows and governing AI agents with the same accountability standards applied to human employees.</p>
   </article>
 
-  <article class="card" data-link="https://www.cmswire.com/digital-marketing/optimizelys-agentic-marketing-vision-exposes-the-readiness-gap/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-marketing/optimizelys-agentic-marketing-vision-exposes-the-readiness-gap/">Optimizely's Opticon 2026: Why the Agentic Marketing Vision Exposes the Readiness Gap</a></h3>
-    <div class="meta">CMSWire · Sep 4, 2026</div>
-    <div class="why">core / martech — agentic AI</div>
-    <p class="summary">Coverage of Optimizely's Opticon 2026 conference argues that while the company's agentic-AI pitch — including treating websites as serving both human and AI-agent visitors — is compelling, most marketing teams' data, content governance and workflows aren't yet mature enough to actually run on it. The piece frames this "readiness gap" as the real story behind most 2026 agentic-marketing launches, not just Optimizely's.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/google-loses-the-ad-monopoly-case-but-keeps-the-monopoly/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/google-loses-the-ad-monopoly-case-but-keeps-the-monopoly/">Google loses the ad monopoly case, but keeps the monopoly</a></h3>
-    <div class="meta">MarTech.org · Sep 3, 2026</div>
-    <div class="why">core / martech — adtech/legal</div>
-    <p class="summary">US District Judge Leonie Brinkema ruled that Google illegally monopolized key ad-tech markets, but rejected the government's push to force a breakup of Google's ad businesses in favor of behavioral remedies instead. MarTech's analysis argues the ruling establishes the illegality but leaves Google's structural dominance over publisher and advertiser tooling largely intact.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/rapid-ai-changes-mean-geo-is-a-weekly-job-now/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/rapid-ai-changes-mean-geo-is-a-weekly-job-now/">Rapid AI changes mean GEO is a weekly job now</a></h3>
-    <div class="meta">MarTech.org · Sep 3, 2026</div>
-    <div class="why">core / martech — SEO/GEO</div>
-    <p class="summary">Because AI answer engines increasingly resolve buyer questions without a click-through, MarTech argues that PR, SEO and content teams need to abandon quarterly planning cadences for a standing weekly loop that tracks which prompts are surfacing, which sources get cited, and how that shifts week to week. It's a practical push to replace one-off "AI visibility" audits with continuous monitoring.</p>
-  </article>
-
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era">Architecting memory and storage in the AI era</a></h3>
+    <h3><a href="https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west">Data from drones in Ukraine is fueling a new Wild West marketplace</a></h3>
     <div class="meta">MIT Technology Review · Sep 4, 2026</div>
-    <div class="why">core / ai — infrastructure</div>
-    <p class="summary">As AI inference rather than training increasingly drives enterprise compute workloads, the piece argues that organizations need to rethink memory and storage architecture for speed, efficiency and performance-per-watt rather than just raw capacity. It's aimed at technical leaders sizing infrastructure for production AI systems rather than one-off model training runs.</p>
+    <div class="why">core / ai — data markets</div>
+    <p class="summary">Since Ukraine's defense ministry opened up access in January to data from tens of thousands of wartime drone flights, more than 100 companies and the UK government have signed on, turning battlefield sensor footage into a fast-growing commercial data market. The piece digs into how this largely unregulated marketplace for combat drone data is reshaping military-tech contracting and who gets to buy access to it.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's core section is thin (2 of a usual ~11-12) — CMSWire and MarTech.org had nothing new clear the freshness bar; see the run notes above. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>

@@ -1,81 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-08-31",
-      "link": "https://martech.org/ai-powered-martech-news-and-releases-august-29/",
-      "title": "AI-powered martech news and releases: August 29"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://martech.org/how-to-keep-a-crisis-from-defining-your-brand-online/",
-      "title": "How to keep a crisis from defining your brand online"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://martech.org/ai-powered-martech-news-and-releases-august-22/",
-      "title": "AI-powered martech news and releases: August 22"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest",
-      "title": "Adobe Experience Platform Release Notes - August 2026"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://blog.adobe.com/en/publish/2026/08/27/adobe-incubator-pitch-day-provides-glimpse-into-the-future-creativity-productivity-customer-experiences",
-      "title": "Adobe Incubator's Pitch Day provides a glimpse into the future of creativity, productivity and customer experiences"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://www.technologyreview.com/2026/08/28/1142956/how-to-sign-up-for-a-virtual-power-plant-and-decide-whether-you-should",
-      "title": "How to sign up for a virtual power plant - and decide whether you should"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://www.technologyreview.com/2026/08/27/1143033/the-download-openai-hugging-face-hack-slate-truck-ev",
-      "title": "The Download: inside OpenAI's Hugging Face hack, and a new EV takes on the US"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://www.technologyreview.com/2026/08/26/1142946/bill-gates-ai-danger-threshold/",
-      "title": "Bill Gates says we've passed AI's danger thresholds. Now what?"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://www.technologyreview.com/2026/08/25/1142909/the-download-smarter-ai-in-schools-robot-carnival-shanghai",
-      "title": "The Download: smarter AI in schools, and a robot carnival in Shanghai"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://martech.org/ai-visibility-index-shows-which-brands-are-disappearing/",
-      "title": "AI visibility index shows which brands are disappearing"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
-      "title": "Debates over AI consciousness are a trap"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://www.srf.ch/news/schweiz/junge-frau-tot-nach-schuessen-in-aarau-43-jaehriger-festgenommen",
-      "title": "Junge Frau tot - Nach Schuessen in Aarau: 43-Jaehriger festgenommen"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://www.10things.news/p/10-things-global-news-31st-august",
-      "title": "10 Things Global News - 31st August 2026"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-hadjam-von-yb-zu-brighton-vierfacher-nasenbeinbruch-bei-kamberi",
-      "title": "News aus der Super League - Hadjam von YB zu Brighton"
-    },
-    {
-      "date": "2026-08-31",
-      "link": "https://www.skysports.com/football/news/11095/13546618/transfer-news-summer-transfer-window-2026-premier-league-deals-ins-and-outs",
-      "title": "Transfer news: Summer transfer window 2026 - Premier League deals, ins and outs"
-    },
-    {
       "date": "2026-09-01",
       "link": "https://www.srf.ch/news/schweiz/statistik-des-bundes-frauen-verdienen-drastisch-weniger-als-maenner",
       "title": "Statistik des Bundes - Frauen verdienen drastisch weniger als Maenner"
@@ -344,6 +269,31 @@
       "date": "2026-09-06",
       "link": "https://www.technologyreview.com/2026/09/04/1140872/architecting-memory-and-storage-in-the-ai-era",
       "title": "Architecting memory and storage in the AI era"
+    },
+    {
+      "date": "2026-09-07",
+      "link": "https://www.srf.ch/news/schweiz/abstimmung-in-der-stadt-zuerich-wo-sollen-in-zuerich-kuenftig-hochhaeuser-gebaut-werden-duerfen",
+      "title": "Abstimmung über Hochhäuser: Zürich vor wegweisender Entscheidung"
+    },
+    {
+      "date": "2026-09-07",
+      "link": "https://www.srf.ch/news/international/intensive-polizeisuche-strom-sabotage-polizei-sucht-im-hambacher-forst-nach-taeter",
+      "title": "Strom-Sabotage: Polizei sucht im Wald bei Köln nach dem Tatverdächtigen"
+    },
+    {
+      "date": "2026-09-07",
+      "link": "https://www.kicker.de/hsv-gegen-mainz-2026-bundesliga-5226823/spielbericht",
+      "title": "Hamburger SV – 1. FSV Mainz 05 0:3"
+    },
+    {
+      "date": "2026-09-07",
+      "link": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
+      "title": "Scaling agentic AI pilots across the enterprise"
+    },
+    {
+      "date": "2026-09-07",
+      "link": "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west",
+      "title": "Data from drones in Ukraine is fueling a new Wild West marketplace"
     }
   ]
 }
