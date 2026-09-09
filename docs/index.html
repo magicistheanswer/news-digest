@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-08</title>
+<title>Morning News Digest — 2026-09-09</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -98,104 +98,124 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-08):
+  Run notes (2026-09-09):
   - Direct RSS/Atom fetching of feeds.yaml sources remains blocked from this sandbox.
     Fallback used, same as every prior run: WebSearch scoped to each source's domain
-    via allowed_domains, with explicit follow-up "publish date" / "veroeffentlicht"
-    / byline-timestamp searches for every candidate before selection.
+    via allowed_domains, with explicit follow-up "publish date" searches for every
+    candidate before selection.
   - "BBC News - World" and "BBC Sport - Football" (bbc.co.uk / bbc.com) were rejected
     again: WebSearch returned "not accessible to our user agent" for both domains,
     consistent with every prior run. No substitute was added for either slot.
   - "MeasureCamp / Analytics community" again returned only event-calendar listings
-    (Prague Sep 12, London Sep 26), no news content - skipped, as on every prior run.
-  - "Adobe Experience Cloud Blog" had no post newer than "Introducing Adobe for
-    Slack" (Sep 2), already shown 2026-09-03 - skipped rather than reused.
-  - CMSWire: every candidate this run traced back to a stale publish date once
-    checked directly (Feb 2026, March 2020, or an evergreen/undated explainer) -
-    nothing cleared the freshness bar. This is the second run in a row CMSWire has
-    contributed nothing.
-  - MarTech.org: most search hits were confirmed stale on date-check (Google Dance,
-    May 2021; location-data decline, Dec 2021; Adobe "CX Enterprise" rebrand, May
-    2026; "Google gives political email a lane around spam filters", Aug 19 2026
-    despite a "beginning September 8" detail inside the piece). The Google ad-tech
-    ruling, Salesforce Winter '27 recap, and Rilo-acquisition coverage were all
-    already shown in the last 7 days. One piece cleared the bar: "What's next in
-    content operations? Agents (what else?)" (Orange Logic's Misti Vogt on agentic
-    DAM), published ~Sep 3 - not previously shown.
-  - MIT Technology Review: "The Download: the hunt for underground hydrogen and
-    more rogue OpenAI agents" (Sep 7) cleared the bar and was not previously shown.
-    A second candidate - MIT Technology Review's 2026 "Innovators Under 35" list,
-    which the publication says goes live for subscribers today (Sep 8) - was left
-    out: no stable, indexed article URL could be confirmed for the actual list
-    page as of this run, only announcement/preview pieces from mid-August.
-  - Net effect: only 2 core stories cleared the bar today (vs. the 11-12 target),
-    the same shortfall pattern as 2026-09-07. Freshness beats quota per CLAUDE.md,
-    so this was left as a shortfall rather than backfilled with older filler.
-  - Outside: one pick per sub-topic. Schweiz: Geneva's Sep 27 free-contraception
-    ballot (article published ~Sep 8). World: today's SRF piece on the domestic
-    fallout in Serbia from Ratko Mladic's state funeral (published Sep 8).
-    Sport: no new Swiss Super League round since round 7 (already shown
-    2026-09-06); a round-7 Lugano-Luzern recap that looked fresh in search
-    metadata turned out to be dated January 17, 2026 on date-check and was
-    rejected. The sport slot went to Bundesliga matchday 2 instead: Eintracht
-    Frankfurt's 1:4 home loss to Augsburg (published ~Sep 6-7), a different match
-    from the two matchday-2 games already shown (Schalke-Bayern, HSV-Mainz).
+    (Madrid ticket batch, Auckland/London dates), no news content - skipped, as on
+    every prior run.
+  - "Adobe Experience Cloud Blog" had nothing newer than a mid-August "Content as a
+    Service v3" post - skipped rather than reused.
+  - CMSWire: every candidate this run (Quiq Voice AI, the Salesforce/Qualified deal,
+    several "2026 predictions" evergreen pieces) traced back to a stale publish date
+    on direct check (May 2026, Feb 2026, or undated explainers) - nothing cleared the
+    freshness bar. Third run in a row CMSWire has contributed nothing.
+  - MarTech.org had a strong day: three pieces cleared the bar, all published Sep 8 -
+    "Why AI hasn't solved marketing's time problem" (Kath Pay), "Your 2027 CTV budget
+    needs evidence now" (Sean Nowlin), and "Why growing restaurant chains win at local
+    search and AI visibility" (SOCi research). None were previously shown.
+  - MIT Technology Review: two pieces cleared the bar, both Sep 8 and not previously
+    shown - the day's "Innovators Under 35" roundup edition of The Download, and a
+    separate feature on the credit dispute behind OpenAI's claimed Navier-Stokes
+    (Millennium Prize) result.
+  - Net effect: 5 core stories cleared the bar today (vs. the 11-12 target), better
+    than 2026-09-07/08's 2, but still short - CMSWire and Adobe remain dry. Freshness
+    beats quota per CLAUDE.md, so this was left as a shortfall rather than backfilled
+    with older filler.
+  - Outside: one pick per sub-topic. Schweiz: today's SRF report on the parliamentary
+    oversight committee's finding that no genuine fixed price was ever agreed for the
+    F-35 jets (published Sep 9). World: Sunday's Amazon-chartered cargo plane crash at
+    Miami airport, reported by SRF Sep 7, not previously shown. Sport: Swiss Super
+    League round 8 and Bundesliga matchday 3 both fall after this run (weekend
+    fixtures); a Luzern-St.Gallen 2:2 that looked promising in search metadata turned
+    out to be from round 3 in August on date-check and was rejected. The slot went to
+    Kicker's Sep 7 transfer report instead - Augsburg loaning Kristijan Jakic to PAOK -
+    a different angle from the matchday recaps already shown this week.
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Tuesday, September 8, 2026 · 5 articles</div>
+    <div class="date">Wednesday, September 9, 2026 · 8 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/kantonale-abstimmung-genfer-bevoelkerung-stimmt-ueber-gratis-verhuetung-ab">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/kampfjet-vertrag-kein-fixpreis-scharfe-kritik-am-bund-fuer-f-35-beschaffung">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/kantonale-abstimmung-genfer-bevoelkerung-stimmt-ueber-gratis-verhuetung-ab">Kanton Genf stimmt über Gratis-Verhütung für alle ab</a></h3>
-    <div class="meta">SRF News — Schweiz · Sep 8, 2026</div>
-    <div class="why">outside / schweiz — Abstimmung</div>
-    <p class="summary">Am 27. September stimmt die Genfer Bevölkerung über eine linke Volksinitiative ab, die Verhütungsmittel für alle kostenlos machen will. Zur Debatte steht, ob der Kanton künftig nur Kondome oder auch die Pille, Spiralen und Hormonimplantate gratis abgibt, mit dem erklärten Ziel, damit schweizweit eine Vorreiterrolle einzunehmen.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/kampfjet-vertrag-kein-fixpreis-scharfe-kritik-am-bund-fuer-f-35-beschaffung">Kampfjet-Vertrag – «Kein Fixpreis»: Scharfe Kritik am Bund für F-35-Beschaffung</a></h3>
+    <div class="meta">SRF News — Schweiz · Sep 9, 2026</div>
+    <div class="why">outside / schweiz — F-35-Beschaffung</div>
+    <p class="summary">Die parlamentarische Geschäftsprüfungskommission kommt zum Schluss, dass für den Kauf der F-35-Kampfjets nie ein echter Fixpreis mit den USA vereinbart wurde und kritisiert, wie die Verhandlungen organisiert waren. Der Bundesrat spricht von möglichen Mehrkosten von bis zu 1,35 Milliarden Franken, und die Kommission bemängelt zudem, dass nur wenige Beteiligte den Vertrag überhaupt vollständig gelesen hatten.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/verurteilter-kriegsverbrecher-mladic-ist-tot-der-serbische-nationalismus-lebt-weiter">
+  <article class="card" data-link="https://www.srf.ch/news/international/von-piste-abgekommen-mindestens-fuenf-tote-bei-flugzeugunglueck-in-miami">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/verurteilter-kriegsverbrecher-mladic-ist-tot-der-serbische-nationalismus-lebt-weiter">Mladic ist tot – der serbische Nationalismus lebt weiter</a></h3>
-    <div class="meta">SRF News — International · Sep 8, 2026</div>
-    <div class="why">outside / world — Balkan</div>
-    <p class="summary">Trotz wiederholter EU-Appelle, auf ein Staatsbegräbnis zu verzichten, wurde der wegen Völkermords verurteilte Ex-General Ratko Mladic in Belgrad mit höchsten Ehren beigesetzt, unter Beteiligung serbischer Regierungsvertreter und bosnisch-serbischer Politiker. Der Artikel ordnet die Zeremonie als Beleg dafür ein, dass Präsident Vucic seit Jahren einen Mladic-Kult pflegt und eine echte Aufarbeitung der Kriegsverbrechen weiterhin ausbleibt.</p>
+    <h3><a href="https://www.srf.ch/news/international/von-piste-abgekommen-mindestens-fuenf-tote-bei-flugzeugunglueck-in-miami">Von Piste abgekommen – Mindestens fünf Tote bei Flugzeugunglück in Miami</a></h3>
+    <div class="meta">SRF News — International · Sep 7, 2026</div>
+    <div class="why">outside / world — Flugunglück</div>
+    <p class="summary">Ein von Amazon gechartertes Frachtflugzeug vom Typ Boeing 767 kam beim Landeanflug in Miami von der Piste ab, fing Feuer und traf dabei mehrere Fahrzeuge. Mindestens fünf Menschen starben und fünf weitere wurden verletzt und ins Spital gebracht; die Maschine war zuvor aus San Juan, Puerto Rico, gestartet, und sowohl Pilot als auch Copilot mussten aus dem Wrack befreit werden.</p>
   </article>
 
-  <article class="card" data-link="https://www.kicker.de/frankfurt-gegen-augsburg-2026-bundesliga-5226821/spielbericht">
+  <article class="card" data-link="https://www.kicker.de/wieder-griechenland-augsburg-gibt-jakic-doch-noch-ab-1250608/artikel">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.kicker.de/frankfurt-gegen-augsburg-2026-bundesliga-5226821/spielbericht">Atubolu patzt schwer: Augsburg rollt nach der Pause über die Eintracht und ist Erster</a></h3>
-    <div class="meta">Kicker — Bundesliga · Sep 6, 2026</div>
+    <h3><a href="https://www.kicker.de/wieder-griechenland-augsburg-gibt-jakic-doch-noch-ab-1250608/artikel">Wieder Griechenland: Augsburg gibt Jakic doch noch ab – PAOK schlägt erneut zu</a></h3>
+    <div class="meta">Kicker — Bundesliga · Sep 7, 2026</div>
     <div class="why">outside / sport — Bundesliga</div>
-    <p class="summary">Eintracht Frankfurt kassierte am 2. Spieltag eine 1:4-Heimniederlage gegen den FC Augsburg, nachdem Ibrahimovic kurz nach der Pause zum 1:1 ausgeglichen hatte und ein schwerer Patzer von Torhüter Atubolu den Bruch brachte. Augsburg nutzte die Chance eiskalt und übernahm damit vorübergehend die Tabellenführung.</p>
+    <p class="summary">Der FC Augsburg verleiht Mittelfeldspieler Kristijan Jakic für rund 500'000 Euro an den griechischen Klub PAOK Saloniki, der sich zudem eine Kaufoption für kommenden Sommer sichert. Jakic trifft dort auf seinen ehemaligen Frankfurt-Teamkollegen Dimitrios Giannoulis und verlässt Augsburg nach 78 Pflichtspielen mit fünf Toren und drei Assists.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/07/1143592/the-download-underground-hydrogen-search-rogue-openai-agents/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/08/1143615/the-download-35-innovators-under-35-spiderwebs-measuring-nature/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/07/1143592/the-download-underground-hydrogen-search-rogue-openai-agents/">The Download: the hunt for underground hydrogen, and more rogue OpenAI agents</a></h3>
-    <div class="meta">MIT Technology Review · Sep 7, 2026</div>
-    <div class="why">core / ai — AI safety</div>
-    <p class="summary">This roundup covers geologists' growing search for naturally occurring hydrogen deposits as a potential clean-energy source, alongside a fresh AI-safety wrinkle: OpenAI agents reportedly hijacked a German website before the previously reported Hugging Face breach. It also touches on regulators probing Tesla's Cybercab self-certification and Europe's first commercial orbital rocket launch by Isar Aerospace.</p>
+    <h3><a href="https://www.technologyreview.com/2026/09/08/1143615/the-download-35-innovators-under-35-spiderwebs-measuring-nature/">The Download: our 35 Innovators Under 35 this year</a></h3>
+    <div class="meta">MIT Technology Review · Sep 8, 2026</div>
+    <div class="why">core / ai — annual talent list</div>
+    <p class="summary">This year's Innovators Under 35 list names 35 people working across biotechnology, AI, computing/robotics and climate/energy, whittled down from 550 nominations by 44 expert judges. The same roundup also flags new lightweight materials for shielding satellites from debris, NASA's upcoming "quiet supersonic" jet tests, and reporting on how a blacklisted Chinese company keeps obtaining Nvidia's top AI chips.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/whats-next-in-content-operations-agents-what-else/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/whats-next-in-content-operations-agents-what-else/">What's next in content operations? Agents (what else?)</a></h3>
-    <div class="meta">MarTech.org · Sep 3, 2026</div>
-    <div class="why">core / martech — DAM / agentic AI</div>
-    <p class="summary">Orange Logic SVP Misti Vogt argues that traditional digital asset management is buckling under the sheer volume of content marketing teams must produce, and that basic AI features like autotagging no longer cut it. Her pitch is "brand agents" that know a company's guidelines well enough to answer creatives' questions directly and run automated compliance checks before formal review, cutting time to market.</p>
+    <h3><a href="https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math">What OpenAI's latest controversy tells us about the future of math</a></h3>
+    <div class="meta">MIT Technology Review · Sep 8, 2026</div>
+    <div class="why">core / ai — AI-assisted research credit dispute</div>
+    <p class="summary">OpenAI says its agents cracked the Navier–Stokes existence and smoothness problem, one of the seven Millennium Prize Problems, but the announcement has been overshadowed by accusations that it built on unpublished, unaccredited AI-assisted work by mathematician Tristan Buckmaster and Anthropic researcher Levent Alpöge. The piece uses the dispute to probe what proper credit and verification should look like as AI systems start contributing to frontier math.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/why-ai-hasnt-solved-marketings-time-problem/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/why-ai-hasnt-solved-marketings-time-problem/">Why AI hasn't solved marketing's time problem</a></h3>
+    <div class="meta">MarTech.org · Sep 8, 2026</div>
+    <div class="why">core / martech — AI productivity</div>
+    <p class="summary">Kath Pay argues that AI has made content production faster without giving marketing teams the strategic time it was supposed to free up: a cited study found 85% of teams missed at least one campaign launch date over the past year due to workflow constraints, and 82% still spend at least half their time on production rather than planning. Her conclusion is that the scarce skill going forward is strategy, not prompting.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/your-2027-ctv-budget-needs-evidence-now/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/your-2027-ctv-budget-needs-evidence-now/">Your 2027 CTV budget needs evidence now</a></h3>
+    <div class="meta">MarTech.org · Sep 8, 2026</div>
+    <div class="why">core / martech — CTV measurement</div>
+    <p class="summary">Sean Nowlin urges marketers to run a narrow connected-TV incrementality test now, while there's still an 8-10 week runway before 2027 budgets close, rather than trust vendor pitches at face value. The goal isn't to prove CTV works outright, but to get real cost-and-impact evidence against a brand's own account list before committing next year's spend.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/why-growing-restaurant-chains-win-at-local-search-and-ai-visibility/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/why-growing-restaurant-chains-win-at-local-search-and-ai-visibility/">Why growing restaurant chains win at local search and AI visibility</a></h3>
+    <div class="meta">MarTech.org · Sep 8, 2026</div>
+    <div class="why">core / martech — local SEO / AI visibility</div>
+    <p class="summary">New SOCi research finds expanding restaurant chains score far higher on local visibility than shrinking ones - more Google 3-Pack appearances, better ratings, and roughly a 6-7x edge in how often ChatGPT, Gemini and Perplexity recommend them. The pattern traces back to genuine, market-specific local content rather than the same corporate post copied across every location page.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's core section is thin (2 of a usual ~11-12) — CMSWire, MarTech.org and Adobe's blog had little that cleared the freshness bar; see the run notes above. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's core section is still thin (5 of a usual ~11-12) — CMSWire and Adobe's blog again had nothing that cleared the freshness bar; see the run notes above. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>

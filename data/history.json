@@ -1,61 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-09-01",
-      "link": "https://www.srf.ch/news/schweiz/statistik-des-bundes-frauen-verdienen-drastisch-weniger-als-maenner",
-      "title": "Statistik des Bundes - Frauen verdienen drastisch weniger als Maenner"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://www.srf.ch/news/international/flutkatastrophe-im-himalaya-ueber-900-tote-und-mehr-als-4000-vermisste",
-      "title": "Flutkatastrophe im Himalaya - ueber 900 Tote und mehr als 4000 Vermisste"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://www.kicker.de/dortmunds-befuerchtungen-bestaetigt-konstantelias-erleidet-kreuzbandriss-1247947/artikel",
-      "title": "Dortmunds Befuerchtungen bestaetigt: Konstantelias erleidet Kreuzbandriss"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://www.technologyreview.com/2026/08/26/1141949/editors-letter-september-2026/",
-      "title": "Raised on AI"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://www.technologyreview.com/2026/08/26/1141952/puzzles-ai-models-flub-these-tests/",
-      "title": "AI models flub these intelligence tests. Can you fare any better?"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://www.technologyreview.com/2026/08/27/1143037/startup-claims-its-found-a-drug-to-make-your-blood-young/",
-      "title": "A startup claims it's found a drug to make your blood young"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://blog.adobe.com/en/publish/2026/08/27/new-photoshop-innovations-bring-you-more-choice-control-at-every-stage-of-your-creative-process",
-      "title": "New Photoshop innovations bring you more choice and control at every stage of your creative process"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://martech.org/marketers-know-ai-is-using-bad-data-to-make-decisions/",
-      "title": "Marketers know AI is using bad data to make decisions"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://martech.org/anthropic-partnership-makes-salesforces-interface-optional/",
-      "title": "Anthropic partnership makes Salesforce's interface optional"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://martech.org/stop-measuring-your-brand-and-start-listening/",
-      "title": "Stop measuring your brand and start listening"
-    },
-    {
-      "date": "2026-09-01",
-      "link": "https://martech.org/the-terrifying-loophole-in-your-autonomous-tech-stack/",
-      "title": "The terrifying loophole in your autonomous tech stack"
-    },
-    {
       "date": "2026-09-02",
       "link": "https://www.srf.ch/news/schweiz/benzinzusatz-im-grundwasser-wieso-das-wasser-im-aargauer-limmattal-nach-benzin-riecht",
       "title": "Benzingeruch im Trinkwasser im Aargau: Ursache ist geklärt"
@@ -319,6 +264,46 @@
       "date": "2026-09-08",
       "link": "https://martech.org/whats-next-in-content-operations-agents-what-else/",
       "title": "What's next in content operations? Agents (what else?)"
+    },
+    {
+      "date": "2026-09-09",
+      "link": "https://www.technologyreview.com/2026/09/08/1143615/the-download-35-innovators-under-35-spiderwebs-measuring-nature/",
+      "title": "The Download: our 35 Innovators Under 35 this year"
+    },
+    {
+      "date": "2026-09-09",
+      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math",
+      "title": "What OpenAI's latest controversy tells us about the future of math"
+    },
+    {
+      "date": "2026-09-09",
+      "link": "https://martech.org/why-ai-hasnt-solved-marketings-time-problem/",
+      "title": "Why AI hasn't solved marketing's time problem"
+    },
+    {
+      "date": "2026-09-09",
+      "link": "https://martech.org/your-2027-ctv-budget-needs-evidence-now/",
+      "title": "Your 2027 CTV budget needs evidence now"
+    },
+    {
+      "date": "2026-09-09",
+      "link": "https://martech.org/why-growing-restaurant-chains-win-at-local-search-and-ai-visibility/",
+      "title": "Why growing restaurant chains win at local search and AI visibility"
+    },
+    {
+      "date": "2026-09-09",
+      "link": "https://www.srf.ch/news/schweiz/kampfjet-vertrag-kein-fixpreis-scharfe-kritik-am-bund-fuer-f-35-beschaffung",
+      "title": "Kampfjet-Vertrag - «Kein Fixpreis»: Scharfe Kritik am Bund für F-35-Beschaffung"
+    },
+    {
+      "date": "2026-09-09",
+      "link": "https://www.srf.ch/news/international/von-piste-abgekommen-mindestens-fuenf-tote-bei-flugzeugunglueck-in-miami",
+      "title": "Von Piste abgekommen - Mindestens fünf Tote bei Flugzeugunglück in Miami"
+    },
+    {
+      "date": "2026-09-09",
+      "link": "https://www.kicker.de/wieder-griechenland-augsburg-gibt-jakic-doch-noch-ab-1250608/artikel",
+      "title": "Wieder Griechenland: Augsburg gibt Jakic doch noch ab - PAOK schlägt erneut zu"
     }
   ]
 }
