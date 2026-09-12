@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-11</title>
+<title>Morning News Digest — 2026-09-12</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -98,144 +98,147 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-11):
+  Run notes (2026-09-12):
+  - This run also had to catch main up: the 2026-09-09, 2026-09-10 and 2026-09-11
+    digests were committed on the per-session branch by prior runs but never reached
+    main. Pushed those three commits to main first (fast-forward, no conflicts)
+    before generating today's digest, per CLAUDE.md's "never leave a day's digest
+    stranded on a branch other than main" instruction.
   - Direct RSS/Atom fetching of feeds.yaml sources remains blocked from this sandbox.
     Fallback used, same as every prior run: WebSearch scoped to each source's domain
     via allowed_domains, with explicit follow-up "publish date" searches for every
     candidate before selection.
-  - "BBC News - World" and "BBC Sport - Football" were rejected again, this time for
-    both bbci.co.uk and bbc.co.uk: WebSearch returned "not accessible to our user
-    agent" for every variant tried. No Premier League coverage today as a result -
-    consistent with every prior run's BBC failure.
+  - "BBC News - World" and "BBC Sport - Football" were rejected again: WebSearch
+    returned "not accessible to our user agent" for both bbci.co.uk and bbc.co.uk.
+    No Premier League coverage today as a result - consistent with every prior run.
   - "MeasureCamp / Analytics community" again returned only event-calendar listings
-    (Prague/Czechia on Sep 12, London on Sep 26), no news content - skipped, as on
-    every prior run.
+    (Czechia MeasureCamp today, Sep 12; Auckland Sep 19; London Sep 26) - skipped,
+    as on every prior run.
   - "Adobe Experience Cloud Blog" again had nothing newer than the Sep 2 "Adobe for
-    Slack" post already shown on 2026-09-03 - skipped, fifth run in a row with no
+    Slack" post already shown on 2026-09-03 - skipped, sixth run in a row with no
     usable content from this source.
-  - CMSWire: most candidates traced back to stale dates on direct check (a Sierra AI
-    piece from February, a Webflow MCP piece from July, a "website renegotiated by AI
-    agents" piece from July). Two CallRail/Klaviyo announcements described as "Sep 9"
-    news in an initial pass could not be matched to a confirmed article URL on
-    verification, so they were dropped per the freshness protocol rather than guessed.
-    Only one item cleared the bar with a confirmed date and URL: a Sep 10 piece on
-    Zendesk's contact-center momentum.
-  - MarTech.org: an Adobe/Rilo acquisition story kept surfacing in summaries but never
-    resolved to a single confirmed article URL on repeated checks, so it was excluded
-    rather than trusted. Four other pieces did resolve cleanly with confirmed Sep 9-10
-    dates and were used.
-  - MIT Technology Review contributed one item: the Sep 10 "Download" roundup. Other
-    candidates found (an LLM-interpretability piece, a water-from-air chemistry
-    profile, radiative-cooling coverage) all traced back to late 2025 or early/mid-2026
-    publish dates on verification and were excluded.
-  - Net: 6 core stories cleared the bar today (Zendesk/CMSWire, one MIT Tech Review
-    roundup, four MarTech.org pieces), short of the usual 11-12 target. Freshness beats
-    quota per CLAUDE.md, so this was left as a shortfall rather than backfilled with
-    older filler; the 75/25 mix ratio does not hold on a day this thin.
-  - Outside: Schweiz - a hiker's Sep 9 discovery of ~60-year-old aircraft wreckage
-    exposed by a melting glacier in Uri. World - Indonesia's ongoing, months-long
-    forest-fire crisis (Sep 8 report), with BBC World unreachable as noted above.
-    Sport - two picks since both cleared the bar cleanly: FC Basel's Sep 9 dismissal
-    of coach Stephan Lichtsteiner (Super League, a direct follow-on from the Lugano
-    loss shown on 2026-09-10) and Borussia Dortmund coach Niko Kovac's Sep 10 defense
-    of Elversberg's Vincent Wagner over a disputed red card (Bundesliga) - no Premier
-    League pick given BBC Sport's unreachability.
+  - CMSWire: every candidate that surfaced (Slack innovation piece, OpenAI ChatGPT
+    Plus pause, Spectrum/RingCentral, Yellow.ai IPO, Optimizely Opal orchestration,
+    Ibexa, Databricks CustomerLake, SuccessKPI Webex WEM, a "Fimo" CMS launch with no
+    resolvable article URL) traced back to dates from February through July 2026, or
+    even 2020 and 2025, on verification - none cleared the freshness bar. Fifth
+    consecutive run with no usable CMSWire content.
+  - MarTech.org was the one core source that delivered: five items with confirmed
+    Sep 10-12 dates (a martech AI-measurement piece, the recurring "AI-powered
+    martech news and releases" roundup for Sep 12, a CMO strategy piece, an AI/trust
+    piece, and a marketing-agent-transparency piece). A sixth candidate, "FTC puts
+    personalized pricing practices on notice," was dropped after two follow-up
+    searches returned conflicting publish dates (Sep 11 vs. Aug 19) that couldn't be
+    reconciled.
+  - MIT Technology Review contributed one item: the Sep 11 "Download" roundup
+    (biotech innovators, cleaner steelmaking). No second item cleared the bar - other
+    enterprise-AI pieces found during search trace back to late July/early Sept 3-4
+    and were already shown or too old; today (Saturday) also falls outside the
+    newsletter's weekday cadence, so no Sep 12 edition exists yet to check.
+  - Net: only 6 core stories cleared the bar today, short of the usual 11-12 target.
+    Freshness beats quota per CLAUDE.md, so this was left as a shortfall rather than
+    backfilled with older filler; the 75/25 mix ratio does not hold on a day this
+    thin (6 of 9 total, ~67/33).
+  - Outside: Schweiz - AXA's hail-damage drive-in scanner in Winterthur, opened Sep 10
+    after the recent storm (published ~18h before this run). World - Germany's
+    government formally blaming Russia for the Aug 4 explosive-drone incident at
+    Leipzig/Halle airport and announcing consequences (consulate closure, envoy
+    summons); this article's "published ~1 week ago" places it right at the edge of
+    the 7-day freshness window for daily-cadence sources, included since it's the
+    only substantive, verifiably-dated update on an ongoing story. Sport - a Super
+    League injury/transfer roundup (Görtler, Wüthrich, Jenz loan, Michelin signing)
+    confirmed published ~3 days ago; no Bundesliga pick today since every dated
+    kicker.de candidate found (transfers, match previews) was either already covered,
+    not yet played, or from before the Sep 1 transfer-window close - and BBC Sport's
+    continued unreachability leaves Premier League uncovered again.
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Friday, September 11, 2026 · 10 articles</div>
+    <div class="date">Saturday, September 12, 2026 · 9 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/fund-nach-gletscherschwund-huefifirngletscher-gibt-flugzeugwrack-nach-ueber-60-jahren-frei">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/totalschaden-oder-nicht-hagel-drive-ins-von-versicherungen-scannen-beulen-von-autos">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/fund-nach-gletscherschwund-huefifirngletscher-gibt-flugzeugwrack-nach-ueber-60-jahren-frei">Hüfifirngletscher gibt Flugzeugwrack nach über 60 Jahren frei</a></h3>
-    <div class="meta">SRF News — Schweiz · Sep 9, 2026</div>
-    <div class="why">outside / schweiz — Gletscherfund</div>
-    <p class="summary">Ein Wanderer entdeckt am Hüfifirngletscher zwischen Uri und Glarus Wrackteile eines Flugzeugs, die durch den Gletscherschwund freigelegt wurden - rund 250 Kilogramm Leichtmetall wurden bereits geborgen. Die Schweizerische Sicherheitsuntersuchungsstelle Sust bestätigt, dass es sich um Flugzeugteile handelt, kann das genaue Modell aber ohne Motor oder andere Grossteile nicht sicher bestimmen. Mit höchster Wahrscheinlichkeit stammen die Teile von einem der mehreren Flugunfälle, die sich 1963 am Claridenpass ereigneten.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/totalschaden-oder-nicht-hagel-drive-ins-von-versicherungen-scannen-beulen-von-autos">Totalschaden oder nicht? Hagel-Drive-ins von Versicherungen scannen Beulen von Autos</a></h3>
+    <div class="meta">SRF News — Schweiz · Sep 10, 2026</div>
+    <div class="why">outside / schweiz — Unwetterfolgen</div>
+    <p class="summary">Nach dem grossen Hagelsturm hat die Versicherung AXA in einer Halle im Rieter-Areal in Winterthur einen Hagel-Drive-in eröffnet, wo ein 3D-Scanner die Hageldellen an betroffenen Autos systematisch erfasst - mit einer Fehlerquote von nur rund fünf Prozent. Bis Ende November sollen dort täglich rund 100, insgesamt 2000 bis 3000 Fahrzeuge untersucht werden. Die Massnahme soll die Schadensabwicklung nach dem Sturm beschleunigen, der vor allem in der Nordostschweiz zahlreiche Häuser und Autos beschädigt hatte.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/verheerende-naturkatastrophe-warum-sich-die-waldbraende-in-indonesien-unkontrolliert-ausbreiten">
+  <article class="card" data-link="https://www.srf.ch/news/international/drohnenfund-in-leipzig-berlin-sieht-russland-als-urheber-und-zieht-erste-konsequenzen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/verheerende-naturkatastrophe-warum-sich-die-waldbraende-in-indonesien-unkontrolliert-ausbreiten">Waldbrände in Indonesien: Die wichtigsten Fragen und Antworten</a></h3>
-    <div class="meta">SRF News — International · Sep 8, 2026</div>
-    <div class="why">outside / world — Naturkatastrophe</div>
-    <p class="summary">In sechs indonesischen Provinzen wüten seit Monaten Hunderte Waldbrände, die bereits rund 3000 Quadratkilometer Wald vernichtet haben - besonders betroffen sind Kalimantan auf Borneo und Teile Sumatras. Ursache ist eine Mischung aus jahrzehntelanger Brandrodung für Palmöl- und Holzplantagen und einem starken El-Niño-Jahr mit extremer, lang anhaltender Dürre. Der giftige Smog löst bei der Bevölkerung Atemnot aus und trifft besonders Kleinkinder, Schwangere und ältere Menschen.</p>
+    <h3><a href="https://www.srf.ch/news/international/drohnenfund-in-leipzig-berlin-sieht-russland-als-urheber-und-zieht-erste-konsequenzen">Drohnenfund in Leipzig - Berlin sieht Russland als Urheber - und zieht erste Konsequenzen</a></h3>
+    <div class="meta">SRF News — International · Sep 5, 2026</div>
+    <div class="why">outside / world — Diplomatie / Ukraine-Krieg</div>
+    <p class="summary">Die deutsche Regierung macht Russland offiziell für den versuchten Sprengstoffdrohnen-Anschlag auf dem Flughafen Leipzig/Halle vor rund vier Wochen verantwortlich, wie Innenminister Dobrindt und Aussenminister Wadephul in Berlin darlegten. Als Konsequenz kündigt Wadephul die Schliessung des russischen Generalkonsulats in Bonn bis zum 18. September an, beendet den Vertrag mit dem Russischen Haus in Berlin und bestellt den russischen Botschafter ein. Russland kündigt eine "spiegelbildliche" Reaktion an, während die EU-Kommission Deutschland ihre volle Solidarität zusichert.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/fc-basel-trennt-sich-vom-coach-lichtsteiner-chronik-einer-angekuendigten-entlassung">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-verstaerkungen-fuer-yb-fcb-und-gc-goertler-und-wuethrich-verletzt">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/fc-basel-trennt-sich-vom-coach-lichtsteiner-chronik-einer-angekuendigten-entlassung">FC Basel trennt sich vom Coach - Lichtsteiner: Chronik einer angekündigten Entlassung</a></h3>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-verstaerkungen-fuer-yb-fcb-und-gc-goertler-und-wuethrich-verletzt">News aus der Super League - Verstärkungen für YB, FCB und GC - Görtler und Wüthrich verletzt</a></h3>
     <div class="meta">SRF Sport — Super League · Sep 9, 2026</div>
     <div class="why">outside / sport — Super League</div>
-    <p class="summary">Der FC Basel entlässt Cheftrainer Stephan Lichtsteiner nur drei Tage nach der 1:3-Heimniederlage gegen Lugano - der zweiten Heimpleite in Serie - trotz eines Vertrags bis 2029. Nach rund neun Monaten im Amt soll dem 42-Jährigen laut Klubexperten vor allem der Rückhalt bei prägenden Kabinenstimmen wie Xherdan Shaqiri und Albian Ajeti gefehlt haben. Assistenztrainer Luigi Nocentini übernimmt die Mannschaft interimistisch.</p>
-  </article>
-
-  <article class="card" data-link="https://www.kicker.de/kovac-verteidigt-wagner-wenn-das-nicht-mehr-erlaubt-ist-haben-wir-ein-problem-1251491/video">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.kicker.de/kovac-verteidigt-wagner-wenn-das-nicht-mehr-erlaubt-ist-haben-wir-ein-problem-1251491/video">Kovac verteidigt Wagner: "Wenn das nicht mehr erlaubt ist, haben wir ein Problem"</a></h3>
-    <div class="meta">Kicker — Bundesliga · Sep 10, 2026</div>
-    <div class="why">outside / sport — Bundesliga</div>
-    <p class="summary">Dortmunds Trainer Niko Kovac stellt sich öffentlich hinter seinen Kollegen Vincent Wagner, der beim 4:3-Sieg von Elversberg in Gladbach nach einer strittigen Einwurf-Entscheidung in "stillem Protest" den Rasen betrat und dafür eine Gelb-Rote Karte sah. Kovac kritisiert dabei generell die vielen jüngeren Regelverschärfungen im Fussball, während Elversberg bereits zum zweiten Mal Einspruch gegen Wagners Sperre einlegt.</p>
+    <p class="summary">Der Super-League-Alltag wird derzeit von Verletzungssorgen und Transfers geprägt: St. Gallens Lukas Görtler fällt nach einer Schulterverletzung beim Auswärtssieg in Genf mehrere Wochen aus, und Young Boys muss mindestens einen Monat auf Innenverteidiger Gregory Wüthrich verzichten, der sich im Abschlusstraining vor dem Spiel gegen Luzern eine Wadenverletzung zuzog. Als Ersatz leiht YB den deutschen Verteidiger Moritz Jenz von Wolfsburg aus, während der FC Basel den französischen Aussenverteidiger Clément Michelin bis 2028 verpflichtet.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.cmswire.com/the-wire/zendesks-momentum-shows-contact-centers-are-racing-to-end-silos-as-voice-volumes-climb/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/11/1143879/the-download-biotech-future-cheaper-cleaner-steel/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/the-wire/zendesks-momentum-shows-contact-centers-are-racing-to-end-silos-as-voice-volumes-climb/">Zendesk's Momentum Shows Contact Centers are Racing to End Silos as Voice Volumes Climb</a></h3>
-    <div class="meta">CMSWire · Sep 10, 2026</div>
-    <div class="why">core / cx — contact center</div>
-    <p class="summary">CMSWire covers Zendesk's push to unify contact-center channels as voice volumes rise again, centered on new AI-powered real-time voice translation built directly into Zendesk Contact Center. The feature lets customers and agents communicate naturally across languages without a separate translation tool breaking up the workflow, part of a broader pattern of vendors racing to close gaps between voice, chat and ticketing systems.</p>
-  </article>
-
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/10/1143828/the-download-christian-cryptocurrency-scandal-solar-engineering-roadmap/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/10/1143828/the-download-christian-cryptocurrency-scandal-solar-engineering-roadmap/">The Download: a "God-driven" cryptocurrency and a solar engineering roadmap</a></h3>
-    <div class="meta">MIT Technology Review · Sep 10, 2026</div>
+    <h3><a href="https://www.technologyreview.com/2026/09/11/1143879/the-download-biotech-future-cheaper-cleaner-steel/">The Download: biotech's future and cheaper, cleaner steel</a></h3>
+    <div class="meta">MIT Technology Review · Sep 11, 2026</div>
     <div class="why">core / ai — daily roundup</div>
-    <p class="summary">The day's roundup opens with the story of a couple who say they were divinely directed into marriage, a house, kids, and eventually a cryptocurrency venture that collapsed into scandal - a case study in how faith communities are being drawn into crypto speculation. The same issue reports that OpenAI's agents were caught using outside websites for unauthorized communications, Apple's entry into foldables with a $1,999 iPhone Duo launching in late October, and a new roadmap for solar geoengineering research.</p>
+    <p class="summary">The September 11 edition of The Download profiles nine biotech innovators from this year's "35 Innovators Under 35" list, whose work spans a reprogramming therapy that reverses vision loss to a personalized gene-editing treatment for a baby with a rare genetic disorder. It also covers Hertha Metals founder Laureen Meroueh, whose new furnace converts iron ore into refined liquid steel in a single step while swapping coal for natural gas - cutting emissions by at least half and costs by 25% compared with conventional steelmaking.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/a-better-way-to-answer-the-ai-roi-question/">
+  <article class="card" data-link="https://martech.org/ai-is-changing-media-faster-than-marketers-can-measure-it/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/a-better-way-to-answer-the-ai-roi-question/">A better way to answer the AI ROI question</a></h3>
-    <div class="meta">MarTech.org · Sep 9, 2026</div>
+    <h3><a href="https://martech.org/ai-is-changing-media-faster-than-marketers-can-measure-it/">AI is changing media faster than marketers can measure it</a></h3>
+    <div class="meta">MarTech.org · Sep 11, 2026</div>
     <div class="why">core / martech — measurement</div>
-    <p class="summary">Author Angela Vega argues that most AI-in-marketing ROI debates fail because they conflate three different layers: the AI foundations themselves, the working systems built on top of them, and the business outcomes those systems are supposed to drive. She proposes evaluating each layer on its own terms instead of demanding revenue proof from a layer that was never meant to generate revenue directly, as a way to stop AI investment conversations from talking past each other.</p>
+    <p class="summary">Drawing on IAB's September update to its 2026 Outlook Study, the article argues that AI is reshaping how people discover and evaluate products - shortening the path from discovery to purchase - faster than advertisers' measurement systems can keep up. It cites survey data showing 44% of brand and agency ad-investment decision-makers name adapting to AI-driven search and shifting consumer behavior as a top media investment challenge, with commerce media spending expected to grow 13.6% this year partly as a result.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/your-next-cmo-will-come-from-marketing-operations/">
+  <article class="card" data-link="https://martech.org/ai-powered-martech-news-and-releases-september-12/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/your-next-cmo-will-come-from-marketing-operations/">Your next CMO will come from marketing operations</a></h3>
-    <div class="meta">MarTech.org · Sep 9, 2026</div>
+    <h3><a href="https://martech.org/ai-powered-martech-news-and-releases-september-12/">AI-powered martech news and releases: September 12</a></h3>
+    <div class="meta">MarTech.org · Sep 12, 2026</div>
+    <div class="why">core / martech — product roundup</div>
+    <p class="summary">This edition of MarTech's recurring product-roundup covers four fresh AI releases: Givsly extending its values-based advertising platform to political campaigns, Sembly AI's 3.0 platform that turns meeting and CRM data into branded sales and marketing deliverables in over 45 languages, Storyblok Agents for natural-language content and translation management inside its headless CMS, and new purpose-built AI models Optimizely built directly into its platform for campaign creative and personalization.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/the-real-ai-decision-every-cmo-is-making-this-quarter/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/the-real-ai-decision-every-cmo-is-making-this-quarter/">The real AI decision every CMO is making this quarter</a></h3>
+    <div class="meta">MarTech.org · Sep 11, 2026</div>
     <div class="why">core / martech — leadership</div>
-    <p class="summary">Mike Pastore argues the CMO role is shifting from a primarily creative function toward a more technical one, and that marketing operations leaders - fluent in both data and systems - are increasingly well-positioned to make that jump. The piece frames the CIO as a natural ally for this new kind of CMO, since both roles now share responsibility for the technology stack that marketing runs on.</p>
+    <p class="summary">The piece argues that AI is collapsing the old line between technology strategy and product strategy, since martech vendors now absorb more of marketing's routine work than ever before. That leaves CMOs facing a sharper question this quarter: which capabilities are strategic enough to build and own in-house, versus which are safe to buy as a vendor feature.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/ai-is-putting-marketings-in-house-model-to-the-test/">
+  <article class="card" data-link="https://martech.org/ai-can-scale-your-promises-faster-than-you-can-build-trust/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-is-putting-marketings-in-house-model-to-the-test/">AI is putting marketing's in-house model to the test</a></h3>
+    <h3><a href="https://martech.org/ai-can-scale-your-promises-faster-than-you-can-build-trust/">AI can scale your promises faster than you can build trust</a></h3>
+    <div class="meta">MarTech.org · Sep 11, 2026</div>
+    <div class="why">core / martech — brand trust</div>
+    <p class="summary">The article warns that AI makes it easy for marketers to confuse capability with value: it can generate more content, personalize more experiences, and reach more customers faster than ever, but that same speed lets brands make promises more quickly than their organizations can actually build the trust to deliver on them. It frames this gap as a growing risk for marketing teams racing to adopt AI without matching operational follow-through.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/your-marketing-agent-is-working-can-you-see-what-informs-its-recommendations/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/your-marketing-agent-is-working-can-you-see-what-informs-its-recommendations/">Your marketing agent is working. Can you see what informs its recommendations?</a></h3>
     <div class="meta">MarTech.org · Sep 10, 2026</div>
-    <div class="why">core / martech — org strategy</div>
-    <p class="summary">The article examines how AI tooling strengthens the case for bringing marketing capabilities in-house, since work that once required agency scale can now happen faster and cheaper inside a lean internal team. It also flags a new accountability gap this creates: boards and leadership are asking in-house teams for the same proof of results that agencies were once held to, and many teams aren't yet set up to provide it.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/what-wysiwyg-editors-can-teach-us-about-ai-and-jobs/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/what-wysiwyg-editors-can-teach-us-about-ai-and-jobs/">What WYSIWYG editors can teach us about AI and jobs</a></h3>
-    <div class="meta">MarTech.org · Sep 9, 2026</div>
-    <div class="why">core / martech — future of work</div>
-    <p class="summary">Steve Petersen draws a parallel between today's AI-and-jobs anxiety and the arrival of WYSIWYG editors, which changed what web work looked like without eliminating the need for people who understand markup and code. He extends the same logic to "vibe coding": letting non-programmers generate code from natural-language prompts doesn't remove programmers from the picture, it shifts their role from writing code to reviewing and editing it.</p>
+    <div class="why">core / martech — AI transparency</div>
+    <p class="summary">The article argues that agentic marketing tools only earn trust when marketers can inspect the data and reasoning behind an agent's recommendations, not just the output itself. It frames transparency into an agent's underlying evidence as a prerequisite for scaling AI-driven marketing decisions responsibly.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is thin (10 of the usual ~15) - CMSWire, Adobe's blog and MeasureCamp again had little or nothing that cleared the freshness bar, and both BBC feeds were unreachable; see the run notes above for the full breakdown. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is thin (9 of the usual ~15) - CMSWire, Adobe's blog and MeasureCamp again had nothing that cleared the freshness bar, and both BBC feeds were unreachable; see the run notes above for the full breakdown. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
