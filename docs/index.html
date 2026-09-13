@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-12</title>
+<title>Morning News Digest — 2026-09-13</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -98,147 +98,123 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-12):
-  - This run also had to catch main up: the 2026-09-09, 2026-09-10 and 2026-09-11
-    digests were committed on the per-session branch by prior runs but never reached
-    main. Pushed those three commits to main first (fast-forward, no conflicts)
-    before generating today's digest, per CLAUDE.md's "never leave a day's digest
-    stranded on a branch other than main" instruction.
-  - Direct RSS/Atom fetching of feeds.yaml sources remains blocked from this sandbox.
-    Fallback used, same as every prior run: WebSearch scoped to each source's domain
-    via allowed_domains, with explicit follow-up "publish date" searches for every
-    candidate before selection.
-  - "BBC News - World" and "BBC Sport - Football" were rejected again: WebSearch
-    returned "not accessible to our user agent" for both bbci.co.uk and bbc.co.uk.
-    No Premier League coverage today as a result - consistent with every prior run.
-  - "MeasureCamp / Analytics community" again returned only event-calendar listings
-    (Czechia MeasureCamp today, Sep 12; Auckland Sep 19; London Sep 26) - skipped,
-    as on every prior run.
-  - "Adobe Experience Cloud Blog" again had nothing newer than the Sep 2 "Adobe for
-    Slack" post already shown on 2026-09-03 - skipped, sixth run in a row with no
-    usable content from this source.
-  - CMSWire: every candidate that surfaced (Slack innovation piece, OpenAI ChatGPT
-    Plus pause, Spectrum/RingCentral, Yellow.ai IPO, Optimizely Opal orchestration,
-    Ibexa, Databricks CustomerLake, SuccessKPI Webex WEM, a "Fimo" CMS launch with no
-    resolvable article URL) traced back to dates from February through July 2026, or
-    even 2020 and 2025, on verification - none cleared the freshness bar. Fifth
-    consecutive run with no usable CMSWire content.
-  - MarTech.org was the one core source that delivered: five items with confirmed
-    Sep 10-12 dates (a martech AI-measurement piece, the recurring "AI-powered
-    martech news and releases" roundup for Sep 12, a CMO strategy piece, an AI/trust
-    piece, and a marketing-agent-transparency piece). A sixth candidate, "FTC puts
-    personalized pricing practices on notice," was dropped after two follow-up
-    searches returned conflicting publish dates (Sep 11 vs. Aug 19) that couldn't be
-    reconciled.
-  - MIT Technology Review contributed one item: the Sep 11 "Download" roundup
-    (biotech innovators, cleaner steelmaking). No second item cleared the bar - other
-    enterprise-AI pieces found during search trace back to late July/early Sept 3-4
-    and were already shown or too old; today (Saturday) also falls outside the
-    newsletter's weekday cadence, so no Sep 12 edition exists yet to check.
-  - Net: only 6 core stories cleared the bar today, short of the usual 11-12 target.
-    Freshness beats quota per CLAUDE.md, so this was left as a shortfall rather than
-    backfilled with older filler; the 75/25 mix ratio does not hold on a day this
-    thin (6 of 9 total, ~67/33).
-  - Outside: Schweiz - AXA's hail-damage drive-in scanner in Winterthur, opened Sep 10
-    after the recent storm (published ~18h before this run). World - Germany's
-    government formally blaming Russia for the Aug 4 explosive-drone incident at
-    Leipzig/Halle airport and announcing consequences (consulate closure, envoy
-    summons); this article's "published ~1 week ago" places it right at the edge of
-    the 7-day freshness window for daily-cadence sources, included since it's the
-    only substantive, verifiably-dated update on an ongoing story. Sport - a Super
-    League injury/transfer roundup (Görtler, Wüthrich, Jenz loan, Michelin signing)
-    confirmed published ~3 days ago; no Bundesliga pick today since every dated
-    kicker.de candidate found (transfers, match previews) was either already covered,
-    not yet played, or from before the Sep 1 transfer-window close - and BBC Sport's
-    continued unreachability leaves Premier League uncovered again.
+  Run notes (2026-09-13, Sunday):
+  - Direct RSS/Atom fetching of feeds.yaml sources remains blocked from this sandbox
+    (confirmed again via a WebFetch attempt on martech.org, cmswire.com and kicker.de,
+    each returning EGRESS_BLOCKED). Fallback used, same as every prior run: WebSearch
+    scoped to each source's domain via allowed_domains, with explicit follow-up
+    "publish date" searches before selecting any candidate.
+  - This was the thinnest core day yet, and it traces to the calendar: today is a
+    Sunday, and MarTech.org, CMSWire and MIT Technology Review's "Download" newsletter
+    all run on a weekday cadence. Two of last week's five core sources did not
+    publish anything new over the weekend as a result.
+  - MarTech.org: every candidate surfaced by ~15 follow-up searches (composable data
+    architecture, data-decay/trust framework, AI maturity levels, B2B CMO readiness,
+    Anthropic shopping-agent blueprints, agentic-commerce risk/trust pieces) traced
+    back to Aug 19, Dec 2025, July, or May 2026 on verification, or turned out to
+    already be in data/history.json from the last 3 days (the Sep 11 CMO-strategy
+    piece, the Sep 10 "marketing agent transparency" piece, the Sep 9-11 WYSIWYG/CMO
+    pieces). The evergreen "the-latest-ai-powered-martech-news-and-releases" hub page
+    (no dated URL) surfaced repeatedly but could not be pinned to a verifiable publish
+    date, so it was left out per the freshness-check rule. No usable new MarTech.org
+    content today.
+  - CMSWire: every candidate (Zendesk voice translation, Klaviyo K:BOS announcements,
+    "I Spoke With Sam Altman", RingCentral's ChatGPT plugin/Claude MCP connectors)
+    either verified to a stale date (Feb, May, June 2026) on follow-up, or - for the
+    RingCentral story - checked out as genuinely Sep 10 news everywhere else on the
+    web except CMSWire itself, where no matching cmswire.com URL could be found after
+    several targeted searches. Since the instruction is to link the original article,
+    not a same-story piece on another site, it was left out. No usable CMSWire content
+    today - matches the pattern from every prior run.
+  - Adobe Experience Cloud Blog: nothing newer than the Sep 8 Premiere/After Effects
+    post, which is a Creative Cloud release, not Experience Cloud/AEP - skipped, as on
+    every prior run.
+  - MeasureCamp: only event-calendar listings again (Czechia Sep 12, Auckland Sep 19,
+    London Sep 26) - skipped, as on every prior run.
+  - MIT Technology Review contributed two items outside the weekday "Download": a
+    Sep 11 Roundtables piece on AI extinction risk, and a Sep 10 feature on the US
+    battery market's dependence on China. No third item cleared the bar - other
+    candidates (another battery piece, the Editor's Letter) were either too close in
+    topic to the battery piece already picked (avoiding three articles on one story)
+    or dated Aug 26 and older.
+  - BBC News - World and BBC Sport - Football: WebSearch again returned "not
+    accessible to our user agent" for both bbci.co.uk and bbc.co.uk - unreachable on
+    every run so far. No Premier League coverage today as a result.
+  - Net: only 2 core stories cleared the bar today (both MIT Technology Review),
+    against 4 outside stories. Freshness beats quota per CLAUDE.md, so this was left
+    as a severe shortfall (6 of the usual ~15) rather than backfilled with older or
+    unverifiable filler; the 75/25 mix ratio is inverted today (2 of 6 core, ~33/67).
+  - Outside: Schweiz - the NDB's release of its historical dossier on Josef Mengele,
+    confirmed published ~2 days before this run. World - the BRICS summit in Delhi
+    playing out "in the shadow" of the Iran war, confirmed published within the last
+    day (~10 hours before this run, the freshest item in today's digest). Sport - two
+    weekend match reports: Bundesliga's Dortmund 3:0 Paderborn and Super League's
+    Lugano 1:0 Young Boys (both Sep 12), chosen over a Kicker Bundesliga-transfer
+    candidate and a Super League news roundup already used in the last 7 days.
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Saturday, September 12, 2026 · 9 articles</div>
+    <div class="date">Sunday, September 13, 2026 · 6 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/totalschaden-oder-nicht-hagel-drive-ins-von-versicherungen-scannen-beulen-von-autos">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/ns-kriegsverbrecher-nachrichtendienst-veroeffentlicht-dossier-zu-kz-arzt-josef-mengele">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/totalschaden-oder-nicht-hagel-drive-ins-von-versicherungen-scannen-beulen-von-autos">Totalschaden oder nicht? Hagel-Drive-ins von Versicherungen scannen Beulen von Autos</a></h3>
-    <div class="meta">SRF News — Schweiz · Sep 10, 2026</div>
-    <div class="why">outside / schweiz — Unwetterfolgen</div>
-    <p class="summary">Nach dem grossen Hagelsturm hat die Versicherung AXA in einer Halle im Rieter-Areal in Winterthur einen Hagel-Drive-in eröffnet, wo ein 3D-Scanner die Hageldellen an betroffenen Autos systematisch erfasst - mit einer Fehlerquote von nur rund fünf Prozent. Bis Ende November sollen dort täglich rund 100, insgesamt 2000 bis 3000 Fahrzeuge untersucht werden. Die Massnahme soll die Schadensabwicklung nach dem Sturm beschleunigen, der vor allem in der Nordostschweiz zahlreiche Häuser und Autos beschädigt hatte.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/ns-kriegsverbrecher-nachrichtendienst-veroeffentlicht-dossier-zu-kz-arzt-josef-mengele">NDB veröffentlicht Dossier zu KZ-Arzt Josef Mengele</a></h3>
+    <div class="meta">SRF News — Schweiz · Sep 11, 2026</div>
+    <div class="why">outside / schweiz — Geschichte / Archivpolitik</div>
+    <p class="summary">Der Nachrichtendienst des Bundes hat sein historisches Dossier zum KZ-Arzt Josef Mengele, dem sogenannten "Todesengel von Auschwitz", online zugänglich gemacht - nach einem jahrelangen Rechtsstreit mit dem Historiker Gérard Wettstein. Die Akten enthalten unter anderem Zeitungsberichte und Polizeidokumente und geben Hinweise darauf, ob sich Mengele auf seiner Flucht zeitweise in der Schweiz aufhielt. Einzelne Passagen bleiben geschwärzt, was Wettstein als Zensur kritisiert; der NDB verteidigt die Schwärzungen als auf ein Minimum beschränkt und zum Schutz von Quellen und Drittpersonen nötig.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/drohnenfund-in-leipzig-berlin-sieht-russland-als-urheber-und-zieht-erste-konsequenzen">
+  <article class="card" data-link="https://www.srf.ch/news/international/brics-gipfel-in-indien-im-schatten-des-iran-krieges">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/drohnenfund-in-leipzig-berlin-sieht-russland-als-urheber-und-zieht-erste-konsequenzen">Drohnenfund in Leipzig - Berlin sieht Russland als Urheber - und zieht erste Konsequenzen</a></h3>
-    <div class="meta">SRF News — International · Sep 5, 2026</div>
-    <div class="why">outside / world — Diplomatie / Ukraine-Krieg</div>
-    <p class="summary">Die deutsche Regierung macht Russland offiziell für den versuchten Sprengstoffdrohnen-Anschlag auf dem Flughafen Leipzig/Halle vor rund vier Wochen verantwortlich, wie Innenminister Dobrindt und Aussenminister Wadephul in Berlin darlegten. Als Konsequenz kündigt Wadephul die Schliessung des russischen Generalkonsulats in Bonn bis zum 18. September an, beendet den Vertrag mit dem Russischen Haus in Berlin und bestellt den russischen Botschafter ein. Russland kündigt eine "spiegelbildliche" Reaktion an, während die EU-Kommission Deutschland ihre volle Solidarität zusichert.</p>
+    <h3><a href="https://www.srf.ch/news/international/brics-gipfel-in-indien-im-schatten-des-iran-krieges">Rivalität und Einigkeit: Brics-Gipfel im Zeichen des Iran-Kriegs</a></h3>
+    <div class="meta">SRF News — International · Sep 12, 2026</div>
+    <div class="why">outside / world — Diplomatie</div>
+    <p class="summary">Beim Brics-Gipfel in Delhi - Xi Jinpings erstem Indien-Besuch seit sieben Jahren - stand die Veranstaltung ganz im Schatten des Krieges zwischen Iran und den USA. Der Krieg setzt sämtliche zehn Brics-Mitgliedstaaten sowie das assoziierte Saudi-Arabien wirtschaftlich unter Druck, vor allem durch steigende Energiepreise und gestörte Lieferketten, während interne Differenzen zwischen Mitgliedern wie Iran und den Vereinigten Arabischen Emiraten sowie ein schwieriges Verhältnis zwischen Gastgeber Indien und China die gemeinsame Linie erschwerten.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-verstaerkungen-fuer-yb-fcb-und-gc-goertler-und-wuethrich-verletzt">
+  <article class="card" data-link="https://www.kicker.de/dortmund-gegen-paderborn-2026-bundesliga-5226827/spielbericht">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-verstaerkungen-fuer-yb-fcb-und-gc-goertler-und-wuethrich-verletzt">News aus der Super League - Verstärkungen für YB, FCB und GC - Görtler und Wüthrich verletzt</a></h3>
-    <div class="meta">SRF Sport — Super League · Sep 9, 2026</div>
+    <h3><a href="https://www.kicker.de/dortmund-gegen-paderborn-2026-bundesliga-5226827/spielbericht">Nach anfänglicher Mühe: BVB dreht in der zweiten Hälfte auf</a></h3>
+    <div class="meta">Kicker — Bundesliga · Sep 12, 2026</div>
+    <div class="why">outside / sport — Bundesliga</div>
+    <p class="summary">Am 3. Spieltag der Bundesliga 2026/27 tat sich Borussia Dortmund in den ersten 25 Minuten gegen Aufsteiger SC Paderborn schwer, übernahm danach aber die Kontrolle und gewann letztlich klar mit 3:0. Felix Nmecha war der Mann des Abends: Er traf zweimal aus dem Rückraum - unter anderem nach Zuspiel von Sabitzer - und krönte seinen Abend mit einem sehenswerten Fallrückzieher, während Paderborn über weite Strecken die nötige Durchschlagskraft im Angriff fehlte.</p>
+  </article>
+
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/tessiner-mit-1-0-heimsieg-die-letzten-europa-hoffnungen-von-yb-platzen-in-lugano">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/tessiner-mit-1-0-heimsieg-die-letzten-europa-hoffnungen-von-yb-platzen-in-lugano">Tessiner mit 1:0-Heimsieg - Die letzten Europa-Hoffnungen von YB platzen in Lugano</a></h3>
+    <div class="meta">SRF Sport — Super League · Sep 12, 2026</div>
     <div class="why">outside / sport — Super League</div>
-    <p class="summary">Der Super-League-Alltag wird derzeit von Verletzungssorgen und Transfers geprägt: St. Gallens Lukas Görtler fällt nach einer Schulterverletzung beim Auswärtssieg in Genf mehrere Wochen aus, und Young Boys muss mindestens einen Monat auf Innenverteidiger Gregory Wüthrich verzichten, der sich im Abschlusstraining vor dem Spiel gegen Luzern eine Wadenverletzung zuzog. Als Ersatz leiht YB den deutschen Verteidiger Moritz Jenz von Wolfsburg aus, während der FC Basel den französischen Aussenverteidiger Clément Michelin bis 2028 verpflichtet.</p>
+    <p class="summary">Im Spitzenspiel der bis dahin einzigen zwei ungeschlagenen Super-League-Teams setzte sich Lugano zuhause 1:0 gegen die Young Boys durch und blieb damit als einzige Mannschaft der Liga weiterhin ohne Niederlage. Für YB, das zuvor mit 26 erzielten und 14 kassierten Toren aufgefallen war, bedeutet die Niederlage das Ende der realistischen Chancen auf einen Startplatz im europäischen Wettbewerb in dieser Herbstrunde.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/11/1143879/the-download-biotech-future-cheaper-cleaner-steel/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/11/1143879/the-download-biotech-future-cheaper-cleaner-steel/">The Download: biotech's future and cheaper, cleaner steel</a></h3>
+    <h3><a href="https://www.technologyreview.com/2026/09/11/1143936/roundtables-will-ai-really-kill-us-all">Roundtables: Will AI really kill us all?</a></h3>
     <div class="meta">MIT Technology Review · Sep 11, 2026</div>
-    <div class="why">core / ai — daily roundup</div>
-    <p class="summary">The September 11 edition of The Download profiles nine biotech innovators from this year's "35 Innovators Under 35" list, whose work spans a reprogramming therapy that reverses vision loss to a personalized gene-editing treatment for a baby with a rare genetic disorder. It also covers Hertha Metals founder Laureen Meroueh, whose new furnace converts iron ore into refined liquid steel in a single step while swapping coal for natural gas - cutting emissions by at least half and costs by 25% compared with conventional steelmaking.</p>
+    <div class="why">core / ai — existential risk debate</div>
+    <p class="summary">MIT Technology Review previews a subscriber Roundtables conversation - featuring executive editor Niall Firth, senior AI editor Will Douglas Heaven and AI reporter Grace Huckins - unpacking why staff at some of the world's leading AI labs increasingly voice a real possibility that advanced AI could pose an existential threat to humanity. The piece frames the central question the discussion sets out to answer: are those extinction fears grounded in something real, or is this scaremongering and hype outpacing the evidence?</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/ai-is-changing-media-faster-than-marketers-can-measure-it/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/10/1143791/us-china-batteries/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-is-changing-media-faster-than-marketers-can-measure-it/">AI is changing media faster than marketers can measure it</a></h3>
-    <div class="meta">MarTech.org · Sep 11, 2026</div>
-    <div class="why">core / martech — measurement</div>
-    <p class="summary">Drawing on IAB's September update to its 2026 Outlook Study, the article argues that AI is reshaping how people discover and evaluate products - shortening the path from discovery to purchase - faster than advertisers' measurement systems can keep up. It cites survey data showing 44% of brand and agency ad-investment decision-makers name adapting to AI-driven search and shifting consumer behavior as a top media investment challenge, with commerce media spending expected to grow 13.6% this year partly as a result.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/ai-powered-martech-news-and-releases-september-12/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-powered-martech-news-and-releases-september-12/">AI-powered martech news and releases: September 12</a></h3>
-    <div class="meta">MarTech.org · Sep 12, 2026</div>
-    <div class="why">core / martech — product roundup</div>
-    <p class="summary">This edition of MarTech's recurring product-roundup covers four fresh AI releases: Givsly extending its values-based advertising platform to political campaigns, Sembly AI's 3.0 platform that turns meeting and CRM data into branded sales and marketing deliverables in over 45 languages, Storyblok Agents for natural-language content and translation management inside its headless CMS, and new purpose-built AI models Optimizely built directly into its platform for campaign creative and personalization.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/the-real-ai-decision-every-cmo-is-making-this-quarter/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/the-real-ai-decision-every-cmo-is-making-this-quarter/">The real AI decision every CMO is making this quarter</a></h3>
-    <div class="meta">MarTech.org · Sep 11, 2026</div>
-    <div class="why">core / martech — leadership</div>
-    <p class="summary">The piece argues that AI is collapsing the old line between technology strategy and product strategy, since martech vendors now absorb more of marketing's routine work than ever before. That leaves CMOs facing a sharper question this quarter: which capabilities are strategic enough to build and own in-house, versus which are safe to buy as a vendor feature.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/ai-can-scale-your-promises-faster-than-you-can-build-trust/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-can-scale-your-promises-faster-than-you-can-build-trust/">AI can scale your promises faster than you can build trust</a></h3>
-    <div class="meta">MarTech.org · Sep 11, 2026</div>
-    <div class="why">core / martech — brand trust</div>
-    <p class="summary">The article warns that AI makes it easy for marketers to confuse capability with value: it can generate more content, personalize more experiences, and reach more customers faster than ever, but that same speed lets brands make promises more quickly than their organizations can actually build the trust to deliver on them. It frames this gap as a growing risk for marketing teams racing to adopt AI without matching operational follow-through.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/your-marketing-agent-is-working-can-you-see-what-informs-its-recommendations/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/your-marketing-agent-is-working-can-you-see-what-informs-its-recommendations/">Your marketing agent is working. Can you see what informs its recommendations?</a></h3>
-    <div class="meta">MarTech.org · Sep 10, 2026</div>
-    <div class="why">core / martech — AI transparency</div>
-    <p class="summary">The article argues that agentic marketing tools only earn trust when marketers can inspect the data and reasoning behind an agent's recommendations, not just the output itself. It frames transparency into an agent's underlying evidence as a prerequisite for scaling AI-driven marketing decisions responsibly.</p>
+    <h3><a href="https://www.technologyreview.com/2026/09/10/1143791/us-china-batteries/">Can the US battery market untangle from China?</a></h3>
+    <div class="meta">MIT Technology Review · Sep 10, 2026</div>
+    <div class="why">core / ai — energy &amp; industrial tech policy</div>
+    <p class="summary">The US energy-storage market is growing at a record pace and could meaningfully cut grid emissions, but that growth still leans heavily on cheap Chinese battery cells, since US-made batteries - and even imports from South Korea - remain more expensive thanks to China's years-long head start in manufacturing and government support. New 2026 rules require a majority of storage-project material costs to come from outside China and restricted countries to qualify for tax credits, import tariffs on batteries have jumped from 7.5% to 25%, and a late-August national-emergency declaration effectively bars Chinese batteries from grid-scale storage - while new domestic plants from LG Energy Solution, Samsung SDI, Ford and SK On aren't set to ramp up until next year.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is thin (9 of the usual ~15) - CMSWire, Adobe's blog and MeasureCamp again had nothing that cleared the freshness bar, and both BBC feeds were unreachable; see the run notes above for the full breakdown. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is severely thin (6 of the usual ~15) - it's a Sunday, so MarTech.org, CMSWire and MIT Technology Review's weekday "Download" newsletter had little to nothing fresh; Adobe's blog, MeasureCamp and both BBC feeds again had nothing usable. See the run notes above for the full breakdown. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
