@@ -1,31 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-09-07",
-      "link": "https://www.srf.ch/news/schweiz/abstimmung-in-der-stadt-zuerich-wo-sollen-in-zuerich-kuenftig-hochhaeuser-gebaut-werden-duerfen",
-      "title": "Abstimmung über Hochhäuser: Zürich vor wegweisender Entscheidung"
-    },
-    {
-      "date": "2026-09-07",
-      "link": "https://www.srf.ch/news/international/intensive-polizeisuche-strom-sabotage-polizei-sucht-im-hambacher-forst-nach-taeter",
-      "title": "Strom-Sabotage: Polizei sucht im Wald bei Köln nach dem Tatverdächtigen"
-    },
-    {
-      "date": "2026-09-07",
-      "link": "https://www.kicker.de/hsv-gegen-mainz-2026-bundesliga-5226823/spielbericht",
-      "title": "Hamburger SV – 1. FSV Mainz 05 0:3"
-    },
-    {
-      "date": "2026-09-07",
-      "link": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/",
-      "title": "Scaling agentic AI pilots across the enterprise"
-    },
-    {
-      "date": "2026-09-07",
-      "link": "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west",
-      "title": "Data from drones in Ukraine is fueling a new Wild West marketplace"
-    },
-    {
       "date": "2026-09-08",
       "link": "https://www.srf.ch/news/schweiz/kantonale-abstimmung-genfer-bevoelkerung-stimmt-ueber-gratis-verhuetung-ab",
       "title": "Kanton Genf stimmt über Gratis-Verhütung für alle ab"
@@ -279,6 +254,41 @@
       "date": "2026-09-14",
       "link": "https://martech.org/how-to-create-b2b-content-that-buyers-keep-using/",
       "title": "How to create B2B content that buyers keep using"
+    },
+    {
+      "date": "2026-09-15",
+      "link": "https://www.srf.ch/wissen/klimawandel/hitze-und-trockenheit-diese-folgen-hat-der-rekordsommer-2026",
+      "title": "Welche Folgen hat der Rekordsommer 2026?"
+    },
+    {
+      "date": "2026-09-15",
+      "link": "https://www.srf.ch/news/international/wegen-zollstreit-mit-den-usa-kanada-will-einzigartige-allianz-mit-der-eu",
+      "title": "Zollstreit mit USA: Kanada will die Beziehungen zur EU vertiefen"
+    },
+    {
+      "date": "2026-09-15",
+      "link": "https://www.srf.ch/sport/fussball/super-league/meister-laesst-erneut-federn-nach-buerkis-ellbogenschlag-gc-entfuehrt-drei-punkte-aus-thun",
+      "title": "Meister lässt erneut Federn - Nach Bürkis Ellbogenschlag: GC entführt drei Punkte aus Thun"
+    },
+    {
+      "date": "2026-09-15",
+      "link": "https://www.kicker.de/leipzig-gegen-hsv-2026-bundesliga-5226828/spielbericht",
+      "title": "Das nächste 0:5-Debakel: HSV kommt auch in Leipzig unter die Räder"
+    },
+    {
+      "date": "2026-09-15",
+      "link": "https://martech.org/ai-exposes-what-your-brand-guidelines-leave-unsaid/",
+      "title": "AI exposes what your brand guidelines leave unsaid"
+    },
+    {
+      "date": "2026-09-15",
+      "link": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/",
+      "title": "The AI industry has taken a doomer turn. What now?"
+    },
+    {
+      "date": "2026-09-15",
+      "link": "https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/",
+      "title": "Meet the under-35s shaping the future of biotech"
     }
   ]
 }

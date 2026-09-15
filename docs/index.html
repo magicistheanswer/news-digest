@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-14</title>
+<title>Morning News Digest — 2026-09-15</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -98,118 +98,125 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-14, Monday):
+  Run notes (2026-09-15, Tuesday):
   - Direct RSS/Atom fetching of feeds.yaml sources is still blocked from this sandbox's
     network egress. Fallback used, as on every prior run: WebSearch scoped to each
     source's domain via allowed_domains, with explicit follow-up "publish date" searches
-    before selecting any candidate, and a second confirmation pass on anything that
-    looked promising.
-  - This was another severe core shortfall, and CMSWire is the main reason. Every
-    candidate that looked fresh in an initial search (Liferay DSR, CallRail x HubSpot,
-    Zendesk voice translation, Klaviyo's K:BOS announcements, Canva AI 2.0, a
-    Klaviyo/AI-shopping-trust piece) either could not be pinned to a specific dated URL,
-    or - on direct follow-up - turned out to verify to a much older date (the Klaviyo
-    "AI agents" piece read as Sep 9 on first pass but resolved to June 30, 2026 on a
-    second, more targeted check; Canva AI 2.0 to April 2026; "Consumers turning to AI to
-    buy products" to March 2026). Given a proven false positive on one of these, the
-    rest were treated as unverified and left out rather than risk a stale or wrong link.
-    No usable CMSWire content today - matches the pattern from every prior run.
-  - MarTech.org: most candidates from an initial broad search were either the evergreen,
-    undated "latest AI-powered martech news and releases" hub (Optimizely's new AI
-    models, Stravito's Persona Builder - no verifiable per-item publish date, so left
-    out per the freshness rule) or, on date-checking, resolved to Dec 2025, May 2026 or
-    Jan 2026. One candidate cleared the bar: "How to create B2B content that buyers keep
-    using" (Sep 10).
-  - Adobe Experience Cloud Blog: nothing newer than early-September Premiere/After
-    Effects posts (Creative Cloud, not Experience Cloud/AEP) - skipped, as on every
-    prior run. MeasureCamp: only event-calendar listings again - skipped, as on every
-    prior run.
-  - MIT Technology Review: every "Download" newsletter issue from Sep 7-11 is already
-    in data/history.json from the last five days' digests. One standalone (non-Download)
-    piece cleared the bar: "Powering AI is an architecture problem" (Sep 10), on the
-    Virginia data-center grid fault. A widely-summarized "Anthropic/Claude formalizes a
-    proof of Fermat's Last Theorem" story could not be traced to a distinct dated URL
-    separate from the already-used Sep 8 "OpenAI math controversy" piece, so it was left
-    out rather than link the wrong article.
-  - BBC News - World and BBC Sport - Football: WebSearch again returned "not accessible
-    to our user agent" for both bbci.co.uk and bbc.co.uk - unreachable on every run so
-    far. No Premier League coverage today as a result.
-  - Net: only 2 core stories cleared the bar today (MIT Technology Review, MarTech.org),
-    against 4 outside stories. Freshness beats quota per CLAUDE.md, so this was left as
-    a shortfall (6 of the usual ~15) rather than backfilled with older or unverifiable
-    filler; the 75/25 mix ratio is inverted today, same as yesterday.
-  - Outside: Schweiz - the federal vacancy-rate release showing under 1% empty housing
-    for the first time in 15 years (Sep 10). World - a UK air-traffic-control system
-    fault that cancelled 1400+ flights including Swiss connections (Sep 9). Sport -
-    Schalke's first Bundesliga win since returning to the top flight, 1225 days
-    (Sep 11 match, Sep 12 report), and Basel's 4:2 comeback at Luzern in interim coach
-    Nocentini's first match after Lichtsteiner's dismissal (Sep 13/14) - chosen over a
-    second Bundesliga candidate (Magdeburg-Kaiserslautern) already covered by similar
-    fixtures in recent days, to keep sport variety across both leagues.
+    before selecting any candidate.
+  - Two false positives caught and discarded today, both worth flagging: an SRF Bern
+    Freiburg Wallis story about Spital Emmental investing CHF 145 million looked
+    current in an initial search, but a targeted date check resolved its actual
+    publish date to 21 August 2013; a companion audio piece on the same topic
+    resolved to 27 February 2014. Neither was used. Likewise a Servette-Lausanne
+    "Leman-Derby, 8. Runde" match report initially looked like fresh Super League
+    content but verified to 28 September 2024 - discarded. An SRF piece "Iran-Krieg:
+    Ein gezielter Angriff auf die Wirtschaft des Landes" verified to 21 April 2026 -
+    also discarded, as did "Kiew unter Dauerbeschuss" at roughly two weeks old.
+  - CMSWire: every candidate from an initial broad search (Zendesk voice translation,
+    Liferay DSR, Klaviyo K:BOS updates, Sierra AI valuation, Optimizely Opticon
+    coverage) either verified to early September or had no fixed publish date
+    attached. A "Fimo AI CMS" launch item was explicitly dated to 8 September 2026
+    in its own text but no dated per-article permalink could be found (only the
+    general "The Wire" hub page), so it was left out rather than link a non-specific
+    URL. No usable CMSWire content today - matches the pattern from every prior run.
+  - Adobe Experience Cloud Blog: nothing newer than "Introducing Adobe for Slack"
+    (Sep 2) - left out as too old for a 7-day-cadence source, consistent with every
+    prior run. MeasureCamp: only event-calendar listings again - skipped, as on
+    every prior run.
+  - MIT Technology Review: two standalone pieces cleared the bar - "The AI industry
+    has taken a doomer turn. What now?" (Sep 14, on major AI labs' public shift
+    toward warning about catastrophic risk) and "Meet the under-35s shaping the
+    future of biotech" (Sep 11, a companion piece to the already-used Sep 9 "35
+    Innovators Under 35" newsletter blurb, but a distinct article in its own right).
+  - MarTech.org: "AI exposes what your brand guidelines leave unsaid" cleared the
+    bar (published within the last day).
+  - BBC News - World and BBC Sport - Football: WebSearch again returned "not
+    accessible to our user agent" for both bbci.co.uk and bbc.co.uk - unreachable
+    on every run so far. No Premier League coverage today as a result.
+  - Net: only 3 core stories cleared the bar today (MarTech.org, MIT Technology
+    Review x2), against 4 outside stories. Freshness beats quota per CLAUDE.md, so
+    this was left as a shortfall (7 of the usual ~15) rather than backfilled with
+    older or unverifiable filler; the 75/25 mix ratio is inverted today, same as on
+    recent prior runs.
+  - Outside: Schweiz - MeteoSchweiz's wrap-up of the consequences of the record-hot
+    2026 summer (Sep 10), used instead of the debunked Spital Emmental story. World -
+    Canada seeking a closer EU partnership amid its US tariff dispute (Sep 14).
+    Sport - GC's 1:0 upset at defending champion Thun in Super League round 8
+    (Sep 12), and Hamburger SV's second 0:5 defeat in a week, this time at RB
+    Leipzig (Sep 13) - chosen over the debunked Servette-Lausanne report to keep
+    both leagues represented.
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Monday, September 14, 2026 · 6 articles</div>
+    <div class="date">Tuesday, September 15, 2026 · 7 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/wohnungssuche-bleibt-schwierig-leerwohnungsziffer-sinkt-2026-erstmals-unter-1-prozent">
+  <article class="card" data-link="https://www.srf.ch/wissen/klimawandel/hitze-und-trockenheit-diese-folgen-hat-der-rekordsommer-2026">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/wohnungssuche-bleibt-schwierig-leerwohnungsziffer-sinkt-2026-erstmals-unter-1-prozent">Wohnungssuche bleibt schwierig – Leerwohnungsziffer sinkt 2026 erstmals unter 1 Prozent</a></h3>
-    <div class="meta">SRF News — Schweiz · Sep 10, 2026</div>
-    <div class="why">outside / schweiz — Wohnungsmarkt</div>
-    <p class="summary">Der Bund vermeldet für 2026 erstmals seit 15 Jahren eine Leerwohnungsziffer unter einem Prozent: Schweizweit standen per 1. Juni nur noch 45'493 Wohnungen leer, 0.93 Prozent des Bestands und bereits der sechste Rückgang in Folge. In 15 Kantonen liegt die Quote inzwischen unter einem Prozent, was die Wohnungssuche für Mietende zunehmend erschwert.</p>
+    <h3><a href="https://www.srf.ch/wissen/klimawandel/hitze-und-trockenheit-diese-folgen-hat-der-rekordsommer-2026">Welche Folgen hat der Rekordsommer 2026?</a></h3>
+    <div class="meta">SRF Wissen — Klimawandel · Sep 10, 2026</div>
+    <div class="why">outside / schweiz — Klimafolgen</div>
+    <p class="summary">Der Sommer 2026 war mit einer Durchschnittstemperatur von 17.2 Grad zwischen Juni und August der heisseste seit Messbeginn 1864 in der Schweiz - knapp 0.4 Grad über dem bisherigen Rekordsommer 2003. SRF fasst die Folgen zusammen: ein massives Fischsterben in überhitzten Gewässern, vertrocknete Wiesen und Ernteausfälle in der Landwirtschaft sowie eine starke Gletscherschmelze mit teils sehr tiefen Grundwasserpegeln - Auswirkungen, die je nach Herbst- und Winterniederschlag laut Fachleuten bis weit ins nächste Jahr spürbar bleiben könnten.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/stoerung-der-flugsicherung-technikproblem-verursacht-chaos-an-flughaefen-in-grossbritannien">
+  <article class="card" data-link="https://www.srf.ch/news/international/wegen-zollstreit-mit-den-usa-kanada-will-einzigartige-allianz-mit-der-eu">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/stoerung-der-flugsicherung-technikproblem-verursacht-chaos-an-flughaefen-in-grossbritannien">Störung der Flugsicherung – Technikproblem verursacht Chaos an Flughäfen in Grossbritannien</a></h3>
-    <div class="meta">SRF News — International · Sep 9, 2026</div>
-    <div class="why">outside / world — Luftverkehr</div>
-    <p class="summary">Eine technische Störung im Flugdatensystem der britischen Flugsicherung NATS hat für landesweites Chaos gesorgt: Mehr als 1400 Flüge fielen aus, betroffen waren unter anderem Heathrow, Gatwick, Stansted sowie Verbindungen ab Zürich. Auch die Swiss strich 23 Flüge mit rund 2800 betroffenen Passagieren; Billigfluglinien wie Ryanair und Wizz Air kritisierten die wiederholten Ausfälle der britischen Flugsicherungsinfrastruktur scharf.</p>
+    <h3><a href="https://www.srf.ch/news/international/wegen-zollstreit-mit-den-usa-kanada-will-einzigartige-allianz-mit-der-eu">Zollstreit mit USA: Kanada will die Beziehungen zur EU vertiefen</a></h3>
+    <div class="meta">SRF News — International · Sep 14, 2026</div>
+    <div class="why">outside / world — Handelspolitik</div>
+    <p class="summary">Im Zollstreit mit den USA sucht Kanadas Premierminister Mark Carney eine engere Partnerschaft mit der EU - einen Beitritt schliesst er dabei ausdrücklich aus, es gehe um eine "einzigartige Allianz" statt Mitgliedschaft. Carney reist in den kommenden Tagen nach Frankreich und Grossbritannien und spricht vor dem Europaparlament; ein Treffen mit Frankreichs Präsident Macron ist für den 20. September geplant.</p>
   </article>
 
-  <article class="card" data-link="https://www.kicker.de/union-gegen-schalke-2026-bundesliga-5226833/spielbericht">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/meister-laesst-erneut-federn-nach-buerkis-ellbogenschlag-gc-entfuehrt-drei-punkte-aus-thun">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.kicker.de/union-gegen-schalke-2026-bundesliga-5226833/spielbericht">Gosens leitet gegen Ex-Klub ein: Schalke feiert ersten Bundesliga-Sieg seit 1225 Tagen</a></h3>
-    <div class="meta">Kicker — Bundesliga · Sep 12, 2026</div>
-    <div class="why">outside / sport — Bundesliga</div>
-    <p class="summary">Schalke 04 hat mit einem 3:1-Sieg bei Union Berlin seinen ersten Bundesliga-Sieg seit der Rückkehr in die höchste Spielklasse gefeiert - den ersten Dreier seit 1225 Tagen. Robin Gosens, der einst selbst für Union spielte, leitete den Erfolg gegen seinen Ex-Klub ein, während die Berliner erst spät ins Spiel zurückfanden.</p>
-  </article>
-
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/basel-siegt-nach-horrorstart-nach-lichtsteiners-abgang-wachsen-shaqiri-fluegel">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/basel-siegt-nach-horrorstart-nach-lichtsteiners-abgang-wachsen-shaqiri-fluegel">Basel siegt nach Horrorstart – Nach Lichtsteiners Abgang wachsen Shaqiri Flügel</a></h3>
-    <div class="meta">SRF Sport — Super League · Sep 13, 2026</div>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/meister-laesst-erneut-federn-nach-buerkis-ellbogenschlag-gc-entfuehrt-drei-punkte-aus-thun">Meister lässt erneut Federn - Nach Bürkis Ellbogenschlag: GC entführt drei Punkte aus Thun</a></h3>
+    <div class="meta">SRF Sport — Super League · Sep 12, 2026</div>
     <div class="why">outside / sport — Super League</div>
-    <p class="summary">Unter Interimstrainer Luigi Nocentini, der das Traineramt erst wenige Tage zuvor nach der Entlassung von Stephan Lichtsteiner übernommen hatte, feierte der FC Basel einen imponierenden Einstand: Nach frühem Rückstand gegen Luzern drehte Basel dank zweier Tore und eines Assists von Xherdan Shaqiri die Partie zu einem 4:2-Auswärtssieg.</p>
+    <p class="summary">Aufsteiger GC hat Meister Thun in der 8. Runde der Super League auswärts mit 1:0 geschlagen - Samuele Bengondo traf in der 23. Minute zu seinem zweiten Saisontor. Thun musste zudem über eine Stunde lang in Unterzahl spielen, nachdem Marco Bürki nach einem Ellbogenschlag die Rote Karte gesehen hatte.</p>
+  </article>
+
+  <article class="card" data-link="https://www.kicker.de/leipzig-gegen-hsv-2026-bundesliga-5226828/spielbericht">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.kicker.de/leipzig-gegen-hsv-2026-bundesliga-5226828/spielbericht">Das nächste 0:5-Debakel: HSV kommt auch in Leipzig unter die Räder</a></h3>
+    <div class="meta">Kicker — Bundesliga · Sep 13, 2026</div>
+    <div class="why">outside / sport — Bundesliga</div>
+    <p class="summary">Der Hamburger SV hat bei RB Leipzig 0:5 verloren und damit binnen einer Woche das zweite Kantersieg-Debakel kassiert, nach dem 0:3 gegen Mainz sieben Tage zuvor. Nach drei Spieltagen steht der HSV weiterhin ohne Punkte und mit 0:12 Toren am Tabellenende.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem">
+  <article class="card" data-link="https://martech.org/ai-exposes-what-your-brand-guidelines-leave-unsaid/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/10/1141649/powering-ai-is-an-architecture-problem">Powering AI is an architecture problem</a></h3>
-    <div class="meta">MIT Technology Review · Sep 10, 2026</div>
-    <div class="why">core / ai — infrastructure &amp; energy</div>
-    <p class="summary">MIT Technology Review traces a transmission-line fault in Ashburn, Virginia - the heart of the world's largest data-center cluster - that knocked more than 3 gigawatts of load off the grid in seconds. The piece argues this wasn't a capacity failure but an architecture one: AI training campuses can swing up to 70% of their load within milliseconds and trip offline just as fast at the first sign of upstream trouble, in order to protect billions of dollars of compute - behavior the grid wasn't designed to absorb.</p>
+    <h3><a href="https://martech.org/ai-exposes-what-your-brand-guidelines-leave-unsaid/">AI exposes what your brand guidelines leave unsaid</a></h3>
+    <div class="meta">MarTech.org · Sep 14, 2026</div>
+    <div class="why">core / martech — brand governance &amp; AI</div>
+    <p class="summary">MarTech.org argues that most brand guidelines were written for human writers and designers, leaving a layer of unstated assumptions and judgment calls that AI content tools can't infer on their own. As more production shifts to AI, the piece makes the case for turning those implicit rules explicit, or risk AI output that technically follows the guidelines while missing the brand's actual voice.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/how-to-create-b2b-content-that-buyers-keep-using/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/how-to-create-b2b-content-that-buyers-keep-using/">How to create B2B content that buyers keep using</a></h3>
-    <div class="meta">MarTech.org · Sep 10, 2026</div>
-    <div class="why">core / martech — content strategy</div>
-    <p class="summary">MarTech.org looks at how generative AI has changed the economics of B2B content production: teams can now produce far more, far faster, which shifts the real constraint from output capacity to judgment about which pieces actually deserve ongoing investment. The piece argues for anchoring content strategy to recurring buyer usage and real engagement signals rather than publishing volume alone.</p>
+    <h3><a href="https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now/">The AI industry has taken a doomer turn. What now?</a></h3>
+    <div class="meta">MIT Technology Review · Sep 14, 2026</div>
+    <div class="why">core / ai — industry safety debate</div>
+    <p class="summary">MIT Technology Review examines a marked shift in tone from leading AI labs, whose public messaging has moved from optimism toward explicit warnings about catastrophic risk, in the wake of a cyberattack carried out by a swarm of autonomous AI agents. The piece asks what practically follows from that rhetorical turn, and whether newly vocal caution from lab leaders changes anything about how these systems are actually being built and shipped.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/">Meet the under-35s shaping the future of biotech</a></h3>
+    <div class="meta">MIT Technology Review · Sep 11, 2026</div>
+    <div class="why">core / ai — Innovators Under 35, biotech</div>
+    <p class="summary">As part of its 2026 "35 Innovators Under 35" list, MIT Technology Review profiles nine researchers pushing biotech forward, among them a Tanzanian engineer whose roughly $70 device stops postpartum hemorrhage in most patients within 20 minutes. The profiles range from cheap, life-saving medical devices to more speculative frontiers like age-reversal therapy, illustrating how differently this year's young biotech innovators are approaching impact.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is again well below the usual ~15 (6 articles) - CMSWire and MarTech.org's evergreen roundup pages kept surfacing candidates that verified to much older dates or couldn't be pinned to a dated URL at all, and MIT Technology Review's last five daily "Download" issues were already used in recent digests; Adobe's blog, MeasureCamp and both BBC feeds again had nothing usable. See the run notes above for the full breakdown. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is again below the usual ~15 (7 articles) - CMSWire, Adobe's blog and MeasureCamp again had nothing usable, and two initially-promising Swiss/Super League candidates turned out to verify to 2013/2014/2024 dates and were discarded (see the run notes above). Both BBC feeds remained unreachable. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
