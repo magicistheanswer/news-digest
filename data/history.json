@@ -1,31 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-09-08",
-      "link": "https://www.srf.ch/news/schweiz/kantonale-abstimmung-genfer-bevoelkerung-stimmt-ueber-gratis-verhuetung-ab",
-      "title": "Kanton Genf stimmt über Gratis-Verhütung für alle ab"
-    },
-    {
-      "date": "2026-09-08",
-      "link": "https://www.srf.ch/news/international/verurteilter-kriegsverbrecher-mladic-ist-tot-der-serbische-nationalismus-lebt-weiter",
-      "title": "Mladic ist tot – der serbische Nationalismus lebt weiter"
-    },
-    {
-      "date": "2026-09-08",
-      "link": "https://www.kicker.de/frankfurt-gegen-augsburg-2026-bundesliga-5226821/spielbericht",
-      "title": "Atubolu patzt schwer: Augsburg rollt nach der Pause über die Eintracht und ist Erster"
-    },
-    {
-      "date": "2026-09-08",
-      "link": "https://www.technologyreview.com/2026/09/07/1143592/the-download-underground-hydrogen-search-rogue-openai-agents/",
-      "title": "The Download: the hunt for underground hydrogen, and more rogue OpenAI agents"
-    },
-    {
-      "date": "2026-09-08",
-      "link": "https://martech.org/whats-next-in-content-operations-agents-what-else/",
-      "title": "What's next in content operations? Agents (what else?)"
-    },
-    {
       "date": "2026-09-09",
       "link": "https://www.technologyreview.com/2026/09/08/1143615/the-download-35-innovators-under-35-spiderwebs-measuring-nature/",
       "title": "The Download: our 35 Innovators Under 35 this year"
@@ -289,6 +264,41 @@
       "date": "2026-09-15",
       "link": "https://www.technologyreview.com/2026/09/11/1143834/meet-the-under-35s-shaping-the-future-of-biotech/",
       "title": "Meet the under-35s shaping the future of biotech"
+    },
+    {
+      "date": "2026-09-16",
+      "link": "https://www.srf.ch/news/schweiz/zweite-srg-umfrage-wie-stimmen-sie-ab",
+      "title": "Zweite SRG-Umfrage - Wie stimmen Sie ab?"
+    },
+    {
+      "date": "2026-09-16",
+      "link": "https://www.srf.ch/news/international/neue-regierung-im-kosovo-kurti-bleibt-premier-opposition-boykottiert-abstimmung",
+      "title": "Kurti bleibt Premier vom Kosovo – Opposition boykottiert Abstimmung"
+    },
+    {
+      "date": "2026-09-16",
+      "link": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues/",
+      "title": "When AI agents cheated at math, other AI agents blew the whistle on them"
+    },
+    {
+      "date": "2026-09-16",
+      "link": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk",
+      "title": "What must happen for AI's trillion-dollar gamble to pay off"
+    },
+    {
+      "date": "2026-09-16",
+      "link": "https://martech.org/the-next-martech-strategy-starts-with-the-operating-environment/",
+      "title": "The next martech strategy starts with the operating environment"
+    },
+    {
+      "date": "2026-09-16",
+      "link": "https://martech.org/3-ways-to-make-ai-safer-in-a-live-ad-account/",
+      "title": "3 ways to make AI safer in a live ad account"
+    },
+    {
+      "date": "2026-09-16",
+      "link": "https://martech.org/the-ultimate-battle-for-your-digital-storefront/",
+      "title": "The ultimate battle for your digital storefront"
     }
   ]
 }
