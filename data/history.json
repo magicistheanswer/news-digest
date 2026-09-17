@@ -1,46 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-09-09",
-      "link": "https://www.technologyreview.com/2026/09/08/1143615/the-download-35-innovators-under-35-spiderwebs-measuring-nature/",
-      "title": "The Download: our 35 Innovators Under 35 this year"
-    },
-    {
-      "date": "2026-09-09",
-      "link": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math",
-      "title": "What OpenAI's latest controversy tells us about the future of math"
-    },
-    {
-      "date": "2026-09-09",
-      "link": "https://martech.org/why-ai-hasnt-solved-marketings-time-problem/",
-      "title": "Why AI hasn't solved marketing's time problem"
-    },
-    {
-      "date": "2026-09-09",
-      "link": "https://martech.org/your-2027-ctv-budget-needs-evidence-now/",
-      "title": "Your 2027 CTV budget needs evidence now"
-    },
-    {
-      "date": "2026-09-09",
-      "link": "https://martech.org/why-growing-restaurant-chains-win-at-local-search-and-ai-visibility/",
-      "title": "Why growing restaurant chains win at local search and AI visibility"
-    },
-    {
-      "date": "2026-09-09",
-      "link": "https://www.srf.ch/news/schweiz/kampfjet-vertrag-kein-fixpreis-scharfe-kritik-am-bund-fuer-f-35-beschaffung",
-      "title": "Kampfjet-Vertrag - «Kein Fixpreis»: Scharfe Kritik am Bund für F-35-Beschaffung"
-    },
-    {
-      "date": "2026-09-09",
-      "link": "https://www.srf.ch/news/international/von-piste-abgekommen-mindestens-fuenf-tote-bei-flugzeugunglueck-in-miami",
-      "title": "Von Piste abgekommen - Mindestens fünf Tote bei Flugzeugunglück in Miami"
-    },
-    {
-      "date": "2026-09-09",
-      "link": "https://www.kicker.de/wieder-griechenland-augsburg-gibt-jakic-doch-noch-ab-1250608/artikel",
-      "title": "Wieder Griechenland: Augsburg gibt Jakic doch noch ab - PAOK schlägt erneut zu"
-    },
-    {
       "date": "2026-09-10",
       "link": "https://www.srf.ch/news/schweiz/bundesgerichtsurteil-vegane-produkte-duerfen-nicht-salami-oder-schinken-heissen",
       "title": "Bundesgericht: Vegane Produkte dürfen nicht Salami oder Schinken heissen"
@@ -299,6 +259,51 @@
       "date": "2026-09-16",
       "link": "https://martech.org/the-ultimate-battle-for-your-digital-storefront/",
       "title": "The ultimate battle for your digital storefront"
+    },
+    {
+      "date": "2026-09-17",
+      "link": "https://www.srf.ch/news/schweiz/stimmrechtsalter-16-in-basel-stadt-sollen-16-und-17-jaehrige-kuenftig-abstimmen-duerfen",
+      "title": "Parlament von Basel-Stadt sagt ja zu Stimmrechtsalter 16"
+    },
+    {
+      "date": "2026-09-17",
+      "link": "https://www.srf.ch/news/international/kosovo-tribunal-ehemaliger-kosovo-praesident-thaci-zu-25-jahren-haft-verurteilt",
+      "title": "Kosovo-Tribunal - Ehemaliger Kosovo-Präsident Thaci zu 25 Jahren Haft verurteilt"
+    },
+    {
+      "date": "2026-09-17",
+      "link": "https://www.srf.ch/sport/fussball/super-league/nachtragsspiel-der-4-runde-4-tore-vor-der-pause-lugano-ueberfaehrt-schwache-st-galler",
+      "title": "Nachtragsspiel der 4. Runde - 4 Tore vor der Pause: Lugano überfährt schwache St. Galler"
+    },
+    {
+      "date": "2026-09-17",
+      "link": "https://www.technologyreview.com/2026/09/16/1144210/meet-a-mouse-whose-brain-cortex-is-made-up-of-human-cells/",
+      "title": "Meet a mouse whose brain cortex is made up of human cells"
+    },
+    {
+      "date": "2026-09-17",
+      "link": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
+      "title": "Building the materials foundation for AI"
+    },
+    {
+      "date": "2026-09-17",
+      "link": "https://martech.org/iab-tech-lab-proposes-new-rules-for-programmatic/",
+      "title": "IAB Tech Lab proposes new rules for programmatic"
+    },
+    {
+      "date": "2026-09-17",
+      "link": "https://martech.org/does-anyone-understand-the-cdp-market-anymore/",
+      "title": "Does anyone understand the CDP market anymore?"
+    },
+    {
+      "date": "2026-09-17",
+      "link": "https://martech.org/hubspot-rebuilds-its-platform-around-ai-agents/",
+      "title": "HubSpot rebuilds its platform around AI agents"
+    },
+    {
+      "date": "2026-09-17",
+      "link": "https://martech.org/the-problem-with-ai-doing-exactly-what-you-ask/",
+      "title": "The problem with AI doing exactly what you ask"
     }
   ]
 }
