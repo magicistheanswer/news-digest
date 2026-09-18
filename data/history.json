@@ -1,41 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-09-10",
-      "link": "https://www.srf.ch/news/schweiz/bundesgerichtsurteil-vegane-produkte-duerfen-nicht-salami-oder-schinken-heissen",
-      "title": "Bundesgericht: Vegane Produkte dürfen nicht Salami oder Schinken heissen"
-    },
-    {
-      "date": "2026-09-10",
-      "link": "https://www.srf.ch/news/international/heftige-niederschlaege-dutzende-verletzte-durch-rekord-regenfaelle-in-japan",
-      "title": "Heftige Niederschläge - Dutzende Verletzte durch Rekord-Regenfälle in Japan"
-    },
-    {
-      "date": "2026-09-10",
-      "link": "https://www.srf.ch/sport/fussball/super-league/aus-0-1-mach-3-1-wende-innert-zwei-minuten-lugano-auch-von-basel-nicht-zu-stoppen",
-      "title": "Aus 0:1 mach 3:1 - Wende innert zwei Minuten: Lugano auch von Basel nicht zu stoppen"
-    },
-    {
-      "date": "2026-09-10",
-      "link": "https://www.technologyreview.com/2026/09/09/1143767/the-download-openai-math-future-battery-record/",
-      "title": "The Download: OpenAI's turning point for math and a battery record"
-    },
-    {
-      "date": "2026-09-10",
-      "link": "https://www.technologyreview.com/2026/09/09/1143279/understanding-the-thermal-ceiling-in-portable-power/",
-      "title": "Understanding the thermal ceiling in portable power"
-    },
-    {
-      "date": "2026-09-10",
-      "link": "https://www.technologyreview.com/2026/09/08/1142074/yuancheng-ryan-lu-age-reversal-tech-restores-sight/",
-      "title": "This geneticist's age-reversal tech could help restore sight"
-    },
-    {
-      "date": "2026-09-10",
-      "link": "https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/",
-      "title": "This AI entrepreneur is developing agents that can plan ahead for the unexpected"
-    },
-    {
       "date": "2026-09-11",
       "link": "https://www.cmswire.com/the-wire/zendesks-momentum-shows-contact-centers-are-racing-to-end-silos-as-voice-volumes-climb/",
       "title": "Zendesk's Momentum Shows Contact Centers are Racing to End Silos"
@@ -304,6 +269,36 @@
       "date": "2026-09-17",
       "link": "https://martech.org/the-problem-with-ai-doing-exactly-what-you-ask/",
       "title": "The problem with AI doing exactly what you ask"
+    },
+    {
+      "date": "2026-09-18",
+      "link": "https://www.srf.ch/news/schweiz/tuberkulose-fall-an-schule-infizierte-lehrperson-koennte-kinder-angesteckt-haben",
+      "title": "Tuberkulose-Fall an Schule - Infizierte Lehrperson könnte Kinder angesteckt haben"
+    },
+    {
+      "date": "2026-09-18",
+      "link": "https://www.srf.ch/news/international/kanadas-premier-in-strassburg-carney-zeigt-sich-offen-fuer-vertiefte-kooperation-mit-der-eu",
+      "title": "Kanadas Premier in Strassburg - Carney zeigt sich offen für vertiefte Kooperation mit der EU"
+    },
+    {
+      "date": "2026-09-18",
+      "link": "https://www.technologyreview.com/2026/09/17/1144251/innovators-shaping-climate-tech",
+      "title": "Meet the innovators under 35 shaping climate tech"
+    },
+    {
+      "date": "2026-09-18",
+      "link": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
+      "title": "AI models need more data about biology, and OpenAI is paying to create it"
+    },
+    {
+      "date": "2026-09-18",
+      "link": "https://martech.org/what-happens-to-martech-when-the-cmo-disappears/",
+      "title": "What happens to martech when the CMO disappears?"
+    },
+    {
+      "date": "2026-09-18",
+      "link": "https://martech.org/why-you-need-to-know-the-nones-of-your-business/",
+      "title": "Why you need to know the 'nones' of your business"
     }
   ]
 }
