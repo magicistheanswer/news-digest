@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-18</title>
+<title>Morning News Digest — 2026-09-19</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -98,129 +98,138 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-18, Friday):
+  Run notes (2026-09-19, Saturday):
   - Direct RSS/Atom fetching of feeds.yaml sources is still blocked from this sandbox's
     network egress. Fallback used, as on every prior run: WebSearch scoped to each
-    source's domain via allowed_domains, with explicit follow-up "publish date" searches
-    before selecting any candidate - and, per the lesson from the 2026-09-17 run, a
-    second independent check on any WebSearch-synthesized date claim before trusting it.
-  - That second check caught two bad candidates today. An SRF International hit
-    ("Alterskontrolle: Startup will Jugendschutz im Internet revolutionieren") that a
-    first-pass search implied was current turned out, on directly checking the URL, to
-    be from April 20, 2026 - five months stale - so it was dropped. Likewise a "Super
-    League, 5. Runde" SRF Sport result that looked like today's football turned out to
-    be a Thun vs. St. Gallen match from August 30, 2026 (and a second search returned an
-    unrelated "18. Super-League-Runde" result, clearly from much later in a season that
-    has only played 5 rounds so far) - also dropped. Lesson reinforced: cross-check every
-    WebSearch date claim against the actual article URL/byline before using it, not just
-    the search tool's own framing.
-  - CMSWire: nothing newer than a Sep 10 item (Zendesk AI voice translation) turned up
-    across two searches - 8 days old, past the ~7-day bar for a daily-cadence source.
-    Skipped, continuing the pattern from every prior run except Sep 11.
-  - Adobe Experience Cloud Blog: the closest candidate was again "Content as a Service
-    v3" (said to be Sep 15) with no findable standalone article URL - left out rather
-    than guess one, same as every prior run. A Sep 8 Premiere/After Effects AI post was
-    also on blog.adobe.com but is Creative Cloud content, outside this feed's
-    Experience Cloud/Platform scope. MeasureCamp: only event-calendar listings again
-    (2026 city list) - skipped, as on every prior run.
-  - MIT Technology Review: two pieces cleared the bar with dates embedded in their URLs -
-    "Meet the innovators under 35 shaping climate tech" (Sep 17, one day old) and "AI
-    models need more data about biology, and OpenAI is paying to create it" (Sep 15).
-    Two other candidates that surfaced ("Building the materials foundation for AI" and
-    "What must happen for AI's trillion-dollar gamble to pay off") were both already
-    used in the last two digests, so skipped as repeats.
-  - MarTech.org: two pieces cleared the bar, both independently corroborated with a
-    byline and a "published X hours/days ago" cross-check landing on Sep 17 - "What
-    happens to martech when the CMO disappears?" (Frans Riemersma, on Forrester's 2026
-    Fortune 500 finding that only 36% of companies still use the CMO title, down from
-    49% in 2025) and "Why you need to know the 'nones' of your business" (Chris Robson,
-    on unattributed/(direct)/(none) traffic). A third candidate, "Adobe expanding free
-    AI and digital skills training," had a confirmed byline and Sep 17 timestamp but no
-    findable standalone permalink beyond the homepage listing - left out rather than
-    guess a URL. A fourth, "Adobe rebrands Experience Cloud as 'CX Enterprise'," checked
-    out as May 5, 2026 - five months stale - and was dropped.
-  - BBC News - World and BBC Sport - Football: WebSearch again returned "not
-    accessible to our user agent" for both bbc.com and bbc.co.uk - unreachable
-    on every run so far.
-  - Outside/Sport: no fresh Swiss Super League or Bundesliga content cleared the bar
-    today (see the two dropped candidates above) - Bundesliga's 4. Spieltag runs Sep
-    18-20 with no Friday fixture found, and no Super League round is underway yet
-    either. Kicker and SRF Sport are both skipped today rather than filled with the
-    stale matches that did turn up.
-  - Outside: Schweiz - a Bottmingen (BL) school is testing around 100 children for
-    tuberculosis after an infected teacher may have exposed them, dated Sep 17. World -
-    Canadian PM Mark Carney told the European Parliament in Strasbourg on Sep 17 that
-    Canada is open to deepened cooperation with the EU (raw materials, defense, AI,
-    energy, and participation in Erasmus+/Horizon Europe) while explicitly ruling out
-    EU membership - a distinct story from yesterday's Kosovo item, not a repeat.
-  - Net: 4 core stories today (MIT Technology Review x2, MarTech.org x2) against 2
-    outside stories (Schweiz, World - no Sport pick today). 6 articles total is short
-    of the ~15 target and the mix (67/33) is short of 75/25; left as-is per CLAUDE.md
-    rather than backfilled with older or unverifiable filler.
+    source's domain via allowed_domains, with an explicit follow-up "publish date" search
+    before selecting any candidate, and a cross-check of the actual URL/byline against
+    the search tool's own date framing before trusting it (per the lesson from the
+    2026-09-17/18 runs).
+  - Sport was the trickiest category today. SRF Sport's Super League coverage for
+    "8. Runde" returned self-contradictory results in the same search: some hits framed
+    the Lugano-YB top match as still upcoming ("Samstag, Kick-off 19:00"), while others
+    (including a follow-up query) reported a final 2:2 score for that same match hours
+    before kickoff could plausibly have happened. Rather than trust a WebSearch synthesis
+    that contradicts itself on whether a match has even been played, SRF Sport was
+    skipped entirely today.
+  - Kicker was more reliable: Bayern München's 7:0 win over Union Berlin in Friday's
+    (Sep 18) Bundesliga 4. Spieltag opener was corroborated by an explicit "Friday,
+    September 18, 2026" / "4. Spieltag" framing plus a standalone match-report URL, so
+    it was used as today's Sport pick instead.
+  - CMSWire: every search (general, dated, AI/CX-specific) surfaced only evergreen
+    explainers, 2026-outlook pieces, and one story confirmed to be from March 2026 -
+    nothing inside the ~7-day bar. Skipped, as on most prior runs.
+  - Adobe Experience Cloud Blog: for the first time, a genuinely fresh, standalone post
+    turned up - "Back to school and beyond: Adobe expands access to skills for the AI
+    era" (blog.adobe.com/en/publish/2026/09/16/..., 3 days old, date confirmed via the
+    URL path). Used instead of the usual skip.
+  - MeasureCamp: only event-calendar/ticket-batch listings again (Auckland, London,
+    Bucharest) - skipped, as on every prior run.
+  - MIT Technology Review: two pieces cleared the bar with URL-embedded dates -
+    "The specter of AI-enabled bioweapons is a wake-up call for biotech" (Sep 18) and
+    "Donated livers can be made biologically younger" (Sep 14). Two other Sep 18 AI
+    x-risk pieces ("Could AI really kill us all? Your questions, answered." and a
+    "Download" roundup covering the same bioweapons story) were left out to avoid
+    running three articles on the same underlying story.
+  - MarTech.org: two pieces cleared the bar, both dated Sep 18 - "AI is telling
+    consumers not to buy your product" (a Semrush survey on AI-chatbot shopping
+    guidance) and "Faster AI can make slow marketing processes worse" (on AI exposing
+    rather than fixing broken workflows). A third candidate about HubSpot's redesigned
+    Breeze Assistant/Smart CRM turned out to be the same "HubSpot rebuilds its platform
+    around AI agents" story already used on 2026-09-17 - skipped as a repeat.
+  - BBC News - World and BBC Sport - Football: WebSearch again rejected both bbc.com
+    and bbc.co.uk as inaccessible to its user agent - unreachable on every run so far.
+  - Outside/Schweiz: Lockheed Martin financed an IBM quantum computer for ETH Zurich
+    as part of the billions in F-35 offset obligations, going live at ETH's Lugano
+    data-center site by year end (dated Sep 17). Outside/World: a suicide bombing at a
+    police compound's Friday-prayer mosque in Kohat, Pakistan killed at least 16 people;
+    reported roughly 14 hours before this run, i.e. Sep 19. Both are distinct from any
+    story shown in the last 7 days.
+  - Net: 5 core stories today (MIT Technology Review x2, MarTech.org x2, Adobe
+    Experience Cloud Blog x1) against 3 outside stories (one each: Schweiz, World,
+    Sport). 8 articles total is below the ~15 target and the mix (63/37) is short of
+    75/25 - left as-is per CLAUDE.md rather than backfilled with older, unverifiable,
+    or self-contradictory candidates. Freshness beats quota.
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Friday, September 18, 2026 · 6 articles</div>
+    <div class="date">Saturday, September 19, 2026 · 8 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/tuberkulose-fall-an-schule-infizierte-lehrperson-koennte-kinder-angesteckt-haben">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/offset-geschaeft-zum-kampfjet-warum-der-f-35-der-eth-einen-quantencomputer-beschert">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/tuberkulose-fall-an-schule-infizierte-lehrperson-koennte-kinder-angesteckt-haben">Tuberkulose-Fall an Schule - Infizierte Lehrperson könnte Kinder angesteckt haben</a></h3>
+    <h3><a href="https://www.srf.ch/news/schweiz/offset-geschaeft-zum-kampfjet-warum-der-f-35-der-eth-einen-quantencomputer-beschert">Offset-Geschäft: Warum der F-35 der ETH einen Quantencomputer beschert</a></h3>
     <div class="meta">SRF News — Schweiz · Sep 17, 2026</div>
-    <div class="why">outside / schweiz — Gesundheit</div>
-    <p class="summary">An einer Schule in Bottmingen BL wird rund 100 Kindern nach einem Tuberkulose-Fall bei einer Lehrperson zu einem Test geraten, da eine Ansteckung nicht ausgeschlossen werden kann. Die Behörden stufen das Risiko für die Kinder als gering ein, wollen es aber vorsorglich abklären lassen.</p>
+    <div class="why">outside / schweiz — Rüstungspolitik &amp; Forschung</div>
+    <p class="summary">Als Teil der milliardenschweren Offset-Verpflichtungen zum F-35-Kauf hat Lockheed Martin der ETH Zürich ein IBM-Quantensystem finanziert, das bis Ende Jahr im ETH-Rechenzentrum in Lugano in Betrieb gehen soll. ETH-Sprecher Markus Gross betont, dass der Rechner ausschliesslich für zivile Grundlagenforschung zur Verfügung steht und eine militärische Nutzung ausdrücklich ausgeschlossen ist.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/kanadas-premier-in-strassburg-carney-zeigt-sich-offen-fuer-vertiefte-kooperation-mit-der-eu">
+  <article class="card" data-link="https://www.srf.ch/news/international/urheber-nicht-bekannt-bombe-explodiert-beim-freitagsgebet-16-tote-in-pakistan">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/kanadas-premier-in-strassburg-carney-zeigt-sich-offen-fuer-vertiefte-kooperation-mit-der-eu">Kanadas Premier in Strassburg - Carney zeigt sich offen für vertiefte Kooperation mit der EU</a></h3>
-    <div class="meta">SRF News — International · Sep 17, 2026</div>
-    <div class="why">outside / world — EU-Aussenpolitik</div>
-    <p class="summary">Vor dem EU-Parlament in Strassburg begrüsste der kanadische Premierminister Mark Carney den Vorschlag von EU-Kommissionspräsidentin Ursula von der Leyen für eine engere "assoziierte" Partnerschaft und nannte Rohstoffe, Verteidigung, KI und Energie sowie eine Teilnahme an Erasmus+ und Horizon Europe als mögliche Felder. Eine EU-Vollmitgliedschaft schloss er jedoch ausdrücklich aus - die Annäherung erfolgt auch vor dem Hintergrund von US-Zolldrohungen gegen Kanada.</p>
+    <h3><a href="https://www.srf.ch/news/international/urheber-nicht-bekannt-bombe-explodiert-beim-freitagsgebet-16-tote-in-pakistan">Urheber nicht bekannt - Bombe explodiert beim Freitagsgebet - 16 Tote in Pakistan</a></h3>
+    <div class="meta">SRF News — International · Sep 19, 2026</div>
+    <div class="why">outside / world — Terroranschlag</div>
+    <p class="summary">In der nordwestpakistanischen Stadt Kohat lenkte ein Selbstmordattentäter ein sprengstoffbeladenes Fahrzeug ins Tor einer Polizeizentrale, während Polizisten und ihre Familien dort gerade das Freitagsgebet abhielten. Mindestens 16 Menschen starben, mehr als 50 wurden verletzt; die pakistanischen Taliban (TTP) wiesen eine Beteiligung zurück, ein Bekennerschreiben lag bislang nicht vor.</p>
+  </article>
+
+  <article class="card" data-link="https://www.kicker.de/bayern-gegen-union-2026-bundesliga-5226836/spielbericht">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.kicker.de/bayern-gegen-union-2026-bundesliga-5226836/spielbericht">Olise zaubert, Kane feiert Jubiläum: Bayern demütigt Union Berlin</a></h3>
+    <div class="meta">Kicker — Bundesliga · Sep 18, 2026</div>
+    <div class="why">outside / sport — Bundesliga</div>
+    <p class="summary">Zum Auftakt des 4. Bundesliga-Spieltags deklassierte der FC Bayern München den 1. FC Union Berlin mit 7:0. Michael Olise war massgeblich am Torfestival beteiligt, während Harry Kane seine Bundesliga-Tore Nummer 100 und 101 erzielte - die Eisernen verteidigten laut Spielbericht über weite Strecken desaströs.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/17/1144251/innovators-shaping-climate-tech">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/18/1144329/the-specter-of-ai-enabled-bioweapons-is-a-wake-up-call-for-biotech/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/17/1144251/innovators-shaping-climate-tech">Meet the innovators under 35 shaping climate tech</a></h3>
-    <div class="meta">MIT Technology Review · Sep 17, 2026</div>
-    <div class="why">core / ai — annual list</div>
-    <p class="summary">MIT Technology Review's annual Innovators Under 35 list adds a climate-and-energy slice this year, profiling nine young researchers and founders working on problems from grid materials to carbon-cutting industrial processes. The piece frames the group as evidence that climate tech is drawing serious early-career talent even as broader AI investment dominates headlines.</p>
+    <h3><a href="https://www.technologyreview.com/2026/09/18/1144329/the-specter-of-ai-enabled-bioweapons-is-a-wake-up-call-for-biotech/">The specter of AI-enabled bioweapons is a wake-up call for biotech</a></h3>
+    <div class="meta">MIT Technology Review · Sep 18, 2026</div>
+    <div class="why">core / ai — AI safety &amp; biosecurity</div>
+    <p class="summary">Following recent warnings from AI-industry leaders, including Anthropic's Dario Amodei, that advanced models could meaningfully lower the barrier to designing bioweapons, this piece looks at how the biotech sector itself is responding. It examines biosecurity screening for DNA synthesis and gene-editing tools, and argues the industry can no longer treat AI-assisted biological misuse as a purely hypothetical risk.</p>
   </article>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/">AI models need more data about biology, and OpenAI is paying to create it</a></h3>
-    <div class="meta">MIT Technology Review · Sep 15, 2026</div>
-    <div class="why">core / ai — AI x biotech</div>
-    <p class="summary">OpenAI is funding new experimental biology data generation because existing public datasets are too sparse and inconsistent to train reliable biological-prediction models. The article looks at what kind of wet-lab data AI labs are now paying for and why the bottleneck for AI-driven biology has shifted from compute to the underlying data itself.</p>
+    <h3><a href="https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/">Donated livers can be made biologically younger</a></h3>
+    <div class="meta">MIT Technology Review · Sep 14, 2026</div>
+    <div class="why">core / tech — biotech &amp; transplant medicine</div>
+    <p class="summary">Researchers have found a way to reverse molecular signs of aging in donor livers during the window between retrieval and transplantation, potentially improving outcomes for recipients of organs from older donors. The technique could expand the usable donor pool by making livers that would otherwise be passed over viable for more patients.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/what-happens-to-martech-when-the-cmo-disappears/">
+  <article class="card" data-link="https://martech.org/ai-is-telling-consumers-not-to-buy-your-product/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/what-happens-to-martech-when-the-cmo-disappears/">What happens to martech when the CMO disappears?</a></h3>
-    <div class="meta">MarTech.org · Sep 17, 2026</div>
-    <div class="why">core / martech — org structure</div>
-    <p class="summary">Frans Riemersma unpacks a 2026 Forrester finding that only 36% of Fortune 500 companies still use the "chief marketing officer" title, down from 49% a year earlier. He argues marketing itself isn't disappearing - its responsibilities are being folded into broader growth, commercial or customer roles, which changes what martech stacks need to serve.</p>
+    <h3><a href="https://martech.org/ai-is-telling-consumers-not-to-buy-your-product/">AI is telling consumers not to buy your product</a></h3>
+    <div class="meta">MarTech.org · Sep 18, 2026</div>
+    <div class="why">core / martech — AI &amp; consumer behavior</div>
+    <p class="summary">A new Semrush survey finds that among consumers who use AI chatbots while shopping online, nearly 81% have been talked out of a purchase by the chatbot's own guidance, while a similar share have also been steered toward buying something. Chatbot-based product research is still a minority behavior overall (29%), but it rises to 55% among weekly AI users, where it already outranks friends, family, social media and retail sites as a research channel.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/why-you-need-to-know-the-nones-of-your-business/">
+  <article class="card" data-link="https://martech.org/faster-ai-can-make-slow-marketing-processes-worse/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/why-you-need-to-know-the-nones-of-your-business/">Why you need to know the 'nones' of your business</a></h3>
-    <div class="meta">MarTech.org · Sep 17, 2026</div>
-    <div class="why">core / martech — analytics / attribution</div>
-    <p class="summary">Chris Robson digs into the growing pile of "(direct)/(none)" traffic in web analytics - visits with no attribution data - and argues marketers are wrong to write it off as noise. He traces the rise of unattributed traffic to privacy settings, modern browser behavior and AI agents browsing on users' behalf, and pushes for treating it as its own signal worth investigating rather than an attribution afterthought.</p>
+    <h3><a href="https://martech.org/faster-ai-can-make-slow-marketing-processes-worse/">Faster AI can make slow marketing processes worse</a></h3>
+    <div class="meta">MarTech.org · Sep 18, 2026</div>
+    <div class="why">core / martech — AI &amp; operations</div>
+    <p class="summary">The piece argues that AI isn't a fix for broken marketing workflows - it's a mirror that amplifies whatever is already there, good or bad. It walks through three recurring failure points (unclear approval chains, no single source of brand truth, and undefined data ownership) that need fixing before a team layers AI on top, or automation just makes existing dysfunction move faster.</p>
+  </article>
+
+  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/09/16/back-to-school-and-beyond-adobe-expands-access-to-skills-for-ai-era">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://blog.adobe.com/en/publish/2026/09/16/back-to-school-and-beyond-adobe-expands-access-to-skills-for-ai-era">Back to school and beyond: Adobe expands access to skills for the AI era</a></h3>
+    <div class="meta">Adobe Experience Cloud Blog · Sep 16, 2026</div>
+    <div class="why">core / adobe — skilling &amp; education</div>
+    <p class="summary">Adobe is widening its free AI-literacy and digital-skills training - LinkedIn Learning courses, Adobe Digital Academy content and Express access - to more students, teachers and career-changers worldwide, as part of a push toward 30 million learners reached by 2030. The post frames the initiative as a response to a widening AI skills gap, with classrooms and workplaces adopting generative tools faster than curricula and training programs can keep up.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is well below the usual ~15 (6 articles) - CMSWire, Adobe's blog and MeasureCamp again had nothing usable after verification, and neither Kicker nor SRF Sport had a fresh match today; two other candidates (an SRF international story and an SRF Sport result) looked current in a first search pass but checked out as months old on the actual URL, so both were dropped (see the run notes above). Both BBC feeds remained unreachable. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is below the usual ~15 (8 articles) - CMSWire and MeasureCamp again had nothing usable after verification, and SRF Sport's Super League coverage was skipped after WebSearch returned self-contradictory results about whether the top match had even been played yet (see the run notes above). Both BBC feeds remained unreachable. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
