@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-19</title>
+<title>Morning News Digest — 2026-09-20</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -98,138 +98,130 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-19, Saturday):
+  Run notes (2026-09-20, Sunday):
   - Direct RSS/Atom fetching of feeds.yaml sources is still blocked from this sandbox's
     network egress. Fallback used, as on every prior run: WebSearch scoped to each
     source's domain via allowed_domains, with an explicit follow-up "publish date" search
-    before selecting any candidate, and a cross-check of the actual URL/byline against
-    the search tool's own date framing before trusting it (per the lesson from the
-    2026-09-17/18 runs).
-  - Sport was the trickiest category today. SRF Sport's Super League coverage for
-    "8. Runde" returned self-contradictory results in the same search: some hits framed
-    the Lugano-YB top match as still upcoming ("Samstag, Kick-off 19:00"), while others
-    (including a follow-up query) reported a final 2:2 score for that same match hours
-    before kickoff could plausibly have happened. Rather than trust a WebSearch synthesis
-    that contradicts itself on whether a match has even been played, SRF Sport was
-    skipped entirely today.
-  - Kicker was more reliable: Bayern München's 7:0 win over Union Berlin in Friday's
-    (Sep 18) Bundesliga 4. Spieltag opener was corroborated by an explicit "Friday,
-    September 18, 2026" / "4. Spieltag" framing plus a standalone match-report URL, so
-    it was used as today's Sport pick instead.
-  - CMSWire: every search (general, dated, AI/CX-specific) surfaced only evergreen
-    explainers, 2026-outlook pieces, and one story confirmed to be from March 2026 -
-    nothing inside the ~7-day bar. Skipped, as on most prior runs.
-  - Adobe Experience Cloud Blog: for the first time, a genuinely fresh, standalone post
-    turned up - "Back to school and beyond: Adobe expands access to skills for the AI
-    era" (blog.adobe.com/en/publish/2026/09/16/..., 3 days old, date confirmed via the
-    URL path). Used instead of the usual skip.
-  - MeasureCamp: only event-calendar/ticket-batch listings again (Auckland, London,
-    Bucharest) - skipped, as on every prior run.
-  - MIT Technology Review: two pieces cleared the bar with URL-embedded dates -
-    "The specter of AI-enabled bioweapons is a wake-up call for biotech" (Sep 18) and
-    "Donated livers can be made biologically younger" (Sep 14). Two other Sep 18 AI
-    x-risk pieces ("Could AI really kill us all? Your questions, answered." and a
-    "Download" roundup covering the same bioweapons story) were left out to avoid
-    running three articles on the same underlying story.
-  - MarTech.org: two pieces cleared the bar, both dated Sep 18 - "AI is telling
-    consumers not to buy your product" (a Semrush survey on AI-chatbot shopping
-    guidance) and "Faster AI can make slow marketing processes worse" (on AI exposing
-    rather than fixing broken workflows). A third candidate about HubSpot's redesigned
-    Breeze Assistant/Smart CRM turned out to be the same "HubSpot rebuilds its platform
-    around AI agents" story already used on 2026-09-17 - skipped as a repeat.
-  - BBC News - World and BBC Sport - Football: WebSearch again rejected both bbc.com
-    and bbc.co.uk as inaccessible to its user agent - unreachable on every run so far.
-  - Outside/Schweiz: Lockheed Martin financed an IBM quantum computer for ETH Zurich
-    as part of the billions in F-35 offset obligations, going live at ETH's Lugano
-    data-center site by year end (dated Sep 17). Outside/World: a suicide bombing at a
-    police compound's Friday-prayer mosque in Kohat, Pakistan killed at least 16 people;
-    reported roughly 14 hours before this run, i.e. Sep 19. Both are distinct from any
-    story shown in the last 7 days.
-  - Net: 5 core stories today (MIT Technology Review x2, MarTech.org x2, Adobe
-    Experience Cloud Blog x1) against 3 outside stories (one each: Schweiz, World,
-    Sport). 8 articles total is below the ~15 target and the mix (63/37) is short of
-    75/25 - left as-is per CLAUDE.md rather than backfilled with older, unverifiable,
-    or self-contradictory candidates. Freshness beats quota.
+    before selecting any candidate.
+  - MarTech.org: two candidates that looked fresh on first pass turned out to be repeats
+    of a story already shown on 2026-09-19 (Adobe's AI-skills-training expansion) once
+    checked in detail - both the dated "September 19" weekly roundup and an ambiguous
+    early read of the undated rolling roundup page pointed at that same Adobe story. A
+    closer, more specific follow-up search on the rolling roundup page
+    (martech.org/the-latest-ai-powered-martech-news-and-releases/, dated Sep 17 via "3
+    days ago") turned up different, non-overlapping content - Sembly AI 3.0, Storyblok
+    Agents, and Stravito's AI Persona Builder - so that was used instead. Two other
+    candidates ("AI is telling consumers not to buy your product", "Faster AI can make
+    slow marketing processes worse") were confirmed as the same articles already shown
+    2026-09-19 and skipped. A third candidate ("Ready or not, welcome to the era of the
+    agentic CDP") turned out to be from June 22, 2026 once the date was checked -
+    well outside the freshness bar - and was dropped.
+  - CMSWire: for the first time, a genuinely fresh, dated piece cleared the bar -
+    "ChatGPT in 2026: What CX Leaders Need to Know" (Sep 18, byline-dated), on agentic
+    AI governance for CX teams. Every other CMSWire result was either undated or an
+    older evergreen explainer.
+  - Adobe Experience Cloud Blog: the only candidate inside the window ("Content as a
+    Service v3", Sep 15) came back from search only as a page-metadata fragment with no
+    confirmable article title or URL - couldn't verify it was a real, citable post, so
+    it was skipped rather than risk citing something that doesn't exist as described.
+  - MeasureCamp: only event-calendar/ticket-batch listings again (Madrid, Prague,
+    Bucharest, Auckland, London) - skipped, as on every prior run.
+  - MIT Technology Review: two pieces cleared the bar - "AI models need more data about
+    biology, and OpenAI is paying to create it" (Sep 15, URL-dated) on OpenAI funding a
+    "lost archive" of failed-biotech-company data, and "Could AI really kill us all?
+    Your questions, answered." (Sep 18, URL-dated), a subscriber Q&A on present-day AI
+    harms. Distinct stories from each other and from 2026-09-19's bioweapons-biosecurity
+    piece, so both were kept despite the shared broad AI-safety theme. A "Download"
+    roundup covering the trillion-dollar AI-investment/OpenAI-biology-data story (Sep 16)
+    was left out to avoid re-covering the biology-data story a second time in one digest.
+  - BBC News - World and BBC Sport - Football: WebSearch rejected both bbc.com and
+    bbc.co.uk as inaccessible to its user agent - unreachable on every run so far.
+  - Outside/Schweiz: the Federal Council reaffirmed its opposition to the SVP's border-
+    security initiative, citing up to CHF 16bn/year in costs (dated Sep 17-18). Outside/
+    World: two strong, distinct candidates were found (the Denmark-US Greenland accord,
+    and a Revolut customer-data extortion story affecting Swiss account holders); only
+    the Greenland story was kept to avoid doubling up "world" while Schweiz and Sport
+    each got one, per the "spread evenly across sub-topics" guidance. Outside/Sport:
+    YB's 3:2 comeback win over Servette in Super League round 9 (Sep 19) was picked over
+    a Bundesliga alternative (Stuttgart 1:0 Dortmund) to add source variety after two
+    straight days of Kicker/Bundesliga sport picks.
+  - Net: 4 core stories today (MIT Technology Review x2, MarTech.org x1, CMSWire x1)
+    against 3 outside stories (one each: Schweiz, World, Sport). 7 articles total is
+    well below the ~15 target and the mix (57/43) is short of 75/25 - left as-is per
+    CLAUDE.md rather than backfilled with older or unverifiable candidates, or with a
+    second "world" story just to pad the count. Freshness beats quota.
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Saturday, September 19, 2026 · 8 articles</div>
+    <div class="date">Sunday, September 20, 2026 · 7 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/offset-geschaeft-zum-kampfjet-warum-der-f-35-der-eth-einen-quantencomputer-beschert">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/grenzkontrollen-bundesrat-warnt-vor-milliardenkosten-der-grenzschutzinitiative">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/offset-geschaeft-zum-kampfjet-warum-der-f-35-der-eth-einen-quantencomputer-beschert">Offset-Geschäft: Warum der F-35 der ETH einen Quantencomputer beschert</a></h3>
-    <div class="meta">SRF News — Schweiz · Sep 17, 2026</div>
-    <div class="why">outside / schweiz — Rüstungspolitik &amp; Forschung</div>
-    <p class="summary">Als Teil der milliardenschweren Offset-Verpflichtungen zum F-35-Kauf hat Lockheed Martin der ETH Zürich ein IBM-Quantensystem finanziert, das bis Ende Jahr im ETH-Rechenzentrum in Lugano in Betrieb gehen soll. ETH-Sprecher Markus Gross betont, dass der Rechner ausschliesslich für zivile Grundlagenforschung zur Verfügung steht und eine militärische Nutzung ausdrücklich ausgeschlossen ist.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/grenzkontrollen-bundesrat-warnt-vor-milliardenkosten-der-grenzschutzinitiative">Grenzkontrollen - Bundesrat warnt vor Milliardenkosten der Grenzschutzinitiative</a></h3>
+    <div class="meta">SRF News — Schweiz · Sep 18, 2026</div>
+    <div class="why">outside / schweiz — Innenpolitik &amp; Migration</div>
+    <p class="summary">Der Bundesrat hat die Botschaft ans Parlament verabschiedet und bekräftigt sein Nein zur SVP-Initiative "Stopp der missbräuchlichen Asylpolitik". Er warnt vor bis zu 16 Milliarden Franken jährlichen Kosten durch systematische Grenzkontrollen, mehr Stau und höheren Personalbedarf sowie dem Risiko einer Kündigung der Schengen/Dublin-Abkommen. SVP-Fraktionschef Thomas Aeschi wies die Argumentation als reines Ablenkungsmanöver von Justizminister Beat Jans zurück.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/urheber-nicht-bekannt-bombe-explodiert-beim-freitagsgebet-16-tote-in-pakistan">
+  <article class="card" data-link="https://www.srf.ch/news/international/zerreissprobe-fuer-die-nato-daenemark-und-usa-verkuenden-durchbruch-im-groenland-streit">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/urheber-nicht-bekannt-bombe-explodiert-beim-freitagsgebet-16-tote-in-pakistan">Urheber nicht bekannt - Bombe explodiert beim Freitagsgebet - 16 Tote in Pakistan</a></h3>
+    <h3><a href="https://www.srf.ch/news/international/zerreissprobe-fuer-die-nato-daenemark-und-usa-verkuenden-durchbruch-im-groenland-streit">Zerreissprobe für die Nato - Dänemark und USA verkünden Durchbruch im Grönland-Streit</a></h3>
     <div class="meta">SRF News — International · Sep 19, 2026</div>
-    <div class="why">outside / world — Terroranschlag</div>
-    <p class="summary">In der nordwestpakistanischen Stadt Kohat lenkte ein Selbstmordattentäter ein sprengstoffbeladenes Fahrzeug ins Tor einer Polizeizentrale, während Polizisten und ihre Familien dort gerade das Freitagsgebet abhielten. Mindestens 16 Menschen starben, mehr als 50 wurden verletzt; die pakistanischen Taliban (TTP) wiesen eine Beteiligung zurück, ein Bekennerschreiben lag bislang nicht vor.</p>
+    <div class="why">outside / world — Geopolitik</div>
+    <p class="summary">US-Präsident Donald Trump verkündete auf Truth Social eine Einigung zwischen Dänemark, Grönland und den USA, die unter anderem eine verstärkte US-Militärpräsenz auf der Insel vorsieht. Laut dem Büro von Ministerpräsidentin Mette Frederiksen soll das Abkommen kommende Woche am Rande der UNO-Generalversammlung unterzeichnet werden, nachdem Grönlands Aussenministerin betont hatte, es respektiere die Selbstbestimmung der Insel. Sowohl das dänische als auch das grönländische Parlament müssen dem Abkommen aber noch zustimmen, bevor es in Kraft treten kann.</p>
   </article>
 
-  <article class="card" data-link="https://www.kicker.de/bayern-gegen-union-2026-bundesliga-5226836/spielbericht">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/young-boys-feiern-3-2-erfolg-essende-trifft-und-trifft-yb-schlaegt-servette-nach-0-2-rueckstand">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.kicker.de/bayern-gegen-union-2026-bundesliga-5226836/spielbericht">Olise zaubert, Kane feiert Jubiläum: Bayern demütigt Union Berlin</a></h3>
-    <div class="meta">Kicker — Bundesliga · Sep 18, 2026</div>
-    <div class="why">outside / sport — Bundesliga</div>
-    <p class="summary">Zum Auftakt des 4. Bundesliga-Spieltags deklassierte der FC Bayern München den 1. FC Union Berlin mit 7:0. Michael Olise war massgeblich am Torfestival beteiligt, während Harry Kane seine Bundesliga-Tore Nummer 100 und 101 erzielte - die Eisernen verteidigten laut Spielbericht über weite Strecken desaströs.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/young-boys-feiern-3-2-erfolg-essende-trifft-und-trifft-yb-schlaegt-servette-nach-0-2-rueckstand">Young Boys feiern 3:2-Erfolg - Essende trifft und trifft: YB schlägt Servette nach 0:2-Rückstand</a></h3>
+    <div class="meta">SRF Sport — Super League · Sep 19, 2026</div>
+    <div class="why">outside / sport — Super League</div>
+    <p class="summary">In der 9. Runde lag YB gegen Servette nach starkem Start der Genfer bereits 0:2 zurück, unter anderem durch ein Solotor von Neuzugang Kingstone Mutandwa. Doppeltorschütze Samuel Essende drehte die Partie in der zweiten Halbzeit - erst mit dem Ausgleich, dann mit einem Kopfballtreffer nach Eckball, seinem zehnten Saisontor - zum 3:2-Endstand. Die Berner bleiben damit nach neun Runden weiterhin ungeschlagen an der Tabellenspitze.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/18/1144329/the-specter-of-ai-enabled-bioweapons-is-a-wake-up-call-for-biotech/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/18/1144329/the-specter-of-ai-enabled-bioweapons-is-a-wake-up-call-for-biotech/">The specter of AI-enabled bioweapons is a wake-up call for biotech</a></h3>
+    <h3><a href="https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/">AI models need more data about biology, and OpenAI is paying to create it</a></h3>
+    <div class="meta">MIT Technology Review · Sep 15, 2026</div>
+    <div class="why">core / ai — AI &amp; biotech data</div>
+    <p class="summary">Policy analyst Ruxandra Teslo has proposed bidding on the bankruptcy proceedings of failed biotech companies to recover their regulatory filings, manufacturing strategies and safety data - what she calls biotech's "lost archive" - and using it to train AI systems. The OpenAI Foundation is now funding the idea through a new "Public Data for Health" effort, betting that higher-quality, real-world biological datasets can make AI genuinely useful as a drug-development copilot rather than just a faster search tool.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/09/18/1144435/could-ai-really-kill-us-all-your-questions-answered/">Could AI really kill us all? Your questions, answered.</a></h3>
     <div class="meta">MIT Technology Review · Sep 18, 2026</div>
-    <div class="why">core / ai — AI safety &amp; biosecurity</div>
-    <p class="summary">Following recent warnings from AI-industry leaders, including Anthropic's Dario Amodei, that advanced models could meaningfully lower the barrier to designing bioweapons, this piece looks at how the biotech sector itself is responding. It examines biosecurity screening for DNA synthesis and gene-editing tools, and argues the industry can no longer treat AI-assisted biological misuse as a purely hypothetical risk.</p>
+    <div class="why">core / ai — AI safety Q&amp;A</div>
+    <p class="summary">Following a subscriber Roundtables event, MIT Technology Review's senior AI editor Will Douglas Heaven and reporter Grace Huckins answer reader questions on whether AI poses an existential risk. They ground the debate in concrete, already-happening harms - AI-guided drones used in Ukraine, AI-assisted cyberattacks on hospitals - and discuss how gaps and biases in training data shape what these systems do, arguing the conversation needs less speculation and more attention to present-day failure modes.</p>
   </article>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/">
+  <article class="card" data-link="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/">Donated livers can be made biologically younger</a></h3>
-    <div class="meta">MIT Technology Review · Sep 14, 2026</div>
-    <div class="why">core / tech — biotech &amp; transplant medicine</div>
-    <p class="summary">Researchers have found a way to reverse molecular signs of aging in donor livers during the window between retrieval and transplantation, potentially improving outcomes for recipients of organs from older donors. The technique could expand the usable donor pool by making livers that would otherwise be passed over viable for more patients.</p>
+    <h3><a href="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">The latest AI-powered martech news and releases</a></h3>
+    <div class="meta">MarTech.org · Sep 17, 2026</div>
+    <div class="why">core / martech — product releases roundup</div>
+    <p class="summary">This week's roundup of new AI-powered martech launches includes Sembly AI's version 3.0, which turns meeting recordings, documents and CRM records into branded, client-ready deliverables in more than 45 languages. It also covers Storyblok Agents, a conversational tool built into Storyblok's headless CMS that can execute natural-language content commands, and Stravito's AI Persona Builder, which generates interactive buyer personas directly from a brand's own internal research studies.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/ai-is-telling-consumers-not-to-buy-your-product/">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/chatgpt-what-you-need-to-know/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-is-telling-consumers-not-to-buy-your-product/">AI is telling consumers not to buy your product</a></h3>
-    <div class="meta">MarTech.org · Sep 18, 2026</div>
-    <div class="why">core / martech — AI &amp; consumer behavior</div>
-    <p class="summary">A new Semrush survey finds that among consumers who use AI chatbots while shopping online, nearly 81% have been talked out of a purchase by the chatbot's own guidance, while a similar share have also been steered toward buying something. Chatbot-based product research is still a minority behavior overall (29%), but it rises to 55% among weekly AI users, where it already outranks friends, family, social media and retail sites as a research channel.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/faster-ai-can-make-slow-marketing-processes-worse/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/faster-ai-can-make-slow-marketing-processes-worse/">Faster AI can make slow marketing processes worse</a></h3>
-    <div class="meta">MarTech.org · Sep 18, 2026</div>
-    <div class="why">core / martech — AI &amp; operations</div>
-    <p class="summary">The piece argues that AI isn't a fix for broken marketing workflows - it's a mirror that amplifies whatever is already there, good or bad. It walks through three recurring failure points (unclear approval chains, no single source of brand truth, and undefined data ownership) that need fixing before a team layers AI on top, or automation just makes existing dysfunction move faster.</p>
-  </article>
-
-  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/09/16/back-to-school-and-beyond-adobe-expands-access-to-skills-for-ai-era">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://blog.adobe.com/en/publish/2026/09/16/back-to-school-and-beyond-adobe-expands-access-to-skills-for-ai-era">Back to school and beyond: Adobe expands access to skills for the AI era</a></h3>
-    <div class="meta">Adobe Experience Cloud Blog · Sep 16, 2026</div>
-    <div class="why">core / adobe — skilling &amp; education</div>
-    <p class="summary">Adobe is widening its free AI-literacy and digital-skills training - LinkedIn Learning courses, Adobe Digital Academy content and Express access - to more students, teachers and career-changers worldwide, as part of a push toward 30 million learners reached by 2030. The post frames the initiative as a response to a widening AI skills gap, with classrooms and workplaces adopting generative tools faster than curricula and training programs can keep up.</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/chatgpt-what-you-need-to-know/">ChatGPT in 2026: What CX Leaders Need to Know</a></h3>
+    <div class="meta">CMSWire · Sep 18, 2026</div>
+    <div class="why">core / cx — agentic AI governance</div>
+    <p class="summary">The article argues that ChatGPT, especially via its newer GPT-6 Astra model, has moved well beyond drafting replies and is now taking actions directly inside CRM and support tooling - which changes what CX teams need to govern. It walks through the practical governance questions this raises: who approves an agent's actions, how mistakes get caught, and what changes when a chatbot can complete a task rather than just suggest one.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is below the usual ~15 (8 articles) - CMSWire and MeasureCamp again had nothing usable after verification, and SRF Sport's Super League coverage was skipped after WebSearch returned self-contradictory results about whether the top match had even been played yet (see the run notes above). Both BBC feeds remained unreachable. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is well below the usual ~15 (7 articles) - CMSWire and MeasureCamp again mostly had nothing usable after verification, MarTech.org's freshest-looking candidates turned out to be repeats or misdated, Adobe Experience Cloud Blog's only in-window candidate couldn't be confirmed as a real citable post, and one "world" candidate was set aside to keep the outside sub-topics evenly spread (see the run notes above). Both BBC feeds remained unreachable. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
