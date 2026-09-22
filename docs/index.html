@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-09-21</title>
+<title>Morning News Digest — 2026-09-22</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -98,113 +98,137 @@
 </head>
 <body>
 <!--
-  Run notes (2026-09-21, Monday):
+  Run notes (2026-09-22, Tuesday):
   - Direct RSS/Atom fetching of feeds.yaml sources is still blocked from this sandbox's
-    network egress (confirmed again via a direct WebFetch attempt on a srf.ch URL, which
-    was rejected with EGRESS_BLOCKED). Fallback used, as on every prior run: WebSearch
-    scoped to each source's domain via allowed_domains, with explicit follow-up "publish
-    date" searches before selecting any candidate.
-  - MarTech.org: the rolling page "the-latest-ai-powered-martech-news-and-releases" (the
-    same link already shown on 2026-09-20) has since been updated with a new item
-    (Qualtrics' XM Data & AI platform) - but since the *link* was already shown, it was
-    skipped rather than re-cited under the same URL. A distinct, separately-dated
-    roundup page - "this-weeks-ai-powered-martech-releases" (Sep 17, confirmed "4 days
-    ago") - was used instead, and only its non-overlapping items (Seedtag, Optimizely)
-    were summarized; that page's Sembly AI 3.0 mention was left out since Sembly 3.0 was
-    already covered via the other roundup on 2026-09-20.
-  - CMSWire: a clearly dated, fresh piece cleared the bar - "Is Your Website Actually
-    Hurting Your Brand's AI Mentions?" (Sep 19, confirmed "2 days ago"), on a new study
-    of AI answer-engine citation patterns.
-  - Adobe Experience Cloud Blog: nothing published between Sep 16 (the "Back to school"
-    Digital Academy post, already shown 2026-09-19) and today turned up in search -
-    skipped for the first time since this digest started, rather than reaching further
-    back or reusing that link.
+    network egress. Fallback used, as on every prior run: WebSearch scoped to each
+    source's domain via allowed_domains, with explicit follow-up "publish date" searches
+    before selecting any candidate.
+  - MarTech.org: this run uncovered a dating trap worth flagging for future runs. The
+    site publishes recurring, identically-titled roundups like "AI-powered martech news
+    and releases: September 19" every year - a follow-up date search on that exact URL
+    confirmed it was actually published September 19, **2024**, not 2026 (same for the
+    "September 26" and "September 12" variants checked). The undated rolling page
+    ("the-latest-ai-powered-martech-news-and-releases") was already used on 2026-09-20
+    and 2026-09-17/21 (same URL), so it was skipped again rather than re-cited. Net:
+    MarTech.org has nothing usable today - first time this source has been skipped
+    entirely.
+  - CMSWire: two fresh, distinctly dated items cleared the bar - Insider's "Agent One"
+    autonomous-engagement launch (Sep 17, confirmed via date search) and the AB
+    Tasty/VWO-under-Wingify rebrand (Sep 16, confirmed). A candidate on NiCE's "harness
+    around the model" argument was checked and dated to Sep 13 - nine days back, outside
+    the ~7-day daily-cadence bar - and was left out rather than stretched in.
+  - Adobe Experience Cloud Blog: "Your guide to the AI sessions at Adobe MAX 2026"
+    (Sep 21, confirmed) - the only new post since the last "Back to school" piece already
+    shown 2026-09-19.
   - MeasureCamp: only event-calendar/ticket-batch listings again - skipped, as on every
     prior run.
-  - MIT Technology Review: no genuinely new, non-repeat, in-window candidate was found
-    today, for the first time since this digest started - despite many follow-up
-    searches. Every strong-looking lead turned out to be one of: a story already shown
-    (the mice-with-human-brain-cortex/climate-tech-innovators Download from Sep 17,
-    the OpenAI-biology-data and AI-infrastructure-investment stories rehashed again in
-    the Sep 16 "trillion-dollar gamble" Download, "Powering AI is an architecture
-    problem" - already shown 2026-09-14), or dated well outside the freshness window
-    once checked ("Here's why AI agents lie and cheat", Aug 3; the Anthropic
-    hacked-system item, folded into a Sep 10 Download already superseded). Left out
-    entirely rather than stretching the freshness bar or re-citing a used link.
+  - MIT Technology Review: the border-surveillance-towers investigation (Sep 21,
+    confirmed) was used. Several other candidates were checked and ruled out as repeats
+    of stories already shown in the last 7 days (the AI-doomer-turn piece from Sep 14,
+    the trillion-dollar-gamble and mice-with-human-brain-cells pieces from Sep 15-17, the
+    "could AI kill us all" Q&A from Sep 18 already shown 2026-09-20).
   - BBC News - World and BBC Sport - Football: WebSearch rejected both bbc.com and
-    bbc.co.uk as inaccessible to its user agent - unreachable on every run so far.
-  - Outside/Schweiz: the Postfinance e-banking display glitch (Sep 19) - a fresh,
-    concretely dated consumer/banking story.
-  - Outside/World: the UNO-Jahresversammlung dispatch on Parmelin's and Trump's speeches
-    (freshness signal placed it same-day, "33 minutes ago" on two independent searches).
-  - Outside/Sport: a Swiss Super League "10. Runde" Thun-Sion candidate (1:0) turned up,
-    but repeated follow-up "publish date" searches returned contradictory and unreliable
-    relative-time signals (results kept conflating it with unrelated May/October/November
-    fixture-page dates) - freshness couldn't be confirmed with confidence, so it was
-    dropped per CLAUDE.md rather than risk an undated/misdated pick. The Bundesliga
-    Leverkusen 2:0 Leipzig result (4. Spieltag, Sep 20 - clearly dated via matchday
-    context) was used instead.
-  - Net: 2 core stories today (CMSWire x1, MarTech.org x1) against 3 outside stories
-    (one each: Schweiz, World, Sport). 5 articles total is well below the ~15 target and
-    the mix (40/60) is inverted from 75/25 - left as-is per CLAUDE.md rather than
-    backfilled with older or unverifiable candidates, or with a second "world"/"sport"
-    story just to pad the count. Freshness beats quota.
+    bbc.co.uk outright ("not accessible to our user agent") - unreachable on every run
+    so far.
+  - Outside/Schweiz: SBB's AI-equipped diagnostic train for rail-defect detection
+    (published "1 day ago" per search metadata, so ~Sep 21) - a fresh, concretely dated
+    story with a nice tech crossover.
+  - Outside/World: the Mecklenburg-Vorpommern state election (AfD's win confirmed for
+    Sep 20 via the vote share and coalition-math coverage) and the Revolut hack exposing
+    Swiss customer data (published "vor 3 Tagen" per search metadata, so ~Sep 19) - both
+    fresh and distinct stories.
+  - Outside/Sport: a Swiss Super League "5. Runde" YB-Basel 3:3 candidate turned up, but
+    a follow-up "publish date" search returned "approximately 3 weeks ago" - directly
+    contradicting the round-number sequencing (round 4 was shown here on 2026-09-17,
+    which would put round 5 the following weekend, not three weeks prior). Per CLAUDE.md,
+    an unresolvable date conflict means the pick gets dropped rather than risking a
+    misdated citation - same call as the prior run. The Bundesliga Stuttgart 0:1 Dortmund
+    result (4. Spieltag, Sep 20 - clearly dated via matchday context, BVB's 4th straight
+    win and new table lead) was used instead.
+  - Net: 4 core stories today (Adobe x1, CMSWire x2, MIT Technology Review x1) against 4
+    outside stories (Schweiz x1, World x2, Sport x1). 8 articles total is below the ~15
+    target and the mix (50/50) is inverted from 75/25 - left as-is per CLAUDE.md rather
+    than backfilled with older or unverifiable candidates. Freshness beats quota.
   - Layout (standing preference): Outside section renders above Core; each card has a
     "Mark read" button backed by client-side localStorage only (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Monday, September 21, 2026 · 5 articles</div>
+    <div class="date">Tuesday, September 22, 2026 · 8 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/anzeigefehler-im-e-banking-postfinance-stoerung-sorgt-fuer-scheinbar-leere-konten">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/kameras-statt-augen-sbb-setzt-ki-zug-ein-fuer-die-sicherheit-der-schienen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/anzeigefehler-im-e-banking-postfinance-stoerung-sorgt-fuer-scheinbar-leere-konten">Postfinance: Anzeigefehler sorgt für scheinbar leere Konten</a></h3>
-    <div class="meta">SRF News — Schweiz · Sep 19, 2026</div>
-    <div class="why">outside / schweiz — Bankwesen &amp; Digitalisierung</div>
-    <p class="summary">Für rund zwei Stunden zeigte das E-Banking von Postfinance bei betroffenen Kundinnen und Kunden einen Kontostand von 0 Franken an. Gegen 14:30 Uhr gab Postfinance Entwarnung: Es habe sich um einen reinen Anzeigefehler gehandelt, das Geld sei zu jedem Zeitpunkt auf den Konten vorhanden und sicher gewesen. Das Unternehmen betonte zudem ausdrücklich, es handle sich mit Sicherheit nicht um eine Cyberattacke.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/kameras-statt-augen-sbb-setzt-ki-zug-ein-fuer-die-sicherheit-der-schienen">Diagnosezüge der SBB überprüfen Schienen mittels KI</a></h3>
+    <div class="meta">SRF News — Schweiz · Sep 21, 2026</div>
+    <div class="why">outside / schweiz — Bahnsicherheit &amp; KI</div>
+    <p class="summary">Die SBB setzt seit rund zehn Jahren KI-gestützte Diagnosezüge ein, die mit Kameras und Messgeräten Schienen und Gleisbett abfahren; die Auswertung der Aufnahmen übernimmt eine KI im Rechenzentrum des Depots, nicht der Zug selbst. Die beiden Diagnosezüge decken monatlich rund 2000 Kilometer ab und finden dabei etwa 1500 meist kleinere Mängel, etwa an Schienenkopf oder Befestigungsklemmen. Ersetzen sollen sie das Fachpersonal laut Artikel nicht, da die KI nur bestimmte Fehlerarten an bestimmten Stellen erkennt.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/uno-jahresversammlung-new-york-parmelin-trump-und-co-auf-der-grossen-buehne-der-weltpolitik">
+  <article class="card" data-link="https://www.srf.ch/news/international/landtagswahlen-in-deutschland-mecklenburg-vorpommern-afd-vor-spd-desaster-fuer-die-cdu">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/uno-jahresversammlung-new-york-parmelin-trump-und-co-auf-der-grossen-buehne-der-weltpolitik">UNO-Jahresversammlung: Parmelin, Trump und Co. im Rampenlicht</a></h3>
-    <div class="meta">SRF News — International · Sep 21, 2026</div>
-    <div class="why">outside / world — Uno-Generaldebatte &amp; Schweizer Diplomatie</div>
-    <p class="summary">An der UNO-Generalversammlung in New York warb Bundespräsident Guy Parmelin für Multilateralismus und Freihandel und nutzte den Auftritt zugleich, um für die erste Schweizer Kandidatur für einen Sitz im UNO-Sicherheitsrat zu werben - die Wahl dazu findet im kommenden Juni statt. US-Präsident Donald Trump nutzte seine eigene Rede dagegen erneut für scharfe Kritik an der Organisation, während laut Bericht eher Frankreich, Deutschland und Grossbritannien den diplomatischen Ton bei mehreren grossen internationalen Themen vorgaben.</p>
+    <h3><a href="https://www.srf.ch/news/international/landtagswahlen-in-deutschland-mecklenburg-vorpommern-afd-vor-spd-desaster-fuer-die-cdu">Mecklenburg-Vorpommern: AfD vor SPD – Merz spricht von «Desaster»</a></h3>
+    <div class="meta">SRF News — International · Sep 20, 2026</div>
+    <div class="why">outside / world — Landtagswahl Mecklenburg-Vorpommern</div>
+    <p class="summary">Bei der Landtagswahl in Mecklenburg-Vorpommern hat die AfD mit 38,2 Prozent der Stimmen ihren Wähleranteil mehr als verdoppelt und wurde stärkste Kraft vor der SPD - CDU-Chef Merz sprach von einem «Desaster» für seine Partei. Da alle etablierten Parteien - mit Ausnahme des nicht ins Parlament eingezogenen BSW - eine Zusammenarbeit mit der AfD bislang ausschliessen, dürfte die Partei trotz des Wahlsiegs ohne Koalitionspartner und damit ohne Regierungsbeteiligung bleiben.</p>
   </article>
 
-  <article class="card" data-link="https://www.kicker.de/leverkusen-gegen-leipzig-2026-bundesliga-5226838/spielbericht">
+  <article class="card" data-link="https://www.srf.ch/news/international/datenklau-bei-online-bank-hackerangriff-auf-revolut-trifft-viele-schweizer-bankkunden">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.kicker.de/leverkusen-gegen-leipzig-2026-bundesliga-5226838/spielbericht">Schick bringt Bayer in die Spur: Leipzigs Auswärtsmisere hält an</a></h3>
+    <h3><a href="https://www.srf.ch/news/international/datenklau-bei-online-bank-hackerangriff-auf-revolut-trifft-viele-schweizer-bankkunden">Hackerangriff auf Revolut trifft viele Schweizer Bankkunden</a></h3>
+    <div class="meta">SRF News — International · Sep 19, 2026</div>
+    <div class="why">outside / world — Cyberangriff &amp; Bankwesen</div>
+    <p class="summary">Nicht Revolut selbst wurde gehackt, sondern der Kommunikationskanal einer italienischen Behörde - die Angreifer gaben sich als Strafverfolger aus und brachten Revolut so dazu, Kontodaten von rund 700 Kundinnen und Kunden herauszugeben, viele davon aus der Schweiz. Betroffen sind unter anderem Passdaten, Kontonummern und Adressen. Die Hacker fordern drei Millionen Dollar, damit sie die sensiblen Daten nicht veröffentlichen.</p>
+  </article>
+
+  <article class="card" data-link="https://www.kicker.de/stuttgart-gegen-dortmund-2026-bundesliga-5226837/spielbericht">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.kicker.de/stuttgart-gegen-dortmund-2026-bundesliga-5226837/spielbericht">Bundesliga, 1:0 in Stuttgart: BVB ist dank Beier Tabellenführer</a></h3>
     <div class="meta">Kicker — Bundesliga · Sep 20, 2026</div>
     <div class="why">outside / sport — Bundesliga</div>
-    <p class="summary">Bayer 04 Leverkusen setzte sich am 4. Spieltag der Bundesliga 2026/27 zu Hause 2:0 gegen RB Leipzig durch, nachdem Patrik Schick die Führung erzielt hatte. Für Leipzig war es bereits die vierte Auswärtsniederlage in Folge, während Leverkusen-Trainer Carles Martinez nach dem erfolgreichen Europa-League-Start gegen NK Celje gleich fünf Wechsel in der Startelf vornahm.</p>
+    <p class="summary">Borussia Dortmund gewann am 4. Spieltag der Bundesliga 2026/27 auswärts bei Aufsteiger-Nachbar VfB Stuttgart mit 1:0 - Jude Bellingham legte auf, Maximilian Beier traf. Es war für den BVB bereits der vierte Sieg im vierten Saisonspiel, womit die Dortmunder die Tabellenführung übernehmen, während Stuttgart mit dem Punktestand deutlich hinter den eigenen Erwartungen zurückbleibt.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/why-does-more-owned-content-cap-your-answer-engine-visibility/">
+  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/09/21/your-guide-to-the-ai-sessions-at-adobe-max-2026">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/why-does-more-owned-content-cap-your-answer-engine-visibility/">Is Your Website Actually Hurting Your Brand's AI Mentions?</a></h3>
-    <div class="meta">CMSWire · Sep 19, 2026</div>
-    <div class="why">core / cx — AI answer-engine visibility</div>
-    <p class="summary">A new analysis of 915 B2B vendors finds that brands whose own website supplies more than half of the sources AI answer engines cite about them plateau at just 24% visibility in those answers - self-published content, it turns out, caps how much AI systems trust and surface a brand. The piece lands against a broader shift in buyer behavior it cites: 51% of B2B buyers now say they start research with an AI chatbot rather than a search engine, up from 29% just a year earlier.</p>
+    <h3><a href="https://blog.adobe.com/en/publish/2026/09/21/your-guide-to-the-ai-sessions-at-adobe-max-2026">Your guide to the AI sessions at Adobe MAX 2026</a></h3>
+    <div class="meta">Adobe Experience Cloud Blog · Sep 21, 2026</div>
+    <div class="why">core / adobe — Adobe MAX 2026 preview</div>
+    <p class="summary">Adobe published a preview of the AI-focused sessions on offer at Adobe MAX 2026, running November 10-12 in Miami Beach and online. The guide points attendees toward hands-on sessions covering the latest AI-powered tools spanning Creative Cloud and Experience Cloud, aimed at helping creators and marketers move faster with generative and agentic features.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/this-weeks-ai-powered-martech-releases/">
+  <article class="card" data-link="https://www.cmswire.com/the-wire/insider-one-introduces-agent-one-the-selfoptimizing-intelligence-system-for-autonomous-cus/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/this-weeks-ai-powered-martech-releases/">This week's AI-powered martech releases</a></h3>
-    <div class="meta">MarTech.org · Sep 17, 2026</div>
-    <div class="why">core / martech — product releases roundup</div>
-    <p class="summary">This week's product roundup highlights Seedtag's new Emotion Quotient, which uses its "Liz" Neuro-Contextual AI to gauge emotional intensity around weekly cultural moments and categorize audience interest and intent without relying on personal data. It also covers Optimizely's push to bring AI agents for content creation, campaign management and experimentation into Opal, its AI assistant inside Optimizely One, backed by an expanded partnership with Google Cloud to fold in Gemini.</p>
+    <h3><a href="https://www.cmswire.com/the-wire/insider-one-introduces-agent-one-the-selfoptimizing-intelligence-system-for-autonomous-cus/">Insider One Introduces Agent One™, the Self-Optimizing Intelligence System for Autonomous Customer Engagement</a></h3>
+    <div class="meta">CMSWire · Sep 17, 2026</div>
+    <div class="why">core / martech — agentic customer engagement</div>
+    <p class="summary">Insider launched Agent One, pitched as a self-optimizing intelligence layer that runs autonomous customer-engagement decisions rather than requiring marketers to configure rules and campaigns by hand. The system is positioned to continuously adjust its own targeting and engagement logic based on outcomes, part of the broader push by CDP vendors toward agentic, self-directed marketing execution.</p>
+  </article>
+
+  <article class="card" data-link="https://www.cmswire.com/the-wire/ab-tasty-and-vwo-unite-under-wingify-launching-a-unified-platform-new-brand-identity-and-a-w/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/the-wire/ab-tasty-and-vwo-unite-under-wingify-launching-a-unified-platform-new-brand-identity-and-a-w/">AB Tasty and VWO Unite Under Wingify, Launching a Unified Platform, New Brand Identity, and a Website</a></h3>
+    <div class="meta">CMSWire · Sep 16, 2026</div>
+    <div class="why">core / martech — experimentation platform consolidation</div>
+    <p class="summary">Experimentation and personalization vendors AB Tasty and VWO have combined under a new parent brand, Wingify, launching a unified product platform alongside a new brand identity and website. The merger consolidates two of the larger independent players in the A/B-testing and digital-experience-optimization space under one roof.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation/">The US spent billions on border surveillance. Why can't it catch people before they die?</a></h3>
+    <div class="meta">MIT Technology Review · Sep 21, 2026</div>
+    <div class="why">core / tech — surveillance infrastructure investigation</div>
+    <p class="summary">An investigation found more than 1,050 people died within the operational range of US border surveillance towers between 2015 and early 2026, despite a government spending bill that awarded $2.7 billion for border-security technology. Deaths occurred within the advertised detection range of roughly two-thirds of the towers analyzed, raising questions about whether the heavily funded surveillance buildout is actually achieving its stated life-saving purpose.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is well below the usual ~15 (5 articles) - MIT Technology Review and Adobe Experience Cloud Blog had nothing that cleared the freshness bar after verification (see the run notes above for what was checked and ruled out), CMSWire and MeasureCamp again mostly had nothing usable, and a Swiss Super League sport candidate was dropped over unreliable date signals rather than risk citing a misdated pick. Both BBC feeds remained unreachable. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest is below the usual ~15 (8 articles) - MarTech.org's dated "roundup" URLs turned out to be from 2024 rather than 2026 and its rolling "latest" page had already been cited on prior runs, MeasureCamp again had nothing but event listings, and a Swiss Super League sport candidate was dropped over a publish-date signal that contradicted the round sequencing (see the run notes above for what was checked and ruled out). Both BBC feeds remained unreachable. "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
