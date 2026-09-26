@@ -1,36 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-09-18",
-      "link": "https://www.srf.ch/news/schweiz/tuberkulose-fall-an-schule-infizierte-lehrperson-koennte-kinder-angesteckt-haben",
-      "title": "Tuberkulose-Fall an Schule - Infizierte Lehrperson könnte Kinder angesteckt haben"
-    },
-    {
-      "date": "2026-09-18",
-      "link": "https://www.srf.ch/news/international/kanadas-premier-in-strassburg-carney-zeigt-sich-offen-fuer-vertiefte-kooperation-mit-der-eu",
-      "title": "Kanadas Premier in Strassburg - Carney zeigt sich offen für vertiefte Kooperation mit der EU"
-    },
-    {
-      "date": "2026-09-18",
-      "link": "https://www.technologyreview.com/2026/09/17/1144251/innovators-shaping-climate-tech",
-      "title": "Meet the innovators under 35 shaping climate tech"
-    },
-    {
-      "date": "2026-09-18",
-      "link": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
-      "title": "AI models need more data about biology, and OpenAI is paying to create it"
-    },
-    {
-      "date": "2026-09-18",
-      "link": "https://martech.org/what-happens-to-martech-when-the-cmo-disappears/",
-      "title": "What happens to martech when the CMO disappears?"
-    },
-    {
-      "date": "2026-09-18",
-      "link": "https://martech.org/why-you-need-to-know-the-nones-of-your-business/",
-      "title": "Why you need to know the 'nones' of your business"
-    },
-    {
       "date": "2026-09-19",
       "link": "https://www.srf.ch/news/schweiz/offset-geschaeft-zum-kampfjet-warum-der-f-35-der-eth-einen-quantencomputer-beschert",
       "title": "Offset-Geschäft: Warum der F-35 der ETH einen Quantencomputer beschert"
@@ -279,6 +249,71 @@
       "date": "2026-09-25",
       "link": "https://www.srf.ch/news/international/laufende-untersuchung-open-ai-agent-hackt-australisches-regierungsportal-medicare",
       "title": "OpenAI-Agent hackt australisches Regierungsportal Medicare"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://www.cmswire.com/digital-experience/is-your-website-quietly-shutting-out-chatgpt-and-claude-crawlers/",
+      "title": "Is Your Website Quietly Shutting Out ChatGPT and Claude Crawlers?"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://www.cmswire.com/customer-experience/medallia-h2-2026-release-expands-multilingual-ai/",
+      "title": "Medallia H2 2026 Adds 13 Languages, Segment-Level Audits"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://martech.org/ai-powered-martech-news-and-releases-september-26/",
+      "title": "AI-powered martech news and releases: September 26"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://martech.org/gtm-teams-are-losing-track-of-their-ai-agents/",
+      "title": "GTM teams are losing track of their AI agents"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://martech.org/why-you-need-to-stop-treating-llms-like-people/",
+      "title": "Why you need to stop treating LLMs like people"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://martech.org/why-linkedin-doesnt-really-care-about-ai-slop/",
+      "title": "Why LinkedIn doesn't really care about AI slop"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://martech.org/the-martech-skills-you-need-to-survive/",
+      "title": "The martech skills you need to survive"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector",
+      "title": "The Pentagon wants $30 million to build an AI-powered lie detector"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://www.technologyreview.com/2026/09/22/1144910/the-download-dont-believe-ai-hype/",
+      "title": "The Download: why AI's latest breakthroughs and fears may be more hype than reality"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://www.technologyreview.com/2026/09/21/1144170/border-towers-surveillance-feature/",
+      "title": "She died at the San Diego border. A surveillance camera was in plain sight"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://www.srf.ch/news/schweiz/raumfahrtnation-schweiz-nationalrat-ebnet-den-weg-fuer-erstes-schweizer-raumfahrtgesetz",
+      "title": "Nationalrat ebnet den Weg für erstes Schweizer Raumfahrtgesetz"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://www.srf.ch/news/international/griechenland-explosion-in-athen-fuenf-menschen-nach-hauseinsturz-vermisst",
+      "title": "Griechenland - Explosion in Athen: Fünf Menschen nach Hauseinsturz vermisst"
+    },
+    {
+      "date": "2026-09-26",
+      "link": "https://www.srf.ch/news/international/einigung-vor-prozessbeginn-tiktok-zahlt-us-bundesstaat-alabama-100-mio-us-dollar",
+      "title": "Tiktok einigt sich mit Alabama: 100 Mio. Dollar wird gezahlt"
     }
   ]
 }
