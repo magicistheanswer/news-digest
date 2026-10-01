@@ -1,41 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-09-23",
-      "link": "https://www.srf.ch/news/schweiz/ki-und-schweizer-strafrecht-wenn-ki-anzeigen-verfasst-kann-es-teuer-werden",
-      "title": "Durch KI erstellte Anzeigen sind sehr lang und generieren Aufwand"
-    },
-    {
-      "date": "2026-09-23",
-      "link": "https://www.srf.ch/news/international/berkshire-hathaway-star-investor-warren-buffett-gibt-mit-96-jahren-chefposten-ab",
-      "title": "Warren Buffett gibt mit 96 Jahren Chefposten bei Berkshire Hathaway ab"
-    },
-    {
-      "date": "2026-09-23",
-      "link": "https://www.srf.ch/sport/fussball/super-league/super-league-9-runde-lugano-festigt-tabellenfuehrung-dank-verteidiger-delcroix-3-toren",
-      "title": "Super League, 9. Runde: Lugano festigt Tabellenführung dank Verteidiger Delcroix' 3 Toren"
-    },
-    {
-      "date": "2026-09-23",
-      "link": "https://martech.org/how-to-build-a-marketing-team-with-ai-coworkers/",
-      "title": "How to build a marketing team with AI coworkers"
-    },
-    {
-      "date": "2026-09-23",
-      "link": "https://martech.org/do-you-really-need-so-much-marketing/",
-      "title": "Do you really need so much marketing?"
-    },
-    {
-      "date": "2026-09-23",
-      "link": "https://www.cmswire.com/digital-experience/another-digital-experience-platform-dxp-bites-the-dust/",
-      "title": "Another Digital Experience Platform (DXP) Bites the Dust"
-    },
-    {
-      "date": "2026-09-23",
-      "link": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
-      "title": "Don't be fooled by this summer of AI hype"
-    },
-    {
       "date": "2026-09-24",
       "link": "https://www.srf.ch/news/wirtschaft/90-prozent-eigenkapital-was-der-staenderats-entscheid-fuer-die-ubs-bedeutet",
       "title": "90 Prozent Eigenkapital: Was das für die UBS heisst und wie sie reagiert"
@@ -274,6 +239,51 @@
       "date": "2026-09-30",
       "link": "https://www.srf.ch/sport/fussball/nationalmannschaft/dezimierte-schotten-chancenlos-dank-rodriguez-elvedi-schweiz-legt-in-der-nations-league-nach",
       "title": "Dezimierte Schotten chancenlos: Schweiz legt in der Nations League nach"
+    },
+    {
+      "date": "2026-10-01",
+      "link": "https://www.srf.ch/news/schweiz/herbstsession-2026-eu-paket-staenderat-will-doppeltes-mehr-von-volk-und-staenden",
+      "title": "EU-Paket: Ständerat will doppeltes Mehr von Volk und Ständen"
+    },
+    {
+      "date": "2026-10-01",
+      "link": "https://www.srf.ch/news/international/usa/kuenstliche-intelligenz-tech-konzerne-unterzeichnen-ki-sicherheitsregeln",
+      "title": "Tech-Konzerne unterzeichnen KI-Sicherheitsregeln"
+    },
+    {
+      "date": "2026-10-01",
+      "link": "https://www.srf.ch/news/international/teures-benzin-und-diesel-rekordhohe-spritpreise-wie-staaten-gegensteuern",
+      "title": "Rekordhohe Spritpreise: Wie Staaten gegensteuern"
+    },
+    {
+      "date": "2026-10-01",
+      "link": "https://martech.org/salesforce-buys-ai-customer-research-startup-listen-labs/",
+      "title": "Salesforce buys AI customer research startup Listen Labs"
+    },
+    {
+      "date": "2026-10-01",
+      "link": "https://martech.org/stop-building-strategy-around-your-martech-stack/",
+      "title": "Stop building strategy around your martech stack"
+    },
+    {
+      "date": "2026-10-01",
+      "link": "https://martech.org/b2b-marketing-attribution-is-messy-can-it-be-fixed/",
+      "title": "B2B marketing attribution is messy. Can it be fixed?"
+    },
+    {
+      "date": "2026-10-01",
+      "link": "https://martech.org/states-are-starting-to-rewrite-the-rules-of-social-media/",
+      "title": "States are rewriting the rules of social media"
+    },
+    {
+      "date": "2026-10-01",
+      "link": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/",
+      "title": "OpenAI's chief research officer on the hack fallout"
+    },
+    {
+      "date": "2026-10-01",
+      "link": "https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest",
+      "title": "Adobe Experience Platform release notes — September 2026"
     }
   ]
 }
