@@ -1,36 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-09-24",
-      "link": "https://www.srf.ch/news/wirtschaft/90-prozent-eigenkapital-was-der-staenderats-entscheid-fuer-die-ubs-bedeutet",
-      "title": "90 Prozent Eigenkapital: Was das für die UBS heisst und wie sie reagiert"
-    },
-    {
-      "date": "2026-09-24",
-      "link": "https://www.srf.ch/news/international/uno-generalversammlung-europaeische-unterstuetzung-fuer-ukraine-findet-wenig-rueckhalt",
-      "title": "Ukraine: Europas Russland-Kurs verliert Unterstützung"
-    },
-    {
-      "date": "2026-09-24",
-      "link": "https://martech.org/marketo-co-founder-jon-miller-rethinks-b2b-marketing-automation-for-the-ai-age/",
-      "title": "Marketo co-founder Jon Miller rethinks B2B marketing automation for the AI age"
-    },
-    {
-      "date": "2026-09-24",
-      "link": "https://martech.org/iab-sets-new-standards-for-agentic-buying-and-measurement/",
-      "title": "IAB sets new standards for agentic buying and measurement"
-    },
-    {
-      "date": "2026-09-24",
-      "link": "https://www.technologyreview.com/2026/09/23/1144940/ai-hype-index-ai-loves-cheating/",
-      "title": "The AI Hype Index: AI loves cheating"
-    },
-    {
-      "date": "2026-09-24",
-      "link": "https://www.technologyreview.com/2026/09/23/1144966/the-download-india-smart-glasses-ai-trillion-dollar-gamble/",
-      "title": "The Download: India's smart glasses menace and AI's trillion-dollar gamble"
-    },
-    {
       "date": "2026-09-25",
       "link": "https://www.cmswire.com/digital-marketing/what-does-metas-teen-settlement-mean-for-your-marketing-budget/",
       "title": "What Does Meta's Teen Settlement Mean for Your Marketing Budget?"
@@ -284,6 +254,31 @@
       "date": "2026-10-01",
       "link": "https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest",
       "title": "Adobe Experience Platform release notes — September 2026"
+    },
+    {
+      "date": "2026-10-02",
+      "link": "https://www.srf.ch/wissen/klimawandel/eisverlust-2026-massive-gletscherschmelze-so-viel-eis-verschwand-im-hitzesommer",
+      "title": "Gletscherschmelze 2026: So viel Eis verschwand im Hitzesommer"
+    },
+    {
+      "date": "2026-10-02",
+      "link": "https://www.srf.ch/news/international/eu-krisenmigrationsmechanismus-nach-ceuta-eu-innenminister-diskutieren-schaerferes-asylrecht",
+      "title": "Nach Ceuta beraten die Innenminister über die EU-Grenzsicherung"
+    },
+    {
+      "date": "2026-10-02",
+      "link": "https://www.srf.ch/sport/fussball/nations-league/liga-a-der-nations-league-dank-bischof-und-wirtz-im-3-spiel-unter-klopp-siegt-die-dfb-elf",
+      "title": "Dank Bischof und Wirtz: Im 3. Spiel unter Klopp siegt die DFB-Elf"
+    },
+    {
+      "date": "2026-10-02",
+      "link": "https://www.technologyreview.com/2026/10/01/1145592/the-download-ai-mind-reading-small-batteries/",
+      "title": "The Download: AI “mind-reading” and creative uses for small batteries"
+    },
+    {
+      "date": "2026-10-02",
+      "link": "https://www.cmswire.com/customer-experience/medallia-h2-2026-release-expands-multilingual-ai/",
+      "title": "Medallia H2 2026 Release Expands Multilingual AI"
     }
   ]
 }
