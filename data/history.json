@@ -1,51 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-09-25",
-      "link": "https://www.cmswire.com/digital-marketing/what-does-metas-teen-settlement-mean-for-your-marketing-budget/",
-      "title": "What Does Meta's Teen Settlement Mean for Your Marketing Budget?"
-    },
-    {
-      "date": "2026-09-25",
-      "link": "https://martech.org/ai-search-is-changing-ecommerce-forever/",
-      "title": "AI search is changing ecommerce forever"
-    },
-    {
-      "date": "2026-09-25",
-      "link": "https://martech.org/openai-testing-third-party-style-tracking-in-chatgpt-ads/",
-      "title": "OpenAI testing third-party-style tracking in ChatGPT ads"
-    },
-    {
-      "date": "2026-09-25",
-      "link": "https://martech.org/b2b-brands-turn-to-creator-video-to-fight-ai-slop-and-aid-ai-search/",
-      "title": "B2B brands turn to creator video to fight AI slop and aid AI search"
-    },
-    {
-      "date": "2026-09-25",
-      "link": "https://www.technologyreview.com/2026/09/23/1145002/a-congressional-representative-just-proposed-killing-americas-border-tower-program/",
-      "title": "A congressional representative just proposed killing America's border tower program"
-    },
-    {
-      "date": "2026-09-25",
-      "link": "https://www.technologyreview.com/2026/09/24/1145048/ai-climate-week/",
-      "title": "AI is dominating the conversation at Climate Week"
-    },
-    {
-      "date": "2026-09-25",
-      "link": "https://www.srf.ch/news/wirtschaft/snb-zinsentscheid-snb-entscheid-leitzins-bleibt-bei-null-prozent",
-      "title": "SNB-Entscheid: Leitzins bleibt bei null Prozent"
-    },
-    {
-      "date": "2026-09-25",
-      "link": "https://www.srf.ch/news/international/treffen-im-weissen-haus-trump-empfaengt-xi-zum-prunkvollen-staatsbankett",
-      "title": "Trump empfängt Xi zum prunkvollen Staatsbankett"
-    },
-    {
-      "date": "2026-09-25",
-      "link": "https://www.srf.ch/news/international/laufende-untersuchung-open-ai-agent-hackt-australisches-regierungsportal-medicare",
-      "title": "OpenAI-Agent hackt australisches Regierungsportal Medicare"
-    },
-    {
       "date": "2026-09-26",
       "link": "https://www.cmswire.com/digital-experience/is-your-website-quietly-shutting-out-chatgpt-and-claude-crawlers/",
       "title": "Is Your Website Quietly Shutting Out ChatGPT and Claude Crawlers?"
@@ -279,6 +234,56 @@
       "date": "2026-10-02",
       "link": "https://www.cmswire.com/customer-experience/medallia-h2-2026-release-expands-multilingual-ai/",
       "title": "Medallia H2 2026 Release Expands Multilingual AI"
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://www.srf.ch/news/schweiz/nach-elf-jahren-bundesrat-guy-parmelin-tritt-per-ende-2026-zurueck",
+      "title": "Nach elf Jahren: Bundesrat Guy Parmelin tritt per Ende 2026 zurück"
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://www.srf.ch/news/international/ukraine/ueberforderte-luftabwehr-russland-attackiert-kiew-mit-600-km-h-schnellen-geran-5-drohnen",
+      "title": "Überforderte Luftabwehr: Russland attackiert Kiew mit 600 km/h schnellen Geran-5-Drohnen"
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://www.srf.ch/sport/fussball/nations-league/nations-league-gruppe-a-zidanes-heimdebuet-gegen-italien-endet-mit-einem-daempfer",
+      "title": "Nations League: Zidanes Heimdebüt gegen Italien endet mit einem Dämpfer"
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/",
+      "title": "Don’t be fooled—LLMs don’t reason"
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+      "title": "Who’s liable when AI agents go rogue?"
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://martech.org/braze-expands-ai-from-content-creation-to-campaign-operations/",
+      "title": "Braze expands AI from content creation to campaign operations"
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://www.cmswire.com/customer-experience/braze-forge-2026-recap-self-service-speed-and-autonomy-require-governance/",
+      "title": "Braze expands AI from content creation to campaign operations"
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://martech.org/b2b-marketing-doesnt-have-an-roi-problem-it-has-an-evidence-problem/",
+      "title": "B2B marketing doesn’t have an ROI problem. It has an evidence problem."
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://martech.org/ai-is-making-customers-expect-more-and-tolerate-less/",
+      "title": "AI is making customers expect more and tolerate less"
+    },
+    {
+      "date": "2026-10-03",
+      "link": "https://blog.adobe.com/en/publish/2026/09/24/adobe-comes-to-gemini-expands-what-you-can-do-in-claude",
+      "title": "Adobe comes to Gemini and expands what you can do in Claude"
     }
   ]
 }
