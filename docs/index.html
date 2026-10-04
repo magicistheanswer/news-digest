@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-03</title>
+<title>Morning News Digest — 2026-10-04</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,106 +95,45 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-03, Saturday):
+  Run notes (2026-10-04, Sunday):
   - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC domains
-    are not searchable (API rejects them), so BBC News/Sport skipped.
-  - CMSWire: Braze Forge recap (Oct 2 per search summary) merged with the MarTech Braze story (same topic). Other hits undated/event pages. 
-  - MarTech.org: Braze (Sep 29), B2B evidence and Alchemer AI-expectations pieces (Oct 2, dates from search summary).
-    Sep 30/Oct 1 items (Salesforce/Listen Labs; rolling "latest AI martech news" page) had no confirmed article URL/date, skipped.
-  - Adobe Experience Cloud Blog: Sep 24 post (date in URL, 9 days old - slightly beyond the ~7 day bar, kept as the only recent Adobe item).
+    are not searchable, so BBC News/Sport skipped.
+  - CMSWire: only the Braze Forge recap (already shown Oct 3); rest were event pages. Skipped.
+  - MarTech.org: nothing new with a confirmed date. "Martech 2026: AI drives a major industry reset" is from May 5 (too old);
+    Prime Big Deal Days piece has an inconsistent date; Oct 1 product-release roundup has no confirmed URL. Skipped.
+  - Adobe Experience Cloud Blog: no post newer than the Sep 24 one already shown. Skipped.
   - MeasureCamp: no dated posts found. Skipped.
-  - MIT Technology Review: Oct 2 and Sep 28 pieces (dates in URL). The Oct 2 Download was not used (overlaps with the LLM piece).
-  - Outside/Schweiz: SRF Parmelin resignation (Oct 2 per search summary). Outside/World: SRF Geran-5 drones (listed in Oct 2 SRF
-    coverage; exact publish date not confirmed on the article page). Outside/Sport: SRF France-Italy Nations League (Oct 1/2 matchday per front page).
-    Kicker/Super League hits: undated round recaps, skipped (Bayern-Union 7:0 date unconfirmed).
-  - Net: 9 articles (6 core / 3 outside), below the ~15 target. Freshness beats quota per CLAUDE.md.
+  - MIT Technology Review: only Oct 1/2 Download editions and an Oct 1 brain-scan piece, all overlapping topics already shown
+    (mind-reading, LLM reasoning). Skipped to avoid repeats.
+  - Outside/Schweiz: SRF Swiss Steel job cuts in Germany (published Oct 4; same story in SonntagsZeitung/cash.ch). Included.
+    Outside/World: SRF/Hormuz and other hits had no confirmed publish date. Skipped.
+    Outside/Sport: Kicker Bayern-Union 7:0 is ~15 days old; SRF Super League hits are old rounds. Skipped.
+  - Net: 1 article (0 core / 1 outside), far below the ~15 target. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Saturday, October 3, 2026 · 9 articles</div>
+    <div class="date">Sunday, October 4, 2026 · 1 article</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/nach-elf-jahren-bundesrat-guy-parmelin-tritt-per-ende-2026-zurueck">
+  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/hunderte-millionen-verlust-swiss-steel-nimmt-stellenabbau-in-deutschland-vor">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/nach-elf-jahren-bundesrat-guy-parmelin-tritt-per-ende-2026-zurueck">Nach elf Jahren: Bundesrat Guy Parmelin tritt per Ende 2026 zurück</a></h3>
-    <div class="meta">SRF News — Schweiz · Oct 2, 2026</div>
-    <div class="why">outside / schweiz — Bundesrat, Innenpolitik</div>
-    <p class="summary">Wirtschaftsminister Guy Parmelin (SVP) hat vor den Medien in Bern seinen Rücktritt auf Ende Dezember angekündigt, nach elf Jahren im Bundesrat. Der 66-Jährige begründet den Schritt nicht mit gesundheitlichen Problemen, sondern will Platz für neue, jüngere Kräfte machen. Damit beginnt die Suche nach einer Nachfolge in der Landesregierung.</p>
-  </article>
-
-  <article class="card" data-link="https://www.srf.ch/news/international/ukraine/ueberforderte-luftabwehr-russland-attackiert-kiew-mit-600-km-h-schnellen-geran-5-drohnen">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/ukraine/ueberforderte-luftabwehr-russland-attackiert-kiew-mit-600-km-h-schnellen-geran-5-drohnen">Überforderte Luftabwehr: Russland attackiert Kiew mit 600 km/h schnellen Geran-5-Drohnen</a></h3>
-    <div class="meta">SRF News — International · Oct 2, 2026</div>
-    <div class="why">outside / world — Ukraine-Krieg</div>
-    <p class="summary">Russland setzt gegen Kiew neue Düsendrohnen vom Typ Geran-5 ein, die dreimal schneller fliegen als frühere Modelle. Die ukrainische Flugabwehr hat dagegen bislang kein wirksames Mittel, und der Schutz mit Raketenabwehrsystemen wäre teuer und ressourcenintensiv. Kiew arbeitet an speziellen Abfangdrohnen, die bereits erste Einsätze hinter sich haben.</p>
-  </article>
-
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/nations-league/nations-league-gruppe-a-zidanes-heimdebuet-gegen-italien-endet-mit-einem-daempfer">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/nations-league/nations-league-gruppe-a-zidanes-heimdebuet-gegen-italien-endet-mit-einem-daempfer">Nations League: Zidanes Heimdebüt gegen Italien endet mit einem Dämpfer</a></h3>
-    <div class="meta">SRF Sport — Fussball · Oct 2, 2026</div>
-    <div class="why">outside / sport — Nations League, Frankreich</div>
-    <p class="summary">Frankreich hat im ersten Heimspiel unter Trainer Zinédine Zidane gegen Italien nur 1:1 gespielt. Olise brachte die Gastgeber in Führung, Bastoni glich für Italien aus, als Upamecano nach einem Fehler vor dem Ausgleich später mit Gelb-Rot vom Platz flog. Trotz Überlegenheit blieb der erhoffte Sieg aus.</p>
+    <h3><a href="https://www.srf.ch/news/wirtschaft/hunderte-millionen-verlust-swiss-steel-nimmt-stellenabbau-in-deutschland-vor">Swiss Steel kündigt Stellenabbau an: Deutsche Standorte betroffen</a></h3>
+    <div class="meta">SRF News · Oct 4, 2026</div>
+    <div class="why">outside / schweiz — Wirtschaft, Industrie</div>
+    <p class="summary">Der Luzerner Stahlkonzern Swiss Steel plant wegen hoher Verluste eine weitere Restrukturierung, die vor allem die deutschen Standorte trifft. CEO Frank Koch nannte keine Zahlen, will aber die Abhängigkeit vom Autogeschäft deutlich senken und ab 2028 wieder operativ Gewinn schreiben. Zusätzlich belasten neue EU-Schutzmassnahmen gegen Stahlimporte das Geschäft.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/">Don’t be fooled—LLMs don’t reason</a></h3>
-    <div class="meta">MIT Technology Review · Oct 2, 2026</div>
-    <div class="why">core / ai — LLM-Grenzen</div>
-    <p class="summary">The author argues that today&#x27;s language models are fast pattern completers that predict the next token, not systems that reason the way AlphaGo&#x27;s inventive moves suggested. For trustworthy results in areas like science and medicine, he says future AI needs real reasoning abilities built in. A useful counterpoint to agentic-AI hype.</p>
-  </article>
-
-  <article class="card" data-link="https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/">Who’s liable when AI agents go rogue?</a></h3>
-    <div class="meta">MIT Technology Review · Sep 28, 2026</div>
-    <div class="why">core / ai — Agenten, Haftung</div>
-    <p class="summary">With reports of rogue AI agents multiplying, the piece asks who bears legal responsibility when an autonomous agent causes harm: the developer, the deploying company or the user. It frames the question as one that businesses rolling out agents will need answers to before regulators force the issue.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/braze-expands-ai-from-content-creation-to-campaign-operations/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/braze-expands-ai-from-content-creation-to-campaign-operations/">Braze expands AI from content creation to campaign operations</a></h3>
-    <div class="meta">MarTech.org · Sep 29, 2026 (also CMSWire · Oct 2, 2026)</div>
-    <div class="why">core / martech — CDP/engagement, AI</div>
-    <p class="summary">At its Forge conference Braze introduced Decisioning Studio Go, a self-service route to AI-driven next-best-action without a data-science team, plus Agentic Standards for automated compliance checks and Operator Connect for linking to external AI tools such as Claude. CMSWire&#x27;s recap adds that this speed and autonomy for marketers demands solid governance.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/b2b-marketing-doesnt-have-an-roi-problem-it-has-an-evidence-problem/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/b2b-marketing-doesnt-have-an-roi-problem-it-has-an-evidence-problem/">B2B marketing doesn’t have an ROI problem. It has an evidence problem.</a></h3>
-    <div class="meta">MarTech.org · Oct 2, 2026</div>
-    <div class="why">core / martech — measurement, B2B</div>
-    <p class="summary">The article argues that B2B teams struggle to prove value less because ROI is low and more because they can&#x27;t connect buyer journeys, marketing influence and revenue across long sales cycles. Linking those pieces exposes funnel bottlenecks and moves marketing from defending budget to optimising revenue.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/ai-is-making-customers-expect-more-and-tolerate-less/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-is-making-customers-expect-more-and-tolerate-less/">AI is making customers expect more and tolerate less</a></h3>
-    <div class="meta">MarTech.org · Oct 2, 2026</div>
-    <div class="why">core / martech — CX, AI</div>
-    <p class="summary">Alchemer&#x27;s 2026 study finds nearly six in ten consumers expect faster responses once they know a company uses AI. Yet 89% say AI has hurt an interaction at least once, and about a third had to repeat information they&#x27;d already given. A reminder that AI-driven CX raises the bar instead of just cutting cost.</p>
-  </article>
-
-  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/09/24/adobe-comes-to-gemini-expands-what-you-can-do-in-claude">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://blog.adobe.com/en/publish/2026/09/24/adobe-comes-to-gemini-expands-what-you-can-do-in-claude">Adobe comes to Gemini and expands what you can do in Claude</a></h3>
-    <div class="meta">Adobe Blog · Sep 24, 2026</div>
-    <div class="why">core / adobe — AI-Integrationen</div>
-    <p class="summary">Adobe is bringing Photoshop, Lightroom, Express and Firefly tools into Google Gemini conversations. In Claude it combines Acrobat with its creative tools and adds hands-on editing. It extends Adobe&#x27;s reach into the AI chat assistants where marketers increasingly start their work.</p>
-  </article>
+  <p class="summary">No sufficiently fresh, unshown articles from the core sources today.</p>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 9 articles (6 core / 3 outside), below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 1 article (0 core / 1 outside), far below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
