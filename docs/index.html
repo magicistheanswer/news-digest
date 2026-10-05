@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-04</title>
+<title>Morning News Digest — 2026-10-05</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,45 +95,70 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-04, Sunday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC domains
+  Run notes (2026-10-05, Monday):
+  - Direct RSS/Atom fetching and WebFetch blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC domains
     are not searchable, so BBC News/Sport skipped.
-  - CMSWire: only the Braze Forge recap (already shown Oct 3); rest were event pages. Skipped.
-  - MarTech.org: nothing new with a confirmed date. "Martech 2026: AI drives a major industry reset" is from May 5 (too old);
-    Prime Big Deal Days piece has an inconsistent date; Oct 1 product-release roundup has no confirmed URL. Skipped.
-  - Adobe Experience Cloud Blog: no post newer than the Sep 24 one already shown. Skipped.
+  - CMSWire: only event pages / undated items. Skipped.
+  - MarTech.org: roundup pages have unreliable dates (the "October 3" roundup snippet is from a different year); nothing with a confirmed fresh date. Skipped.
+  - Adobe Experience Cloud Blog: included Sep 29 post (ChatGPT plugin editing controls, date from URL).
   - MeasureCamp: no dated posts found. Skipped.
-  - MIT Technology Review: only Oct 1/2 Download editions and an Oct 1 brain-scan piece, all overlapping topics already shown
-    (mind-reading, LLM reasoning). Skipped to avoid repeats.
-  - Outside/Schweiz: SRF Swiss Steel job cuts in Germany (published Oct 4; same story in SonntagsZeitung/cash.ch). Included.
-    Outside/World: SRF/Hormuz and other hits had no confirmed publish date. Skipped.
-    Outside/Sport: Kicker Bayern-Union 7:0 is ~15 days old; SRF Super League hits are old rounds. Skipped.
-  - Net: 1 article (0 core / 1 outside), far below the ~15 target. Freshness beats quota per CLAUDE.md.
+  - MIT Technology Review: included Sep 28 piece (date from URL). Sep 29 Download overlaps the same topic; Oct 1/2 items already shown or sponsored. Gemini 4 / FTC items had no confirmable article URL.
+  - Outside/Schweiz: SRF Ortsbildschutz (Oct 3). Outside/World: SRF France student protests - exact publish date not confirmed
+    (search indicates ~Sep 30 / Tuesday-evening update), included as within 7 days. Outside/Sport: SRF Nati-Slowenien (Oct 3).
+    Kicker Bundesliga: no confirmed-date match report. Skipped.
+  - Net: 5 articles (2 core / 3 outside), far below the ~15 target. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Sunday, October 4, 2026 · 1 article</div>
+    <div class="date">Monday, October 5, 2026 · 5 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/hunderte-millionen-verlust-swiss-steel-nimmt-stellenabbau-in-deutschland-vor">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/durchbruch-beim-wohnungsbau-einfacher-bauen-in-der-ganzen-schweiz">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/wirtschaft/hunderte-millionen-verlust-swiss-steel-nimmt-stellenabbau-in-deutschland-vor">Swiss Steel kündigt Stellenabbau an: Deutsche Standorte betroffen</a></h3>
-    <div class="meta">SRF News · Oct 4, 2026</div>
-    <div class="why">outside / schweiz — Wirtschaft, Industrie</div>
-    <p class="summary">Der Luzerner Stahlkonzern Swiss Steel plant wegen hoher Verluste eine weitere Restrukturierung, die vor allem die deutschen Standorte trifft. CEO Frank Koch nannte keine Zahlen, will aber die Abhängigkeit vom Autogeschäft deutlich senken und ab 2028 wieder operativ Gewinn schreiben. Zusätzlich belasten neue EU-Schutzmassnahmen gegen Stahlimporte das Geschäft.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/durchbruch-beim-wohnungsbau-einfacher-bauen-in-der-ganzen-schweiz">Bundesrat lockert Ortsbildschutz für den Wohnungsbau</a></h3>
+    <div class="meta">SRF News · Oct 3, 2026</div>
+    <div class="why">outside / schweiz — Wohnungsbau, Raumplanung</div>
+    <p class="summary">Der Bund schwächt den Ortsbildschutz ab, damit in schützenswerten Ortschaften leichter gebaut werden kann. Das Inventar ISOS mit rund 1200 Ortsbildern soll künftig nur noch direkt greifen, wenn ein Projekt das Ortsbild tatsächlich beeinträchtigt; für Solaranlagen auf Neubauten gelten vereinfachte Regeln. Hintergrund sind jahrelange Verzögerungen bei Baugesuchen, besonders in der Stadt Zürich.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/news/international/frankreich-schuelerproteste-weiten-sich-aus-hunderte-schulen-geschlossen">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/international/frankreich-schuelerproteste-weiten-sich-aus-hunderte-schulen-geschlossen">Schülerproteste in Frankreich: 400 Schulen geschlossen</a></h3>
+    <div class="meta">SRF News · Sep 30, 2026 (approx.)</div>
+    <div class="why">outside / world — Frankreich, Bildung</div>
+    <p class="summary">In Frankreich protestieren Gymnasiasten seit gut einer Woche für mehr Geld im Bildungssystem; die Bewegung startete im Raum Paris und hat sich auf weitere Städte ausgeweitet. Kritisiert werden übervolle Klassen, Lehrermangel und marode Schulgebäude. Rund 400 Schulen mussten schliessen, und es kam zu Festnahmen und Verletzten, während die Regierung die Lage unter Kontrolle bringen will.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/nationalmannschaft/nations-league-3-spieltag-nati-bodigt-auch-slowenien-und-feiert-1-heimsieg-nach-wm-maerchen">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/nationalmannschaft/nations-league-3-spieltag-nati-bodigt-auch-slowenien-und-feiert-1-heimsieg-nach-wm-maerchen">Nati bodigt Slowenien und feiert ersten Heimsieg nach dem WM-Märchen</a></h3>
+    <div class="meta">SRF Sport · Oct 3, 2026</div>
+    <div class="why">outside / sport — Nati, Nations League</div>
+    <p class="summary">Die Schweizer Nati gewinnt in Luzern ihr drittes Nations-League-Spiel 2:1 gegen Slowenien, obwohl sie schon nach 88 Sekunden zurücklag. Dan Ndoye sorgte nach einem schönen Angriff über Jashari, Freuler und Amdouni in der 38. Minute für die Wende. Es war der erste Heimauftritt nach dem WM-Sommer.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <p class="summary">No sufficiently fresh, unshown articles from the core sources today.</p>
+  <article class="card" data-link="https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/">When can we say AI made a scientific discovery?</a></h3>
+    <div class="meta">MIT Technology Review · Sep 28, 2026</div>
+    <div class="why">core / ai — Wissenschaft, KI-Agenten</div>
+    <p class="summary">Anlass ist Anthropics neues Molekularbiologie-Labor: Ein System aus 950 KI-Agenten markierte nach 21 Stunden ein bisher nicht katalogisiertes Muster rund um ein bekanntes Enzym, das an die Anfänge von CRISPR erinnert. Der Beitrag fragt, ob das schon eine Entdeckung ist; Biologen widersprechen, und ein Forscher aus Kopenhagen sagt, sein Team kenne das Muster bereits.</p>
+  </article>
+  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/09/29/openai-devday-2026-introducing-hands-on-editing-adobe-plugin-chatgpt">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://blog.adobe.com/en/publish/2026/09/29/openai-devday-2026-introducing-hands-on-editing-adobe-plugin-chatgpt">Introducing interactive editing controls for the Adobe plugin in ChatGPT</a></h3>
+    <div class="meta">Adobe Blog · Sep 29, 2026</div>
+    <div class="why">core / adobe — Creative-Agenten, ChatGPT</div>
+    <p class="summary">Adobe erweitert sein Plugin in ChatGPT um interaktive Bearbeitungswerkzeuge: Man markiert einen Bildbereich im Editor, lässt ChatGPT per Adobe-Plugin Änderungen vornehmen und verfeinert das Ergebnis mit neuen Reglern. Chat und Editor bleiben synchron, sodass man weder neu erklären noch Dateien erneut hochladen muss.</p>
+  </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 1 article (0 core / 1 outside), far below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 5 articles (2 core / 3 outside), far below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
