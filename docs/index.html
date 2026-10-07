@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-06</title>
+<title>Morning News Digest — 2026-10-07</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,47 +95,56 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-06, Tuesday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC domains not searchable: BBC News/Sport skipped.
-  - CMSWire: only already-shown Braze Forge recap, event pages and items without confirmable dates. Skipped.
-  - MarTech.org: only undated or already-shown items. Skipped.
-  - Adobe Experience Cloud Blog: nothing new dated within range (Sep 29 post already shown). Skipped.
+  Run notes (2026-10-07, Wednesday):
+  - Direct RSS/Atom fetching and WebFetch blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC domains not searchable: BBC News/Sport skipped.
+  - CMSWire: only older (Summit/event/trend) pieces and no confirmable-date new items. Skipped.
+  - MarTech.org: included OpenAI/ChatGPT ads item (listed in the Oct 1 AI-martech news round-up; exact publish date not shown, treated as early Oct). Other Oct items (email automation, apprenticeships, first-party data) had no confirmable date. Skipped.
+  - Adobe Experience Cloud Blog: nothing dated within range. Skipped. Adobe Experience Platform release notes: only the Sep 22 notes (already shown on Oct 1 via history).
   - MeasureCamp: no dated posts found. Skipped.
-  - MIT Technology Review: included Oct 5 Download (date from URL). EmTech Future event recap (Oct 5) is event promo, not included; Sep 29 / Oct 2 Downloads overlap already-shown topics.
-  - SRF Schweiz: included Zug government election (Oct 5, per search result). SRF International: Pakistan march / Brazil items had no confirmable article URL + date. Skipped.
-  - SRF Sport / Kicker: no confirmable-date match report for the weekend. Skipped.
-  - Net: 2 articles (1 core / 1 outside), far below the ~15 target. Freshness beats quota per CLAUDE.md.
+  - MIT Technology Review: included Oct 6 Download (date from URL). Oct 5 feature on AI popularity overlaps the already-shown Oct 5 Download; Oct 5 enterprise-knowledge piece looks like sponsored content. Not included.
+  - SRF Schweiz: Tamedia job cuts and Ski-WM OK-president trial items had no confirmable publish date. Skipped.
+  - SRF International: included Russian nuclear-threat piece (dated 06.10.2026 in the search result).
+  - SRF Sport / Kicker: Super League round and Bundesliga results had no confirmable publish date (possible international break). Skipped.
+  - Net: 3 articles (2 core / 1 outside), far below the ~15 target. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Tuesday, October 6, 2026 · 2 articles</div>
+    <div class="date">Wednesday, October 7, 2026 · 3 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/regierungswahlen-kanton-zug-alle-bisherigen-wiedergewaehlt-laura-dittli-mit-bestem-resultat">
+  <article class="card" data-link="https://www.srf.ch/news/international/russische-atomdrohung-die-drohung-mit-atombomben-nuetzt-sich-ab">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/regierungswahlen-kanton-zug-alle-bisherigen-wiedergewaehlt-laura-dittli-mit-bestem-resultat">Zuger Regierungswahlen: Alle Bisherigen wiedergewählt</a></h3>
-    <div class="meta">SRF News · Oct 5, 2026</div>
-    <div class="why">outside / schweiz — Kantonswahlen</div>
-    <p class="summary">Im Kanton Zug haben alle bisherigen Regierungsmitglieder die Wiederwahl geschafft, die Regierung bleibt damit bürgerlich geprägt. Laura Dittli (Mitte) erzielte das beste Resultat. Bei den Parlamentswahlen wurde die SVP laut SRF neu zur stärksten Kraft.</p>
+    <h3><a href="https://www.srf.ch/news/international/russische-atomdrohung-die-drohung-mit-atombomben-nuetzt-sich-ab">Russische Atomdrohung: Die Drohung mit Atombomben nützt sich ab</a></h3>
+    <div class="meta">SRF News · Oct 6, 2026</div>
+    <div class="why">outside / world — Ukraine-Krieg</div>
+    <p class="summary">Russland hat erneut mit Atomwaffen gedroht, was Diskussionen auslöst. SRF ordnet ein, dass sich solche Drohungen seit Kriegsbeginn und nach mehreren Wiederholungen zunehmend abnutzen und an Wirkung verlieren.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/05/1145711/the-download-ai-popularity-paradox-emtech-future-2026/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/06/1145796/the-download-10-climate-tech-companies-to-watch/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/05/1145711/the-download-ai-popularity-paradox-emtech-future-2026/">The Download: AI's popularity paradox and EmTech Future 2026</a></h3>
-    <div class="meta">MIT Technology Review · Oct 5, 2026</div>
-    <div class="why">core / ai — Öffentliche Meinung, Nutzung</div>
-    <p class="summary">Die Stimmung gegenüber KI kippt: Immer mehr Menschen erwarten negative Folgen, gleichzeitig wächst die Nutzung rasant. Der Newsletter greift diesen Widerspruch auf und blickt auf die Konferenz EmTech Future, die KI, Quantentechnik, Energie und Robotik zusammendachte.</p>
+    <h3><a href="https://www.technologyreview.com/2026/10/06/1145796/the-download-10-climate-tech-companies-to-watch/">The Download: 10 climate tech companies to watch</a></h3>
+    <div class="meta">MIT Technology Review · Oct 6, 2026</div>
+    <div class="why">core / ai — Klimatech, Energiebedarf</div>
+    <p class="summary">Der Newsletter stellt zehn Klimatech-Firmen vor, von mobilen Flutbarrieren über Batterien bis zu neuen Reaktoren, und zeigt, wie der Strombedarf von KI-Rechenzentren die Branche prägt. Daneben geht es um Tandem-Solarpanels und eine Klage gegen McDonald's wegen KI-gesteuerter Preise.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/openai-ads-visuals-to-chatgpt-ad/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/openai-ads-visuals-to-chatgpt-ad/">OpenAI adds visuals to ChatGPT ads</a></h3>
+    <div class="meta">MarTech.org · Oct 2026</div>
+    <div class="why">core / martech — AI-Werbung, Messung</div>
+    <p class="summary">OpenAI testet Bildanzeigen in ChatGPT und baut die Conversion-Messung mit weiteren Drittanbietern aus. Gleichzeitig zeigt eine Analyse von TrafficGuard, dass Klicks auf ChatGPT-Anzeigen deutlich häufiger von Bots stammen als bei Google.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 2 articles (1 core / 1 outside), far below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 3 articles (2 core / 1 outside), far below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
