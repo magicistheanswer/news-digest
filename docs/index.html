@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-08</title>
+<title>Morning News Digest — 2026-10-09</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,72 +95,87 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-08, Thursday):
+  Run notes (2026-10-09, Friday):
   - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC domains not searchable: BBC News/Sport skipped.
-  - CMSWire: included Treasure AI (Oct 6). Braze Forge recap already shown. Other hits were event pages / press releases. 
-  - MarTech.org: only undated or already-shown items (ChatGPT ads). Skipped.
-  - Adobe Experience Cloud Blog: only release-notes pages (AEM, Workfront, Cloud Manager), no dated blog posts. Skipped.
-  - MeasureCamp: nothing found. Skipped.
-  - MIT Technology Review: included Oct 7 Download (date from URL). Oct 1/5 items already shown or event/sponsored. 
-  - SRF Schweiz: included Parmelin-succession piece (dated 07.10.2026 19:45); Schmidhalter resignation and U21 loss taken from SRF listing for 7 Oct (dates not in URLs).
-  - SRF International: only the Hamas-anniversary interview, no confirmable URL. Skipped; no world item today.
-  - Kicker Bundesliga: no matchday on Oct 7 (next Oct 9-11). Skipped.
-  - Net: 5 articles (2 core / 3 outside), far below ~15. Freshness beats quota per CLAUDE.md.
+  - MarTech.org: 3 items dated Oct 8 (per search results; URLs undated). Oct 6-7 items already shown or without confirmable URL.
+  - CMSWire: nothing dated within the last week found. Skipped.
+  - Adobe Experience Cloud Blog: only old posts returned. Skipped.
+  - MeasureCamp: only event pages (Sydney Oct 24, DC Nov 7, Brussels Nov 14), no articles. Skipped.
+  - MIT Technology Review: included Oct 8 Download (date from URL).
+  - SRF Schweiz: included Bundesratswahl succession piece (Oct 8). SRF International: only Oct 4-5 items found and no confirmable URL/date for newer ones. Skipped; no world item today.
+  - SRF Sport: Reusser EM title (Oct 7) and women's Nati playoff preview (Oct 8-9). Kicker Bundesliga: international break until Oct 10, nothing fresh. Skipped.
+  - Net: 7 articles (4 core / 3 outside), below ~15. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Thursday, October 8, 2026 · 5 articles</div>
+    <div class="date">Friday, October 9, 2026 · 7 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/nach-parmelin-ruecktritt-wirtschaftsminister-beat-jans-sp-vor-einer-historischen-chance">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-ostschweiz-gegen-westschweiz-bei-der-bundesratswahl">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/nach-parmelin-ruecktritt-wirtschaftsminister-beat-jans-sp-vor-einer-historischen-chance">Historische Chance für die SP mit Wirtschaftsminister Beat Jans?</a></h3>
-    <div class="meta">SRF News · Oct 7, 2026</div>
+    <h3><a href="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-ostschweiz-gegen-westschweiz-bei-der-bundesratswahl">Bundesratswahl: Ostschweiz (Friedli) gegen Westschweiz (Amaudruz)?</a></h3>
+    <div class="meta">SRF News · Oct 8, 2026</div>
     <div class="why">outside / schweiz — Bundesrat</div>
-    <p class="summary">Nach dem angekündigten Rücktritt von Guy Parmelin wird über seine Nachfolge im Wirtschaftsdepartement spekuliert. Justizminister Beat Jans werden Wechselabsichten nachgesagt, während bürgerliche Kreise auf Verteidigungsminister Martin Pfister setzen.</p>
+    <p class="summary">Zur Nachfolge von Guy Parmelin zeichnet sich ein Duell zwischen der St. Gallerin Esther Friedli und der Genferin Céline Amaudruz ab, falls beide antreten. Die Frage Ost- gegen Westschweiz dürfte die Wahl prägen.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/sport/ski-alpin/ski-alpin-allgemein/wegen-laufendem-strafverfahren-ok-praesident-der-ski-wm-tritt-zurueck">
+  <article class="card" data-link="https://www.srf.ch/sport/rad/rad-em-in-slowenien-reusser-zum-5-mal-zeitfahr-europameisterin">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/ski-alpin/ski-alpin-allgemein/wegen-laufendem-strafverfahren-ok-praesident-der-ski-wm-tritt-zurueck">Wegen laufendem Strafverfahren: OK-Präsident der Ski-WM tritt zurück</a></h3>
+    <h3><a href="https://www.srf.ch/sport/rad/rad-em-in-slowenien-reusser-zum-5-mal-zeitfahr-europameisterin">Rad-EM in Slowenien: Reusser zum 5. Mal Zeitfahr-Europameisterin</a></h3>
     <div class="meta">SRF Sport · Oct 7, 2026</div>
-    <div class="why">outside / sport — Ski-WM Crans-Montana</div>
-    <p class="summary">Claude-Alain Schmidhalter gibt seine Ämter als OK-Chef der Ski-WM 2027 und als Swiss-Ski-Vizepräsident auf, nachdem er wegen einer Anklage im Wallis vorläufig suspendiert wurde. Er bestreitet die Vorwürfe; der Prozess beginnt am 27. Oktober.</p>
+    <div class="why">outside / sport — Rad</div>
+    <p class="summary">Marlen Reusser gewinnt in Ljubljana überlegen das EM-Zeitfahren und holt sich ihren fünften Titel in dieser Disziplin. Dahinter folgen Demi Vollering mit rund 23 Sekunden Rückstand und die Französin Juliette Berthet.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/u21/1-7-gegen-frankreich-keine-chance-keine-schuetzenhilfe-u21-nati-verpasst-em">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/frauen-nationalteam/nati-vor-wm-playoff-hinspiel-wieder-gegen-massierte-abwehr-fuer-waelti-nichts-neues">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/u21/1-7-gegen-frankreich-keine-chance-keine-schuetzenhilfe-u21-nati-verpasst-em">1:7 gegen Frankreich: U21-Nati verpasst die EM</a></h3>
-    <div class="meta">SRF Sport · Oct 7, 2026</div>
-    <div class="why">outside / sport — Fussball, Nati</div>
-    <p class="summary">Die Schweizer U21 geht im letzten Quali-Spiel in Frankreich klar unter und hofft vergeblich auf Hilfe aus den Färöern. Weil Island Platz 2 übernimmt, ist die Endrunde 2027 ohne die Schweiz.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/frauen-nationalteam/nati-vor-wm-playoff-hinspiel-wieder-gegen-massierte-abwehr-fuer-waelti-nichts-neues">Nati vor WM-Playoff-Hinspiel: Wieder gegen massierte Abwehr</a></h3>
+    <div class="meta">SRF Sport · Oct 8–9, 2026 (Vorbericht)</div>
+    <div class="why">outside / sport — Fussball, Frauen-Nati</div>
+    <p class="summary">Vor dem Hinspiel in Ungarn gegen Israel rechnet Captain Lia Wälti mit einem tief stehenden Gegner und mahnt zu Geduld. Das Rückspiel folgt am 13. Oktober in Sitten.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/07/1145895/the-download-weight-loss-drugs-slow-aging-carbon-dioxide-batteries/">
+  <article class="card" data-link="https://martech.org/brand-measurement-needs-a-new-source-of-truth/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/07/1145895/the-download-weight-loss-drugs-slow-aging-carbon-dioxide-batteries/">The Download: weight-loss drugs slowing aging and carbon dioxide batteries</a></h3>
-    <div class="meta">MIT Technology Review · Oct 7, 2026</div>
-    <div class="why">core / ai — Newsletter, Modelle</div>
-    <p class="summary">Der Newsletter greift neben Gesundheits- und Energiethemen mehrere KI-Meldungen auf: OpenAI präsentiert hunderte neue mathematische Ergebnisse, und Mistral kündigt ein offenes Grossmodell an, dessen Gewichte Ende Oktober erscheinen sollen. Dazu kommt Glas als Trägermaterial für künftige KI-Chips.</p>
+    <h3><a href="https://martech.org/brand-measurement-needs-a-new-source-of-truth/">Brand measurement needs a new source of truth</a></h3>
+    <div class="meta">MarTech.org · Oct 8, 2026</div>
+    <div class="why">core / martech — Measurement, AI</div>
+    <p class="summary">PMG's Crissi Cupak argues that AI can merge search, social, ecommerce and commercial signals into a continuous view of brand health. The case is for replacing sporadic brand studies with an always-on source of truth.</p>
   </article>
 
-  <article class="card" data-link="https://www.cmswire.com/digital-marketing/treasure-ai-bets-on-click-based-email-pricing-launches-personalization-studio/">
+  <article class="card" data-link="https://martech.org/more-buyer-signals-wont-tell-you-what-buyers-need-next">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-marketing/treasure-ai-bets-on-click-based-email-pricing-launches-personalization-studio/">Treasure AI Bets on Click-Based Email Pricing, Launches Personalization Studio</a></h3>
-    <div class="meta">CMSWire · Oct 6, 2026</div>
-    <div class="why">core / martech — E-Mail, Personalisierung</div>
-    <p class="summary">Treasure AI rechnet E-Mail künftig nach Interaktionen wie Klicks statt nach Versandvolumen ab. Zusätzlich gibt es ein Personalization Studio, das Marketer auch ohne Technikteam nutzen können und das allen Kunden bereits zur Verfügung steht.</p>
+    <h3><a href="https://martech.org/more-buyer-signals-wont-tell-you-what-buyers-need-next">More buyer signals won't tell you what buyers need next</a></h3>
+    <div class="meta">MarTech.org · Oct 8, 2026</div>
+    <div class="why">core / martech — B2B, intent</div>
+    <p class="summary">Clicks and engagement scores show what buyers did, not what they're trying to achieve, writes Tanya Thorson. Citing McKinsey's 2026 B2B Pulse, which found buyers use about ten channels per purchase, she calls for understanding intent rather than collecting more signals.</p>
+  </article>
+
+  <article class="card" data-link="https://martech.org/agentic-media-buying-needs-malware-guardrails-a-propellerads-view/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/agentic-media-buying-needs-malware-guardrails-a-propellerads-view/">Agentic media buying needs malware guardrails: A PropellerAds view</a></h3>
+    <div class="meta">MarTech.org · Oct 8, 2026</div>
+    <div class="why">core / martech — Ad tech, agentic AI</div>
+    <p class="summary">A PropellerAds contributor says traffic-quality and security checks should be built into AI-driven ad optimization. With most buyers already aware of agentic buying, the risk is that automated bidding funnels budget into malicious inventory.</p>
+  </article>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/">The Download: AI roadblocks for humanoids and portable rubber dams</a></h3>
+    <div class="meta">MIT Technology Review · Oct 8, 2026</div>
+    <div class="why">core / ai — Robotics, policy</div>
+    <p class="summary">The lead piece argues that AI progress in robotics won't change daily life soon. The newsletter also notes a call by 22 nations for an international AI oversight body, plus the first nuclear clocks.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 5 articles (2 core / 3 outside), far below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 7 articles (4 core / 3 outside), far below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>

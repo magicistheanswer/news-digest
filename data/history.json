@@ -1,51 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-10-01",
-      "link": "https://www.srf.ch/news/schweiz/herbstsession-2026-eu-paket-staenderat-will-doppeltes-mehr-von-volk-und-staenden",
-      "title": "EU-Paket: Ständerat will doppeltes Mehr von Volk und Ständen"
-    },
-    {
-      "date": "2026-10-01",
-      "link": "https://www.srf.ch/news/international/usa/kuenstliche-intelligenz-tech-konzerne-unterzeichnen-ki-sicherheitsregeln",
-      "title": "Tech-Konzerne unterzeichnen KI-Sicherheitsregeln"
-    },
-    {
-      "date": "2026-10-01",
-      "link": "https://www.srf.ch/news/international/teures-benzin-und-diesel-rekordhohe-spritpreise-wie-staaten-gegensteuern",
-      "title": "Rekordhohe Spritpreise: Wie Staaten gegensteuern"
-    },
-    {
-      "date": "2026-10-01",
-      "link": "https://martech.org/salesforce-buys-ai-customer-research-startup-listen-labs/",
-      "title": "Salesforce buys AI customer research startup Listen Labs"
-    },
-    {
-      "date": "2026-10-01",
-      "link": "https://martech.org/stop-building-strategy-around-your-martech-stack/",
-      "title": "Stop building strategy around your martech stack"
-    },
-    {
-      "date": "2026-10-01",
-      "link": "https://martech.org/b2b-marketing-attribution-is-messy-can-it-be-fixed/",
-      "title": "B2B marketing attribution is messy. Can it be fixed?"
-    },
-    {
-      "date": "2026-10-01",
-      "link": "https://martech.org/states-are-starting-to-rewrite-the-rules-of-social-media/",
-      "title": "States are rewriting the rules of social media"
-    },
-    {
-      "date": "2026-10-01",
-      "link": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/",
-      "title": "OpenAI's chief research officer on the hack fallout"
-    },
-    {
-      "date": "2026-10-01",
-      "link": "https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest",
-      "title": "Adobe Experience Platform release notes — September 2026"
-    },
-    {
       "date": "2026-10-02",
       "link": "https://www.srf.ch/wissen/klimawandel/eisverlust-2026-massive-gletscherschmelze-so-viel-eis-verschwand-im-hitzesommer",
       "title": "Gletscherschmelze 2026: So viel Eis verschwand im Hitzesommer"
@@ -199,6 +154,41 @@
       "date": "2026-10-08",
       "link": "https://www.cmswire.com/digital-marketing/treasure-ai-bets-on-click-based-email-pricing-launches-personalization-studio/",
       "title": "Treasure AI Bets on Click-Based Email Pricing, Launches Personalization Studio"
+    },
+    {
+      "date": "2026-10-09",
+      "link": "https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-ostschweiz-gegen-westschweiz-bei-der-bundesratswahl",
+      "title": "Bundesratswahl: Ostschweiz (Friedli) gegen Westschweiz (Amaudruz)?"
+    },
+    {
+      "date": "2026-10-09",
+      "link": "https://www.srf.ch/sport/rad/rad-em-in-slowenien-reusser-zum-5-mal-zeitfahr-europameisterin",
+      "title": "Rad-EM in Slowenien: Reusser zum 5. Mal Zeitfahr-Europameisterin"
+    },
+    {
+      "date": "2026-10-09",
+      "link": "https://www.srf.ch/sport/fussball/frauen-nationalteam/nati-vor-wm-playoff-hinspiel-wieder-gegen-massierte-abwehr-fuer-waelti-nichts-neues",
+      "title": "Nati vor WM-Playoff-Hinspiel: Wieder gegen massierte Abwehr"
+    },
+    {
+      "date": "2026-10-09",
+      "link": "https://martech.org/brand-measurement-needs-a-new-source-of-truth/",
+      "title": "Brand measurement needs a new source of truth"
+    },
+    {
+      "date": "2026-10-09",
+      "link": "https://martech.org/more-buyer-signals-wont-tell-you-what-buyers-need-next",
+      "title": "More buyer signals won't tell you what buyers need next"
+    },
+    {
+      "date": "2026-10-09",
+      "link": "https://martech.org/agentic-media-buying-needs-malware-guardrails-a-propellerads-view/",
+      "title": "Agentic media buying needs malware guardrails: A PropellerAds view"
+    },
+    {
+      "date": "2026-10-09",
+      "link": "https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/",
+      "title": "The Download: AI roadblocks for humanoids and portable rubber dams"
     }
   ]
 }
