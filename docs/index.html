@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-09</title>
+<title>Morning News Digest — 2026-10-10</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,87 +95,72 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-09, Friday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC domains not searchable: BBC News/Sport skipped.
-  - MarTech.org: 3 items dated Oct 8 (per search results; URLs undated). Oct 6-7 items already shown or without confirmable URL.
-  - CMSWire: nothing dated within the last week found. Skipped.
-  - Adobe Experience Cloud Blog: only old posts returned. Skipped.
-  - MeasureCamp: only event pages (Sydney Oct 24, DC Nov 7, Brussels Nov 14), no articles. Skipped.
-  - MIT Technology Review: included Oct 8 Download (date from URL).
-  - SRF Schweiz: included Bundesratswahl succession piece (Oct 8). SRF International: only Oct 4-5 items found and no confirmable URL/date for newer ones. Skipped; no world item today.
-  - SRF Sport: Reusser EM title (Oct 7) and women's Nati playoff preview (Oct 8-9). Kicker Bundesliga: international break until Oct 10, nothing fresh. Skipped.
-  - Net: 7 articles (4 core / 3 outside), below ~15. Freshness beats quota per CLAUDE.md.
+  Run notes (2026-10-10, Saturday):
+  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC News/Sport domains not searchable: skipped.
+  - MarTech.org: 3 items dated Oct 9 (per search results; URLs undated). Included.
+  - MIT Technology Review: Oct 9 Download (date from URL). Included.
+  - CMSWire: only event pages, no dated articles. Skipped.
+  - Adobe Experience Cloud Blog: only rolling release-notes pages, no dated blog post. Skipped.
+  - MeasureCamp: not found this run. Skipped.
+  - SRF Schweiz: Verkehr '45 consultation piece included (Oct 9-10, per same-day SRF items). Solar initiative item undated, skipped.
+  - SRF International: no confirmably dated items. Skipped; no world item today.
+  - SRF Sport: only Sept results found. Kicker Bundesliga: international break, nothing fresh. Skipped; no sport item today.
+  - Net: 5 articles (4 core / 1 outside), far below ~15. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Friday, October 9, 2026 · 7 articles</div>
+    <div class="date">Saturday, October 10, 2026 · 5 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-ostschweiz-gegen-westschweiz-bei-der-bundesratswahl">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/verkehr-45-parteien-und-verbaende-wollen-nachbesserungen-beim-verkehrsausbau">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-ostschweiz-gegen-westschweiz-bei-der-bundesratswahl">Bundesratswahl: Ostschweiz (Friedli) gegen Westschweiz (Amaudruz)?</a></h3>
-    <div class="meta">SRF News · Oct 8, 2026</div>
-    <div class="why">outside / schweiz — Bundesrat</div>
-    <p class="summary">Zur Nachfolge von Guy Parmelin zeichnet sich ein Duell zwischen der St. Gallerin Esther Friedli und der Genferin Céline Amaudruz ab, falls beide antreten. Die Frage Ost- gegen Westschweiz dürfte die Wahl prägen.</p>
-  </article>
-
-  <article class="card" data-link="https://www.srf.ch/sport/rad/rad-em-in-slowenien-reusser-zum-5-mal-zeitfahr-europameisterin">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/rad/rad-em-in-slowenien-reusser-zum-5-mal-zeitfahr-europameisterin">Rad-EM in Slowenien: Reusser zum 5. Mal Zeitfahr-Europameisterin</a></h3>
-    <div class="meta">SRF Sport · Oct 7, 2026</div>
-    <div class="why">outside / sport — Rad</div>
-    <p class="summary">Marlen Reusser gewinnt in Ljubljana überlegen das EM-Zeitfahren und holt sich ihren fünften Titel in dieser Disziplin. Dahinter folgen Demi Vollering mit rund 23 Sekunden Rückstand und die Französin Juliette Berthet.</p>
-  </article>
-
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/frauen-nationalteam/nati-vor-wm-playoff-hinspiel-wieder-gegen-massierte-abwehr-fuer-waelti-nichts-neues">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/frauen-nationalteam/nati-vor-wm-playoff-hinspiel-wieder-gegen-massierte-abwehr-fuer-waelti-nichts-neues">Nati vor WM-Playoff-Hinspiel: Wieder gegen massierte Abwehr</a></h3>
-    <div class="meta">SRF Sport · Oct 8–9, 2026 (Vorbericht)</div>
-    <div class="why">outside / sport — Fussball, Frauen-Nati</div>
-    <p class="summary">Vor dem Hinspiel in Ungarn gegen Israel rechnet Captain Lia Wälti mit einem tief stehenden Gegner und mahnt zu Geduld. Das Rückspiel folgt am 13. Oktober in Sitten.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/verkehr-45-parteien-und-verbaende-wollen-nachbesserungen-beim-verkehrsausbau">Verkehr '45: Parteien und Verbände wünschen Nachbesserungen</a></h3>
+    <div class="meta">SRF News · Oct 9–10, 2026</div>
+    <div class="why">outside / schweiz — Verkehrspolitik</div>
+    <p class="summary">In der Vernehmlassung zu Röstis Ausbauplan für Schiene und Strasse bis 2045 kommt Kritik, aber keine Fundamentalopposition. SP und Grüne begrüssen den höheren Bahnanteil, die SVP sieht eine ideologische Schlagseite; der Bundesrat soll den Plan überarbeiten, bevor er 2027 ins Parlament geht.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://martech.org/brand-measurement-needs-a-new-source-of-truth/">
+  <article class="card" data-link="https://martech.org/ai-budgets-are-growing-faster-than-proof-of-roi/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/brand-measurement-needs-a-new-source-of-truth/">Brand measurement needs a new source of truth</a></h3>
-    <div class="meta">MarTech.org · Oct 8, 2026</div>
-    <div class="why">core / martech — Measurement, AI</div>
-    <p class="summary">PMG's Crissi Cupak argues that AI can merge search, social, ecommerce and commercial signals into a continuous view of brand health. The case is for replacing sporadic brand studies with an always-on source of truth.</p>
+    <h3><a href="https://martech.org/ai-budgets-are-growing-faster-than-proof-of-roi/">AI budgets are growing faster than proof of ROI</a></h3>
+    <div class="meta">MarTech.org · Oct 9, 2026</div>
+    <div class="why">core / martech — AI, ROI</div>
+    <p class="summary">Most AI-agent initiatives in martech haven't reached full-scale production, while budgets keep growing. Teams are under pressure to show measurable returns for the new technology.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/more-buyer-signals-wont-tell-you-what-buyers-need-next">
+  <article class="card" data-link="https://martech.org/not-everyone-in-marketing-should-be-an-ai-builder/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/more-buyer-signals-wont-tell-you-what-buyers-need-next">More buyer signals won't tell you what buyers need next</a></h3>
-    <div class="meta">MarTech.org · Oct 8, 2026</div>
-    <div class="why">core / martech — B2B, intent</div>
-    <p class="summary">Clicks and engagement scores show what buyers did, not what they're trying to achieve, writes Tanya Thorson. Citing McKinsey's 2026 B2B Pulse, which found buyers use about ten channels per purchase, she calls for understanding intent rather than collecting more signals.</p>
+    <h3><a href="https://martech.org/not-everyone-in-marketing-should-be-an-ai-builder/">Not everyone in marketing should be an AI builder</a></h3>
+    <div class="meta">MarTech.org · Oct 9, 2026</div>
+    <div class="why">core / martech — AI, team operations</div>
+    <p class="summary">Melissa Reeve argues that organizations reward AI builders too exclusively. Teams equally need people who maintain, monitor and simply use the AI tools that get built.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/agentic-media-buying-needs-malware-guardrails-a-propellerads-view/">
+  <article class="card" data-link="https://martech.org/why-hipaa-compliance-in-martech-goes-beyond-baas/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/agentic-media-buying-needs-malware-guardrails-a-propellerads-view/">Agentic media buying needs malware guardrails: A PropellerAds view</a></h3>
-    <div class="meta">MarTech.org · Oct 8, 2026</div>
-    <div class="why">core / martech — Ad tech, agentic AI</div>
-    <p class="summary">A PropellerAds contributor says traffic-quality and security checks should be built into AI-driven ad optimization. With most buyers already aware of agentic buying, the risk is that automated bidding funnels budget into malicious inventory.</p>
+    <h3><a href="https://martech.org/why-hipaa-compliance-in-martech-goes-beyond-baas/">Why HIPAA compliance in martech goes beyond BAAs</a></h3>
+    <div class="meta">MarTech.org · Oct 9, 2026</div>
+    <div class="why">core / martech — Privacy, compliance</div>
+    <p class="summary">Kevin Haag stresses that a business associate agreement is only a contract and doesn't make a tool compliant. Marketers first need to determine whether HIPAA applies at all and how data actually flows.</p>
   </article>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/09/1146250/the-download-ai-refusal-problem-weight-loss-drug-side-effects/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/">The Download: AI roadblocks for humanoids and portable rubber dams</a></h3>
-    <div class="meta">MIT Technology Review · Oct 8, 2026</div>
-    <div class="why">core / ai — Robotics, policy</div>
-    <p class="summary">The lead piece argues that AI progress in robotics won't change daily life soon. The newsletter also notes a call by 22 nations for an international AI oversight body, plus the first nuclear clocks.</p>
+    <h3><a href="https://www.technologyreview.com/2026/10/09/1146250/the-download-ai-refusal-problem-weight-loss-drug-side-effects/">The Download: AI's refusal problem and weight-loss drug side effects</a></h3>
+    <div class="meta">MIT Technology Review · Oct 9, 2026</div>
+    <div class="why">core / ai — Safety</div>
+    <p class="summary">The lead story questions relying on models simply refusing harmful requests, given attempts to use AI for pathogen design and drone swarms. The newsletter also covers GLP-1 side effects and a US green-card freeze affecting IT firms.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 7 articles (4 core / 3 outside), far below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has 5 articles (4 core / 1 outside), far below the usual ~15: not enough confirmably fresh, unshown items (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>

@@ -1,81 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-10-02",
-      "link": "https://www.srf.ch/wissen/klimawandel/eisverlust-2026-massive-gletscherschmelze-so-viel-eis-verschwand-im-hitzesommer",
-      "title": "Gletscherschmelze 2026: So viel Eis verschwand im Hitzesommer"
-    },
-    {
-      "date": "2026-10-02",
-      "link": "https://www.srf.ch/news/international/eu-krisenmigrationsmechanismus-nach-ceuta-eu-innenminister-diskutieren-schaerferes-asylrecht",
-      "title": "Nach Ceuta beraten die Innenminister über die EU-Grenzsicherung"
-    },
-    {
-      "date": "2026-10-02",
-      "link": "https://www.srf.ch/sport/fussball/nations-league/liga-a-der-nations-league-dank-bischof-und-wirtz-im-3-spiel-unter-klopp-siegt-die-dfb-elf",
-      "title": "Dank Bischof und Wirtz: Im 3. Spiel unter Klopp siegt die DFB-Elf"
-    },
-    {
-      "date": "2026-10-02",
-      "link": "https://www.technologyreview.com/2026/10/01/1145592/the-download-ai-mind-reading-small-batteries/",
-      "title": "The Download: AI “mind-reading” and creative uses for small batteries"
-    },
-    {
-      "date": "2026-10-02",
-      "link": "https://www.cmswire.com/customer-experience/medallia-h2-2026-release-expands-multilingual-ai/",
-      "title": "Medallia H2 2026 Release Expands Multilingual AI"
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://www.srf.ch/news/schweiz/nach-elf-jahren-bundesrat-guy-parmelin-tritt-per-ende-2026-zurueck",
-      "title": "Nach elf Jahren: Bundesrat Guy Parmelin tritt per Ende 2026 zurück"
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://www.srf.ch/news/international/ukraine/ueberforderte-luftabwehr-russland-attackiert-kiew-mit-600-km-h-schnellen-geran-5-drohnen",
-      "title": "Überforderte Luftabwehr: Russland attackiert Kiew mit 600 km/h schnellen Geran-5-Drohnen"
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://www.srf.ch/sport/fussball/nations-league/nations-league-gruppe-a-zidanes-heimdebuet-gegen-italien-endet-mit-einem-daempfer",
-      "title": "Nations League: Zidanes Heimdebüt gegen Italien endet mit einem Dämpfer"
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/",
-      "title": "Don’t be fooled—LLMs don’t reason"
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
-      "title": "Who’s liable when AI agents go rogue?"
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://martech.org/braze-expands-ai-from-content-creation-to-campaign-operations/",
-      "title": "Braze expands AI from content creation to campaign operations"
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://www.cmswire.com/customer-experience/braze-forge-2026-recap-self-service-speed-and-autonomy-require-governance/",
-      "title": "Braze expands AI from content creation to campaign operations"
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://martech.org/b2b-marketing-doesnt-have-an-roi-problem-it-has-an-evidence-problem/",
-      "title": "B2B marketing doesn’t have an ROI problem. It has an evidence problem."
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://martech.org/ai-is-making-customers-expect-more-and-tolerate-less/",
-      "title": "AI is making customers expect more and tolerate less"
-    },
-    {
-      "date": "2026-10-03",
-      "link": "https://blog.adobe.com/en/publish/2026/09/24/adobe-comes-to-gemini-expands-what-you-can-do-in-claude",
-      "title": "Adobe comes to Gemini and expands what you can do in Claude"
-    },
-    {
       "date": "2026-10-04",
       "link": "https://www.srf.ch/news/wirtschaft/hunderte-millionen-verlust-swiss-steel-nimmt-stellenabbau-in-deutschland-vor",
       "title": "Swiss Steel kündigt Stellenabbau an: Deutsche Standorte betroffen"
@@ -189,6 +114,31 @@
       "date": "2026-10-09",
       "link": "https://www.technologyreview.com/2026/10/08/1146045/the-download-ai-roadblocks-humanoids-portable-rubber-dams/",
       "title": "The Download: AI roadblocks for humanoids and portable rubber dams"
+    },
+    {
+      "date": "2026-10-10",
+      "link": "https://www.srf.ch/news/schweiz/verkehr-45-parteien-und-verbaende-wollen-nachbesserungen-beim-verkehrsausbau",
+      "title": "Verkehr '45: Parteien und Verbände wünschen Nachbesserungen"
+    },
+    {
+      "date": "2026-10-10",
+      "link": "https://martech.org/ai-budgets-are-growing-faster-than-proof-of-roi/",
+      "title": "AI budgets are growing faster than proof of ROI"
+    },
+    {
+      "date": "2026-10-10",
+      "link": "https://martech.org/not-everyone-in-marketing-should-be-an-ai-builder/",
+      "title": "Not everyone in marketing should be an AI builder"
+    },
+    {
+      "date": "2026-10-10",
+      "link": "https://martech.org/why-hipaa-compliance-in-martech-goes-beyond-baas/",
+      "title": "Why HIPAA compliance in martech goes beyond BAAs"
+    },
+    {
+      "date": "2026-10-10",
+      "link": "https://www.technologyreview.com/2026/10/09/1146250/the-download-ai-refusal-problem-weight-loss-drug-side-effects/",
+      "title": "The Download: AI's refusal problem and weight-loss drug side effects"
     }
   ]
 }
