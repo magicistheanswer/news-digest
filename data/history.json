@@ -1,11 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-10-04",
-      "link": "https://www.srf.ch/news/wirtschaft/hunderte-millionen-verlust-swiss-steel-nimmt-stellenabbau-in-deutschland-vor",
-      "title": "Swiss Steel kündigt Stellenabbau an: Deutsche Standorte betroffen"
-    },
-    {
       "date": "2026-10-05",
       "link": "https://www.srf.ch/news/schweiz/durchbruch-beim-wohnungsbau-einfacher-bauen-in-der-ganzen-schweiz",
       "title": "Bundesrat lockert Ortsbildschutz für den Wohnungsbau"
@@ -144,6 +139,36 @@
       "date": "2026-10-11",
       "link": "https://www.srf.ch/news/schweiz/zu-wenig-unterschriften-initiative-fuer-solaranlagen-ohne-baubewilligung-ist-gescheitert",
       "title": "Initiative für Solaranlagen ohne Baubewilligung ist gescheitert"
+    },
+    {
+      "date": "2026-10-12",
+      "link": "https://www.srf.ch/news/schweiz/kundgebung-in-bern-rund-tausend-personen-an-unbewilligter-demo-in-bern",
+      "title": "Rund tausend Personen an unbewilligter Demo in Bern"
+    },
+    {
+      "date": "2026-10-12",
+      "link": "https://www.srf.ch/news/international/ukraine/krieg-in-der-ukraine-trump-fordert-fuehrungswechsel-in-der-ukraine",
+      "title": "Krieg in der Ukraine: Trump fordert Führungswechsel"
+    },
+    {
+      "date": "2026-10-12",
+      "link": "https://www.srf.ch/sport/fussball/super-league/4-0-gegen-luzern-lange-pause-ohne-folgen-9-sieg-im-10-spiel-fuer-lugano",
+      "title": "Lugano schlägt Luzern 4:0: 9. Sieg im 10. Spiel"
+    },
+    {
+      "date": "2026-10-12",
+      "link": "https://martech.org/20-years-and-billions-of-dollars-later-cx-still-has-the-same-problem/",
+      "title": "20 years and billions of dollars later, CX still has the same problem"
+    },
+    {
+      "date": "2026-10-12",
+      "link": "https://martech.org/when-marketing-automation-moves-too-fast/",
+      "title": "When marketing automation moves too fast"
+    },
+    {
+      "date": "2026-10-12",
+      "link": "https://martech.org/how-to-strengthen-your-brand-story-to-improve-aeo-visibility/",
+      "title": "How to strengthen your brand story to improve AEO visibility"
     }
   ]
 }
