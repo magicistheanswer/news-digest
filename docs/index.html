@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-12</title>
+<title>Morning News Digest — 2026-10-13</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,76 +95,83 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-12, Monday):
-  - Direct RSS/Atom fetching blocked (egress proxy; WebFetch DNS fails too); fallback: WebSearch scoped per source domain. BBC News/Sport domains not searchable: skipped.
-  - MarTech.org: 3 included (Oct 6-7; dates confirmed via follow-up searches, the CX piece's date from "Oct 7" listings on other martech pages). Others already shown or undated.
-  - CMSWire: nothing dated within the window (Adobe trends report / Summit pieces are months old). Skipped.
-  - MIT Technology Review: Oct 5-9 Downloads all already shown; Oct 1-2 older than ~7 days. Skipped.
-  - Adobe Experience Cloud Blog: only the ChatGPT plugin post (already covered Oct 5) and months-old posts; experienceleague release notes are not blog items. Skipped.
-  - MeasureCamp: not found. Skipped.
-  - SRF Schweiz: Bern demo (Oct 11) included. Somalia/Unicef item skipped (publish date unconfirmed, conflicting metadata). Pratteln asylum item: no article found.
-  - SRF International: Ukraine ticker (Oct 10, rolling ticker page) included; other hits undated/older.
-  - SRF Sport: Lugano-Luzern (round 10, Oct 10) included. Kicker Bundesliga: only fixtures, no dated reports. Skipped.
-  - Net: 6 articles (3 core / 3 outside), below ~15. Freshness beats quota per CLAUDE.md.
+  Run notes (2026-10-13, Tuesday):
+  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC News/Sport not searchable: skipped.
+  - MarTech.org: Q4 2026 AI piece (Oct 12, date confirmed on page). Others already shown or undated (context-engineering piece ~April).
+  - CMSWire: Pantheon P1 (Oct 6, within ~7 days). Other hits are events or months old.
+  - MIT Technology Review: Oct 12 Download included; Oct 1-9 editions already shown or older than ~7 days.
+  - Adobe Experience Cloud Blog: nothing from the last 2 weeks surfaced. Skipped.
+  - MeasureCamp: only event pages, no dated posts. Skipped.
+  - SRF Schweiz: Parmelin wine auctions (Oct 12). Other hits undated.
+  - SRF International: Riyadh airport attack (Oct 10-11; exact day inferred from "Saturday"/"Sunday" in reporting).
+  - SRF Sport: Fellhauer record (Oct 10), Hug/Debrunner Chicago (Oct 11). FCZ-Thun/YB-GC also fresh but dropped for variety. Kicker: only pre-break (Sept) reports. Skipped.
+  - Net: 7 articles (3 core / 4 outside), below ~15. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Monday, October 12, 2026 · 6 articles</div>
+    <div class="date">Tuesday, October 13, 2026 · 7 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/kundgebung-in-bern-rund-tausend-personen-an-unbewilligter-demo-in-bern">
+  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/hilfe-fuer-schweizer-winzer-weinhaendler-kritisiert-parmelins-schnapsidee">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/kundgebung-in-bern-rund-tausend-personen-an-unbewilligter-demo-in-bern">Rund tausend Personen an unbewilligter Demo in Bern</a></h3>
-    <div class="meta">SRF News · Oct 11, 2026</div>
-    <div class="why">outside / schweiz — Innere Sicherheit</div>
-    <p class="summary">Rund tausend Menschen zogen am Sonntag ohne Bewilligung gegen Kapitalismus und Imperialismus durch Berner Aussenquartiere. Die Polizei war mit einem Grossaufgebot präsent und liess keinen Umzug durch die Innenstadt zu. Anlass war der Jahrestag der eskalierten Pro-Palästina-Demo von 2025.</p>
+    <h3><a href="https://www.srf.ch/news/wirtschaft/hilfe-fuer-schweizer-winzer-weinhaendler-kritisiert-parmelins-schnapsidee">Weinhändler kritisiert Parmelins «Schnapsidee»</a></h3>
+    <div class="meta">SRF News · Oct 12, 2026</div>
+    <div class="why">outside / schweiz — Wirtschaftspolitik</div>
+    <p class="summary">Bundesrat Parmelin will Weinimporte über die Versteigerung von Zollkontingenten verteuern, um Schweizer Winzer zu stärken. Ein bekannter Weinhändler hält das für eine alte, längst verworfene Idee und fordert stattdessen Exportförderung, da die Schweiz nur rund 1,4 Prozent ihres Weins ausführt. Auch das Bundesamt für Landwirtschaft räumt ein, dass der Vorschlag das Grundproblem veränderter Konsumgewohnheiten nicht löst.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/ukraine/krieg-in-der-ukraine-trump-fordert-fuehrungswechsel-in-der-ukraine">
+  <article class="card" data-link="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-anschlag-auf-den-flughafen-in-riad-huthi-rebellen-bekennen-sich">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/ukraine/krieg-in-der-ukraine-trump-fordert-fuehrungswechsel-in-der-ukraine">Krieg in der Ukraine: Trump fordert Führungswechsel</a></h3>
-    <div class="meta">SRF News · Oct 10, 2026</div>
-    <div class="why">outside / world — Ukraine-Krieg</div>
-    <p class="summary">Laut dem SRF-Ticker verlangt Trump einen Führungswechsel in Kiew, was die Ukraine zurückweist. Gleichzeitig gehen die russischen Angriffe weiter, unter anderem auf Saporischja, und Selenski kritisiert zusätzliche russische Diesellieferungen, die Trump mit Putin vereinbart haben soll.</p>
+    <h3><a href="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-anschlag-auf-den-flughafen-in-riad-huthi-rebellen-bekennen-sich">Anschlag auf den Flughafen in Riad: Huthi-Rebellen bekennen sich</a></h3>
+    <div class="meta">SRF News · Oct 10–11, 2026</div>
+    <div class="why">outside / world — Nahost</div>
+    <p class="summary">Die Huthi-Miliz bekennt sich zu einem Angriff auf den Flughafen von Riad, bei dem laut Behörden rund ein Dutzend Menschen starben und mehr als 300 verletzt wurden. Saudi-Arabien antwortete mit Luftschlägen auf Dutzende Huthi-Ziele im Jemen, und in Washington wird laut Berichten über eine mögliche US-Beteiligung nachgedacht.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/4-0-gegen-luzern-lange-pause-ohne-folgen-9-sieg-im-10-spiel-fuer-lugano">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/internationale-ligen/nach-8-sekunden-klingelt-s-augsburgs-fellhauer-mit-schnellstem-tor-der-bundesliga-geschichte">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/4-0-gegen-luzern-lange-pause-ohne-folgen-9-sieg-im-10-spiel-fuer-lugano">Lugano schlägt Luzern 4:0: 9. Sieg im 10. Spiel</a></h3>
+    <h3><a href="https://www.srf.ch/sport/fussball/internationale-ligen/nach-8-sekunden-klingelt-s-augsburgs-fellhauer-mit-schnellstem-tor-der-bundesliga-geschichte">Nach 8 Sekunden: Augsburgs Fellhauer erzielt schnellstes Tor der Bundesliga-Geschichte</a></h3>
     <div class="meta">SRF Sport · Oct 10, 2026</div>
-    <div class="why">outside / sport — Super League</div>
-    <p class="summary">Tabellenführer Lugano gewinnt die 10. Runde zuhause souverän mit 4:0 gegen Luzern, Daniel Dos Santos trifft doppelt. Die lange Länderspielpause hat den Lauf des Leaders nicht gebremst.</p>
+    <div class="why">outside / sport — Bundesliga</div>
+    <p class="summary">Robin Fellhauer traf beim 2:2 des FC Augsburg gegen Bayern München nach nur acht Sekunden und löste damit Volland und Bellarabi als Rekordhalter ab. Der Treffer fiel nach einem Fehler von Manuel Neuer; Bayern glich später in der 80. Minute aus.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/leichtathletik/schweizer-doppelsieg-hug-in-chicago-erneut-nicht-zu-schlagen-auch-debrunner-gewinnt">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/leichtathletik/schweizer-doppelsieg-hug-in-chicago-erneut-nicht-zu-schlagen-auch-debrunner-gewinnt">Hug und Debrunner gewinnen erneut in Chicago</a></h3>
+    <div class="meta">SRF Sport · Oct 11, 2026</div>
+    <div class="why">outside / sport — Rollstuhl-Marathon</div>
+    <p class="summary">Marcel Hug gewinnt den Chicago-Marathon zum fünften Mal in Folge, mit Streckenrekord und über acht Minuten Vorsprung. Catherine Debrunner siegt bei den Frauen und verbessert laut SRF zudem ihren eigenen Weltrekord.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://martech.org/20-years-and-billions-of-dollars-later-cx-still-has-the-same-problem/">
+  <article class="card" data-link="https://martech.org/the-state-of-ai-in-marketing-q4-2026/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/20-years-and-billions-of-dollars-later-cx-still-has-the-same-problem/">20 years and billions of dollars later, CX still has the same problem</a></h3>
-    <div class="meta">MarTech.org · Oct 7, 2026</div>
-    <div class="why">core / martech — CX</div>
-    <p class="summary">Annette Franz argues that firms keep overrating their own customer experience: in a 2005 Bain survey most executives thought they delivered superior CX while only a small share of customers agreed. Despite two decades of CX spending, she says, that perception gap has barely closed.</p>
+    <h3><a href="https://martech.org/the-state-of-ai-in-marketing-q4-2026/">The state of AI in marketing: Q4 2026</a></h3>
+    <div class="meta">MarTech.org · Oct 12, 2026</div>
+    <div class="why">core / martech — AI</div>
+    <p class="summary">Mike Pastore fasst zusammen, dass über 90 Prozent der Marketer KI nutzen, Workflows, Systeme und Organisationen sich aber kaum angepasst haben. Die Adoption läuft der Strategie also deutlich voraus.</p>
   </article>
-  <article class="card" data-link="https://martech.org/when-marketing-automation-moves-too-fast/">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/pantheon-launches-p1-an-ainative-cms-and-web-operations-platform/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/when-marketing-automation-moves-too-fast/">When marketing automation moves too fast</a></h3>
-    <div class="meta">MarTech.org · Oct 7, 2026</div>
-    <div class="why">core / martech — marketing ops</div>
-    <p class="summary">Tav Laskauskas warns that tuning funnels purely for speed and volume can wear down customer trust and teams&#x27; sense of control. Her suggestion: automate back-end mechanics aggressively, but pace the human-facing touchpoints deliberately.</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/pantheon-launches-p1-an-ainative-cms-and-web-operations-platform/">Pantheon Launches P1, an AI-Native CMS and Web Operations Platform</a></h3>
+    <div class="meta">CMSWire · Oct 6, 2026</div>
+    <div class="why">core / martech — CMS</div>
+    <p class="summary">Pantheon hat auf seiner GoLive-Konferenz P1 vorgestellt, eine agentische Plattform, auf der Menschen und KI-Agenten Inhalte und Web-Betrieb gemeinsam steuern, auch über MCP-Anbindungen. P1 baut auf Next.js auf und kann Inhalte aus WordPress oder Drupal einbinden, ist aber noch in der Beta und Preise sind offen.</p>
   </article>
-  <article class="card" data-link="https://martech.org/how-to-strengthen-your-brand-story-to-improve-aeo-visibility/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/12/1146376/the-download-moon-city-drone-air-traffic-controllers/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/how-to-strengthen-your-brand-story-to-improve-aeo-visibility/">How to strengthen your brand story to improve AEO visibility</a></h3>
-    <div class="meta">MarTech.org · Oct 6, 2026</div>
-    <div class="why">core / martech — AI search</div>
-    <p class="summary">Tamara Scott explains that most brand mentions in AI answers come from third-party sites, so consistency across bios, boilerplates and external descriptions matters. She recommends refreshing key pages with FAQs and takeaways and building the brand-story audit into the regular content calendar.</p>
+    <h3><a href="https://www.technologyreview.com/2026/10/12/1146376/the-download-moon-city-drone-air-traffic-controllers/">The Download: moon city problems and drone traffic controllers</a></h3>
+    <div class="meta">MIT Technology Review · Oct 12, 2026</div>
+    <div class="why">core / ai-tech</div>
+    <p class="summary">Der Newsletter beleuchtet die Hürden beim Bau einer Stadt auf dem Mond und den neuen Beruf des Drohnen-Flugverkehrsleiters. Dazu gibt es eine Meldung, wonach ein KI-Modell einen gefälschten Hinweis zu einem ungelösten Mordfall eingereicht haben soll.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 6 articles (3 core / 3 outside), far below the usual ~15: nothing else was both confirmably fresh and unshown (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 7 articles (3 core / 4 outside), far below the usual ~15: nothing else was both confirmably fresh and unshown (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
