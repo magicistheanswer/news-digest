@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-13</title>
+<title>Morning News Digest — 2026-10-14</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,83 +95,76 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-13, Tuesday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC News/Sport not searchable: skipped.
-  - MarTech.org: Q4 2026 AI piece (Oct 12, date confirmed on page). Others already shown or undated (context-engineering piece ~April).
-  - CMSWire: Pantheon P1 (Oct 6, within ~7 days). Other hits are events or months old.
-  - MIT Technology Review: Oct 12 Download included; Oct 1-9 editions already shown or older than ~7 days.
-  - Adobe Experience Cloud Blog: nothing from the last 2 weeks surfaced. Skipped.
-  - MeasureCamp: only event pages, no dated posts. Skipped.
-  - SRF Schweiz: Parmelin wine auctions (Oct 12). Other hits undated.
-  - SRF International: Riyadh airport attack (Oct 10-11; exact day inferred from "Saturday"/"Sunday" in reporting).
-  - SRF Sport: Fellhauer record (Oct 10), Hug/Debrunner Chicago (Oct 11). FCZ-Thun/YB-GC also fresh but dropped for variety. Kicker: only pre-break (Sept) reports. Skipped.
-  - Net: 7 articles (3 core / 4 outside), below ~15. Freshness beats quota per CLAUDE.md.
+  Run notes (2026-10-14, Wednesday):
+  - Direct RSS/Atom fetching and WebFetch blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC News/Sport not searchable (domain rejected): skipped.
+  - MarTech.org: Google content guidance + Salesforce/Loops (both Oct 13). Treasure AI and Oct 12 pieces already shown.
+  - CMSWire: only Pantheon P1 (already shown), event pages, and a press-release item (Foundever CEO). Skipped.
+  - MIT Technology Review: Oct 13 Download. Oct 1-9 editions shown or older than ~7 days.
+  - Adobe Experience Cloud Blog: no blog posts surfaced (only Experience League release notes, not the feed). Skipped.
+  - MeasureCamp: no dated posts. Skipped.
+  - SRF Schweiz: Friedli withdrawal (Oct 9). Others undated or already shown.
+  - SRF International: Nobel Peace Prize Pillay (Oct 9). Riyadh story already shown.
+  - SRF Sport: FCZ-Thun (Oct 10). Fellhauer, Hug/Debrunner, Lugano already shown. Kicker: nothing surfaced. Skipped.
+  - Net: 6 articles (3 core / 3 outside), below ~15. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Tuesday, October 13, 2026 · 7 articles</div>
+    <div class="date">Wednesday, October 14, 2026 · 6 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/hilfe-fuer-schweizer-winzer-weinhaendler-kritisiert-parmelins-schnapsidee">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/bundesratswahl-esther-friedli-verzichtet">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/wirtschaft/hilfe-fuer-schweizer-winzer-weinhaendler-kritisiert-parmelins-schnapsidee">Weinhändler kritisiert Parmelins «Schnapsidee»</a></h3>
-    <div class="meta">SRF News · Oct 12, 2026</div>
-    <div class="why">outside / schweiz — Wirtschaftspolitik</div>
-    <p class="summary">Bundesrat Parmelin will Weinimporte über die Versteigerung von Zollkontingenten verteuern, um Schweizer Winzer zu stärken. Ein bekannter Weinhändler hält das für eine alte, längst verworfene Idee und fordert stattdessen Exportförderung, da die Schweiz nur rund 1,4 Prozent ihres Weins ausführt. Auch das Bundesamt für Landwirtschaft räumt ein, dass der Vorschlag das Grundproblem veränderter Konsumgewohnheiten nicht löst.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/bundesratswahl-esther-friedli-verzichtet">Bundesratswahl: Esther Friedli verzichtet auf eine Kandidatur</a></h3>
+    <div class="meta">SRF News · Oct 9, 2026</div>
+    <div class="why">outside / schweiz — Bundesratswahl</div>
+    <p class="summary">Die St. Galler SVP-Ständerätin Esther Friedli hat bekannt gegeben, dass sie nicht für die Nachfolge von Guy Parmelin im Bundesrat antritt. Sie will sich auf ihr Ständeratsmandat konzentrieren. Damit öffnet sich das Feld für andere SVP-Kandidaturen vor der Wahl im Dezember.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-anschlag-auf-den-flughafen-in-riad-huthi-rebellen-bekennen-sich">
+  <article class="card" data-link="https://www.srf.ch/news/international/nobelpreis-2026-der-friedensnobelpreis-geht-an-navanethem-navi-pillay">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-anschlag-auf-den-flughafen-in-riad-huthi-rebellen-bekennen-sich">Anschlag auf den Flughafen in Riad: Huthi-Rebellen bekennen sich</a></h3>
-    <div class="meta">SRF News · Oct 10–11, 2026</div>
-    <div class="why">outside / world — Nahost</div>
-    <p class="summary">Die Huthi-Miliz bekennt sich zu einem Angriff auf den Flughafen von Riad, bei dem laut Behörden rund ein Dutzend Menschen starben und mehr als 300 verletzt wurden. Saudi-Arabien antwortete mit Luftschlägen auf Dutzende Huthi-Ziele im Jemen, und in Washington wird laut Berichten über eine mögliche US-Beteiligung nachgedacht.</p>
+    <h3><a href="https://www.srf.ch/news/international/nobelpreis-2026-der-friedensnobelpreis-geht-an-navanethem-navi-pillay">Friedensnobelpreis geht an Navanethem «Navi» Pillay</a></h3>
+    <div class="meta">SRF News · Oct 9, 2026</div>
+    <div class="why">outside / world — Nobelpreis</div>
+    <p class="summary">Das norwegische Nobelkomitee zeichnet die südafrikanische Juristin und frühere UNO-Menschenrechtskommissarin für ihren Einsatz gegen Straflosigkeit bei Kriegsverbrechen aus. Während die UNO die Wahl begrüsst, kritisieren die USA und Israel sie scharf; Washington verhängte kurz darauf Sanktionen gegen den Internationalen Strafgerichtshof.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/internationale-ligen/nach-8-sekunden-klingelt-s-augsburgs-fellhauer-mit-schnellstem-tor-der-bundesliga-geschichte">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/super-league-10-runde-fcz-trotzt-dem-stroemenden-regen-und-dreht-partie-gegen-thun">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/internationale-ligen/nach-8-sekunden-klingelt-s-augsburgs-fellhauer-mit-schnellstem-tor-der-bundesliga-geschichte">Nach 8 Sekunden: Augsburgs Fellhauer erzielt schnellstes Tor der Bundesliga-Geschichte</a></h3>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/super-league-10-runde-fcz-trotzt-dem-stroemenden-regen-und-dreht-partie-gegen-thun">FCZ trotzt dem strömenden Regen und dreht Partie gegen Thun</a></h3>
     <div class="meta">SRF Sport · Oct 10, 2026</div>
-    <div class="why">outside / sport — Bundesliga</div>
-    <p class="summary">Robin Fellhauer traf beim 2:2 des FC Augsburg gegen Bayern München nach nur acht Sekunden und löste damit Volland und Bellarabi als Rekordhalter ab. Der Treffer fiel nach einem Fehler von Manuel Neuer; Bayern glich später in der 80. Minute aus.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/sport/leichtathletik/schweizer-doppelsieg-hug-in-chicago-erneut-nicht-zu-schlagen-auch-debrunner-gewinnt">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/leichtathletik/schweizer-doppelsieg-hug-in-chicago-erneut-nicht-zu-schlagen-auch-debrunner-gewinnt">Hug und Debrunner gewinnen erneut in Chicago</a></h3>
-    <div class="meta">SRF Sport · Oct 11, 2026</div>
-    <div class="why">outside / sport — Rollstuhl-Marathon</div>
-    <p class="summary">Marcel Hug gewinnt den Chicago-Marathon zum fünften Mal in Folge, mit Streckenrekord und über acht Minuten Vorsprung. Catherine Debrunner siegt bei den Frauen und verbessert laut SRF zudem ihren eigenen Weltrekord.</p>
+    <div class="why">outside / sport — Super League</div>
+    <p class="summary">Der FC Zürich dreht im Letzigrund einen Rückstand und gewinnt in der 10. Runde 4:2 gegen Thun. Die Wende kommt nach einer Roten Karte gegen Thun. Nun pausiert die Liga für den Cup, in dem der FCZ am 18. Oktober in Aarau antritt.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://martech.org/the-state-of-ai-in-marketing-q4-2026/">
+  <article class="card" data-link="https://martech.org/google-changed-its-content-guidance-dont-expect-a-reset/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/the-state-of-ai-in-marketing-q4-2026/">The state of AI in marketing: Q4 2026</a></h3>
-    <div class="meta">MarTech.org · Oct 12, 2026</div>
-    <div class="why">core / martech — AI</div>
-    <p class="summary">Mike Pastore fasst zusammen, dass über 90 Prozent der Marketer KI nutzen, Workflows, Systeme und Organisationen sich aber kaum angepasst haben. Die Adoption läuft der Strategie also deutlich voraus.</p>
+    <h3><a href="https://martech.org/google-changed-its-content-guidance-dont-expect-a-reset/">Google changed its content guidance. Don't expect a reset.</a></h3>
+    <div class="meta">MarTech.org · Oct 13, 2026</div>
+    <div class="why">core / martech — SEO &amp; content</div>
+    <p class="summary">Google fordert in seinen aktualisierten Hinweisen mehr menschliche Prüfung bei KI-Inhalten, bleibt aber vage. Massenhaft erzeugte Seiten ohne Mehrwert gelten weiter als Spam, und eine Garantie, verlorene Rankings zurückzugewinnen, gibt es nicht.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/pantheon-launches-p1-an-ainative-cms-and-web-operations-platform/">
+  <article class="card" data-link="https://martech.org/salesforce-buys-ai-analytics-startup-loops/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/pantheon-launches-p1-an-ainative-cms-and-web-operations-platform/">Pantheon Launches P1, an AI-Native CMS and Web Operations Platform</a></h3>
-    <div class="meta">CMSWire · Oct 6, 2026</div>
-    <div class="why">core / martech — CMS</div>
-    <p class="summary">Pantheon hat auf seiner GoLive-Konferenz P1 vorgestellt, eine agentische Plattform, auf der Menschen und KI-Agenten Inhalte und Web-Betrieb gemeinsam steuern, auch über MCP-Anbindungen. P1 baut auf Next.js auf und kann Inhalte aus WordPress oder Drupal einbinden, ist aber noch in der Beta und Preise sind offen.</p>
+    <h3><a href="https://martech.org/salesforce-buys-ai-analytics-startup-loops/">Salesforce buys AI analytics startup Loops</a></h3>
+    <div class="meta">MarTech.org · Oct 13, 2026</div>
+    <div class="why">core / martech — analytics</div>
+    <p class="summary">Salesforce übernimmt das Startup Loops, dessen KI erklärt, warum sich Geschäftskennzahlen verändert haben, und Erkenntnisse per Slack oder E-Mail verschickt. Technologie und Team gehen in Tableau auf; der Preis ist unbekannt. Der Nutzen hängt laut MarTech von der Datenqualität ab.</p>
   </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/12/1146376/the-download-moon-city-drone-air-traffic-controllers/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/13/1146382/the-download-open-models-trade-offs-geothermal-power/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/12/1146376/the-download-moon-city-drone-air-traffic-controllers/">The Download: moon city problems and drone traffic controllers</a></h3>
-    <div class="meta">MIT Technology Review · Oct 12, 2026</div>
+    <h3><a href="https://www.technologyreview.com/2026/10/13/1146382/the-download-open-models-trade-offs-geothermal-power/">The Download: open model trade-offs and geothermal power's promise</a></h3>
+    <div class="meta">MIT Technology Review · Oct 13, 2026</div>
     <div class="why">core / ai-tech</div>
-    <p class="summary">Der Newsletter beleuchtet die Hürden beim Bau einer Stadt auf dem Mond und den neuen Beruf des Drohnen-Flugverkehrsleiters. Dazu gibt es eine Meldung, wonach ein KI-Modell einen gefälschten Hinweis zu einem ungelösten Mordfall eingereicht haben soll.</p>
+    <p class="summary">Im Mittelpunkt steht die Debatte über offene KI-Modelle und ihre Abwägung zwischen Zugänglichkeit und Risiko. Erwähnt wird ein Anthropic-Bericht, der ein neues chinesisches Modell als erhebliches Cyberrisiko einstuft. Dazu kommt ein Blick auf das Potenzial der Geothermie.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 7 articles (3 core / 4 outside), far below the usual ~15: nothing else was both confirmably fresh and unshown (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 6 articles (3 core / 3 outside), far below the usual ~15: nothing else was both confirmably fresh and unshown (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
