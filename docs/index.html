@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-14</title>
+<title>Morning News Digest — 2026-10-15</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,76 +95,108 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-14, Wednesday):
-  - Direct RSS/Atom fetching and WebFetch blocked (egress proxy); fallback: WebSearch scoped per source domain. BBC News/Sport not searchable (domain rejected): skipped.
-  - MarTech.org: Google content guidance + Salesforce/Loops (both Oct 13). Treasure AI and Oct 12 pieces already shown.
-  - CMSWire: only Pantheon P1 (already shown), event pages, and a press-release item (Foundever CEO). Skipped.
-  - MIT Technology Review: Oct 13 Download. Oct 1-9 editions shown or older than ~7 days.
-  - Adobe Experience Cloud Blog: no blog posts surfaced (only Experience League release notes, not the feed). Skipped.
+  Run notes (2026-10-15, Thursday):
+  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Publish dates confirmed from search results/URLs (all Oct 13-14).
+  - MarTech.org: 4 of 5 Oct 14 pieces used. CMSWire: Kustomer (Oct 14), Context engineering (Oct 13). MIT Technology Review: Oct 14 Download.
+  - Adobe Experience Cloud Blog: nothing from the last ~2 weeks surfaced. Skipped.
   - MeasureCamp: no dated posts. Skipped.
-  - SRF Schweiz: Friedli withdrawal (Oct 9). Others undated or already shown.
-  - SRF International: Nobel Peace Prize Pillay (Oct 9). Riyadh story already shown.
-  - SRF Sport: FCZ-Thun (Oct 10). Fellhauer, Hug/Debrunner, Lugano already shown. Kicker: nothing surfaced. Skipped.
-  - Net: 6 articles (3 core / 3 outside), below ~15. Freshness beats quota per CLAUDE.md.
+  - BBC News/Sport: domain not searchable. Skipped. Kicker: nothing surfaced. Skipped.
+  - SRF Schweiz / International / Sport used for the outside slots (Jugendschutz, Papst, Nord Stream, Frauen-Nati).
+  - Net: 11 articles (7 core / 4 outside), below ~15. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Wednesday, October 14, 2026 · 6 articles</div>
+    <div class="date">Thursday, October 15, 2026 · 11 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/bundesratswahl-esther-friedli-verzichtet">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/kommunikationsplattformen-bundesrat-will-bei-social-media-regulierung-jugendschutz-ausbauen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/bundesratswahl-esther-friedli-verzichtet">Bundesratswahl: Esther Friedli verzichtet auf eine Kandidatur</a></h3>
-    <div class="meta">SRF News · Oct 9, 2026</div>
-    <div class="why">outside / schweiz — Bundesratswahl</div>
-    <p class="summary">Die St. Galler SVP-Ständerätin Esther Friedli hat bekannt gegeben, dass sie nicht für die Nachfolge von Guy Parmelin im Bundesrat antritt. Sie will sich auf ihr Ständeratsmandat konzentrieren. Damit öffnet sich das Feld für andere SVP-Kandidaturen vor der Wahl im Dezember.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/kommunikationsplattformen-bundesrat-will-bei-social-media-regulierung-jugendschutz-ausbauen">Bundesrat will bei Social-Media-Regulierung den Jugendschutz ausbauen</a></h3>
+    <div class="meta">SRF News · Oct 14, 2026</div>
+    <div class="why">outside / schweiz — Medienpolitik</div>
+    <p class="summary">Nach einer Vernehmlassung mit 214 Stellungnahmen will der Bundesrat den Jugendschutz auf Online-Plattformen verstärken. Die Kantone Schwyz und Thurgau sowie FDP, SVP und EDU lehnen Teile der Pläne ab.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/nobelpreis-2026-der-friedensnobelpreis-geht-an-navanethem-navi-pillay">
+  <article class="card" data-link="https://www.srf.ch/news/international/knoten-in-der-lunge-papst-leo-xiv-hat-krebs">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/nobelpreis-2026-der-friedensnobelpreis-geht-an-navanethem-navi-pillay">Friedensnobelpreis geht an Navanethem «Navi» Pillay</a></h3>
-    <div class="meta">SRF News · Oct 9, 2026</div>
-    <div class="why">outside / world — Nobelpreis</div>
-    <p class="summary">Das norwegische Nobelkomitee zeichnet die südafrikanische Juristin und frühere UNO-Menschenrechtskommissarin für ihren Einsatz gegen Straflosigkeit bei Kriegsverbrechen aus. Während die UNO die Wahl begrüsst, kritisieren die USA und Israel sie scharf; Washington verhängte kurz darauf Sanktionen gegen den Internationalen Strafgerichtshof.</p>
+    <h3><a href="https://www.srf.ch/news/international/knoten-in-der-lunge-papst-leo-xiv-hat-krebs">Knoten in der Lunge: Papst Leo XIV. hat Krebs</a></h3>
+    <div class="meta">SRF News · Oct 14, 2026</div>
+    <div class="why">outside / world — Vatikan</div>
+    <p class="summary">Bei Papst Leo XIV. wurde ein Lungenadenokarzinom im Frühstadium festgestellt und der untere rechte Lungenlappen operativ entfernt. Die Ärzte sprechen von einem Eingriff ohne Komplikationen; öffentliche Termine bis zum 20. Oktober sind abgesagt.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/super-league-10-runde-fcz-trotzt-dem-stroemenden-regen-und-dreht-partie-gegen-thun">
+  <article class="card" data-link="https://www.srf.ch/news/international/gesprengte-gas-pipelines-der-nord-stream-prozess-fuehrt-die-ukrainische-tragoedie-vor-augen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/super-league-10-runde-fcz-trotzt-dem-stroemenden-regen-und-dreht-partie-gegen-thun">FCZ trotzt dem strömenden Regen und dreht Partie gegen Thun</a></h3>
-    <div class="meta">SRF Sport · Oct 10, 2026</div>
-    <div class="why">outside / sport — Super League</div>
-    <p class="summary">Der FC Zürich dreht im Letzigrund einen Rückstand und gewinnt in der 10. Runde 4:2 gegen Thun. Die Wende kommt nach einer Roten Karte gegen Thun. Nun pausiert die Liga für den Cup, in dem der FCZ am 18. Oktober in Aarau antritt.</p>
+    <h3><a href="https://www.srf.ch/news/international/gesprengte-gas-pipelines-der-nord-stream-prozess-fuehrt-die-ukrainische-tragoedie-vor-augen">Der Nord-Stream-Prozess führt die ukrainische Tragödie vor Augen</a></h3>
+    <div class="meta">SRF News · Oct 14, 2026</div>
+    <div class="why">outside / world — Nord-Stream-Prozess</div>
+    <p class="summary">In Hamburg hat vier Jahre nach dem Anschlag der Prozess gegen einen mutmasslichen ukrainischen Täter begonnen. Der Angeklagte bestreitet eine Beteiligung, Kiew weist jede Verantwortung zurück; ein Urteil wird kaum vor 2027 erwartet.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/frauen-nationalteam/wm-quali-playoffs-sui-isr-sieg-ohne-gegentor-schweizerinnen-erfuellen-die-pflicht">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/frauen-nationalteam/wm-quali-playoffs-sui-isr-sieg-ohne-gegentor-schweizerinnen-erfuellen-die-pflicht">Schweizerinnen erfüllen die Pflicht: Sieg ohne Gegentor gegen Israel</a></h3>
+    <div class="meta">SRF Sport · Oct 13, 2026</div>
+    <div class="why">outside / sport — Frauen-Nati</div>
+    <p class="summary">Die Schweizer Frauen schlagen Israel im Playoff-Rückspiel 2:0 und lösen mit 9:3 im Gesamtskore das Ticket für die nächste Runde. Gegen Österreich geht es am 1. und 5. Dezember um die WM-Teilnahme.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://martech.org/google-changed-its-content-guidance-dont-expect-a-reset/">
+  <article class="card" data-link="https://martech.org/marketing-has-outgrown-the-organization-built-to-run-it/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/google-changed-its-content-guidance-dont-expect-a-reset/">Google changed its content guidance. Don't expect a reset.</a></h3>
-    <div class="meta">MarTech.org · Oct 13, 2026</div>
-    <div class="why">core / martech — SEO &amp; content</div>
-    <p class="summary">Google fordert in seinen aktualisierten Hinweisen mehr menschliche Prüfung bei KI-Inhalten, bleibt aber vage. Massenhaft erzeugte Seiten ohne Mehrwert gelten weiter als Spam, und eine Garantie, verlorene Rankings zurückzugewinnen, gibt es nicht.</p>
+    <h3><a href="https://martech.org/marketing-has-outgrown-the-organization-built-to-run-it/">Marketing has outgrown the organization built to run it</a></h3>
+    <div class="meta">MarTech.org · Oct 14, 2026</div>
+    <div class="why">core / martech — org &amp; governance</div>
+    <p class="summary">Der Beitrag argumentiert, dass KI Lücken bei Zuständigkeit, Governance und Verantwortung im Marketing offenlegt. Als Beleg dient die Zahl der Martech-Produkte: rund 150 im Jahr 2011, über 15&#x27;000 heute.</p>
   </article>
-  <article class="card" data-link="https://martech.org/salesforce-buys-ai-analytics-startup-loops/">
+  <article class="card" data-link="https://martech.org/your-ai-visibility-score-may-be-hiding-a-problem/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/salesforce-buys-ai-analytics-startup-loops/">Salesforce buys AI analytics startup Loops</a></h3>
-    <div class="meta">MarTech.org · Oct 13, 2026</div>
+    <h3><a href="https://martech.org/your-ai-visibility-score-may-be-hiding-a-problem/">Your AI visibility score may be hiding a problem</a></h3>
+    <div class="meta">MarTech.org · Oct 14, 2026</div>
+    <div class="why">core / martech — AI search</div>
+    <p class="summary">Erwähnung und Zitierung sind bei KI-Antworten zwei verschiedene Dinge: Eine Marke kann genannt werden, ohne dass ihre Domain als Quelle erscheint. Wer nur den Sichtbarkeits-Score betrachtet, übersieht daher womöglich ein Problem.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/why-website-analytics-tell-an-incomplete-story-of-buyer-decisions/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/why-website-analytics-tell-an-incomplete-story-of-buyer-decisions/">Why website analytics tell an incomplete story of buyer decisions</a></h3>
+    <div class="meta">MarTech.org · Oct 14, 2026</div>
     <div class="why">core / martech — analytics</div>
-    <p class="summary">Salesforce übernimmt das Startup Loops, dessen KI erklärt, warum sich Geschäftskennzahlen verändert haben, und Erkenntnisse per Slack oder E-Mail verschickt. Technologie und Team gehen in Tableau auf; der Preis ist unbekannt. Der Nutzen hängt laut MarTech von der Datenqualität ab.</p>
+    <p class="summary">Ein Besuch belegt noch keine Kaufabsicht, und eine Conversion erzählt nicht die ganze Entscheidungsgeschichte. Der Autor plädiert dafür, Website-Analytics um weitere Signale zu ergänzen.</p>
   </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/13/1146382/the-download-open-models-trade-offs-geothermal-power/">
+  <article class="card" data-link="https://martech.org/is-real-time-marketing-finally-real/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/13/1146382/the-download-open-models-trade-offs-geothermal-power/">The Download: open model trade-offs and geothermal power's promise</a></h3>
-    <div class="meta">MIT Technology Review · Oct 13, 2026</div>
+    <h3><a href="https://martech.org/is-real-time-marketing-finally-real/">Is real-time marketing finally real?</a></h3>
+    <div class="meta">MarTech.org · Oct 14, 2026</div>
+    <div class="why">core / martech — personalization</div>
+    <p class="summary">Geschwindigkeit sei nie das eigentliche Problem gewesen, so der Beitrag von Optimove. Schwieriger ist die Entscheidung, welche Nachrichten gesendet und welche bewusst zurückgehalten werden.</p>
+  </article>
+  <article class="card" data-link="https://www.cmswire.com/customer-experience/kustomer-adds-ai-qa-conversation-intelligence-to-cx-platform/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/customer-experience/kustomer-adds-ai-qa-conversation-intelligence-to-cx-platform/">Kustomer Adds AI QA &amp; Conversation Intelligence to CX Platform</a></h3>
+    <div class="meta">CMSWire · Oct 14, 2026</div>
+    <div class="why">core / cx</div>
+    <p class="summary">Kustomer führt KI-gestützte Qualitätssicherung und Conversation Intelligence ein. Statt der üblichen 2–3 % Stichprobe werden künftig alle Kundengespräche automatisch bewertet.</p>
+  </article>
+  <article class="card" data-link="https://cmswire.com/digital-marketing/why-context-engineering-is-the-new-martech-battleground-for-marketers">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://cmswire.com/digital-marketing/why-context-engineering-is-the-new-martech-battleground-for-marketers">Why Context Engineering Is the New Martech Battleground for Marketers</a></h3>
+    <div class="meta">CMSWire · Oct 13, 2026</div>
+    <div class="why">core / martech — AI data readiness</div>
+    <p class="summary">Laut dem Validity-Report 2026 sehen sich nur 21 % der Marketer mit CRM-Daten, die für KI gut vorbereitet sind. Der Artikel sieht im sogenannten Context Engineering den nächsten Wettbewerbsvorteil im Martech-Stack.</p>
+  </article>
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/14/1146452/the-download-military-fake-blood-future-batteries/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/10/14/1146452/the-download-military-fake-blood-future-batteries/">The Download: faking blood and the future of batteries</a></h3>
+    <div class="meta">MIT Technology Review · Oct 14, 2026</div>
     <div class="why">core / ai-tech</div>
-    <p class="summary">Im Mittelpunkt steht die Debatte über offene KI-Modelle und ihre Abwägung zwischen Zugänglichkeit und Risiko. Erwähnt wird ein Anthropic-Bericht, der ein neues chinesisches Modell als erhebliches Cyberrisiko einstuft. Dazu kommt ein Blick auf das Potenzial der Geothermie.</p>
+    <p class="summary">Im Fokus steht ein DARPA-Projekt über 73 Mio. USD für haltbares synthetisches Blut bis 2029. Zudem geht es um die Frage, ob das Pentagon KI für Überwachung im Inland nutzen darf, und um den Streit mit Anthropic.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 6 articles (3 core / 3 outside), far below the usual ~15: nothing else was both confirmably fresh and unshown (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 11 articles (7 core / 4 outside), far below the usual ~15: nothing else was both confirmably fresh and unshown (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
