@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-16</title>
+<title>Morning News Digest — 2026-10-17</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,86 +95,108 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-16, Friday):
-  - Direct RSS/Atom fetching and WebFetch blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates confirmed from URLs/search results (Oct 15).
-  - Used: MarTech.org (HubSpot, also covered by CMSWire -> merged; brand differentiation), CMSWire (surveillance pricing), MIT Technology Review (Oct 15 Download), SRF News/Sport (4 outside).
-  - Albania protest card: exact publish date not confirmed (SRF Tagesschau of Oct 15 reports ongoing protests); shown as "Oct 2026".
-  - Skipped: Adobe Experience Cloud Blog (nothing recent surfaced), MeasureCamp (no dated posts), BBC News/Sport (domain not searchable), Kicker (only stale Spieltag-5 items).
-  - Not used: CreatorIQ/Guideline/Validity launches (only a roundup page, no article URL); CMSWire Treasure AI / Pantheon / Braze (older than ~7 days).
-  - Net: 8 articles (4 core / 4 outside), below ~15. Freshness beats quota per CLAUDE.md.
+  Run notes (2026-10-17, Saturday):
+  - Direct RSS/Atom fetching and WebFetch blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates confirmed from URLs/search results (Oct 14-16).
+  - Used: MarTech.org (4), CMSWire (Starbucks, Oct 14), MIT Technology Review (Oct 16 Download), Adobe Experience League CX Enterprise release notes (updated Oct 14; stands in for Adobe/AEP monthly notes), SRF News (2) and SRF Sport (2).
+  - Skipped: Adobe Experience Cloud Blog (nothing dated recent), MeasureCamp (no dated posts), BBC News/Sport (domain not searchable), Kicker (only schedule pages; no dated recent article).
+  - SRF Weltgeschehen skipped: Ukraine/EU-summit (Oct 16) and Huthi/Riad articles could not be matched to a confirmed 2026 publish date (search returned 2023 articles with similar titles); Huthi/Riad already shown Oct 13.
+  - Not used: CMSWire Sierra/Meta, Pantheon, Treasure AI (Oct 6, older than ~7 days); Voice AI piece (undated); MarTech "Content everywhere" (webinar promo).
+  - Beyond Gravity date inferred from SRF HeuteMorgen of Oct 15. Summaries based on snippets/headlines only.
+  - Net: 11 articles (7 core / 4 outside), below ~15. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Friday, October 16, 2026 · 8 articles</div>
+    <div class="date">Saturday, October 17, 2026 · 11 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-svp-nationalraetin-celine-amaudruz-will-bundesraetin-werden">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/nach-cs-untergang-bundesgericht-doch-keine-boni-fuer-cs-kader">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-svp-nationalraetin-celine-amaudruz-will-bundesraetin-werden">SVP-Nationalrätin Céline Amaudruz will Bundesrätin werden</a></h3>
+    <h3><a href="https://www.srf.ch/news/schweiz/nach-cs-untergang-bundesgericht-doch-keine-boni-fuer-cs-kader">CS-Boni: Bundesgericht hält Kürzungen für rechtmässig</a></h3>
     <div class="meta">SRF News · Oct 15, 2026</div>
-    <div class="why">outside / schweiz — Bundesratswahl</div>
-    <p class="summary">Die Genfer SVP-Politikerin hat als Erste ihre Kandidatur für die Nachfolge von Guy Parmelin bekanntgegeben. Sie gilt als Favoritin der Romandie, muss aber noch die Bundeshausfraktion überzeugen; Kritik kam unter anderem von Roger Köppel.</p>
+    <div class="why">outside / schweiz — Wirtschaft &amp; Recht</div>
+    <p class="summary">Das Bundesgericht kippt das Urteil des Bundesverwaltungsgerichts und erklärt die Streichung ausstehender Boni bei der Credit Suisse für zulässig. Betroffen sind rund 1000 Kadermitglieder; weil es keine Strafe sei, müsse keine individuelle Verantwortung nachgewiesen werden.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/kerosinknappheit-flughafen-zuerich-droht-kerosin-engpass-bund-oeffnet-pflichtlager">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/beyond-gravity-china-im-verdacht-nach-cyberattacke-auf-schweizer-weltraumkonzern">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/kerosinknappheit-flughafen-zuerich-droht-kerosin-engpass-bund-oeffnet-pflichtlager">Bund öffnet Kerosin-Pflichtlager wegen Engpass in Kloten</a></h3>
+    <h3><a href="https://www.srf.ch/news/schweiz/beyond-gravity-china-im-verdacht-nach-cyberattacke-auf-schweizer-weltraumkonzern">Nach Cyberattacke auf Beyond Gravity: Verdacht fällt auf China</a></h3>
     <div class="meta">SRF News · Oct 15, 2026</div>
-    <div class="why">outside / schweiz — Energieversorgung</div>
-    <p class="summary">Wegen Problemen auf dem Rhein und im Schienengüterverkehr gibt der Bund in den nächsten zwei Wochen bis zu 30 Millionen Liter Kerosin aus den Pflichtlagern frei. Das sind rund 6,5 % der Reserven; die Swiss spürt bisher keine Einschränkungen.</p>
+    <div class="why">outside / schweiz — Cybersicherheit</div>
+    <p class="summary">Der bundeseigene Weltraumkonzern wurde Anfang Monat gezielt angegriffen, und es wurden offenbar Daten gestohlen. Laut SRF-Recherchen vermuten Firma und Bund China dahinter, offiziell bestätigt ist das nicht; Strafanzeige ist eingereicht.</p>
   </article>
-  <article class="card" data-link="https://srf.ch/news/international/flamingo-revolution-proteste-in-albanien-eskalieren-bildungsministerium-brennt">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/conference-league/conference-league-1-spieltag-fragwuerdiger-platzverweis-mit-folgen-thun-verliert-in-enschede">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://srf.ch/news/international/flamingo-revolution-proteste-in-albanien-eskalieren-bildungsministerium-brennt">Proteste in Albanien eskalieren</a></h3>
-    <div class="meta">SRF News · Oct 2026</div>
-    <div class="why">outside / world — Albanien</div>
-    <p class="summary">Studentenproteste gegen Korruption und Missstände im Bildungssystem sind in Tirana gewalttätig geworden, das Bildungsministerium geriet in Brand. Die Demonstrierenden fordern den Rücktritt von Regierungschef Edi Rama; die Unruhen griffen auf weitere Städte über.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/conference-league/auftakt-in-conference-league-croci-tortis-joker-stechen-lugano-siegt-nach-wende-gegen-belgrad">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/conference-league/auftakt-in-conference-league-croci-tortis-joker-stechen-lugano-siegt-nach-wende-gegen-belgrad">Croci-Tortis Joker stechen: Lugano siegt nach Wende gegen Belgrad</a></h3>
+    <h3><a href="https://www.srf.ch/sport/fussball/conference-league/conference-league-1-spieltag-fragwuerdiger-platzverweis-mit-folgen-thun-verliert-in-enschede">Fragwürdiger Platzverweis mit Folgen: Thun verliert in Enschede</a></h3>
     <div class="meta">SRF Sport · Oct 15, 2026</div>
     <div class="why">outside / sport — Super League / Conference League</div>
-    <p class="summary">Der Super-League-Leader startet mit einem 3:2 gegen Roter Stern in die Conference League. Nach einem 1:2-Rückstand drehten die Einwechselspieler die Partie, Anto Grgic traf spät zum Siegtor.</p>
+    <p class="summary">Thun unterliegt zum Auftakt bei Twente 0:1, nachdem der Schiedsrichter nach VAR-Check Patrik Kristal vom Platz stellte. Ein Twente-Tor in der ersten Halbzeit war zuvor wegen eines Fouls aberkannt worden; im Angriff blieb Thun blass.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/schweizer-cup/schweizer-cup-2-runde-basel-atmet-frueh-auf-auch-st-gallen-und-servette-weiter">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/schweizer-cup/schweizer-cup-2-runde-basel-atmet-frueh-auf-auch-st-gallen-und-servette-weiter">Schweizer Cup, 2. Runde: Basel atmet früh auf, auch St. Gallen und Servette weiter</a></h3>
+    <div class="meta">SRF Sport · Oct 16, 2026</div>
+    <div class="why">outside / sport — Schweizer Cup</div>
+    <p class="summary">Basel gewinnt bei Stade Nyonnais 3:0 und ist früh auf der sicheren Seite. Auch Servette (4:0 in Rotkreuz) und St. Gallen ziehen in den Achtelfinal ein.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/15/1146755/the-download-reviving-frozen-pig-kidneys-boosting-nuclear-power/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/16/1146864/the-download-failed-social-media-bans-and-extending-pets-lives/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/15/1146755/the-download-reviving-frozen-pig-kidneys-boosting-nuclear-power/">The Download: reviving frozen pig kidneys and boosting nuclear power</a></h3>
-    <div class="meta">MIT Technology Review · Oct 15, 2026</div>
+    <h3><a href="https://www.technologyreview.com/2026/10/16/1146864/the-download-failed-social-media-bans-and-extending-pets-lives/">The Download: failed social media bans and extending pets' lives</a></h3>
+    <div class="meta">MIT Technology Review · Oct 16, 2026</div>
     <div class="why">core / ai-tech</div>
-    <p class="summary">Forschende haben tiefgefrorene Schweinenieren wieder aufgewärmt, und die Organe funktionierten in Tests und nach der Transplantation. Zudem geht es um Constellations Pläne für rund ein Gigawatt zusätzliche Leistung aus bestehenden Reaktoren sowie den Aufruf von 22 Staaten nach einer globalen KI-Aufsichtsbehörde.</p>
+    <p class="summary">Grossbritannien und die EU planen Social-Media-Verbote für Kinder, doch erste Erfahrungen aus Australien zeigen, dass sich Altersgrenzen leicht umgehen lassen. Dazu kommen weitere Kurzmeldungen aus Tech und Wissenschaft, etwa der Ruf von 22 Staaten nach einer globalen KI-Aufsicht.</p>
   </article>
-  <article class="card" data-link="https://martech.org/hubspot-adds-spending-controls-and-flexible-billing-as-ai-usage-grows/">
+  <article class="card" data-link="https://martech.org/hubspots-unbound-2026-the-big-announcements-and-updates/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/hubspot-adds-spending-controls-and-flexible-billing-as-ai-usage-grows/">HubSpot adds spending controls and flexible billing as AI usage grows</a></h3>
-    <div class="meta">MarTech.org + CMSWire · Oct 15, 2026</div>
-    <div class="why">core / martech — AI pricing (auch: CMSWire)</div>
-    <p class="summary">HubSpot führt kontoweite Limits für den Credit-Verbrauch ein, standardmässig 50 % über der monatlichen Zuteilung. Kunden können zwischen festen Credit-Paketen und Pay-as-you-go wählen und ungenutzte Seats mitten im Vertrag gegen Credits tauschen.</p>
+    <h3><a href="https://martech.org/hubspots-unbound-2026-the-big-announcements-and-updates/">HubSpot's Unbound 2026: The big announcements and updates</a></h3>
+    <div class="meta">MarTech.org · Oct 16, 2026</div>
+    <div class="why">core / martech — HubSpot</div>
+    <p class="summary">Der Überblick ordnet die Ankündigungen der HubSpot-Konferenz ein, von grossen Bühnen-Launches bis zu kleinen Änderungen. Wichtig für Praktiker: Aufgezeichnete Meetings hängen nun am Meeting-Record, was bestehende Workflows und Auswertungen über Call-Records beeinflussen kann.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/digital-marketing/can-personalization-stay-profitable-and-fair-under-emerging-surveillance-pricing-laws/">
+  <article class="card" data-link="https://martech.org/retail-media-budgets-are-growing-advertisers-patience-isnt/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-marketing/can-personalization-stay-profitable-and-fair-under-emerging-surveillance-pricing-laws/">Can Personalization Stay Profitable and Fair Under Emerging Surveillance Pricing Laws?</a></h3>
-    <div class="meta">CMSWire · Oct 15, 2026</div>
-    <div class="why">core / martech — personalization &amp; regulation</div>
-    <p class="summary">Der Beitrag fragt, wie Personalisierung unter neuen Gesetzen gegen «Surveillance Pricing» funktionieren kann. Ausgangspunkt ist Marylands HB 895, die Grossisten und Lieferdiensten untersagt, mit persönlichen Daten Preise zu erhöhen.</p>
+    <h3><a href="https://martech.org/retail-media-budgets-are-growing-advertisers-patience-isnt/">Retail media budgets are growing. Advertisers' patience isn't.</a></h3>
+    <div class="meta">MarTech.org · Oct 16, 2026</div>
+    <div class="why">core / martech — Retail Media &amp; Measurement</div>
+    <p class="summary">Werbetreibende erhöhen ihre Retail-Media-Budgets, doch langsame Kampagnenstarts und schwache Messung frustrieren. Fast die Hälfte wartet über eine Woche auf Performance-Daten nach der Kampagne, nur 8 % erhalten sie am selben Tag.</p>
   </article>
-  <article class="card" data-link="https://martech.org/your-brand-isnt-as-differentiated-as-you-think/">
+  <article class="card" data-link="https://martech.org/email-marketings-history-can-guide-ai-governance/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/your-brand-isnt-as-differentiated-as-you-think/">Your brand isn&#x27;t as differentiated as you think</a></h3>
-    <div class="meta">MarTech.org · Oct 15, 2026</div>
-    <div class="why">core / martech — brand</div>
-    <p class="summary">Mike Maynard argumentiert, dass KI und Stock-Material Kampagnen schneller, aber austauschbarer machen. Echte Differenzierung entstehe eher durch Herkunft, Spezialisierung, Service und Lieferleistung als durch oberflächliche Personalisierung.</p>
+    <h3><a href="https://martech.org/email-marketings-history-can-guide-ai-governance/">Email marketing's history can guide AI governance</a></h3>
+    <div class="meta">MarTech.org · Oct 16, 2026</div>
+    <div class="why">core / martech — AI-Governance</div>
+    <p class="summary">Der Autor zieht Parallelen zwischen der Regulierung von E-Mail-Marketing und dem heutigen Umgang mit KI. Als Leitplanken nennt er Attribution, Genauigkeit und Authentizität.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/adding-ai-or-headcount-wont-fix-a-marketing-skills-gap/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/adding-ai-or-headcount-wont-fix-a-marketing-skills-gap/">Adding AI or headcount won't fix a marketing skills gap</a></h3>
+    <div class="meta">MarTech.org · Oct 16, 2026</div>
+    <div class="why">core / martech — Team &amp; Skills</div>
+    <p class="summary">KI kann den Output steigern, belastet aber oft gerade die stärksten Mitarbeitenden zusätzlich. Der Beitrag nennt drei praktische Checks, bevor man bei Skill-Lücken einfach Tools oder Personal draufpackt.</p>
+  </article>
+  <article class="card" data-link="https://cmswire.com/digital-marketing/can-starbucks-bet-on-baristas-rewrite-the-customer-experience-playbook">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://cmswire.com/digital-marketing/can-starbucks-bet-on-baristas-rewrite-the-customer-experience-playbook">Can Starbucks' Bet on Baristas Rewrite the Customer Experience Playbook?</a></h3>
+    <div class="meta">CMSWire · Oct 14, 2026</div>
+    <div class="why">core / martech — CX &amp; Loyalty</div>
+    <p class="summary">Der Artikel fragt, ob Starbucks mit der Stärkung seiner Baristas das CX-Playbook neu schreiben kann. Im Zentrum stehen Personalausstattung und Kundenbindung statt reiner Technologie.</p>
+  </article>
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/release-notes/experience-cloud/current">CX Enterprise central release notes — October 2026</a></h3>
+    <div class="meta">Adobe Experience League · Updated Oct 14, 2026</div>
+    <div class="why">core / adobe — Release Notes</div>
+    <p class="summary">Die Oktober-Release-Notes führen den Custom Outbound Channel (GA) für HTTP-basierte Kanäle wie WeChat oder Kakao Talk auf. Dazu kommen eine Stop-Action für Journeys und On-Demand-Validierung von Journeys.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 8 articles (4 core / 4 outside), far below the usual ~15: nothing else was both confirmably fresh and unshown (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 11 articles (7 core / 4 outside), below the usual ~15: nothing else was both confirmably fresh and unshown (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
