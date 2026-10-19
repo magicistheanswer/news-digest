@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-18</title>
+<title>Morning News Digest — 2026-10-19</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,37 +95,78 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-18, Sunday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates confirmed from search results/URLs.
-  - Used: CMSWire (1, Contentsquare, Oct 13).
-  - Skipped as already shown in the last 7 days: all MarTech.org, MIT Technology Review (Oct 12-16 Downloads) and CMSWire (Kustomer, Starbucks, HubSpot caps = same story as MarTech HubSpot piece) candidates.
-  - Skipped, no confirmable recent date: Adobe Experience Cloud Blog (only 2021-2025 results), MeasureCamp, BBC News/Sport (domain not searchable), Kicker (schedule pages only), SRF Wahlbarometer / Kinderarmut / Diavolezza / France protests / Ukraine-Starlink-sanctions items (no confirmed publish date or only live-ticker snippets), SRF Cup round-2 siblings (dates unconfirmed). MIT Download Oct 9 is older than ~7 days.
-  - Net: 1 article (1 core / 0 outside), far below ~15. Freshness beats quota per CLAUDE.md.
+  Run notes (2026-10-19, Monday):
+  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates confirmed from search results/URLs/page metadata; SRF items have relative dates only (seen on SRF front pages of Oct 18-19), so treated as Oct 17-19.
+  - Used: SRF News (2: France protests, US midterms), SRF Sport (1: Cup draw), MarTech.org (2), CMSWire (1), Adobe Experience League JO release notes (1, Oct 12-13 monthly notes).
+  - Skipped as already shown in the last 7 days: MarTech Salesforce/Loops, outgrown-the-organization, buyer-signals, state of AI Q4; CMSWire Kustomer; MIT Technology Review Downloads Oct 8-14.
+  - Skipped, no confirmable recent date / not found: MIT Technology Review (no Download after Oct 15 found), Adobe Experience Cloud Blog (nothing dated), MeasureCamp, BBC News/Sport (domain not searchable), Kicker (nothing found), SRF Schweiz (remaining items - SVP/MwSt, Parmelin-Nachfolge follow-ups - undated), martech "measure marketing when AI owns discovery" and "agentic media buying" (undated).
+  - Net: 7 articles (4 core / 3 outside), below ~15. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Sunday, October 18, 2026 · 1 article</div>
+    <div class="date">Monday, October 19, 2026 · 7 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <p class="summary">Heute keine Beiträge: Nichts Neues mit bestätigtem aktuellem Datum, das nicht schon in den letzten 7 Tagen gezeigt wurde.</p>
+  <article class="card" data-link="https://www.srf.ch/news/international/landesweite-proteste-warum-frankreichs-strassen-brennen-und-was-die-menschen-fordern">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/international/landesweite-proteste-warum-frankreichs-strassen-brennen-und-was-die-menschen-fordern">Landesweite Proteste: Warum Frankreichs Strassen brennen</a></h3>
+    <div class="meta">SRF News · Oct 17–18, 2026</div>
+    <div class="why">outside / world — Frankreich</div>
+    <p class="summary">Hunderttausende demonstrierten in Frankreich gegen hohe Lebenshaltungskosten, besonders Spritpreise, und die Lage an den Schulen. Daneben kam es zu Plünderungen, Brandstiftungen und Strassenschlachten mit Polizei; Präsident Macron trennte in einer Ansprache zwischen Demonstrierenden und Randalierern. Die Regierung fürchtet eine Neuauflage der Gelbwesten-Proteste.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/news/international/midterms-in-den-usa-wer-schuetzt-die-us-wahlen-vor-eingriffen">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/international/midterms-in-den-usa-wer-schuetzt-die-us-wahlen-vor-eingriffen">Midterms: Sind die USA vor Eingriffen in die Wahlen geschützt?</a></h3>
+    <div class="meta">SRF News · Oct 18–19, 2026</div>
+    <div class="why">outside / world — USA</div>
+    <p class="summary">Gut zwei Wochen vor den Kongresswahlen ordnet SRF ein, wie gut die Abstimmung gegen Einflussnahme geschützt ist. Weil Bundesstaaten und Gemeinden die Wahlen organisieren, gilt ein direkter Zugriff aus Washington als schwierig, und Gerichte haben Versuchen dazu bereits Grenzen gesetzt. Sorgen machen unter anderem Druck auf lokale Wahlverantwortliche und der Verzicht auf OSZE-Beobachter.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/schweizer-cup/cup-auslosung-achtelfinals-yb-trifft-auf-basel-titelverteidiger-st-gallen-auf-lugano">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/schweizer-cup/cup-auslosung-achtelfinals-yb-trifft-auf-basel-titelverteidiger-st-gallen-auf-lugano">Cup: Auslosung der Achtelfinals – YB trifft auf Basel, Titelverteidiger St. Gallen auf Lugano</a></h3>
+    <div class="meta">SRF Sport · Oct 18–19, 2026</div>
+    <div class="why">outside / sport — Schweizer Cup</div>
+    <p class="summary">Die Achtelfinals im Schweizer Cup stehen: YB empfängt im Wankdorf den FC Basel, und Titelverteidiger St. Gallen trifft auf Lugano. Dazu gibt es unter anderem Lausanne gegen GC sowie mehrere Duelle mit Challenge-League-Klubs. Gespielt wird vom 1. bis 3. Dezember.</p>
+  </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.cmswire.com/the-wire/contentsquare-announces-new-ai-first-experience-platform-to-optimize-every-human-and-agent-journey/">
+  <article class="card" data-link="https://martech.org/beyond-the-opt-in-engineering-consent-for-better-marketing/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/the-wire/contentsquare-announces-new-ai-first-experience-platform-to-optimize-every-human-and-agent-journey/">Contentsquare Announces New AI-First Experience Platform to Optimize Every Human and Agent Journey</a></h3>
-    <div class="meta">CMSWire (The Wire) · Oct 13, 2026</div>
-    <div class="why">core / cx — Analytics &amp; Agentic Experience</div>
-    <p class="summary">Contentsquare startet seine neue Experience-Plattform als Beta und trennt darin Traffic von KI-Agenten und LLMs von menschlichen Sessions. Dazu kommen Multi-Touch-Attribution inklusive KI-Referrals und eine Agenten-Schicht namens Sense, die Reibungspunkte findet und Experimente vorschlägt. Es handelt sich um Herstellerangaben aus einer Pressemitteilung, unabhängige Tests fehlen noch.</p>
+    <h3><a href="https://martech.org/beyond-the-opt-in-engineering-consent-for-better-marketing/">Beyond the opt-in: Engineering consent for better marketing</a></h3>
+    <div class="meta">MarTech.org · Oct 14, 2026</div>
+    <div class="why">core / martech — Consent &amp; Daten</div>
+    <p class="summary">Der Beitrag plädiert dafür, Einwilligung nicht als einmaliges Häkchen, sondern als technisch sauber gebautes System zu behandeln. Das soll Daten für Personalisierung nutzbar halten und gleichzeitig Vertrauen aufbauen. Er ist zugleich Teaser für ein Panel an der MarTech-Konferenz am 4. November.</p>
+  </article>
+  <article class="card" data-link="https://www.cmswire.com/customer-experience/who-protects-the-account-when-autonomous-service-agents-make-commitments/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/customer-experience/who-protects-the-account-when-autonomous-service-agents-make-commitments/">Who Protects the Account When Autonomous Service Agents Make Commitments?</a></h3>
+    <div class="meta">CMSWire · Oct 14, 2026</div>
+    <div class="why">core / cx — AI-Agenten im Service</div>
+    <p class="summary">Die Autorin argumentiert, dass klassische KI-Governance Modelle vor Datenlecks schützt, aber nicht Kundenbeziehungen, wenn ein Agent etwa Rückerstattungen oder Fristen zusagt. Deflection-Quoten verschleiern laut Text, ob Probleme wirklich gelöst wurden. Empfohlen werden Verantwortlichkeitsmatrizen, risikobasierte Autonomie, getestete Eskalationen und Qualitätsmessung.</p>
+  </article>
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">Adobe Journey Optimizer — Release Notes (October 2026 updates)</a></h3>
+    <div class="meta">Adobe Experience League · Oct 12–13, 2026</div>
+    <div class="why">core / adobe — Journey Optimizer</div>
+    <p class="summary">Die Oktober-Updates bringen eine Stop-Aktion im Journey-Canvas, die Profile aus bis zu fünf eingehenden Aktivitäten oder Experiences entfernt (ab 12. Oktober). Neu ist auch die Validierung von Journeys auf Abruf und ein Business-Performance-Analysis-Skill für Coworker. Praktisch für alle, die komplexe Journeys in AEP/AJO pflegen.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/content-everywhere-winning-attention-in-a-fragmented-marketing-landscape/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/content-everywhere-winning-attention-in-a-fragmented-marketing-landscape/">Content everywhere: Winning attention in a fragmented marketing landscape</a></h3>
+    <div class="meta">MarTech.org · Oct 16, 2026</div>
+    <div class="why">core / martech — Content-Strategie</div>
+    <p class="summary">Die Seite kündigt ein Panel der kostenlosen MarTech-Konferenz an, das zeigt, wie Marken Aufmerksamkeit über viele fragmentierte Kanäle gewinnen. Es ist eher ein Konferenzhinweis als eine Analyse; inhaltlich lohnt sich der Blick vor allem für die Agenda.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 1 article, far below the usual ~15: nearly everything fresh had already been shown, and the rest had no confirmable publish date (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 7 articles, below the usual ~15: most fresh candidates had already been shown or had no confirmable publish date (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
