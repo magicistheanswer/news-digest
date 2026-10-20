@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-19</title>
+<title>Morning News Digest — 2026-10-20</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,78 +95,92 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-19, Monday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates confirmed from search results/URLs/page metadata; SRF items have relative dates only (seen on SRF front pages of Oct 18-19), so treated as Oct 17-19.
-  - Used: SRF News (2: France protests, US midterms), SRF Sport (1: Cup draw), MarTech.org (2), CMSWire (1), Adobe Experience League JO release notes (1, Oct 12-13 monthly notes).
-  - Skipped as already shown in the last 7 days: MarTech Salesforce/Loops, outgrown-the-organization, buyer-signals, state of AI Q4; CMSWire Kustomer; MIT Technology Review Downloads Oct 8-14.
-  - Skipped, no confirmable recent date / not found: MIT Technology Review (no Download after Oct 15 found), Adobe Experience Cloud Blog (nothing dated), MeasureCamp, BBC News/Sport (domain not searchable), Kicker (nothing found), SRF Schweiz (remaining items - SVP/MwSt, Parmelin-Nachfolge follow-ups - undated), martech "measure marketing when AI owns discovery" and "agentic media buying" (undated).
-  - Net: 7 articles (4 core / 3 outside), below ~15. Freshness beats quota per CLAUDE.md.
+  Run notes (2026-10-20, Tuesday):
+  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates confirmed from URLs (technologyreview) or search result dates; SRF items dated via search results (Oct 17-19).
+  - Used: SRF News (3: Rickli, Palantir, Nahost), MIT Technology Review (2, Oct 19), CMSWire (3, Oct 15-16), MarTech.org (1, weekly AI roundup Oct 15).
+  - Skipped, already shown: MarTech/CMSWire HubSpot spend controls, Kustomer, Salesforce/Loops, Experience League release notes.
+  - Skipped, no fresh/confirmable item: SRF Sport (only Super League round 10 / Oct 10-14, already covered or stale), Kicker Bundesliga (only month-old reports), Adobe Experience Cloud Blog (nothing dated after Oct 7), MeasureCamp, BBC News/Sport (domain not searchable). Braze Forge recap (Oct 2) and Genesys/NiCE (Oct 6) too old.
+  - Net: 9 articles (6 core / 3 outside), below ~15. Freshness beats quota per CLAUDE.md. No sport item this run.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Monday, October 19, 2026 · 7 articles</div>
+    <div class="date">Tuesday, October 20, 2026 · 9 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/landesweite-proteste-warum-frankreichs-strassen-brennen-und-was-die-menschen-fordern">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/bundesratswahl-natalie-rickli-will-nicht-bundesraetin-werden">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/landesweite-proteste-warum-frankreichs-strassen-brennen-und-was-die-menschen-fordern">Landesweite Proteste: Warum Frankreichs Strassen brennen</a></h3>
-    <div class="meta">SRF News · Oct 17–18, 2026</div>
-    <div class="why">outside / world — Frankreich</div>
-    <p class="summary">Hunderttausende demonstrierten in Frankreich gegen hohe Lebenshaltungskosten, besonders Spritpreise, und die Lage an den Schulen. Daneben kam es zu Plünderungen, Brandstiftungen und Strassenschlachten mit Polizei; Präsident Macron trennte in einer Ansprache zwischen Demonstrierenden und Randalierern. Die Regierung fürchtet eine Neuauflage der Gelbwesten-Proteste.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/bundesratswahl-natalie-rickli-will-nicht-bundesraetin-werden">Bundesratswahl: Natalie Rickli will nicht Bundesrätin werden</a></h3>
+    <div class="meta">SRF News · Oct 19, 2026</div>
+    <div class="why">outside / schweiz — Parmelin-Nachfolge</div>
+    <p class="summary">Die Zürcher SVP-Regierungsrätin sagt ab und will stattdessen im Kanton bleiben, wo sie 2027 wieder zur Wahl antritt. Sie hält eine Zürcher Vertretung im Bundesrat zwar für wichtig, verzichtet aber trotzdem. Damit bleibt die Genferin Céline Amaudruz im Gespräch für die Nachfolge von Guy Parmelin.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/midterms-in-den-usa-wer-schuetzt-die-us-wahlen-vor-eingriffen">
+  <article class="card" data-link="https://www.srf.ch/news/dialog/us-techunternehmen-5-anfragen-5-absagen-palantir-blitzt-in-der-schweiz-ab">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/midterms-in-den-usa-wer-schuetzt-die-us-wahlen-vor-eingriffen">Midterms: Sind die USA vor Eingriffen in die Wahlen geschützt?</a></h3>
+    <h3><a href="https://www.srf.ch/news/dialog/us-techunternehmen-5-anfragen-5-absagen-palantir-blitzt-in-der-schweiz-ab">5 Anfragen, 5 Absagen: Palantir blitzt in der Schweiz ab</a></h3>
     <div class="meta">SRF News · Oct 18–19, 2026</div>
-    <div class="why">outside / world — USA</div>
-    <p class="summary">Gut zwei Wochen vor den Kongresswahlen ordnet SRF ein, wie gut die Abstimmung gegen Einflussnahme geschützt ist. Weil Bundesstaaten und Gemeinden die Wahlen organisieren, gilt ein direkter Zugriff aus Washington als schwierig, und Gerichte haben Versuchen dazu bereits Grenzen gesetzt. Sorgen machen unter anderem Druck auf lokale Wahlverantwortliche und der Verzicht auf OSZE-Beobachter.</p>
+    <div class="why">outside / schweiz — Armee &amp; Datensouveränität</div>
+    <p class="summary">Laut einer Recherche von «Republik» und WAV hat die Armee eine Zusammenarbeit mit Palantir fünfmal geprüft und stets verworfen, vor allem wegen fehlender Kontrolle über die Daten. Ein interner Bericht warnt vor Abfluss an US-Geheimdienste, und aus den Reihen der Grünen liegt ein Vorstoss gegen Verträge mit ausländischen Anbietern vor.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/schweizer-cup/cup-auslosung-achtelfinals-yb-trifft-auf-basel-titelverteidiger-st-gallen-auf-lugano">
+  <article class="card" data-link="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-israel-nimmt-zehn-siedler-nach-angriffen-im-westjordanland-fest">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/schweizer-cup/cup-auslosung-achtelfinals-yb-trifft-auf-basel-titelverteidiger-st-gallen-auf-lugano">Cup: Auslosung der Achtelfinals – YB trifft auf Basel, Titelverteidiger St. Gallen auf Lugano</a></h3>
-    <div class="meta">SRF Sport · Oct 18–19, 2026</div>
-    <div class="why">outside / sport — Schweizer Cup</div>
-    <p class="summary">Die Achtelfinals im Schweizer Cup stehen: YB empfängt im Wankdorf den FC Basel, und Titelverteidiger St. Gallen trifft auf Lugano. Dazu gibt es unter anderem Lausanne gegen GC sowie mehrere Duelle mit Challenge-League-Klubs. Gespielt wird vom 1. bis 3. Dezember.</p>
+    <h3><a href="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-israel-nimmt-zehn-siedler-nach-angriffen-im-westjordanland-fest">Krieg im Nahen Osten: Israel nimmt zehn Siedler nach Angriffen im Westjordanland fest</a></h3>
+    <div class="meta">SRF News · Oct 17, 2026</div>
+    <div class="why">outside / world — Nahost</div>
+    <p class="summary">Nach Angriffen von Siedlern auf eine US-Fotografin und europäische Diplomaten hat die israelische Polizei bei einer Razzia im Westjordanland zehn Personen festgenommen. Der Ticker bündelt zudem weitere Entwicklungen rund um Golf und Jemen.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://martech.org/beyond-the-opt-in-engineering-consent-for-better-marketing/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/beyond-the-opt-in-engineering-consent-for-better-marketing/">Beyond the opt-in: Engineering consent for better marketing</a></h3>
-    <div class="meta">MarTech.org · Oct 14, 2026</div>
-    <div class="why">core / martech — Consent &amp; Daten</div>
-    <p class="summary">Der Beitrag plädiert dafür, Einwilligung nicht als einmaliges Häkchen, sondern als technisch sauber gebautes System zu behandeln. Das soll Daten für Personalisierung nutzbar halten und gleichzeitig Vertrauen aufbauen. Er ist zugleich Teaser für ein Panel an der MarTech-Konferenz am 4. November.</p>
+    <h3><a href="https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/">AI researchers stranded Claude on a virtual desert island. It started to “play.”</a></h3>
+    <div class="meta">MIT Technology Review · Oct 19, 2026</div>
+    <div class="why">core / ai — Agentenverhalten</div>
+    <p class="summary">Forschende liessen KI-Agenten 30 Stunden allein auf einer virtuellen Insel und beobachteten, dass sie sich eigene Spiele ausdachten. Das Team sieht vier Merkmale von Spiel, räumt aber ein, dass es auch Rollenspiel sein könnte; die Studie ist noch nicht begutachtet und Fachleute bleiben skeptisch.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/customer-experience/who-protects-the-account-when-autonomous-service-agents-make-commitments/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/19/1147103/the-download-preserving-the-arctic-permafrost-and-playful-ai-agents/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/customer-experience/who-protects-the-account-when-autonomous-service-agents-make-commitments/">Who Protects the Account When Autonomous Service Agents Make Commitments?</a></h3>
-    <div class="meta">CMSWire · Oct 14, 2026</div>
-    <div class="why">core / cx — AI-Agenten im Service</div>
-    <p class="summary">Die Autorin argumentiert, dass klassische KI-Governance Modelle vor Datenlecks schützt, aber nicht Kundenbeziehungen, wenn ein Agent etwa Rückerstattungen oder Fristen zusagt. Deflection-Quoten verschleiern laut Text, ob Probleme wirklich gelöst wurden. Empfohlen werden Verantwortlichkeitsmatrizen, risikobasierte Autonomie, getestete Eskalationen und Qualitätsmessung.</p>
+    <h3><a href="https://www.technologyreview.com/2026/10/19/1147103/the-download-preserving-the-arctic-permafrost-and-playful-ai-agents/">The Download: preserving the Arctic permafrost, and playful AI agents</a></h3>
+    <div class="meta">MIT Technology Review · Oct 19, 2026</div>
+    <div class="why">core / tech — Newsletter-Überblick</div>
+    <p class="summary">Der Newsletter fasst unter anderem die Versuche zusammen, mit Brandbekämpfung Permafrost-Kohlenstoff im Boden zu halten, und fragt, wie gut KI-Gesundheitstools funktionieren, obwohl sie kaum extern evaluiert werden.</p>
   </article>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/your-marketing-dashboard-is-measuring-traffic-google-already-took/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">Adobe Journey Optimizer — Release Notes (October 2026 updates)</a></h3>
-    <div class="meta">Adobe Experience League · Oct 12–13, 2026</div>
-    <div class="why">core / adobe — Journey Optimizer</div>
-    <p class="summary">Die Oktober-Updates bringen eine Stop-Aktion im Journey-Canvas, die Profile aus bis zu fünf eingehenden Aktivitäten oder Experiences entfernt (ab 12. Oktober). Neu ist auch die Validierung von Journeys auf Abruf und ein Business-Performance-Analysis-Skill für Coworker. Praktisch für alle, die komplexe Journeys in AEP/AJO pflegen.</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/your-marketing-dashboard-is-measuring-traffic-google-already-took/">Are Marketers Ready for Google Search That Answers Before Anyone Clicks?</a></h3>
+    <div class="meta">CMSWire · Oct 16, 2026</div>
+    <div class="why">core / martech — Messung &amp; Zero-Click</div>
+    <p class="summary">Der Beitrag argumentiert, dass AI Overviews und Zero-Click-Antworten Referral-Traffic abschneiden und die Bewertung durch Käufer in Oberflächen verlagern, die Marken nicht kontrollieren. Marketing-Dashboards, die nur Traffic messen, zeigen dadurch ein unvollständiges Bild.</p>
   </article>
-  <article class="card" data-link="https://martech.org/content-everywhere-winning-attention-in-a-fragmented-marketing-landscape/">
+  <article class="card" data-link="https://www.cmswire.com/digital-asset-management/digital-asset-management-was-plumbing-its-now-a-system-of-influence/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/content-everywhere-winning-attention-in-a-fragmented-marketing-landscape/">Content everywhere: Winning attention in a fragmented marketing landscape</a></h3>
-    <div class="meta">MarTech.org · Oct 16, 2026</div>
-    <div class="why">core / martech — Content-Strategie</div>
-    <p class="summary">Die Seite kündigt ein Panel der kostenlosen MarTech-Konferenz an, das zeigt, wie Marken Aufmerksamkeit über viele fragmentierte Kanäle gewinnen. Es ist eher ein Konferenzhinweis als eine Analyse; inhaltlich lohnt sich der Blick vor allem für die Agenda.</p>
+    <h3><a href="https://www.cmswire.com/digital-asset-management/digital-asset-management-was-plumbing-its-now-a-system-of-influence/">How Digital Asset Management Went From Digital Plumbing to System of Influence</a></h3>
+    <div class="meta">CMSWire · Oct 16, 2026</div>
+    <div class="why">core / martech — DAM</div>
+    <p class="summary">Laut Text lesen Antwortmaschinen und KI-Agenten die Metadaten aus Digital-Asset-Management-Systemen, um zu entscheiden, welche Assets einer Marke erscheinen und zitiert werden. DAM wird damit von Infrastruktur zu einem Hebel für Sichtbarkeit.</p>
+  </article>
+  <article class="card" data-link="https://www.cmswire.com/the-wire/webflow-and-google-gemini-announce-new-agentic-integration/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/the-wire/webflow-and-google-gemini-announce-new-agentic-integration/">Webflow and Google Gemini Announce New Agentic Integration</a></h3>
+    <div class="meta">CMSWire · Oct 15, 2026</div>
+    <div class="why">core / martech — Agentic CMS</div>
+    <p class="summary">Webflow wird als verbundene App in der Gemini-App verfügbar und ist für den Connector-Marktplatz von Google ausgewählt, der nur freigegebenen Partnern offensteht. Ein weiteres Zeichen, dass Website-Plattformen sich für KI-Agenten öffnen.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">The latest AI-powered martech news and releases</a></h3>
+    <div class="meta">MarTech.org · Oct 15, 2026 (weekly roundup)</div>
+    <div class="why">core / martech — AI-Wochenrückblick</div>
+    <p class="summary">Die wöchentliche Übersicht von MarTech listet neue KI-Produkte und Releases aus dem Martech-Umfeld. Praktisch als Schnellüberblick über die Woche.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 7 articles, below the usual ~15: most fresh candidates had already been shown or had no confirmable publish date (see the run notes above). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 9 articles, below the usual ~15: several sources had no fresh, confirmably dated items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
