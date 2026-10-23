@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-22</title>
+<title>Morning News Digest — 2026-10-23</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,85 +95,64 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-22, Thursday):
+  Run notes (2026-10-23, Friday):
   - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates confirmed from URLs (technologyreview) or on-page/search-result dates.
-  - Used: SRF News (2: Wyssmann Bundesratskandidatur, Selenski/Witkoff Oslo Oct 20), SRF Sport (1: CL Bayern-Arsenal), MarTech.org (2, Oct 21), MIT Technology Review (1, Oct 21), CMSWire (2, Oct 21).
-  - Skipped, too old: martech Salesforce/Loops (Oct 13), OpenAI ChatGPT ad visuals (Oct 6), martech Google content guidance (~8 days). Skipped, date not confirmable: SRF UN 1.5-degree report, Bancomat arrests, Pope Leo follow-up, CMSWire Databricks CustomerLake.
-  - Skipped, nothing fresh: Adobe Experience Cloud Blog (latest found May 2026), Adobe Experience League (already shown), MeasureCamp, Kicker Bundesliga (only fixture/table pages), BBC News/Sport (domain not searchable).
-  - Net: 8 articles (5 core / 3 outside), below ~15. Freshness beats quota per CLAUDE.md.
+  - Used: SRF News (2: Chiesa Bundesratskandidatur, Italien Lkw-Proteste, both Oct 22), CMSWire (1, Oct 22), MIT Technology Review (2, Oct 19/20).
+  - Skipped, already shown: martech.org AI martech roundup, HubSpot spending controls, Salesforce/Braze coverage. Skipped, too old: Treasure AI (martech Oct 6), HubSpot spending controls (Oct 15), CMSWire agentic CDP pieces. Skipped, date unconfirmable: CMSWire Braze Forge recap, SRF Juso youth strike. Skipped, press releases: CMSWire Sprinklr/CXPA wires.
+  - Skipped, nothing fresh: Adobe Experience Cloud Blog (nothing from 2026-10 found), MeasureCamp, MarTech.org (nothing new beyond already shown), SRF Sport / Super League (latest found Oct 10-14), Kicker Bundesliga (only fixture pages), BBC News/Sport (domain not searchable).
+  - Net: 5 articles (3 core / 2 outside), well below ~15. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Thursday, October 22, 2026 · 8 articles</div>
+    <div class="date">Friday, October 23, 2026 · 5 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-remy-wyssmann-will-svp-bundesrat-werden">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/kandidatur-fuer-den-bundesrat-bundesrat-tessiner-staenderat-marco-chiesa-steht-zur-verfuegung">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-remy-wyssmann-will-svp-bundesrat-werden">Nachfolge Parmelin: Rémy Wyssmann will SVP-Bundesrat werden</a></h3>
-    <div class="meta">SRF News · Oct 21, 2026</div>
+    <h3><a href="https://www.srf.ch/news/schweiz/kandidatur-fuer-den-bundesrat-bundesrat-tessiner-staenderat-marco-chiesa-steht-zur-verfuegung">Bundesrat: Tessiner Ständerat Marco Chiesa steht zur Verfügung</a></h3>
+    <div class="meta">SRF News · Oct 22, 2026</div>
     <div class="why">outside / schweiz — Bundesratswahl</div>
-    <p class="summary">Der Solothurner SVP-Nationalrat Rémy Wyssmann hat an einer Medienkonferenz seine Kandidatur für die Nachfolge von Guy Parmelin angekündigt. Bisher hatte nur die Genferin Céline Amaudruz offiziell Interesse gemeldet; mehrere Prominente haben abgesagt. Die Wahl findet am 9. Dezember statt, SRF-Korrespondenten sehen seine Chancen als gering.</p>
+    <p class="summary">Der Tessiner SVP-Ständerat Marco Chiesa hat sich als möglicher Nachfolger von Guy Parmelin ins Spiel gebracht. Damit wächst das Feld der SVP-Interessierten, während andere wie Franz Grüter bereits abgewunken haben. Das Parlament entscheidet im Dezember.</p>
   </article>
-  <article class="card" data-link="https://srf.ch/news/international/ukraine/krieg-in-der-ukraine-selenski-und-us-sondergesandter-witkoff-zu-gespraechen-in-oslo">
+  <article class="card" data-link="https://www.srf.ch/news/international/lkw-demo-in-italien-staatliche-finanzhilfe-soll-proteste-in-italien-eindaemmen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://srf.ch/news/international/ukraine/krieg-in-der-ukraine-selenski-und-us-sondergesandter-witkoff-zu-gespraechen-in-oslo">Krieg in der Ukraine: Selenski und US-Sondergesandter Witkoff sprechen in Oslo</a></h3>
-    <div class="meta">SRF News · Oct 20, 2026</div>
-    <div class="why">outside / world — Ukraine-Diplomatie</div>
-    <p class="summary">Selenski traf in Oslo den US-Gesandten Witkoff und sprach von konkreten Vorschlägen für eine Waffenruhe, die Witkoff anschliessend der russischen Führung vorlegen wollte. Zudem soll der Zugang zur Starlink-Verbindung innerhalb von 48 Stunden wiederhergestellt werden. Im Raum stehen trilaterale Gespräche, möglicherweise schon Anfang November.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/champions-league-dank-rices-effort-arsenal-knoepft-den-bayern-zwei-punkte-ab">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/champions-league-dank-rices-effort-arsenal-knoepft-den-bayern-zwei-punkte-ab">Champions League: Dank Rices Effort knöpft Arsenal den Bayern zwei Punkte ab</a></h3>
-    <div class="meta">SRF Sport · Oct 21, 2026</div>
-    <div class="why">outside / sport — Champions League</div>
-    <p class="summary">Im Topspiel der Allianz Arena trennten sich Bayern und Arsenal 2:2. Harry Kane war mit einem Tor und einem Assist der prägende Mann bei den Münchnern, doch Declan Rice glich rund zehn Minuten vor Schluss für die Gäste aus.</p>
+    <h3><a href="https://www.srf.ch/news/international/lkw-demo-in-italien-staatliche-finanzhilfe-soll-proteste-in-italien-eindaemmen">Staatliche Finanzhilfe soll Proteste in Italien eindämmen</a></h3>
+    <div class="meta">SRF News · Oct 22, 2026</div>
+    <div class="why">outside / world — Energiepreise Italien</div>
+    <p class="summary">Hohe Energiepreise legen in Italien Teile der Wirtschaft lahm, Lastwagenfahrer protestieren. Die Regierung Meloni stellt eine halbe Milliarde Euro bereit, die auch Landwirten und Fischern zugutekommen soll. Gleichzeitig warnt sie vor Einschüchterung und möglicher Mafia-Beteiligung; ob das Geld reicht, ist offen.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://martech.org/its-time-to-re-think-voice-of-the-customer-programs/">
+  <article class="card" data-link="https://www.cmswire.com/contact-center/unpacking-the-ai-governance-crisis-in-contact-centers/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/its-time-to-re-think-voice-of-the-customer-programs/">It’s time to re-think voice of the customer programs</a></h3>
-    <div class="meta">MarTech.org · Oct 21, 2026</div>
-    <div class="why">core / martech — Customer Experience</div>
-    <p class="summary">Der Autor argumentiert, dass klassische Umfragen und NPS weder Kundschaft noch Marken gerecht werden, weil über die Hälfte der Konsumentinnen und Konsumenten direkte Befragungen ignoriert. Er plädiert dafür, Verhaltensdaten aus Sessions mit Stimmungsfeedback zu kombinieren.</p>
+    <h3><a href="https://www.cmswire.com/contact-center/unpacking-the-ai-governance-crisis-in-contact-centers/">Unpacking the AI Governance Crisis in Contact Centers</a></h3>
+    <div class="meta">CMSWire · Oct 22, 2026</div>
+    <div class="why">core / martech — AI-Governance im Contact Center</div>
+    <p class="summary">Eine Kolumne argumentiert, dass Contact Center KI-Agenten schneller einführen, als sie diese steuern können. Eine Umfrage zeigt, dass nur 1 % gar keine KI einsetzen und vier von zehn Pilotprojekte laufen haben.</p>
   </article>
-  <article class="card" data-link="https://martech.org/ai-search-is-turning-prompts-into-customer-research/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/20/1145423/ai-adoption-by-industry-shows-what-other-sectors-can-learn/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-search-is-turning-prompts-into-customer-research/">AI search is turning prompts into customer research</a></h3>
-    <div class="meta">MarTech.org · Oct 21, 2026</div>
-    <div class="why">core / martech — AI search</div>
-    <p class="summary">Längere, persönlichere KI-Prompts verraten mehr über Motive und Hürden eines Kaufs als blosse Keywords. Das Prompt-Tracking zeigt dabei nur eine Version der Realität, weil Assistenten mit Gedächtnis dieselbe Frage unterschiedlich beantworten. Empfohlen wird, solche Erkenntnisse in die Strategie einfliessen zu lassen und auch die Landingpages von KI-Besuchern zu prüfen.</p>
+    <h3><a href="https://www.technologyreview.com/2026/10/20/1145423/ai-adoption-by-industry-shows-what-other-sectors-can-learn/">AI adoption by industry shows what other sectors can learn</a></h3>
+    <div class="meta">MIT Technology Review · Oct 20, 2026</div>
+    <div class="why">core / ai — Adoption nach Branche</div>
+    <p class="summary">Eine Umfrage vergleicht, wie stark Branchen KI-Chatbots nutzen: Die Finanzbranche liegt hinter der Techbranche klar auf Rang zwei, Gesundheit und Bildung sind deutlich weniger exponiert. Der Beitrag fragt, was andere Sektoren daraus lernen können.</p>
   </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/21/1146124/interspecies-communication-impossible-issue/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/21/1146124/interspecies-communication-impossible-issue/">Interspecies communication</a></h3>
-    <div class="meta">MIT Technology Review · Oct 21, 2026</div>
-    <div class="why">core / ai — Tierkommunikation</div>
-    <p class="summary">Aus der «Impossible»-Ausgabe: KI hilft Forschenden, Tierlaute besser zu erkennen und zu sortieren. Sie wirklich zu übersetzen, bleibt aber vorerst Theorie.</p>
-  </article>
-  <article class="card" data-link="https://cmswire.com/digital-experience/sundar-pichai-googles-frontier-imperative-compute-scarcity-dilemmas-future-ai-products-and-busin">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://cmswire.com/digital-experience/sundar-pichai-googles-frontier-imperative-compute-scarcity-dilemmas-future-ai-products-and-busin">Is Google Really Back at the Frontier? Sundar Pichai Tells Us</a></h3>
-    <div class="meta">CMSWire · Oct 21, 2026</div>
-    <div class="why">core / ai — Google &amp; KI-Strategie</div>
-    <p class="summary">CMSWire spricht mit Google-CEO Sundar Pichai darüber, ob das Unternehmen bei KI wieder an der Spitze steht. Themen sind unter anderem knappe Rechenkapazität und die Zukunft der KI-Produkte.</p>
-  </article>
-  <article class="card" data-link="https://cmswire.com/digital-marketing/think-ai-visibility-is-a-done-deal-ask-reddit-about-its-chatgpt-citations">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://cmswire.com/digital-marketing/think-ai-visibility-is-a-done-deal-ask-reddit-about-its-chatgpt-citations">Think AI Visibility Is a Done Deal? Ask Reddit About Its ChatGPT Citations</a></h3>
-    <div class="meta">CMSWire · Oct 21, 2026</div>
-    <div class="why">core / martech — AI visibility</div>
-    <p class="summary">Reddits Anteil an den Quellenangaben in ChatGPT Search ist gesunken – ein Hinweis, dass einmal erreichte Sichtbarkeit in KI-Antworten nicht dauerhaft gesichert ist. Für Marketingteams heisst das: AI Visibility regelmässig neu messen.</p>
+    <h3><a href="https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/">Making the internet better for AI agents might make it worse for everyone else</a></h3>
+    <div class="meta">MIT Technology Review · Oct 19, 2026</div>
+    <div class="why">core / ai — KI-Agenten im Web</div>
+    <p class="summary">Viele Websites sperren KI-Agenten aus, die Konsumentinnen und Konsumenten zum Preisverhandeln oder Reiseplanen losschicken. Der Text beleuchtet, wie ein auf Agenten optimiertes Netz das Erlebnis für Menschen verschlechtern könnte.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 8 articles, below the usual ~15: several sources had no fresh, confirmably dated items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 5 articles, below the usual ~15: most sources had no fresh, confirmably dated items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
