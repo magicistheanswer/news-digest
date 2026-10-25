@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-24</title>
+<title>Morning News Digest — 2026-10-25</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,65 +95,58 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-24, Saturday):
-  - Direct RSS/Atom fetching and WebFetch blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates from URLs (technologyreview) or search-result dates (CMSWire Oct 20; SRF Oct 23 = candidacy deadline day, inferred).
-  - Used: SRF News (1), MIT Technology Review (1), CMSWire (3).
-  - Skipped, already shown: MIT TR desert-island/agents pieces, CMSWire Braze/HubSpot/Google zero-click, martech.org Braze/HubSpot.
-  - Skipped, date/URL unconfirmable: martech.org Oct 22 AI roundup (Demandbase/Picsart), SRF Ukraine/Nahost items, MIT TR Oct 21 "Impossible" issue pieces. Skipped, too old/press: CMSWire Genesys/Treasure (Oct 6), Sprinklr/CXPA wires.
-  - Skipped, nothing fresh: Adobe Experience Cloud Blog (only release notes/old Summit posts), MeasureCamp, SRF Sport / Super League (latest Oct 10), Kicker Bundesliga (fixture pages only), BBC News/Sport (domain not searchable).
-  - Net: 5 articles (4 core / 1 outside), well below ~15. Freshness beats quota per CLAUDE.md.
+  Run notes (2026-10-25, Sunday):
+  - Direct RSS/Atom fetching and WebFetch blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates from URLs (technologyreview) or search-result dates (CMSWire Oct 22). SRF items have no date in URL: SRG poll is after survey end Oct 18 and reported by Oct 23; Ebola diagnosis Oct 20 - both within the 7-day window, exact publish dates not confirmed.
+  - Used: SRF News (2), MIT Technology Review (1), CMSWire (1).
+  - Skipped, too old: CMSWire Oct 2-16 pieces (Braze Forge, Treasure pricing, context engineering, hybrid stack, consolidation). Skipped, already shown: martech.org Braze/Loops/HubSpot/Treasure, MIT TR Oct 19 pieces, CMSWire Webflow/Databricks/Zoom.
+  - Skipped, date unconfirmable: martech.org Oct 22 roundup items (Demandbase/Krea), SRF Winter Olympics 2038 item.
+  - Skipped, nothing fresh: Adobe Experience Cloud Blog, MeasureCamp, SRF International, SRF Sport (no confirmed Super League round 12 report), Kicker Bundesliga (no recent report indexed), BBC News/Sport (domain not searchable).
+  - Net: 4 articles (2 core / 2 outside), well below ~15. Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Saturday, October 24, 2026 · 5 articles</div>
+    <div class="date">Sunday, October 25, 2026 · 4 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-frist-abgelaufen-diese-kandidaten-gehen-ins-bundesratsrennen">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/erste-srg-umfrage-vorerst-drei-pattsituationen-und-ein-klarer-ja-trend">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-frist-abgelaufen-diese-kandidaten-gehen-ins-bundesratsrennen">Frist abgelaufen: Diese Kandidaten gehen ins Bundesratsrennen</a></h3>
-    <div class="meta">SRF News · Oct 23, 2026</div>
-    <div class="why">outside / schweiz — Bundesratswahl</div>
-    <p class="summary">Nach Ablauf der Meldefrist stehen die SVP-Interessierten für die Parmelin-Nachfolge fest, darunter zwei Walliser, Chiesa, Schnegg, Amaudruz und Wyssmann; bei Thomas Aeschi ist offen, ob er wirklich antritt. Mehrere Prominente haben abgesagt. Die Findungskommission schlägt der Fraktion bis 13. November einen Favoriten vor, gewählt wird am 9. Dezember.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/erste-srg-umfrage-vorerst-drei-pattsituationen-und-ein-klarer-ja-trend">Erste SRG-Umfrage: Vorerst drei Pattsituationen und ein klarer Ja-Trend</a></h3>
+    <div class="meta">SRF News · Oct 2026 (nach Umfrageende 18. Okt.)</div>
+    <div class="why">outside / schweiz — Abstimmung 29. November</div>
+    <p class="summary">Die erste SRG-Umfrage zu den Abstimmungen vom 29. November sieht die Feuerwerksinitiative mit rund 69 Prozent Zustimmung klar vorn. Bei der Initiative gegen die Heiratsstrafe und beim Kriegsmaterialgesetz zeichnet sich dagegen ein knappes Rennen ab. Befragt wurde vom 5. bis 18. Oktober, der Fehlerbereich liegt bei ±2.8 Prozentpunkten.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/behandlung-in-nigeria-schweizerin-mit-ebola-angesteckt">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/schweiz/behandlung-in-nigeria-schweizerin-mit-ebola-angesteckt">Schweizerin in Nigeria mit Ebola angesteckt</a></h3>
+    <div class="meta">SRF News · Oct 2026 (Diagnose 20. Okt.)</div>
+    <div class="why">outside / schweiz — Gesundheit</div>
+    <p class="summary">Eine Schweizerin, die mit einem Botschaftsmitarbeiter in Abuja lebt, ist am 20. Oktober positiv auf Ebola getestet worden, vermutlich nach einer Reise nach Uganda. Es handelt sich um den Bundibugyo-Stamm, für den es keine spezifische Therapie gibt; ihr Mann ist isoliert und über 40 Kontaktpersonen stehen unter Quarantäne. Wie es mit einer möglichen Rückführung weitergeht, ist noch offen.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/22/1147612/the-download-computing-next-leap-permafrost-climate-threat/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind">AI&#x27;s hidden storage bill: What inference leaves behind</a></h3>
+    <h3><a href="https://www.technologyreview.com/2026/10/22/1147612/the-download-computing-next-leap-permafrost-climate-threat/">The Download: computing's next leap and permafrost's climate threat</a></h3>
     <div class="meta">MIT Technology Review · Oct 22, 2026</div>
-    <div class="why">core / ai — Infrastruktur und Kosten</div>
-    <p class="summary">Laut einer Messung von Western Digital hinterlässt ein achtsekündiges KI-Video im Backend über 500 MB an Logs, Zwischenständen und Backups, obwohl die Datei nur knapp 4 MB gross ist. Der Beitrag argumentiert, dass Speicherkosten bei der KI-Kalkulation oft fehlen und mit jedem Clip weiterwachsen. Die Zahlen stammen von einem einzelnen Hersteller und sind eher ein Richtwert.</p>
+    <div class="why">core / ai — Sicherheit</div>
+    <p class="summary">Der Newsletter meldet, dass Angreifer mit Claude und Grok Attacken auf über 400 Banken automatisiert haben sollen. Ausserdem hat KI eine jahrealte Schwachstelle in PHP aufgespürt, die einen grossen Teil des Webs betrifft und von Behörden zum Patchen angemahnt wird. Eine kompakte Übersicht, wie KI auf beiden Seiten der IT-Sicherheit ankommt.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/customer-data-platforms/databricks-customerlake-enters-beta-as-enterprises-go-live-with-agentic-cdp/">
+  <article class="card" data-link="https://cmswire.com/customer-experience/90210-reboot-nah-cx-reboot-the-time-is-now-in-the-age-of-ai">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/customer-data-platforms/databricks-customerlake-enters-beta-as-enterprises-go-live-with-agentic-cdp/">Databricks CustomerLake Enters Beta as Enterprises Go Live With Agentic CDP</a></h3>
-    <div class="meta">CMSWire · Oct 20, 2026</div>
-    <div class="why">core / martech — CDP</div>
-    <p class="summary">Databricks hat seine Campaign Agents in die Beta und die Profile Agents in eine Private Preview geschickt. Das Angebot positioniert sich als agentisches CDP direkt auf dem Lakehouse. Ein Termin für die allgemeine Verfügbarkeit und Preise nennt das Unternehmen noch nicht.</p>
-  </article>
-  <article class="card" data-link="https://cmswire.com/contact-center/zoom-launches-unified-context-layer-for-cx-agents">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://cmswire.com/contact-center/zoom-launches-unified-context-layer-for-cx-agents">Zoom Launches Unified Context Layer for CX Agents</a></h3>
-    <div class="meta">CMSWire · Oct 20, 2026</div>
-    <div class="why">core / cx — Agenten-Kontext</div>
-    <p class="summary">Zoom stellt an der Zoomtopia eine gemeinsame Gedächtnisschicht vor, über die Menschen und KI-Agenten dieselbe Sicht auf einen Kunden teilen. Ziel ist, dass Service-Agenten nicht bei jedem Kontakt bei null beginnen.</p>
-  </article>
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/webflow-launches-ai-campaign-builder-for-marketers/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/webflow-launches-ai-campaign-builder-for-marketers/">Webflow Campaigns Brings On-Brand Landing Pages, Ads and Analytics</a></h3>
-    <div class="meta">CMSWire · Oct 20, 2026</div>
-    <div class="why">core / martech — Kampagnen-Tooling</div>
-    <p class="summary">Webflow Campaigns ist ein eigenständiges KI-Tool, das markenkonforme Landingpages und Anzeigen für Marketer erzeugt und Analytics dazu liefert. Es zielt darauf, Kampagnenaufbau ohne Designer- und Entwickler-Engpass zu beschleunigen.</p>
+    <h3><a href="https://cmswire.com/customer-experience/90210-reboot-nah-cx-reboot-the-time-is-now-in-the-age-of-ai">90210 Reboot? Nah. CX Reboot? The Time Is Now in the Age of AI</a></h3>
+    <div class="meta">CMSWire · Oct 22, 2026</div>
+    <div class="why">core / cx — Grundprinzipien</div>
+    <p class="summary">Der Beitrag plädiert dafür, die Grundregeln guter Customer Experience beim KI-Einsatz nicht über Bord zu werfen, auch wenn sich Tempo und Format des Service verändern. KI soll Kundenbeziehungen unterstützen statt ersetzen.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 5 articles, below the usual ~15: most sources had no fresh, confirmably dated items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 4 articles, below the usual ~15: most sources had no fresh, confirmably dated items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
