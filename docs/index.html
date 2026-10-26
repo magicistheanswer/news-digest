@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-25</title>
+<title>Morning News Digest — 2026-10-26</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,58 +95,66 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-25, Sunday):
-  - Direct RSS/Atom fetching and WebFetch blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates from URLs (technologyreview) or search-result dates (CMSWire Oct 22). SRF items have no date in URL: SRG poll is after survey end Oct 18 and reported by Oct 23; Ebola diagnosis Oct 20 - both within the 7-day window, exact publish dates not confirmed.
-  - Used: SRF News (2), MIT Technology Review (1), CMSWire (1).
-  - Skipped, too old: CMSWire Oct 2-16 pieces (Braze Forge, Treasure pricing, context engineering, hybrid stack, consolidation). Skipped, already shown: martech.org Braze/Loops/HubSpot/Treasure, MIT TR Oct 19 pieces, CMSWire Webflow/Databricks/Zoom.
-  - Skipped, date unconfirmable: martech.org Oct 22 roundup items (Demandbase/Krea), SRF Winter Olympics 2038 item.
-  - Skipped, nothing fresh: Adobe Experience Cloud Blog, MeasureCamp, SRF International, SRF Sport (no confirmed Super League round 12 report), Kicker Bundesliga (no recent report indexed), BBC News/Sport (domain not searchable).
-  - Net: 4 articles (2 core / 2 outside), well below ~15. Freshness beats quota per CLAUDE.md.
+  Run notes (2026-10-26, Monday):
+  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates from URLs / search-result text.
+  - Used: SRF News (3), SRF Sport (1), MarTech.org (1; ~Oct 22, exact date not confirmed). Net 5 articles (1 core / 4 outside).
+  - Skipped, already shown: MIT TR Oct 19/20/22 pieces, martech.org Braze/Loops/HubSpot, CMSWire Databricks/Webflow/Zoom/CX reboot, SRF Bundesrat/SRG-Umfrage/Ebola.
+  - Skipped, too old: MIT TR Oct 2-13 pieces, CMSWire Oct 2-16 pieces, Adobe blog results (Apr-Jun 2026 at newest).
+  - Skipped, date unconfirmable / no article URL: CMSWire martech budget piece, martech.org state-of-AI Q4, Kicker Bundesliga (matchday pages only, no report URLs), SRF other Super League reports (one picked to keep sport slot unique).
+  - Skipped, nothing fresh: Adobe Experience Cloud Blog, MeasureCamp, BBC News/Sport (domain not searchable).
+  - Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Sunday, October 25, 2026 · 4 articles</div>
+    <div class="date">Monday, October 26, 2026 · 5 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/erste-srg-umfrage-vorerst-drei-pattsituationen-und-ein-klarer-ja-trend">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/cyber-schwachstelle-bei-php-erste-schadensbilanz-ueber-100-000-schweizer-webseiten-offline">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/erste-srg-umfrage-vorerst-drei-pattsituationen-und-ein-klarer-ja-trend">Erste SRG-Umfrage: Vorerst drei Pattsituationen und ein klarer Ja-Trend</a></h3>
-    <div class="meta">SRF News · Oct 2026 (nach Umfrageende 18. Okt.)</div>
-    <div class="why">outside / schweiz — Abstimmung 29. November</div>
-    <p class="summary">Die erste SRG-Umfrage zu den Abstimmungen vom 29. November sieht die Feuerwerksinitiative mit rund 69 Prozent Zustimmung klar vorn. Bei der Initiative gegen die Heiratsstrafe und beim Kriegsmaterialgesetz zeichnet sich dagegen ein knappes Rennen ab. Befragt wurde vom 5. bis 18. Oktober, der Fehlerbereich liegt bei ±2.8 Prozentpunkten.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/cyber-schwachstelle-bei-php-erste-schadensbilanz-ueber-100-000-schweizer-webseiten-offline">Über 100'000 Schweizer Websites offline wegen PHP</a></h3>
+    <div class="meta">SRF News · Oct 22, 2026</div>
+    <div class="why">outside / schweiz — Cybersicherheit</div>
+    <p class="summary">Wegen kritischer PHP-Sicherheitslücken wurden in der Schweiz vorsorglich über 100'000 Websites vom Netz genommen, darunter Seiten der Uni Genf, der EPFL und des Kantons Basel-Stadt. Das Bundesamt für Cybersicherheit kennt bislang keine konkreten Angriffe, schliesst unentdeckte Vorfälle aber nicht aus. Betreiber sollen ihre Server rasch aktualisieren.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/behandlung-in-nigeria-schweizerin-mit-ebola-angesteckt">
+  <article class="card" data-link="https://www.srf.ch/news/international/anfuehrerin-der-opposition-ich-bin-hier-bei-euch-machado-kehrt-nach-venezuela-zurueck">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/behandlung-in-nigeria-schweizerin-mit-ebola-angesteckt">Schweizerin in Nigeria mit Ebola angesteckt</a></h3>
-    <div class="meta">SRF News · Oct 2026 (Diagnose 20. Okt.)</div>
-    <div class="why">outside / schweiz — Gesundheit</div>
-    <p class="summary">Eine Schweizerin, die mit einem Botschaftsmitarbeiter in Abuja lebt, ist am 20. Oktober positiv auf Ebola getestet worden, vermutlich nach einer Reise nach Uganda. Es handelt sich um den Bundibugyo-Stamm, für den es keine spezifische Therapie gibt; ihr Mann ist isoliert und über 40 Kontaktpersonen stehen unter Quarantäne. Wie es mit einer möglichen Rückführung weitergeht, ist noch offen.</p>
+    <h3><a href="https://www.srf.ch/news/international/anfuehrerin-der-opposition-ich-bin-hier-bei-euch-machado-kehrt-nach-venezuela-zurueck">Machado kehrt nach Venezuela zurück</a></h3>
+    <div class="meta">SRF News · Oct 25, 2026</div>
+    <div class="why">outside / world — Venezuela</div>
+    <p class="summary">Die Oppositionsführerin und Friedensnobelpreisträgerin María Corina Machado ist rund zehn Monate nach ihrer heimlichen Ausreise wieder in Venezuela. Ihre Rückkehr dürfte die politische Lage im Land neu aufladen.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/news/international/erst-ruhig-dann-angespannt-das-war-der-2-akt-der-massenproteste-in-frankreich">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/international/erst-ruhig-dann-angespannt-das-war-der-2-akt-der-massenproteste-in-frankreich">Frankreich: Der 2. Akt der Massenproteste</a></h3>
+    <div class="meta">SRF News · Oct 24, 2026</div>
+    <div class="why">outside / world — Frankreich</div>
+    <p class="summary">Am Samstag gingen in Frankreich erneut Hunderttausende gegen hohe Lebenshaltungskosten auf die Strasse; die Zahlen von Gewerkschaft und Innenministerium gehen weit auseinander. Der Tag verlief zunächst ruhig, am Abend kam es in mehreren Städten zu Ausschreitungen. Ein dritter Protesttag ist für den 31. Oktober angekündigt.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/11-runde-in-der-super-league-yb-beendet-st-gallens-serie-in-wankdorf">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/11-runde-in-der-super-league-yb-beendet-st-gallens-serie-in-wankdorf">YB beendet St. Gallens Serie im Wankdorf</a></h3>
+    <div class="meta">SRF Sport · Oct 24, 2026</div>
+    <div class="why">outside / sport — Super League, 11. Runde</div>
+    <p class="summary">YB gewinnt im Wankdorf 2:0 gegen St. Gallen und beendet damit die Erfolgsserie der Ostschweizer. Guirassy erzielt den zweiten Treffer.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/22/1147612/the-download-computing-next-leap-permafrost-climate-threat/">
+  <article class="card" data-link="https://martech.org/chatgpt-sends-less-than-1-of-googles-traffic/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/22/1147612/the-download-computing-next-leap-permafrost-climate-threat/">The Download: computing's next leap and permafrost's climate threat</a></h3>
-    <div class="meta">MIT Technology Review · Oct 22, 2026</div>
-    <div class="why">core / ai — Sicherheit</div>
-    <p class="summary">Der Newsletter meldet, dass Angreifer mit Claude und Grok Attacken auf über 400 Banken automatisiert haben sollen. Ausserdem hat KI eine jahrealte Schwachstelle in PHP aufgespürt, die einen grossen Teil des Webs betrifft und von Behörden zum Patchen angemahnt wird. Eine kompakte Übersicht, wie KI auf beiden Seiten der IT-Sicherheit ankommt.</p>
-  </article>
-  <article class="card" data-link="https://cmswire.com/customer-experience/90210-reboot-nah-cx-reboot-the-time-is-now-in-the-age-of-ai">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://cmswire.com/customer-experience/90210-reboot-nah-cx-reboot-the-time-is-now-in-the-age-of-ai">90210 Reboot? Nah. CX Reboot? The Time Is Now in the Age of AI</a></h3>
-    <div class="meta">CMSWire · Oct 22, 2026</div>
-    <div class="why">core / cx — Grundprinzipien</div>
-    <p class="summary">Der Beitrag plädiert dafür, die Grundregeln guter Customer Experience beim KI-Einsatz nicht über Bord zu werfen, auch wenn sich Tempo und Format des Service verändern. KI soll Kundenbeziehungen unterstützen statt ersetzen.</p>
+    <h3><a href="https://martech.org/chatgpt-sends-less-than-1-of-googles-traffic/">ChatGPT sends less than 1% of Google's traffic</a></h3>
+    <div class="meta">MarTech.org · ca. Oct 22, 2026 (Datum nicht exakt bestätigt)</div>
+    <div class="why">core / martech — AI-Suche</div>
+    <p class="summary">Eine Auswertung von rund 100 Websites zeigt, dass ChatGPT nur etwa 0.6 Prozent der Sessions von Google Organic liefert. ChatGPT-Besucher konvertieren zwar besser, doch Google bringt insgesamt rund 27-mal mehr Conversions als alle LLMs zusammen. Das Wachstum der ChatGPT-Referrals soll sich seit Sommer 2025 abgeflacht haben.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 4 articles, below the usual ~15: most sources had no fresh, confirmably dated items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 5 articles, below the usual ~15: most sources had no fresh, confirmably dated items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
