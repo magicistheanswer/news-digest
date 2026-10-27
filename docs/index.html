@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-26</title>
+<title>Morning News Digest — 2026-10-27</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,66 +95,55 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-26, Monday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates from URLs / search-result text.
-  - Used: SRF News (3), SRF Sport (1), MarTech.org (1; ~Oct 22, exact date not confirmed). Net 5 articles (1 core / 4 outside).
-  - Skipped, already shown: MIT TR Oct 19/20/22 pieces, martech.org Braze/Loops/HubSpot, CMSWire Databricks/Webflow/Zoom/CX reboot, SRF Bundesrat/SRG-Umfrage/Ebola.
-  - Skipped, too old: MIT TR Oct 2-13 pieces, CMSWire Oct 2-16 pieces, Adobe blog results (Apr-Jun 2026 at newest).
-  - Skipped, date unconfirmable / no article URL: CMSWire martech budget piece, martech.org state-of-AI Q4, Kicker Bundesliga (matchday pages only, no report URLs), SRF other Super League reports (one picked to keep sport slot unique).
-  - Skipped, nothing fresh: Adobe Experience Cloud Blog, MeasureCamp, BBC News/Sport (domain not searchable).
+  Run notes (2026-10-27, Tuesday):
+  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Exact dates are not shown in search results; ages were taken from relative-age metadata and are marked "ca." on the cards.
+  - Used: SRF News (2: Migros, USZ/Swissmedic), SRF Sport (1: Champions League round-up). Net 3 articles (0 core / 3 outside).
+  - Skipped, already shown: Adobe Journey Optimizer release notes (same URL shown Oct 19), MIT TR agents/open-web piece (Oct 19), MIT TR Claude island piece.
+  - Skipped, too old: MIT TR Oct 2-13 pieces, CMSWire CSAT guide (Oct 14), SRF Starlink piece (~8 days), Kicker Bundesliga reports (September).
+  - Skipped, date/URL unconfirmable: martech.org weekly roundup (Oct 22; evergreen URL), CMSWire Sprinklr press release (Oct 22, wire item), MIT TR "new economics of enterprise AI" (sponsored content, Oct 20), SRF Rhine body/Sunrise job cuts/Belarus verdict (no confirmed dates), Kicker matchday 7 (schedule pages only).
+  - Skipped, nothing fresh: Adobe Experience Cloud Blog, MeasureCamp, BBC News/Sport (domain not searchable), world category (no confirmed fresh unseen item).
   - Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Monday, October 26, 2026 · 5 articles</div>
+    <div class="date">Tuesday, October 27, 2026 · 3 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/cyber-schwachstelle-bei-php-erste-schadensbilanz-ueber-100-000-schweizer-webseiten-offline">
+  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/umbau-beim-detailhaendler-migros-fuehrung-will-konzern-komplett-umbauen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/cyber-schwachstelle-bei-php-erste-schadensbilanz-ueber-100-000-schweizer-webseiten-offline">Über 100'000 Schweizer Websites offline wegen PHP</a></h3>
-    <div class="meta">SRF News · Oct 22, 2026</div>
-    <div class="why">outside / schweiz — Cybersicherheit</div>
-    <p class="summary">Wegen kritischer PHP-Sicherheitslücken wurden in der Schweiz vorsorglich über 100'000 Websites vom Netz genommen, darunter Seiten der Uni Genf, der EPFL und des Kantons Basel-Stadt. Das Bundesamt für Cybersicherheit kennt bislang keine konkreten Angriffe, schliesst unentdeckte Vorfälle aber nicht aus. Betreiber sollen ihre Server rasch aktualisieren.</p>
+    <h3><a href="https://www.srf.ch/news/wirtschaft/umbau-beim-detailhaendler-migros-fuehrung-will-konzern-komplett-umbauen">Migros-Führung will den Konzern komplett umbauen</a></h3>
+    <div class="meta">SRF News · ca. Oct 27, 2026 (Datum nicht exakt bestätigt)</div>
+    <div class="why">outside / schweiz — Wirtschaft</div>
+    <p class="summary">Die Migros will ihre zehn Regionalgenossenschaften zu einer Gruppengenossenschaft zusammenlegen; die Mitglieder sollen Mitte 2027 per Urabstimmung entscheiden, wobei in jeder Region eine Zweidrittelmehrheit nötig ist. Konzernchef Irminger und Supermarkt-Chef Diethelm wollen bis zur Abstimmung abtreten. Die grösste Hürde dürfte der Verlust regionaler Eigenständigkeit sein, vor allem in der Westschweiz und im Tessin.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/anfuehrerin-der-opposition-ich-bin-hier-bei-euch-machado-kehrt-nach-venezuela-zurueck">
+
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/debakel-um-chirurg-maisano-usz-herzklinik-skandal-behoerde-wollte-nicht-zu-penetrant-sein">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/anfuehrerin-der-opposition-ich-bin-hier-bei-euch-machado-kehrt-nach-venezuela-zurueck">Machado kehrt nach Venezuela zurück</a></h3>
-    <div class="meta">SRF News · Oct 25, 2026</div>
-    <div class="why">outside / world — Venezuela</div>
-    <p class="summary">Die Oppositionsführerin und Friedensnobelpreisträgerin María Corina Machado ist rund zehn Monate nach ihrer heimlichen Ausreise wieder in Venezuela. Ihre Rückkehr dürfte die politische Lage im Land neu aufladen.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/debakel-um-chirurg-maisano-usz-herzklinik-skandal-behoerde-wollte-nicht-zu-penetrant-sein">USZ-Herzklinik-Skandal: Swissmedic wollte «nicht zu penetrant» sein</a></h3>
+    <div class="meta">SRF News · ca. Oct 20–27, 2026 (Datum nicht exakt bestätigt)</div>
+    <div class="why">outside / schweiz — Gesundheit, Aufsicht</div>
+    <p class="summary">Eine SRF-Recherche zeigt, dass Swissmedic dem Herzchirurgen Francesco Maisano für ein noch nicht zertifiziertes Implantat mehrere Ausnahmebewilligungen erteilte, ohne Sicherheitsfragen zu stellen. Laut einer internen Mail von 2016 wollte die Behörde nicht zu hartnäckig auftreten; Swissmedic verweist auf die damals geltenden Vorgaben und die Verantwortung der Anwender. Hintergrund sind über 70 unerwartete Todesfälle an der Klinik zwischen 2016 und 2020.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/erst-ruhig-dann-angespannt-das-war-der-2-akt-der-massenproteste-in-frankreich">
+
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-liverpool-mit-grosser-wende-dortmund-siegt-in-aserbaidschan">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/erst-ruhig-dann-angespannt-das-war-der-2-akt-der-massenproteste-in-frankreich">Frankreich: Der 2. Akt der Massenproteste</a></h3>
-    <div class="meta">SRF News · Oct 24, 2026</div>
-    <div class="why">outside / world — Frankreich</div>
-    <p class="summary">Am Samstag gingen in Frankreich erneut Hunderttausende gegen hohe Lebenshaltungskosten auf die Strasse; die Zahlen von Gewerkschaft und Innenministerium gehen weit auseinander. Der Tag verlief zunächst ruhig, am Abend kam es in mehreren Städten zu Ausschreitungen. Ein dritter Protesttag ist für den 31. Oktober angekündigt.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/11-runde-in-der-super-league-yb-beendet-st-gallens-serie-in-wankdorf">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/11-runde-in-der-super-league-yb-beendet-st-gallens-serie-in-wankdorf">YB beendet St. Gallens Serie im Wankdorf</a></h3>
-    <div class="meta">SRF Sport · Oct 24, 2026</div>
-    <div class="why">outside / sport — Super League, 11. Runde</div>
-    <p class="summary">YB gewinnt im Wankdorf 2:0 gegen St. Gallen und beendet damit die Erfolgsserie der Ostschweizer. Guirassy erzielt den zweiten Treffer.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-liverpool-mit-grosser-wende-dortmund-siegt-in-aserbaidschan">Champions League: Liverpool mit grosser Wende, Dortmund siegt in Aserbaidschan</a></h3>
+    <div class="meta">SRF Sport · ca. Oct 21, 2026 (Datum nicht exakt bestätigt)</div>
+    <div class="why">outside / sport — Champions League (Premier League, Bundesliga)</div>
+    <p class="summary">Liverpool dreht gegen Villarreal einen 0:2-Rückstand und gewinnt am Ende 4:3, wobei Mac Allister und Wirtz die Entscheidung bringen. Dortmund setzt sich bei Sabah FK in Aserbaidschan mit 2:1 durch.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://martech.org/chatgpt-sends-less-than-1-of-googles-traffic/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/chatgpt-sends-less-than-1-of-googles-traffic/">ChatGPT sends less than 1% of Google's traffic</a></h3>
-    <div class="meta">MarTech.org · ca. Oct 22, 2026 (Datum nicht exakt bestätigt)</div>
-    <div class="why">core / martech — AI-Suche</div>
-    <p class="summary">Eine Auswertung von rund 100 Websites zeigt, dass ChatGPT nur etwa 0.6 Prozent der Sessions von Google Organic liefert. ChatGPT-Besucher konvertieren zwar besser, doch Google bringt insgesamt rund 27-mal mehr Conversions als alle LLMs zusammen. Das Wachstum der ChatGPT-Referrals soll sich seit Sommer 2025 abgeflacht haben.</p>
-  </article>
+  <p class="summary">Heute keine Core-Artikel: keine Quelle lieferte einen bestätigt frischen, noch nicht gezeigten Beitrag (siehe Run-Notizen im Seitenquelltext).</p>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 5 articles, below the usual ~15: most sources had no fresh, confirmably dated items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 3 articles, below the usual ~15: most sources had no fresh, confirmably dated items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
