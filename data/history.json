@@ -1,51 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-10-21",
-      "link": "https://www.srf.ch/news/schweiz/protest-gegen-stellenabbau-angestellte-von-tamedia-fordern-journalismus-statt-ki",
-      "title": "Tamedia-Angestellte protestieren in Zürich gegen Entlassungen"
-    },
-    {
-      "date": "2026-10-21",
-      "link": "https://www.srf.ch/news/international/nach-protesten-in-frankreich-schwere-krawalle-in-mailand-meloni-reagiert-mit-militaereinsatz",
-      "title": "Schwere Krawalle in Mailand: Meloni schickt 500 Soldaten"
-    },
-    {
-      "date": "2026-10-21",
-      "link": "https://www.srf.ch/sport/fussball/schweizer-cup/schweizer-cup-2-runde-nach-viel-drama-thun-bodigt-schaffhausen-nach-penaltyschiessen",
-      "title": "Schweizer Cup: Thun bodigt Schaffhausen nach Penaltyschiessen"
-    },
-    {
-      "date": "2026-10-21",
-      "link": "https://martech.org/will-salesforces-braze-deal-bring-clarity-or-chaos/",
-      "title": "Will Salesforce’s Braze deal bring clarity or chaos?"
-    },
-    {
-      "date": "2026-10-21",
-      "link": "https://www.technologyreview.com/2026/10/20/1147355/the-download-claim-shaking-up-ai-internet-agent-problem/",
-      "title": "The Download: the claim shaking up AI and the internet’s agent problem"
-    },
-    {
-      "date": "2026-10-21",
-      "link": "https://www.technologyreview.com/2026/10/20/1147360/astrolab-upcoming-rover-llms-on-the-moon/",
-      "title": "Astrolab’s upcoming rover will run the first LLMs on the moon"
-    },
-    {
-      "date": "2026-10-21",
-      "link": "https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/release-notes",
-      "title": "Adobe Experience Platform Web SDK Release Notes"
-    },
-    {
-      "date": "2026-10-21",
-      "link": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/latest",
-      "title": "Current Customer Journey Analytics Release Notes"
-    },
-    {
-      "date": "2026-10-21",
-      "link": "https://www.cmswire.com/customer-experience/why-is-salesforce-buying-braze-and-what-happens-to-marketing-cloud/",
-      "title": "What Does Salesforce’s Braze Deal Mean for Marketing Cloud Customers?"
-    },
-    {
       "date": "2026-10-22",
       "link": "https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-remy-wyssmann-will-svp-bundesrat-werden",
       "title": "Nachfolge Parmelin: Rémy Wyssmann will SVP-Bundesrat werden"
@@ -229,6 +184,46 @@
       "date": "2026-10-28",
       "link": "https://www.technologyreview.com/2026/10/26/1147650/the-download-everyday-ai-harms-nuclear-spaceflight/",
       "title": "The Download: everyday AI harms and the race to nuclear spaceflight"
+    },
+    {
+      "date": "2026-10-29",
+      "link": "https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-israel-keine-klare-mehrheit-bei-parlamentswahl",
+      "title": "Israel: Keine klare Mehrheit bei der Parlamentswahl"
+    },
+    {
+      "date": "2026-10-29",
+      "link": "https://www.srf.ch/news/schweiz/luftverteidigung-bundesrat-beschraenkt-luftabwehr-auswahl-und-haelt-an-patriot-fest",
+      "title": "Bundesrat engt Rennen um Luftabwehr ein und hält an Patriot fest"
+    },
+    {
+      "date": "2026-10-29",
+      "link": "https://www.srf.ch/news/schweiz/hilfsorganisation-unter-druck-missbrauchsfaelle-bei-aerzte-ohne-grenzen-schaden-ist-angerichtet",
+      "title": "Missbrauchsfälle bei Ärzte ohne Grenzen: Der Bund kürzt Beitrag"
+    },
+    {
+      "date": "2026-10-29",
+      "link": "https://www.srf.ch/sport/fussball/super-league/3-2-sieg-in-der-11-sl-runde-sieg-auf-sparflamme-lugano-schlaegt-thun-auch-dank-joker-ajeti",
+      "title": "Sieg auf Sparflamme: Lugano schlägt Thun dank Joker Ajeti"
+    },
+    {
+      "date": "2026-10-29",
+      "link": "https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/",
+      "title": "The Download: dead startups fueling AI and interspecies communication"
+    },
+    {
+      "date": "2026-10-29",
+      "link": "https://www.cmswire.com/the-wire/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases/",
+      "title": "Invoca launches Messaging Agents for Google Ads"
+    },
+    {
+      "date": "2026-10-29",
+      "link": "https://www.cmswire.com/digital-experience/10-chatbot-providers-you-should-know-about/",
+      "title": "10 AI Chatbot Providers Compared on Answers, Actions and Human Handoff"
+    },
+    {
+      "date": "2026-10-29",
+      "link": "https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes",
+      "title": "Journey Optimizer release notes — October 2026"
     }
   ]
 }

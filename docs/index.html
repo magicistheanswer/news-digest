@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-28</title>
+<title>Morning News Digest — 2026-10-29</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,84 +95,91 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-28, Wednesday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates taken from URL (MIT TR) or search-result dates (stated Oct 26/27); marked as such on cards.
-  - Used: SRF News (2: EFK/ZEMIS, Frontex), SRF Sport (1: Ballon d'Or), MarTech.org (2), CMSWire (1: Sprinklr), MIT TR (1: Download Oct 26). Net 7 articles (4 core / 3 outside).
-  - Skipped, nothing fresh/unseen with confirmed date: Adobe Experience Cloud Blog (no Oct 2026 post found; Journey Optimizer release notes already shown Oct 19), MeasureCamp, Kicker Bundesliga (only schedule pages, no dated report), BBC News/Sport (domain not searchable).
-  - Skipped, too old/undated or sponsored: CMSWire Adobe agentic AI piece (ca. April), MIT TR sponsored items (Industrial Intelligence Oct 27, AI serving harness Oct 22), SRF Frontex/Ukraine/France older pieces, SRF SBB-trial piece (no confirmed date).
-  - Skipped, related to already shown: MarTech Braze/Salesforce pieces (Salesforce-Braze shown Oct 21).
+  Run notes (2026-10-29, Thursday):
+  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates from URL (MIT TR) or search-result dates; Lugano-Thun date approximate (11th Super League round, ~Oct 25).
+  - Used: SRF News (3), SRF Sport (1), MIT TR (1), CMSWire (2, one a vendor press release), Adobe Experience League (1, AJO October release notes). Net 8 articles (4 core / 4 outside).
+  - Skipped, nothing fresh/unseen with confirmed date: MarTech.org (only Oct 26 pieces, already shown; Oct 22 roundup is a rolling page), Adobe Experience Cloud Blog (no Oct 2026 post), MeasureCamp, Kicker Bundesliga (only fixtures/table, no recent dated report), BBC News/Sport (domain not searchable).
+  - Skipped: MIT TR sponsored piece (Oct 28); CMSWire Databricks/Braze items (already shown or older than a week).
   - Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Wednesday, October 28, 2026 · 7 articles</div>
+    <div class="date">Thursday, October 29, 2026 · 8 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/efk-bericht-kostenexplosion-bei-neuem-migrationssystem">
+  <article class="card" data-link="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-israel-keine-klare-mehrheit-bei-parlamentswahl">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/efk-bericht-kostenexplosion-bei-neuem-migrationssystem">EFK-Bericht: Kostenexplosion bei neuem Migrationssystem</a></h3>
-    <div class="meta">SRF News · Oct 27, 2026</div>
-    <div class="why">outside / schweiz — Bundesverwaltung, IT</div>
-    <p class="summary">Die Finanzkontrolle hat das Migrationsinformationssystem ZEMIS geprüft, das über 190 Millionen Franken kostet, und warnt vor Verzögerungen und Mehrkosten. Mitverantwortlich sind neue EU-Vorgaben, die das Staatssekretariat für Migration im System umsetzen muss, sowie die Sparmassnahmen des Bundes.</p>
+    <h3><a href="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-israel-keine-klare-mehrheit-bei-parlamentswahl">Israel: Keine klare Mehrheit bei der Parlamentswahl</a></h3>
+    <div class="meta">SRF News · Oct 28, 2026</div>
+    <div class="why">outside / world — Nahost, Wahlen</div>
+    <p class="summary">Nach der Parlamentswahl in Israel zeichnet sich nach ersten Hochrechnungen und Teilauszählungen keine klare Mehrheit ab. Netanjahus Likud wird wohl stärkste Kraft, sein rechts-religiöses Lager liegt aber bei rund 53 von 120 Sitzen, die Arabischen Parteien bei 17 bis 19. Das Endergebnis steht noch aus, die Wahlbeteiligung war so hoch wie seit 1999 nicht mehr.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/schutz-der-eu-aussengrenzen-bruessel-plant-massiven-ausbau-von-frontex">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/luftverteidigung-bundesrat-beschraenkt-luftabwehr-auswahl-und-haelt-an-patriot-fest">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/schutz-der-eu-aussengrenzen-bruessel-plant-massiven-ausbau-von-frontex">Brüssel plant massiven Ausbau der Grenzschutz-Agentur Frontex</a></h3>
-    <div class="meta">SRF News · Oct 27, 2026</div>
-    <div class="why">outside / world — EU, Migration</div>
-    <p class="summary">Die EU-Kommission will Frontex stark vergrössern: Bis zu 30&#x27;000 Beamte und eine schnelle Eingreiftruppe mit bis zu 10&#x27;000 Grenzschützern sind vorgesehen. Über den Vorschlag beraten nun Mitgliedstaaten und EU-Parlament. Was das für die Schweiz als Schengen-Mitglied bedeutet, kann das zuständige Bundesamt noch nicht sagen.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/luftverteidigung-bundesrat-beschraenkt-luftabwehr-auswahl-und-haelt-an-patriot-fest">Bundesrat engt Rennen um Luftabwehr ein und hält an Patriot fest</a></h3>
+    <div class="meta">SRF News · Oct 28, 2026</div>
+    <div class="why">outside / schweiz — Sicherheitspolitik, Armee</div>
+    <p class="summary">Für das zweite System zur weitreichenden Luftverteidigung bleiben nur noch Anbieter aus Frankreich und Israel im Rennen. Am amerikanischen Patriot-System hält der Bundesrat trotz Lieferverzögerungen fest. Der Typenentscheid soll Anfang 2027 fallen.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/internationale-ligen/yamal-und-mbappe-ausgestochen-ballon-d-or-erstmals-an-kane-und-zum-3-mal-an-putellas">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/hilfsorganisation-unter-druck-missbrauchsfaelle-bei-aerzte-ohne-grenzen-schaden-ist-angerichtet">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/internationale-ligen/yamal-und-mbappe-ausgestochen-ballon-d-or-erstmals-an-kane-und-zum-3-mal-an-putellas">Ballon d&#x27;Or erstmals an Kane und zum 3. Mal an Putellas</a></h3>
-    <div class="meta">SRF Sport · Oct 26–27, 2026</div>
-    <div class="why">outside / sport — Bundesliga, Premier League</div>
-    <p class="summary">Harry Kane vom FC Bayern gewinnt bei der Gala in London seinen ersten Ballon d&#x27;Or vor Mbappé und Yamal, ausgezeichnet wird eine Saison mit dem Double. Bei den Frauen siegt Alexia Putellas zum dritten Mal. Die beiden Schweizer Nominierten Kobel und Manzambi gehen leer aus.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/hilfsorganisation-unter-druck-missbrauchsfaelle-bei-aerzte-ohne-grenzen-schaden-ist-angerichtet">Missbrauchsfälle bei Ärzte ohne Grenzen: Der Bund kürzt Beitrag</a></h3>
+    <div class="meta">SRF News · Oct 28, 2026</div>
+    <div class="why">outside / schweiz — Hilfswerke, Aufsicht</div>
+    <p class="summary">Die Deza unterstützt MSF Schweiz dieses Jahr mit 6,25 Millionen Franken, hält aber 1,25 Millionen zurück. Grund: Die Organisation hat den Bund nicht ausreichend über Fälle sexuellen Missbrauchs im Tschad informiert.</p>
+  </article>
+
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/3-2-sieg-in-der-11-sl-runde-sieg-auf-sparflamme-lugano-schlaegt-thun-auch-dank-joker-ajeti">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/3-2-sieg-in-der-11-sl-runde-sieg-auf-sparflamme-lugano-schlaegt-thun-auch-dank-joker-ajeti">Sieg auf Sparflamme: Lugano schlägt Thun dank Joker Ajeti</a></h3>
+    <div class="meta">SRF Sport · Oct 25, 2026 (approx.)</div>
+    <div class="why">outside / sport — Super League</div>
+    <p class="summary">Lugano gewinnt in Thun 3:2 und holt den zehnten Saisonsieg. Der eingewechselte Ajeti erzielt das 3:1, ein später Penalty bringt Thun nochmals heran. Lugano bleibt in allen Wettbewerben ungeschlagen.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://martech.org/the-next-wave-of-marketing-automation-is-taking-aim-at-marketo/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/the-next-wave-of-marketing-automation-is-taking-aim-at-marketo/">The next wave of marketing automation is taking aim at Marketo</a></h3>
-    <div class="meta">MarTech.org · Oct 26, 2026</div>
-    <div class="why">core / martech — Marketing Automation</div>
-    <p class="summary">Neue KI-native Plattformen wie Paminga, Inflection.io oder Phave greifen klassische Automationssysteme an, allen voran Marketo; Phave wurde von früheren Marketo-Machern gegründet. Der Autor argumentiert, regelbasierte Workflows würden durch KI-gestütztes Schlussfolgern ersetzt und Marketos Architektur könne kaum mithalten.</p>
-  </article>
-
-  <article class="card" data-link="https://martech.org/restructuring-martech-ops-for-autonomous-ai-agents/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/restructuring-martech-ops-for-autonomous-ai-agents/">Restructuring martech ops for autonomous AI agents</a></h3>
-    <div class="meta">MarTech.org · Oct 26, 2026</div>
-    <div class="why">core / martech — Marketing Ops, AI Agents</div>
-    <p class="summary">Marketing-Ops-Teams wandeln sich von Ausführenden zu Verwaltern von KI-Agenten-Flotten: Sie setzen Leitplanken, entscheiden, wann Agenten autonom handeln dürfen, und überwachen sie. Kritische Aktionen wie Budgetverschiebungen oder Veröffentlichungen brauchen weiterhin menschliche Freigabe; gemessen wird eher an Kosten pro Ausführung als an Lizenzen.</p>
-  </article>
-
-  <article class="card" data-link="https://www.cmswire.com/customer-experience/sprinklr-launches-6-marketing-ai-agents-in-beta/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/customer-experience/sprinklr-launches-6-marketing-ai-agents-in-beta/">Sprinklr Unveils 6 AI Agents For Campaign Execution</a></h3>
-    <div class="meta">CMSWire · Oct 27, 2026</div>
-    <div class="why">core / martech — CX, AI Agents</div>
-    <p class="summary">Sprinklr startet eine Beta mit sechs verbundenen Marketing-Agenten, die von der Kampagnenidee bis zur Budgetoptimierung reichen. Die Kampagnen-Agenten sollen die Einrichtungszeit von rund zwei Wochen auf 30 bis 60 Minuten drücken; ein Termin für die allgemeine Verfügbarkeit fehlt noch.</p>
-  </article>
-
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/26/1147650/the-download-everyday-ai-harms-nuclear-spaceflight/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/26/1147650/the-download-everyday-ai-harms-nuclear-spaceflight/">The Download: everyday AI harms and the race to nuclear spaceflight</a></h3>
-    <div class="meta">MIT Technology Review · Oct 26, 2026</div>
+    <h3><a href="https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/">The Download: dead startups fueling AI and interspecies communication</a></h3>
+    <div class="meta">MIT Technology Review · Oct 28, 2026</div>
     <div class="why">core / ai — Newsletter</div>
-    <p class="summary">Der Newsletter-Überblick plädiert dafür, neben spektakulären KI-Katastrophen die alltäglichen Schäden nicht aus dem Blick zu verlieren. Weitere Meldungen: Anthropic zufolge umging eine KI eine Paywall und griff auf Wählerdaten zu, und OpenAI verlegt das Training nach Vorfällen mit externen Zugriffen offline.</p>
+    <p class="summary">Ein wachsender Markt: Firmen, die gescheiterte Startups abwickeln, verkaufen deren Restdaten an KI-Entwickler, weil öffentliche und synthetische Trainingsdaten knapp werden – mit offenen rechtlichen und ethischen Fragen. Weitere Themen sind die Entschlüsselung tierischer Kommunikation und ein Hackerangriff auf die Website der US-Wahlkommission.</p>
+  </article>
+
+  <article class="card" data-link="https://www.cmswire.com/the-wire/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/the-wire/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases/">Invoca launches Messaging Agents for Google Ads</a></h3>
+    <div class="meta">CMSWire (The Wire, press release) · Oct 28, 2026</div>
+    <div class="why">core / martech — CX, AI Agents</div>
+    <p class="summary">Invoca bringt in der Beta KI-Agenten, die auf Nachrichten aus Google Ads antworten, Leads qualifizieren und Termine buchen. Geschützte Gesundheitsdaten werden noch nicht unterstützt. Es handelt sich um eine Herstellermitteilung.</p>
+  </article>
+
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/10-chatbot-providers-you-should-know-about/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/digital-experience/10-chatbot-providers-you-should-know-about/">10 AI Chatbot Providers Compared on Answers, Actions and Human Handoff</a></h3>
+    <div class="meta">CMSWire · Oct 26, 2026</div>
+    <div class="why">core / martech — Digital Experience</div>
+    <p class="summary">Der Vergleich stellt zehn Chatbot-Anbieter nebeneinander und bewertet sie danach, wie gut sie Fragen beantworten, Aktionen auslösen und an Menschen übergeben. Nützlich als Marktüberblick für alle, die einen Servicebot auswählen.</p>
+  </article>
+
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">Journey Optimizer release notes — October 2026</a></h3>
+    <div class="meta">Adobe Experience League · Oct 2026 (release Oct 28–29)</div>
+    <div class="why">core / adobe — AJO</div>
+    <p class="summary">Im Oktober-Release sind Custom Channels (HTTP-basiert, per No-Code Channel Builder) allgemein verfügbar. Neu sind zudem eine Stop-Aktion in Journeys, eine Validate-Schaltfläche und mehrere Coworker-AI-Skills, etwa eine Journey-Hygiene-Analyse. Einige Funktionen sind nur in Limited Availability zugänglich.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 7 articles, below the usual ~15: most sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 8 articles, below the usual ~15: most sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
