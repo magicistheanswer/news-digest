@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-29</title>
+<title>Morning News Digest — 2026-10-30</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,87 +95,88 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-29, Thursday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates from URL (MIT TR) or search-result dates; Lugano-Thun date approximate (11th Super League round, ~Oct 25).
-  - Used: SRF News (3), SRF Sport (1), MIT TR (1), CMSWire (2, one a vendor press release), Adobe Experience League (1, AJO October release notes). Net 8 articles (4 core / 4 outside).
-  - Skipped, nothing fresh/unseen with confirmed date: MarTech.org (only Oct 26 pieces, already shown; Oct 22 roundup is a rolling page), Adobe Experience Cloud Blog (no Oct 2026 post), MeasureCamp, Kicker Bundesliga (only fixtures/table, no recent dated report), BBC News/Sport (domain not searchable).
-  - Skipped: MIT TR sponsored piece (Oct 28); CMSWire Databricks/Braze items (already shown or older than a week).
+  Run notes (2026-10-30, Friday):
+  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates from URL (MIT TR) or search-result dates.
+  - Used: SRF News (3), MIT TR (1), MarTech.org (2), CMSWire (2, one a vendor press release). Net 8 articles (5 core / 3 outside).
+  - Skipped, nothing fresh/unseen with confirmed date: Adobe Experience Cloud Blog (latest Oct 14, non-product), MeasureCamp (nothing found), SRF Sport Fussball (only already-shown Ballon d'Or and undated/older rounds; a fresh Swiss Indoors tennis item exists but is not football), Kicker Bundesliga (only fixture/table pages, no dated report), BBC News/Sport (domain not searchable).
+  - Skipped as too old: CMSWire Canva Craft (Oct 22), CMSWire Phave (Sep 24).
+  - Spanish train crash item: date inferred from SRF Oct 29 coverage, not from the URL.
   - Freshness beats quota per CLAUDE.md.
   - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Thursday, October 29, 2026 · 8 articles</div>
+    <div class="date">Friday, October 30, 2026 · 8 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-israel-keine-klare-mehrheit-bei-parlamentswahl">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/cassis-besucht-nordkorea-was-bringt-der-schweiz-ein-buero-in-nordkorea">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-israel-keine-klare-mehrheit-bei-parlamentswahl">Israel: Keine klare Mehrheit bei der Parlamentswahl</a></h3>
-    <div class="meta">SRF News · Oct 28, 2026</div>
-    <div class="why">outside / world — Nahost, Wahlen</div>
-    <p class="summary">Nach der Parlamentswahl in Israel zeichnet sich nach ersten Hochrechnungen und Teilauszählungen keine klare Mehrheit ab. Netanjahus Likud wird wohl stärkste Kraft, sein rechts-religiöses Lager liegt aber bei rund 53 von 120 Sitzen, die Arabischen Parteien bei 17 bis 19. Das Endergebnis steht noch aus, die Wahlbeteiligung war so hoch wie seit 1999 nicht mehr.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/cassis-besucht-nordkorea-was-bringt-der-schweiz-ein-buero-in-nordkorea">Cassis in Nordkorea: Was bringt ein Schweizer Büro in Pjöngjang?</a></h3>
+    <div class="meta">SRF News · Oct 29, 2026</div>
+    <div class="why">outside / schweiz — Aussenpolitik</div>
+    <p class="summary">Aussenminister Cassis reist nach Nordkorea, um den politischen Dialog wieder zu beleben und die Wiedereröffnung des Schweizer Büros in Pjöngjang zu begleiten. Das Büro war bis 2020 eine Deza-Stelle und wird nun als diplomatische Vertretung unter der Botschaft in Peking reaktiviert. Ein Treffen mit Kim Jong-un ist nicht geplant; vorgesehen ist ein Arbeitsgespräch mit der Aussenministerin.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/luftverteidigung-bundesrat-beschraenkt-luftabwehr-auswahl-und-haelt-an-patriot-fest">
+  <article class="card" data-link="https://srf.ch/news/wirtschaft/europaeischen-zentralbank-ezb-praesidentin-christine-lagarde-tritt-vorzeitig-ab">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/luftverteidigung-bundesrat-beschraenkt-luftabwehr-auswahl-und-haelt-an-patriot-fest">Bundesrat engt Rennen um Luftabwehr ein und hält an Patriot fest</a></h3>
-    <div class="meta">SRF News · Oct 28, 2026</div>
-    <div class="why">outside / schweiz — Sicherheitspolitik, Armee</div>
-    <p class="summary">Für das zweite System zur weitreichenden Luftverteidigung bleiben nur noch Anbieter aus Frankreich und Israel im Rennen. Am amerikanischen Patriot-System hält der Bundesrat trotz Lieferverzögerungen fest. Der Typenentscheid soll Anfang 2027 fallen.</p>
+    <h3><a href="https://srf.ch/news/wirtschaft/europaeischen-zentralbank-ezb-praesidentin-christine-lagarde-tritt-vorzeitig-ab">Nach Rücktrittsankündigung: Lagarde belässt Leitzins</a></h3>
+    <div class="meta">SRF News · Oct 29, 2026</div>
+    <div class="why">outside / world — Wirtschaft, EZB</div>
+    <p class="summary">EZB-Präsidentin Lagarde gibt ihr Amt am 7. Februar 2027 ab, rund neun Monate vor Ablauf ihrer Amtszeit. Als mögliche Nachfolger gelten laut SRF Klaas Knot und Pablo Hernández de Cos. Den Einlagenzins lässt die EZB unverändert bei 2,5 Prozent.</p>
   </article>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/hilfsorganisation-unter-druck-missbrauchsfaelle-bei-aerzte-ohne-grenzen-schaden-ist-angerichtet">
+  <article class="card" data-link="https://www.srf.ch/news/international/zugunglueck-suedlich-von-madrid-rettungskraefte-im-dauereinsatz-suche-nach-opfern-dauert-an">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/hilfsorganisation-unter-druck-missbrauchsfaelle-bei-aerzte-ohne-grenzen-schaden-ist-angerichtet">Missbrauchsfälle bei Ärzte ohne Grenzen: Der Bund kürzt Beitrag</a></h3>
-    <div class="meta">SRF News · Oct 28, 2026</div>
-    <div class="why">outside / schweiz — Hilfswerke, Aufsicht</div>
-    <p class="summary">Die Deza unterstützt MSF Schweiz dieses Jahr mit 6,25 Millionen Franken, hält aber 1,25 Millionen zurück. Grund: Die Organisation hat den Bund nicht ausreichend über Fälle sexuellen Missbrauchs im Tschad informiert.</p>
-  </article>
-
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/3-2-sieg-in-der-11-sl-runde-sieg-auf-sparflamme-lugano-schlaegt-thun-auch-dank-joker-ajeti">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/3-2-sieg-in-der-11-sl-runde-sieg-auf-sparflamme-lugano-schlaegt-thun-auch-dank-joker-ajeti">Sieg auf Sparflamme: Lugano schlägt Thun dank Joker Ajeti</a></h3>
-    <div class="meta">SRF Sport · Oct 25, 2026 (approx.)</div>
-    <div class="why">outside / sport — Super League</div>
-    <p class="summary">Lugano gewinnt in Thun 3:2 und holt den zehnten Saisonsieg. Der eingewechselte Ajeti erzielt das 3:1, ein später Penalty bringt Thun nochmals heran. Lugano bleibt in allen Wettbewerben ungeschlagen.</p>
+    <h3><a href="https://www.srf.ch/news/international/zugunglueck-suedlich-von-madrid-rettungskraefte-im-dauereinsatz-suche-nach-opfern-dauert-an">Zugunglück südlich von Madrid: Rettungskräfte im Dauereinsatz</a></h3>
+    <div class="meta">SRF News · Oct 29, 2026 (date from SRF daily coverage)</div>
+    <div class="why">outside / world — Spanien, Unglück</div>
+    <p class="summary">Nach der Kollision zweier Hochgeschwindigkeitszüge südlich von Madrid suchen Rettungskräfte weiter nach Opfern; die Zahl der Toten lag zuletzt bei mindestens 69, über 100 Menschen wurden verletzt. Die Ermittlungen konzentrieren sich auf die Bahnleitstelle, deren Entscheid der Verkehrsminister als unerklärlich bezeichnete.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/">The Download: dead startups fueling AI and interspecies communication</a></h3>
-    <div class="meta">MIT Technology Review · Oct 28, 2026</div>
-    <div class="why">core / ai — Newsletter</div>
-    <p class="summary">Ein wachsender Markt: Firmen, die gescheiterte Startups abwickeln, verkaufen deren Restdaten an KI-Entwickler, weil öffentliche und synthetische Trainingsdaten knapp werden – mit offenen rechtlichen und ethischen Fragen. Weitere Themen sind die Entschlüsselung tierischer Kommunikation und ein Hackerangriff auf die Website der US-Wahlkommission.</p>
+    <h3><a href="https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time">We urgently need to monitor AI agents’ actions in real time</a></h3>
+    <div class="meta">MIT Technology Review · Oct 29, 2026</div>
+    <div class="why">core / ai — Agents, Governance</div>
+    <p class="summary">In diesem Gastbeitrag fordern Autorinnen der Partnership on AI, KI-Agenten in Echtzeit zu überwachen – Regulierer in EU und USA verlangen das bereits, doch Firmen fehlt oft die Sicht darauf. Vorgeschlagen werden dauerhafte Agenten-Identitäten, Protokolle menschlicher Freigaben und offene Standards wie OpenTelemetry.</p>
   </article>
 
-  <article class="card" data-link="https://www.cmswire.com/the-wire/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases/">
+  <article class="card" data-link="https://martech.org/6-mistakes-to-avoid-with-ai-powered-performance-marketing/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/the-wire/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases/">Invoca launches Messaging Agents for Google Ads</a></h3>
-    <div class="meta">CMSWire (The Wire, press release) · Oct 28, 2026</div>
-    <div class="why">core / martech — CX, AI Agents</div>
-    <p class="summary">Invoca bringt in der Beta KI-Agenten, die auf Nachrichten aus Google Ads antworten, Leads qualifizieren und Termine buchen. Geschützte Gesundheitsdaten werden noch nicht unterstützt. Es handelt sich um eine Herstellermitteilung.</p>
+    <h3><a href="https://martech.org/6-mistakes-to-avoid-with-ai-powered-performance-marketing/">6 mistakes to avoid with AI-powered performance marketing</a></h3>
+    <div class="meta">MarTech.org · Oct 29, 2026</div>
+    <div class="why">core / martech — Performance Marketing, AI</div>
+    <p class="summary">Der Beitrag warnt, dass KI Kampagnenkennzahlen verbessern kann, ohne echten Geschäftswert zu schaffen. Besonders kritisch sieht er Plattform-Dashboards, die starke Ergebnisse zeigen, während das Gesamtunternehmen etwas anderes sieht.</p>
   </article>
 
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/10-chatbot-providers-you-should-know-about/">
+  <article class="card" data-link="https://martech.org/the-risks-of-optimizing-seo-for-ai-over-users/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/10-chatbot-providers-you-should-know-about/">10 AI Chatbot Providers Compared on Answers, Actions and Human Handoff</a></h3>
-    <div class="meta">CMSWire · Oct 26, 2026</div>
-    <div class="why">core / martech — Digital Experience</div>
-    <p class="summary">Der Vergleich stellt zehn Chatbot-Anbieter nebeneinander und bewertet sie danach, wie gut sie Fragen beantworten, Aktionen auslösen und an Menschen übergeben. Nützlich als Marktüberblick für alle, die einen Servicebot auswählen.</p>
+    <h3><a href="https://martech.org/the-risks-of-optimizing-seo-for-ai-over-users/">The risks of optimizing SEO for AI over users</a></h3>
+    <div class="meta">MarTech.org · Oct 29, 2026</div>
+    <div class="why">core / martech — SEO, AI Search</div>
+    <p class="summary">Wer Inhalte vor allem für KI-Suche optimiert, riskiert generische Texte und weniger Vertrauen. Die Autorin verweist auf Googles Wunsch nach originellen Inhalten aus erster Hand.</p>
   </article>
 
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">
+  <article class="card" data-link="https://www.cmswire.com/contact-center/what-are-contact-centers-actually-doing-with-ai/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">Journey Optimizer release notes — October 2026</a></h3>
-    <div class="meta">Adobe Experience League · Oct 2026 (release Oct 28–29)</div>
-    <div class="why">core / adobe — AJO</div>
-    <p class="summary">Im Oktober-Release sind Custom Channels (HTTP-basiert, per No-Code Channel Builder) allgemein verfügbar. Neu sind zudem eine Stop-Aktion in Journeys, eine Validate-Schaltfläche und mehrere Coworker-AI-Skills, etwa eine Journey-Hygiene-Analyse. Einige Funktionen sind nur in Limited Availability zugänglich.</p>
+    <h3><a href="https://www.cmswire.com/contact-center/what-are-contact-centers-actually-doing-with-ai/">What Are Contact Centers Actually Doing With AI?</a></h3>
+    <div class="meta">CMSWire · Oct 29, 2026</div>
+    <div class="why">core / martech — CX, Contact Center</div>
+    <p class="summary">Die Quartalszahlen von CX-Anbietern zeigen, dass Kunden KI vorerst für eng umrissene Aufgaben nutzen, etwa Voice-Self-Service und Gesprächsanalyse. NiCEs KI-Umsatzwachstum verlangsamte sich auf 52 Prozent nach 66 Prozent im Vorquartal.</p>
+  </article>
+
+  <article class="card" data-link="https://www.cmswire.com/the-wire/cordial-launches-headless-cdp-bringing-real-time-customer-data-to-where-marketers-work/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/the-wire/cordial-launches-headless-cdp-bringing-real-time-customer-data-to-where-marketers-work/">Cordial Launches Headless CDP, Bringing Real-Time Customer Data to Where Marketers Work</a></h3>
+    <div class="meta">CMSWire (The Wire, press release) · Oct 29, 2026</div>
+    <div class="why">core / martech — CDP</div>
+    <p class="summary">Cordial macht seine eingebettete Customer Data Platform headless, sodass Marketer Echtzeit-Kundendaten direkt aus KI-Assistenten wie Claude oder ChatGPT abrufen können. Es handelt sich um eine Herstellermitteilung.</p>
   </article>
 
   <footer>
