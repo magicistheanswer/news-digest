@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-10-30</title>
+<title>Morning News Digest — 2026-10-31</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,92 +95,59 @@
 </head>
 <body>
 <!--
-  Run notes (2026-10-30, Friday):
-  - Direct RSS/Atom fetching blocked (egress proxy); fallback: WebSearch scoped per source domain. Dates from URL (MIT TR) or search-result dates.
-  - Used: SRF News (3), MIT TR (1), MarTech.org (2), CMSWire (2, one a vendor press release). Net 8 articles (5 core / 3 outside).
-  - Skipped, nothing fresh/unseen with confirmed date: Adobe Experience Cloud Blog (latest Oct 14, non-product), MeasureCamp (nothing found), SRF Sport Fussball (only already-shown Ballon d'Or and undated/older rounds; a fresh Swiss Indoors tennis item exists but is not football), Kicker Bundesliga (only fixture/table pages, no dated report), BBC News/Sport (domain not searchable).
-  - Skipped as too old: CMSWire Canva Craft (Oct 22), CMSWire Phave (Sep 24).
-  - Spanish train crash item: date inferred from SRF Oct 29 coverage, not from the URL.
-  - Freshness beats quota per CLAUDE.md.
-  - Layout: Outside section above Core; Mark-read via localStorage (see CLAUDE.md).
+  Run notes (2026-10-31, Saturday):
+  - Direct RSS/Atom fetching blocked (egress proxy); WebFetch also cannot resolve srf.ch / martech.org / cmswire.com. Fallback: WebSearch scoped per source domain. Dates from URL (MIT TR) or search-result text.
+  - Used: SRF News (1), MIT TR (1, newsletter digest), MarTech.org (1 roundup), Adobe Experience League AEP release notes (1). Net 4 articles (3 core / 1 outside).
+  - Skipped, nothing fresh/unseen with confirmed date: Adobe Experience Cloud Blog, MeasureCamp, Kicker Bundesliga (only fixture pages, no dated report), BBC News/Sport (domain not searchable), SRF Sport (Super League round-11 reports have inconsistent dates; Oct 24 match too old/unclear), SRF International (no dated unseen item found).
+  - Skipped as too old: CMSWire/MarTech Salesforce-Braze (Oct 20), CMSWire Databricks CustomerLake (Oct 19), MIT TR pieces from Oct 19, G2/Capterra (January).
+  - Not used, date unconfirmed: SRF "Schweizer Komponenten in russischen Waffen" (only a relative '0 days' label).
+  - Freshness beats quota per CLAUDE.md. Layout: Outside section above Core; Mark-read via localStorage.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Friday, October 30, 2026 · 8 articles</div>
+    <div class="date">Saturday, October 31, 2026 · 4 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/cassis-besucht-nordkorea-was-bringt-der-schweiz-ein-buero-in-nordkorea">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/millionenbetrug-bei-ruag-pfister-spricht-von-schwerwiegenden-verfehlungen-bei-der-ruag">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/cassis-besucht-nordkorea-was-bringt-der-schweiz-ein-buero-in-nordkorea">Cassis in Nordkorea: Was bringt ein Schweizer Büro in Pjöngjang?</a></h3>
-    <div class="meta">SRF News · Oct 29, 2026</div>
-    <div class="why">outside / schweiz — Aussenpolitik</div>
-    <p class="summary">Aussenminister Cassis reist nach Nordkorea, um den politischen Dialog wieder zu beleben und die Wiedereröffnung des Schweizer Büros in Pjöngjang zu begleiten. Das Büro war bis 2020 eine Deza-Stelle und wird nun als diplomatische Vertretung unter der Botschaft in Peking reaktiviert. Ein Treffen mit Kim Jong-un ist nicht geplant; vorgesehen ist ein Arbeitsgespräch mit der Aussenministerin.</p>
-  </article>
-
-  <article class="card" data-link="https://srf.ch/news/wirtschaft/europaeischen-zentralbank-ezb-praesidentin-christine-lagarde-tritt-vorzeitig-ab">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://srf.ch/news/wirtschaft/europaeischen-zentralbank-ezb-praesidentin-christine-lagarde-tritt-vorzeitig-ab">Nach Rücktrittsankündigung: Lagarde belässt Leitzins</a></h3>
-    <div class="meta">SRF News · Oct 29, 2026</div>
-    <div class="why">outside / world — Wirtschaft, EZB</div>
-    <p class="summary">EZB-Präsidentin Lagarde gibt ihr Amt am 7. Februar 2027 ab, rund neun Monate vor Ablauf ihrer Amtszeit. Als mögliche Nachfolger gelten laut SRF Klaas Knot und Pablo Hernández de Cos. Den Einlagenzins lässt die EZB unverändert bei 2,5 Prozent.</p>
-  </article>
-
-  <article class="card" data-link="https://www.srf.ch/news/international/zugunglueck-suedlich-von-madrid-rettungskraefte-im-dauereinsatz-suche-nach-opfern-dauert-an">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/zugunglueck-suedlich-von-madrid-rettungskraefte-im-dauereinsatz-suche-nach-opfern-dauert-an">Zugunglück südlich von Madrid: Rettungskräfte im Dauereinsatz</a></h3>
-    <div class="meta">SRF News · Oct 29, 2026 (date from SRF daily coverage)</div>
-    <div class="why">outside / world — Spanien, Unglück</div>
-    <p class="summary">Nach der Kollision zweier Hochgeschwindigkeitszüge südlich von Madrid suchen Rettungskräfte weiter nach Opfern; die Zahl der Toten lag zuletzt bei mindestens 69, über 100 Menschen wurden verletzt. Die Ermittlungen konzentrieren sich auf die Bahnleitstelle, deren Entscheid der Verkehrsminister als unerklärlich bezeichnete.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/millionenbetrug-bei-ruag-pfister-spricht-von-schwerwiegenden-verfehlungen-bei-der-ruag">Millionenbetrug bei Ruag: Laut Pfister «schwere Verfehlungen»</a></h3>
+    <div class="meta">SRF News · Oct 30, 2026</div>
+    <div class="why">outside / schweiz — Verteidigung, Bundesbetriebe</div>
+    <p class="summary">Ein externer Untersuchungsbericht zum bundeseigenen Rüstungsbetrieb Ruag MRO zeigt gravierende Compliance-Verstösse und strukturelle Kontrollschwächen. Verteidigungsminister Pfister spricht von schwerwiegenden Verfehlungen und kündigt eine Arbeitsgruppe an, die Verantwortlichkeiten und die Rolle des Bundes als Eigentümer klären soll.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time">
+  <article class="card" data-link="https://www.technologyreview.com/2026/10/30/1147843/the-download-glp-1s-eating-disorders-forever-chemicals">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time">We urgently need to monitor AI agents’ actions in real time</a></h3>
-    <div class="meta">MIT Technology Review · Oct 29, 2026</div>
-    <div class="why">core / ai — Agents, Governance</div>
-    <p class="summary">In diesem Gastbeitrag fordern Autorinnen der Partnership on AI, KI-Agenten in Echtzeit zu überwachen – Regulierer in EU und USA verlangen das bereits, doch Firmen fehlt oft die Sicht darauf. Vorgeschlagen werden dauerhafte Agenten-Identitäten, Protokolle menschlicher Freigaben und offene Standards wie OpenTelemetry.</p>
+    <h3><a href="https://www.technologyreview.com/2026/10/30/1147843/the-download-glp-1s-eating-disorders-forever-chemicals">The Download: GLP-1s and eating disorders, self-aware cities, and forever chemicals</a></h3>
+    <div class="meta">MIT Technology Review · Oct 30, 2026</div>
+    <div class="why">core / ai — Tech-Überblick</div>
+    <p class="summary">Der tägliche Newsletter bündelt die Themen des Tages, darunter Abnehmmedikamente im Zusammenhang mit Essstörungen, vernetzte «selbstbewusste» Städte und Ewigkeitschemikalien. Nur eine Kurzübersicht – die verlinkten Geschichten liefern die Details.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/6-mistakes-to-avoid-with-ai-powered-performance-marketing/">
+  <article class="card" data-link="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/6-mistakes-to-avoid-with-ai-powered-performance-marketing/">6 mistakes to avoid with AI-powered performance marketing</a></h3>
+    <h3><a href="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">The latest AI-powered martech news and releases</a></h3>
     <div class="meta">MarTech.org · Oct 29, 2026</div>
-    <div class="why">core / martech — Performance Marketing, AI</div>
-    <p class="summary">Der Beitrag warnt, dass KI Kampagnenkennzahlen verbessern kann, ohne echten Geschäftswert zu schaffen. Besonders kritisch sieht er Plattform-Dashboards, die starke Ergebnisse zeigen, während das Gesamtunternehmen etwas anderes sieht.</p>
+    <div class="why">core / martech — Produkt-Roundup</div>
+    <p class="summary">Die Übersicht der Woche nennt unter anderem Airships KI-Entscheidungen direkt auf dem Gerät, Sprinklrs Beta mit sechs verbundenen Marketing-Agenten und Optimoves Zero-Copy-Zielgruppen in Snowflake. Dazu kommen neue MCP-Server, etwa von Quantum Metric, die Erlebnisdaten für KI-Agenten bereitstellen.</p>
   </article>
 
-  <article class="card" data-link="https://martech.org/the-risks-of-optimizing-seo-for-ai-over-users/">
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/the-risks-of-optimizing-seo-for-ai-over-users/">The risks of optimizing SEO for AI over users</a></h3>
-    <div class="meta">MarTech.org · Oct 29, 2026</div>
-    <div class="why">core / martech — SEO, AI Search</div>
-    <p class="summary">Wer Inhalte vor allem für KI-Suche optimiert, riskiert generische Texte und weniger Vertrauen. Die Autorin verweist auf Googles Wunsch nach originellen Inhalten aus erster Hand.</p>
-  </article>
-
-  <article class="card" data-link="https://www.cmswire.com/contact-center/what-are-contact-centers-actually-doing-with-ai/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/contact-center/what-are-contact-centers-actually-doing-with-ai/">What Are Contact Centers Actually Doing With AI?</a></h3>
-    <div class="meta">CMSWire · Oct 29, 2026</div>
-    <div class="why">core / martech — CX, Contact Center</div>
-    <p class="summary">Die Quartalszahlen von CX-Anbietern zeigen, dass Kunden KI vorerst für eng umrissene Aufgaben nutzen, etwa Voice-Self-Service und Gesprächsanalyse. NiCEs KI-Umsatzwachstum verlangsamte sich auf 52 Prozent nach 66 Prozent im Vorquartal.</p>
-  </article>
-
-  <article class="card" data-link="https://www.cmswire.com/the-wire/cordial-launches-headless-cdp-bringing-real-time-customer-data-to-where-marketers-work/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/the-wire/cordial-launches-headless-cdp-bringing-real-time-customer-data-to-where-marketers-work/">Cordial Launches Headless CDP, Bringing Real-Time Customer Data to Where Marketers Work</a></h3>
-    <div class="meta">CMSWire (The Wire, press release) · Oct 29, 2026</div>
-    <div class="why">core / martech — CDP</div>
-    <p class="summary">Cordial macht seine eingebettete Customer Data Platform headless, sodass Marketer Echtzeit-Kundendaten direkt aus KI-Assistenten wie Claude oder ChatGPT abrufen können. Es handelt sich um eine Herstellermitteilung.</p>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest">Adobe Experience Platform Release Notes, October 2026</a></h3>
+    <div class="meta">Adobe Experience League · Oct 27, 2026</div>
+    <div class="why">core / adobe — AEP Release Notes</div>
+    <p class="summary">Die Oktober-Release-Notes führen den CX Enterprise Coworker ein, mit dem sich Plattformdaten per Dialog nutzen lassen, sowie neue Destinations wie 6sense (Beta) und The Trade Desk Data Marketplace. Im Real-Time Customer Profile startet zudem Unterstützung für unstrukturierte Daten in der Beta.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 8 articles, below the usual ~15: most sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 4 articles, below the usual ~15: most sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
