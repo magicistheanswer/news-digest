@@ -1,96 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-10-22",
-      "link": "https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-remy-wyssmann-will-svp-bundesrat-werden",
-      "title": "Nachfolge Parmelin: Rémy Wyssmann will SVP-Bundesrat werden"
-    },
-    {
-      "date": "2026-10-22",
-      "link": "https://srf.ch/news/international/ukraine/krieg-in-der-ukraine-selenski-und-us-sondergesandter-witkoff-zu-gespraechen-in-oslo",
-      "title": "Krieg in der Ukraine: Selenski und US-Sondergesandter Witkoff sprechen in Oslo"
-    },
-    {
-      "date": "2026-10-22",
-      "link": "https://www.srf.ch/sport/fussball/champions-league/champions-league-dank-rices-effort-arsenal-knoepft-den-bayern-zwei-punkte-ab",
-      "title": "Champions League: Dank Rices Effort knöpft Arsenal den Bayern zwei Punkte ab"
-    },
-    {
-      "date": "2026-10-22",
-      "link": "https://martech.org/its-time-to-re-think-voice-of-the-customer-programs/",
-      "title": "It’s time to re-think voice of the customer programs"
-    },
-    {
-      "date": "2026-10-22",
-      "link": "https://martech.org/ai-search-is-turning-prompts-into-customer-research/",
-      "title": "AI search is turning prompts into customer research"
-    },
-    {
-      "date": "2026-10-22",
-      "link": "https://www.technologyreview.com/2026/10/21/1146124/interspecies-communication-impossible-issue/",
-      "title": "Interspecies communication"
-    },
-    {
-      "date": "2026-10-22",
-      "link": "https://cmswire.com/digital-experience/sundar-pichai-googles-frontier-imperative-compute-scarcity-dilemmas-future-ai-products-and-busin",
-      "title": "Is Google Really Back at the Frontier? Sundar Pichai Tells Us"
-    },
-    {
-      "date": "2026-10-22",
-      "link": "https://cmswire.com/digital-marketing/think-ai-visibility-is-a-done-deal-ask-reddit-about-its-chatgpt-citations",
-      "title": "Think AI Visibility Is a Done Deal? Ask Reddit About Its ChatGPT Citations"
-    },
-    {
-      "date": "2026-10-23",
-      "link": "https://www.srf.ch/news/schweiz/kandidatur-fuer-den-bundesrat-bundesrat-tessiner-staenderat-marco-chiesa-steht-zur-verfuegung",
-      "title": "Bundesrat: Tessiner Ständerat Marco Chiesa steht zur Verfügung"
-    },
-    {
-      "date": "2026-10-23",
-      "link": "https://www.srf.ch/news/international/lkw-demo-in-italien-staatliche-finanzhilfe-soll-proteste-in-italien-eindaemmen",
-      "title": "Staatliche Finanzhilfe soll Proteste in Italien eindämmen"
-    },
-    {
-      "date": "2026-10-23",
-      "link": "https://www.cmswire.com/contact-center/unpacking-the-ai-governance-crisis-in-contact-centers/",
-      "title": "Unpacking the AI Governance Crisis in Contact Centers"
-    },
-    {
-      "date": "2026-10-23",
-      "link": "https://www.technologyreview.com/2026/10/20/1145423/ai-adoption-by-industry-shows-what-other-sectors-can-learn/",
-      "title": "AI adoption by industry shows what other sectors can learn"
-    },
-    {
-      "date": "2026-10-23",
-      "link": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
-      "title": "Making the internet better for AI agents might make it worse for everyone else"
-    },
-    {
-      "date": "2026-10-24",
-      "link": "https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-frist-abgelaufen-diese-kandidaten-gehen-ins-bundesratsrennen",
-      "title": "Frist abgelaufen: Diese Kandidaten gehen ins Bundesratsrennen"
-    },
-    {
-      "date": "2026-10-24",
-      "link": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind",
-      "title": "AI's hidden storage bill: What inference leaves behind"
-    },
-    {
-      "date": "2026-10-24",
-      "link": "https://www.cmswire.com/customer-data-platforms/databricks-customerlake-enters-beta-as-enterprises-go-live-with-agentic-cdp/",
-      "title": "Databricks CustomerLake Enters Beta as Enterprises Go Live With Agentic CDP"
-    },
-    {
-      "date": "2026-10-24",
-      "link": "https://cmswire.com/contact-center/zoom-launches-unified-context-layer-for-cx-agents",
-      "title": "Zoom Launches Unified Context Layer for CX Agents"
-    },
-    {
-      "date": "2026-10-24",
-      "link": "https://www.cmswire.com/digital-experience/webflow-launches-ai-campaign-builder-for-marketers/",
-      "title": "Webflow Campaigns Brings On-Brand Landing Pages, Ads and Analytics"
-    },
-    {
       "date": "2026-10-25",
       "link": "https://www.srf.ch/news/schweiz/erste-srg-umfrage-vorerst-drei-pattsituationen-und-ein-klarer-ja-trend",
       "title": "Erste SRG-Umfrage: Vorerst drei Pattsituationen und ein klarer Ja-Trend"
@@ -284,6 +194,16 @@
       "date": "2026-10-31",
       "link": "https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest",
       "title": "Adobe Experience Platform Release Notes, October 2026"
+    },
+    {
+      "date": "2026-11-01",
+      "link": "https://cmswire.com/customer-experience/is-metas-muse-the-start-of-the-b2a-era",
+      "title": "Is Meta's Muse the Start of the Business-to-Agent Era?"
+    },
+    {
+      "date": "2026-11-01",
+      "link": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/latest",
+      "title": "Customer Journey Analytics Release Notes, October 2026"
     }
   ]
 }
