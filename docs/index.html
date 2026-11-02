@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-01</title>
+<title>Morning News Digest — 2026-11-02</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,42 +95,34 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-01, Sunday):
-  - Direct RSS/Atom fetching blocked (egress proxy); WebFetch cannot resolve srf.ch / cmswire.com. Fallback: WebSearch scoped per source domain. BBC domains are rejected by WebSearch entirely.
-  - Used: CMSWire (1, Oct 30 per article metadata), Adobe Experience League CJA release notes (1, entries dated through Oct 29). Net 2 articles (2 core / 0 outside).
-  - Skipped, date unconfirmed (only relative "1-3 days ago" labels from search metadata, no absolute date obtainable): SRF "Bundesrat engt Rennen um Luftabwehr ein und hält an Patriot fest" (Schweiz), SRF "Starke Börsen treiben SNB zu Milliardenplus" (Schweiz/Wirtschaft). Likely fresh, but not confirmable per CLAUDE.md.
-  - Skipped, conflicting date: CMSWire "Some Consumers Find Zero Benefit With AI in Customer Service" (snippet said Oct 26, age label implied ~1 year).
-  - Skipped, already shown: CMSWire contact-center AI piece (Oct 29), MIT TR The Download Oct 30.
-  - Skipped, nothing fresh/dated: MarTech.org (only conference promo and undated evergreen pieces), Adobe Experience Cloud Blog (newest hit May 2026), MeasureCamp, Kicker Bundesliga (fixture pages / undated), SRF Sport (Super League round reports with inconsistent dates), SRF International, BBC News, BBC Sport.
-  - Freshness beats quota per CLAUDE.md. Outside section omitted (no confirmable item). Layout: Outside above Core when present; Mark-read via localStorage.
+  Run notes (2026-11-02, Monday):
+  - Direct RSS/Atom fetching blocked (egress proxy). Fallback: WebSearch scoped per source domain. BBC domains are rejected by WebSearch.
+  - Used: SRF Sport (1): Lugano-Basel 2:1, Super League round 12; report/video dated Nov 1, 2026 per search metadata.
+  - Skipped, already shown: MarTech "latest AI-powered martech news" (Oct 29 roundup), MIT TR The Download Oct 28/29/30, Adobe AEP release notes (Oct 27), AJO release notes, SRG poll / Ebola / Patriot items.
+  - Skipped, too old: CMSWire Zoom context layer (Oct 20), Webflow AEO (May 2026), MIT TR Oct 23 edition, MarTech Hightouch agents (~late 2025), Adobe Experience Cloud Blog (nothing recent).
+  - Skipped, date unconfirmed (relative age label only): SRF Neuenburg Fussfessel-Pilot (starts Nov 1, "about 1 day old"), SRF Midterms previews (mixed 2-39 days), SRF Swiss parts in Russian weapons (undated), CX Enterprise central release notes (month only), SRF Super League YB-Zuerich and other round-12 reports (same round; one sport item kept).
+  - Skipped, nothing fresh: MeasureCamp, Kicker Bundesliga (only fixture pages; matchday 9 not yet played), SRF International, BBC News, BBC Sport.
+  - Net 1 article (0 core / 1 outside). Freshness beats quota per CLAUDE.md. Layout: Outside above Core when present; Mark-read via localStorage.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Sunday, November 1, 2026 · 2 articles</div>
+    <div class="date">Monday, November 2, 2026 · 1 article</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
-  <h2 class="section">Core — Adobe / Martech / AI</h2>
+  <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://cmswire.com/customer-experience/is-metas-muse-the-start-of-the-b2a-era">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/2-1-heimsieg-in-der-12-runde-passives-lugano-feiert-knappen-sieg-ueber-basel-und-distanziert-yb">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://cmswire.com/customer-experience/is-metas-muse-the-start-of-the-b2a-era">Is Meta's Muse the Start of the Business-to-Agent Era?</a></h3>
-    <div class="meta">CMSWire · Oct 30, 2026</div>
-    <div class="why">core / martech — CX, KI-Agenten</div>
-    <p class="summary">Die Kolumne argumentiert, dass persönliche KI-Agenten für Konsumenten jetzt Realität werden und ihre Nutzer besser kennen als jede Marken-App. Unternehmen müssten sich deshalb darauf einstellen, Agenten als eigentliche Kunden zu bedienen.</p>
-  </article>
-
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/latest">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/latest">Customer Journey Analytics Release Notes, October 2026</a></h3>
-    <div class="meta">Adobe Experience League · entries through Oct 29, 2026</div>
-    <div class="why">core / adobe — CJA Release Notes</div>
-    <p class="summary">Neu in CJA sind Conversation Insights, die Chat-Daten von LLM-Agenten in Analysis Workspace auswertbar machen, sowie lesender Zugriff auf den CJA-MCP-Server. Dazu kommen automatisch generierte Beschreibungen für Dimensionen, Metriken und Segmente; der Coworker im Workspace ist für November angekündigt.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/2-1-heimsieg-in-der-12-runde-passives-lugano-feiert-knappen-sieg-ueber-basel-und-distanziert-yb">Passives Lugano feiert knappen Sieg über Basel und distanziert YB</a></h3>
+    <div class="meta">SRF Sport · Nov 1, 2026</div>
+    <div class="why">outside / sport — Super League</div>
+    <p class="summary">Lugano gewinnt in der 12. Runde zu Hause 2:1 gegen Basel, obwohl die Gäste lange mehr vom Spiel hatten und nur durch Otele zum Anschlusstreffer kamen. Weil YB zeitgleich gegen Zürich 3:5 verliert, wächst der Vorsprung der Tessiner an der Tabellenspitze auf neun Punkte.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 2 articles, below the usual ~15: most sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 1 article, below the usual ~15: most sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
