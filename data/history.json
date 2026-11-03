@@ -1,51 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-10-25",
-      "link": "https://www.srf.ch/news/schweiz/erste-srg-umfrage-vorerst-drei-pattsituationen-und-ein-klarer-ja-trend",
-      "title": "Erste SRG-Umfrage: Vorerst drei Pattsituationen und ein klarer Ja-Trend"
-    },
-    {
-      "date": "2026-10-25",
-      "link": "https://www.srf.ch/news/schweiz/behandlung-in-nigeria-schweizerin-mit-ebola-angesteckt",
-      "title": "Schweizerin in Nigeria mit Ebola angesteckt"
-    },
-    {
-      "date": "2026-10-25",
-      "link": "https://www.technologyreview.com/2026/10/22/1147612/the-download-computing-next-leap-permafrost-climate-threat/",
-      "title": "The Download: computing's next leap and permafrost's climate threat"
-    },
-    {
-      "date": "2026-10-25",
-      "link": "https://cmswire.com/customer-experience/90210-reboot-nah-cx-reboot-the-time-is-now-in-the-age-of-ai",
-      "title": "90210 Reboot? Nah. CX Reboot? The Time Is Now in the Age of AI"
-    },
-    {
-      "date": "2026-10-26",
-      "link": "https://www.srf.ch/news/schweiz/cyber-schwachstelle-bei-php-erste-schadensbilanz-ueber-100-000-schweizer-webseiten-offline",
-      "title": "Über 100'000 Schweizer Websites offline wegen PHP"
-    },
-    {
-      "date": "2026-10-26",
-      "link": "https://www.srf.ch/news/international/anfuehrerin-der-opposition-ich-bin-hier-bei-euch-machado-kehrt-nach-venezuela-zurueck",
-      "title": "Machado kehrt nach Venezuela zurück"
-    },
-    {
-      "date": "2026-10-26",
-      "link": "https://www.srf.ch/news/international/erst-ruhig-dann-angespannt-das-war-der-2-akt-der-massenproteste-in-frankreich",
-      "title": "Frankreich: Der 2. Akt der Massenproteste"
-    },
-    {
-      "date": "2026-10-26",
-      "link": "https://www.srf.ch/sport/fussball/super-league/11-runde-in-der-super-league-yb-beendet-st-gallens-serie-in-wankdorf",
-      "title": "YB beendet St. Gallens Serie im Wankdorf"
-    },
-    {
-      "date": "2026-10-26",
-      "link": "https://martech.org/chatgpt-sends-less-than-1-of-googles-traffic/",
-      "title": "ChatGPT sends less than 1% of Google's traffic"
-    },
-    {
       "date": "2026-10-27",
       "link": "https://www.srf.ch/news/wirtschaft/umbau-beim-detailhaendler-migros-fuehrung-will-konzern-komplett-umbauen",
       "title": "Migros-Führung will den Konzern komplett umbauen"
@@ -209,6 +164,46 @@
       "date": "2026-11-02",
       "link": "https://www.srf.ch/sport/fussball/super-league/2-1-heimsieg-in-der-12-runde-passives-lugano-feiert-knappen-sieg-ueber-basel-und-distanziert-yb",
       "title": "Passives Lugano feiert knappen Sieg über Basel und distanziert YB"
+    },
+    {
+      "date": "2026-11-03",
+      "link": "https://www.srf.ch/news/schweiz/ausschreitungen-in-zuerich-krawallnacht-befeuert-debatte-um-polizeipersonal",
+      "title": "Krawallnacht befeuert Debatte um Polizeistellen"
+    },
+    {
+      "date": "2026-11-03",
+      "link": "https://www.srf.ch/news/schweiz/generalsekretaer-alain-berset-es-ist-verrueckt-ein-wahlresultat-nicht-zu-akzeptieren",
+      "title": "Berset: «Es ist verrückt, ein Wahlresultat nicht zu akzeptieren»"
+    },
+    {
+      "date": "2026-11-03",
+      "link": "https://www.srf.ch/sport/tennis/tennis-allgemein/final-an-den-swiss-indoors-vacherot-bodigt-lehecka-und-reiht-sich-unter-die-basel-champions",
+      "title": "Vacherot bodigt Lehecka und reiht sich unter die Basel-Champions"
+    },
+    {
+      "date": "2026-11-03",
+      "link": "https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/",
+      "title": "The Download: the agentic web arrives and the drive for safer roads"
+    },
+    {
+      "date": "2026-11-03",
+      "link": "https://martech.org/ai-can-find-patterns-but-marketers-must-figure-out-what-they-mean/",
+      "title": "AI can find patterns, but marketers must figure out what they mean"
+    },
+    {
+      "date": "2026-11-03",
+      "link": "https://martech.org/your-2027-media-plan-has-a-channel-problem/",
+      "title": "Your 2027 media plan has a channel problem"
+    },
+    {
+      "date": "2026-11-03",
+      "link": "https://martech.org/beyond-deployment-how-to-lead-the-change-and-make-ai-adoption-stick/",
+      "title": "Beyond deployment: How to lead the change and make AI adoption stick"
+    },
+    {
+      "date": "2026-11-03",
+      "link": "https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/",
+      "title": "Meet your new teammate: Building marketing workflows around AI agents"
     }
   ]
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-02</title>
+<title>Morning News Digest — 2026-11-03</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,34 +95,84 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-02, Monday):
+  Run notes (2026-11-03, Tuesday):
   - Direct RSS/Atom fetching blocked (egress proxy). Fallback: WebSearch scoped per source domain. BBC domains are rejected by WebSearch.
-  - Used: SRF Sport (1): Lugano-Basel 2:1, Super League round 12; report/video dated Nov 1, 2026 per search metadata.
-  - Skipped, already shown: MarTech "latest AI-powered martech news" (Oct 29 roundup), MIT TR The Download Oct 28/29/30, Adobe AEP release notes (Oct 27), AJO release notes, SRG poll / Ebola / Patriot items.
-  - Skipped, too old: CMSWire Zoom context layer (Oct 20), Webflow AEO (May 2026), MIT TR Oct 23 edition, MarTech Hightouch agents (~late 2025), Adobe Experience Cloud Blog (nothing recent).
-  - Skipped, date unconfirmed (relative age label only): SRF Neuenburg Fussfessel-Pilot (starts Nov 1, "about 1 day old"), SRF Midterms previews (mixed 2-39 days), SRF Swiss parts in Russian weapons (undated), CX Enterprise central release notes (month only), SRF Super League YB-Zuerich and other round-12 reports (same round; one sport item kept).
-  - Skipped, nothing fresh: MeasureCamp, Kicker Bundesliga (only fixture pages; matchday 9 not yet played), SRF International, BBC News, BBC Sport.
-  - Net 1 article (0 core / 1 outside). Freshness beats quota per CLAUDE.md. Layout: Outside above Core when present; Mark-read via localStorage.
+  - Used (8): MIT TR The Download Nov 2 (date in URL); MarTech x4 (Nov 2 x3, Oct 30 x1; dates from article/topic-page metadata); SRF Zuerich Krawallnacht debate and Berset interview (Nov 2); SRF Sport Swiss Indoors final (Nov 1).
+  - Skipped, date unconfirmed: SRF SNB 9-month profit (only "about 3 days old"), MarTech paid-social/stack-audit pieces (no URL/date confirmed), MarTech conference preview pages without dates.
+  - Skipped, nothing fresh: CMSWire (only events/awards pages; latest Wire item Cordial Oct 29, already shown), Adobe Experience Cloud Blog (newest May 2026), MeasureCamp, Kicker Bundesliga (only fixture pages), SRF International (Berset used), BBC News, BBC Sport (domains rejected).
+  - Net 8 articles (5 core / 3 outside). Freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Monday, November 2, 2026 · 1 article</div>
+    <div class="date">Tuesday, November 3, 2026 · 8 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/2-1-heimsieg-in-der-12-runde-passives-lugano-feiert-knappen-sieg-ueber-basel-und-distanziert-yb">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/ausschreitungen-in-zuerich-krawallnacht-befeuert-debatte-um-polizeipersonal">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/2-1-heimsieg-in-der-12-runde-passives-lugano-feiert-knappen-sieg-ueber-basel-und-distanziert-yb">Passives Lugano feiert knappen Sieg über Basel und distanziert YB</a></h3>
+    <h3><a href="https://www.srf.ch/news/schweiz/ausschreitungen-in-zuerich-krawallnacht-befeuert-debatte-um-polizeipersonal">Krawallnacht befeuert Debatte um Polizeistellen</a></h3>
+    <div class="meta">SRF News · Nov 2, 2026</div>
+    <div class="why">outside / schweiz</div>
+    <p class="summary">Nach den Ausschreitungen im Zürcher Kreis 4 streiten die Parteien über die Stadtpolizei. Die SVP fordert mehr Personal und bringt sogar eine Übernahme durch die Kantonspolizei ins Spiel, während die Sicherheitsvorsteherin bereits 17 zusätzliche Stellen für die Budgetdebatte im Dezember beantragt hat.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/generalsekretaer-alain-berset-es-ist-verrueckt-ein-wahlresultat-nicht-zu-akzeptieren">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/schweiz/generalsekretaer-alain-berset-es-ist-verrueckt-ein-wahlresultat-nicht-zu-akzeptieren">Berset: «Es ist verrückt, ein Wahlresultat nicht zu akzeptieren»</a></h3>
+    <div class="meta">SRF News · Nov 2, 2026</div>
+    <div class="why">outside / world</div>
+    <p class="summary">Der Generalsekretär des Europarats äussert sich vor den US-Midterms zur Frage, ob Wahlergebnisse anerkannt werden. Für ihn ist das keine Option, sondern eine Pflicht, sofern die Wahl korrekt durchgeführt wurde. Er warnt zudem, dass die Demokratie selbst in Europa unter Druck steht.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/tennis/tennis-allgemein/final-an-den-swiss-indoors-vacherot-bodigt-lehecka-und-reiht-sich-unter-die-basel-champions">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/tennis/tennis-allgemein/final-an-den-swiss-indoors-vacherot-bodigt-lehecka-und-reiht-sich-unter-die-basel-champions">Vacherot bodigt Lehecka und reiht sich unter die Basel-Champions</a></h3>
     <div class="meta">SRF Sport · Nov 1, 2026</div>
-    <div class="why">outside / sport — Super League</div>
-    <p class="summary">Lugano gewinnt in der 12. Runde zu Hause 2:1 gegen Basel, obwohl die Gäste lange mehr vom Spiel hatten und nur durch Otele zum Anschlusstreffer kamen. Weil YB zeitgleich gegen Zürich 3:5 verliert, wächst der Vorsprung der Tessiner an der Tabellenspitze auf neun Punkte.</p>
+    <div class="why">outside / sport — Tennis (Swiss Indoors)</div>
+    <p class="summary">Valentin Vacherot dreht das Final der Swiss Indoors nach verlorenem ersten Satz und siegt 2:6, 6:3, 6:3. Entscheidend waren zwei unerzwungene Fehler Leheckas beim Stand von 3:5 im dritten Satz. Für den Monegassen ist es der zweite ATP-Titel.</p>
+  </article>
+
+  <h2 class="section">Core — Adobe / Martech / AI</h2>
+
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/">The Download: the agentic web arrives and the drive for safer roads</a></h3>
+    <div class="meta">MIT Technology Review · Nov 2, 2026</div>
+    <div class="why">core / ai</div>
+    <p class="summary">Der Newsletter greift Tim Berners-Lees Vision eines vom Software-Agenten durchquerten Webs auf: KI-Agenten sortieren heute Mails, kaufen ein und greifen sogar auf Bankkonten zu. Ausserdem geht es darum, wie nah einige Städte an null Verkehrstote kommen.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/ai-can-find-patterns-but-marketers-must-figure-out-what-they-mean/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/ai-can-find-patterns-but-marketers-must-figure-out-what-they-mean/">AI can find patterns, but marketers must figure out what they mean</a></h3>
+    <div class="meta">MarTech · Nov 2, 2026</div>
+    <div class="why">core / martech — AI &amp; analytics</div>
+    <p class="summary">Kath Pay argumentiert, dass KI zwar Zusammenhänge in Kundendaten aufspüren kann, Marketer sie aber selbst deuten müssen. Eine Korrelation beweise nicht, dass eine Verhaltensänderung wirkt; dafür brauche es Tests. KI kann Felder falsch lesen und Zusammenhänge plausibel erklären, die es gar nicht gibt.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/your-2027-media-plan-has-a-channel-problem/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/your-2027-media-plan-has-a-channel-problem/">Your 2027 media plan has a channel problem</a></h3>
+    <div class="meta">MarTech · Nov 2, 2026</div>
+    <div class="why">core / martech — media planning</div>
+    <p class="summary">Angelina Eng warnt, dass der leistungsstärkste Kanal im Budget oft zu viel Geld bekommt, während wertvollere Kundenchancen übersehen werden. Der Beitrag ist ein Denkanstoss für die Budgetplanung 2027.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/beyond-deployment-how-to-lead-the-change-and-make-ai-adoption-stick/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/beyond-deployment-how-to-lead-the-change-and-make-ai-adoption-stick/">Beyond deployment: How to lead the change and make AI adoption stick</a></h3>
+    <div class="meta">MarTech · Nov 2, 2026</div>
+    <div class="why">core / martech — AI adoption</div>
+    <p class="summary">Mike Pastore beschreibt, dass der Erfolg von KI im Marketing mehr von Menschen und Gewohnheiten abhängt als vom Kauf von Software. Es geht um Change-Management, damit neue Tools im Alltag tatsächlich genutzt werden.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/">Meet your new teammate: Building marketing workflows around AI agents</a></h3>
+    <div class="meta">MarTech · Oct 30, 2026</div>
+    <div class="why">core / martech — agents</div>
+    <p class="summary">Vorschau auf ein Panel der MarTech Conference vom 4. November zu Workflows, in denen KI-Agenten und Menschen zusammenarbeiten. Im Fokus stehen menschliche Aufsicht und Governance.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 1 article, below the usual ~15: most sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 8 articles, below the usual ~15: many sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
