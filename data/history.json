@@ -1,21 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-10-27",
-      "link": "https://www.srf.ch/news/wirtschaft/umbau-beim-detailhaendler-migros-fuehrung-will-konzern-komplett-umbauen",
-      "title": "Migros-Führung will den Konzern komplett umbauen"
-    },
-    {
-      "date": "2026-10-27",
-      "link": "https://www.srf.ch/news/schweiz/debakel-um-chirurg-maisano-usz-herzklinik-skandal-behoerde-wollte-nicht-zu-penetrant-sein",
-      "title": "USZ-Herzklinik-Skandal: Swissmedic wollte «nicht zu penetrant» sein"
-    },
-    {
-      "date": "2026-10-27",
-      "link": "https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-liverpool-mit-grosser-wende-dortmund-siegt-in-aserbaidschan",
-      "title": "Champions League: Liverpool mit grosser Wende, Dortmund siegt in Aserbaidschan"
-    },
-    {
       "date": "2026-10-28",
       "link": "https://www.srf.ch/news/schweiz/efk-bericht-kostenexplosion-bei-neuem-migrationssystem",
       "title": "EFK-Bericht: Kostenexplosion bei neuem Migrationssystem"
@@ -204,6 +189,41 @@
       "date": "2026-11-03",
       "link": "https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/",
       "title": "Meet your new teammate: Building marketing workflows around AI agents"
+    },
+    {
+      "date": "2026-11-04",
+      "link": "https://www.srf.ch/news/wirtschaft/teuerung-2026-schweizer-inflation-steigt-im-oktober-auf-1-5-prozent",
+      "title": "Jahresinflation in der Schweiz klettert auf 1.5 Prozent"
+    },
+    {
+      "date": "2026-11-04",
+      "link": "https://www.srf.ch/news/international/usa/zwischenwahlen-in-den-usa-die-midterms-2026-im-ueberblick",
+      "title": "Zwischenwahlen in den USA: Die Midterms 2026 im Überblick"
+    },
+    {
+      "date": "2026-11-04",
+      "link": "https://www.srf.ch/sport/ski-alpin/weltcup-frauen/11-monate-nach-horrorsturz-ruecktritt-statt-rueckkehr-michelle-gisin-beendet-ihre-karriere",
+      "title": "Rücktritt statt Rückkehr: Michelle Gisin beendet ihre Karriere"
+    },
+    {
+      "date": "2026-11-04",
+      "link": "https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-fcz-fluegel-emmanuel-haette-gegen-yb-vom-platz-fliegen-muessen",
+      "title": "FCZ-Flügel Emmanuel hätte gegen YB vom Platz fliegen müssen"
+    },
+    {
+      "date": "2026-11-04",
+      "link": "https://www.technologyreview.com/2026/11/03/1147940/the-download-controlling-ai-agents-trump-super-intelligence/",
+      "title": "The Download: controlling AI agents and “Super Intelligence” loyalty tests"
+    },
+    {
+      "date": "2026-11-04",
+      "link": "https://martech.org/ai-traffic-drives-83-more-traffic-per-visit/",
+      "title": "AI traffic drives 83% more traffic per visit"
+    },
+    {
+      "date": "2026-11-04",
+      "link": "https://martech.org/salesforce-buying-ai-customer-support-company-cresta/",
+      "title": "Salesforce buying AI customer support company Cresta"
     }
   ]
 }

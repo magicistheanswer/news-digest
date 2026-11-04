@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-03</title>
+<title>Morning News Digest — 2026-11-04</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,84 +95,77 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-03, Tuesday):
-  - Direct RSS/Atom fetching blocked (egress proxy). Fallback: WebSearch scoped per source domain. BBC domains are rejected by WebSearch.
-  - Used (8): MIT TR The Download Nov 2 (date in URL); MarTech x4 (Nov 2 x3, Oct 30 x1; dates from article/topic-page metadata); SRF Zuerich Krawallnacht debate and Berset interview (Nov 2); SRF Sport Swiss Indoors final (Nov 1).
-  - Skipped, date unconfirmed: SRF SNB 9-month profit (only "about 3 days old"), MarTech paid-social/stack-audit pieces (no URL/date confirmed), MarTech conference preview pages without dates.
-  - Skipped, nothing fresh: CMSWire (only events/awards pages; latest Wire item Cordial Oct 29, already shown), Adobe Experience Cloud Blog (newest May 2026), MeasureCamp, Kicker Bundesliga (only fixture pages), SRF International (Berset used), BBC News, BBC Sport (domains rejected).
-  - Net 8 articles (5 core / 3 outside). Freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
+  Run notes (2026-11-04, Wednesday):
+  - Direct RSS/Atom fetching and WebFetch blocked (egress); fallback: WebSearch scoped per source domain. BBC domains are rejected by WebSearch.
+  - Used (7): MIT TR The Download Nov 3 (date in URL); MarTech x2 (AI-referred traffic: date inferred from search metadata; Salesforce/Cresta: ~1 day old, also covered by CMSWire - deduped); SRF inflation Oct (published early Nov, exact day unconfirmed), Midterms overview (Nov 3), Gisin retirement (Nov 3), FCZ-YB follow-up (match Nov 1).
+  - Skipped, date unconfirmed: SRF Binance/North Korea hack, Zuerich riot sentences (Strafbefehle), MarTech conference-preview pieces.
+  - Skipped, nothing fresh: Adobe Experience Cloud Blog (nothing new; AEP/AJO release notes for Oct already shown), MeasureCamp, Kicker Bundesliga (only fixture/table pages), SRF International beyond Midterms, BBC News, BBC Sport (domains rejected), CMSWire own items (only awards/older pieces).
+  - Net 7 articles (3 core / 4 outside). Freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Tuesday, November 3, 2026 · 8 articles</div>
+    <div class="date">Wednesday, November 4, 2026 · 7 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/ausschreitungen-in-zuerich-krawallnacht-befeuert-debatte-um-polizeipersonal">
+  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/teuerung-2026-schweizer-inflation-steigt-im-oktober-auf-1-5-prozent">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/ausschreitungen-in-zuerich-krawallnacht-befeuert-debatte-um-polizeipersonal">Krawallnacht befeuert Debatte um Polizeistellen</a></h3>
-    <div class="meta">SRF News · Nov 2, 2026</div>
+    <h3><a href="https://www.srf.ch/news/wirtschaft/teuerung-2026-schweizer-inflation-steigt-im-oktober-auf-1-5-prozent">Jahresinflation in der Schweiz klettert auf 1.5 Prozent</a></h3>
+    <div class="meta">SRF News · early Nov 2026</div>
     <div class="why">outside / schweiz</div>
-    <p class="summary">Nach den Ausschreitungen im Zürcher Kreis 4 streiten die Parteien über die Stadtpolizei. Die SVP fordert mehr Personal und bringt sogar eine Übernahme durch die Kantonspolizei ins Spiel, während die Sicherheitsvorsteherin bereits 17 zusätzliche Stellen für die Budgetdebatte im Dezember beantragt hat.</p>
+    <p class="summary">Die Schweizer Teuerung ist im Oktober von 1,0 auf 1,5 Prozent gestiegen – mehr, als Ökonomen erwartet hatten, und der höchste Stand seit Ende 2023. Haupttreiber sind die Energiepreise, Erdölprodukte kosten rund 40 Prozent mehr als vor einem Jahr. Die Kerninflation bleibt bei 0,5 Prozent, die Gesamtrate im Zielband der SNB.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/generalsekretaer-alain-berset-es-ist-verrueckt-ein-wahlresultat-nicht-zu-akzeptieren">
+  <article class="card" data-link="https://www.srf.ch/news/international/usa/zwischenwahlen-in-den-usa-die-midterms-2026-im-ueberblick">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/generalsekretaer-alain-berset-es-ist-verrueckt-ein-wahlresultat-nicht-zu-akzeptieren">Berset: «Es ist verrückt, ein Wahlresultat nicht zu akzeptieren»</a></h3>
-    <div class="meta">SRF News · Nov 2, 2026</div>
+    <h3><a href="https://www.srf.ch/news/international/usa/zwischenwahlen-in-den-usa-die-midterms-2026-im-ueberblick">Zwischenwahlen in den USA: Die Midterms 2026 im Überblick</a></h3>
+    <div class="meta">SRF News · Nov 3, 2026</div>
     <div class="why">outside / world</div>
-    <p class="summary">Der Generalsekretär des Europarats äussert sich vor den US-Midterms zur Frage, ob Wahlergebnisse anerkannt werden. Für ihn ist das keine Option, sondern eine Pflicht, sofern die Wahl korrekt durchgeführt wurde. Er warnt zudem, dass die Demokratie selbst in Europa unter Druck steht.</p>
+    <p class="summary">Am 3. November werden in den USA alle 435 Sitze im Repräsentantenhaus und 35 der 100 Senatssitze neu vergeben. Die Demokraten gelten im Repräsentantenhaus als klare Favoriten, im Senat wird ein knappes Rennen erwartet. Schon vor dem Wahltag haben über 32 Millionen Menschen vorzeitig oder brieflich gewählt.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/tennis/tennis-allgemein/final-an-den-swiss-indoors-vacherot-bodigt-lehecka-und-reiht-sich-unter-die-basel-champions">
+  <article class="card" data-link="https://www.srf.ch/sport/ski-alpin/weltcup-frauen/11-monate-nach-horrorsturz-ruecktritt-statt-rueckkehr-michelle-gisin-beendet-ihre-karriere">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/tennis/tennis-allgemein/final-an-den-swiss-indoors-vacherot-bodigt-lehecka-und-reiht-sich-unter-die-basel-champions">Vacherot bodigt Lehecka und reiht sich unter die Basel-Champions</a></h3>
-    <div class="meta">SRF Sport · Nov 1, 2026</div>
-    <div class="why">outside / sport — Tennis (Swiss Indoors)</div>
-    <p class="summary">Valentin Vacherot dreht das Final der Swiss Indoors nach verlorenem ersten Satz und siegt 2:6, 6:3, 6:3. Entscheidend waren zwei unerzwungene Fehler Leheckas beim Stand von 3:5 im dritten Satz. Für den Monegassen ist es der zweite ATP-Titel.</p>
+    <h3><a href="https://www.srf.ch/sport/ski-alpin/weltcup-frauen/11-monate-nach-horrorsturz-ruecktritt-statt-rueckkehr-michelle-gisin-beendet-ihre-karriere">Rücktritt statt Rückkehr: Michelle Gisin beendet ihre Karriere</a></h3>
+    <div class="meta">SRF Sport · Nov 3, 2026</div>
+    <div class="why">outside / sport — Ski alpin</div>
+    <p class="summary">Die Zweifach-Olympiasiegerin in der Kombination gibt elf Monate nach ihrem schweren Trainingssturz in St. Moritz das Ende ihrer Laufbahn bekannt. Ein Weltcup-Comeback hätte mindestens ein weiteres Jahr gedauert. Skisport bleibt sie aber erhalten, etwa bei der Heim-WM in Crans-Montana in anderer Rolle.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-fcz-fluegel-emmanuel-haette-gegen-yb-vom-platz-fliegen-muessen">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-fcz-fluegel-emmanuel-haette-gegen-yb-vom-platz-fliegen-muessen">FCZ-Flügel Emmanuel hätte gegen YB vom Platz fliegen müssen</a></h3>
+    <div class="meta">SRF Sport · Nov 2026 (Runde 12, 1. Nov.)</div>
+    <div class="why">outside / sport — Super League</div>
+    <p class="summary">Der FC Zürich gewann das Spektakel gegen YB mit 5:3, Umeh Emmanuel traf doppelt. Nachträglich stuft der Verband eine übersehene Tätlichkeit des Flügels als strafwürdig ein, der Schiedsrichter hätte ihn also des Feldes verweisen müssen. Lugano baute derweil die Tabellenführung auf neun Punkte aus.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/03/1147940/the-download-controlling-ai-agents-trump-super-intelligence/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/">The Download: the agentic web arrives and the drive for safer roads</a></h3>
-    <div class="meta">MIT Technology Review · Nov 2, 2026</div>
+    <h3><a href="https://www.technologyreview.com/2026/11/03/1147940/the-download-controlling-ai-agents-trump-super-intelligence/">The Download: controlling AI agents and “Super Intelligence” loyalty tests</a></h3>
+    <div class="meta">MIT Technology Review · Nov 3, 2026</div>
     <div class="why">core / ai</div>
-    <p class="summary">Der Newsletter greift Tim Berners-Lees Vision eines vom Software-Agenten durchquerten Webs auf: KI-Agenten sortieren heute Mails, kaufen ein und greifen sogar auf Bankkonten zu. Ausserdem geht es darum, wie nah einige Städte an null Verkehrstote kommen.</p>
+    <p class="summary">Der Newsletter stellt einen Ansatz vor, KI-Agenten über Regeln zu steuern, denen sie aus eigenem Interesse folgen. Ob das in der Praxis funktioniert, ist offen. Zudem geht es um den politischen Streit über den Begriff «Super Intelligence» und um den Einfluss von KI auf die US-Midterms.</p>
   </article>
-  <article class="card" data-link="https://martech.org/ai-can-find-patterns-but-marketers-must-figure-out-what-they-mean/">
+  <article class="card" data-link="https://martech.org/ai-traffic-drives-83-more-traffic-per-visit/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-can-find-patterns-but-marketers-must-figure-out-what-they-mean/">AI can find patterns, but marketers must figure out what they mean</a></h3>
-    <div class="meta">MarTech · Nov 2, 2026</div>
-    <div class="why">core / martech — AI &amp; analytics</div>
-    <p class="summary">Kath Pay argumentiert, dass KI zwar Zusammenhänge in Kundendaten aufspüren kann, Marketer sie aber selbst deuten müssen. Eine Korrelation beweise nicht, dass eine Verhaltensänderung wirkt; dafür brauche es Tests. KI kann Felder falsch lesen und Zusammenhänge plausibel erklären, die es gar nicht gibt.</p>
+    <h3><a href="https://martech.org/ai-traffic-drives-83-more-traffic-per-visit/">AI traffic drives 83% more traffic per visit</a></h3>
+    <div class="meta">MarTech · Nov 4, 2026 (date from search metadata)</div>
+    <div class="why">core / martech — Adobe data</div>
+    <p class="summary">Adobe-Daten zeigen, dass von KI-Diensten verwiesene Besucher im US-Handel im September pro Besuch rund 83 Prozent mehr Umsatz brachten und etwa 90 Prozent besser konvertierten. Der KI-Traffic wuchs gegenüber dem Vorjahr um 71 Prozent. Die Daten belegen aber nicht, dass KI-lesbarere Inhalte ursächlich für mehr Umsatz sorgen.</p>
   </article>
-  <article class="card" data-link="https://martech.org/your-2027-media-plan-has-a-channel-problem/">
+  <article class="card" data-link="https://martech.org/salesforce-buying-ai-customer-support-company-cresta/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/your-2027-media-plan-has-a-channel-problem/">Your 2027 media plan has a channel problem</a></h3>
-    <div class="meta">MarTech · Nov 2, 2026</div>
-    <div class="why">core / martech — media planning</div>
-    <p class="summary">Angelina Eng warnt, dass der leistungsstärkste Kanal im Budget oft zu viel Geld bekommt, während wertvollere Kundenchancen übersehen werden. Der Beitrag ist ein Denkanstoss für die Budgetplanung 2027.</p>
-  </article>
-  <article class="card" data-link="https://martech.org/beyond-deployment-how-to-lead-the-change-and-make-ai-adoption-stick/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/beyond-deployment-how-to-lead-the-change-and-make-ai-adoption-stick/">Beyond deployment: How to lead the change and make AI adoption stick</a></h3>
-    <div class="meta">MarTech · Nov 2, 2026</div>
-    <div class="why">core / martech — AI adoption</div>
-    <p class="summary">Mike Pastore beschreibt, dass der Erfolg von KI im Marketing mehr von Menschen und Gewohnheiten abhängt als vom Kauf von Software. Es geht um Change-Management, damit neue Tools im Alltag tatsächlich genutzt werden.</p>
-  </article>
-  <article class="card" data-link="https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/">Meet your new teammate: Building marketing workflows around AI agents</a></h3>
-    <div class="meta">MarTech · Oct 30, 2026</div>
-    <div class="why">core / martech — agents</div>
-    <p class="summary">Vorschau auf ein Panel der MarTech Conference vom 4. November zu Workflows, in denen KI-Agenten und Menschen zusammenarbeiten. Im Fokus stehen menschliche Aufsicht und Governance.</p>
+    <h3><a href="https://martech.org/salesforce-buying-ai-customer-support-company-cresta/">Salesforce buying AI customer support company Cresta</a></h3>
+    <div class="meta">MarTech · auch CMSWire · Nov 3, 2026 (approx.)</div>
+    <div class="why">core / martech — CX &amp; AI agents</div>
+    <p class="summary">Salesforce will den KI-Anbieter Cresta übernehmen, dessen Sprachagenten Kundenanrufe selbstständig abwickeln und menschliche Mitarbeitende in Echtzeit unterstützen. Der Preis ist nicht bekannt. CMSWire ordnet den Deal als dritte Übernahme-Ankündigung von Salesforce innerhalb von etwa zwei Wochen ein.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 8 articles, below the usual ~15: many sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 7 articles, below the usual ~15: many sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
