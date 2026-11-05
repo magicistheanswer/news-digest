@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-04</title>
+<title>Morning News Digest — 2026-11-05</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,73 +95,75 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-04, Wednesday):
-  - Direct RSS/Atom fetching and WebFetch blocked (egress); fallback: WebSearch scoped per source domain. BBC domains are rejected by WebSearch.
-  - Used (7): MIT TR The Download Nov 3 (date in URL); MarTech x2 (AI-referred traffic: date inferred from search metadata; Salesforce/Cresta: ~1 day old, also covered by CMSWire - deduped); SRF inflation Oct (published early Nov, exact day unconfirmed), Midterms overview (Nov 3), Gisin retirement (Nov 3), FCZ-YB follow-up (match Nov 1).
-  - Skipped, date unconfirmed: SRF Binance/North Korea hack, Zuerich riot sentences (Strafbefehle), MarTech conference-preview pieces.
-  - Skipped, nothing fresh: Adobe Experience Cloud Blog (nothing new; AEP/AJO release notes for Oct already shown), MeasureCamp, Kicker Bundesliga (only fixture/table pages), SRF International beyond Midterms, BBC News, BBC Sport (domains rejected), CMSWire own items (only awards/older pieces).
+  Run notes (2026-11-05, Thursday):
+  - Direct RSS/Atom fetching and WebFetch blocked (egress); fallback: WebSearch scoped per source domain. BBC domains are rejected by WebSearch (API error).
+  - Used (7): SRF Midterms results (Nov 4-5), SRF Crans-Montana costs (Tagesschau Nov 4), SRF CL round-up Como 9:1 (Nov 4), SRF BVB-Betis (Nov 4); MIT TR The Download Nov 4 (date in URL); CMSWire G2 AI-search piece (byline Nov 3); MarTech weekly AI releases roundup (Oct 29, weekly cadence).
+  - Skipped, date unconfirmed: SRF Chikungunya Tessin (conflicting age metadata), SRF Mindestzins BVG, SRF Lokalradios, CMSWire Zoom context layer (Oct, exact day unknown).
+  - Skipped, too old: CMSWire/Webflow AEO (May 2026).
+  - Skipped, nothing fresh: Adobe Experience Cloud Blog (no Nov posts; MAX starts Nov 10), MeasureCamp, Kicker Bundesliga (only fixture/table pages), BBC News, BBC Sport (domains rejected), SRF Super League (nothing new found).
+  - Already shown, not repeated: Salesforce/Cresta, AI traffic 83%, MIT TR Nov 2 and Nov 3 Download.
   - Net 7 articles (3 core / 4 outside). Freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Wednesday, November 4, 2026 · 7 articles</div>
+    <div class="date">Thursday, November 5, 2026 · 7 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/teuerung-2026-schweizer-inflation-steigt-im-oktober-auf-1-5-prozent">
+  <article class="card" data-link="https://www.srf.ch/news/international/usa/midterms-in-den-usa-machtwechsel-im-kongress-die-ergebnisse-auf-einen-blick">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/wirtschaft/teuerung-2026-schweizer-inflation-steigt-im-oktober-auf-1-5-prozent">Jahresinflation in der Schweiz klettert auf 1.5 Prozent</a></h3>
-    <div class="meta">SRF News · early Nov 2026</div>
-    <div class="why">outside / schweiz</div>
-    <p class="summary">Die Schweizer Teuerung ist im Oktober von 1,0 auf 1,5 Prozent gestiegen – mehr, als Ökonomen erwartet hatten, und der höchste Stand seit Ende 2023. Haupttreiber sind die Energiepreise, Erdölprodukte kosten rund 40 Prozent mehr als vor einem Jahr. Die Kerninflation bleibt bei 0,5 Prozent, die Gesamtrate im Zielband der SNB.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/usa/zwischenwahlen-in-den-usa-die-midterms-2026-im-ueberblick">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/usa/zwischenwahlen-in-den-usa-die-midterms-2026-im-ueberblick">Zwischenwahlen in den USA: Die Midterms 2026 im Überblick</a></h3>
-    <div class="meta">SRF News · Nov 3, 2026</div>
+    <h3><a href="https://www.srf.ch/news/international/usa/midterms-in-den-usa-machtwechsel-im-kongress-die-ergebnisse-auf-einen-blick">Midterms USA: Machtwechsel im Kongress</a></h3>
+    <div class="meta">SRF News · Nov 4–5, 2026</div>
     <div class="why">outside / world</div>
-    <p class="summary">Am 3. November werden in den USA alle 435 Sitze im Repräsentantenhaus und 35 der 100 Senatssitze neu vergeben. Die Demokraten gelten im Repräsentantenhaus als klare Favoriten, im Senat wird ein knappes Rennen erwartet. Schon vor dem Wahltag haben über 32 Millionen Menschen vorzeitig oder brieflich gewählt.</p>
+    <p class="summary">Die Demokraten haben bei den Zwischenwahlen laut SRF-Liveberichten beide Kongresskammern erobert. Im Senat kommen sie bisher auf 54 Sitze, zwei Bundesstaaten sind noch nicht ausgezählt. Auffällig sind Siege in Texas und Kansas sowie der Verlust von Susan Collins' Sitz in Maine.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/ski-alpin/weltcup-frauen/11-monate-nach-horrorsturz-ruecktritt-statt-rueckkehr-michelle-gisin-beendet-ihre-karriere">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/crans-montana-schweiz-uebernimmt-behandlungskosten-von-italienischen-opfern">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/ski-alpin/weltcup-frauen/11-monate-nach-horrorsturz-ruecktritt-statt-rueckkehr-michelle-gisin-beendet-ihre-karriere">Rücktritt statt Rückkehr: Michelle Gisin beendet ihre Karriere</a></h3>
-    <div class="meta">SRF Sport · Nov 3, 2026</div>
-    <div class="why">outside / sport — Ski alpin</div>
-    <p class="summary">Die Zweifach-Olympiasiegerin in der Kombination gibt elf Monate nach ihrem schweren Trainingssturz in St. Moritz das Ende ihrer Laufbahn bekannt. Ein Weltcup-Comeback hätte mindestens ein weiteres Jahr gedauert. Skisport bleibt sie aber erhalten, etwa bei der Heim-WM in Crans-Montana in anderer Rolle.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/crans-montana-schweiz-uebernimmt-behandlungskosten-von-italienischen-opfern">Crans-Montana: Schweiz übernimmt Behandlungskosten von italienischen Opfern</a></h3>
+    <div class="meta">SRF News · Nov 4, 2026 (per Tagesschau)</div>
+    <div class="why">outside / schweiz</div>
+    <p class="summary">Der Bundesrat verzichtet darauf, Italien die Spitalkosten von rund 1,5 Millionen Franken für zwölf Brandopfer zu verrechnen. Er spricht von einer Ausnahme und verweist auf Gegenseitigkeit und die erfahrene Solidarität. Zuvor hatte der Streit um die Rechnungen für Verstimmung zwischen Bern und Rom gesorgt.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-fcz-fluegel-emmanuel-haette-gegen-yb-vom-platz-fliegen-muessen">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-9-1-como-schafft-historisches-valverde-erloest-real-madrid-spaet">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-fcz-fluegel-emmanuel-haette-gegen-yb-vom-platz-fliegen-muessen">FCZ-Flügel Emmanuel hätte gegen YB vom Platz fliegen müssen</a></h3>
-    <div class="meta">SRF Sport · Nov 2026 (Runde 12, 1. Nov.)</div>
-    <div class="why">outside / sport — Super League</div>
-    <p class="summary">Der FC Zürich gewann das Spektakel gegen YB mit 5:3, Umeh Emmanuel traf doppelt. Nachträglich stuft der Verband eine übersehene Tätlichkeit des Flügels als strafwürdig ein, der Schiedsrichter hätte ihn also des Feldes verweisen müssen. Lugano baute derweil die Tabellenführung auf neun Punkte aus.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-9-1-como-schafft-historisches-valverde-erloest-real-madrid-spaet">Champions League Round-up: 9:1! Como schafft Historisches</a></h3>
+    <div class="meta">SRF Sport · Nov 4, 2026</div>
+    <div class="why">outside / sport — Champions League</div>
+    <p class="summary">Champions-League-Debütant Como gewinnt bei Lens mit 9:1, dem höchsten Auswärtssieg der Wettbewerbsgeschichte. Nach 3:0 zur Pause fielen sechs Tore binnen zehn Minuten der zweiten Hälfte. Das Round-up fasst zudem Real Madrids spätes 3:2 gegen AEK und Liverpools Spiel gegen Fenerbahce zusammen.</p>
+  </article>
+  <article class="card" data-link="https://srf.ch/sport/fussball/champions-league/bvb-besiegt-betis-valles-wird-vom-hexer-zur-tragischen-figur">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://srf.ch/sport/fussball/champions-league/bvb-besiegt-betis-valles-wird-vom-hexer-zur-tragischen-figur">BVB besiegt Betis – Valles wird vom Hexer zur tragischen Figur</a></h3>
+    <div class="meta">SRF Sport · Nov 4, 2026</div>
+    <div class="why">outside / sport — Bundesliga (Dortmund)</div>
+    <p class="summary">Borussia Dortmund setzt sich in der Champions-League-Ligaphase zu Hause gegen Betis Sevilla durch. Im Mittelpunkt steht Betis-Torhüter Valles, der zunächst glänzt und am Ende zur tragischen Figur wird.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/03/1147940/the-download-controlling-ai-agents-trump-super-intelligence/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/04/1148001/the-download-blended-meat-sight-restoring-implant-agentic-web/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/03/1147940/the-download-controlling-ai-agents-trump-super-intelligence/">The Download: controlling AI agents and “Super Intelligence” loyalty tests</a></h3>
-    <div class="meta">MIT Technology Review · Nov 3, 2026</div>
+    <h3><a href="https://www.technologyreview.com/2026/11/04/1148001/the-download-blended-meat-sight-restoring-implant-agentic-web/">The Download: blended meat, restored sight, and the agentic web</a></h3>
+    <div class="meta">MIT Technology Review · Nov 4, 2026</div>
     <div class="why">core / ai</div>
-    <p class="summary">Der Newsletter stellt einen Ansatz vor, KI-Agenten über Regeln zu steuern, denen sie aus eigenem Interesse folgen. Ob das in der Praxis funktioniert, ist offen. Zudem geht es um den politischen Streit über den Begriff «Super Intelligence» und um den Einfluss von KI auf die US-Midterms.</p>
+    <p class="summary">Die Ausgabe widmet sich unter anderem dem agentischen Web, in dem KI-Agenten Aufgaben im Netz für Nutzer erledigen. Dazu kommen Mischfleisch-Produkte als Weg, den Rindfleischkonsum zu senken, und ein Netzhautimplantat, mit dem laut Bericht über 80 Prozent der Träger wieder lesen können.</p>
   </article>
-  <article class="card" data-link="https://martech.org/ai-traffic-drives-83-more-traffic-per-visit/">
+  <article class="card" data-link="https://cmswire.com/digital-marketing/your-buyers-ask-chatgpt-thousands-of-questions-your-brand-never-tracks">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/ai-traffic-drives-83-more-traffic-per-visit/">AI traffic drives 83% more traffic per visit</a></h3>
-    <div class="meta">MarTech · Nov 4, 2026 (date from search metadata)</div>
-    <div class="why">core / martech — Adobe data</div>
-    <p class="summary">Adobe-Daten zeigen, dass von KI-Diensten verwiesene Besucher im US-Handel im September pro Besuch rund 83 Prozent mehr Umsatz brachten und etwa 90 Prozent besser konvertierten. Der KI-Traffic wuchs gegenüber dem Vorjahr um 71 Prozent. Die Daten belegen aber nicht, dass KI-lesbarere Inhalte ursächlich für mehr Umsatz sorgen.</p>
+    <h3><a href="https://cmswire.com/digital-marketing/your-buyers-ask-chatgpt-thousands-of-questions-your-brand-never-tracks">Your Buyers Ask ChatGPT Thousands of Questions Your Brand Never Tracks</a></h3>
+    <div class="meta">CMSWire · Nov 3, 2026</div>
+    <div class="why">core / martech — AI search</div>
+    <p class="summary">Laut G2-Report starten 51 Prozent von 1'076 befragten B2B-Software-Käufern ihre Recherche inzwischen häufiger mit einem KI-Chatbot als mit Google. Der Beitrag leitet daraus ab, dass Marken Fragen in KI-Antworten kaum messen. Relevant für alle, die Sichtbarkeit in Answer Engines verantworten.</p>
   </article>
-  <article class="card" data-link="https://martech.org/salesforce-buying-ai-customer-support-company-cresta/">
+  <article class="card" data-link="https://martech.org/this-weeks-ai-powered-marketing-technology-releases-2/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/salesforce-buying-ai-customer-support-company-cresta/">Salesforce buying AI customer support company Cresta</a></h3>
-    <div class="meta">MarTech · auch CMSWire · Nov 3, 2026 (approx.)</div>
-    <div class="why">core / martech — CX &amp; AI agents</div>
-    <p class="summary">Salesforce will den KI-Anbieter Cresta übernehmen, dessen Sprachagenten Kundenanrufe selbstständig abwickeln und menschliche Mitarbeitende in Echtzeit unterstützen. Der Preis ist nicht bekannt. CMSWire ordnet den Deal als dritte Übernahme-Ankündigung von Salesforce innerhalb von etwa zwei Wochen ein.</p>
+    <h3><a href="https://martech.org/this-weeks-ai-powered-marketing-technology-releases-2/">This week's AI-powered marketing technology releases</a></h3>
+    <div class="meta">MarTech · Oct 29, 2026 (weekly roundup)</div>
+    <div class="why">core / martech — releases</div>
+    <p class="summary">Der wöchentliche Überblick listet neue KI-Funktionen aus dem Martech-Markt. Genannt werden etwa Klaviynos E-Mail-Agent, der nun allgemein verfügbar ist und aus kurzen Prompts mehrstufige Flows erzeugt, sowie eine KI-Content-Plattform von Oracle.</p>
   </article>
 
   <footer>
