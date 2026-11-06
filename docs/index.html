@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-05</title>
+<title>Morning News Digest — 2026-11-06</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,79 +95,92 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-05, Thursday):
-  - Direct RSS/Atom fetching and WebFetch blocked (egress); fallback: WebSearch scoped per source domain. BBC domains are rejected by WebSearch (API error).
-  - Used (7): SRF Midterms results (Nov 4-5), SRF Crans-Montana costs (Tagesschau Nov 4), SRF CL round-up Como 9:1 (Nov 4), SRF BVB-Betis (Nov 4); MIT TR The Download Nov 4 (date in URL); CMSWire G2 AI-search piece (byline Nov 3); MarTech weekly AI releases roundup (Oct 29, weekly cadence).
-  - Skipped, date unconfirmed: SRF Chikungunya Tessin (conflicting age metadata), SRF Mindestzins BVG, SRF Lokalradios, CMSWire Zoom context layer (Oct, exact day unknown).
-  - Skipped, too old: CMSWire/Webflow AEO (May 2026).
-  - Skipped, nothing fresh: Adobe Experience Cloud Blog (no Nov posts; MAX starts Nov 10), MeasureCamp, Kicker Bundesliga (only fixture/table pages), BBC News, BBC Sport (domains rejected), SRF Super League (nothing new found).
-  - Already shown, not repeated: Salesforce/Cresta, AI traffic 83%, MIT TR Nov 2 and Nov 3 Download.
-  - Net 7 articles (3 core / 4 outside). Freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
+  Run notes (2026-11-06, Friday):
+  - Direct RSS/Atom fetching blocked (egress); fallback: WebSearch scoped per source domain. BBC domains rejected by WebSearch.
+  - Used (8): SRF Köniz Kühlanlagen-Hack, SRF USA-Iran (Nov 3), SRF Thun-Lausanne 5:4 (Runde 12), SRF Bundesgericht Donzallaz/van de Graaf (Nov 5); MIT TR Download Nov 5 and permitting-reform piece (Nov 5, dates in URL); MarTech AI-ROI (Nov 5) and AI-context buying (Nov 4); Adobe Blog MAX sessions (Nov 5, date in URL). That is 9 cards: 5 core / 4 outside.
+  - Skipped, nothing fresh/confirmable: CMSWire (newest found Sept 2026), MeasureCamp, Kicker Bundesliga, BBC News, BBC Sport (domains rejected).
+  - Skipped, date unconfirmed: SRF Ukraine items (Cherson ceasefire etc.), SRF EFK Reservekraftwerke.
+  - Already shown, not repeated: SRF Lugano-Basel, Salesforce/Cresta, AI traffic 83%.
+  - Net 9 articles, below the ~15 target: freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Thursday, November 5, 2026 · 7 articles</div>
+    <div class="date">Friday, November 6, 2026 · 9 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/international/usa/midterms-in-den-usa-machtwechsel-im-kongress-die-ergebnisse-auf-einen-blick">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-nun-auch-in-der-schweiz-metzgerei-opfer-von-hackerangriff">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/usa/midterms-in-den-usa-machtwechsel-im-kongress-die-ergebnisse-auf-einen-blick">Midterms USA: Machtwechsel im Kongress</a></h3>
-    <div class="meta">SRF News · Nov 4–5, 2026</div>
-    <div class="why">outside / world</div>
-    <p class="summary">Die Demokraten haben bei den Zwischenwahlen laut SRF-Liveberichten beide Kongresskammern erobert. Im Senat kommen sie bisher auf 54 Sitze, zwei Bundesstaaten sind noch nicht ausgezählt. Auffällig sind Siege in Texas und Kansas sowie der Verlust von Susan Collins' Sitz in Maine.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/crans-montana-schweiz-uebernimmt-behandlungskosten-von-italienischen-opfern">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/crans-montana-schweiz-uebernimmt-behandlungskosten-von-italienischen-opfern">Crans-Montana: Schweiz übernimmt Behandlungskosten von italienischen Opfern</a></h3>
-    <div class="meta">SRF News · Nov 4, 2026 (per Tagesschau)</div>
+    <h3><a href="https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-nun-auch-in-der-schweiz-metzgerei-opfer-von-hackerangriff">Kühlanlage manipuliert: Berner Metzgerei Opfer eines Hackerangriffs</a></h3>
+    <div class="meta">SRF News · Nov 5, 2026</div>
     <div class="why">outside / schweiz</div>
-    <p class="summary">Der Bundesrat verzichtet darauf, Italien die Spitalkosten von rund 1,5 Millionen Franken für zwölf Brandopfer zu verrechnen. Er spricht von einer Ausnahme und verweist auf Gegenseitigkeit und die erfahrene Solidarität. Zuvor hatte der Streit um die Rechnungen für Verstimmung zwischen Bern und Rom gesorgt.</p>
+    <p class="summary">Eine Metzgerei in Köniz bei Bern meldet, dass die Steuerung ihrer Kühl- und Tiefkühlanlagen manipuliert wurde und die Temperaturen stark aus dem Ruder liefen. Die Filiale wurde vorübergehend geschlossen, auch einzelne Volg-Filialen sind laut SRF betroffen. Es ist der erste öffentlich bekannte Fall dieser Art in der Schweiz, ähnliche Angriffe gab es zuvor in anderen europäischen Ländern.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-9-1-como-schafft-historisches-valverde-erloest-real-madrid-spaet">
+  <article class="card" data-link="https://srf.ch/news/international/konflikt-usa-iran-wir-stecken-schon-jetzt-im-schlimmsten-szenario">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-9-1-como-schafft-historisches-valverde-erloest-real-madrid-spaet">Champions League Round-up: 9:1! Como schafft Historisches</a></h3>
-    <div class="meta">SRF Sport · Nov 4, 2026</div>
-    <div class="why">outside / sport — Champions League</div>
-    <p class="summary">Champions-League-Debütant Como gewinnt bei Lens mit 9:1, dem höchsten Auswärtssieg der Wettbewerbsgeschichte. Nach 3:0 zur Pause fielen sechs Tore binnen zehn Minuten der zweiten Hälfte. Das Round-up fasst zudem Real Madrids spätes 3:2 gegen AEK und Liverpools Spiel gegen Fenerbahce zusammen.</p>
+    <h3><a href="https://srf.ch/news/international/konflikt-usa-iran-wir-stecken-schon-jetzt-im-schlimmsten-szenario">Konflikt USA–Iran: «Wir stecken schon jetzt im schlimmsten Fall»</a></h3>
+    <div class="meta">SRF News · Nov 3, 2026</div>
+    <div class="why">outside / world</div>
+    <p class="summary">Der Bericht beschreibt die Stimmung im Iran angesichts der Angst vor einem US-Angriff und einer anhaltenden Wirtschaftskrise. Viele Menschen wirken laut SRF resigniert und fühlen sich ohnehin schon in einer Notlage.</p>
   </article>
-  <article class="card" data-link="https://srf.ch/sport/fussball/champions-league/bvb-besiegt-betis-valles-wird-vom-hexer-zur-tragischen-figur">
+  <article class="card" data-link="https://srf.ch/sport/fussball/super-league/12-super-league-runde-nach-fehlerorgie-thun-gewinnt-9-tore-spektakel-in-lausanne">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://srf.ch/sport/fussball/champions-league/bvb-besiegt-betis-valles-wird-vom-hexer-zur-tragischen-figur">BVB besiegt Betis – Valles wird vom Hexer zur tragischen Figur</a></h3>
-    <div class="meta">SRF Sport · Nov 4, 2026</div>
-    <div class="why">outside / sport — Bundesliga (Dortmund)</div>
-    <p class="summary">Borussia Dortmund setzt sich in der Champions-League-Ligaphase zu Hause gegen Betis Sevilla durch. Im Mittelpunkt steht Betis-Torhüter Valles, der zunächst glänzt und am Ende zur tragischen Figur wird.</p>
+    <h3><a href="https://srf.ch/sport/fussball/super-league/12-super-league-runde-nach-fehlerorgie-thun-gewinnt-9-tore-spektakel-in-lausanne">Nach Fehlerorgie: Thun gewinnt 9-Tore-Spektakel in Lausanne</a></h3>
+    <div class="meta">SRF Sport · Nov 2026, Super-League-Runde 12</div>
+    <div class="why">outside / sport — Super League</div>
+    <p class="summary">Thun dreht in Lausanne einen 1:4-Rückstand in der 70. Minute noch in ein 5:4. Die Partie war geprägt von vielen Abwehrfehlern auf beiden Seiten und lieferte neun Tore.</p>
+  </article>
+  <article class="card" data-link="https://srf.ch/news/schweiz/donzallaz-und-van-de-graaf-liebesbeziehung-am-bundesgericht-urteil-mit-spannung-erwartet">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://srf.ch/news/schweiz/donzallaz-und-van-de-graaf-liebesbeziehung-am-bundesgericht-urteil-mit-spannung-erwartet">Liebesbeziehung am Bundesgericht: Urteil mit Spannung erwartet</a></h3>
+    <div class="meta">SRF News · Nov 5, 2026</div>
+    <div class="why">outside / schweiz</div>
+    <p class="summary">Das Bundesgericht verhandelt in Lausanne öffentlich über die Affäre zwischen den Bundesrichtern Donzallaz und van de Graaf. Der Fall gilt als Pilotprozess, entsprechend gespannt wird das Urteil erwartet.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/04/1148001/the-download-blended-meat-sight-restoring-implant-agentic-web/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/05/1144908/the-download-texas-fragile-ai-boom-us-energy-policy/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/04/1148001/the-download-blended-meat-sight-restoring-implant-agentic-web/">The Download: blended meat, restored sight, and the agentic web</a></h3>
-    <div class="meta">MIT Technology Review · Nov 4, 2026</div>
+    <h3><a href="https://www.technologyreview.com/2026/11/05/1144908/the-download-texas-fragile-ai-boom-us-energy-policy/">The Download: Texas&#x27;s fragile AI boom and energy policy shifts</a></h3>
+    <div class="meta">MIT Technology Review · Nov 5, 2026</div>
     <div class="why">core / ai</div>
-    <p class="summary">Die Ausgabe widmet sich unter anderem dem agentischen Web, in dem KI-Agenten Aufgaben im Netz für Nutzer erledigen. Dazu kommen Mischfleisch-Produkte als Weg, den Rindfleischkonsum zu senken, und ein Netzhautimplantat, mit dem laut Bericht über 80 Prozent der Träger wieder lesen können.</p>
+    <p class="summary">Die Ausgabe fragt, ob ein politischer Umschwung in Texas dessen Rolle als wichtigster US-Standort für KI-Rechenzentren gefährden könnte. Dazu kommt ein Senatsvotum zu einem Gesetz, das Genehmigungen für Energieprojekte neu regeln soll, sowie Forschung dazu, ob KI-Systeme ihre eigenen inneren Zustände erkennen können.</p>
   </article>
-  <article class="card" data-link="https://cmswire.com/digital-marketing/your-buyers-ask-chatgpt-thousands-of-questions-your-brand-never-tracks">
+  <article class="card" data-link="https://martech.org/how-to-turn-ai-productivity-gains-into-marketing-roi/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://cmswire.com/digital-marketing/your-buyers-ask-chatgpt-thousands-of-questions-your-brand-never-tracks">Your Buyers Ask ChatGPT Thousands of Questions Your Brand Never Tracks</a></h3>
-    <div class="meta">CMSWire · Nov 3, 2026</div>
-    <div class="why">core / martech — AI search</div>
-    <p class="summary">Laut G2-Report starten 51 Prozent von 1'076 befragten B2B-Software-Käufern ihre Recherche inzwischen häufiger mit einem KI-Chatbot als mit Google. Der Beitrag leitet daraus ab, dass Marken Fragen in KI-Antworten kaum messen. Relevant für alle, die Sichtbarkeit in Answer Engines verantworten.</p>
+    <h3><a href="https://martech.org/how-to-turn-ai-productivity-gains-into-marketing-roi/">How to turn AI productivity gains into marketing ROI</a></h3>
+    <div class="meta">MarTech · Nov 5, 2026</div>
+    <div class="why">core / martech — AI ROI</div>
+    <p class="summary">Der Beitrag argumentiert, dass schnelleres Erstellen von Inhalten wenig bringt, solange Freigaben und Reviews zum Flaschenhals bleiben. Empfohlen wird, den Ablauf vom Briefing bis zum Launch zu analysieren, gewonnene Zeit gezielt zu reinvestieren und den gesamten Prozess samt Tool- und Token-Kosten zu messen.</p>
   </article>
-  <article class="card" data-link="https://martech.org/this-weeks-ai-powered-marketing-technology-releases-2/">
+  <article class="card" data-link="https://martech.org/what-to-do-before-buying-a-martech-platform-with-ai-context/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/this-weeks-ai-powered-marketing-technology-releases-2/">This week's AI-powered marketing technology releases</a></h3>
-    <div class="meta">MarTech · Oct 29, 2026 (weekly roundup)</div>
-    <div class="why">core / martech — releases</div>
-    <p class="summary">Der wöchentliche Überblick listet neue KI-Funktionen aus dem Martech-Markt. Genannt werden etwa Klaviyos E-Mail-Agent, der nun allgemein verfügbar ist und aus kurzen Prompts mehrstufige Flows erzeugt, sowie eine KI-Content-Plattform von Oracle.</p>
+    <h3><a href="https://martech.org/what-to-do-before-buying-a-martech-platform-with-ai-context/">What to do before buying a martech platform with AI context</a></h3>
+    <div class="meta">MarTech · Nov 4, 2026</div>
+    <div class="why">core / martech — AI governance</div>
+    <p class="summary">Bevor eine Plattform mit KI-Kontext gekauft wird, sollten Markenregeln, Kundenfakten und Freigaberechte intern geklärt sein. Sonst wendet ein KI-Agent veraltete Vorgaben konsequent an. Vorgeschlagen werden risikobasierte Freigabestufen und eine Checkliste vor Vertragsabschluss.</p>
+  </article>
+  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/11/05/best-sessions-to-attend-adobe-max-2026">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://blog.adobe.com/en/publish/2026/11/05/best-sessions-to-attend-adobe-max-2026">The best sessions to attend at Adobe MAX 2026</a></h3>
+    <div class="meta">Adobe Blog · Nov 5, 2026</div>
+    <div class="why">core / adobe</div>
+    <p class="summary">Adobe stellt eine Auswahl der Sessions für die MAX in Miami Beach (10.–12. November) vor, mit über 200 Sessions in sieben Tracks. Nützlich als Vorschau, bevor die Keynote-Ankündigungen kommen.</p>
+  </article>
+  <article class="card" data-link="https://technologyreview.com/2026/11/05/1148062/permitting-reform">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://technologyreview.com/2026/11/05/1148062/permitting-reform">A new bill could change how the US builds energy infrastructure</a></h3>
+    <div class="meta">MIT Technology Review · Nov 5, 2026</div>
+    <div class="why">core / tech</div>
+    <p class="summary">Ein neues Gesetz im US-Senat könnte verändern, wie Energieinfrastruktur genehmigt und gebaut wird – relevant auch für den Strombedarf der KI-Rechenzentren.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 7 articles, below the usual ~15: many sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 9 articles, below the usual ~15: many sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
   </footer>
 </div>
 <script>
