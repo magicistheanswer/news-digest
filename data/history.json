@@ -1,121 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-10-28",
-      "link": "https://www.srf.ch/news/schweiz/efk-bericht-kostenexplosion-bei-neuem-migrationssystem",
-      "title": "EFK-Bericht: Kostenexplosion bei neuem Migrationssystem"
-    },
-    {
-      "date": "2026-10-28",
-      "link": "https://www.srf.ch/news/international/schutz-der-eu-aussengrenzen-bruessel-plant-massiven-ausbau-von-frontex",
-      "title": "Brüssel plant massiven Ausbau der Grenzschutz-Agentur Frontex"
-    },
-    {
-      "date": "2026-10-28",
-      "link": "https://www.srf.ch/sport/fussball/internationale-ligen/yamal-und-mbappe-ausgestochen-ballon-d-or-erstmals-an-kane-und-zum-3-mal-an-putellas",
-      "title": "Ballon d'Or erstmals an Kane und zum 3. Mal an Putellas"
-    },
-    {
-      "date": "2026-10-28",
-      "link": "https://martech.org/the-next-wave-of-marketing-automation-is-taking-aim-at-marketo/",
-      "title": "The next wave of marketing automation is taking aim at Marketo"
-    },
-    {
-      "date": "2026-10-28",
-      "link": "https://martech.org/restructuring-martech-ops-for-autonomous-ai-agents/",
-      "title": "Restructuring martech ops for autonomous AI agents"
-    },
-    {
-      "date": "2026-10-28",
-      "link": "https://www.cmswire.com/customer-experience/sprinklr-launches-6-marketing-ai-agents-in-beta/",
-      "title": "Sprinklr Unveils 6 AI Agents For Campaign Execution"
-    },
-    {
-      "date": "2026-10-28",
-      "link": "https://www.technologyreview.com/2026/10/26/1147650/the-download-everyday-ai-harms-nuclear-spaceflight/",
-      "title": "The Download: everyday AI harms and the race to nuclear spaceflight"
-    },
-    {
-      "date": "2026-10-29",
-      "link": "https://www.srf.ch/news/international/nahost/krieg-im-nahen-osten-israel-keine-klare-mehrheit-bei-parlamentswahl",
-      "title": "Israel: Keine klare Mehrheit bei der Parlamentswahl"
-    },
-    {
-      "date": "2026-10-29",
-      "link": "https://www.srf.ch/news/schweiz/luftverteidigung-bundesrat-beschraenkt-luftabwehr-auswahl-und-haelt-an-patriot-fest",
-      "title": "Bundesrat engt Rennen um Luftabwehr ein und hält an Patriot fest"
-    },
-    {
-      "date": "2026-10-29",
-      "link": "https://www.srf.ch/news/schweiz/hilfsorganisation-unter-druck-missbrauchsfaelle-bei-aerzte-ohne-grenzen-schaden-ist-angerichtet",
-      "title": "Missbrauchsfälle bei Ärzte ohne Grenzen: Der Bund kürzt Beitrag"
-    },
-    {
-      "date": "2026-10-29",
-      "link": "https://www.srf.ch/sport/fussball/super-league/3-2-sieg-in-der-11-sl-runde-sieg-auf-sparflamme-lugano-schlaegt-thun-auch-dank-joker-ajeti",
-      "title": "Sieg auf Sparflamme: Lugano schlägt Thun dank Joker Ajeti"
-    },
-    {
-      "date": "2026-10-29",
-      "link": "https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/",
-      "title": "The Download: dead startups fueling AI and interspecies communication"
-    },
-    {
-      "date": "2026-10-29",
-      "link": "https://www.cmswire.com/the-wire/invoca-launches-messaging-agents-for-google-ads-to-win-the-moments-that-shape-high-stakes-purchases/",
-      "title": "Invoca launches Messaging Agents for Google Ads"
-    },
-    {
-      "date": "2026-10-29",
-      "link": "https://www.cmswire.com/digital-experience/10-chatbot-providers-you-should-know-about/",
-      "title": "10 AI Chatbot Providers Compared on Answers, Actions and Human Handoff"
-    },
-    {
-      "date": "2026-10-29",
-      "link": "https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes",
-      "title": "Journey Optimizer release notes — October 2026"
-    },
-    {
-      "date": "2026-10-30",
-      "link": "https://www.srf.ch/news/schweiz/cassis-besucht-nordkorea-was-bringt-der-schweiz-ein-buero-in-nordkorea",
-      "title": "Cassis in Nordkorea: Was bringt ein Schweizer Büro in Pjöngjang?"
-    },
-    {
-      "date": "2026-10-30",
-      "link": "https://srf.ch/news/wirtschaft/europaeischen-zentralbank-ezb-praesidentin-christine-lagarde-tritt-vorzeitig-ab",
-      "title": "Nach Rücktrittsankündigung: Lagarde belässt Leitzins"
-    },
-    {
-      "date": "2026-10-30",
-      "link": "https://www.srf.ch/news/international/zugunglueck-suedlich-von-madrid-rettungskraefte-im-dauereinsatz-suche-nach-opfern-dauert-an",
-      "title": "Zugunglück südlich von Madrid: Rettungskräfte im Dauereinsatz"
-    },
-    {
-      "date": "2026-10-30",
-      "link": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time",
-      "title": "We urgently need to monitor AI agents’ actions in real time"
-    },
-    {
-      "date": "2026-10-30",
-      "link": "https://martech.org/6-mistakes-to-avoid-with-ai-powered-performance-marketing/",
-      "title": "6 mistakes to avoid with AI-powered performance marketing"
-    },
-    {
-      "date": "2026-10-30",
-      "link": "https://martech.org/the-risks-of-optimizing-seo-for-ai-over-users/",
-      "title": "The risks of optimizing SEO for AI over users"
-    },
-    {
-      "date": "2026-10-30",
-      "link": "https://www.cmswire.com/contact-center/what-are-contact-centers-actually-doing-with-ai/",
-      "title": "What Are Contact Centers Actually Doing With AI?"
-    },
-    {
-      "date": "2026-10-30",
-      "link": "https://www.cmswire.com/the-wire/cordial-launches-headless-cdp-bringing-real-time-customer-data-to-where-marketers-work/",
-      "title": "Cordial Launches Headless CDP, Bringing Real-Time Customer Data to Where Marketers Work"
-    },
-    {
       "date": "2026-10-31",
       "link": "https://www.srf.ch/news/schweiz/millionenbetrug-bei-ruag-pfister-spricht-von-schwerwiegenden-verfehlungen-bei-der-ruag",
       "title": "Millionenbetrug bei Ruag: Laut Pfister «schwere Verfehlungen»"
@@ -304,6 +189,36 @@
       "date": "2026-11-06",
       "link": "https://technologyreview.com/2026/11/05/1148062/permitting-reform",
       "title": "A new bill could change how the US builds energy infrastructure"
+    },
+    {
+      "date": "2026-11-07",
+      "link": "https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-befuerwortet-schweizer-erasmus-beitrag",
+      "title": "EU-Vertragspaket: Nationalratskommission befürwortet Schweizer Erasmus-Beitrag"
+    },
+    {
+      "date": "2026-11-07",
+      "link": "https://www.srf.ch/news/schweiz/abstimmungs-arena-soll-das-kriegsmaterialgesetz-gelockert-werden",
+      "title": "«Abstimmungs-Arena»: Soll das Kriegsmaterialgesetz gelockert werden?"
+    },
+    {
+      "date": "2026-11-07",
+      "link": "https://www.srf.ch/news/wirtschaft/nach-den-midterms-warum-sind-die-boersen-rund-um-den-globus-eingebrochen",
+      "title": "Nach den Midterms: Warum sind die Börsen rund um den Globus eingebrochen?"
+    },
+    {
+      "date": "2026-11-07",
+      "link": "https://www.srf.ch/sport/fussball/conference-league/3-1-gegen-heart-of-midlothian-thun-bestaetigt-gegen-schwache-schotten-seinen-aufwaertstrend",
+      "title": "Thun bestätigt gegen schwache Schotten seinen Aufwärtstrend"
+    },
+    {
+      "date": "2026-11-07",
+      "link": "https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/",
+      "title": "The Download: a humanoid cleans house and Samsung builds for the AI boom"
+    },
+    {
+      "date": "2026-11-07",
+      "link": "https://www.cmswire.com/the-wire/observeai-launches-headless-companion-agent-to-bring-real-time-guidance-automation/",
+      "title": "Observe.AI Launches Headless Companion Agent for CX Agents' Desktops"
     }
   ]
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-06</title>
+<title>Morning News Digest — 2026-11-07</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,92 +95,69 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-06, Friday):
+  Run notes (2026-11-07, Saturday):
   - Direct RSS/Atom fetching blocked (egress); fallback: WebSearch scoped per source domain. BBC domains rejected by WebSearch.
-  - Used (8): SRF Köniz Kühlanlagen-Hack, SRF USA-Iran (Nov 3), SRF Thun-Lausanne 5:4 (Runde 12), SRF Bundesgericht Donzallaz/van de Graaf (Nov 5); MIT TR Download Nov 5 and permitting-reform piece (Nov 5, dates in URL); MarTech AI-ROI (Nov 5) and AI-context buying (Nov 4); Adobe Blog MAX sessions (Nov 5, date in URL). That is 9 cards: 5 core / 4 outside.
-  - Skipped, nothing fresh/confirmable: CMSWire (newest found Sept 2026), MeasureCamp, Kicker Bundesliga, BBC News, BBC Sport (domains rejected).
-  - Skipped, date unconfirmed: SRF Ukraine items (Cherson ceasefire etc.), SRF EFK Reservekraftwerke.
-  - Already shown, not repeated: SRF Lugano-Basel, Salesforce/Cresta, AI traffic 83%.
-  - Net 9 articles, below the ~15 target: freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
+  - Used (6): SRF Erasmus-Beitrag (Nov 6, date inferred from "Friday" parliament release), SRF Abstimmungs-Arena Kriegsmaterialgesetz (Nov 6 broadcast), SRF Börsen nach Midterms (Nov 5/6), SRF Thun-Hearts 3:1 (Nov 5); MIT TR Download Nov 6 (date in URL); CMSWire Observe.AI press release (Nov 3). 2 core / 4 outside.
+  - Skipped, nothing fresh/confirmable or already shown: MarTech (recent items already shown or publish date unconfirmed), Adobe Experience Cloud Blog (only already-shown MAX post; AEP release notes Oct 27 outside window), MeasureCamp, Kicker Bundesliga, BBC News, BBC Sport (domains rejected).
+  - Net 6 articles, far below the ~15 target and the 75/25 mix: freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Friday, November 6, 2026 · 9 articles</div>
+    <div class="date">Saturday, November 7, 2026 · 6 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-nun-auch-in-der-schweiz-metzgerei-opfer-von-hackerangriff">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-befuerwortet-schweizer-erasmus-beitrag">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-nun-auch-in-der-schweiz-metzgerei-opfer-von-hackerangriff">Kühlanlage manipuliert: Berner Metzgerei Opfer eines Hackerangriffs</a></h3>
-    <div class="meta">SRF News · Nov 5, 2026</div>
+    <h3><a href="https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-befuerwortet-schweizer-erasmus-beitrag">EU-Vertragspaket: Nationalratskommission befürwortet Schweizer Erasmus-Beitrag</a></h3>
+    <div class="meta">SRF News · Nov 6, 2026</div>
     <div class="why">outside / schweiz</div>
-    <p class="summary">Eine Metzgerei in Köniz bei Bern meldet, dass die Steuerung ihrer Kühl- und Tiefkühlanlagen manipuliert wurde und die Temperaturen stark aus dem Ruder liefen. Die Filiale wurde vorübergehend geschlossen, auch einzelne Volg-Filialen sind laut SRF betroffen. Es ist der erste öffentlich bekannte Fall dieser Art in der Schweiz, ähnliche Angriffe gab es zuvor in anderen europäischen Ländern.</p>
+    <p class="summary">Die Aussenpolitische Kommission des Nationalrats empfiehlt mit 16 zu 9 Stimmen, den Schweizer Beitrag von 193 Millionen Franken an Erasmus+ für 2027 anzunehmen. Die Beratungen zum übrigen EU-Vertragspaket sind noch nicht abgeschlossen und sollen Mitte November enden.</p>
   </article>
-  <article class="card" data-link="https://srf.ch/news/international/konflikt-usa-iran-wir-stecken-schon-jetzt-im-schlimmsten-szenario">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/abstimmungs-arena-soll-das-kriegsmaterialgesetz-gelockert-werden">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://srf.ch/news/international/konflikt-usa-iran-wir-stecken-schon-jetzt-im-schlimmsten-szenario">Konflikt USA–Iran: «Wir stecken schon jetzt im schlimmsten Fall»</a></h3>
-    <div class="meta">SRF News · Nov 3, 2026</div>
+    <h3><a href="https://www.srf.ch/news/schweiz/abstimmungs-arena-soll-das-kriegsmaterialgesetz-gelockert-werden">«Abstimmungs-Arena»: Soll das Kriegsmaterialgesetz gelockert werden?</a></h3>
+    <div class="meta">SRF News · Nov 6, 2026</div>
+    <div class="why">outside / schweiz</div>
+    <p class="summary">Vor der Abstimmung vom 29. November diskutierten Befürworter und Gegner in der Arena über die Lockerung der Regeln für Waffenexporte. Die Befürworter wollen Lieferungen an Partnerstaaten erleichtern, die Gegner fürchten weniger parlamentarische Kontrolle.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/nach-den-midterms-warum-sind-die-boersen-rund-um-den-globus-eingebrochen">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/wirtschaft/nach-den-midterms-warum-sind-die-boersen-rund-um-den-globus-eingebrochen">Nach den Midterms: Warum sind die Börsen rund um den Globus eingebrochen?</a></h3>
+    <div class="meta">SRF News · Nov 6, 2026</div>
     <div class="why">outside / world</div>
-    <p class="summary">Der Bericht beschreibt die Stimmung im Iran angesichts der Angst vor einem US-Angriff und einer anhaltenden Wirtschaftskrise. Viele Menschen wirken laut SRF resigniert und fühlen sich ohnehin schon in einer Notlage.</p>
+    <p class="summary">Nach dem Sieg der Demokraten bei den US-Zwischenwahlen gaben die Märkte deutlich nach. SRF nennt als Gründe vor allem die Sorge vor strengerer KI-Regulierung sowie die Unsicherheit durch den Iran-Krieg und mögliche höhere Ölpreise.</p>
   </article>
-  <article class="card" data-link="https://srf.ch/sport/fussball/super-league/12-super-league-runde-nach-fehlerorgie-thun-gewinnt-9-tore-spektakel-in-lausanne">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/conference-league/3-1-gegen-heart-of-midlothian-thun-bestaetigt-gegen-schwache-schotten-seinen-aufwaertstrend">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://srf.ch/sport/fussball/super-league/12-super-league-runde-nach-fehlerorgie-thun-gewinnt-9-tore-spektakel-in-lausanne">Nach Fehlerorgie: Thun gewinnt 9-Tore-Spektakel in Lausanne</a></h3>
-    <div class="meta">SRF Sport · Nov 2026, Super-League-Runde 12</div>
-    <div class="why">outside / sport — Super League</div>
-    <p class="summary">Thun dreht in Lausanne einen 1:4-Rückstand in der 70. Minute noch in ein 5:4. Die Partie war geprägt von vielen Abwehrfehlern auf beiden Seiten und lieferte neun Tore.</p>
-  </article>
-  <article class="card" data-link="https://srf.ch/news/schweiz/donzallaz-und-van-de-graaf-liebesbeziehung-am-bundesgericht-urteil-mit-spannung-erwartet">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://srf.ch/news/schweiz/donzallaz-und-van-de-graaf-liebesbeziehung-am-bundesgericht-urteil-mit-spannung-erwartet">Liebesbeziehung am Bundesgericht: Urteil mit Spannung erwartet</a></h3>
-    <div class="meta">SRF News · Nov 5, 2026</div>
-    <div class="why">outside / schweiz</div>
-    <p class="summary">Das Bundesgericht verhandelt in Lausanne öffentlich über die Affäre zwischen den Bundesrichtern Donzallaz und van de Graaf. Der Fall gilt als Pilotprozess, entsprechend gespannt wird das Urteil erwartet.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/conference-league/3-1-gegen-heart-of-midlothian-thun-bestaetigt-gegen-schwache-schotten-seinen-aufwaertstrend">Thun bestätigt gegen schwache Schotten seinen Aufwärtstrend</a></h3>
+    <div class="meta">SRF Sport · Nov 5, 2026</div>
+    <div class="why">outside / sport — Conference League</div>
+    <p class="summary">Thun gewinnt sein drittes Conference-League-Spiel zuhause 3:1 gegen Heart of Midlothian und holt damit den ersten Sieg in der Ligaphase. Zwei der Tore entstanden nach Fehlern der Schotten.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/05/1144908/the-download-texas-fragile-ai-boom-us-energy-policy/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/05/1144908/the-download-texas-fragile-ai-boom-us-energy-policy/">The Download: Texas&#x27;s fragile AI boom and energy policy shifts</a></h3>
-    <div class="meta">MIT Technology Review · Nov 5, 2026</div>
+    <h3><a href="https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/">The Download: a humanoid cleans house and Samsung builds for the AI boom</a></h3>
+    <div class="meta">MIT Technology Review · Nov 6, 2026</div>
     <div class="why">core / ai</div>
-    <p class="summary">Die Ausgabe fragt, ob ein politischer Umschwung in Texas dessen Rolle als wichtigster US-Standort für KI-Rechenzentren gefährden könnte. Dazu kommt ein Senatsvotum zu einem Gesetz, das Genehmigungen für Energieprojekte neu regeln soll, sowie Forschung dazu, ob KI-Systeme ihre eigenen inneren Zustände erkennen können.</p>
+    <p class="summary">Ein Test in San Francisco zeigt, dass ein Haushalts-Humanoide noch immer von Menschen ferngesteuert wird. Zudem geht es um Samsungs riesigen Chip-Campus in Südkorea, der auf den KI-Boom ausgerichtet ist.</p>
   </article>
-  <article class="card" data-link="https://martech.org/how-to-turn-ai-productivity-gains-into-marketing-roi/">
+  <article class="card" data-link="https://www.cmswire.com/the-wire/observeai-launches-headless-companion-agent-to-bring-real-time-guidance-automation/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/how-to-turn-ai-productivity-gains-into-marketing-roi/">How to turn AI productivity gains into marketing ROI</a></h3>
-    <div class="meta">MarTech · Nov 5, 2026</div>
-    <div class="why">core / martech — AI ROI</div>
-    <p class="summary">Der Beitrag argumentiert, dass schnelleres Erstellen von Inhalten wenig bringt, solange Freigaben und Reviews zum Flaschenhals bleiben. Empfohlen wird, den Ablauf vom Briefing bis zum Launch zu analysieren, gewonnene Zeit gezielt zu reinvestieren und den gesamten Prozess samt Tool- und Token-Kosten zu messen.</p>
-  </article>
-  <article class="card" data-link="https://martech.org/what-to-do-before-buying-a-martech-platform-with-ai-context/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/what-to-do-before-buying-a-martech-platform-with-ai-context/">What to do before buying a martech platform with AI context</a></h3>
-    <div class="meta">MarTech · Nov 4, 2026</div>
-    <div class="why">core / martech — AI governance</div>
-    <p class="summary">Bevor eine Plattform mit KI-Kontext gekauft wird, sollten Markenregeln, Kundenfakten und Freigaberechte intern geklärt sein. Sonst wendet ein KI-Agent veraltete Vorgaben konsequent an. Vorgeschlagen werden risikobasierte Freigabestufen und eine Checkliste vor Vertragsabschluss.</p>
-  </article>
-  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/11/05/best-sessions-to-attend-adobe-max-2026">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://blog.adobe.com/en/publish/2026/11/05/best-sessions-to-attend-adobe-max-2026">The best sessions to attend at Adobe MAX 2026</a></h3>
-    <div class="meta">Adobe Blog · Nov 5, 2026</div>
-    <div class="why">core / adobe</div>
-    <p class="summary">Adobe stellt eine Auswahl der Sessions für die MAX in Miami Beach (10.–12. November) vor, mit über 200 Sessions in sieben Tracks. Nützlich als Vorschau, bevor die Keynote-Ankündigungen kommen.</p>
-  </article>
-  <article class="card" data-link="https://technologyreview.com/2026/11/05/1148062/permitting-reform">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://technologyreview.com/2026/11/05/1148062/permitting-reform">A new bill could change how the US builds energy infrastructure</a></h3>
-    <div class="meta">MIT Technology Review · Nov 5, 2026</div>
-    <div class="why">core / tech</div>
-    <p class="summary">Ein neues Gesetz im US-Senat könnte verändern, wie Energieinfrastruktur genehmigt und gebaut wird – relevant auch für den Strombedarf der KI-Rechenzentren.</p>
+    <h3><a href="https://www.cmswire.com/the-wire/observeai-launches-headless-companion-agent-to-bring-real-time-guidance-automation/">Observe.AI Launches Headless Companion Agent for CX Agents&#x27; Desktops</a></h3>
+    <div class="meta">CMSWire (press release) · Nov 3, 2026</div>
+    <div class="why">core / cx — agentic AI</div>
+    <p class="summary">Observe.AI liefert KI-Hinweise und Automatisierung direkt in bestehende Systeme, ohne zusätzliche Oberfläche. Nach Anrufen können Zusammenfassungen erstellt und Folgeprozesse angestossen werden; SoFi nutzt es als Early Adopter. Die Angaben stammen vom Anbieter selbst.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 9 articles, below the usual ~15: many sources had no fresh, confirmably dated, unseen items (see the run notes in the page source). "Mark read" hides a card in this browser only (via localStorage) — it doesn't affect what other devices see or what future digests include.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 6 articles, below the usual ~15: many sources had no fresh, confirmably dated, unseen items (see the run notes in the page source).
   </footer>
 </div>
 <script>
