@@ -1,26 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-10-31",
-      "link": "https://www.srf.ch/news/schweiz/millionenbetrug-bei-ruag-pfister-spricht-von-schwerwiegenden-verfehlungen-bei-der-ruag",
-      "title": "Millionenbetrug bei Ruag: Laut Pfister «schwere Verfehlungen»"
-    },
-    {
-      "date": "2026-10-31",
-      "link": "https://www.technologyreview.com/2026/10/30/1147843/the-download-glp-1s-eating-disorders-forever-chemicals",
-      "title": "The Download: GLP-1s and eating disorders, self-aware cities, and forever chemicals"
-    },
-    {
-      "date": "2026-10-31",
-      "link": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
-      "title": "The latest AI-powered martech news and releases"
-    },
-    {
-      "date": "2026-10-31",
-      "link": "https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/latest",
-      "title": "Adobe Experience Platform Release Notes, October 2026"
-    },
-    {
       "date": "2026-11-01",
       "link": "https://cmswire.com/customer-experience/is-metas-muse-the-start-of-the-b2a-era",
       "title": "Is Meta's Muse the Start of the Business-to-Agent Era?"
@@ -219,6 +199,21 @@
       "date": "2026-11-07",
       "link": "https://www.cmswire.com/the-wire/observeai-launches-headless-companion-agent-to-bring-real-time-guidance-automation/",
       "title": "Observe.AI Launches Headless Companion Agent for CX Agents' Desktops"
+    },
+    {
+      "date": "2026-11-08",
+      "link": "https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-svp-fraktionschef-thomas-aeschi-will-bundesrat-werden",
+      "title": "SVP-Fraktionschef Thomas Aeschi will Bundesrat werden"
+    },
+    {
+      "date": "2026-11-08",
+      "link": "https://www.srf.ch/sport/fussball/super-league/siegtor-in-der-92-minute-dank-essende-und-viel-dusel-yb-gewinnt-in-luzern",
+      "title": "Siegtor in der 92. Minute: Dank Essende und viel Dusel gewinnt YB in Luzern"
+    },
+    {
+      "date": "2026-11-08",
+      "link": "https://martech.org/chatgpts-paid-traffic-is-worth-far-less-than-googles/",
+      "title": "ChatGPT's paid traffic is worth far less than Google's"
     }
   ]
 }

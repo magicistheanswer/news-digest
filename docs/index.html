@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-07</title>
+<title>Morning News Digest — 2026-11-08</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,69 +95,48 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-07, Saturday):
-  - Direct RSS/Atom fetching blocked (egress); fallback: WebSearch scoped per source domain. BBC domains rejected by WebSearch.
-  - Used (6): SRF Erasmus-Beitrag (Nov 6, date inferred from "Friday" parliament release), SRF Abstimmungs-Arena Kriegsmaterialgesetz (Nov 6 broadcast), SRF Börsen nach Midterms (Nov 5/6), SRF Thun-Hearts 3:1 (Nov 5); MIT TR Download Nov 6 (date in URL); CMSWire Observe.AI press release (Nov 3). 2 core / 4 outside.
-  - Skipped, nothing fresh/confirmable or already shown: MarTech (recent items already shown or publish date unconfirmed), Adobe Experience Cloud Blog (only already-shown MAX post; AEP release notes Oct 27 outside window), MeasureCamp, Kicker Bundesliga, BBC News, BBC Sport (domains rejected).
-  - Net 6 articles, far below the ~15 target and the 75/25 mix: freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
+  Run notes (2026-11-08, Sunday):
+  - Direct RSS/Atom fetching and WebFetch blocked (egress); fallback: WebSearch scoped per source domain. BBC domains rejected by WebSearch.
+  - Used (3): SRF Aeschi Bundesratskandidatur (dateline 08.11.2026), SRF Sport YB-Luzern 3:2 (13th Super League round, Nov 7), MarTech ChatGPT paid traffic (published ~Nov 6/7, "about a day ago"). 1 core / 2 outside.
+  - Skipped, nothing fresh/confirmable or already shown: CMSWire (newest hits ~2 months old), MIT Technology Review (Nov 2-6 Downloads all already shown; no Nov 7/8 edition found), Adobe Experience Cloud Blog (nothing from Nov 2026), MeasureCamp, Kicker Bundesliga (only old-season results), BBC News, BBC Sport (domains rejected), SRF International (newest hit Oct 21). SRF farm-drought article skipped: publish date unconfirmed. Other MarTech pieces skipped: dates unconfirmed.
+  - Net 3 articles, far below the ~15 target and the 75/25 mix: freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Saturday, November 7, 2026 · 6 articles</div>
+    <div class="date">Sunday, November 8, 2026 · 3 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
 
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-befuerwortet-schweizer-erasmus-beitrag">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-svp-fraktionschef-thomas-aeschi-will-bundesrat-werden">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-befuerwortet-schweizer-erasmus-beitrag">EU-Vertragspaket: Nationalratskommission befürwortet Schweizer Erasmus-Beitrag</a></h3>
-    <div class="meta">SRF News · Nov 6, 2026</div>
+    <h3><a href="https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-svp-fraktionschef-thomas-aeschi-will-bundesrat-werden">SVP-Fraktionschef Thomas Aeschi will Bundesrat werden</a></h3>
+    <div class="meta">SRF News · Nov 8, 2026</div>
     <div class="why">outside / schweiz</div>
-    <p class="summary">Die Aussenpolitische Kommission des Nationalrats empfiehlt mit 16 zu 9 Stimmen, den Schweizer Beitrag von 193 Millionen Franken an Erasmus+ für 2027 anzunehmen. Die Beratungen zum übrigen EU-Vertragspaket sind noch nicht abgeschlossen und sollen Mitte November enden.</p>
+    <p class="summary">Thomas Aeschi hat seine Kandidatur für die Nachfolge von Guy Parmelin bestätigt. Die SVP-Fraktion entscheidet am 20. November über ihre Nominierung, die Wahl durch die Bundesversammlung ist am 9. Dezember. Die Partei möchte mindesten zwei Personen aufs Ticket setzen.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/abstimmungs-arena-soll-das-kriegsmaterialgesetz-gelockert-werden">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/siegtor-in-der-92-minute-dank-essende-und-viel-dusel-yb-gewinnt-in-luzern">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/abstimmungs-arena-soll-das-kriegsmaterialgesetz-gelockert-werden">«Abstimmungs-Arena»: Soll das Kriegsmaterialgesetz gelockert werden?</a></h3>
-    <div class="meta">SRF News · Nov 6, 2026</div>
-    <div class="why">outside / schweiz</div>
-    <p class="summary">Vor der Abstimmung vom 29. November diskutierten Befürworter und Gegner in der Arena über die Lockerung der Regeln für Waffenexporte. Die Befürworter wollen Lieferungen an Partnerstaaten erleichtern, die Gegner fürchten weniger parlamentarische Kontrolle.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/nach-den-midterms-warum-sind-die-boersen-rund-um-den-globus-eingebrochen">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/wirtschaft/nach-den-midterms-warum-sind-die-boersen-rund-um-den-globus-eingebrochen">Nach den Midterms: Warum sind die Börsen rund um den Globus eingebrochen?</a></h3>
-    <div class="meta">SRF News · Nov 6, 2026</div>
-    <div class="why">outside / world</div>
-    <p class="summary">Nach dem Sieg der Demokraten bei den US-Zwischenwahlen gaben die Märkte deutlich nach. SRF nennt als Gründe vor allem die Sorge vor strengerer KI-Regulierung sowie die Unsicherheit durch den Iran-Krieg und mögliche höhere Ölpreise.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/conference-league/3-1-gegen-heart-of-midlothian-thun-bestaetigt-gegen-schwache-schotten-seinen-aufwaertstrend">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/conference-league/3-1-gegen-heart-of-midlothian-thun-bestaetigt-gegen-schwache-schotten-seinen-aufwaertstrend">Thun bestätigt gegen schwache Schotten seinen Aufwärtstrend</a></h3>
-    <div class="meta">SRF Sport · Nov 5, 2026</div>
-    <div class="why">outside / sport — Conference League</div>
-    <p class="summary">Thun gewinnt sein drittes Conference-League-Spiel zuhause 3:1 gegen Heart of Midlothian und holt damit den ersten Sieg in der Ligaphase. Zwei der Tore entstanden nach Fehlern der Schotten.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/siegtor-in-der-92-minute-dank-essende-und-viel-dusel-yb-gewinnt-in-luzern">Siegtor in der 92. Minute: Dank Essende und viel Dusel gewinnt YB in Luzern</a></h3>
+    <div class="meta">SRF Sport · Nov 7, 2026</div>
+    <div class="why">outside / sport — Super League</div>
+    <p class="summary">YB siegt in der 13. Runde 3:2 in Luzern, der entscheidende Treffer fällt durch Essende erst in der Nachspielzeit. Ein Ausgleich der Luzerner wurde wegen Abseits annulliert.</p>
   </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/">
+  <article class="card" data-link="https://martech.org/chatgpts-paid-traffic-is-worth-far-less-than-googles/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/">The Download: a humanoid cleans house and Samsung builds for the AI boom</a></h3>
-    <div class="meta">MIT Technology Review · Nov 6, 2026</div>
-    <div class="why">core / ai</div>
-    <p class="summary">Ein Test in San Francisco zeigt, dass ein Haushalts-Humanoide noch immer von Menschen ferngesteuert wird. Zudem geht es um Samsungs riesigen Chip-Campus in Südkorea, der auf den KI-Boom ausgerichtet ist.</p>
-  </article>
-  <article class="card" data-link="https://www.cmswire.com/the-wire/observeai-launches-headless-companion-agent-to-bring-real-time-guidance-automation/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/the-wire/observeai-launches-headless-companion-agent-to-bring-real-time-guidance-automation/">Observe.AI Launches Headless Companion Agent for CX Agents&#x27; Desktops</a></h3>
-    <div class="meta">CMSWire (press release) · Nov 3, 2026</div>
-    <div class="why">core / cx — agentic AI</div>
-    <p class="summary">Observe.AI liefert KI-Hinweise und Automatisierung direkt in bestehende Systeme, ohne zusätzliche Oberfläche. Nach Anrufen können Zusammenfassungen erstellt und Folgeprozesse angestossen werden; SoFi nutzt es als Early Adopter. Die Angaben stammen vom Anbieter selbst.</p>
+    <h3><a href="https://martech.org/chatgpts-paid-traffic-is-worth-far-less-than-googles/">ChatGPT's paid traffic is worth far less than Google's</a></h3>
+    <div class="meta">MarTech · Nov 6, 2026</div>
+    <div class="why">core / martech — AI search</div>
+    <p class="summary">Eine Studie über knapp 1'900 Ecommerce-Sites kommt zum Schluss, dass bezahlte ChatGPT-Besuche rund 0.89 US-Dollar Umsatz pro Session bringen, bezahlte Google-Klicks dagegen 2.45 Dollar. Die Conversion-Rate liegt bei 0.37 % gegenüber 1.17 %. Es handelt sich um ein Working Paper, unabhängig bestätigt ist die Methodik bisher nicht.</p>
   </article>
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 6 articles, below the usual ~15: many sources had no fresh, confirmably dated, unseen items (see the run notes in the page source).
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No article above was shown in the previous 7 days (see <code>data/history.json</code>). Today's digest has only 3 articles, below the usual ~15: many sources had no fresh, confirmably dated, unseen items (see the run notes in the page source).
   </footer>
 </div>
 <script>
