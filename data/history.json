@@ -1,61 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-01",
-      "link": "https://cmswire.com/customer-experience/is-metas-muse-the-start-of-the-b2a-era",
-      "title": "Is Meta's Muse the Start of the Business-to-Agent Era?"
-    },
-    {
-      "date": "2026-11-01",
-      "link": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/latest",
-      "title": "Customer Journey Analytics Release Notes, October 2026"
-    },
-    {
-      "date": "2026-11-02",
-      "link": "https://www.srf.ch/sport/fussball/super-league/2-1-heimsieg-in-der-12-runde-passives-lugano-feiert-knappen-sieg-ueber-basel-und-distanziert-yb",
-      "title": "Passives Lugano feiert knappen Sieg über Basel und distanziert YB"
-    },
-    {
-      "date": "2026-11-03",
-      "link": "https://www.srf.ch/news/schweiz/ausschreitungen-in-zuerich-krawallnacht-befeuert-debatte-um-polizeipersonal",
-      "title": "Krawallnacht befeuert Debatte um Polizeistellen"
-    },
-    {
-      "date": "2026-11-03",
-      "link": "https://www.srf.ch/news/schweiz/generalsekretaer-alain-berset-es-ist-verrueckt-ein-wahlresultat-nicht-zu-akzeptieren",
-      "title": "Berset: «Es ist verrückt, ein Wahlresultat nicht zu akzeptieren»"
-    },
-    {
-      "date": "2026-11-03",
-      "link": "https://www.srf.ch/sport/tennis/tennis-allgemein/final-an-den-swiss-indoors-vacherot-bodigt-lehecka-und-reiht-sich-unter-die-basel-champions",
-      "title": "Vacherot bodigt Lehecka und reiht sich unter die Basel-Champions"
-    },
-    {
-      "date": "2026-11-03",
-      "link": "https://www.technologyreview.com/2026/11/02/1147889/the-download-agentic-web-arrives-eliminating-traffic-deaths/",
-      "title": "The Download: the agentic web arrives and the drive for safer roads"
-    },
-    {
-      "date": "2026-11-03",
-      "link": "https://martech.org/ai-can-find-patterns-but-marketers-must-figure-out-what-they-mean/",
-      "title": "AI can find patterns, but marketers must figure out what they mean"
-    },
-    {
-      "date": "2026-11-03",
-      "link": "https://martech.org/your-2027-media-plan-has-a-channel-problem/",
-      "title": "Your 2027 media plan has a channel problem"
-    },
-    {
-      "date": "2026-11-03",
-      "link": "https://martech.org/beyond-deployment-how-to-lead-the-change-and-make-ai-adoption-stick/",
-      "title": "Beyond deployment: How to lead the change and make AI adoption stick"
-    },
-    {
-      "date": "2026-11-03",
-      "link": "https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/",
-      "title": "Meet your new teammate: Building marketing workflows around AI agents"
-    },
-    {
       "date": "2026-11-04",
       "link": "https://www.srf.ch/news/wirtschaft/teuerung-2026-schweizer-inflation-steigt-im-oktober-auf-1-5-prozent",
       "title": "Jahresinflation in der Schweiz klettert auf 1.5 Prozent"
@@ -239,6 +184,51 @@
       "date": "2026-11-10",
       "link": "https://www.cmswire.com/contact-center/dialpad-merges-with-ada-to-forge-agentic-cx-platform/",
       "title": "Ada Merges With Dialpad to Forge Agentic CX Platform"
+    },
+    {
+      "date": "2026-11-11",
+      "link": "https://www.srf.ch/news/schweiz/heikle-daten-gestohlen-hacker-fordern-loesegeld-nach-angriff-auf-publica-lieferantin",
+      "title": "Heikle Daten gestohlen – Hacker fordern Lösegeld nach Angriff auf Publica-Lieferantin"
+    },
+    {
+      "date": "2026-11-11",
+      "link": "https://www.srf.ch/sport/fussball/super-league/1-saisonniederlage-fuer-leader-ajeti-rot-und-von-ballmoos-out-lugano-geht-in-st-gallen-unter",
+      "title": "Ajeti-Rot und von-Ballmoos-Out: Lugano geht in St. Gallen unter"
+    },
+    {
+      "date": "2026-11-11",
+      "link": "https://news.adobe.com/news/2026/11/adobe-agentic-ai-content-supply-chain",
+      "title": "Adobe Brings Agentic AI to the Content Supply Chain with CX Enterprise Coworker"
+    },
+    {
+      "date": "2026-11-11",
+      "link": "https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control",
+      "title": "Explore new ways to create across Creative Cloud and Adobe Firefly"
+    },
+    {
+      "date": "2026-11-11",
+      "link": "https://blog.adobe.com/en/publish/2026/11/10/more-apps-ways-create-adobe-microsoft-expand-possibilities-windows",
+      "title": "More apps, more ways to create: Adobe and Microsoft expand possibilities on Windows"
+    },
+    {
+      "date": "2026-11-11",
+      "link": "https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/",
+      "title": "The Download: Pelosi's successor targets AI and data centers face power woes"
+    },
+    {
+      "date": "2026-11-11",
+      "link": "https://www.cmswire.com/digital-experience/chatgpt-search-volume-gains-on-google-openais-consumer-lead-says/",
+      "title": "OpenAI Plans to Kill ChatGPT's Chat-or-Work Toggle as Growth Surges"
+    },
+    {
+      "date": "2026-11-11",
+      "link": "https://www.cmswire.com/digital-experience/black-october-shows-tech-giants-racing-toward-a-preventable-disaster/",
+      "title": "Black October Shows Tech Giants Racing Toward a Preventable Disaster"
+    },
+    {
+      "date": "2026-11-11",
+      "link": "https://www.cmswire.com/ai-news/nvidia-board-investigates-jensen-huang-after-affair-with-alleged-chinese-spy/",
+      "title": "Nvidia Board Investigates Jensen Huang After Affair With Alleged Chinese Spy (merged into MIT TR Download)"
     }
   ]
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-10</title>
+<title>Morning News Digest — 2026-11-11</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,67 +95,90 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-10, Tuesday):
-  - Direct RSS/Atom fetching and WebFetch blocked (egress: cmswire.com, blog.adobe.com, technologyreview.com, srf.ch not resolvable); fallback: WebSearch scoped per source domain. BBC domains rejected (as before).
-  - Used (5 core / 0 outside): MIT TR x2 and Adobe blog x2 (publish dates in URL), CMSWire Dialpad/Ada (date only approximate, ~Nov 4-5).
-  - Skipped: MarTech (only already-shown articles or undated roundup page). MeasureCamp (nothing found). Kicker Bundesliga (only fixture pages; next matchday Nov 20-22). SRF: Just Eat job cuts, Ukraine/Trump item, SMI record - publish dates not confirmable, skipped; Aeschi already shown. SRF Sport: no confirmably dated, unseen match report. BBC News / BBC Sport (domains rejected). Outside section therefore empty today.
+  Run notes (2026-11-11, Wednesday):
+  - Direct RSS/Atom fetching blocked (egress proxy rejected srf.ch, feeds.bbci.co.uk, martech.org, technologyreview.com); fallback: WebSearch scoped per source domain. BBC domains (bbc.com/bbc.co.uk) rejected by the search tool, as before.
+  - Used (6 core / 2 outside): MIT TR Download Nov 10 (date in URL; Nvidia item also covered by CMSWire Nov 10 - merged, not shown twice). Adobe: news.adobe.com MAX release (CX Enterprise Coworker in GenStudio, Nov 10) + 2 blog.adobe.com posts dated 2026/11/10 in URL. CMSWire: ChatGPT search interview (~Nov 9-10), Black October (Nov 5). SRF: Publica ransom story (published Nov 10, 05:58). SRF Sport: Lugano 0:5 in St. Gallen (13th round, ~Nov 8-9).
+  - Skipped: MarTech (Claritas article - conflicting date signals, not confirmable; rest already shown). MeasureCamp (only event pages, no new posts; FYI MeasureCamp Zurich Nov 21). SRF International: Abu Dhabi Ukraine talks analysis - publish date not confirmable (earlier rounds in Jan/Feb share similar URLs), skipped. Kicker Bundesliga: Kane award article is from August; no confirmably dated fresh article (international break). BBC News / BBC Sport: domains rejected. Weltgeschehen slot therefore empty today.
   - Freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Tuesday, November 10, 2026 · 5 articles</div>
+    <div class="date">Wednesday, November 11, 2026 · 8 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
 
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <p class="summary">Heute keine neuen, zuverlässig datierten Artikel.</p>
+
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/heikle-daten-gestohlen-hacker-fordern-loesegeld-nach-angriff-auf-publica-lieferantin">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/schweiz/heikle-daten-gestohlen-hacker-fordern-loesegeld-nach-angriff-auf-publica-lieferantin">Heikle Daten gestohlen – Hacker fordern Lösegeld nach Angriff auf Publica-Lieferantin</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 10, 2026</div>
+    <div class="why">outside / schweiz</div>
+    <p class="summary">Nach dem Angriff der Gruppe Akira auf die Softwarefirma PK Softech, die für die Bundespensionskasse Publica arbeitet, verlangen die Täter laut SRF-Recherchen Lösegeld und drohen mit Veröffentlichung oder Verkauf der Daten. Betroffen sein könnten Angaben zum gesamten Bundespersonal, bis hin zu Mitarbeitenden von Nachrichtendienst und Fedpol. Publica und PK Softech sagen, bei ihnen sei keine Forderung eingegangen; der Bund rät grundsätzlich vom Zahlen ab.</p>
+  </article>
+
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/1-saisonniederlage-fuer-leader-ajeti-rot-und-von-ballmoos-out-lugano-geht-in-st-gallen-unter">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/1-saisonniederlage-fuer-leader-ajeti-rot-und-von-ballmoos-out-lugano-geht-in-st-gallen-unter">Ajeti-Rot und von-Ballmoos-Out: Lugano geht in St. Gallen unter</a></h3>
+    <div class="meta">SRF Sport – Fussball · ~Nov 8–9, 2026</div>
+    <div class="why">outside / sport – Super League</div>
+    <p class="summary">Leader Lugano kassiert in der 13. Runde beim 0:5 in St. Gallen die erste Saisonniederlage. Nach Albian Ajetis früher roter Karte und der Verletzung von Goalie David von Ballmoos brach das Team ein; Andrin Hunziker traf doppelt. Ajeti ist inzwischen für drei Spiele gesperrt, die Liga pausiert nun wegen der Länderspiele.</p>
+  </article>
 
   <h2 class="section">Core — Adobe / Martech / AI</h2>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/09/1148176/the-download-empty-ai-climate-claims-and-an-nvidia-investigation/">
+  <article class="card" data-link="https://news.adobe.com/news/2026/11/adobe-agentic-ai-content-supply-chain">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/09/1148176/the-download-empty-ai-climate-claims-and-an-nvidia-investigation/">The Download: empty AI climate claims, and an Nvidia investigation</a></h3>
-    <div class="meta">MIT Technology Review · Nov 9, 2026</div>
-    <div class="why">core / ai</div>
-    <p class="summary">Der Newsletter vom Montag startet mit den rund 2,5 Billionen Dollar, die an den Tech-Börsen verloren gingen, und mit Plänen der Demokraten für Untersuchungen gegen Big Tech. Weitere Themen sind ein Vorstoss von 22 Staaten für eine internationale KI-Aufsicht, eine Untersuchung rund um Nvidia und die Frage, wie belastbar KI-Klimaversprechen sind.</p>
+    <h3><a href="https://news.adobe.com/news/2026/11/adobe-agentic-ai-content-supply-chain">Adobe Brings Agentic AI to the Content Supply Chain with CX Enterprise Coworker</a></h3>
+    <div class="meta">Adobe Newsroom · Nov 10, 2026 (Adobe MAX)</div>
+    <div class="why">core / adobe – GenStudio, Agentic AI</div>
+    <p class="summary">An der MAX kündigt Adobe an, den Agenten CX Enterprise Coworker in GenStudio zu integrieren: Teams sollen Kampagnen per Chat-Oberfläche planen, Varianten erstellen und aktivieren können. Coworker soll dabei Signale aus GenStudio und Drittsystemen über offene Standards wie MCP und Agent-to-Agent zusammenführen. Zusätzlich erhält Brand Intelligence Funktionen wie Intelligent Reflow, das Designs automatisch an neue Formate anpasst.</p>
   </article>
 
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/">
+  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/">Nancy Pelosi's replacement is ready to regulate AI</a></h3>
-    <div class="meta">MIT Technology Review · Nov 9, 2026</div>
-    <div class="why">core / ai — Regulierung</div>
-    <p class="summary">Porträt von Scott Wiener, der den früheren Wahlkreis von Nancy Pelosi in San Francisco gewonnen hat. Als Kalifornier mit KI-Gesetzen im Rücken dürfte er in Washington bei der Ausgestaltung der US-Bundesregulierung eine wichtige Rolle spielen.</p>
+    <h3><a href="https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control">Explore new ways to create across Creative Cloud and Adobe Firefly</a></h3>
+    <div class="meta">Adobe Blog · Nov 10, 2026</div>
+    <div class="why">core / adobe – Creative Cloud, Agents</div>
+    <p class="summary">Überblick über die MAX-Neuerungen in Photoshop, Premiere, Lightroom, Illustrator und InDesign, darunter Relight, Generative Restyle und Generative Remove. Der Adobe Creative Agent wird ausgebaut, und eine Vorschau auf lokale MCP-Integrationen soll externe Agenten direkt an native Projektdateien lassen. Mit Firefly Design (Beta) kommen Raster, Vektor, Motion und 3D auf eine gemeinsame Arbeitsfläche.</p>
   </article>
 
-  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/11/09/from-handoffs-intelligence-context-layer-ai-powered-marketing">
+  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/11/10/more-apps-ways-create-adobe-microsoft-expand-possibilities-windows">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://blog.adobe.com/en/publish/2026/11/09/from-handoffs-intelligence-context-layer-ai-powered-marketing">From handoffs to intelligence: The context layer for AI-powered marketing</a></h3>
-    <div class="meta">Adobe Experience Cloud Blog · Nov 9, 2026</div>
-    <div class="why">core / adobe — AI-Marketing</div>
-    <p class="summary">Der Beitrag beschreibt ein Modell, wie Fakten, Strategie, Belege und operativer Kontext über Teams hinweg verbunden bleiben, wenn Kampagnen von KI-Agenten mitgesteuert werden. Statt Übergaben zwischen Silos soll eine gemeinsame Kontextschicht die Arbeit tragen. Das Produkt Adobe Experience Platform wird im Text nicht ausdrücklich genannt.</p>
+    <h3><a href="https://blog.adobe.com/en/publish/2026/11/10/more-apps-ways-create-adobe-microsoft-expand-possibilities-windows">More apps, more ways to create: Adobe and Microsoft expand possibilities on Windows</a></h3>
+    <div class="meta">Adobe Blog · Nov 10, 2026</div>
+    <div class="why">core / adobe – Partnerschaft</div>
+    <p class="summary">Adobe und Microsoft vertiefen ihre Zusammenarbeit: Photoshop, Premiere, After Effects und Substance 3D Painter sollen für leistungsstarke Windows-PCs optimiert sein. Ausserdem wandern Adobe-Express-Werkzeuge in die Microsoft-Fotos-App, zunächst als Vorschau für Windows Insider ab Dezember.</p>
   </article>
 
-  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/11/05/how-adobe-is-transforming-employee-experience-adobe-cx-enterprise">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://blog.adobe.com/en/publish/2026/11/05/how-adobe-is-transforming-employee-experience-adobe-cx-enterprise">How Adobe is transforming its employee experience with Adobe CX Enterprise</a></h3>
-    <div class="meta">Adobe Experience Cloud Blog · Nov 5, 2026</div>
-    <div class="why">core / adobe — Kundenstory</div>
-    <p class="summary">Adobe zeigt, wie die eigenen Teams intern Experience Manager, Real-Time CDP, Journey Optimizer und Customer Journey Analytics einsetzen, um die Mitarbeitererfahrung zu verbessern. Es ist eine Eigenwerbung als Anwendungsbeispiel, kein Produktlaunch.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/">The Download: Pelosi&#x27;s successor targets AI and data centers face power woes</a></h3>
+    <div class="meta">MIT Technology Review · Nov 10, 2026</div>
+    <div class="why">core / ai – Policy &amp; Infrastruktur</div>
+    <p class="summary">Der Newsletter greift Scott Wieners künftige Rolle in der US-KI-Politik nochmals auf, legt den Schwerpunkt aber auf den wachsenden Widerstand gegen Rechenzentren wegen ihres Strombedarfs. Kurzmeldungen betreffen unter anderem die Untersuchung des Nvidia-Verwaltungsrats zu CEO Jensen Huang (auch bei CMSWire berichtet) und Pläne Australiens für Strafen gegen missbräuchliche KI.</p>
   </article>
 
-  <article class="card" data-link="https://www.cmswire.com/contact-center/dialpad-merges-with-ada-to-forge-agentic-cx-platform/">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/chatgpt-search-volume-gains-on-google-openais-consumer-lead-says/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/contact-center/dialpad-merges-with-ada-to-forge-agentic-cx-platform/">Ada Merges With Dialpad to Forge Agentic CX Platform</a></h3>
-    <div class="meta">CMSWire · ~Nov 4–5, 2026</div>
-    <div class="why">core / cx — Agentic CX</div>
-    <p class="summary">Dialpad und Ada fusionieren: Das Sprachnetz und die Sprachmodelle von Dialpad sollen mit den KI-Agenten von Ada Kundenservice-Abläufe von Anfang bis Ende automatisieren. Das Ziel ist, Anliegen zu lösen statt nur weiterzuleiten. Das genaue Veröffentlichungsdatum liess sich nur ungefähr bestätigen (Fusion am 4. Nov. angekündigt).</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/chatgpt-search-volume-gains-on-google-openais-consumer-lead-says/">OpenAI Plans to Kill ChatGPT&#x27;s Chat-or-Work Toggle as Growth Surges</a></h3>
+    <div class="meta">CMSWire · ~Nov 9–10, 2026</div>
+    <div class="why">core / martech – AI Search</div>
+    <p class="summary">In einem kurzen Gespräch in New York sagte OpenAIs Consumer-Produktchef Adam Fry, die suchähnlichen Anfragen in ChatGPT erreichten inzwischen rund ein Fünftel des Google-Volumens. Zudem soll die Trennung zwischen Chat- und Arbeitsmodus verschwinden. Für Marketer unterstreicht das, wie relevant Sichtbarkeit in KI-Antworten neben klassischem SEO wird.</p>
+  </article>
+
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/black-october-shows-tech-giants-racing-toward-a-preventable-disaster/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/digital-experience/black-october-shows-tech-giants-racing-toward-a-preventable-disaster/">Black October Shows Tech Giants Racing Toward a Preventable Disaster</a></h3>
+    <div class="meta">CMSWire · Nov 5, 2026</div>
+    <div class="why">core / ai – Security</div>
+    <p class="summary">Der Kommentar wertet die Welle von KI-gestützt gefundenen Schwachstellen im Oktober als Warnsignal. Angreifer hätten verschiedene KI-Coding-Tools gegen Banken in Südkorea und Finanzinstitute in Lateinamerika eingesetzt. Der Autor kritisiert, dass die grossen Anbieter Tempo vor Schutzmechanismen stellen.</p>
   </article>
 
 
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. Outside section empty today: no confirmably dated, unseen item (see the run notes in the page source).
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No Weltgeschehen item today: nothing confirmably dated and unseen (see the run notes in the page source).
   </footer>
 </div>
 <script>
