@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-11</title>
+<title>Morning News Digest — 2026-11-12</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,90 +95,114 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-11, Wednesday):
-  - Direct RSS/Atom fetching blocked (egress proxy rejected srf.ch, feeds.bbci.co.uk, martech.org, technologyreview.com); fallback: WebSearch scoped per source domain. BBC domains (bbc.com/bbc.co.uk) rejected by the search tool, as before.
-  - Used (6 core / 2 outside): MIT TR Download Nov 10 (date in URL; Nvidia item also covered by CMSWire Nov 10 - merged, not shown twice). Adobe: news.adobe.com MAX release (CX Enterprise Coworker in GenStudio, Nov 10) + 2 blog.adobe.com posts dated 2026/11/10 in URL. CMSWire: ChatGPT search interview (~Nov 9-10), Black October (Nov 5). SRF: Publica ransom story (published Nov 10, 05:58). SRF Sport: Lugano 0:5 in St. Gallen (13th round, ~Nov 8-9).
-  - Skipped: MarTech (Claritas article - conflicting date signals, not confirmable; rest already shown). MeasureCamp (only event pages, no new posts; FYI MeasureCamp Zurich Nov 21). SRF International: Abu Dhabi Ukraine talks analysis - publish date not confirmable (earlier rounds in Jan/Feb share similar URLs), skipped. Kicker Bundesliga: Kane award article is from August; no confirmably dated fresh article (international break). BBC News / BBC Sport: domains rejected. Weltgeschehen slot therefore empty today.
-  - Freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark-read via localStorage kept.
+  Run notes (2026-11-12, Thursday):
+  - Direct RSS/Atom fetching blocked (egress proxy rejected srf.ch; WebFetch also cannot resolve srf.ch / martech.org); fallback: WebSearch scoped per source domain, dates from URLs or explicit date follow-up searches.
+  - Used (10 core / 3 outside): MIT TR Download Nov 11 (date in URL). Adobe: MAX Sneaks blog 2026/11/11 (URL) + news.adobe.com Google partnership (Nov 10). CMSWire: Sitecore MarketingIQ (Nov 11), Gartner 4% ROI (~Nov 10), NiCE Cognigy (Nov 12). MarTech: CAC (~Nov 11), SOCi local AI visibility (Nov 10), personalization (Nov 10), performance TV podcast (~Nov 11). SRF Schweiz: Tardoc revision (Nov 11, Bundesrat Wednesday session). SRF International: Hegseth impeachment failed (~Nov 11). SRF Sport: Xhaka injured, misses Nations League games (~Nov 10-11).
+  - Skipped: MeasureCamp (only event pages; FYI MeasureCamp Brussels Nov 14, Zurich Nov 21 - sold out). Kicker Bundesliga: international break (Nov 9-17), only item found (Strobl/Wolfsburg) was from the summer, not fresh. BBC News / BBC Sport: domains not reachable via search tool, as before. SRF International Hungary Stasi-files piece skipped: publish date not confirmable. MarTech "Don't pay a premium for data" (~Nov 11) and Claritas (Nov 10) left out for variety / unconfirmed date. Adobe Firefly / CX Coworker releases left out: overlap with items shown Nov 11.
+  - Dedup: IAB CTV measurement story (MarTech) folded into the performance-TV item.
+  - Freshness beats quota per CLAUDE.md (13 articles). Layout: Outside above Core; Mark-read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Wednesday, November 11, 2026 · 8 articles</div>
+    <div class="date">Thursday, November 12, 2026 · 13 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
-
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/heikle-daten-gestohlen-hacker-fordern-loesegeld-nach-angriff-auf-publica-lieferantin">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/schweizer-arzttarifsystem-bundesrat-genehmigt-erste-tardoc-revision-und-fordert-korrekturen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/heikle-daten-gestohlen-hacker-fordern-loesegeld-nach-angriff-auf-publica-lieferantin">Heikle Daten gestohlen – Hacker fordern Lösegeld nach Angriff auf Publica-Lieferantin</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 10, 2026</div>
-    <div class="why">outside / schweiz</div>
-    <p class="summary">Nach dem Angriff der Gruppe Akira auf die Softwarefirma PK Softech, die für die Bundespensionskasse Publica arbeitet, verlangen die Täter laut SRF-Recherchen Lösegeld und drohen mit Veröffentlichung oder Verkauf der Daten. Betroffen sein könnten Angaben zum gesamten Bundespersonal, bis hin zu Mitarbeitenden von Nachrichtendienst und Fedpol. Publica und PK Softech sagen, bei ihnen sei keine Forderung eingegangen; der Bund rät grundsätzlich vom Zahlen ab.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/schweizer-arzttarifsystem-bundesrat-genehmigt-erste-tardoc-revision-und-fordert-korrekturen">Bundesrat genehmigt erste Tardoc-Revision und fordert Korrekturen</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 11, 2026</div>
+    <div class="why">outside / schweiz – Gesundheitspolitik</div>
+    <p class="summary">Der Bundesrat hat die erste Anpassung des Arzttarifs Tardoc per Anfang 2027 gutgeheissen, vor allem für Kinder- und Jugendmedizin, Spitalnotfälle sowie einzelne ambulante Pauschalen. Gleichzeitig verlangt er rasche Nachbesserungen: Die Gesamtkosten dürfen jährlich höchstens um vier Prozent wachsen, und das EDI soll mögliche staatliche Eingriffe vorbereiten. Die erhoffte Aufwertung der Hausarzt- und Kindermedizin sei rechnerisch noch nicht sichtbar.</p>
   </article>
-
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/1-saisonniederlage-fuer-leader-ajeti-rot-und-von-ballmoos-out-lugano-geht-in-st-gallen-unter">
+  <article class="card" data-link="https://www.srf.ch/news/international/amtsenthebung-gescheitert-trump-triumphiert-und-hegseth-atmet-auf">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/1-saisonniederlage-fuer-leader-ajeti-rot-und-von-ballmoos-out-lugano-geht-in-st-gallen-unter">Ajeti-Rot und von-Ballmoos-Out: Lugano geht in St. Gallen unter</a></h3>
-    <div class="meta">SRF Sport – Fussball · ~Nov 8–9, 2026</div>
-    <div class="why">outside / sport – Super League</div>
-    <p class="summary">Leader Lugano kassiert in der 13. Runde beim 0:5 in St. Gallen die erste Saisonniederlage. Nach Albian Ajetis früher roter Karte und der Verletzung von Goalie David von Ballmoos brach das Team ein; Andrin Hunziker traf doppelt. Ajeti ist inzwischen für drei Spiele gesperrt, die Liga pausiert nun wegen der Länderspiele.</p>
+    <h3><a href="https://www.srf.ch/news/international/amtsenthebung-gescheitert-trump-triumphiert-und-hegseth-atmet-auf">Amtsenthebung gescheitert: Trump triumphiert und Hegseth atmet auf</a></h3>
+    <div class="meta">SRF News – International · ~Nov 11, 2026</div>
+    <div class="why">outside / world – USA</div>
+    <p class="summary">Das US-Repräsentantenhaus ist auf den Impeachment-Antrag von Thomas Massie gegen Verteidigungsminister Pete Hegseth nicht eingetreten; ausser Massie stimmten die Republikaner geschlossen dagegen. Massie wirft Hegseth unter anderem Kampfhandlungen gegen Iran ohne Zustimmung des Kongresses vor. Die Demokraten, die nach den Midterms im Januar die Mehrheit übernehmen, wollen die Vorwürfe dann erneut aufgreifen.</p>
   </article>
-
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/nations-league/der-captain-ist-verletzt-doch-kein-comeback-xhaka-fehlt-der-nati-erneut">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/nations-league/der-captain-ist-verletzt-doch-kein-comeback-xhaka-fehlt-der-nati-erneut">Doch kein Comeback: Xhaka fehlt der Nati erneut</a></h3>
+    <div class="meta">SRF Sport – Fussball · ~Nov 10–11, 2026</div>
+    <div class="why">outside / sport – Nati / Nations League</div>
+    <p class="summary">Captain Granit Xhaka fällt wegen einer Wadenverletzung für die beiden letzten Nations-League-Spiele aus – kurz nachdem sein Comeback angekündigt worden war. Die Schweiz trifft am 13. November in Maribor auf Slowenien und am 16. November in St. Gallen auf Schottland; schon ein Punkt reicht für die Rückkehr in die A-Liga. Yakins 28er-Kader enthält mit Silas Huber und Samuel Ballet zwei Debütanten.</p>
+  </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-
-  <article class="card" data-link="https://news.adobe.com/news/2026/11/adobe-agentic-ai-content-supply-chain">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/11/1148424/the-download-preserving-minds-open-ai-risks/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://news.adobe.com/news/2026/11/adobe-agentic-ai-content-supply-chain">Adobe Brings Agentic AI to the Content Supply Chain with CX Enterprise Coworker</a></h3>
+    <h3><a href="https://www.technologyreview.com/2026/11/11/1148424/the-download-preserving-minds-open-ai-risks/">The Download: preserving minds and weighing open AI risks</a></h3>
+    <div class="meta">MIT Technology Review · Nov 11, 2026</div>
+    <div class="why">core / ai – Open Models &amp; Policy</div>
+    <p class="summary">Der Newsletter beleuchtet Ideen, den menschlichen Geist zu bewahren – vom Einfrieren von Gehirnen bis zum Hochladen von Erinnerungen. Zweites Thema ist ein Anthropic-Bericht, der ein frei herunterladbares Modell von Z.ai als Cyber-Risiko einstuft, samt der Debatte um offene Modelle. Kurzmeldungen: 22 Staaten fordern ein globales KI-Aufsichtsgremium, und Anthropic soll sein IPO-Bewertungsziel gesenkt haben.</p>
+  </article>
+  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/11/11/adobe-max-sneaks">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://blog.adobe.com/en/publish/2026/11/11/adobe-max-sneaks">Adobe MAX 2026 Sneaks: Previewing the future of creativity</a></h3>
+    <div class="meta">Adobe Blog · Nov 11, 2026</div>
+    <div class="why">core / adobe – Research Previews</div>
+    <p class="summary">An den MAX Sneaks zeigte Adobe zehn Forschungsprojekte für Video, Audio, Bild und Design – etwa Scene Sweep, das eine Korrektur über alle Shots einer Sequenz zieht, oder Sound Bender, das einzelne Geräusche aus einem fertigen Mix isoliert. Rinse Repeat überträgt Bildbearbeitungen auf andere Bildbereiche als editierbare Photoshop-Schritte. Deep Brush und Hands On sind bereits als Vorschau im neuen Adobe Labs Playground testbar.</p>
+  </article>
+  <article class="card" data-link="https://news.adobe.com/news/2026/11/adobe-and-google-deepen-partnership">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://news.adobe.com/news/2026/11/adobe-and-google-deepen-partnership">Adobe and Google deepen partnership to bring AI models and integrated workflows to creatives and enterprises</a></h3>
     <div class="meta">Adobe Newsroom · Nov 10, 2026 (Adobe MAX)</div>
-    <div class="why">core / adobe – GenStudio, Agentic AI</div>
-    <p class="summary">An der MAX kündigt Adobe an, den Agenten CX Enterprise Coworker in GenStudio zu integrieren: Teams sollen Kampagnen per Chat-Oberfläche planen, Varianten erstellen und aktivieren können. Coworker soll dabei Signale aus GenStudio und Drittsystemen über offene Standards wie MCP und Agent-to-Agent zusammenführen. Zusätzlich erhält Brand Intelligence Funktionen wie Intelligent Reflow, das Designs automatisch an neue Formate anpasst.</p>
+    <div class="why">core / adobe – Partnerschaft, Enterprise</div>
+    <p class="summary">Adobe und Google bauen ihre Zusammenarbeit aus: Acrobat soll direkt in Google Drive und Gmail nutzbar werden, und Gemini-Modelle ergänzen die KI-Funktionen von Acrobat. Googles Bild- und Videomodelle kommen in Firefly, Photoshop, Premiere und Express; zudem erweitert Adobe seine Connectoren in Gemini Enterprise. Konkrete Termine und Preise nennt die Mitteilung nicht.</p>
   </article>
-
-  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/sitecore-places-its-bet-on-answer-engine-visibility-with-marketingiq/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control">Explore new ways to create across Creative Cloud and Adobe Firefly</a></h3>
-    <div class="meta">Adobe Blog · Nov 10, 2026</div>
-    <div class="why">core / adobe – Creative Cloud, Agents</div>
-    <p class="summary">Überblick über die MAX-Neuerungen in Photoshop, Premiere, Lightroom, Illustrator und InDesign, darunter Relight, Generative Restyle und Generative Remove. Der Adobe Creative Agent wird ausgebaut, und eine Vorschau auf lokale MCP-Integrationen soll externe Agenten direkt an native Projektdateien lassen. Mit Firefly Design (Beta) kommen Raster, Vektor, Motion und 3D auf eine gemeinsame Arbeitsfläche.</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/sitecore-places-its-bet-on-answer-engine-visibility-with-marketingiq/">Sitecore places its bet on answer engine visibility with MarketingIQ</a></h3>
+    <div class="meta">CMSWire · Nov 11, 2026 (Sitecore Symposium)</div>
+    <div class="why">core / martech – DXP, AI Visibility</div>
+    <p class="summary">Sitecore stellt MarketingIQ vor, das auf den Analysen des zugekauften Scrunch aufsetzt: Zeigt eine KI-Antwort etwa veraltete Preise, entwirft das System auf Basis freigegebener Markeninhalte eine Korrektur und legt sie zur Prüfung vor. Es soll auch mit CMS-, DAM- und CRM-Systemen von Drittanbietern zusammenspielen. CMSWire ordnet das ins Wettrennen um KI-Sichtbarkeit ein, in dem auch Adobe mit Brand Visibility mitmischt, und vermerkt offene Fragen zum Pricing.</p>
   </article>
-
-  <article class="card" data-link="https://blog.adobe.com/en/publish/2026/11/10/more-apps-ways-create-adobe-microsoft-expand-possibilities-windows">
+  <article class="card" data-link="https://www.cmswire.com/customer-experience/just-4-of-customer-service-leaders-hit-their-expected-automation-returns/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://blog.adobe.com/en/publish/2026/11/10/more-apps-ways-create-adobe-microsoft-expand-possibilities-windows">More apps, more ways to create: Adobe and Microsoft expand possibilities on Windows</a></h3>
-    <div class="meta">Adobe Blog · Nov 10, 2026</div>
-    <div class="why">core / adobe – Partnerschaft</div>
-    <p class="summary">Adobe und Microsoft vertiefen ihre Zusammenarbeit: Photoshop, Premiere, After Effects und Substance 3D Painter sollen für leistungsstarke Windows-PCs optimiert sein. Ausserdem wandern Adobe-Express-Werkzeuge in die Microsoft-Fotos-App, zunächst als Vorschau für Windows Insider ab Dezember.</p>
+    <h3><a href="https://www.cmswire.com/customer-experience/just-4-of-customer-service-leaders-hit-their-expected-automation-returns/">Just 4% of customer service leaders hit their expected automation returns</a></h3>
+    <div class="meta">CMSWire · ~Nov 10, 2026</div>
+    <div class="why">core / cx – AI ROI</div>
+    <p class="summary">Gemäss an Gartners Service-Konferenz präsentierten Zahlen erreichen nur 4% der Serviceorganisationen den erwarteten ROI ihrer KI-Initiativen. Nur 21% haben wegen KI tatsächlich Stellen abgebaut, und 7% haben nach Kürzungen bereits wieder eingestellt. Die erfolgreichen Firmen investieren laut Gartner deutlich mehr in Daten- und Wissensmanagement als in die KI-Anwendungsfälle selbst.</p>
   </article>
-
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/">
+  <article class="card" data-link="https://www.cmswire.com/contact-center/nice-launches-next-generation-cognigy-with-reusable-skills-and-decision-tracing/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/">The Download: Pelosi&#x27;s successor targets AI and data centers face power woes</a></h3>
-    <div class="meta">MIT Technology Review · Nov 10, 2026</div>
-    <div class="why">core / ai – Policy &amp; Infrastruktur</div>
-    <p class="summary">Der Newsletter greift Scott Wieners künftige Rolle in der US-KI-Politik nochmals auf, legt den Schwerpunkt aber auf den wachsenden Widerstand gegen Rechenzentren wegen ihres Strombedarfs. Kurzmeldungen betreffen unter anderem die Untersuchung des Nvidia-Verwaltungsrats zu CEO Jensen Huang (auch bei CMSWire berichtet) und Pläne Australiens für Strafen gegen missbräuchliche KI.</p>
+    <h3><a href="https://www.cmswire.com/contact-center/nice-launches-next-generation-cognigy-with-reusable-skills-and-decision-tracing/">NiCE launches next-generation Cognigy with reusable skills and decision tracing</a></h3>
+    <div class="meta">CMSWire · Nov 12, 2026</div>
+    <div class="why">core / cx – Agentic AI</div>
+    <p class="summary">NiCE erneuert seine Plattform für KI-Agenten Cognigy: Wiederverwendbare Skills lassen sich einmal bauen und in mehreren Agenten einsetzen, Decision Tracing protokolliert jeden Schritt eines Agenten inklusive genutzter Daten und Tools. Dazu kommen KI-gestützte Entwicklung und native Modell-Integrationen etwa von OpenAI, Anthropic, Deepgram und ElevenLabs.</p>
   </article>
-
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/chatgpt-search-volume-gains-on-google-openais-consumer-lead-says/">
+  <article class="card" data-link="https://martech.org/cheap-cac-can-be-expensive-growth/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/chatgpt-search-volume-gains-on-google-openais-consumer-lead-says/">OpenAI Plans to Kill ChatGPT&#x27;s Chat-or-Work Toggle as Growth Surges</a></h3>
-    <div class="meta">CMSWire · ~Nov 9–10, 2026</div>
-    <div class="why">core / martech – AI Search</div>
-    <p class="summary">In einem kurzen Gespräch in New York sagte OpenAIs Consumer-Produktchef Adam Fry, die suchähnlichen Anfragen in ChatGPT erreichten inzwischen rund ein Fünftel des Google-Volumens. Zudem soll die Trennung zwischen Chat- und Arbeitsmodus verschwinden. Für Marketer unterstreicht das, wie relevant Sichtbarkeit in KI-Antworten neben klassischem SEO wird.</p>
+    <h3><a href="https://martech.org/cheap-cac-can-be-expensive-growth/">Cheap CAC can be expensive growth</a></h3>
+    <div class="meta">MarTech · ~Nov 11, 2026</div>
+    <div class="why">core / martech – Measurement</div>
+    <p class="summary">Der Beitrag warnt, dass tiefe Akquisitionskosten und hoher ROAS trügen können, weil Kanäle wie Branded Search und Retargeting oft Nachfrage verbuchen, die ohnehin bestanden hätte. Statt Last-Click-Kennzahlen empfiehlt er Inkrementalitätstests und einen inkrementellen CAC, um zu sehen, wie viele Kundinnen und Kunden wirklich neu gewonnen wurden.</p>
   </article>
-
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/black-october-shows-tech-giants-racing-toward-a-preventable-disaster/">
+  <article class="card" data-link="https://martech.org/the-drivers-of-local-ai-visibility-for-multi-location-brands/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/black-october-shows-tech-giants-racing-toward-a-preventable-disaster/">Black October Shows Tech Giants Racing Toward a Preventable Disaster</a></h3>
-    <div class="meta">CMSWire · Nov 5, 2026</div>
-    <div class="why">core / ai – Security</div>
-    <p class="summary">Der Kommentar wertet die Welle von KI-gestützt gefundenen Schwachstellen im Oktober als Warnsignal. Angreifer hätten verschiedene KI-Coding-Tools gegen Banken in Südkorea und Finanzinstitute in Lateinamerika eingesetzt. Der Autor kritisiert, dass die grossen Anbieter Tempo vor Schutzmechanismen stellen.</p>
+    <h3><a href="https://martech.org/the-drivers-of-local-ai-visibility-for-multi-location-brands/">The drivers of local AI visibility for multi-location brands</a></h3>
+    <div class="meta">MarTech · Nov 10, 2026</div>
+    <div class="why">core / martech – Local Search &amp; AI</div>
+    <p class="summary">Eine SOCi-Analyse beziffert die durchschnittliche KI-Sichtbarkeit von Filialmarken inzwischen auf 36.1% – etwa gleichauf mit klassischen lokalen Suchplattformen. Google Maps und Yelp sind die wichtigsten Drittquellen für lokale KI-Antworten. Rund die Hälfte der US-Konsumenten nutzt KI-Tools laut SOCi mindestens monatlich für lokale Empfehlungen.</p>
   </article>
-
-
+  <article class="card" data-link="https://martech.org/how-to-stand-out-in-a-sea-of-personalization/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/how-to-stand-out-in-a-sea-of-personalization/">How to stand out in a sea of personalization</a></h3>
+    <div class="meta">MarTech · Nov 10, 2026</div>
+    <div class="why">core / martech – Personalisierung, Kreation</div>
+    <p class="summary">Jonelle Chandler (Qualified Digital) argumentiert, dass KI-generierte Varianten Marken austauschbar machen, wenn die kreative Idee erst am Schluss kommt. Personalisierung dürfe den Ausdruck einer Marke verändern, nicht aber ihre Haltung; Teams sollten bewusst festlegen, welche Momente persönlich, welche für alle gleich und welche gar nicht personalisiert werden. Messgrössen sollten zum Ziel passen, etwa Wiederkehr bei Loyalitätszielen.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/beyond-search-and-social-how-to-scale-with-performance-tv/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/beyond-search-and-social-how-to-scale-with-performance-tv/">Beyond search and social: How to scale with performance TV</a></h3>
+    <div class="meta">MarTech · ~Nov 11, 2026 (Podcast)</div>
+    <div class="why">core / martech – CTV</div>
+    <p class="summary">In einer Folge von «Conversations with MarTech» spricht Jason Fairchild von tvScientific (Pinterest) darüber, wie Marken über Search und Social hinaus mit Performance-CTV wachsen können. Thema ist, TV-Werbung wie einen messbaren Performance-Kanal zu steuern – passend zur parallel gemeldeten Ausweitung der IAB-Messstandards auf neue CTV-Formate.</p>
+  </article>
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No Weltgeschehen item today: nothing confirmably dated and unseen (see the run notes in the page source).
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No Bundesliga / Premier League item today: international break, nothing confirmably fresh (see the run notes in the page source).
   </footer>
 </div>
 <script>

@@ -1,41 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-04",
-      "link": "https://www.srf.ch/news/wirtschaft/teuerung-2026-schweizer-inflation-steigt-im-oktober-auf-1-5-prozent",
-      "title": "Jahresinflation in der Schweiz klettert auf 1.5 Prozent"
-    },
-    {
-      "date": "2026-11-04",
-      "link": "https://www.srf.ch/news/international/usa/zwischenwahlen-in-den-usa-die-midterms-2026-im-ueberblick",
-      "title": "Zwischenwahlen in den USA: Die Midterms 2026 im Überblick"
-    },
-    {
-      "date": "2026-11-04",
-      "link": "https://www.srf.ch/sport/ski-alpin/weltcup-frauen/11-monate-nach-horrorsturz-ruecktritt-statt-rueckkehr-michelle-gisin-beendet-ihre-karriere",
-      "title": "Rücktritt statt Rückkehr: Michelle Gisin beendet ihre Karriere"
-    },
-    {
-      "date": "2026-11-04",
-      "link": "https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-fcz-fluegel-emmanuel-haette-gegen-yb-vom-platz-fliegen-muessen",
-      "title": "FCZ-Flügel Emmanuel hätte gegen YB vom Platz fliegen müssen"
-    },
-    {
-      "date": "2026-11-04",
-      "link": "https://www.technologyreview.com/2026/11/03/1147940/the-download-controlling-ai-agents-trump-super-intelligence/",
-      "title": "The Download: controlling AI agents and “Super Intelligence” loyalty tests"
-    },
-    {
-      "date": "2026-11-04",
-      "link": "https://martech.org/ai-traffic-drives-83-more-traffic-per-visit/",
-      "title": "AI traffic drives 83% more traffic per visit"
-    },
-    {
-      "date": "2026-11-04",
-      "link": "https://martech.org/salesforce-buying-ai-customer-support-company-cresta/",
-      "title": "Salesforce buying AI customer support company Cresta"
-    },
-    {
       "date": "2026-11-05",
       "link": "https://www.srf.ch/news/international/usa/midterms-in-den-usa-machtwechsel-im-kongress-die-ergebnisse-auf-einen-blick",
       "title": "Midterms USA: Machtwechsel im Kongress"
@@ -229,6 +194,71 @@
       "date": "2026-11-11",
       "link": "https://www.cmswire.com/ai-news/nvidia-board-investigates-jensen-huang-after-affair-with-alleged-chinese-spy/",
       "title": "Nvidia Board Investigates Jensen Huang After Affair With Alleged Chinese Spy (merged into MIT TR Download)"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://www.srf.ch/news/schweiz/schweizer-arzttarifsystem-bundesrat-genehmigt-erste-tardoc-revision-und-fordert-korrekturen",
+      "title": "Bundesrat genehmigt erste Tardoc-Revision und fordert Korrekturen"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://www.srf.ch/news/international/amtsenthebung-gescheitert-trump-triumphiert-und-hegseth-atmet-auf",
+      "title": "Amtsenthebung gescheitert: Trump triumphiert und Hegseth atmet auf"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://www.srf.ch/sport/fussball/nations-league/der-captain-ist-verletzt-doch-kein-comeback-xhaka-fehlt-der-nati-erneut",
+      "title": "Doch kein Comeback: Xhaka fehlt der Nati erneut"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://www.technologyreview.com/2026/11/11/1148424/the-download-preserving-minds-open-ai-risks/",
+      "title": "The Download: preserving minds and weighing open AI risks"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://blog.adobe.com/en/publish/2026/11/11/adobe-max-sneaks",
+      "title": "Adobe MAX 2026 Sneaks: Previewing the future of creativity"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://news.adobe.com/news/2026/11/adobe-and-google-deepen-partnership",
+      "title": "Adobe and Google deepen partnership to bring AI models and integrated workflows to creatives and enterprises"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://www.cmswire.com/digital-experience/sitecore-places-its-bet-on-answer-engine-visibility-with-marketingiq/",
+      "title": "Sitecore places its bet on answer engine visibility with MarketingIQ"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://www.cmswire.com/customer-experience/just-4-of-customer-service-leaders-hit-their-expected-automation-returns/",
+      "title": "Just 4% of customer service leaders hit their expected automation returns"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://www.cmswire.com/contact-center/nice-launches-next-generation-cognigy-with-reusable-skills-and-decision-tracing/",
+      "title": "NiCE launches next-generation Cognigy with reusable skills and decision tracing"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://martech.org/cheap-cac-can-be-expensive-growth/",
+      "title": "Cheap CAC can be expensive growth"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://martech.org/the-drivers-of-local-ai-visibility-for-multi-location-brands/",
+      "title": "The drivers of local AI visibility for multi-location brands"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://martech.org/how-to-stand-out-in-a-sea-of-personalization/",
+      "title": "How to stand out in a sea of personalization"
+    },
+    {
+      "date": "2026-11-12",
+      "link": "https://martech.org/beyond-search-and-social-how-to-scale-with-performance-tv/",
+      "title": "Beyond search and social: How to scale with performance TV"
     }
   ]
 }
