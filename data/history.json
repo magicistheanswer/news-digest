@@ -1,41 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-05",
-      "link": "https://www.srf.ch/news/international/usa/midterms-in-den-usa-machtwechsel-im-kongress-die-ergebnisse-auf-einen-blick",
-      "title": "Midterms USA: Machtwechsel im Kongress"
-    },
-    {
-      "date": "2026-11-05",
-      "link": "https://www.srf.ch/news/schweiz/crans-montana-schweiz-uebernimmt-behandlungskosten-von-italienischen-opfern",
-      "title": "Crans-Montana: Schweiz übernimmt Behandlungskosten von italienischen Opfern"
-    },
-    {
-      "date": "2026-11-05",
-      "link": "https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-9-1-como-schafft-historisches-valverde-erloest-real-madrid-spaet",
-      "title": "Champions League Round-up: 9:1! Como schafft Historisches"
-    },
-    {
-      "date": "2026-11-05",
-      "link": "https://srf.ch/sport/fussball/champions-league/bvb-besiegt-betis-valles-wird-vom-hexer-zur-tragischen-figur",
-      "title": "BVB besiegt Betis – Valles wird vom Hexer zur tragischen Figur"
-    },
-    {
-      "date": "2026-11-05",
-      "link": "https://www.technologyreview.com/2026/11/04/1148001/the-download-blended-meat-sight-restoring-implant-agentic-web/",
-      "title": "The Download: blended meat, restored sight, and the agentic web"
-    },
-    {
-      "date": "2026-11-05",
-      "link": "https://cmswire.com/digital-marketing/your-buyers-ask-chatgpt-thousands-of-questions-your-brand-never-tracks",
-      "title": "Your Buyers Ask ChatGPT Thousands of Questions Your Brand Never Tracks"
-    },
-    {
-      "date": "2026-11-05",
-      "link": "https://martech.org/this-weeks-ai-powered-marketing-technology-releases-2/",
-      "title": "This week's AI-powered marketing technology releases"
-    },
-    {
       "date": "2026-11-06",
       "link": "https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-nun-auch-in-der-schweiz-metzgerei-opfer-von-hackerangriff",
       "title": "Kühlanlage manipuliert: Berner Metzgerei Opfer eines Hackerangriffs"
@@ -259,6 +224,66 @@
       "date": "2026-11-12",
       "link": "https://martech.org/beyond-search-and-social-how-to-scale-with-performance-tv/",
       "title": "Beyond search and social: How to scale with performance TV"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://www.srf.ch/news/schweiz/unheilige-allianz-knall-in-finanzkommission-budget-2027-zur-ablehnung-empfohlen",
+      "title": "Knall in der Finanzkommission: Budget 2027 zur Ablehnung empfohlen"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://www.srf.ch/news/international/im-stadtteil-brooklyn-acht-tote-und-18-verletzte-bei-hauseinsturz-in-new-york",
+      "title": "Hauseinsturz in Brooklyn: Acht Tote und 18 Verletzte"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://www.srf.ch/sport/fussball/nations-league/vor-aufstieg-in-nations-league-nati-1-punkt-holen-und-dann-bereits-blick-richtung-em-quali",
+      "title": "Vor dem Aufstieg: Nati braucht einen Punkt – und blickt schon auf die EM-Quali"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://www.technologyreview.com/2026/11/12/1148444/the-download-cop31-climate-talks-cognitive-immortality/",
+      "title": "The Download: COP31’s climate challenge and the quest for immortality"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+      "title": "Nvidia privately confirmed it could track chips to fight smuggling"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://www.cmswire.com/digital-marketing/brian-halligan-returns-as-hubspot-ceo-replacing-yamini-rangan/",
+      "title": "HubSpot begins AI overhaul with founder Halligan as CEO, again"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://www.cmswire.com/contact-center/parloa-openai-expand-agentic-customer-experience-partnership/",
+      "title": "Parloa & OpenAI expand agentic customer experience partnership"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://www.cmswire.com/the-wire/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together/",
+      "title": "Supermetrics launches Campaign Manager"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://martech.org/iab-unveils-framework-for-measuring-ais-part-in-conversions/",
+      "title": "IAB unveils framework for measuring AI’s part in conversions"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://martech.org/building-cross-channel-measurement-for-ai-first-media-landscape/",
+      "title": "How to build a cross-channel measurement framework for an AI-first media landscape"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://martech.org/connecting-with-shoppers-when-the-buyer-is-not-human/",
+      "title": "Connecting with shoppers when the buyer is not human"
+    },
+    {
+      "date": "2026-11-13",
+      "link": "https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes",
+      "title": "Adobe Journey Optimizer release notes — November 2026"
     }
   ]
 }
