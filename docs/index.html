@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-13</title>
+<title>Morning News Digest — 2026-11-14</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,104 +95,104 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-13, Friday):
-  - Direct RSS/Atom fetching still blocked (curl to every tested feed domain fails at the proxy); fallback: WebSearch scoped per source domain, dates from URLs or explicit date follow-up searches.
-  - Used (9 core / 3 outside): MIT TR Download Nov 12 + Nvidia chip tracking Nov 12 (dates in URL). CMSWire: HubSpot/Halligan (Nov 12, confirmed via 8-K), Parloa/OpenAI (Nov 11), Supermetrics Campaign Manager (Nov 10). MarTech: IAB AI attribution blueprint (Nov 12), cross-channel measurement (Nov 12), Optimove sponsored piece (~Nov 12, date conflicting in search). Adobe: no new blog/newsroom post found after Nov 11 (MAX items already shown Nov 11-12), so used the AJO November release notes (monthly cadence, updated Nov 10). SRF Schweiz: Finanzkommission rejects budget 2027 (Nov 12). SRF International: Brooklyn building collapse (Wed Nov 11, updated Nov 12). SRF Sport: Nati needs one point vs Slovenia (~Nov 12, match tonight).
-  - Skipped: MeasureCamp (event pages only, nothing dated). Kicker Bundesliga: international break (Nov 9-17), only older schedule articles found. BBC News / BBC Sport: domains blocked for the search tool (400 "not accessible to our user agent"). CMSWire Five9/Level AI (Nov 5) too old; MarTech loyalty-program and retailer-data pieces left out (too little detail to summarize). SRF Mississippi/Colom Senate item: exact date unconfirmed, midterms already covered Nov 5.
-  - Dedup: SRF budget analysis ("Warum SVP und Linke gemeinsam blockieren") folded into the Finanzkommission item; Nvidia/Huang turmoil (CMSWire, shown Nov 11) only referenced as context in the MIT TR chip-tracking item.
+  Run notes (2026-11-14, Saturday):
+  - Direct RSS/Atom fetching still blocked (curl to technologyreview.com rejected by the egress proxy, WebFetch cannot resolve feed hosts); fallback: WebSearch scoped per source domain, dates from URLs or explicit date follow-up searches.
+  - Used (9 core / 3 outside): MIT TR midterms opinion + BCI volunteer guidelines (both Nov 13, dates in URL). CMSWire: Adobe MAX governance (Nov 13), Zingtree (Nov 10). MarTech: AI agents measurement, workflows around agents, relevance, lead quality (all Nov 13). Adobe: no new blog post after Nov 11 found; used the Adobe/Disney alliance newsroom release (Nov 9, MAX; not shown before). SRF Schweiz: Saubannerzug appeal verdict (~Nov 13, reported as same-day). SRF International/Wirtschaft: Microsoft global outage (Nov 13). SRF Sport: Nati 0:0 in Slovenia, promotion to League A (Fri Nov 13).
+  - Skipped: MeasureCamp (event pages only, nothing dated). Kicker Bundesliga: international break (Nov 9-17), latest found items ~Nov 8. BBC News / BBC Sport: domains not accessible to the search tool (as on previous runs). MIT TR Download Nov 13 left out (its lead item, Nvidia chip tracking, shown Nov 13; midterms piece included directly). Adobe Open for Business (Nov 10, small-business toolkit) left out as off-profile. SRF Iran/IAEA ticker item: exact article date unconfirmed. Kriegsmaterialgesetz analysis left out (topic covered Nov 7).
+  - Dedup: Microsoft outage also mentioned in MIT TR Download and SRF ticker -> one SRF item. Adobe MAX agent news (shown Nov 11-12) only appears via CMSWire's governance analysis.
   - Freshness beats quota per CLAUDE.md (12 articles). Layout: Outside above Core; Mark-read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Friday, November 13, 2026 · 12 articles</div>
+    <div class="date">Saturday, November 14, 2026 · 12 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/unheilige-allianz-knall-in-finanzkommission-budget-2027-zur-ablehnung-empfohlen">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/ausschreitungen-in-basel-mildere-urteile-in-zweiter-instanz-fuer-basler-saubannerzug">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/unheilige-allianz-knall-in-finanzkommission-budget-2027-zur-ablehnung-empfohlen">Knall in der Finanzkommission: Budget 2027 zur Ablehnung empfohlen</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 12, 2026</div>
-    <div class="why">outside / schweiz – Bundesfinanzen</div>
-    <p class="summary">Die Finanzkommission des Nationalrats hat das Bundesbudget 2027 nach ihrer Beratung mit 15 zu 9 Stimmen abgelehnt und empfiehlt, es in der Wintersession an den Bundesrat zurückzuweisen. Die Nein-Stimmen kommen aus entgegengesetzten Gründen: SP und Grüne finden, es werde zugunsten der Armee zu viel gespart, die SVP will zusätzliche Kürzungen etwa bei Entwicklungshilfe und Asyl. Laut SRF-Analyse ist ein solcher Schritt einer Finanzkommission ohne Präzedenz; die Mitte warnt vor Chaos.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/ausschreitungen-in-basel-mildere-urteile-in-zweiter-instanz-fuer-basler-saubannerzug">Appellationsgericht Basel: Mildere Strafen für «Saubannerzug»</a></h3>
+    <div class="meta">SRF News – Schweiz · ~Nov 13, 2026</div>
+    <div class="why">outside / schweiz – Justiz</div>
+    <p class="summary">Im Berufungsprozess zu den Ausschreitungen von 2016 in Basel hat das Appellationsgericht die zwölf Beschuldigten mehrheitlich nur noch zu bedingten Geldstrafen statt Freiheitsstrafen verurteilt. Die Vorwürfe der Sachbeschädigung und einfachen Körperverletzung fielen weg, Landfriedensbruch sowie Gewalt und Drohung gegen Beamte blieben. Ein Mann wurde freigesprochen, eine Frau erhielt neun Monate bedingt – die erste Instanz hatte noch deutlich härter geurteilt.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/im-stadtteil-brooklyn-acht-tote-und-18-verletzte-bei-hauseinsturz-in-new-york">
+  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/stoerung-bei-outlook-und-teams-das-ist-ueber-den-weltweiten-microsoft-ausfall-bekannt">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/im-stadtteil-brooklyn-acht-tote-und-18-verletzte-bei-hauseinsturz-in-new-york">Hauseinsturz in Brooklyn: Acht Tote und 18 Verletzte</a></h3>
-    <div class="meta">SRF News – International · Nov 12, 2026</div>
-    <div class="why">outside / world – USA</div>
-    <p class="summary">Im New Yorker Viertel Flatbush ist am Mittwochnachmittag ein mehrstöckiges Wohnhaus vollständig eingestürzt, Teile fielen in eine benachbarte Baugrube. Die Zahl der Todesopfer stieg im Lauf der Bergung auf mindestens acht, darunter zwei Kinder; über 250 Einsatzkräfte suchten nach Verschütteten. Die Ursache ist offen, die Behörden verweisen auf Aushubarbeiten für einen Neubau auf dem Nachbargrundstück.</p>
+    <h3><a href="https://www.srf.ch/news/wirtschaft/stoerung-bei-outlook-und-teams-das-ist-ueber-den-weltweiten-microsoft-ausfall-bekannt">Outlook, Teams, Copilot: Das ist über den Microsoft-Ausfall bekannt</a></h3>
+    <div class="meta">SRF News – Wirtschaft/International · Nov 13, 2026</div>
+    <div class="why">outside / world – globale IT-Störung</div>
+    <p class="summary">Seit Donnerstagabend sind Microsoft-Dienste wie Outlook, Teams und Copilot weltweit gestört; Meldungen kamen aus 74 Ländern, betroffen waren auch Behörden, etwa in Australien. Auslöser waren laut Microsoft zahlreiche Server, die eine automatische Funktionsprüfung nicht bestanden und so die übrigen überlasteten – Hinweise auf einen Cyberangriff gebe es nicht. In der Schweiz verschob unter anderem Richemont die Publikation seiner Halbjahreszahlen; Fachleute sprechen von einem Weckruf zur Abhängigkeit von einem einzigen Anbieter.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/nations-league/vor-aufstieg-in-nations-league-nati-1-punkt-holen-und-dann-bereits-blick-richtung-em-quali">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/nationalmannschaft/maues-spiel-in-nations-league-minimalistische-nati-steigt-nach-einem-0-0-in-slowenien-auf">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/nations-league/vor-aufstieg-in-nations-league-nati-1-punkt-holen-und-dann-bereits-blick-richtung-em-quali">Vor dem Aufstieg: Nati braucht einen Punkt – und blickt schon auf die EM-Quali</a></h3>
-    <div class="meta">SRF Sport – Fussball · ~Nov 12, 2026</div>
+    <h3><a href="https://www.srf.ch/sport/fussball/nationalmannschaft/maues-spiel-in-nations-league-minimalistische-nati-steigt-nach-einem-0-0-in-slowenien-auf">Minimalistische Nati steigt nach einem 0:0 in Slowenien auf</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 13, 2026</div>
     <div class="why">outside / sport – Nati / Nations League</div>
-    <p class="summary">Heute Abend (20:45, Maribor) reicht der Schweiz gegen Slowenien ein Punkt, um in die A-Liga der Nations League zurückzukehren; am 16. November folgt Schottland in St. Gallen. Der Aufstieg hätte direkte Folgen: Bei der Auslosung der EM-Qualifikation am 6. Dezember in Belfast stünde die Nati in Topf 2. Die Qualifikation beginnt im März 2027.</p>
+    <p class="summary">Ein torloses Remis in Maribor reicht: Die Schweiz kehrt in die A-Liga der Nations League zurück. Das Spiel war zäh, die beste Chance vergab Dan Ndoye in der 80. Minute; Remo Freuler zeigte sich mit dem Punkt zufrieden. Zum Abschluss des Länderspieljahrs folgt am Montag Schottland in St. Gallen – und der Aufstieg sichert Topf 2 bei der EM-Quali-Auslosung.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/12/1148444/the-download-cop31-climate-talks-cognitive-immortality/">
+  <article class="card" data-link="https://www.cmswire.com/digital-marketing/adobe-max-hands-creatives-agents-and-marketing-teams-a-governance-job/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/12/1148444/the-download-cop31-climate-talks-cognitive-immortality/">The Download: COP31’s climate challenge and the quest for immortality</a></h3>
-    <div class="meta">MIT Technology Review · Nov 12, 2026</div>
-    <div class="why">core / ai &amp; tech – Klima, Newsletter</div>
-    <p class="summary">Die Ausgabe blickt auf die UN-Klimakonferenz COP31 im türkischen Antalya, wo vor dem Hintergrund stark gestiegener Energiepreise um fossile Brennstoffe und Klimafinanzierung gerungen wird. Zweites Thema ist die Idee der «kognitiven Unsterblichkeit». In den Kurzmeldungen: Berichte über die Ablösung von Nvidia-Chef Jensen Huang und der Ruf von 22 Staaten nach einem globalen KI-Aufsichtsgremium.</p>
+    <h3><a href="https://www.cmswire.com/digital-marketing/adobe-max-hands-creatives-agents-and-marketing-teams-a-governance-job/">Adobe MAX hands creatives agents and marketing teams a governance job</a></h3>
+    <div class="meta">CMSWire · Nov 13, 2026</div>
+    <div class="why">core / adobe – Agents &amp; Brand Governance</div>
+    <p class="summary">Mit Creative Agent, Firefly-Agenten, Capsules und lokalen MCP-Schnittstellen für Drittagenten öffnet Adobe viele neue Wege, Assets zu erzeugen. Markenregeln können dabei an drei Stellen liegen – Creative-Agent-Einstellungen, Brand Intelligence und einzelne Capsules –, und Adobe sagt bisher nicht, welche bei Konflikten gilt. CMSWire rät Brand-Teams, vor der Beta Anfang 2027 jeden Agenten-Pfad zu kartieren, Verantwortliche zu benennen und die massgebliche Regelquelle schriftlich festzulegen.</p>
   </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/">
+  <article class="card" data-link="https://news.adobe.com/news/2026/11/adobe-and-the-walt-disney-company-alliance">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/">Nvidia privately confirmed it could track chips to fight smuggling</a></h3>
-    <div class="meta">MIT Technology Review · Nov 12, 2026</div>
-    <div class="why">core / ai – Chips &amp; Regulierung</div>
-    <p class="summary">Während die Branche öffentlich bezweifelte, dass sich KI-Chips nach dem Verkauf orten lassen, haben Nvidia-Vertreter dem US-Abgeordneten Bill Foster gegenüber eingeräumt, die im Chip Security Act geforderten Anti-Schmuggel-Massnahmen seien technisch machbar. Die Recherche erscheint mitten in der Führungskrise um Jensen Huang und dürfte der Gesetzesvorlage Rückenwind geben.</p>
+    <h3><a href="https://news.adobe.com/news/2026/11/adobe-and-the-walt-disney-company-alliance">Adobe and The Walt Disney Company announce multi-year strategic AI alliance</a></h3>
+    <div class="meta">Adobe Newsroom · Nov 9, 2026</div>
+    <div class="why">core / adobe – Firefly Foundry, Partnerschaften</div>
+    <p class="summary">Adobe wird zum «Official AI Innovation Partner» von Disney und liefert frühen Zugang zu neuen Modellen wie Firefly und Firefly Foundry. Eigene Modelle sollen in Disneys Innovation Labs sowie in der Entwicklung von Parks und Kreuzfahrten die Konzeptarbeit beschleunigen, ohne die Arbeit der Kreativen preiszugeben. Teil des Deals sind auch gemeinsame Marketing-Auftritte, etwa an MAX und Summit; finanzielle Details nennt Adobe nicht.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/digital-marketing/brian-halligan-returns-as-hubspot-ceo-replacing-yamini-rangan/">
+  <article class="card" data-link="https://www.cmswire.com/contact-center/zingtree-debuts-governed-agentic-ai-for-contact-centers/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-marketing/brian-halligan-returns-as-hubspot-ceo-replacing-yamini-rangan/">HubSpot begins AI overhaul with founder Halligan as CEO, again</a></h3>
-    <div class="meta">CMSWire · Nov 12, 2026</div>
-    <div class="why">core / martech – Marketing-Plattformen</div>
-    <p class="summary">Mitgründer Brian Halligan übernimmt per sofort wieder die Führung von HubSpot und ersetzt Yamini Rangan, die das Unternehmen Anfang Dezember verlässt; HubSpot spricht von einer «Neugründung» rund um KI-Agenten. Die Gründe für den abrupten Wechsel bleiben weitgehend offen. Zudem tritt CFO Kate Bueker im Februar 2027 ab, Nachfolgerin wird Karen Burgess, die von Adobe kommt.</p>
+    <h3><a href="https://www.cmswire.com/contact-center/zingtree-debuts-governed-agentic-ai-for-contact-centers/">Zingtree debuts governed agentic AI for contact centers</a></h3>
+    <div class="meta">CMSWire · Nov 10, 2026</div>
+    <div class="why">core / cx – Agentic AI &amp; Governance</div>
+    <p class="summary">Zingtree lanciert eine Governance- und Orchestrierungsplattform für Contact Center in regulierten Branchen, die feste Regeln mit KI-Reasoning kombiniert. Deterministische Schritte laufen ausserhalb der Modelle, was Token-Kosten spart, und jede Antwort und Aktion wird für Audits protokolliert. Der Anbieter verweist auf eine Gartner-Prognose, wonach bis 2027 40 % der Unternehmen autonome Agenten wegen Governance-Problemen zurückstufen werden.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/contact-center/parloa-openai-expand-agentic-customer-experience-partnership/">
+  <article class="card" data-link="https://martech.org/marketers-deploying-ai-agents-faster-than-they-can-measure-them/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/contact-center/parloa-openai-expand-agentic-customer-experience-partnership/">Parloa &amp; OpenAI expand agentic customer experience partnership</a></h3>
-    <div class="meta">CMSWire · Nov 11, 2026</div>
-    <div class="why">core / cx – Agentic AI</div>
-    <p class="summary">Das Berliner CX-KI-Unternehmen Parloa vertieft seine Zusammenarbeit mit OpenAI: Es erhält über das Alpha-Testprogramm frühen Zugang zu neuen Modellen, beide Firmen wollen gemeinsam Kundenservice-Agenten entwickeln und an Unternehmenskunden verkaufen. Gemeinsame Engineering-Sessions sollen Antwortzeiten, Zuverlässigkeit und Kosten verbessern; die Plattform soll zudem in den OpenAI Marketplace.</p>
+    <h3><a href="https://martech.org/marketers-deploying-ai-agents-faster-than-they-can-measure-them/">Marketers deploying AI agents faster than they can measure them</a></h3>
+    <div class="meta">MarTech · Nov 13, 2026</div>
+    <div class="why">core / analytics – Measurement &amp; Attribution</div>
+    <p class="summary">Laut Invocas «Broken Funnel Report» (451 US-Marketer) haben 44 % der B2C-Marketer Konversations-Agenten live und weitere 27 % im Test. Doch nur 26 % können Agenten-Gespräche einer Kampagne oder einem Keyword zuordnen, nur 19 % spielen Conversions zuverlässig an Werbeplattformen zurück, und nur 27 % messen Erfolg primär an Umsatz. Am meisten gewünscht: Agenten, die die bisherige digitale Customer Journey kennen.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/the-wire/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together/">
+  <article class="card" data-link="https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/the-wire/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together/">Supermetrics launches Campaign Manager</a></h3>
-    <div class="meta">CMSWire (The Wire) · Nov 10, 2026</div>
-    <div class="why">core / martech – Marketing-Daten, Ads</div>
-    <p class="summary">Supermetrics will mit Campaign Manager die Lücke zwischen KI-Analyse und Umsetzung schliessen: Marketer prüfen vorgeschlagene Kampagnenänderungen und setzen sie direkt aus ihrem KI-Chat-Tool um, über Google, Meta, LinkedIn, Microsoft, TikTok, Snapchat und ChatGPT Ads hinweg. Freigaben, Berechtigungen und Budget-Leitplanken bleiben beim Menschen, jede Änderung wird protokolliert. Es handelt sich um eine Pressemitteilung des Anbieters.</p>
+    <h3><a href="https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/">Meet your new teammate: Building marketing workflows around AI agents</a></h3>
+    <div class="meta">MarTech · Nov 13, 2026</div>
+    <div class="why">core / marketing-ops – KI-Workflows</div>
+    <p class="summary">Ein Panel der MarTech Conference diskutierte, wie Teams Arbeit mit KI-Agenten teilen, ohne menschliches Urteil zu verlieren. Die Kernratschläge: zuerst Prozess und Engpass definieren statt ein Tool zu wählen, Entscheidungen und Markenwissen dokumentieren, damit Agenten Kontext haben, und je näher am Kunden, desto mehr Mensch im Loop. Statt Verboten empfehlen die Panelisten freigegebene, sichere Zugänge, da Mitarbeitende sonst private Accounts nutzen.</p>
   </article>
-  <article class="card" data-link="https://martech.org/iab-unveils-framework-for-measuring-ais-part-in-conversions/">
+  <article class="card" data-link="https://martech.org/relevance-has-an-expiration-date/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/iab-unveils-framework-for-measuring-ais-part-in-conversions/">IAB unveils framework for measuring AI’s part in conversions</a></h3>
-    <div class="meta">MarTech · Nov 12, 2026</div>
-    <div class="why">core / analytics – Attribution</div>
-    <p class="summary">Mit dem «AI-Era Attribution Blueprint» schlägt das IAB vor, Conversions als menschlich, KI-unterstützt oder KI-ausgeführt einzustufen und dabei zu trennen, wer Einfluss geltend machen darf und wer tatsächlich Attributions-Credit erhält. Plattform-Angaben sollen von unabhängig verifizierten Daten unterschieden werden. Das Grundproblem bleibt: Viele der nötigen Daten werden nicht erhoben oder bleiben bei den KI-Plattformen.</p>
+    <h3><a href="https://martech.org/relevance-has-an-expiration-date/">Relevance has an expiration date</a></h3>
+    <div class="meta">MarTech · Nov 13, 2026</div>
+    <div class="why">core / martech – Personalisierung</div>
+    <p class="summary">Die Kolumne warnt, dass automatisierte Sequenzen oft noch auf altes Verhalten reagieren, wenn das Interesse der Kundin längst weitergezogen ist. Bessere Personalisierung beginne mit der Frage, was für die Person jetzt zählt, nicht was sie vor Wochen geklickt hat. Manchmal sei es klüger, eine Nachricht gar nicht zu senden, weil mehr Kontakt nur mehr Reibung erzeugt.</p>
   </article>
-  <article class="card" data-link="https://martech.org/building-cross-channel-measurement-for-ai-first-media-landscape/">
+  <article class="card" data-link="https://martech.org/before-you-ask-for-better-leads-define-better/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/building-cross-channel-measurement-for-ai-first-media-landscape/">How to build a cross-channel measurement framework for an AI-first media landscape</a></h3>
-    <div class="meta">MarTech · Nov 12, 2026</div>
-    <div class="why">core / analytics – Measurement</div>
-    <p class="summary">Tonya Walker argumentiert, dass die meisten Analytics-Setups noch auf Attributionsmodellen für klassisches Webverhalten beruhen und den Einfluss von KI-Antworten nicht erfassen. Sie schlägt vor, KI-Plattformen als eigenen Kanal zu behandeln und vier Sichtbarkeitsgrössen zu messen: Erwähnung in KI-Antworten, Zitierung eigener Inhalte, messbarer Referral-Traffic sowie die Prompts, die zu Markennennungen führen – ergänzt um Position, Sentiment und AI Share of Voice.</p>
+    <h3><a href="https://martech.org/before-you-ask-for-better-leads-define-better/">Before you ask for better leads, define ‘better’</a></h3>
+    <div class="meta">MarTech · Nov 13, 2026</div>
+    <div class="why">core / marketing-ops – Lead-Qualität</div>
+    <p class="summary">«Lead-Qualität» bleibt laut dem Beitrag subjektiv, solange Marketing, Sales und Customer Success nicht gemeinsam festlegen, wie ein passender Account aussieht. Empfohlen wird ein sauber definiertes Ideal Customer Profile und, wo möglich, getrennte Fit-Scores pro Produkt statt eines einzigen Unternehmens-Scores. Erst danach lohne es sich, auf «bessere» Leads zu optimieren.</p>
   </article>
-  <article class="card" data-link="https://martech.org/connecting-with-shoppers-when-the-buyer-is-not-human/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/13/1148498/silicon-valley-claims-to-know-the-future-so-why-did-it-get-the-midterms-so-wrong/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/connecting-with-shoppers-when-the-buyer-is-not-human/">Connecting with shoppers when the buyer is not human</a></h3>
-    <div class="meta">MarTech (Sponsored, Optimove) · ~Nov 12, 2026</div>
-    <div class="why">core / martech – Agentic Commerce</div>
-    <p class="summary">Der Sponsored-Beitrag rät Händlern, Produkt-, Preis- und Lagerdaten für KI-Shopping-Agenten breit zugänglich zu machen, Kundendaten wie Kaufhistorie und Loyalty-Informationen aber stärker zu schützen. Gemäss Optimove-Umfrage nutzen 72% der US-Shopper bereits KI-Tools für Kaufideen. Wichtig sei, wiederkehrende Kundinnen und Kunden zu erkennen statt nur Bestellungen zu zählen – gerade wenn Agenten den Kaufpfad aus der eigenen Analytics verschwinden lassen.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/13/1148498/silicon-valley-claims-to-know-the-future-so-why-did-it-get-the-midterms-so-wrong/">Silicon Valley claims to know the future. So why did it get the midterms so wrong?</a></h3>
+    <div class="meta">MIT Technology Review · Nov 13, 2026</div>
+    <div class="why">core / ai &amp; tech – Politik, Meinung</div>
+    <p class="summary">Der Meinungsbeitrag argumentiert, dass Tech-Grössen wie Altman, Musk und Zuckerberg langfristige Firmeninteressen für kurzfristige politische Nähe zur Trump-Regierung geopfert hätten – trotz Umfragen, die wachsende Ablehnung von KI und Rechenzentren zeigten. KI sei so zum Kulturkampf-Thema geworden; lokale Abstimmungen über Data Center drehten sich nun auch um Strompreise und Politik. Ruhm in der Tech-Welt mache noch keine Expertise in Politik oder Wirtschaft.</p>
   </article>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">Adobe Journey Optimizer release notes — November 2026</a></h3>
-    <div class="meta">Adobe Experience League · updated Nov 10, 2026 (monthly release)</div>
-    <div class="why">core / adobe – AJO / AEP</div>
-    <p class="summary">Die November-Release von Journey Optimizer bringt Coworker-Skills, mit denen sich orchestrierte Kampagnen per Chat auflisten, prüfen und visualisieren lassen (Erstellen oder Publizieren noch nicht). In Limited Availability können Personalized-Optimization-Modelle Profilattribute und Kontextsignale für Echtzeit-Offer-Scoring nutzen, und AEM-Content-Fragments unterstützen dynamische Profil-Tokens. Für den 17./18. November angekündigt: KI-Empfehlungskarten bei Journey-Alerts und 25 statt 10 Message-Aktionen pro Kampagnen-Canvas.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/">More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials</a></h3>
+    <div class="meta">MIT Technology Review · Nov 13, 2026</div>
+    <div class="why">core / tech – Neurotech &amp; Datenethik</div>
+    <p class="summary">Neue Leitlinien für Brain-Computer-Interface-Studien, mitentwickelt von ehemaligen Teilnehmenden wie Ian Burkhart, enthalten Empfehlungen in 13 Bereichen. Hirndaten sollen als persönliche Daten der Teilnehmenden gelten, jederzeit für sie zugänglich sein und nicht durch NDAs vom Austausch mit Ärzten ausgeschlossen werden; zudem sollen Geräte nach Studienende eine «angemessene Zeit» gewartet werden. Kritiker finden manche Punkte vage, die Leitlinien sollen weiterentwickelt werden.</p>
   </article>
   <footer>
     Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No Bundesliga / Premier League item today: international break, nothing confirmably fresh (see the run notes in the page source).

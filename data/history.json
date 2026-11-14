@@ -1,51 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-06",
-      "link": "https://www.srf.ch/news/schweiz/kuehlanlage-manipuliert-nun-auch-in-der-schweiz-metzgerei-opfer-von-hackerangriff",
-      "title": "Kühlanlage manipuliert: Berner Metzgerei Opfer eines Hackerangriffs"
-    },
-    {
-      "date": "2026-11-06",
-      "link": "https://srf.ch/news/international/konflikt-usa-iran-wir-stecken-schon-jetzt-im-schlimmsten-szenario",
-      "title": "Konflikt USA–Iran: «Wir stecken schon jetzt im schlimmsten Fall»"
-    },
-    {
-      "date": "2026-11-06",
-      "link": "https://srf.ch/sport/fussball/super-league/12-super-league-runde-nach-fehlerorgie-thun-gewinnt-9-tore-spektakel-in-lausanne",
-      "title": "Nach Fehlerorgie: Thun gewinnt 9-Tore-Spektakel in Lausanne"
-    },
-    {
-      "date": "2026-11-06",
-      "link": "https://srf.ch/news/schweiz/donzallaz-und-van-de-graaf-liebesbeziehung-am-bundesgericht-urteil-mit-spannung-erwartet",
-      "title": "Liebesbeziehung am Bundesgericht: Urteil mit Spannung erwartet"
-    },
-    {
-      "date": "2026-11-06",
-      "link": "https://www.technologyreview.com/2026/11/05/1144908/the-download-texas-fragile-ai-boom-us-energy-policy/",
-      "title": "The Download: Texas's fragile AI boom and energy policy shifts"
-    },
-    {
-      "date": "2026-11-06",
-      "link": "https://martech.org/how-to-turn-ai-productivity-gains-into-marketing-roi/",
-      "title": "How to turn AI productivity gains into marketing ROI"
-    },
-    {
-      "date": "2026-11-06",
-      "link": "https://martech.org/what-to-do-before-buying-a-martech-platform-with-ai-context/",
-      "title": "What to do before buying a martech platform with AI context"
-    },
-    {
-      "date": "2026-11-06",
-      "link": "https://blog.adobe.com/en/publish/2026/11/05/best-sessions-to-attend-adobe-max-2026",
-      "title": "The best sessions to attend at Adobe MAX 2026"
-    },
-    {
-      "date": "2026-11-06",
-      "link": "https://technologyreview.com/2026/11/05/1148062/permitting-reform",
-      "title": "A new bill could change how the US builds energy infrastructure"
-    },
-    {
       "date": "2026-11-07",
       "link": "https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-befuerwortet-schweizer-erasmus-beitrag",
       "title": "EU-Vertragspaket: Nationalratskommission befürwortet Schweizer Erasmus-Beitrag"
@@ -284,6 +239,66 @@
       "date": "2026-11-13",
       "link": "https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes",
       "title": "Adobe Journey Optimizer release notes — November 2026"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://www.srf.ch/news/schweiz/ausschreitungen-in-basel-mildere-urteile-in-zweiter-instanz-fuer-basler-saubannerzug",
+      "title": "Appellationsgericht Basel: Mildere Strafen für «Saubannerzug»"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://www.srf.ch/news/wirtschaft/stoerung-bei-outlook-und-teams-das-ist-ueber-den-weltweiten-microsoft-ausfall-bekannt",
+      "title": "Outlook, Teams, Copilot: Das ist über den Microsoft-Ausfall bekannt"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://www.srf.ch/sport/fussball/nationalmannschaft/maues-spiel-in-nations-league-minimalistische-nati-steigt-nach-einem-0-0-in-slowenien-auf",
+      "title": "Minimalistische Nati steigt nach einem 0:0 in Slowenien auf"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://www.cmswire.com/digital-marketing/adobe-max-hands-creatives-agents-and-marketing-teams-a-governance-job/",
+      "title": "Adobe MAX hands creatives agents and marketing teams a governance job"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://news.adobe.com/news/2026/11/adobe-and-the-walt-disney-company-alliance",
+      "title": "Adobe and The Walt Disney Company announce multi-year strategic AI alliance"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://www.cmswire.com/contact-center/zingtree-debuts-governed-agentic-ai-for-contact-centers/",
+      "title": "Zingtree debuts governed agentic AI for contact centers"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://martech.org/marketers-deploying-ai-agents-faster-than-they-can-measure-them/",
+      "title": "Marketers deploying AI agents faster than they can measure them"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/",
+      "title": "Meet your new teammate: Building marketing workflows around AI agents"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://martech.org/relevance-has-an-expiration-date/",
+      "title": "Relevance has an expiration date"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://martech.org/before-you-ask-for-better-leads-define-better/",
+      "title": "Before you ask for better leads, define ‘better’"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://www.technologyreview.com/2026/11/13/1148498/silicon-valley-claims-to-know-the-future-so-why-did-it-get-the-midterms-so-wrong/",
+      "title": "Silicon Valley claims to know the future. So why did it get the midterms so wrong?"
+    },
+    {
+      "date": "2026-11-14",
+      "link": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/",
+      "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials"
     }
   ]
 }
