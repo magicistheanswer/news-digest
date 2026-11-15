@@ -1,36 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-07",
-      "link": "https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-befuerwortet-schweizer-erasmus-beitrag",
-      "title": "EU-Vertragspaket: Nationalratskommission befürwortet Schweizer Erasmus-Beitrag"
-    },
-    {
-      "date": "2026-11-07",
-      "link": "https://www.srf.ch/news/schweiz/abstimmungs-arena-soll-das-kriegsmaterialgesetz-gelockert-werden",
-      "title": "«Abstimmungs-Arena»: Soll das Kriegsmaterialgesetz gelockert werden?"
-    },
-    {
-      "date": "2026-11-07",
-      "link": "https://www.srf.ch/news/wirtschaft/nach-den-midterms-warum-sind-die-boersen-rund-um-den-globus-eingebrochen",
-      "title": "Nach den Midterms: Warum sind die Börsen rund um den Globus eingebrochen?"
-    },
-    {
-      "date": "2026-11-07",
-      "link": "https://www.srf.ch/sport/fussball/conference-league/3-1-gegen-heart-of-midlothian-thun-bestaetigt-gegen-schwache-schotten-seinen-aufwaertstrend",
-      "title": "Thun bestätigt gegen schwache Schotten seinen Aufwärtstrend"
-    },
-    {
-      "date": "2026-11-07",
-      "link": "https://www.technologyreview.com/2026/11/06/1148154/the-download-humanoid-robot-cleaner-samsung-ai-chip-boom/",
-      "title": "The Download: a humanoid cleans house and Samsung builds for the AI boom"
-    },
-    {
-      "date": "2026-11-07",
-      "link": "https://www.cmswire.com/the-wire/observeai-launches-headless-companion-agent-to-bring-real-time-guidance-automation/",
-      "title": "Observe.AI Launches Headless Companion Agent for CX Agents' Desktops"
-    },
-    {
       "date": "2026-11-08",
       "link": "https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-svp-fraktionschef-thomas-aeschi-will-bundesrat-werden",
       "title": "SVP-Fraktionschef Thomas Aeschi will Bundesrat werden"
@@ -299,6 +269,21 @@
       "date": "2026-11-14",
       "link": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/",
       "title": "More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials"
+    },
+    {
+      "date": "2026-11-15",
+      "link": "https://www.srf.ch/news/schweiz/kantonsbudget-2027-tausende-menschen-demonstrieren-in-genf-gegen-sparmassnahmen",
+      "title": "Genf: Tausende demonstrieren gegen Sparmassnahmen im Kantonsbudget"
+    },
+    {
+      "date": "2026-11-15",
+      "link": "https://www.srf.ch/news/international/us-raumfahrtunternehmen-spacex-spacex-faengt-starship-erstmals-mit-greifarmen-auf",
+      "title": "SpaceX fängt erstmals die Starship-Oberstufe mit Greifarmen auf"
+    },
+    {
+      "date": "2026-11-15",
+      "link": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/doc-changes",
+      "title": "Customer Journey Analytics: November-Doku-Updates – Coworker ersetzt AI Assistant"
     }
   ]
 }

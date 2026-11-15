@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-14</title>
+<title>Morning News Digest — 2026-11-15</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,107 +95,43 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-14, Saturday):
-  - Direct RSS/Atom fetching still blocked (curl to technologyreview.com rejected by the egress proxy, WebFetch cannot resolve feed hosts); fallback: WebSearch scoped per source domain, dates from URLs or explicit date follow-up searches.
-  - Used (9 core / 3 outside): MIT TR midterms opinion + BCI volunteer guidelines (both Nov 13, dates in URL). CMSWire: Adobe MAX governance (Nov 13), Zingtree (Nov 10). MarTech: AI agents measurement, workflows around agents, relevance, lead quality (all Nov 13). Adobe: no new blog post after Nov 11 found; used the Adobe/Disney alliance newsroom release (Nov 9, MAX; not shown before). SRF Schweiz: Saubannerzug appeal verdict (~Nov 13, reported as same-day). SRF International/Wirtschaft: Microsoft global outage (Nov 13). SRF Sport: Nati 0:0 in Slovenia, promotion to League A (Fri Nov 13).
-  - Skipped: MeasureCamp (event pages only, nothing dated). Kicker Bundesliga: international break (Nov 9-17), latest found items ~Nov 8. BBC News / BBC Sport: domains not accessible to the search tool (as on previous runs). MIT TR Download Nov 13 left out (its lead item, Nvidia chip tracking, shown Nov 13; midterms piece included directly). Adobe Open for Business (Nov 10, small-business toolkit) left out as off-profile. SRF Iran/IAEA ticker item: exact article date unconfirmed. Kriegsmaterialgesetz analysis left out (topic covered Nov 7).
-  - Dedup: Microsoft outage also mentioned in MIT TR Download and SRF ticker -> one SRF item. Adobe MAX agent news (shown Nov 11-12) only appears via CMSWire's governance analysis.
-  - Freshness beats quota per CLAUDE.md (12 articles). Layout: Outside above Core; Mark-read via localStorage kept.
+  Run notes (2026-11-15, Sunday):
+  - Direct RSS/Atom fetching still blocked (curl to technologyreview.com / martech.org fails; WebFetch cannot resolve srf.ch or martech.org); fallback: WebSearch scoped per source domain, dates from URLs or explicit date follow-up searches.
+  - Used (1 core / 2 outside): SRF Schweiz Genf budget protest (Nov 14). SRF International SpaceX Starship upper-stage catch (Nov 14, also in Tagesschau 14.11.). Adobe Experience League CJA documentation updates (last updated Nov 10; monthly cadence, within ~2 weeks; also covers Adobe Analytics notes of Nov 10).
+  - Skipped: MIT Technology Review (newest items Nov 12-13, all shown or covered; Download Nov 13 leads already shown). MarTech (newest dated items Nov 13, all shown; "Built to adapt" composable recap - publish date could not be confirmed, only the Nov 4 session date). CMSWire (nothing new after Nov 13; HubSpot/Halligan and Adobe MAX governance already shown). Adobe blog (no post after Nov 11 found). MeasureCamp (event pages only - note: MeasureCamp Zurich on Nov 21 is sold out, waitlist open). SRF International Katar-Tuerkei defence pact analysis: exact date unconfirmed. SRF Multisport-EM item: from May 2026. SRF Sport: Nati promotion shown Nov 14; Scotland game (Mon Nov 16) previews undated. Kicker Bundesliga: international break (Nov 9-17), nothing confirmably fresh. BBC News / BBC Sport: domains not reachable via the search tool.
+  - Weekend + international break -> very thin day. Freshness beats quota per CLAUDE.md (3 articles). Layout: Outside above Core; Mark-read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Saturday, November 14, 2026 · 12 articles</div>
+    <div class="date">Sunday, November 15, 2026 · 3 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/ausschreitungen-in-basel-mildere-urteile-in-zweiter-instanz-fuer-basler-saubannerzug">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/kantonsbudget-2027-tausende-menschen-demonstrieren-in-genf-gegen-sparmassnahmen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/ausschreitungen-in-basel-mildere-urteile-in-zweiter-instanz-fuer-basler-saubannerzug">Appellationsgericht Basel: Mildere Strafen für «Saubannerzug»</a></h3>
-    <div class="meta">SRF News – Schweiz · ~Nov 13, 2026</div>
-    <div class="why">outside / schweiz – Justiz</div>
-    <p class="summary">Im Berufungsprozess zu den Ausschreitungen von 2016 in Basel hat das Appellationsgericht die zwölf Beschuldigten mehrheitlich nur noch zu bedingten Geldstrafen statt Freiheitsstrafen verurteilt. Die Vorwürfe der Sachbeschädigung und einfachen Körperverletzung fielen weg, Landfriedensbruch sowie Gewalt und Drohung gegen Beamte blieben. Ein Mann wurde freigesprochen, eine Frau erhielt neun Monate bedingt – die erste Instanz hatte noch deutlich härter geurteilt.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/kantonsbudget-2027-tausende-menschen-demonstrieren-in-genf-gegen-sparmassnahmen">Genf: Tausende demonstrieren gegen Sparmassnahmen im Kantonsbudget</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 14, 2026</div>
+    <div class="why">outside / schweiz – Kantonsfinanzen</div>
+    <p class="summary">In Genf gingen mehrere tausend Menschen gegen die geplanten Kürzungen im Budget 2027 auf die Strasse – die Polizei zählte rund 3500, die Organisatoren deutlich mehr. Der Entwurf sieht Einsparungen von knapp 248 Millionen Franken vor, etwa pauschale Subventionskürzungen für Vereine und tiefere Leistungsaufträge für die Universitätsspitäler HUG und die Spitex-Organisation IMAD. Gewerkschaften und linke Parteien kündigen weitere Mobilisierung an, bevor der Grosse Rat im Dezember debattiert; ähnliche Proteste gab es bereits in Lausanne.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/stoerung-bei-outlook-und-teams-das-ist-ueber-den-weltweiten-microsoft-ausfall-bekannt">
+  <article class="card" data-link="https://www.srf.ch/news/international/us-raumfahrtunternehmen-spacex-spacex-faengt-starship-erstmals-mit-greifarmen-auf">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/wirtschaft/stoerung-bei-outlook-und-teams-das-ist-ueber-den-weltweiten-microsoft-ausfall-bekannt">Outlook, Teams, Copilot: Das ist über den Microsoft-Ausfall bekannt</a></h3>
-    <div class="meta">SRF News – Wirtschaft/International · Nov 13, 2026</div>
-    <div class="why">outside / world – globale IT-Störung</div>
-    <p class="summary">Seit Donnerstagabend sind Microsoft-Dienste wie Outlook, Teams und Copilot weltweit gestört; Meldungen kamen aus 74 Ländern, betroffen waren auch Behörden, etwa in Australien. Auslöser waren laut Microsoft zahlreiche Server, die eine automatische Funktionsprüfung nicht bestanden und so die übrigen überlasteten – Hinweise auf einen Cyberangriff gebe es nicht. In der Schweiz verschob unter anderem Richemont die Publikation seiner Halbjahreszahlen; Fachleute sprechen von einem Weckruf zur Abhängigkeit von einem einzigen Anbieter.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/nationalmannschaft/maues-spiel-in-nations-league-minimalistische-nati-steigt-nach-einem-0-0-in-slowenien-auf">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/nationalmannschaft/maues-spiel-in-nations-league-minimalistische-nati-steigt-nach-einem-0-0-in-slowenien-auf">Minimalistische Nati steigt nach einem 0:0 in Slowenien auf</a></h3>
-    <div class="meta">SRF Sport – Fussball · Nov 13, 2026</div>
-    <div class="why">outside / sport – Nati / Nations League</div>
-    <p class="summary">Ein torloses Remis in Maribor reicht: Die Schweiz kehrt in die A-Liga der Nations League zurück. Das Spiel war zäh, die beste Chance vergab Dan Ndoye in der 80. Minute; Remo Freuler zeigte sich mit dem Punkt zufrieden. Zum Abschluss des Länderspieljahrs folgt am Montag Schottland in St. Gallen – und der Aufstieg sichert Topf 2 bei der EM-Quali-Auslosung.</p>
+    <h3><a href="https://www.srf.ch/news/international/us-raumfahrtunternehmen-spacex-spacex-faengt-starship-erstmals-mit-greifarmen-auf">SpaceX fängt erstmals die Starship-Oberstufe mit Greifarmen auf</a></h3>
+    <div class="meta">SRF News – International · Nov 14, 2026</div>
+    <div class="why">outside / world – Raumfahrt</div>
+    <p class="summary">Beim 15. Testflug ist es SpaceX gelungen, die obere Stufe des Starship nach rund 20 Stunden im All am Startturm in Texas wieder einzufangen – eine Premiere. Unterwegs setzte das Raumschiff Starlink-Satelliten aus. Der Super-Heavy-Booster dagegen verfehlte den Fang diesmal und stürzte kontrolliert ins Meer, die Ursache war zunächst unklar.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://www.cmswire.com/digital-marketing/adobe-max-hands-creatives-agents-and-marketing-teams-a-governance-job/">
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/doc-changes">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-marketing/adobe-max-hands-creatives-agents-and-marketing-teams-a-governance-job/">Adobe MAX hands creatives agents and marketing teams a governance job</a></h3>
-    <div class="meta">CMSWire · Nov 13, 2026</div>
-    <div class="why">core / adobe – Agents &amp; Brand Governance</div>
-    <p class="summary">Mit Creative Agent, Firefly-Agenten, Capsules und lokalen MCP-Schnittstellen für Drittagenten öffnet Adobe viele neue Wege, Assets zu erzeugen. Markenregeln können dabei an drei Stellen liegen – Creative-Agent-Einstellungen, Brand Intelligence und einzelne Capsules –, und Adobe sagt bisher nicht, welche bei Konflikten gilt. CMSWire rät Brand-Teams, vor der Beta Anfang 2027 jeden Agenten-Pfad zu kartieren, Verantwortliche zu benennen und die massgebliche Regelquelle schriftlich festzulegen.</p>
-  </article>
-  <article class="card" data-link="https://news.adobe.com/news/2026/11/adobe-and-the-walt-disney-company-alliance">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://news.adobe.com/news/2026/11/adobe-and-the-walt-disney-company-alliance">Adobe and The Walt Disney Company announce multi-year strategic AI alliance</a></h3>
-    <div class="meta">Adobe Newsroom · Nov 9, 2026</div>
-    <div class="why">core / adobe – Firefly Foundry, Partnerschaften</div>
-    <p class="summary">Adobe wird zum «Official AI Innovation Partner» von Disney und liefert frühen Zugang zu neuen Modellen wie Firefly und Firefly Foundry. Eigene Modelle sollen in Disneys Innovation Labs sowie in der Entwicklung von Parks und Kreuzfahrten die Konzeptarbeit beschleunigen, ohne die Arbeit der Kreativen preiszugeben. Teil des Deals sind auch gemeinsame Marketing-Auftritte, etwa an MAX und Summit; finanzielle Details nennt Adobe nicht.</p>
-  </article>
-  <article class="card" data-link="https://www.cmswire.com/contact-center/zingtree-debuts-governed-agentic-ai-for-contact-centers/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/contact-center/zingtree-debuts-governed-agentic-ai-for-contact-centers/">Zingtree debuts governed agentic AI for contact centers</a></h3>
-    <div class="meta">CMSWire · Nov 10, 2026</div>
-    <div class="why">core / cx – Agentic AI &amp; Governance</div>
-    <p class="summary">Zingtree lanciert eine Governance- und Orchestrierungsplattform für Contact Center in regulierten Branchen, die feste Regeln mit KI-Reasoning kombiniert. Deterministische Schritte laufen ausserhalb der Modelle, was Token-Kosten spart, und jede Antwort und Aktion wird für Audits protokolliert. Der Anbieter verweist auf eine Gartner-Prognose, wonach bis 2027 40 % der Unternehmen autonome Agenten wegen Governance-Problemen zurückstufen werden.</p>
-  </article>
-  <article class="card" data-link="https://martech.org/marketers-deploying-ai-agents-faster-than-they-can-measure-them/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/marketers-deploying-ai-agents-faster-than-they-can-measure-them/">Marketers deploying AI agents faster than they can measure them</a></h3>
-    <div class="meta">MarTech · Nov 13, 2026</div>
-    <div class="why">core / analytics – Measurement &amp; Attribution</div>
-    <p class="summary">Laut Invocas «Broken Funnel Report» (451 US-Marketer) haben 44 % der B2C-Marketer Konversations-Agenten live und weitere 27 % im Test. Doch nur 26 % können Agenten-Gespräche einer Kampagne oder einem Keyword zuordnen, nur 19 % spielen Conversions zuverlässig an Werbeplattformen zurück, und nur 27 % messen Erfolg primär an Umsatz. Am meisten gewünscht: Agenten, die die bisherige digitale Customer Journey kennen.</p>
-  </article>
-  <article class="card" data-link="https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/meet-your-new-teammate-building-marketing-workflows-around-ai-agents/">Meet your new teammate: Building marketing workflows around AI agents</a></h3>
-    <div class="meta">MarTech · Nov 13, 2026</div>
-    <div class="why">core / marketing-ops – KI-Workflows</div>
-    <p class="summary">Ein Panel der MarTech Conference diskutierte, wie Teams Arbeit mit KI-Agenten teilen, ohne menschliches Urteil zu verlieren. Die Kernratschläge: zuerst Prozess und Engpass definieren statt ein Tool zu wählen, Entscheidungen und Markenwissen dokumentieren, damit Agenten Kontext haben, und je näher am Kunden, desto mehr Mensch im Loop. Statt Verboten empfehlen die Panelisten freigegebene, sichere Zugänge, da Mitarbeitende sonst private Accounts nutzen.</p>
-  </article>
-  <article class="card" data-link="https://martech.org/relevance-has-an-expiration-date/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/relevance-has-an-expiration-date/">Relevance has an expiration date</a></h3>
-    <div class="meta">MarTech · Nov 13, 2026</div>
-    <div class="why">core / martech – Personalisierung</div>
-    <p class="summary">Die Kolumne warnt, dass automatisierte Sequenzen oft noch auf altes Verhalten reagieren, wenn das Interesse der Kundin längst weitergezogen ist. Bessere Personalisierung beginne mit der Frage, was für die Person jetzt zählt, nicht was sie vor Wochen geklickt hat. Manchmal sei es klüger, eine Nachricht gar nicht zu senden, weil mehr Kontakt nur mehr Reibung erzeugt.</p>
-  </article>
-  <article class="card" data-link="https://martech.org/before-you-ask-for-better-leads-define-better/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/before-you-ask-for-better-leads-define-better/">Before you ask for better leads, define ‘better’</a></h3>
-    <div class="meta">MarTech · Nov 13, 2026</div>
-    <div class="why">core / marketing-ops – Lead-Qualität</div>
-    <p class="summary">«Lead-Qualität» bleibt laut dem Beitrag subjektiv, solange Marketing, Sales und Customer Success nicht gemeinsam festlegen, wie ein passender Account aussieht. Empfohlen wird ein sauber definiertes Ideal Customer Profile und, wo möglich, getrennte Fit-Scores pro Produkt statt eines einzigen Unternehmens-Scores. Erst danach lohne es sich, auf «bessere» Leads zu optimieren.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/13/1148498/silicon-valley-claims-to-know-the-future-so-why-did-it-get-the-midterms-so-wrong/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/13/1148498/silicon-valley-claims-to-know-the-future-so-why-did-it-get-the-midterms-so-wrong/">Silicon Valley claims to know the future. So why did it get the midterms so wrong?</a></h3>
-    <div class="meta">MIT Technology Review · Nov 13, 2026</div>
-    <div class="why">core / ai &amp; tech – Politik, Meinung</div>
-    <p class="summary">Der Meinungsbeitrag argumentiert, dass Tech-Grössen wie Altman, Musk und Zuckerberg langfristige Firmeninteressen für kurzfristige politische Nähe zur Trump-Regierung geopfert hätten – trotz Umfragen, die wachsende Ablehnung von KI und Rechenzentren zeigten. KI sei so zum Kulturkampf-Thema geworden; lokale Abstimmungen über Data Center drehten sich nun auch um Strompreise und Politik. Ruhm in der Tech-Welt mache noch keine Expertise in Politik oder Wirtschaft.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/">More autonomy, fewer NDAs: Volunteers have new requests for brain implant trials</a></h3>
-    <div class="meta">MIT Technology Review · Nov 13, 2026</div>
-    <div class="why">core / tech – Neurotech &amp; Datenethik</div>
-    <p class="summary">Neue Leitlinien für Brain-Computer-Interface-Studien, mitentwickelt von ehemaligen Teilnehmenden wie Ian Burkhart, enthalten Empfehlungen in 13 Bereichen. Hirndaten sollen als persönliche Daten der Teilnehmenden gelten, jederzeit für sie zugänglich sein und nicht durch NDAs vom Austausch mit Ärzten ausgeschlossen werden; zudem sollen Geräte nach Studienende eine «angemessene Zeit» gewartet werden. Kritiker finden manche Punkte vage, die Leitlinien sollen weiterentwickelt werden.</p>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/doc-changes">Customer Journey Analytics: November-Doku-Updates – Coworker ersetzt AI Assistant</a></h3>
+    <div class="meta">Adobe Experience League · updated Nov 10, 2026</div>
+    <div class="why">core / adobe – CJA &amp; Analytics</div>
+    <p class="summary">Die CJA-Dokumentation wurde per 10. November überarbeitet: Die Seiten zu AI Assistant und Data Insights Agent sind durch Coworker ersetzt, die Obergrenze für Data Views pro Organisation steigt von 2000 auf 5000, und der Warnhinweis zur personenbezogenen Deduplizierung entfällt, da sie nur noch im gewählten Reporting-Zeitraum greift. Parallel beschreiben die Adobe-Analytics-Release-Notes vom selben Tag eine Coworker-gestützte Migration von Projekten nach CJA. Neu in den aktuellen CJA-Notes ist zudem ein Read-only-Modus für den CJA-MCP-Server.</p>
   </article>
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No Bundesliga / Premier League item today: international break, nothing confirmably fresh (see the run notes in the page source).
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. Short digest today: weekend plus football international break, and most sources had nothing new and confirmably dated since yesterday (see the run notes in the page source). Heads-up: MeasureCamp Zurich is on Nov 21 (sold out, waitlist).
   </footer>
 </div>
 <script>
