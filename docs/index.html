@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-15</title>
+<title>Morning News Digest — 2026-11-16</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,43 +95,85 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-15, Sunday):
-  - Direct RSS/Atom fetching still blocked (curl to technologyreview.com / martech.org fails; WebFetch cannot resolve srf.ch or martech.org); fallback: WebSearch scoped per source domain, dates from URLs or explicit date follow-up searches.
-  - Used (1 core / 2 outside): SRF Schweiz Genf budget protest (Nov 14). SRF International SpaceX Starship upper-stage catch (Nov 14, also in Tagesschau 14.11.). Adobe Experience League CJA documentation updates (last updated Nov 10; monthly cadence, within ~2 weeks; also covers Adobe Analytics notes of Nov 10).
-  - Skipped: MIT Technology Review (newest items Nov 12-13, all shown or covered; Download Nov 13 leads already shown). MarTech (newest dated items Nov 13, all shown; "Built to adapt" composable recap - publish date could not be confirmed, only the Nov 4 session date). CMSWire (nothing new after Nov 13; HubSpot/Halligan and Adobe MAX governance already shown). Adobe blog (no post after Nov 11 found). MeasureCamp (event pages only - note: MeasureCamp Zurich on Nov 21 is sold out, waitlist open). SRF International Katar-Tuerkei defence pact analysis: exact date unconfirmed. SRF Multisport-EM item: from May 2026. SRF Sport: Nati promotion shown Nov 14; Scotland game (Mon Nov 16) previews undated. Kicker Bundesliga: international break (Nov 9-17), nothing confirmably fresh. BBC News / BBC Sport: domains not reachable via the search tool.
-  - Weekend + international break -> very thin day. Freshness beats quota per CLAUDE.md (3 articles). Layout: Outside above Core; Mark-read via localStorage kept.
+  Run notes (2026-11-16, Monday):
+  - Direct RSS/Atom fetching still blocked (curl to technologyreview.com / martech.org / bbci.co.uk / srf.ch gets no connection; WebFetch cannot resolve technologyreview.com). Fallback: WebSearch scoped per source domain; dates taken from URLs, author/listing pages or explicit date follow-up searches.
+  - Used (5 core / 4 outside): SRF Schweiz Thun sniper ammunition reached Russia (Nov 15). SRF International Hungary cash find (Nov 15) and Prague media-reform protest (Nov 15). SRF Sport Akanji leaves Nati camp (Sun Nov 15). CMSWire Adobe GenStudio + CX Enterprise Coworker (Nov 10). MarTech Claritas Email Advantage (Nov 10, confirmed via author page). Adobe Target 26.11.1 release notes (Nov 12). AJO November pre-release notes (updated Nov 10, release Nov 17-18). AEP Web SDK 2.37.0/2.37.1 release notes (Nov 2/4; monthly cadence, within ~2 weeks).
+  - Skipped: MIT Technology Review (newest found = The Download Nov 13, whose leads - midterms column and Nvidia chip tracking - were already shown; nothing from Nov 14-16 found). MarTech (newest dated items Nov 13, all shown; "Don't pay a premium for data you can't use" and "If you don't define your weakness, AI will" - publish dates not confirmable; "IAB launches Event and Conversion API" - date ambiguous, comment deadline Feb 2026 suggests an older piece). CMSWire (nothing confirmably dated after Nov 13; Five9 10-minute survey is from Oct 14; Kustomer AI QA undated). Adobe blog (no post after Nov 11 found). MeasureCamp (event pages only - MeasureCamp Zurich on Nov 21). Kicker Bundesliga: international break (Nov 9-17), Bundesliga resumes Fri Nov 20; nothing confirmably fresh. BBC News / BBC Sport: domains not reachable via the search tool. SRF Sport: Freuler/Rodriguez jubilee preview not separately dated (merged into the Akanji item context).
+  - Dedup: SRF items on Akanji and Ndoye departures treated as one story. Freshness beats quota per CLAUDE.md (9 articles). Layout: Outside above Core; Mark-read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Sunday, November 15, 2026 · 3 articles</div>
+    <div class="date">Monday, November 16, 2026 · 9 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/kantonsbudget-2027-tausende-menschen-demonstrieren-in-genf-gegen-sparmassnahmen">
+  <article class="card" data-link="https://www.srf.ch/news/waffenexporte-schweizer-munition-gelangte-ueber-umwege-nach-russland">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/kantonsbudget-2027-tausende-menschen-demonstrieren-in-genf-gegen-sparmassnahmen">Genf: Tausende demonstrieren gegen Sparmassnahmen im Kantonsbudget</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 14, 2026</div>
-    <div class="why">outside / schweiz – Kantonsfinanzen</div>
-    <p class="summary">In Genf gingen mehrere tausend Menschen gegen die geplanten Kürzungen im Budget 2027 auf die Strasse – die Polizei zählte rund 3500, die Organisatoren deutlich mehr. Der Entwurf sieht Einsparungen von knapp 248 Millionen Franken vor, etwa pauschale Subventionskürzungen für Vereine und tiefere Leistungsaufträge für die Universitätsspitäler HUG und die Spitex-Organisation IMAD. Gewerkschaften und linke Parteien kündigen weitere Mobilisierung an, bevor der Grosse Rat im Dezember debattiert; ähnliche Proteste gab es bereits in Lausanne.</p>
+    <h3><a href="https://www.srf.ch/news/waffenexporte-schweizer-munition-gelangte-ueber-umwege-nach-russland">Thuner Scharfschützenmunition gelangte trotz Sanktionen nach Russland</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 15, 2026</div>
+    <div class="why">outside / schweiz – Kriegsmaterial</div>
+    <p class="summary">Eine Recherche der NZZ am Sonntag zeichnet nach, wie in Thun hergestellte Sniper-Munition in Russland landete: legal nach Slowenien geliefert, von dort an einen Händler in Kirgistan weiterverkauft und dann nach Russland gebracht. Das Seco betont, das Sanktionsverbot umfasse Waffen aller Art. Brisant ist der Zeitpunkt – am 29. November stimmt die Schweiz über die Lockerung des Kriegsmaterialgesetzes ab.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/us-raumfahrtunternehmen-spacex-spacex-faengt-starship-erstmals-mit-greifarmen-auf">
+  <article class="card" data-link="https://www.srf.ch/news/international/korruptionsermittlungen-im-wald-vergraben-ermittler-finden-in-ungarn-millionen-euro">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/us-raumfahrtunternehmen-spacex-spacex-faengt-starship-erstmals-mit-greifarmen-auf">SpaceX fängt erstmals die Starship-Oberstufe mit Greifarmen auf</a></h3>
-    <div class="meta">SRF News – International · Nov 14, 2026</div>
-    <div class="why">outside / world – Raumfahrt</div>
-    <p class="summary">Beim 15. Testflug ist es SpaceX gelungen, die obere Stufe des Starship nach rund 20 Stunden im All am Startturm in Texas wieder einzufangen – eine Premiere. Unterwegs setzte das Raumschiff Starlink-Satelliten aus. Der Super-Heavy-Booster dagegen verfehlte den Fang diesmal und stürzte kontrolliert ins Meer, die Ursache war zunächst unklar.</p>
+    <h3><a href="https://www.srf.ch/news/international/korruptionsermittlungen-im-wald-vergraben-ermittler-finden-in-ungarn-millionen-euro">Ungarn: 17,7 Millionen Euro Bargeld im Wald vergraben gefunden</a></h3>
+    <div class="meta">SRF News – International · Nov 15, 2026</div>
+    <div class="why">outside / world – Ungarn, Korruption</div>
+    <p class="summary">Ungarns Anti-Korruptionsbehörde hat in Erdlöchern, Lagerhallen und Tresoren Bargeld im Wert von rund 17,7 Millionen Euro sichergestellt – im Zuge der Ermittlungen gegen den früheren Orban-Minister und heutigen Oppositionsabgeordneten Miklos Sesztak. Fidesz fordert ihn zur Mandatsniederlegung auf. Der SRF-Korrespondent spricht von einem Wendepunkt, weil Korruptionsvorwürfe gegen das alte Regime erstmals sichtbar belegt scheinen.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/news/international/umstrittene-medienreform-grossdemo-in-tschechien-gegen-abschaffung-von-rundfunkgebuehr">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/international/umstrittene-medienreform-grossdemo-in-tschechien-gegen-abschaffung-von-rundfunkgebuehr">Prag: Grossdemo gegen Abschaffung der Rundfunkgebühr</a></h3>
+    <div class="meta">SRF News – International · Nov 15, 2026</div>
+    <div class="why">outside / world – Tschechien, Medienpolitik</div>
+    <p class="summary">Auf der Prager Letná-Ebene protestierten Zehntausende gegen die Pläne der Regierung Babiš, die Rundfunkgebühren durch Steuerfinanzierung zu ersetzen – die Organisatoren sprechen von 350'000 bis 450'000 Teilnehmenden. Kritiker fürchten, die öffentlich-rechtlichen Sender gerieten so unter Regierungskontrolle. Die EU-Kommission beobachtet die Entwicklung.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-zur-schweizer-nati-leichte-beschwerden-akanji-reist-vorzeitig-ab">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-zur-schweizer-nati-leichte-beschwerden-akanji-reist-vorzeitig-ab">Akanji und Ndoye reisen ab – Nati heute ersatzgeschwächt gegen Schottland</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 15, 2026 · also covered: SRF (Ndoye departure)</div>
+    <div class="why">outside / sport – Nati / Nations League</div>
+    <p class="summary">Manuel Akanji hat den Zusammenzug wegen leichter Beschwerden verlassen, Dan Ndoye kehrt im Rahmen der Belastungssteuerung zu Nottingham Forest zurück; Xhaka, Manzambi und Muheim fehlen verletzt, nachnominiert wird niemand. Damit führt Remo Freuler das Team heute Abend (20:45, St. Gallen) im bedeutungslosen letzten Nations-League-Spiel gegen Schottland als Captain an – der Aufstieg in die Liga A ist bereits gesichert.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/doc-changes">
+  <article class="card" data-link="https://www.cmswire.com/customer-experience/adobe-embeds-agentic-ai-into-genstudio-with-cx-enterprise-coworker/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/doc-changes">Customer Journey Analytics: November-Doku-Updates – Coworker ersetzt AI Assistant</a></h3>
-    <div class="meta">Adobe Experience League · updated Nov 10, 2026</div>
-    <div class="why">core / adobe – CJA &amp; Analytics</div>
-    <p class="summary">Die CJA-Dokumentation wurde per 10. November überarbeitet: Die Seiten zu AI Assistant und Data Insights Agent sind durch Coworker ersetzt, die Obergrenze für Data Views pro Organisation steigt von 2000 auf 5000, und der Warnhinweis zur personenbezogenen Deduplizierung entfällt, da sie nur noch im gewählten Reporting-Zeitraum greift. Parallel beschreiben die Adobe-Analytics-Release-Notes vom selben Tag eine Coworker-gestützte Migration von Projekten nach CJA. Neu in den aktuellen CJA-Notes ist zudem ein Read-only-Modus für den CJA-MCP-Server.</p>
+    <h3><a href="https://www.cmswire.com/customer-experience/adobe-embeds-agentic-ai-into-genstudio-with-cx-enterprise-coworker/">Adobe Embeds Agentic AI Into GenStudio With CX Enterprise Coworker</a></h3>
+    <div class="meta">CMSWire · Nov 10, 2026</div>
+    <div class="why">core / adobe – GenStudio &amp; Coworker</div>
+    <p class="summary">At MAX, Adobe wired CX Enterprise Coworker into GenStudio as a conversational layer that coordinates agents and content workflows, pulling in third-party tools via MCP and agent-to-agent protocols. Brand Intelligence gains on-brand auto-resizing and is headed into Photoshop, Illustrator and InDesign; a demo produced 270 banners across 16 formats and four languages. Several pieces are still in beta with no GA date.</p>
+  </article>
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes">Adobe Target 26.11.1: Coworker lands in the Activities list</a></h3>
+    <div class="meta">Adobe Experience League · Nov 12, 2026</div>
+    <div class="why">core / adobe – Target</div>
+    <p class="summary">The November Target release adds Coworker entry points directly to the Activities list: orgs with Coworker access can request a review of live tests and ask questions about an individual activity from its menu. It continues Adobe's pattern this month of surfacing the agent inside each app rather than in a separate console.</p>
+  </article>
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/e-release-notes">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/e-release-notes">Journey Optimizer November release (Nov 17–18): what's coming</a></h3>
+    <div class="meta">Adobe Experience League · pre-release notes updated Nov 10, 2026</div>
+    <div class="why">core / adobe – AJO</div>
+    <p class="summary">AJO's pre-release notes for this week's release raise the cap on message actions per orchestrated-campaign canvas from 10 to 25, so complex email/push/SMS flows no longer need splitting. Also listed: AI recommendation cards for journey alerts and new Decisioning skills in Coworker, including help building decision items. Adobe flags the content as subject to change until release day.</p>
+  </article>
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/release-notes">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/release-notes">AEP Web SDK 2.37: runtime switch for Adobe Advertising</a></h3>
+    <div class="meta">Adobe Experience League · Nov 2 &amp; Nov 4, 2026</div>
+    <div class="why">core / adobe – AEP data collection</div>
+    <p class="summary">Web SDK 2.37.0 adds an <code>advertising.enabled</code> option that lets implementations turn Adobe Advertising off at runtime – handy for consent-driven setups. The 2.37.1 follow-up fixes the library misreporting its version when installed via npm, which matters if you audit SDK versions across properties.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/claritas-brings-live-optimization-to-acquisition-email/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/claritas-brings-live-optimization-to-acquisition-email/">Claritas brings live optimization to acquisition email</a></h3>
+    <div class="meta">MarTech · Nov 10, 2026</div>
+    <div class="why">core / martech – email &amp; audiences</div>
+    <p class="summary">Claritas launched Email Advantage, an acquisition-email product that re-tunes audience targeting mid-campaign as conversion data arrives instead of locking the list at send time. It also tests multiple subject lines across audience segments, applying the closed-loop optimization familiar from paid media to prospecting email.</p>
   </article>
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. Short digest today: weekend plus football international break, and most sources had nothing new and confirmably dated since yesterday (see the run notes in the page source). Heads-up: MeasureCamp Zurich is on Nov 21 (sold out, waitlist).
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. Shorter digest today: most core sources had nothing new and confirmably dated since Nov 13, and the football international break continues until Bundesliga resumes Friday (see run notes in the page source). Reminder: MeasureCamp Zurich is this Saturday, Nov 21.
   </footer>
 </div>
 <script>

@@ -1,21 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-08",
-      "link": "https://www.srf.ch/news/schweiz/nachfolge-von-guy-parmelin-svp-fraktionschef-thomas-aeschi-will-bundesrat-werden",
-      "title": "SVP-Fraktionschef Thomas Aeschi will Bundesrat werden"
-    },
-    {
-      "date": "2026-11-08",
-      "link": "https://www.srf.ch/sport/fussball/super-league/siegtor-in-der-92-minute-dank-essende-und-viel-dusel-yb-gewinnt-in-luzern",
-      "title": "Siegtor in der 92. Minute: Dank Essende und viel Dusel gewinnt YB in Luzern"
-    },
-    {
-      "date": "2026-11-08",
-      "link": "https://martech.org/chatgpts-paid-traffic-is-worth-far-less-than-googles/",
-      "title": "ChatGPT's paid traffic is worth far less than Google's"
-    },
-    {
       "date": "2026-11-10",
       "link": "https://www.technologyreview.com/2026/11/09/1148176/the-download-empty-ai-climate-claims-and-an-nvidia-investigation/",
       "title": "The Download: empty AI climate claims, and an Nvidia investigation"
@@ -284,6 +269,51 @@
       "date": "2026-11-15",
       "link": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/doc-changes",
       "title": "Customer Journey Analytics: November-Doku-Updates – Coworker ersetzt AI Assistant"
+    },
+    {
+      "date": "2026-11-16",
+      "link": "https://www.srf.ch/news/waffenexporte-schweizer-munition-gelangte-ueber-umwege-nach-russland",
+      "title": "Thuner Scharfschützenmunition gelangte trotz Sanktionen nach Russland"
+    },
+    {
+      "date": "2026-11-16",
+      "link": "https://www.srf.ch/news/international/korruptionsermittlungen-im-wald-vergraben-ermittler-finden-in-ungarn-millionen-euro",
+      "title": "Ungarn: 17,7 Millionen Euro Bargeld im Wald vergraben gefunden"
+    },
+    {
+      "date": "2026-11-16",
+      "link": "https://www.srf.ch/news/international/umstrittene-medienreform-grossdemo-in-tschechien-gegen-abschaffung-von-rundfunkgebuehr",
+      "title": "Prag: Grossdemo gegen Abschaffung der Rundfunkgebühr"
+    },
+    {
+      "date": "2026-11-16",
+      "link": "https://www.srf.ch/sport/fussball/super-league/news-zur-schweizer-nati-leichte-beschwerden-akanji-reist-vorzeitig-ab",
+      "title": "Akanji und Ndoye reisen ab – Nati heute ersatzgeschwächt gegen Schottland"
+    },
+    {
+      "date": "2026-11-16",
+      "link": "https://www.cmswire.com/customer-experience/adobe-embeds-agentic-ai-into-genstudio-with-cx-enterprise-coworker/",
+      "title": "Adobe Embeds Agentic AI Into GenStudio With CX Enterprise Coworker"
+    },
+    {
+      "date": "2026-11-16",
+      "link": "https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes",
+      "title": "Adobe Target 26.11.1: Coworker lands in the Activities list"
+    },
+    {
+      "date": "2026-11-16",
+      "link": "https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/e-release-notes",
+      "title": "Journey Optimizer November release (Nov 17–18): what's coming"
+    },
+    {
+      "date": "2026-11-16",
+      "link": "https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/release-notes",
+      "title": "AEP Web SDK 2.37: runtime switch for Adobe Advertising"
+    },
+    {
+      "date": "2026-11-16",
+      "link": "https://martech.org/claritas-brings-live-optimization-to-acquisition-email/",
+      "title": "Claritas brings live optimization to acquisition email"
     }
   ]
 }
