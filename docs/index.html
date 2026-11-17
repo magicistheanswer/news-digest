@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-16</title>
+<title>Morning News Digest — 2026-11-17</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,85 +95,120 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-16, Monday):
-  - Direct RSS/Atom fetching still blocked (curl to technologyreview.com / martech.org / bbci.co.uk / srf.ch gets no connection; WebFetch cannot resolve technologyreview.com). Fallback: WebSearch scoped per source domain; dates taken from URLs, author/listing pages or explicit date follow-up searches.
-  - Used (5 core / 4 outside): SRF Schweiz Thun sniper ammunition reached Russia (Nov 15). SRF International Hungary cash find (Nov 15) and Prague media-reform protest (Nov 15). SRF Sport Akanji leaves Nati camp (Sun Nov 15). CMSWire Adobe GenStudio + CX Enterprise Coworker (Nov 10). MarTech Claritas Email Advantage (Nov 10, confirmed via author page). Adobe Target 26.11.1 release notes (Nov 12). AJO November pre-release notes (updated Nov 10, release Nov 17-18). AEP Web SDK 2.37.0/2.37.1 release notes (Nov 2/4; monthly cadence, within ~2 weeks).
-  - Skipped: MIT Technology Review (newest found = The Download Nov 13, whose leads - midterms column and Nvidia chip tracking - were already shown; nothing from Nov 14-16 found). MarTech (newest dated items Nov 13, all shown; "Don't pay a premium for data you can't use" and "If you don't define your weakness, AI will" - publish dates not confirmable; "IAB launches Event and Conversion API" - date ambiguous, comment deadline Feb 2026 suggests an older piece). CMSWire (nothing confirmably dated after Nov 13; Five9 10-minute survey is from Oct 14; Kustomer AI QA undated). Adobe blog (no post after Nov 11 found). MeasureCamp (event pages only - MeasureCamp Zurich on Nov 21). Kicker Bundesliga: international break (Nov 9-17), Bundesliga resumes Fri Nov 20; nothing confirmably fresh. BBC News / BBC Sport: domains not reachable via the search tool. SRF Sport: Freuler/Rodriguez jubilee preview not separately dated (merged into the Akanji item context).
-  - Dedup: SRF items on Akanji and Ndoye departures treated as one story. Freshness beats quota per CLAUDE.md (9 articles). Layout: Outside above Core; Mark-read via localStorage kept.
+  Run notes (2026-11-17, Tuesday):
+  - Direct RSS/Atom fetching still blocked (curl CONNECT to technologyreview.com / martech.org / bbci.co.uk / srf.ch returns proxy 403). Fallback: WebSearch scoped per source domain; dates taken from URLs or explicit date follow-up searches.
+  - Used (10 core / 4 outside): MIT TR The Download, Jensen Huang petition, "fencing AI in" essay (all Nov 16, dated URLs). MarTech Bloomreach/AthenaHQ (Nov 16, confirmed via Bloomreach newsroom), marketing-ops AI readiness and "AI agents make CX marketing's problem" (Nov 16 per article text; crawl age 0 days - not independently confirmed beyond that). CMSWire marketing automation events, Threads trending, service-partner earnings (Nov 16 per follow-up date search). Adobe CJA current release notes (updated Nov 6; monthly cadence, within ~2 weeks). SRF Schweiz SPK-N Ständemehr (Nov 16/17). SRF International Geneva killer-robot talks and EU-Rwanda return centres (Nov 16, also in Tagesschau 16.11.). SRF Sport Nati 4:0 Scotland (Mon Nov 16).
+  - Skipped: Adobe Experience Cloud blog / Adobe newsroom (no post after Nov 11 found). MeasureCamp (event pages only - MeasureCamp Zurich Sat Nov 21). Kicker Bundesliga (international break until Nov 17, Bundesliga resumes Fri Nov 20; kicker-Awards Kane item is older; nothing confirmably dated Nov 16-17). BBC News / BBC Sport (domains not accessible to the search tool). MarTech personalization/brand-reputation pieces (dates not confirmable).
+  - Dedup: SRF Tagesschau 16.11. covered both the autonomous-weapons and Rwanda items - linked to the article pages. Jensen Huang petition is a new development of a previously shown Nvidia story (Nov 11/13), not a repeat link. Freshness beats quota per CLAUDE.md (14 articles). Layout: Outside above Core; Mark-read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Monday, November 16, 2026 · 9 articles</div>
+    <div class="date">Tuesday, November 17, 2026 · 14 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/waffenexporte-schweizer-munition-gelangte-ueber-umwege-nach-russland">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-will-staendemehr-fuer-eu-vertragspaket">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/waffenexporte-schweizer-munition-gelangte-ueber-umwege-nach-russland">Thuner Scharfschützenmunition gelangte trotz Sanktionen nach Russland</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 15, 2026</div>
-    <div class="why">outside / schweiz – Kriegsmaterial</div>
-    <p class="summary">Eine Recherche der NZZ am Sonntag zeichnet nach, wie in Thun hergestellte Sniper-Munition in Russland landete: legal nach Slowenien geliefert, von dort an einen Händler in Kirgistan weiterverkauft und dann nach Russland gebracht. Das Seco betont, das Sanktionsverbot umfasse Waffen aller Art. Brisant ist der Zeitpunkt – am 29. November stimmt die Schweiz über die Lockerung des Kriegsmaterialgesetzes ab.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-will-staendemehr-fuer-eu-vertragspaket">EU-Vertragspaket: Nationalratskommission will das Ständemehr</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 16/17, 2026</div>
+    <div class="why">outside / schweiz – Europapolitik</div>
+    <p class="summary">Die Staatspolitische Kommission des Nationalrats verlangt mit 14 zu 11 Stimmen ein obligatorisches Referendum für den Stabilisierungsteil des EU-Pakets – damit bräuchte es Volk und Stände. Sie folgt damit dem Ständerat und verwirft die Variante des Bundesrats; zur Schutzklausel bei der Zuwanderung bestellte sie zuerst einen Bericht. Der Nationalrat debattiert das Paket in der Wintersession im Dezember.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/korruptionsermittlungen-im-wald-vergraben-ermittler-finden-in-ungarn-millionen-euro">
+  <article class="card" data-link="https://www.srf.ch/news/international/autonome-waffensysteme-128-staaten-ringen-in-genf-um-regeln-fuer-killerroboter">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/korruptionsermittlungen-im-wald-vergraben-ermittler-finden-in-ungarn-millionen-euro">Ungarn: 17,7 Millionen Euro Bargeld im Wald vergraben gefunden</a></h3>
-    <div class="meta">SRF News – International · Nov 15, 2026</div>
-    <div class="why">outside / world – Ungarn, Korruption</div>
-    <p class="summary">Ungarns Anti-Korruptionsbehörde hat in Erdlöchern, Lagerhallen und Tresoren Bargeld im Wert von rund 17,7 Millionen Euro sichergestellt – im Zuge der Ermittlungen gegen den früheren Orban-Minister und heutigen Oppositionsabgeordneten Miklos Sesztak. Fidesz fordert ihn zur Mandatsniederlegung auf. Der SRF-Korrespondent spricht von einem Wendepunkt, weil Korruptionsvorwürfe gegen das alte Regime erstmals sichtbar belegt scheinen.</p>
+    <h3><a href="https://www.srf.ch/news/international/autonome-waffensysteme-128-staaten-ringen-in-genf-um-regeln-fuer-killerroboter">Genf: 128 Staaten ringen um Regeln für Killerroboter</a></h3>
+    <div class="meta">SRF News – International · Nov 16, 2026</div>
+    <div class="why">outside / world – Rüstungskontrolle, UNO</div>
+    <p class="summary">Im Rahmen des UNO-Waffenübereinkommens verhandeln in Genf 128 Staaten über Grenzen für vollautonome Waffensysteme; auch die UNO fordert klare Regeln. Die Aussichten auf einen echten Durchbruch gelten als gering, weil grosse Militärmächte bremsen. Die Schweiz gehört zu den Vertragsstaaten und unterstützt verbindliche Leitplanken.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/umstrittene-medienreform-grossdemo-in-tschechien-gegen-abschaffung-von-rundfunkgebuehr">
+  <article class="card" data-link="https://www.srf.ch/news/international/migration-nach-europa-neue-zentren-fuer-asylsuchende-aus-europa-in-ostafrika">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/umstrittene-medienreform-grossdemo-in-tschechien-gegen-abschaffung-von-rundfunkgebuehr">Prag: Grossdemo gegen Abschaffung der Rundfunkgebühr</a></h3>
-    <div class="meta">SRF News – International · Nov 15, 2026</div>
-    <div class="why">outside / world – Tschechien, Medienpolitik</div>
-    <p class="summary">Auf der Prager Letná-Ebene protestierten Zehntausende gegen die Pläne der Regierung Babiš, die Rundfunkgebühren durch Steuerfinanzierung zu ersetzen – die Organisatoren sprechen von 350'000 bis 450'000 Teilnehmenden. Kritiker fürchten, die öffentlich-rechtlichen Sender gerieten so unter Regierungskontrolle. Die EU-Kommission beobachtet die Entwicklung.</p>
+    <h3><a href="https://www.srf.ch/news/international/migration-nach-europa-neue-zentren-fuer-asylsuchende-aus-europa-in-ostafrika">Fünf EU-Länder planen Rückkehrzentren in Ruanda</a></h3>
+    <div class="meta">SRF News – International · Nov 16, 2026</div>
+    <div class="why">outside / world – Migration, Europa</div>
+    <p class="summary">Deutschland, Österreich, Dänemark, Griechenland und die Niederlande verhandeln mit Ruanda über ein Zentrum, in das abgewiesene Asylsuchende gebracht werden sollen. Das Modell soll Rückführungen beschleunigen, die in die Herkunftsländer oft scheitern. Menschenrechtsorganisationen kritisieren die Auslagerung als rechtlich und ethisch heikel.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-zur-schweizer-nati-leichte-beschwerden-akanji-reist-vorzeitig-ab">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/nationalmannschaft/4-0-gegen-schottland-zwei-jubilare-und-zwei-debuet-tore-erfolgreiche-nati-feiert-sieg">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-zur-schweizer-nati-leichte-beschwerden-akanji-reist-vorzeitig-ab">Akanji und Ndoye reisen ab – Nati heute ersatzgeschwächt gegen Schottland</a></h3>
-    <div class="meta">SRF Sport – Fussball · Nov 15, 2026 · also covered: SRF (Ndoye departure)</div>
+    <h3><a href="https://www.srf.ch/sport/fussball/nationalmannschaft/4-0-gegen-schottland-zwei-jubilare-und-zwei-debuet-tore-erfolgreiche-nati-feiert-sieg">Nati schlägt Schottland 4:0 – zwei Jubilare, zwei Debüt-Tore</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 16, 2026</div>
     <div class="why">outside / sport – Nati / Nations League</div>
-    <p class="summary">Manuel Akanji hat den Zusammenzug wegen leichter Beschwerden verlassen, Dan Ndoye kehrt im Rahmen der Belastungssteuerung zu Nottingham Forest zurück; Xhaka, Manzambi und Muheim fehlen verletzt, nachnominiert wird niemand. Damit führt Remo Freuler das Team heute Abend (20:45, St. Gallen) im bedeutungslosen letzten Nations-League-Spiel gegen Schottland als Captain an – der Aufstieg in die Liga A ist bereits gesichert.</p>
+    <p class="summary">Zum Abschluss der Nations-League-Kampagne gewann die bereits aufgestiegene Schweiz in St. Gallen deutlich gegen Schottland. Nach einem schottischen Eigentor trafen Winsley Boteli und Alvyn Sanches erstmals für die Nati, Zeki Amdouni setzte kurz vor Schluss den Schlusspunkt. Gefeiert wurden auch Ricardo Rodriguez und Remo Freuler für ihre Jubiläums-Länderspiele.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://www.cmswire.com/customer-experience/adobe-embeds-agentic-ai-into-genstudio-with-cx-enterprise-coworker/">
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/latest">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/customer-experience/adobe-embeds-agentic-ai-into-genstudio-with-cx-enterprise-coworker/">Adobe Embeds Agentic AI Into GenStudio With CX Enterprise Coworker</a></h3>
-    <div class="meta">CMSWire · Nov 10, 2026</div>
-    <div class="why">core / adobe – GenStudio &amp; Coworker</div>
-    <p class="summary">At MAX, Adobe wired CX Enterprise Coworker into GenStudio as a conversational layer that coordinates agents and content workflows, pulling in third-party tools via MCP and agent-to-agent protocols. Brand Intelligence gains on-brand auto-resizing and is headed into Photoshop, Illustrator and InDesign; a demo produced 270 banners across 16 formats and four languages. Several pieces are still in beta with no GA date.</p>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/latest">Customer Journey Analytics: read-only MCP access and Coworker in Workspace</a></h3>
+    <div class="meta">Adobe Experience League · rolling notes, updated Nov 6, 2026</div>
+    <div class="why">core / adobe – CJA</div>
+    <p class="summary">The current CJA release notes add an "MCP Read-only Access" permission, so admins can expose the CJA MCP server to users without letting them create projects, segments or calculated metrics. Coworker now sits in a chat panel inside Analysis Workspace and uses the open project as context. Total-population reporting, originally planned for September, remains postponed.</p>
   </article>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes">
+  <article class="card" data-link="https://martech.org/bloomreach-goes-back-to-its-roots-with-athenahq-acquisition/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes">Adobe Target 26.11.1: Coworker lands in the Activities list</a></h3>
-    <div class="meta">Adobe Experience League · Nov 12, 2026</div>
-    <div class="why">core / adobe – Target</div>
-    <p class="summary">The November Target release adds Coworker entry points directly to the Activities list: orgs with Coworker access can request a review of live tests and ask questions about an individual activity from its menu. It continues Adobe's pattern this month of surfacing the agent inside each app rather than in a separate console.</p>
+    <h3><a href="https://martech.org/bloomreach-goes-back-to-its-roots-with-athenahq-acquisition/">Bloomreach buys AI-visibility startup AthenaHQ</a></h3>
+    <div class="meta">MarTech · Nov 16, 2026</div>
+    <div class="why">core / martech – AEO / GEO, M&amp;A</div>
+    <p class="summary">Bloomreach is acquiring AthenaHQ, an answer-engine optimization platform, to link how brands show up in AI assistants with the shopping and engagement experiences that follow. The AthenaHQ team joins Bloomreach, existing contracts stay in place, and first combined use cases are promised for early 2027. Terms were not disclosed.</p>
   </article>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/e-release-notes">
+  <article class="card" data-link="https://martech.org/marketing-ops-can-turn-ai-agent-readiness-from-a-blind-spot-to-a-strength/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/e-release-notes">Journey Optimizer November release (Nov 17–18): what's coming</a></h3>
-    <div class="meta">Adobe Experience League · pre-release notes updated Nov 10, 2026</div>
-    <div class="why">core / adobe – AJO</div>
-    <p class="summary">AJO's pre-release notes for this week's release raise the cap on message actions per orchestrated-campaign canvas from 10 to 25, so complex email/push/SMS flows no longer need splitting. Also listed: AI recommendation cards for journey alerts and new Decisioning skills in Coworker, including help building decision items. Adobe flags the content as subject to change until release day.</p>
+    <h3><a href="https://martech.org/marketing-ops-can-turn-ai-agent-readiness-from-a-blind-spot-to-a-strength/">Marketing ops and the AI-agent readiness gap</a></h3>
+    <div class="meta">MarTech · Nov 16, 2026</div>
+    <div class="why">core / martech – marketing ops</div>
+    <p class="summary">Citing SAP research, the piece notes that while over 90% of CX leaders feel ready for AI agents, only 6% of US and 3% of German companies have the end-to-end connected systems those agents need. The argument: marketing ops is best placed to close that gap so agents don't promise things the business can't actually deliver.</p>
   </article>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/release-notes">
+  <article class="card" data-link="https://martech.org/ai-agents-make-cx-marketings-problem/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/release-notes">AEP Web SDK 2.37: runtime switch for Adobe Advertising</a></h3>
-    <div class="meta">Adobe Experience League · Nov 2 &amp; Nov 4, 2026</div>
-    <div class="why">core / adobe – AEP data collection</div>
-    <p class="summary">Web SDK 2.37.0 adds an <code>advertising.enabled</code> option that lets implementations turn Adobe Advertising off at runtime – handy for consent-driven setups. The 2.37.1 follow-up fixes the library misreporting its version when installed via npm, which matters if you audit SDK versions across properties.</p>
+    <h3><a href="https://martech.org/ai-agents-make-cx-marketings-problem/">AI buying agents make CX a marketing problem</a></h3>
+    <div class="meta">MarTech · Nov 16, 2026</div>
+    <div class="why">core / martech – CX &amp; agents</div>
+    <p class="summary">If AI agents shortlist vendors on behalf of buyers, they can weigh a brand's actual service record, not just its messaging. The author argues that turns operational CX into an acquisition factor, so marketers should push for fixes in service and fulfilment rather than treating them as someone else's job.</p>
   </article>
-  <article class="card" data-link="https://martech.org/claritas-brings-live-optimization-to-acquisition-email/">
+  <article class="card" data-link="https://www.cmswire.com/digital-marketing/your-customers-reply-off-schedule-your-marketing-automation-should-keep-up/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/claritas-brings-live-optimization-to-acquisition-email/">Claritas brings live optimization to acquisition email</a></h3>
-    <div class="meta">MarTech · Nov 10, 2026</div>
-    <div class="why">core / martech – email &amp; audiences</div>
-    <p class="summary">Claritas launched Email Advantage, an acquisition-email product that re-tunes audience targeting mid-campaign as conversion data arrives instead of locking the list at send time. It also tests multiple subject lines across audience segments, applying the closed-loop optimization familiar from paid media to prospecting email.</p>
+    <h3><a href="https://www.cmswire.com/digital-marketing/your-customers-reply-off-schedule-your-marketing-automation-should-keep-up/">Your customers reply off-schedule – automation should keep up</a></h3>
+    <div class="meta">CMSWire · Nov 16, 2026</div>
+    <div class="why">core / martech – marketing automation</div>
+    <p class="summary">The author proposes rebuilding two-way messaging around six explicit business events – inbound message, outbound request, consent change, journey-state change, delivery outcome and integration error – instead of burying them in workflow steps. Keeping consent current in real time means the next send decision respects opt-outs, and campaign-data prep can drop from a day or two to near real time.</p>
+  </article>
+  <article class="card" data-link="https://www.cmswire.com/digital-marketing/threads-shows-why-trending-measures-acceleration-not-customer-adoption/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/digital-marketing/threads-shows-why-trending-measures-acceleration-not-customer-adoption/">Threads shows why "trending" measures acceleration, not adoption</a></h3>
+    <div class="meta">CMSWire · Nov 16, 2026</div>
+    <div class="why">core / martech – measurement</div>
+    <p class="summary">Using Threads' steep early drop-off in daily users as a case study, the column argues that trending signals capture speed of interest, not durable demand. It recommends tying channel budgets to repeat behaviour across cohorts and keeping tests modular until retention proves customers actually come back.</p>
+  </article>
+  <article class="card" data-link="https://www.cmswire.com/customer-experience/your-service-partner-says-its-rebuilding-its-earnings-tell-the-truth/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/customer-experience/your-service-partner-says-its-rebuilding-its-earnings-tell-the-truth/">Your service partner says it's rebuilding – its earnings tell the truth</a></h3>
+    <div class="meta">CMSWire · Nov 16, 2026</div>
+    <div class="why">core / cx – vendor evaluation</div>
+    <p class="summary">Looking at Samsung SDS and LG CNS results, the piece shows how to test an IT service partner's transformation claims against its financials, e.g. growth in revenue from outside its own group. The takeaway for CX buyers: judge a vendor's AI pivot by where its money comes from, not by its keynote.</p>
+  </article>
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/16/1148599/the-download-testing-tech-promises-cognitive-immortality-quest/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/11/16/1148599/the-download-testing-tech-promises-cognitive-immortality-quest/">The Download: testing tech promises, plus a global AI-oversight push</a></h3>
+    <div class="meta">MIT Technology Review · Nov 16, 2026</div>
+    <div class="why">core / ai – newsletter</div>
+    <p class="summary">Monday's briefing introduces the "Are we there yet?" series, scoring six long-promised technologies – from solid-state batteries to eliminating traffic deaths – on a 0–10 progress meter. The news roundup flags a US-led ten-country pact to secure AI supply chains against China, a call by 22 nations for a global AI oversight body, and research warning that AI trained on Wikipedia could accelerate the decline of vulnerable languages.</p>
+  </article>
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/">The open-source movement wants Jensen Huang back</a></h3>
+    <div class="meta">MIT Technology Review · Nov 16, 2026</div>
+    <div class="why">core / ai – Nvidia</div>
+    <p class="summary">Following the board investigation that sidelined him, supporters – many from the open-source AI community – are petitioning for Jensen Huang's reinstatement as Nvidia CEO. The piece also covers a new Commerce Department rule on Nvidia chips, adding regulatory pressure to the leadership turmoil.</p>
+  </article>
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/">Building trustworthy AI by fencing it in, not predicting it</a></h3>
+    <div class="meta">MIT Technology Review · Nov 16, 2026</div>
+    <div class="why">core / ai – governance</div>
+    <p class="summary">This opinion essay argues that trying to predict every behaviour of a capable model is a losing game; instead, systems should be made bounded, observable and controllable. It is a useful framing for anyone deploying agents in marketing stacks, where guardrails and audit trails matter more than perfect forecasts.</p>
   </article>
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. Shorter digest today: most core sources had nothing new and confirmably dated since Nov 13, and the football international break continues until Bundesliga resumes Friday (see run notes in the page source). Reminder: MeasureCamp Zurich is this Saturday, Nov 21.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No Bundesliga item today (international break ends; matchday resumes Friday, Nov 20). Reminder: MeasureCamp Zurich is this Saturday, Nov 21.
   </footer>
 </div>
 <script>
