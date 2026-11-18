@@ -1,31 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-10",
-      "link": "https://www.technologyreview.com/2026/11/09/1148176/the-download-empty-ai-climate-claims-and-an-nvidia-investigation/",
-      "title": "The Download: empty AI climate claims, and an Nvidia investigation"
-    },
-    {
-      "date": "2026-11-10",
-      "link": "https://www.technologyreview.com/2026/11/09/1148182/nancy-pelosis-replacement-is-ready-to-regulate-ai/",
-      "title": "Nancy Pelosi's replacement is ready to regulate AI"
-    },
-    {
-      "date": "2026-11-10",
-      "link": "https://blog.adobe.com/en/publish/2026/11/09/from-handoffs-intelligence-context-layer-ai-powered-marketing",
-      "title": "From handoffs to intelligence: The context layer for AI-powered marketing"
-    },
-    {
-      "date": "2026-11-10",
-      "link": "https://blog.adobe.com/en/publish/2026/11/05/how-adobe-is-transforming-employee-experience-adobe-cx-enterprise",
-      "title": "How Adobe is transforming its employee experience with Adobe CX Enterprise"
-    },
-    {
-      "date": "2026-11-10",
-      "link": "https://www.cmswire.com/contact-center/dialpad-merges-with-ada-to-forge-agentic-cx-platform/",
-      "title": "Ada Merges With Dialpad to Forge Agentic CX Platform"
-    },
-    {
       "date": "2026-11-11",
       "link": "https://www.srf.ch/news/schweiz/heikle-daten-gestohlen-hacker-fordern-loesegeld-nach-angriff-auf-publica-lieferantin",
       "title": "Heikle Daten gestohlen – Hacker fordern Lösegeld nach Angriff auf Publica-Lieferantin"
@@ -384,6 +359,61 @@
       "date": "2026-11-17",
       "link": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
       "title": "Building trustworthy AI by fencing it in, not predicting it"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://www.srf.ch/news/wirtschaft/datenleck-bei-deutsche-bank-die-schweiz-als-drehscheibe-fuer-heikle-geschaefte-mit-oligarchen",
+      "title": "Datenleck bei der Deutschen Bank: die Schweiz als Drehscheibe"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://www.srf.ch/news/international/nach-ukrainischem-beschuss-krim-bruecke-teilweise-eingestuerzt-was-der-angriff-bedeutet",
+      "title": "Krim-Brücke nach ukrainischem Angriff teilweise eingestürzt"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://www.srf.ch/sport/fussball/nationalmannschaft/wm-viertelfinal-als-highlight-intensiv-packend-historisch-das-war-das-nati-jahr-2026",
+      "title": "Intensiv, packend, historisch: Das war das Nati-Jahr 2026"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://www.technologyreview.com/2026/11/17/1148679/the-download-jensen-huang-open-source-ai-cognitive-immortality/",
+      "title": "The Download: Jensen Huang's open-source dilemma, and export controls 2.0"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://www.technologyreview.com/2026/11/17/1148742/hydropower-drought-colorado-river/",
+      "title": "Hydropower hit record lows in the US Southwest this summer"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://martech.org/when-ai-agents-evaluate-b2b-vendors-what-earns-consideration/",
+      "title": "When AI agents evaluate B2B vendors, what earns consideration?"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://martech.org/marketing-automation-is-dead-long-live-marketing-automation/",
+      "title": "Marketing automation is dead. Long live marketing automation!"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://www.cmswire.com/contact-center/genesys-opens-its-ai-agent-to-contact-centers-not-on-genesys-cloud/",
+      "title": "Genesys opens its AI agent to contact centres not on Genesys Cloud"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://www.cmswire.com/contact-center/twilio-expands-voice-ai-stack-with-8-new-features/",
+      "title": "Twilio adds voice-AI failover and hallucination checks"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://www.cmswire.com/customer-experience/asknicely-brings-conversational-ai-to-slack-mobile/",
+      "title": "AskNicely lets managers query customer feedback in Slack and on mobile"
+    },
+    {
+      "date": "2026-11-18",
+      "link": "https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current",
+      "title": "AEM as a Cloud Service 2026.11.0: Java 25 and more"
     }
   ]
 }
