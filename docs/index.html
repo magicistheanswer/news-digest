@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-18</title>
+<title>Morning News Digest — 2026-11-19</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,99 +95,100 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-18, Wednesday):
-  - Direct RSS/Atom fetching still blocked (curl to all feed hosts fails; WebFetch reports ENOTFOUND for technologyreview.com, martech.org, srf.ch). Fallback: WebSearch scoped per source domain; dates taken from dated URLs or explicit date follow-up searches.
-  - Used (8 core / 3 outside): MIT TR The Download + Hydropower (Nov 17, dated URLs). MarTech B2B-vendors/AI agents (Nov 17) and marketing-automation panel recap (Nov 12, per article page). CMSWire Genesys standalone agents, Twilio voice AI, AskNicely Slack/mobile (all Nov 17 per follow-up searches). AEM Cloud Service 2026.11.0 release notes (feature activation Nov 19). SRF Deutsche-Bank leak / Swiss hub (Nov 17), SRF Krim-Brücke (Nov 16/17), SRF Sport Nati-Jahr 2026 review (Nov 17, also in Tagesschau 17.11.).
-  - Skipped: Adobe Experience Cloud blog / Adobe newsroom (nothing after Nov 11). MeasureCamp (event pages only; MeasureCamp Zurich Sat Nov 21). Kicker Bundesliga (international break, matchday resumes Fri Nov 20; nothing confirmably dated Nov 17-18). BBC News / BBC Sport (domains not reachable by the search tool). MarTech personalization/consumer-trust and "AI search is an organizational problem" (dates not confirmable); composable-martech piece (Nov 11, at the edge of the window, skipped for variety). CMSWire Bloomreach/AthenaHQ (same story shown yesterday via MarTech). SRF Cremo/Raclette (no confirmably fresh article page found). Marketo Nov '26 release (details not confirmable).
-  - Dedup: Huang petition already covered Nov 17 - today's Download included for the new export-control rule. Freshness beats quota per CLAUDE.md (11 articles). Layout: Outside above Core; Mark-read via localStorage kept.
+  Run notes (2026-11-19, Thursday):
+  - Direct RSS/Atom fetching still blocked (curl to all feed hosts returns no connection; WebFetch ENOTFOUND for martech.org). Fallback: WebSearch scoped per source domain; publish dates taken from dated URLs or explicit follow-up searches.
+  - Used (8 core / 3 outside): CMSWire Optimizely incident, ThoughtSpot Customer Hosted, NiCE x Microsoft, Invoca RCS (all Nov 18 per follow-up searches). MarTech AI-governance/brand, business-knowledge, "doing more work" (all Nov 18). MIT TR Osmo smell model (Nov 18, dated URL). SRF 2. SRG-Umfrage (Nov 18), SRF Hegseth in Caracas (Nov 18), SRF Sport Stocker bleibt beim FCB (Nov 18).
+  - Skipped: Adobe Experience Cloud blog / newsroom (nothing new after the MAX announcements of Nov 4-11, all already shown or older; AJO November release-notes URL was already shown Nov 13, AEM 2026.11.0 shown Nov 18). MeasureCamp (event pages only; MeasureCamp Zurich Sat Nov 21). Kicker Bundesliga (international break, search returned only mis-dated transfer pages; nothing confirmably dated Nov 18). BBC News / BBC Sport (domains not reachable by the search tool). MIT TR "The Download" Nov 18 (leads with the Osmo story included separately, plus hydropower shown yesterday) and the AI Hype Index (title/content inconsistent in results, not confirmable).
+  - Also fresh but left out for the 75/25 mix: SRF USZ/Maisano settlements (Nov 18), WHO antibiotic-resistance warning.
+  - Freshness beats quota per CLAUDE.md (11 articles). Layout: Outside above Core; Mark-read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Wednesday, November 18, 2026 · 11 articles</div>
+    <div class="date">Thursday, November 19, 2026 · 11 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/wirtschaft/datenleck-bei-deutsche-bank-die-schweiz-als-drehscheibe-fuer-heikle-geschaefte-mit-oligarchen">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/2-srg-umfrage-auf-einen-blick-dem-bund-drohen-mindestens-zwei-niederlagen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/wirtschaft/datenleck-bei-deutsche-bank-die-schweiz-als-drehscheibe-fuer-heikle-geschaefte-mit-oligarchen">Datenleck bei der Deutschen Bank: die Schweiz als Drehscheibe</a></h3>
-    <div class="meta">SRF News – Wirtschaft/Schweiz · Nov 17, 2026</div>
-    <div class="why">outside / schweiz – Finanzplatz</div>
-    <p class="summary">Ein Whistleblower hat über 15 Millionen interne Dokumente der Deutschen Bank an mehrere Redaktionen weitergegeben, darunter Tamedia. Laut der Recherche wurden heikle Kunden wie russische Oligarchen teils von der Schweiz aus betreut. Experten sehen ein Versagen der internen Kontrollen; die Bank weist Vorwürfe teilweise zurück und verweist auf bereits bekannte Fälle.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/2-srg-umfrage-auf-einen-blick-dem-bund-drohen-mindestens-zwei-niederlagen">2. SRG-Umfrage: Dem Bund drohen mindestens zwei Niederlagen am 29. November</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 18, 2026</div>
+    <div class="why">outside / schweiz – Abstimmungen</div>
+    <p class="summary">Die zweite SRG-Trendumfrage von GFS Bern (4.–11. November) sieht Bundesrat und Parlament bei mindestens zwei von vier Vorlagen auf Verliererkurs: Die Feuerwerksinitiative liegt bei 63 Prozent Ja, und die Mehrwertsteuer-Erhöhung für die 13. AHV-Rente hat neu einen knappen Nein-Vorsprung (51 Prozent). Die Initiative gegen die Heiratsstrafe kippt ins Nein, beim Kriegsmaterialgesetz herrscht mit 49 zu 46 Prozent praktisch ein Patt.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/nach-ukrainischem-beschuss-krim-bruecke-teilweise-eingestuerzt-was-der-angriff-bedeutet">
+  <article class="card" data-link="https://www.srf.ch/news/international/usa/hegseth-in-caracas-die-usa-und-venezuela-wollen-militaerisch-zusammenarbeiten">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/nach-ukrainischem-beschuss-krim-bruecke-teilweise-eingestuerzt-was-der-angriff-bedeutet">Krim-Brücke nach ukrainischem Angriff teilweise eingestürzt</a></h3>
-    <div class="meta">SRF News – International · Nov 16/17, 2026</div>
-    <div class="why">outside / world – Krieg in der Ukraine</div>
-    <p class="summary">Die Ukraine hat die Brücke über die Strasse von Kertsch angegriffen; die Strassenbrücke scheint teilweise eingestürzt, die Bahnbrücke beschädigt. Nach einem zweiten Angriff stellte Russland den Verkehr ein. SRF wertet den Schlag als grossen symbolischen Erfolg, der den Nachschub für Russlands Südfront erschwert.</p>
+    <h3><a href="https://www.srf.ch/news/international/usa/hegseth-in-caracas-die-usa-und-venezuela-wollen-militaerisch-zusammenarbeiten">Hegseth in Caracas: USA und Venezuela wollen militärisch zusammenarbeiten</a></h3>
+    <div class="meta">SRF News – International · Nov 18, 2026</div>
+    <div class="why">outside / world – Lateinamerika</div>
+    <p class="summary">US-Verteidigungsminister Pete Hegseth ist unangekündigt nach Venezuela gereist und hat mit der geschäftsführenden Präsidentin Delcy Rodríguez ein Abkommen über engere militärische Zusammenarbeit unterzeichnet, inklusive Austausch von Geheimdienstinformationen. Hegseth sprach von einem Wandel vom regionalen Bedrohungsfaktor zum Sicherheitspartner. Rodríguez führt das Land seit der Festnahme Maduros durch US-Kräfte im Januar; die Opposition anerkennt sie nicht als legitime Staatschefin.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/nationalmannschaft/wm-viertelfinal-als-highlight-intensiv-packend-historisch-das-war-das-nati-jahr-2026">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-stocker-bleibt-bei-basel-sportlicher-leiter">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/nationalmannschaft/wm-viertelfinal-als-highlight-intensiv-packend-historisch-das-war-das-nati-jahr-2026">Intensiv, packend, historisch: Das war das Nati-Jahr 2026</a></h3>
-    <div class="meta">SRF Sport – Fussball · Nov 17, 2026</div>
-    <div class="why">outside / sport – Nati</div>
-    <p class="summary">SRF blickt auf ein Jahr mit 10 Siegen, 4 Remis und 2 Niederlagen zurück. Höhepunkt war der erste WM-Viertelfinal seit 72 Jahren, der gegen Argentinien nach Verlängerung verloren ging; in der Nations League holte die Schweiz 16 von 18 Punkten und kehrt in die Liga A zurück. Das 4:0 gegen Schottland war zugleich der Abschied von Sportchef Pierluigi Tami.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-stocker-bleibt-bei-basel-sportlicher-leiter">Super-League-News: Stocker bleibt beim FC Basel Sportlicher Leiter</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 18, 2026</div>
+    <div class="why">outside / sport – Super League</div>
+    <p class="summary">Der FC Basel verlängert mit Valentin Stocker, der im Mai zunächst nur befristet bis zum Ende des Transferfensters als Sportlicher Leiter eingestiegen war, nun unbefristet. Laut SRF soll er die sportliche Leitung künftig gemeinsam mit Technischem Direktor Andreas Herrmann verantworten. Präsident David Degen betont die Kontinuität – und mahnt zugleich, dass der FCB sportlich rasch zurück in die Erfolgsspur finden müsse.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/17/1148679/the-download-jensen-huang-open-source-ai-cognitive-immortality/">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/optimizely-works-through-web-experimentation-security-incident/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/17/1148679/the-download-jensen-huang-open-source-ai-cognitive-immortality/">The Download: Jensen Huang&#x27;s open-source dilemma, and export controls 2.0</a></h3>
-    <div class="meta">MIT Technology Review · Nov 17, 2026</div>
-    <div class="why">core / ai – newsletter, chips policy</div>
-    <p class="summary">Tuesday&#x27;s briefing notes that a petition to reinstate Jensen Huang has passed 115,000 signatures, many from the open-source AI community – which puts his role as open-source champion under scrutiny. The bigger news item: a new Commerce Department rule closes the loophole that let Chinese firms rent Nvidia chips in overseas data centres (e.g. Malaysia), which MIT TR argues could slow the open-weight models popular on Hugging Face.</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/optimizely-works-through-web-experimentation-security-incident/">Optimizely signup flaw let an attacker inject code into customer projects</a></h3>
+    <div class="meta">CMSWire · Nov 18, 2026</div>
+    <div class="why">core / martech – experimentation, security</div>
+    <p class="summary">Optimizely says an attacker abused a flaw in its Web Experimentation signup flow on Nov 16 to impersonate users and write malicious JavaScript into the Project JavaScript field of some customers&#x27; snippets; it says the hole was closed within three hours and fewer than 5% of customers were affected. Report URI, which first flagged the attack, counts 178 organisations whose visitors received the code – served from Optimizely&#x27;s own trusted CDN. A strict Content Security Policy is cited as the main defence; per Report URI, 68 of the affected sites had none. Worth a check if you run client-side tag or testing snippets.</p>
   </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/17/1148742/hydropower-drought-colorado-river/">
+  <article class="card" data-link="https://martech.org/enterprise-ai-governance-alone-cant-protect-your-brand/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/17/1148742/hydropower-drought-colorado-river/">Hydropower hit record lows in the US Southwest this summer</a></h3>
-    <div class="meta">MIT Technology Review · Nov 17, 2026</div>
-    <div class="why">core / tech – energy</div>
-    <p class="summary">New EIA data show the Southwest produced 28% less hydroelectric power from April to August than its ten-year average, driven by drought in the Colorado River Basin. With AI data centres pushing electricity demand up, losing a reliable low-carbon source makes the regional grid&#x27;s balancing act harder.</p>
+    <h3><a href="https://martech.org/enterprise-ai-governance-alone-cant-protect-your-brand/">Enterprise AI governance alone can&#x27;t protect your brand</a></h3>
+    <div class="meta">MarTech · Nov 18, 2026</div>
+    <div class="why">core / martech – AI governance</div>
+    <p class="summary">IT and legal AI policies cover data leakage, privacy and copyright, but nobody in that chain checks whether generated content matches brand colours or tone. The author argues marketing needs its own guardrails: separate rules for internal sandboxes versus external production, and a coaching role rather than acting as brand police – heavy restrictions just push teams to unapproved tools.</p>
   </article>
-  <article class="card" data-link="https://martech.org/when-ai-agents-evaluate-b2b-vendors-what-earns-consideration/">
+  <article class="card" data-link="https://martech.org/even-the-smartest-ai-needs-your-business-knowledge/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/when-ai-agents-evaluate-b2b-vendors-what-earns-consideration/">When AI agents evaluate B2B vendors, what earns consideration?</a></h3>
-    <div class="meta">MarTech · Nov 17, 2026</div>
-    <div class="why">core / martech – B2B, AI search</div>
-    <p class="summary">As buyers delegate research to AI assistants, the piece argues that clear, structured product information and verifiable proof points decide whether a vendor makes the shortlist. It cites Semrush research in which 71% of surveyed US business professionals visited a vendor&#x27;s site after an AI recommendation – so the website still matters, but as the second step.</p>
+    <h3><a href="https://martech.org/even-the-smartest-ai-needs-your-business-knowledge/">Even the smartest AI needs your business knowledge</a></h3>
+    <div class="meta">MarTech · Nov 18, 2026</div>
+    <div class="why">core / martech – AI, customer insight</div>
+    <p class="summary">Using the &#x27;model as brain, system as harness&#x27; framing, the piece argues that an AI agent without company context and tool access delivers little. Its advice: buy commodity tools, but protect the proprietary knowledge that differentiates you – and recognise that the real bottleneck is not collecting customer insight but getting teams to use it in decisions.</p>
   </article>
-  <article class="card" data-link="https://martech.org/marketing-automation-is-dead-long-live-marketing-automation/">
+  <article class="card" data-link="https://martech.org/doing-more-work-wont-make-you-a-more-valuable-marketer/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/marketing-automation-is-dead-long-live-marketing-automation/">Marketing automation is dead. Long live marketing automation!</a></h3>
-    <div class="meta">MarTech · Nov 12, 2026</div>
-    <div class="why">core / martech – marketing ops</div>
-    <p class="summary">A recap of a MarTech Conference panel arguing that AI reshapes marketing automation rather than replacing it. Individual AI productivity gains add little without shared, structured workflows; back-office automation such as data hygiene is the lower-risk place to start, while customer-facing autonomy needs stronger guardrails. Panelists also warned about paying several times for the same AI capability and about over-sending just because content got cheap.</p>
+    <h3><a href="https://martech.org/doing-more-work-wont-make-you-a-more-valuable-marketer/">Doing more work won&#x27;t make you a more valuable marketer</a></h3>
+    <div class="meta">MarTech · Nov 18, 2026</div>
+    <div class="why">core / martech – careers, productivity</div>
+    <p class="summary">With AI making execution cheap, the author contends that speed and volume no longer signal a marketer&#x27;s value; choosing the right problems, making sound decisions and owning outcomes do. Organisations should measure results rather than hours and use time data to cut pointless work.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/contact-center/genesys-opens-its-ai-agent-to-contact-centers-not-on-genesys-cloud/">
+  <article class="card" data-link="https://www.cmswire.com/the-wire/thoughtspot-introduces-customer-hosted-deployment/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/contact-center/genesys-opens-its-ai-agent-to-contact-centers-not-on-genesys-cloud/">Genesys opens its AI agent to contact centres not on Genesys Cloud</a></h3>
-    <div class="meta">CMSWire · Nov 17, 2026</div>
+    <h3><a href="https://www.cmswire.com/the-wire/thoughtspot-introduces-customer-hosted-deployment/">ThoughtSpot launches a fully customer-hosted deployment option</a></h3>
+    <div class="meta">CMSWire (The Wire) · Nov 18, 2026</div>
+    <div class="why">core / analytics – BI, data governance</div>
+    <p class="summary">ThoughtSpot Customer Hosted runs both the control plane and the data plane inside the customer&#x27;s own AWS account or GCP project – unlike most bring-your-own-cloud setups, which keep the control plane with the vendor. It targets regulated industries such as banking, healthcare and insurance; the Spotter AI analyst is GCP-only for now and pricing is per deployment.</p>
+  </article>
+  <article class="card" data-link="https://www.cmswire.com/the-wire/nice-unites-ai-and-human-agents-with-microsoft-on-one-connected-customer-service-stack/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/the-wire/nice-unites-ai-and-human-agents-with-microsoft-on-one-connected-customer-service-stack/">NiCE ties Cognigy AI agents into Teams, Azure and Dynamics 365</a></h3>
+    <div class="meta">CMSWire (The Wire) · Nov 18, 2026</div>
     <div class="why">core / cx – contact centre, agentic AI</div>
-    <p class="summary">Genesys Standalone AI Agents, now generally available, run its agentic virtual agent inside a company&#x27;s existing service stack, with deployment in days. A new build space, Genesys Arena, offers kits for 50+ industry use cases. Pricing moves from AI tokens to &#x27;Experience Units&#x27; charged by interaction complexity (simple, moderate, complex), though per-tier rates weren&#x27;t published.</p>
+    <p class="summary">NiCE says Cognigy is among the first voice agents certified for Microsoft&#x27;s Teams Unify model, so it can act as a voice agent inside Teams Phone, and it now connects to Dynamics 365 Customer Service. In the showcased flow, the AI pings a human colleague on Teams mid-conversation and relays their answer to the customer. Demos are planned for Microsoft Ignite on Nov 19; claims are vendor-stated.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/contact-center/twilio-expands-voice-ai-stack-with-8-new-features/">
+  <article class="card" data-link="https://www.cmswire.com/the-wire/invoca-messaging-agents-turn-rcs-into-an-ai-powered-revenue-channel/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/contact-center/twilio-expands-voice-ai-stack-with-8-new-features/">Twilio adds voice-AI failover and hallucination checks</a></h3>
-    <div class="meta">CMSWire · Nov 17, 2026</div>
-    <div class="why">core / cx – voice AI</div>
-    <p class="summary">Twilio expanded its voice-AI tooling across Conversation Relay, Agent Connect and Conversation Intelligence. Smart turn detection and automatic speech-to-text failover are now generally available, while prebuilt transcript checks for task completion and hallucinations entered public beta – a sign that monitoring AI agents is becoming a platform feature.</p>
+    <h3><a href="https://www.cmswire.com/the-wire/invoca-messaging-agents-turn-rcs-into-an-ai-powered-revenue-channel/">Invoca extends its AI Messaging Agents to RCS</a></h3>
+    <div class="meta">CMSWire (The Wire) · Nov 18, 2026</div>
+    <div class="why">core / martech – conversational marketing</div>
+    <p class="summary">Invoca&#x27;s Messaging Agents can now open rich RCS conversations from Google searches, web forms, scheduling, checkout and phone calls. Marketers build cards and quick-reply buttons in Agent Studio without developers, with a preview of the SMS fallback. It is live now but does not yet support conversations involving protected health information.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/customer-experience/asknicely-brings-conversational-ai-to-slack-mobile/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/customer-experience/asknicely-brings-conversational-ai-to-slack-mobile/">AskNicely lets managers query customer feedback in Slack and on mobile</a></h3>
-    <div class="meta">CMSWire · Nov 17, 2026</div>
-    <div class="why">core / cx – VoC, analytics</div>
-    <p class="summary">AskNicely&#x27;s conversational assistant Ask NiceAI now works in Slack (via @AskNicely mentions) and in its mobile app, returning answers, charts and suggested next steps from survey and review data. It respects existing permissions, needs the NiceAI add-on and targets frontline managers who rarely open a CX dashboard.</p>
-  </article>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current">AEM as a Cloud Service 2026.11.0: Java 25 and more</a></h3>
-    <div class="meta">Adobe Experience League · feature activation Nov 19, 2026</div>
-    <div class="why">core / adobe – AEM</div>
-    <p class="summary">The November feature release activates on Nov 19 after the Nov 9–11 update window. Highlights include opt-in Java 25 builds and runtimes via Cloud Manager, a private beta that combines Edge Delivery Services with classic AEM authoring, AI search in Content Hub, and OpenTelemetry for APM in limited availability. JWT credentials are deprecated in favour of OAuth server-to-server.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/">This smell startup says its AI nose is as good as a human&#x27;s</a></h3>
+    <div class="meta">MIT Technology Review · Nov 18, 2026</div>
+    <div class="why">core / ai – foundation models</div>
+    <p class="summary">Osmo calls its model the first foundation model for smell, trained on a proprietary dataset of more than 10 million human labels, and claims it matches an average person at detecting and telling odours apart. The tech is already used for commercial fragrances and for spotting counterfeit sneakers, with airport threat detection and diagnostics as longer-term goals. Smell scientists quoted in the piece question how well some of the marketing claims are documented.</p>
   </article>
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No Bundesliga item today (matchday resumes Friday, Nov 20). Reminder: MeasureCamp Zurich is this Saturday, Nov 21.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text — follow the links for full stories. No Adobe or Bundesliga item today (nothing new and confirmably dated). Reminder: MeasureCamp Zurich is this Saturday, Nov 21; Swiss federal votes on Nov 29.
   </footer>
 </div>
 <script>

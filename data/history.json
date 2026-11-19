@@ -1,51 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-11",
-      "link": "https://www.srf.ch/news/schweiz/heikle-daten-gestohlen-hacker-fordern-loesegeld-nach-angriff-auf-publica-lieferantin",
-      "title": "Heikle Daten gestohlen – Hacker fordern Lösegeld nach Angriff auf Publica-Lieferantin"
-    },
-    {
-      "date": "2026-11-11",
-      "link": "https://www.srf.ch/sport/fussball/super-league/1-saisonniederlage-fuer-leader-ajeti-rot-und-von-ballmoos-out-lugano-geht-in-st-gallen-unter",
-      "title": "Ajeti-Rot und von-Ballmoos-Out: Lugano geht in St. Gallen unter"
-    },
-    {
-      "date": "2026-11-11",
-      "link": "https://news.adobe.com/news/2026/11/adobe-agentic-ai-content-supply-chain",
-      "title": "Adobe Brings Agentic AI to the Content Supply Chain with CX Enterprise Coworker"
-    },
-    {
-      "date": "2026-11-11",
-      "link": "https://blog.adobe.com/en/publish/2026/11/10/explore-new-ways-create-across-creative-cloud-adobe-firefly-while-advancing-craft-precision-choice-control",
-      "title": "Explore new ways to create across Creative Cloud and Adobe Firefly"
-    },
-    {
-      "date": "2026-11-11",
-      "link": "https://blog.adobe.com/en/publish/2026/11/10/more-apps-ways-create-adobe-microsoft-expand-possibilities-windows",
-      "title": "More apps, more ways to create: Adobe and Microsoft expand possibilities on Windows"
-    },
-    {
-      "date": "2026-11-11",
-      "link": "https://www.technologyreview.com/2026/11/10/1148150/the-download-pelosi-successor-ai-regulation-data-center-backlash/",
-      "title": "The Download: Pelosi's successor targets AI and data centers face power woes"
-    },
-    {
-      "date": "2026-11-11",
-      "link": "https://www.cmswire.com/digital-experience/chatgpt-search-volume-gains-on-google-openais-consumer-lead-says/",
-      "title": "OpenAI Plans to Kill ChatGPT's Chat-or-Work Toggle as Growth Surges"
-    },
-    {
-      "date": "2026-11-11",
-      "link": "https://www.cmswire.com/digital-experience/black-october-shows-tech-giants-racing-toward-a-preventable-disaster/",
-      "title": "Black October Shows Tech Giants Racing Toward a Preventable Disaster"
-    },
-    {
-      "date": "2026-11-11",
-      "link": "https://www.cmswire.com/ai-news/nvidia-board-investigates-jensen-huang-after-affair-with-alleged-chinese-spy/",
-      "title": "Nvidia Board Investigates Jensen Huang After Affair With Alleged Chinese Spy (merged into MIT TR Download)"
-    },
-    {
       "date": "2026-11-12",
       "link": "https://www.srf.ch/news/schweiz/schweizer-arzttarifsystem-bundesrat-genehmigt-erste-tardoc-revision-und-fordert-korrekturen",
       "title": "Bundesrat genehmigt erste Tardoc-Revision und fordert Korrekturen"
@@ -414,6 +369,61 @@
       "date": "2026-11-18",
       "link": "https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current",
       "title": "AEM as a Cloud Service 2026.11.0: Java 25 and more"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://www.srf.ch/news/schweiz/2-srg-umfrage-auf-einen-blick-dem-bund-drohen-mindestens-zwei-niederlagen",
+      "title": "2. SRG-Umfrage: Dem Bund drohen mindestens zwei Niederlagen am 29. November"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://www.srf.ch/news/international/usa/hegseth-in-caracas-die-usa-und-venezuela-wollen-militaerisch-zusammenarbeiten",
+      "title": "Hegseth in Caracas: USA und Venezuela wollen militärisch zusammenarbeiten"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-stocker-bleibt-bei-basel-sportlicher-leiter",
+      "title": "Super-League-News: Stocker bleibt beim FC Basel Sportlicher Leiter"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://www.cmswire.com/digital-experience/optimizely-works-through-web-experimentation-security-incident/",
+      "title": "Optimizely signup flaw let an attacker inject code into customer projects"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://martech.org/enterprise-ai-governance-alone-cant-protect-your-brand/",
+      "title": "Enterprise AI governance alone can't protect your brand"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://martech.org/even-the-smartest-ai-needs-your-business-knowledge/",
+      "title": "Even the smartest AI needs your business knowledge"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://martech.org/doing-more-work-wont-make-you-a-more-valuable-marketer/",
+      "title": "Doing more work won't make you a more valuable marketer"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://www.cmswire.com/the-wire/thoughtspot-introduces-customer-hosted-deployment/",
+      "title": "ThoughtSpot launches a fully customer-hosted deployment option"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://www.cmswire.com/the-wire/nice-unites-ai-and-human-agents-with-microsoft-on-one-connected-customer-service-stack/",
+      "title": "NiCE ties Cognigy AI agents into Teams, Azure and Dynamics 365"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://www.cmswire.com/the-wire/invoca-messaging-agents-turn-rcs-into-an-ai-powered-revenue-channel/",
+      "title": "Invoca extends its AI Messaging Agents to RCS"
+    },
+    {
+      "date": "2026-11-19",
+      "link": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
+      "title": "This smell startup says its AI nose is as good as a human's"
     }
   ]
 }
