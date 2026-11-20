@@ -1,71 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-12",
-      "link": "https://www.srf.ch/news/schweiz/schweizer-arzttarifsystem-bundesrat-genehmigt-erste-tardoc-revision-und-fordert-korrekturen",
-      "title": "Bundesrat genehmigt erste Tardoc-Revision und fordert Korrekturen"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://www.srf.ch/news/international/amtsenthebung-gescheitert-trump-triumphiert-und-hegseth-atmet-auf",
-      "title": "Amtsenthebung gescheitert: Trump triumphiert und Hegseth atmet auf"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://www.srf.ch/sport/fussball/nations-league/der-captain-ist-verletzt-doch-kein-comeback-xhaka-fehlt-der-nati-erneut",
-      "title": "Doch kein Comeback: Xhaka fehlt der Nati erneut"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://www.technologyreview.com/2026/11/11/1148424/the-download-preserving-minds-open-ai-risks/",
-      "title": "The Download: preserving minds and weighing open AI risks"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://blog.adobe.com/en/publish/2026/11/11/adobe-max-sneaks",
-      "title": "Adobe MAX 2026 Sneaks: Previewing the future of creativity"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://news.adobe.com/news/2026/11/adobe-and-google-deepen-partnership",
-      "title": "Adobe and Google deepen partnership to bring AI models and integrated workflows to creatives and enterprises"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://www.cmswire.com/digital-experience/sitecore-places-its-bet-on-answer-engine-visibility-with-marketingiq/",
-      "title": "Sitecore places its bet on answer engine visibility with MarketingIQ"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://www.cmswire.com/customer-experience/just-4-of-customer-service-leaders-hit-their-expected-automation-returns/",
-      "title": "Just 4% of customer service leaders hit their expected automation returns"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://www.cmswire.com/contact-center/nice-launches-next-generation-cognigy-with-reusable-skills-and-decision-tracing/",
-      "title": "NiCE launches next-generation Cognigy with reusable skills and decision tracing"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://martech.org/cheap-cac-can-be-expensive-growth/",
-      "title": "Cheap CAC can be expensive growth"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://martech.org/the-drivers-of-local-ai-visibility-for-multi-location-brands/",
-      "title": "The drivers of local AI visibility for multi-location brands"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://martech.org/how-to-stand-out-in-a-sea-of-personalization/",
-      "title": "How to stand out in a sea of personalization"
-    },
-    {
-      "date": "2026-11-12",
-      "link": "https://martech.org/beyond-search-and-social-how-to-scale-with-performance-tv/",
-      "title": "Beyond search and social: How to scale with performance TV"
-    },
-    {
       "date": "2026-11-13",
       "link": "https://www.srf.ch/news/schweiz/unheilige-allianz-knall-in-finanzkommission-budget-2027-zur-ablehnung-empfohlen",
       "title": "Knall in der Finanzkommission: Budget 2027 zur Ablehnung empfohlen"
@@ -424,6 +359,61 @@
       "date": "2026-11-19",
       "link": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
       "title": "This smell startup says its AI nose is as good as a human's"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://www.srf.ch/news/international/urteil-des-uno-gerichtshofs-historischer-schuldspruch-gegen-myanmar-wegen-voelkermords",
+      "title": "Historischer Schuldspruch: UNO-Gericht verurteilt Myanmar wegen Völkermords an den Rohingya"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://www.srf.ch/news/schweiz/kantonsspital-baselland-nach-jahrelangem-ringen-will-der-landrat-beide-standorte-behalten",
+      "title": "Kantonsspital Baselland: Landrat behält Liestal und Bruderholz und bewilligt 750-Millionen-Garantie"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://martech.org/intuit-finds-a-buyer-for-mailchimp-in-bending-spoons/",
+      "title": "Intuit sells Mailchimp to Bending Spoons for $3.68 billion"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://www.cmswire.com/customer-experience/who-won-the-faa-ground-stop-for-customer-experience-humans-or-ai/",
+      "title": "FAA ground stop stress test: human agents beat AI channels"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://www.cmswire.com/digital-marketing/the-cmo-playbook-the-ai-marketing-readiness-illusion/",
+      "title": "Using AI every day isn't the same as being ready for it"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://www.cmswire.com/the-wire/surveymonkey-brings-real-human-feedback-into-google-gemini/",
+      "title": "SurveyMonkey launches an MCP connector for Google Gemini"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://martech.org/how-psychology-can-make-ai-powered-customer-personas-more-useful/",
+      "title": "Grounding synthetic personas in psychology and real behavioural data"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://martech.org/brand-legal-and-regulatory-risks-of-ai-generated-creative/",
+      "title": "The brand, legal and regulatory exposure of auto-generated creative"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://www.technologyreview.com/2026/11/19/1148979/the-download-liver-kept-alive-sila-battery-deal-ai-hype/",
+      "title": "The Download: Anthropic's record IPO, a call for a global AI body, and the AI Hype Index"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/",
+      "title": "What Sila's billion-dollar Panasonic deal says about the US battery market"
+    },
+    {
+      "date": "2026-11-20",
+      "link": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
+      "title": "A human liver kept alive outside the body for a record seven weeks"
     }
   ]
 }
