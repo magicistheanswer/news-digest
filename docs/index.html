@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-20</title>
+<title>Morning News Digest — 2026-11-21</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,100 +95,99 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-20, Friday):
-  - Direct RSS/Atom fetching still blocked: curl gets no connection to any feed host (HTTP 000). Fallback: WebSearch limited to each source's domain. Every included article is dated Nov 19, confirmed by its dated URL (MIT TR) or a follow-up search (MarTech, CMSWire, SRF; for Mailchimp also the Nov 19 Bending Spoons and Intuit filings).
-  - Used (9 core / 2 outside): MarTech Mailchimp/Bending Spoons, psychology personas, AI-creative risks. CMSWire FAA ground stop, AI readiness gap, SurveyMonkey x Gemini. MIT TR The Download, Sila/Panasonic, liver record. SRF IGH Myanmar ruling (world), SRF Kantonsspital Baselland Landrat decision (schweiz).
-  - Skipped: Adobe Experience Cloud blog / newsroom (latest 2026/11 posts are Nov 5-10 MAX/Creative Cloud items; nothing new for Experience Cloud). MeasureCamp (event pages only; MeasureCamp Zurich is Sat Nov 21). SRF Sport, Kicker, BBC Sport: no sport item. It is the international break; the latest dated SRF Super League news (Ajeti ban, Ndoye leaving, Ineos/Lausanne) is about 5-23 days old or Stocker was already shown, and Kicker's preview of the Götze brothers meeting had no confirmable URL or date. BBC News / BBC Sport: the search tool can't reach those domains (400).
-  - Fresh but left out: SRF Jugendstreik/Europe youth protests, SRF Anthropic IPO (covered via MIT TR Download), SRF Kitas closures (publish date not confirmable).
+  Run notes (2026-11-21, Saturday):
+  - Direct RSS/Atom fetching still blocked: curl gets HTTP 000 for every feed host, and WebFetch cannot resolve them (martech.org, technologyreview.com, srf.ch are outside the session's allowed network domains). Fallback: WebSearch limited to each source's domain. Every included article is dated Nov 18-20, confirmed by dated URL (MIT TR) or follow-up searches (MarTech, CMSWire, SRF).
+  - Used (7 core / 4 outside): MarTech data-types guide, B2B event ROI, holiday value without discounts. CMSWire Anthropic IPO analysis, Sequel.io funding (Nov 18 release). MIT TR METR time-horizon update, The Download (Nov 20). SRF SVP Bundesrat ticket (schweiz), SRF Xi-Trump-Putin summit (world), SRF youth strikes (world/schweiz), SRF Sport Servette/Gertmonas (sport).
+  - Skipped: Adobe Experience Cloud blog / newsroom (latest Experience Cloud post is Nov 5; Nov 10-17 items are MAX / Creative Cloud). MeasureCamp (no new post; MeasureCamp Zurich takes place today). Kicker: international break, Bundesliga round 11 starts Nov 27, and no confirmably dated news item was found. BBC News / BBC Sport: search tool can't reach those domains (400). Optimizely security incident (CMSWire, Nov 18) was already shown.
   - Freshness beats quota per CLAUDE.md (11 articles). Layout: Outside above Core; Mark read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Friday, November 20, 2026 · 11 articles</div>
+    <div class="date">Saturday, November 21, 2026 · 11 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/international/urteil-des-uno-gerichtshofs-historischer-schuldspruch-gegen-myanmar-wegen-voelkermords">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/nachfolger-von-guy-parmelin-graber-und-aeschi-auf-svp-ticket-gewaehlt-ticker-zum-nachlesen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/urteil-des-uno-gerichtshofs-historischer-schuldspruch-gegen-myanmar-wegen-voelkermords">Historischer Schuldspruch: UNO-Gericht verurteilt Myanmar wegen Völkermords an den Rohingya</a></h3>
-    <div class="meta">SRF News – International · Nov 19, 2026</div>
-    <div class="why">outside / world – Völkerrecht</div>
-    <p class="summary">Der Internationale Gerichtshof in Den Haag hat Myanmar für den Völkermord an den muslimischen Rohingya verantwortlich gemacht. Es ist das erste Mal, dass der IGH einen Staat direkt des Genozids schuldig spricht. Gambia hatte 2019 geklagt, Deutschland und weitere Staaten schlossen sich an. Das Gericht verlangt Entschädigungen und eine sichere Rückkehr der Geflüchteten. Durchsetzen kann es das aber nicht selbst, und im Rakhine-Staat herrscht Bürgerkrieg. SRF erwartet, dass das Urteil auch für andere Genozid-Verfahren genau gelesen wird.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/nachfolger-von-guy-parmelin-graber-und-aeschi-auf-svp-ticket-gewaehlt-ticker-zum-nachlesen">SVP schickt Thomas Aeschi und Michael Graber ins Rennen um den Parmelin-Sitz</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 20, 2026</div>
+    <div class="why">outside / schweiz – Bundesratswahl</div>
+    <p class="summary">Die SVP-Fraktion hat die Nationalräte Thomas Aeschi (ZG) und Michael Graber (VS) als Zweierticket für die Nachfolge von Bundesrat Guy Parmelin nominiert. Gewählt wird am 9. Dezember in der Vereinigten Bundesversammlung. Die Reaktionen der anderen Parteien fallen kritisch aus: Die Grünen halten beide für nicht wählbar, und auch aus der FDP kam Unmut über die Auswahl.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/kantonsspital-baselland-nach-jahrelangem-ringen-will-der-landrat-beide-standorte-behalten">
+  <article class="card" data-link="https://www.srf.ch/news/international/dreiergipfel-in-china-expertin-fuer-europa-ist-das-eine-bedrohliche-nachricht">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/kantonsspital-baselland-nach-jahrelangem-ringen-will-der-landrat-beide-standorte-behalten">Kantonsspital Baselland: Landrat behält Liestal und Bruderholz und bewilligt 750-Millionen-Garantie</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 19, 2026</div>
-    <div class="why">outside / schweiz – Gesundheitspolitik</div>
-    <p class="summary">Nach jahrelangem Hin und Her hat der Baselbieter Landrat mit 67 zu 18 Stimmen entschieden, dass das Kantonsspital beide Standorte behält: Liestal und Bruderholz. Ein Neubau in Pratteln ist damit vom Tisch. Der Kanton darf zudem einmalig 200 Millionen Franken zusätzliches Kapital einschiessen und für Sanierungen eine Kreditgarantie von 750 Millionen geben. Damit stellt sich Baselland gegen den Schweizer Trend zu weniger Spitalstandorten.</p>
+    <h3><a href="https://www.srf.ch/news/international/dreiergipfel-in-china-expertin-fuer-europa-ist-das-eine-bedrohliche-nachricht">Dreiergipfel Xi–Trump–Putin: «Für Europa ist das eine bedrohliche Nachricht»</a></h3>
+    <div class="meta">SRF News – International · Nov 20, 2026</div>
+    <div class="why">outside / world – Geopolitik</div>
+    <p class="summary">Zum ersten Mal haben sich die Staatschefs von China, den USA und Russland zu dritt getroffen, am Rande des APEC-Gipfels in Shenzhen. Die Sicherheitsexpertin Claudia Major sieht darin eine Rückkehr zum Denken in Einflusssphären: Russland beanspruche die Ukraine, China Taiwan, und Europa drohe zur Verhandlungsmasse zu werden. Konkret vereinbart wurde wenig, etwa ein Bekenntnis zu einer UNO-Reform; ein neuer Abrüstungsvertrag gilt als unwahrscheinlich.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/news/international/jugendstreik-jung-politisch-unzufrieden-europas-jugend-rebelliert">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/news/international/jugendstreik-jung-politisch-unzufrieden-europas-jugend-rebelliert">Jugendstreik: Europas Junge gehen auf die Strasse – am Freitag auch in der Schweiz</a></h3>
+    <div class="meta">SRF News – International · Nov 20, 2026</div>
+    <div class="why">outside / world + schweiz – Gesellschaft</div>
+    <p class="summary">In mehreren europäischen Ländern protestieren junge Menschen gegen Sparpolitik und fehlende Perspektiven. Am Freitag fanden auch in Schweizer Städten Jugendstreiks statt, gerichtet vor allem gegen das Entlastungspaket 2027 des Bundes. Die Organisatoren betonen friedliche Absichten, SRF berichtet aber auch über Gewaltaufrufe aus einzelnen Sektionen der Bewegung.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-servette-mehrere-monate-ohne-torhueter-gertmonas">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-servette-mehrere-monate-ohne-torhueter-gertmonas">Servette muss drei bis vier Monate ohne Goalie Gertmonas auskommen</a></h3>
+    <div class="meta">SRF Sport – Super League · Nov 20, 2026</div>
+    <div class="why">outside / sport – Super League</div>
+    <p class="summary">Servettes litauischer Torhüter Edvinas Gertmonas wurde operiert und fällt laut Klub drei bis vier Monate aus. Verletzt hatte er sich schon Anfang September in Lugano, spielte danach aber trotz Beschwerden weiter. Für die Genfer, aktuell Tabellensechste, ist das kurz vor dem Rhone-Derby in Sion (Samstag, 20.30 Uhr) ein spürbarer Verlust. Ebenfalls am Samstag: YB–Thun und Lugano–GC (je 18 Uhr).</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://martech.org/intuit-finds-a-buyer-for-mailchimp-in-bending-spoons/">
+  <article class="card" data-link="https://martech.org/enterprise-guide-to-zero-party-first-party-and-synthetic-data/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/intuit-finds-a-buyer-for-mailchimp-in-bending-spoons/">Intuit sells Mailchimp to Bending Spoons for $3.68 billion</a></h3>
-    <div class="meta">MarTech · Nov 19, 2026</div>
-    <div class="why">core / martech – email, M&amp;A</div>
-    <p class="summary">Bending Spoons, the Italian company known for buying software products and restructuring them hard (Evernote, Vimeo, WeTransfer), has agreed to buy Mailchimp from Intuit for $3.68 billion. That is less than a third of the $12 billion Intuit paid in 2021. Intuit gets about $3.31 billion in cash and $368 million in Bending Spoons stock. The deal still needs regulatory approval and is expected to close in early 2027. Mailchimp customers should expect pricing and product changes.</p>
+    <h3><a href="https://martech.org/enterprise-guide-to-zero-party-first-party-and-synthetic-data/">An enterprise guide to zero-party, first-party and synthetic data</a></h3>
+    <div class="meta">MarTech · Nov 20, 2026</div>
+    <div class="why">core / martech – data strategy, privacy</div>
+    <p class="summary">This long guide sets out what each data type is good for and where it breaks. Zero-party data is limited by how much customers are willing to share, and what they say does not always match what they buy. First-party data powers things like churn models but still carries full privacy obligations and decays without upkeep. Synthetic data helps with AI training and testing privacy workflows, but it can copy and amplify the biases of its source data, so it needs checking against real behaviour.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/customer-experience/who-won-the-faa-ground-stop-for-customer-experience-humans-or-ai/">
+  <article class="card" data-link="https://martech.org/b2b-events-have-an-roi-problem-before-the-show-starts/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/customer-experience/who-won-the-faa-ground-stop-for-customer-experience-humans-or-ai/">FAA ground stop stress test: human agents beat AI channels</a></h3>
-    <div class="meta">CMSWire · Nov 19, 2026</div>
-    <div class="why">core / cx – service automation</div>
-    <p class="summary">CMSWire spoke with five travellers, two of them CX executives, who were stranded by the Nov 13 US ground stop. All five say human agents fixed their problems, while chatbots and other AI channels mostly passed them on or left them waiting. None of the airline statements the outlet reviewed pointed customers to phone or human support. The piece argues that disruptions like this show where automation still falls short.</p>
+    <h3><a href="https://martech.org/b2b-events-have-an-roi-problem-before-the-show-starts/">B2B events have an ROI problem before the show even starts</a></h3>
+    <div class="meta">MarTech · Nov 20, 2026</div>
+    <div class="why">core / martech – B2B, measurement</div>
+    <p class="summary">The article argues event ROI is hard to prove because the groundwork is missing: vague meeting goals, inconsistent CRM tagging and weak follow-up. It cites survey data showing that most marketers record conversations with customers or prospects at conferences, but only about a quarter plan those conversations in advance. The fix is to set targets and tracking before the event, not after.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/digital-marketing/the-cmo-playbook-the-ai-marketing-readiness-illusion/">
+  <article class="card" data-link="https://martech.org/give-holiday-shoppers-more-value-without-relying-on-discounts/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-marketing/the-cmo-playbook-the-ai-marketing-readiness-illusion/">Using AI every day isn't the same as being ready for it</a></h3>
-    <div class="meta">CMSWire · Nov 19, 2026</div>
-    <div class="why">core / martech – AI operating model</div>
-    <p class="summary">This opinion piece says many marketing teams confuse heavy use of AI tools with being ready for AI. Most have no shared rules for when to use AI, how to judge what it produces or how to measure whether it works. The author's point is that AI can't fix disconnected systems and data, so governance and data foundations have to come before you scale up.</p>
+    <h3><a href="https://martech.org/give-holiday-shoppers-more-value-without-relying-on-discounts/">Giving holiday shoppers value without blanket discounts</a></h3>
+    <div class="meta">MarTech · Nov 20, 2026</div>
+    <div class="why">core / martech – retail, pricing</div>
+    <p class="summary">Ahead of the peak shopping weeks, this piece argues retailers can win purchases with price-match guarantees and extended return windows instead of across-the-board markdowns. The appeal is cost structure: a discount costs margin on every sale, while these guarantees only cost money when a customer actually uses them, and they still remove the shopper&#x27;s fear of buying too early.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/the-wire/surveymonkey-brings-real-human-feedback-into-google-gemini/">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/eight-thoughts-on-anthropics-ipo-and-what-comes-next/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/the-wire/surveymonkey-brings-real-human-feedback-into-google-gemini/">SurveyMonkey launches an MCP connector for Google Gemini</a></h3>
-    <div class="meta">CMSWire (The Wire) · Nov 19, 2026</div>
-    <div class="why">core / analytics – VoC, AI connectors</div>
-    <p class="summary">SurveyMonkey's new connector is listed in Gemini's connector directory and runs on the Model Context Protocol. It lets users create and edit surveys and analyse responses without leaving the chat. It follows the Claude version from May and the ChatGPT version from August. The pitch: AI answers should draw on what real customers and employees actually said, not on what the model guesses. The announcement comes from the vendor.</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/eight-thoughts-on-anthropics-ipo-and-what-comes-next/">Eight thoughts on Anthropic&#x27;s IPO and what comes next</a></h3>
+    <div class="meta">CMSWire · Nov 20, 2026</div>
+    <div class="why">core / ai – industry analysis</div>
+    <p class="summary">Following Thursday&#x27;s record listing (about $81 billion raised at $83 a share), this column looks at how Anthropic got there: an early bet on hard enterprise problems and a later push into applications, led by Claude Code. It also lists risks to growth, including tighter AI budgets, cheaper open-weight models, model routers and local resistance to data centres. Finally it asks whether quarterly pressure from public shareholders could strain the company&#x27;s safety commitments. An analysis piece rather than news, and a follow-up to yesterday&#x27;s Download item.</p>
   </article>
-  <article class="card" data-link="https://martech.org/how-psychology-can-make-ai-powered-customer-personas-more-useful/">
+  <article class="card" data-link="https://www.cmswire.com/the-wire/sequel-io-raises-15m-to-build-a-new-category-in-video-driven-audience-intelligence/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/how-psychology-can-make-ai-powered-customer-personas-more-useful/">Grounding synthetic personas in psychology and real behavioural data</a></h3>
-    <div class="meta">MarTech · Nov 19, 2026</div>
-    <div class="why">core / martech – research, synthetic personas</div>
-    <p class="summary">A QuestionPro executive argues that many 'virtual persona' tools are little more than detailed LLM prompts. When the model fills gaps in the underlying data, it tends to drift into stereotypes. The proposed fix is to build personas on established psychological frameworks and real behavioural data, so they predict how customers act more reliably. Validating them against real responses is still essential.</p>
+    <h3><a href="https://www.cmswire.com/the-wire/sequel-io-raises-15m-to-build-a-new-category-in-video-driven-audience-intelligence/">Sequel.io raises $15M for video-based audience intelligence</a></h3>
+    <div class="meta">CMSWire (The Wire) · Nov 18, 2026</div>
+    <div class="why">core / martech – first-party data, B2B video</div>
+    <p class="summary">Sequel.io, which hosts webinars and video on a brand&#x27;s own site, raised $15 million led by Sorenson Capital, bringing total funding to about $26 million. Its pitch is to combine what people watch with their other on-site behaviour, at both contact and account level, and let AI agents use those signals for planning, personalisation and follow-up. The growth figures and customer results come from the company&#x27;s own press release.</p>
   </article>
-  <article class="card" data-link="https://martech.org/brand-legal-and-regulatory-risks-of-ai-generated-creative/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/brand-legal-and-regulatory-risks-of-ai-generated-creative/">The brand, legal and regulatory exposure of auto-generated creative</a></h3>
-    <div class="meta">MarTech · Nov 19, 2026</div>
-    <div class="why">core / martech – AI governance, creative</div>
-    <p class="summary">This piece lists the risks that come with AI-generated assets. A brand voice can splinter across assets, copyright can be infringed through reference images or 'make it look like X' prompts, and an invented product claim counts as false advertising. Personal data put into prompts is still covered by GDPR and similar laws. The article stresses that liability depends on the facts of each case, not on one blanket rule. It recommends human review before publishing, logs of prompts and revisions, and governance shared between legal, security and brand teams. A good companion to yesterday's brand-governance piece.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/">METR updates the most misunderstood graph in AI</a></h3>
+    <div class="meta">MIT Technology Review · Nov 20, 2026</div>
+    <div class="why">core / ai – evaluation</div>
+    <p class="summary">METR&#x27;s &#x27;time horizon&#x27; chart estimates how long a task, measured in human working time, an AI model can complete about half the time. It is often read as a simple exponential curve. The new update adds fuzzier tasks that need judgement, which matter most for automating AI research. Models keep improving quickly but still fall short of humans on open-ended work. Experts call it progress but warn it does not settle how fast automated AI R&amp;D might arrive.</p>
   </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/19/1148979/the-download-liver-kept-alive-sila-battery-deal-ai-hype/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/20/1149371/the-download-quest-to-make-minds-immortal">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/19/1148979/the-download-liver-kept-alive-sila-battery-deal-ai-hype/">The Download: Anthropic's record IPO, a call for a global AI body, and the AI Hype Index</a></h3>
-    <div class="meta">MIT Technology Review · Nov 19, 2026</div>
-    <div class="why">core / ai – industry, policy</div>
-    <p class="summary">Thursday's newsletter leads with Anthropic's stock-market debut, which raised about $81 billion and is described as the largest IPO so far. It also notes that 22 countries have called for a new international body to oversee AI. The monthly AI Hype Index returns as well. The edition's two feature stories, on a liver kept alive outside the body and a battery supply deal, are listed separately below.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/">What Sila's billion-dollar Panasonic deal says about the US battery market</a></h3>
-    <div class="meta">MIT Technology Review · Nov 19, 2026</div>
-    <div class="why">core / tech – energy, supply chain</div>
-    <p class="summary">Sila will supply silicon-carbon anode material to Panasonic Energy, and the company says the deal could be worth more than $1 billion over time. The factory behind it is largely financed by a $1.4 billion loan from the US Defense Department. The story reads the deal as a sign of how US industrial policy is shaping the domestic supply chain for EV and grid batteries.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/">A human liver kept alive outside the body for a record seven weeks</a></h3>
-    <div class="meta">MIT Technology Review · Nov 19, 2026</div>
-    <div class="why">core / tech – biotech</div>
-    <p class="summary">A team in Sydney says it kept a human liver working on a machine outside the body for seven weeks. The previous record, set in Switzerland, was about two weeks. The result has not yet been peer reviewed. If it holds up, longer preservation could give doctors time to repair donor organs before transplant and ease organ shortages.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/20/1149371/the-download-quest-to-make-minds-immortal">The Download: White House cyber director replaced, and the quest to preserve minds</a></h3>
+    <div class="meta">MIT Technology Review · Nov 20, 2026</div>
+    <div class="why">core / ai – tech news roundup</div>
+    <p class="summary">Friday&#x27;s newsletter reports that the US president has replaced cyber director Sean Cairncross with Pentagon official Kirsten Davies, after a run of tech outages that hit flights, banks and security systems. Its feature is a recap of a subscriber roundtable on efforts to make the mind outlast the body, ranging from brain freezing and head transplants to software avatars.</p>
   </article>
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text. Follow the links for full stories. No Adobe, MeasureCamp or football item today (nothing new and confirmably dated during the international break). Reminders: MeasureCamp Zurich is tomorrow, Sat Nov 21; Swiss federal votes are on Nov 29.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text. Follow the links for full stories. No Adobe item today (nothing new for Experience Cloud) and no Bundesliga or Premier League item (international break / source unreachable). MeasureCamp Zurich is today; Swiss federal votes are on Nov 29, the Bundesrat election on Dec 9.
   </footer>
 </div>
 <script>

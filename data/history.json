@@ -1,66 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-13",
-      "link": "https://www.srf.ch/news/schweiz/unheilige-allianz-knall-in-finanzkommission-budget-2027-zur-ablehnung-empfohlen",
-      "title": "Knall in der Finanzkommission: Budget 2027 zur Ablehnung empfohlen"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://www.srf.ch/news/international/im-stadtteil-brooklyn-acht-tote-und-18-verletzte-bei-hauseinsturz-in-new-york",
-      "title": "Hauseinsturz in Brooklyn: Acht Tote und 18 Verletzte"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://www.srf.ch/sport/fussball/nations-league/vor-aufstieg-in-nations-league-nati-1-punkt-holen-und-dann-bereits-blick-richtung-em-quali",
-      "title": "Vor dem Aufstieg: Nati braucht einen Punkt – und blickt schon auf die EM-Quali"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://www.technologyreview.com/2026/11/12/1148444/the-download-cop31-climate-talks-cognitive-immortality/",
-      "title": "The Download: COP31’s climate challenge and the quest for immortality"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
-      "title": "Nvidia privately confirmed it could track chips to fight smuggling"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://www.cmswire.com/digital-marketing/brian-halligan-returns-as-hubspot-ceo-replacing-yamini-rangan/",
-      "title": "HubSpot begins AI overhaul with founder Halligan as CEO, again"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://www.cmswire.com/contact-center/parloa-openai-expand-agentic-customer-experience-partnership/",
-      "title": "Parloa & OpenAI expand agentic customer experience partnership"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://www.cmswire.com/the-wire/supermetrics-launches-campaign-manager-bringing-ai-powered-insights-and-campaign-execution-together/",
-      "title": "Supermetrics launches Campaign Manager"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://martech.org/iab-unveils-framework-for-measuring-ais-part-in-conversions/",
-      "title": "IAB unveils framework for measuring AI’s part in conversions"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://martech.org/building-cross-channel-measurement-for-ai-first-media-landscape/",
-      "title": "How to build a cross-channel measurement framework for an AI-first media landscape"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://martech.org/connecting-with-shoppers-when-the-buyer-is-not-human/",
-      "title": "Connecting with shoppers when the buyer is not human"
-    },
-    {
-      "date": "2026-11-13",
-      "link": "https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes",
-      "title": "Adobe Journey Optimizer release notes — November 2026"
-    },
-    {
       "date": "2026-11-14",
       "link": "https://www.srf.ch/news/schweiz/ausschreitungen-in-basel-mildere-urteile-in-zweiter-instanz-fuer-basler-saubannerzug",
       "title": "Appellationsgericht Basel: Mildere Strafen für «Saubannerzug»"
@@ -414,6 +354,61 @@
       "date": "2026-11-20",
       "link": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
       "title": "A human liver kept alive outside the body for a record seven weeks"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://www.srf.ch/news/schweiz/nachfolger-von-guy-parmelin-graber-und-aeschi-auf-svp-ticket-gewaehlt-ticker-zum-nachlesen",
+      "title": "SVP schickt Thomas Aeschi und Michael Graber ins Rennen um den Parmelin-Sitz"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://www.srf.ch/news/international/dreiergipfel-in-china-expertin-fuer-europa-ist-das-eine-bedrohliche-nachricht",
+      "title": "Dreiergipfel Xi–Trump–Putin: «Für Europa ist das eine bedrohliche Nachricht»"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://www.srf.ch/news/international/jugendstreik-jung-politisch-unzufrieden-europas-jugend-rebelliert",
+      "title": "Jugendstreik: Europas Junge gehen auf die Strasse – am Freitag auch in der Schweiz"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-servette-mehrere-monate-ohne-torhueter-gertmonas",
+      "title": "Servette muss drei bis vier Monate ohne Goalie Gertmonas auskommen"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://martech.org/enterprise-guide-to-zero-party-first-party-and-synthetic-data/",
+      "title": "An enterprise guide to zero-party, first-party and synthetic data"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://martech.org/b2b-events-have-an-roi-problem-before-the-show-starts/",
+      "title": "B2B events have an ROI problem before the show even starts"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://martech.org/give-holiday-shoppers-more-value-without-relying-on-discounts/",
+      "title": "Giving holiday shoppers value without blanket discounts"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://www.cmswire.com/digital-experience/eight-thoughts-on-anthropics-ipo-and-what-comes-next/",
+      "title": "Eight thoughts on Anthropic's IPO and what comes next"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://www.cmswire.com/the-wire/sequel-io-raises-15m-to-build-a-new-category-in-video-driven-audience-intelligence/",
+      "title": "Sequel.io raises $15M for video-based audience intelligence"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+      "title": "METR updates the most misunderstood graph in AI"
+    },
+    {
+      "date": "2026-11-21",
+      "link": "https://www.technologyreview.com/2026/11/20/1149371/the-download-quest-to-make-minds-immortal",
+      "title": "The Download: White House cyber director replaced, and the quest to preserve minds"
     }
   ]
 }
