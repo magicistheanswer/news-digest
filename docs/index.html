@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-21</title>
+<title>Morning News Digest — 2026-11-22</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,99 +95,57 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-21, Saturday):
-  - Direct RSS/Atom fetching still blocked: curl gets HTTP 000 for every feed host, and WebFetch cannot resolve them (martech.org, technologyreview.com, srf.ch are outside the session's allowed network domains). Fallback: WebSearch limited to each source's domain. Every included article is dated Nov 18-20, confirmed by dated URL (MIT TR) or follow-up searches (MarTech, CMSWire, SRF).
-  - Used (7 core / 4 outside): MarTech data-types guide, B2B event ROI, holiday value without discounts. CMSWire Anthropic IPO analysis, Sequel.io funding (Nov 18 release). MIT TR METR time-horizon update, The Download (Nov 20). SRF SVP Bundesrat ticket (schweiz), SRF Xi-Trump-Putin summit (world), SRF youth strikes (world/schweiz), SRF Sport Servette/Gertmonas (sport).
-  - Skipped: Adobe Experience Cloud blog / newsroom (latest Experience Cloud post is Nov 5; Nov 10-17 items are MAX / Creative Cloud). MeasureCamp (no new post; MeasureCamp Zurich takes place today). Kicker: international break, Bundesliga round 11 starts Nov 27, and no confirmably dated news item was found. BBC News / BBC Sport: search tool can't reach those domains (400). Optimizely security incident (CMSWire, Nov 18) was already shown.
-  - Freshness beats quota per CLAUDE.md (11 articles). Layout: Outside above Core; Mark read via localStorage kept.
+  Run notes (2026-11-22, Sunday):
+  - Direct RSS/Atom fetching still blocked: curl gets HTTP 000 for every feed host, and WebFetch cannot resolve experienceleague.adobe.com. Fallback: WebSearch limited to each source's domain. Every included item is dated Nov 20-21 (SRF) or is an Adobe monthly release-notes page updated in November (Analytics: Nov 10, entries through Nov 18; AJO: Nov 20).
+  - Used (2 core / 3 outside): Adobe Analytics release notes, Journey Optimizer release notes; SRF Medien-Demo Bern (schweiz), SRF COP31 draft (world), SRF Sport Sion-Servette 2:0 (sport).
+  - Skipped: MarTech.org, CMSWire and MIT Technology Review: nothing found dated after Nov 20, and every Nov 20 item was already shown yesterday (weekend lull). MeasureCamp: no new post (MeasureCamp Zurich was yesterday). Kicker: Bundesliga international break, next round Nov 27. BBC News / BBC Sport: the search tool can't reach those domains (400). SVP ticket follow-up (SRF) skipped because the story was shown yesterday.
+  - The 75/25 mix is off today: only 5 fresh items cleared the freshness bar, and freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Saturday, November 21, 2026 · 11 articles</div>
+    <div class="date">Sunday, November 22, 2026 · 5 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/nachfolger-von-guy-parmelin-graber-und-aeschi-auf-svp-ticket-gewaehlt-ticker-zum-nachlesen">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/demonstration-in-bern-medienschaffende-protestieren-fuer-journalismus-und-demokratie">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/nachfolger-von-guy-parmelin-graber-und-aeschi-auf-svp-ticket-gewaehlt-ticker-zum-nachlesen">SVP schickt Thomas Aeschi und Michael Graber ins Rennen um den Parmelin-Sitz</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 20, 2026</div>
-    <div class="why">outside / schweiz – Bundesratswahl</div>
-    <p class="summary">Die SVP-Fraktion hat die Nationalräte Thomas Aeschi (ZG) und Michael Graber (VS) als Zweierticket für die Nachfolge von Bundesrat Guy Parmelin nominiert. Gewählt wird am 9. Dezember in der Vereinigten Bundesversammlung. Die Reaktionen der anderen Parteien fallen kritisch aus: Die Grünen halten beide für nicht wählbar, und auch aus der FDP kam Unmut über die Auswahl.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/demonstration-in-bern-medienschaffende-protestieren-fuer-journalismus-und-demokratie">Medienschaffende demonstrieren in Bern gegen den Stellenabbau</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 21, 2026</div>
+    <div class="why">outside / schweiz – Medien</div>
+    <p class="summary">Am Samstag kamen auf dem Bundesplatz laut SRF über tausend Menschen zusammen, die Veranstalter sprechen von rund 2000. Unter dem Motto «Weniger Journalismus – weniger Demokratie» protestierten Journalistinnen, Journalisten und Gewerkschaften gegen die Entlassungen der letzten Wochen. Auslöser ist vor allem der jüngste Abbau bei Tamedia, wo schweizweit 34 Vollzeitstellen wegfallen.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/dreiergipfel-in-china-expertin-fuer-europa-ist-das-eine-bedrohliche-nachricht">
+  <article class="card" data-link="https://www.srf.ch/news/international/klimakonferenz-in-antalya-cop31-entwurf-streicht-alle-hinweise-auf-fossile-brennstoffe">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/dreiergipfel-in-china-expertin-fuer-europa-ist-das-eine-bedrohliche-nachricht">Dreiergipfel Xi–Trump–Putin: «Für Europa ist das eine bedrohliche Nachricht»</a></h3>
+    <h3><a href="https://www.srf.ch/news/international/klimakonferenz-in-antalya-cop31-entwurf-streicht-alle-hinweise-auf-fossile-brennstoffe">COP31 in Antalya: Neuer Entwurf streicht den Ausstieg aus fossilen Brennstoffen</a></h3>
     <div class="meta">SRF News – International · Nov 20, 2026</div>
-    <div class="why">outside / world – Geopolitik</div>
-    <p class="summary">Zum ersten Mal haben sich die Staatschefs von China, den USA und Russland zu dritt getroffen, am Rande des APEC-Gipfels in Shenzhen. Die Sicherheitsexpertin Claudia Major sieht darin eine Rückkehr zum Denken in Einflusssphären: Russland beanspruche die Ukraine, China Taiwan, und Europa drohe zur Verhandlungsmasse zu werden. Konkret vereinbart wurde wenig, etwa ein Bekenntnis zu einer UNO-Reform; ein neuer Abrüstungsvertrag gilt als unwahrscheinlich.</p>
+    <div class="why">outside / world – Klima</div>
+    <p class="summary">Kurz vor dem geplanten Ende der UNO-Klimakonferenz in der Türkei hat die Präsidentschaft einen Entwurf für die Abschlusserklärung vorgelegt, der fossile Brennstoffe nicht mehr erwähnt. Stattdessen setzt er auf schnellere Elektrifizierung, aber ohne Bezug zu sauberen Energiequellen. Beobachter vermuten Druck von Golfstaaten und Russland, die wegen des Konsensprinzips Beschlüsse blockieren können. Die Schweiz und eine Gruppe von 25 Staaten fordern weiterhin einen Ausstiegsplan. Ein Endergebnis lag bei Redaktionsschluss noch nicht vor.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/jugendstreik-jung-politisch-unzufrieden-europas-jugend-rebelliert">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/2-0-zu-hause-im-rhone-derby-dank-koepfchen-den-bann-gebrochen-sion-besiegt-den-servette-fluch">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/jugendstreik-jung-politisch-unzufrieden-europas-jugend-rebelliert">Jugendstreik: Europas Junge gehen auf die Strasse – am Freitag auch in der Schweiz</a></h3>
-    <div class="meta">SRF News – International · Nov 20, 2026</div>
-    <div class="why">outside / world + schweiz – Gesellschaft</div>
-    <p class="summary">In mehreren europäischen Ländern protestieren junge Menschen gegen Sparpolitik und fehlende Perspektiven. Am Freitag fanden auch in Schweizer Städten Jugendstreiks statt, gerichtet vor allem gegen das Entlastungspaket 2027 des Bundes. Die Organisatoren betonen friedliche Absichten, SRF berichtet aber auch über Gewaltaufrufe aus einzelnen Sektionen der Bewegung.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-servette-mehrere-monate-ohne-torhueter-gertmonas">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-servette-mehrere-monate-ohne-torhueter-gertmonas">Servette muss drei bis vier Monate ohne Goalie Gertmonas auskommen</a></h3>
-    <div class="meta">SRF Sport – Super League · Nov 20, 2026</div>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/2-0-zu-hause-im-rhone-derby-dank-koepfchen-den-bann-gebrochen-sion-besiegt-den-servette-fluch">Sion bricht den Servette-Fluch: 2:0 im Rhône-Derby</a></h3>
+    <div class="meta">SRF Sport – Super League · Nov 21, 2026</div>
     <div class="why">outside / sport – Super League</div>
-    <p class="summary">Servettes litauischer Torhüter Edvinas Gertmonas wurde operiert und fällt laut Klub drei bis vier Monate aus. Verletzt hatte er sich schon Anfang September in Lugano, spielte danach aber trotz Beschwerden weiter. Für die Genfer, aktuell Tabellensechste, ist das kurz vor dem Rhone-Derby in Sion (Samstag, 20.30 Uhr) ein spürbarer Verlust. Ebenfalls am Samstag: YB–Thun und Lugano–GC (je 18 Uhr).</p>
+    <p class="summary">Sion hat das Derby gegen Servette zu Hause 2:0 gewonnen, beide Tore fielen per Kopf: Rrudhani nach der Pause, Nivokazi in der 70. Minute. Es ist Sions erster Derbysieg seit Oktober 2021. Ebenfalls in der 14. Runde: YB gewann das Berner Derby gegen Meister Thun 3:2, Leader Lugano schlug GC 2:1.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://martech.org/enterprise-guide-to-zero-party-first-party-and-synthetic-data/">
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/enterprise-guide-to-zero-party-first-party-and-synthetic-data/">An enterprise guide to zero-party, first-party and synthetic data</a></h3>
-    <div class="meta">MarTech · Nov 20, 2026</div>
-    <div class="why">core / martech – data strategy, privacy</div>
-    <p class="summary">This long guide sets out what each data type is good for and where it breaks. Zero-party data is limited by how much customers are willing to share, and what they say does not always match what they buy. First-party data powers things like churn models but still carries full privacy obligations and decays without upkeep. Synthetic data helps with AI training and testing privacy workflows, but it can copy and amplify the biases of its source data, so it needs checking against real behaviour.</p>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest">Adobe Analytics release notes: read-only access to the Analytics MCP server</a></h3>
+    <div class="meta">Adobe Experience League · updated Nov 10, 2026 (entries through Nov 18)</div>
+    <div class="why">core / adobe – Analytics release notes</div>
+    <p class="summary">The current Adobe Analytics release notes let admins give users read-only access to the Analytics MCP server, so AI tools can query data without permission to create projects, segments or calculated metrics. Data Warehouse classification reporting is also more accurate: deleted classification values now show as blank instead of lingering in later reports. The related documentation updates explain why visits from AI chat tools often arrive without a referrer and so miss the &#x27;Conversational AI tools&#x27; referrer type.</p>
   </article>
-  <article class="card" data-link="https://martech.org/b2b-events-have-an-roi-problem-before-the-show-starts/">
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/b2b-events-have-an-roi-problem-before-the-show-starts/">B2B events have an ROI problem before the show even starts</a></h3>
-    <div class="meta">MarTech · Nov 20, 2026</div>
-    <div class="why">core / martech – B2B, measurement</div>
-    <p class="summary">The article argues event ROI is hard to prove because the groundwork is missing: vague meeting goals, inconsistent CRM tagging and weak follow-up. It cites survey data showing that most marketers record conversations with customers or prospects at conferences, but only about a quarter plan those conversations in advance. The fix is to set targets and tracking before the event, not after.</p>
-  </article>
-  <article class="card" data-link="https://martech.org/give-holiday-shoppers-more-value-without-relying-on-discounts/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/give-holiday-shoppers-more-value-without-relying-on-discounts/">Giving holiday shoppers value without blanket discounts</a></h3>
-    <div class="meta">MarTech · Nov 20, 2026</div>
-    <div class="why">core / martech – retail, pricing</div>
-    <p class="summary">Ahead of the peak shopping weeks, this piece argues retailers can win purchases with price-match guarantees and extended return windows instead of across-the-board markdowns. The appeal is cost structure: a discount costs margin on every sale, while these guarantees only cost money when a customer actually uses them, and they still remove the shopper&#x27;s fear of buying too early.</p>
-  </article>
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/eight-thoughts-on-anthropics-ipo-and-what-comes-next/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/eight-thoughts-on-anthropics-ipo-and-what-comes-next/">Eight thoughts on Anthropic&#x27;s IPO and what comes next</a></h3>
-    <div class="meta">CMSWire · Nov 20, 2026</div>
-    <div class="why">core / ai – industry analysis</div>
-    <p class="summary">Following Thursday&#x27;s record listing (about $81 billion raised at $83 a share), this column looks at how Anthropic got there: an early bet on hard enterprise problems and a later push into applications, led by Claude Code. It also lists risks to growth, including tighter AI budgets, cheaper open-weight models, model routers and local resistance to data centres. Finally it asks whether quarterly pressure from public shareholders could strain the company&#x27;s safety commitments. An analysis piece rather than news, and a follow-up to yesterday&#x27;s Download item.</p>
-  </article>
-  <article class="card" data-link="https://www.cmswire.com/the-wire/sequel-io-raises-15m-to-build-a-new-category-in-video-driven-audience-intelligence/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/the-wire/sequel-io-raises-15m-to-build-a-new-category-in-video-driven-audience-intelligence/">Sequel.io raises $15M for video-based audience intelligence</a></h3>
-    <div class="meta">CMSWire (The Wire) · Nov 18, 2026</div>
-    <div class="why">core / martech – first-party data, B2B video</div>
-    <p class="summary">Sequel.io, which hosts webinars and video on a brand&#x27;s own site, raised $15 million led by Sorenson Capital, bringing total funding to about $26 million. Its pitch is to combine what people watch with their other on-site behaviour, at both contact and account level, and let AI agents use those signals for planning, personalisation and follow-up. The growth figures and customer results come from the company&#x27;s own press release.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/">METR updates the most misunderstood graph in AI</a></h3>
-    <div class="meta">MIT Technology Review · Nov 20, 2026</div>
-    <div class="why">core / ai – evaluation</div>
-    <p class="summary">METR&#x27;s &#x27;time horizon&#x27; chart estimates how long a task, measured in human working time, an AI model can complete about half the time. It is often read as a simple exponential curve. The new update adds fuzzier tasks that need judgement, which matter most for automating AI research. Models keep improving quickly but still fall short of humans on open-ended work. Experts call it progress but warn it does not settle how fast automated AI R&amp;D might arrive.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/20/1149371/the-download-quest-to-make-minds-immortal">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/20/1149371/the-download-quest-to-make-minds-immortal">The Download: White House cyber director replaced, and the quest to preserve minds</a></h3>
-    <div class="meta">MIT Technology Review · Nov 20, 2026</div>
-    <div class="why">core / ai – tech news roundup</div>
-    <p class="summary">Friday&#x27;s newsletter reports that the US president has replaced cyber director Sean Cairncross with Pentagon official Kirsten Davies, after a run of tech outages that hit flights, banks and security systems. Its feature is a recap of a subscriber roundtable on efforts to make the mind outlast the body, ranging from brain freezing and head transplants to software avatars.</p>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">Journey Optimizer November release: profile attributes for Personalized optimization</a></h3>
+    <div class="meta">Adobe Experience League · updated Nov 20, 2026</div>
+    <div class="why">core / adobe – AJO release notes</div>
+    <p class="summary">Adobe&#x27;s November release notes for Journey Optimizer let Personalized optimization AI models use up to 50 profile attributes and 20 context attributes, alongside or instead of audiences. Context features only apply to inbound decisioning, and the feature is in Limited Availability. Coworker can now read orchestrated campaigns, but it can&#x27;t create or publish them yet. Raising the limit from 10 to 25 message actions per orchestrated campaign canvas is still listed as &#x27;coming soon&#x27;.</p>
   </article>
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text. Follow the links for full stories. No Adobe item today (nothing new for Experience Cloud) and no Bundesliga or Premier League item (international break / source unreachable). MeasureCamp Zurich is today; Swiss federal votes are on Nov 29, the Bundesrat election on Dec 9.
+    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text. Follow the links for full stories. A short Sunday edition: MarTech, CMSWire and MIT Technology Review had nothing newer than what ran yesterday, and there are no Bundesliga or Premier League items (international break / source unreachable). Swiss federal votes are on Nov 29, the Bundesrat election on Dec 9.
   </footer>
 </div>
 <script>
