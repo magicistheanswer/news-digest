@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-22</title>
+<title>Morning News Digest — 2026-11-23</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,57 +95,50 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-22, Sunday):
-  - Direct RSS/Atom fetching still blocked: curl gets HTTP 000 for every feed host, and WebFetch cannot resolve experienceleague.adobe.com. Fallback: WebSearch limited to each source's domain. Every included item is dated Nov 20-21 (SRF) or is an Adobe monthly release-notes page updated in November (Analytics: Nov 10, entries through Nov 18; AJO: Nov 20).
-  - Used (2 core / 3 outside): Adobe Analytics release notes, Journey Optimizer release notes; SRF Medien-Demo Bern (schweiz), SRF COP31 draft (world), SRF Sport Sion-Servette 2:0 (sport).
-  - Skipped: MarTech.org, CMSWire and MIT Technology Review: nothing found dated after Nov 20, and every Nov 20 item was already shown yesterday (weekend lull). MeasureCamp: no new post (MeasureCamp Zurich was yesterday). Kicker: Bundesliga international break, next round Nov 27. BBC News / BBC Sport: the search tool can't reach those domains (400). SVP ticket follow-up (SRF) skipped because the story was shown yesterday.
-  - The 75/25 mix is off today: only 5 fresh items cleared the freshness bar, and freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark read via localStorage kept.
+  Run notes (2026-11-23, Monday):
+  - Direct RSS/Atom fetching still blocked: curl returns HTTP 000 for every feed host, and WebFetch can't resolve martech.org, cmswire.com, technologyreview.com or srf.ch (outside the session's allowed network domains). Fallback: WebSearch limited to each source's domain, with every date checked.
+  - Used (1 core / 3 outside): AEM Cloud Service maintenance release 29643 (Nov 19); SRF Museen & Klimawandel (schweiz, Nov 22), SRF COP31 ends without agreement (world, Nov 22), SRF Sport Basel-Luzern 0:2 (sport, Nov 22).
+  - Skipped: MarTech.org: newest items (Nov 16-20) were already shown, and the MarTech Conference recaps date from about Nov 4-13, which is too old. CMSWire: nothing indexed after Nov 18, and those items were already shown. MIT Technology Review: newest is Nov 20, already shown. Adobe blog/newsroom: newest Experience Cloud posts are from MAX (Nov 4-10), too old; the AEM 2026.11.0 feature notes were skipped as a likely repeat of Nov 18. MeasureCamp: no new post. Kicker: Bundesliga international break, nothing new. BBC News / BBC Sport: the search tool can't reach those domains (400). SRF St. Gallen Motorfahrzeugsteuer (Nov 22) skipped to keep the outside sub-topics balanced.
+  - The 75/25 mix is far off: only 4 items cleared the freshness and no-repeat bars (the index has little from the weekend), and freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Sunday, November 22, 2026 · 5 articles</div>
+    <div class="date">Monday, November 23, 2026 · 4 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/demonstration-in-bern-medienschaffende-protestieren-fuer-journalismus-und-demokratie">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/schweizer-museen-schwitzen-der-klimawandel-bedroht-das-kulturelle-gedaechtnis-der-schweiz">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/demonstration-in-bern-medienschaffende-protestieren-fuer-journalismus-und-demokratie">Medienschaffende demonstrieren in Bern gegen den Stellenabbau</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 21, 2026</div>
-    <div class="why">outside / schweiz – Medien</div>
-    <p class="summary">Am Samstag kamen auf dem Bundesplatz laut SRF über tausend Menschen zusammen, die Veranstalter sprechen von rund 2000. Unter dem Motto «Weniger Journalismus – weniger Demokratie» protestierten Journalistinnen, Journalisten und Gewerkschaften gegen die Entlassungen der letzten Wochen. Auslöser ist vor allem der jüngste Abbau bei Tamedia, wo schweizweit 34 Vollzeitstellen wegfallen.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/schweizer-museen-schwitzen-der-klimawandel-bedroht-das-kulturelle-gedaechtnis-der-schweiz">Klimawandel setzt den Sammlungen der Schweizer Museen zu</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 22, 2026</div>
+    <div class="why">outside / schweiz – Kultur & Klima</div>
+    <p class="summary">Schweizer Museen warnen, dass ihre rund 77 Millionen Objekte nicht ausreichend vor den Folgen der Erwärmung geschützt sind. Im Naturhistorischen Museum Freiburg leidet etwa die Vogelsammlung unter der Hitze, weil sich zwar die Luftfeuchtigkeit, nicht aber die Temperatur regeln lässt. Das Bundesamt für Kultur will nun landesweite Daten erheben und bis Frühsommer 2027 eine Kulturerbestrategie vorlegen, rechnet aber trotzdem mit Verlusten.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/klimakonferenz-in-antalya-cop31-entwurf-streicht-alle-hinweise-auf-fossile-brennstoffe">
+  <article class="card" data-link="https://www.srf.ch/news/international/klimakonferenz-in-der-tuerkei-keine-einigung-bei-weltklimakonferenz-auch-schweiz-lehnt-ab">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/klimakonferenz-in-antalya-cop31-entwurf-streicht-alle-hinweise-auf-fossile-brennstoffe">COP31 in Antalya: Neuer Entwurf streicht den Ausstieg aus fossilen Brennstoffen</a></h3>
-    <div class="meta">SRF News – International · Nov 20, 2026</div>
+    <h3><a href="https://www.srf.ch/news/international/klimakonferenz-in-der-tuerkei-keine-einigung-bei-weltklimakonferenz-auch-schweiz-lehnt-ab">COP31 endet ohne Abschlusserklärung, auch die Schweiz sagt Nein</a></h3>
+    <div class="meta">SRF News – International · Nov 22, 2026</div>
     <div class="why">outside / world – Klima</div>
-    <p class="summary">Kurz vor dem geplanten Ende der UNO-Klimakonferenz in der Türkei hat die Präsidentschaft einen Entwurf für die Abschlusserklärung vorgelegt, der fossile Brennstoffe nicht mehr erwähnt. Stattdessen setzt er auf schnellere Elektrifizierung, aber ohne Bezug zu sauberen Energiequellen. Beobachter vermuten Druck von Golfstaaten und Russland, die wegen des Konsensprinzips Beschlüsse blockieren können. Die Schweiz und eine Gruppe von 25 Staaten fordern weiterhin einen Ausstiegsplan. Ein Endergebnis lag bei Redaktionsschluss noch nicht vor.</p>
+    <p class="summary">Die Weltklimakonferenz in Antalya ist ohne gemeinsame Schlusserklärung zu Ende gegangen. Die Schweiz, die EU und eine breite Koalition lehnten den Entwurf ab, weil er fossile Brennstoffe nicht mehr erwähnte. Ölstaaten wie Saudi-Arabien sollen eine schärfere Formulierung blockiert haben. Frühere Beschlüsse bleiben in Kraft, UNO-Generalsekretär Guterres zeigte sich tief enttäuscht. (Fortsetzung des gestrigen Berichts zum Textentwurf.)</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/2-0-zu-hause-im-rhone-derby-dank-koepfchen-den-bann-gebrochen-sion-besiegt-den-servette-fluch">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/luzern-siegt-hochverdient-shaqiri-zur-pause-ausgewechselt-basel-nach-0-2-weiter-im-loch">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/2-0-zu-hause-im-rhone-derby-dank-koepfchen-den-bann-gebrochen-sion-besiegt-den-servette-fluch">Sion bricht den Servette-Fluch: 2:0 im Rhône-Derby</a></h3>
-    <div class="meta">SRF Sport – Super League · Nov 21, 2026</div>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/luzern-siegt-hochverdient-shaqiri-zur-pause-ausgewechselt-basel-nach-0-2-weiter-im-loch">Basel verliert 0:2 gegen Luzern, Shaqiri muss zur Pause raus</a></h3>
+    <div class="meta">SRF Sport – Super League · Nov 22, 2026</div>
     <div class="why">outside / sport – Super League</div>
-    <p class="summary">Sion hat das Derby gegen Servette zu Hause 2:0 gewonnen, beide Tore fielen per Kopf: Rrudhani nach der Pause, Nivokazi in der 70. Minute. Es ist Sions erster Derbysieg seit Oktober 2021. Ebenfalls in der 14. Runde: YB gewann das Berner Derby gegen Meister Thun 3:2, Leader Lugano schlug GC 2:1.</p>
+    <p class="summary">Der FC Basel verlor in der 14. Runde zu Hause 0:2 gegen Luzern. Kabwit traf in der 39. Minute, Dantas in der 86. Trainer Jokanovic nahm Captain Shaqiri nach einer schwachen ersten Halbzeit vom Feld, und Goalie Omlin warnte danach, dass Basel so in den Abstiegskampf gerate. Basel liegt jetzt auf Rang 8, direkt hinter Luzern.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest">
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/analytics/release-notes/latest">Adobe Analytics release notes: read-only access to the Analytics MCP server</a></h3>
-    <div class="meta">Adobe Experience League · updated Nov 10, 2026 (entries through Nov 18)</div>
-    <div class="why">core / adobe – Analytics release notes</div>
-    <p class="summary">The current Adobe Analytics release notes let admins give users read-only access to the Analytics MCP server, so AI tools can query data without permission to create projects, segments or calculated metrics. Data Warehouse classification reporting is also more accurate: deleted classification values now show as blank instead of lingering in later reports. The related documentation updates explain why visits from AI chat tools often arrive without a referrer and so miss the &#x27;Conversational AI tools&#x27; referrer type.</p>
-  </article>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes">Journey Optimizer November release: profile attributes for Personalized optimization</a></h3>
-    <div class="meta">Adobe Experience League · updated Nov 20, 2026</div>
-    <div class="why">core / adobe – AJO release notes</div>
-    <p class="summary">Adobe&#x27;s November release notes for Journey Optimizer let Personalized optimization AI models use up to 50 profile attributes and 20 context attributes, alongside or instead of audiences. Context features only apply to inbound decisioning, and the feature is in Limited Availability. Coworker can now read orchestrated campaigns, but it can&#x27;t create or publish them yet. Raising the limit from 10 to 25 message actions per orchestrated campaign canvas is still listed as &#x27;coming soon&#x27;.</p>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest">AEM as a Cloud Service maintenance release 29643: Assets fixes, auto-update Dec 7–9</a></h3>
+    <div class="meta">Adobe Experience League · Nov 19, 2026</div>
+    <div class="why">core / adobe – AEM release notes</div>
+    <p class="summary">Adobe&#x27;s latest AEM Cloud Service maintenance release mostly fixes Assets problems: Dynamic Media upload failures from HTTP connection errors, link sharing for large folders, metadata-import saves and rendition retrieval errors. It also fixes thread dumps hanging on Java 25 and tagging of content fragments via Manage Tags, and adds video thumbnails at a chosen timestamp and FAQ structured data. Per Adobe&#x27;s roadmap, environments get it automatically on December 7–9, and the full feature set comes with the 2026.12.0 activation.</p>
   </article>
   <footer>
-    Generated automatically. Summaries are original wording based on source headlines and reporting, not reproductions of article text. Follow the links for full stories. A short Sunday edition: MarTech, CMSWire and MIT Technology Review had nothing newer than what ran yesterday, and there are no Bundesliga or Premier League items (international break / source unreachable). Swiss federal votes are on Nov 29, the Bundesrat election on Dec 9.
+    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. Another short edition: the search index had nothing new from MarTech, CMSWire or MIT Technology Review over the weekend, and there are no Bundesliga or Premier League items (international break, and the BBC is unreachable). Swiss federal votes are on Nov 29.
   </footer>
 </div>
 <script>

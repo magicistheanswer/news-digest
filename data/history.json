@@ -1,21 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-15",
-      "link": "https://www.srf.ch/news/schweiz/kantonsbudget-2027-tausende-menschen-demonstrieren-in-genf-gegen-sparmassnahmen",
-      "title": "Genf: Tausende demonstrieren gegen Sparmassnahmen im Kantonsbudget"
-    },
-    {
-      "date": "2026-11-15",
-      "link": "https://www.srf.ch/news/international/us-raumfahrtunternehmen-spacex-spacex-faengt-starship-erstmals-mit-greifarmen-auf",
-      "title": "SpaceX fängt erstmals die Starship-Oberstufe mit Greifarmen auf"
-    },
-    {
-      "date": "2026-11-15",
-      "link": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/doc-changes",
-      "title": "Customer Journey Analytics: November-Doku-Updates – Coworker ersetzt AI Assistant"
-    },
-    {
       "date": "2026-11-16",
       "link": "https://www.srf.ch/news/waffenexporte-schweizer-munition-gelangte-ueber-umwege-nach-russland",
       "title": "Thuner Scharfschützenmunition gelangte trotz Sanktionen nach Russland"
@@ -374,6 +359,26 @@
       "date": "2026-11-22",
       "link": "https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/release-notes",
       "title": "Journey Optimizer November release: profile attributes for Personalized optimization"
+    },
+    {
+      "date": "2026-11-23",
+      "link": "https://www.srf.ch/news/schweiz/schweizer-museen-schwitzen-der-klimawandel-bedroht-das-kulturelle-gedaechtnis-der-schweiz",
+      "title": "Klimawandel setzt den Sammlungen der Schweizer Museen zu"
+    },
+    {
+      "date": "2026-11-23",
+      "link": "https://www.srf.ch/news/international/klimakonferenz-in-der-tuerkei-keine-einigung-bei-weltklimakonferenz-auch-schweiz-lehnt-ab",
+      "title": "COP31 endet ohne Abschlusserklärung, auch die Schweiz sagt Nein"
+    },
+    {
+      "date": "2026-11-23",
+      "link": "https://www.srf.ch/sport/fussball/super-league/luzern-siegt-hochverdient-shaqiri-zur-pause-ausgewechselt-basel-nach-0-2-weiter-im-loch",
+      "title": "Basel verliert 0:2 gegen Luzern, Shaqiri muss zur Pause raus"
+    },
+    {
+      "date": "2026-11-23",
+      "link": "https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest",
+      "title": "AEM as a Cloud Service maintenance release 29643: Assets fixes, auto-update Dec 7–9"
     }
   ]
 }
