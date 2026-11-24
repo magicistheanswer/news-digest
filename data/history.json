@@ -1,51 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-16",
-      "link": "https://www.srf.ch/news/waffenexporte-schweizer-munition-gelangte-ueber-umwege-nach-russland",
-      "title": "Thuner Scharfschützenmunition gelangte trotz Sanktionen nach Russland"
-    },
-    {
-      "date": "2026-11-16",
-      "link": "https://www.srf.ch/news/international/korruptionsermittlungen-im-wald-vergraben-ermittler-finden-in-ungarn-millionen-euro",
-      "title": "Ungarn: 17,7 Millionen Euro Bargeld im Wald vergraben gefunden"
-    },
-    {
-      "date": "2026-11-16",
-      "link": "https://www.srf.ch/news/international/umstrittene-medienreform-grossdemo-in-tschechien-gegen-abschaffung-von-rundfunkgebuehr",
-      "title": "Prag: Grossdemo gegen Abschaffung der Rundfunkgebühr"
-    },
-    {
-      "date": "2026-11-16",
-      "link": "https://www.srf.ch/sport/fussball/super-league/news-zur-schweizer-nati-leichte-beschwerden-akanji-reist-vorzeitig-ab",
-      "title": "Akanji und Ndoye reisen ab – Nati heute ersatzgeschwächt gegen Schottland"
-    },
-    {
-      "date": "2026-11-16",
-      "link": "https://www.cmswire.com/customer-experience/adobe-embeds-agentic-ai-into-genstudio-with-cx-enterprise-coworker/",
-      "title": "Adobe Embeds Agentic AI Into GenStudio With CX Enterprise Coworker"
-    },
-    {
-      "date": "2026-11-16",
-      "link": "https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes",
-      "title": "Adobe Target 26.11.1: Coworker lands in the Activities list"
-    },
-    {
-      "date": "2026-11-16",
-      "link": "https://experienceleague.adobe.com/en/docs/journey-optimizer/using/whats-new/e-release-notes",
-      "title": "Journey Optimizer November release (Nov 17–18): what's coming"
-    },
-    {
-      "date": "2026-11-16",
-      "link": "https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/release-notes",
-      "title": "AEP Web SDK 2.37: runtime switch for Adobe Advertising"
-    },
-    {
-      "date": "2026-11-16",
-      "link": "https://martech.org/claritas-brings-live-optimization-to-acquisition-email/",
-      "title": "Claritas brings live optimization to acquisition email"
-    },
-    {
       "date": "2026-11-17",
       "link": "https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-will-staendemehr-fuer-eu-vertragspaket",
       "title": "EU-Vertragspaket: Nationalratskommission will das Ständemehr"
@@ -379,6 +334,61 @@
       "date": "2026-11-23",
       "link": "https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest",
       "title": "AEM as a Cloud Service maintenance release 29643: Assets fixes, auto-update Dec 7–9"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://www.srf.ch/news/schweiz/exklusive-recherche-169-versuchte-femizide-so-brutal-ist-die-gewalt-gegen-frauen",
+      "title": "SRF-Recherche: Mindestens 166 Männer wegen versuchter Femizide verurteilt"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://www.srf.ch/news/schweiz/region-um-interlaken-kampf-gegen-klimawandel-feriengaeste-sollen-zahlen",
+      "title": "Interlaken-Region plant Klimafonds, den Feriengäste finanzieren"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://www.srf.ch/news/international/ukraine/drohnenangriffe-vor-libyen-das-ist-ueber-den-angriff-auf-das-russische-kriegsschiff-bekannt",
+      "title": "Russische Korvette «Merkury» in Bengasi versenkt, Kiew bekennt sich"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-ajetis-sperre-auf-zwei-spiele-reduziert",
+      "title": "Ajetis Sperre auf zwei Spiele reduziert"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://martech.org/whats-missing-from-your-2027-marketing-ai-budget/",
+      "title": "What's missing from your 2027 marketing AI budget?"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://martech.org/how-to-vet-ai-capabilities-during-martech-rfps/",
+      "title": "How to vet AI capabilities during martech RFPs"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://martech.org/how-ai-is-re-shaping-mid-market-marketing/",
+      "title": "How AI is re-shaping mid-market marketing"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://www.cmswire.com/contact-center/sierra-hits-30b-valuation-on-175b-series-f/",
+      "title": "Sierra raises $1.75B at a $30B valuation"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://www.cmswire.com/digital-marketing/context-engineering-is-the-bill-coming-due-for-your-martech-stack/",
+      "title": "Context engineering is the bill coming due for your martech stack"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/",
+      "title": "A legendary philosopher isn't buying Anthropic's AI consciousness argument"
+    },
+    {
+      "date": "2026-11-24",
+      "link": "https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/",
+      "title": "Spreading crushed rock for carbon removal could hurt crop yields"
     }
   ]
 }

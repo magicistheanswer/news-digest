@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-23</title>
+<title>Morning News Digest — 2026-11-24</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,50 +95,99 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-23, Monday):
-  - Direct RSS/Atom fetching still blocked: curl returns HTTP 000 for every feed host, and WebFetch can't resolve martech.org, cmswire.com, technologyreview.com or srf.ch (outside the session's allowed network domains). Fallback: WebSearch limited to each source's domain, with every date checked.
-  - Used (1 core / 3 outside): AEM Cloud Service maintenance release 29643 (Nov 19); SRF Museen & Klimawandel (schweiz, Nov 22), SRF COP31 ends without agreement (world, Nov 22), SRF Sport Basel-Luzern 0:2 (sport, Nov 22).
-  - Skipped: MarTech.org: newest items (Nov 16-20) were already shown, and the MarTech Conference recaps date from about Nov 4-13, which is too old. CMSWire: nothing indexed after Nov 18, and those items were already shown. MIT Technology Review: newest is Nov 20, already shown. Adobe blog/newsroom: newest Experience Cloud posts are from MAX (Nov 4-10), too old; the AEM 2026.11.0 feature notes were skipped as a likely repeat of Nov 18. MeasureCamp: no new post. Kicker: Bundesliga international break, nothing new. BBC News / BBC Sport: the search tool can't reach those domains (400). SRF St. Gallen Motorfahrzeugsteuer (Nov 22) skipped to keep the outside sub-topics balanced.
-  - The 75/25 mix is far off: only 4 items cleared the freshness and no-repeat bars (the index has little from the weekend), and freshness beats quota per CLAUDE.md. Layout: Outside above Core; Mark read via localStorage kept.
+  Run notes (2026-11-24, Tuesday):
+  - Direct RSS/Atom fetching still blocked: curl returns HTTP 000 for every feed host. Fallback: WebSearch limited to each source's domain, with every publish date checked (all items below are from Nov 23).
+  - Used (7 core / 4 outside): MarTech.org x3, CMSWire x2, MIT Technology Review x2; SRF Schweiz x2 (Femizid-Recherche, Klimafonds Interlaken), SRF International (Merkury sunk off Libya), SRF Sport (Ajeti suspension cut).
+  - Skipped: Adobe blog/newsroom: newest Experience Cloud posts are MAX (Nov 9-10), too old, and the release notes found were already shown. MeasureCamp: no new post. Kicker: no 2026/27 matchday-10 result report found in the index. BBC News / BBC Sport: the search tool can't reach those domains (400). MarTech's Walmart/ChatGPT-checkout item skipped because its publish date couldn't be confirmed. CMSWire Emplifi CMO press release skipped as low value. MIT TR 'The Download' (Nov 23) skipped because it repeats the two MIT TR items. SRF SVP-ticket follow-ups skipped as repeats of the Nov 21 story.
+  - The mix is 11 articles instead of 15 (freshness beats quota per CLAUDE.md). Layout: Outside above Core; Mark read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Monday, November 23, 2026 · 4 articles</div>
+    <div class="date">Tuesday, November 24, 2026 · 11 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/schweizer-museen-schwitzen-der-klimawandel-bedroht-das-kulturelle-gedaechtnis-der-schweiz">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/exklusive-recherche-169-versuchte-femizide-so-brutal-ist-die-gewalt-gegen-frauen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/schweizer-museen-schwitzen-der-klimawandel-bedroht-das-kulturelle-gedaechtnis-der-schweiz">Klimawandel setzt den Sammlungen der Schweizer Museen zu</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 22, 2026</div>
-    <div class="why">outside / schweiz – Kultur & Klima</div>
-    <p class="summary">Schweizer Museen warnen, dass ihre rund 77 Millionen Objekte nicht ausreichend vor den Folgen der Erwärmung geschützt sind. Im Naturhistorischen Museum Freiburg leidet etwa die Vogelsammlung unter der Hitze, weil sich zwar die Luftfeuchtigkeit, nicht aber die Temperatur regeln lässt. Das Bundesamt für Kultur will nun landesweite Daten erheben und bis Frühsommer 2027 eine Kulturerbestrategie vorlegen, rechnet aber trotzdem mit Verlusten.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/exklusive-recherche-169-versuchte-femizide-so-brutal-ist-die-gewalt-gegen-frauen">SRF-Recherche: Mindestens 166 Männer wegen versuchter Femizide verurteilt</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 23, 2026</div>
+    <div class="why">outside / schweiz – Gesellschaft &amp; Justiz</div>
+    <p class="summary">SRF Investigativ hat alle Gerichtsurteile seit 2020 zu versuchten Tötungen von Frauen ausgewertet: 165 Fälle mit 166 Tätern und 169 Opfern. Rund drei Viertel der Opfer waren (Ex-)Partnerinnen des Täters, Würgen war die häufigste Methode, und Eifersucht spielte in fast der Hälfte der Fälle mit. Eine offizielle Statistik zu überlebten Tötungsversuchen gibt es nicht, deshalb hat SRF den Datensatz selbst aufgebaut.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/klimakonferenz-in-der-tuerkei-keine-einigung-bei-weltklimakonferenz-auch-schweiz-lehnt-ab">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/region-um-interlaken-kampf-gegen-klimawandel-feriengaeste-sollen-zahlen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/klimakonferenz-in-der-tuerkei-keine-einigung-bei-weltklimakonferenz-auch-schweiz-lehnt-ab">COP31 endet ohne Abschlusserklärung, auch die Schweiz sagt Nein</a></h3>
-    <div class="meta">SRF News – International · Nov 22, 2026</div>
-    <div class="why">outside / world – Klima</div>
-    <p class="summary">Die Weltklimakonferenz in Antalya ist ohne gemeinsame Schlusserklärung zu Ende gegangen. Die Schweiz, die EU und eine breite Koalition lehnten den Entwurf ab, weil er fossile Brennstoffe nicht mehr erwähnte. Ölstaaten wie Saudi-Arabien sollen eine schärfere Formulierung blockiert haben. Frühere Beschlüsse bleiben in Kraft, UNO-Generalsekretär Guterres zeigte sich tief enttäuscht. (Fortsetzung des gestrigen Berichts zum Textentwurf.)</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/region-um-interlaken-kampf-gegen-klimawandel-feriengaeste-sollen-zahlen">Interlaken-Region plant Klimafonds, den Feriengäste finanzieren</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 23, 2026</div>
+    <div class="why">outside / schweiz – Tourismus &amp; Klima</div>
+    <p class="summary">Im Berner Oberland soll ein regionaler Klimafonds die Klimaspuren des Tourismus ausgleichen, gespeist aus freiwilligen Beiträgen von Gästen in Hotels, Bergbahnen und Restaurants. Unterstützt von der Regionalkonferenz Oberland-Ost, dem Kanton und der Wyss Academy könnten so mehrere hunderttausend Franken pro Jahr zusammenkommen. Der Fonds wird noch rechtlich geprüft, das Sammeln soll 2027 beginnen.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/luzern-siegt-hochverdient-shaqiri-zur-pause-ausgewechselt-basel-nach-0-2-weiter-im-loch">
+  <article class="card" data-link="https://www.srf.ch/news/international/ukraine/drohnenangriffe-vor-libyen-das-ist-ueber-den-angriff-auf-das-russische-kriegsschiff-bekannt">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/luzern-siegt-hochverdient-shaqiri-zur-pause-ausgewechselt-basel-nach-0-2-weiter-im-loch">Basel verliert 0:2 gegen Luzern, Shaqiri muss zur Pause raus</a></h3>
-    <div class="meta">SRF Sport – Super League · Nov 22, 2026</div>
+    <h3><a href="https://www.srf.ch/news/international/ukraine/drohnenangriffe-vor-libyen-das-ist-ueber-den-angriff-auf-das-russische-kriegsschiff-bekannt">Russische Korvette «Merkury» in Bengasi versenkt, Kiew bekennt sich</a></h3>
+    <div class="meta">SRF News – International · Nov 23, 2026</div>
+    <div class="why">outside / world – Ukraine-Krieg</div>
+    <p class="summary">Am Wochenende ist das russische Kriegsschiff «Merkury» im ostlibyschen Hafen Bengasi nach einem Angriff mit Drohnenbooten gesunken. Selenski schreibt die Aktion dem Geheimdienst SBU zu, offen bleibt, welche Frachter zusätzlich getroffen wurden. SRF-Korrespondent David Nauer spricht von einem symbolischen Nadelstich, der militärisch wenig ändere, und die UNO verlangt eine Untersuchung.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-ajetis-sperre-auf-zwei-spiele-reduziert">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-ajetis-sperre-auf-zwei-spiele-reduziert">Ajetis Sperre auf zwei Spiele reduziert</a></h3>
+    <div class="meta">SRF Sport – Super League · Nov 23, 2026</div>
     <div class="why">outside / sport – Super League</div>
-    <p class="summary">Der FC Basel verlor in der 14. Runde zu Hause 0:2 gegen Luzern. Kabwit traf in der 39. Minute, Dantas in der 86. Trainer Jokanovic nahm Captain Shaqiri nach einer schwachen ersten Halbzeit vom Feld, und Goalie Omlin warnte danach, dass Basel so in den Abstiegskampf gerate. Basel liegt jetzt auf Rang 8, direkt hinter Luzern.</p>
+    <p class="summary">Die Swiss Football League hat den Rekurs von Leader Lugano teilweise gutgeheissen und die Sperre gegen Stürmer Albian Ajeti von drei auf zwei Spiele gekürzt. Er hatte beim 0:5 in St. Gallen am 8. November, Luganos einziger Liganiederlage, Rot gesehen. Ajeti ist im Cup-Achtelfinal gegen St. Gallen am 2. Dezember wieder spielberechtigt.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest">
+  <article class="card" data-link="https://martech.org/whats-missing-from-your-2027-marketing-ai-budget/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest">AEM as a Cloud Service maintenance release 29643: Assets fixes, auto-update Dec 7–9</a></h3>
-    <div class="meta">Adobe Experience League · Nov 19, 2026</div>
-    <div class="why">core / adobe – AEM release notes</div>
-    <p class="summary">Adobe&#x27;s latest AEM Cloud Service maintenance release mostly fixes Assets problems: Dynamic Media upload failures from HTTP connection errors, link sharing for large folders, metadata-import saves and rendition retrieval errors. It also fixes thread dumps hanging on Java 25 and tagging of content fragments via Manage Tags, and adds video thumbnails at a chosen timestamp and FAQ structured data. Per Adobe&#x27;s roadmap, environments get it automatically on December 7–9, and the full feature set comes with the 2026.12.0 activation.</p>
+    <h3><a href="https://martech.org/whats-missing-from-your-2027-marketing-ai-budget/">What&#x27;s missing from your 2027 marketing AI budget?</a></h3>
+    <div class="meta">MarTech.org · Nov 23, 2026</div>
+    <div class="why">core / martech – AI budgeting</div>
+    <p class="summary">Melissa Reeve argues that marketing teams over-fund AI tools and under-fund the people, process redesign and training needed to get value from them. Citing Gartner&#x27;s estimate that CMOs now spend about 15.3% of their budget on AI initiatives, she makes the case for setting aside budget lines for change management and workflow work in 2027 planning.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/how-to-vet-ai-capabilities-during-martech-rfps/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/how-to-vet-ai-capabilities-during-martech-rfps/">How to vet AI capabilities during martech RFPs</a></h3>
+    <div class="meta">MarTech.org · Nov 23, 2026</div>
+    <div class="why">core / martech – vendor selection</div>
+    <p class="summary">A practical checklist for telling real AI features from rebranded rules-based automation when evaluating martech vendors. It suggests six questions for RFPs, covering what models sit underneath, how outputs are governed, and what data the feature actually needs, so buyers can push past &#x27;AI-powered&#x27; claims.</p>
+  </article>
+  <article class="card" data-link="https://martech.org/how-ai-is-re-shaping-mid-market-marketing/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://martech.org/how-ai-is-re-shaping-mid-market-marketing/">How AI is re-shaping mid-market marketing</a></h3>
+    <div class="meta">MarTech.org · Nov 23, 2026</div>
+    <div class="why">core / martech – AI adoption</div>
+    <p class="summary">In this Conversations with MarTech episode, Marketri founder Debra Andrews talks about how mid-market marketing teams are actually adopting generative AI. The focus is on where smaller teams with limited budgets see gains and where adoption stalls, a useful counterpoint to enterprise-focused AI coverage.</p>
+  </article>
+  <article class="card" data-link="https://www.cmswire.com/contact-center/sierra-hits-30b-valuation-on-175b-series-f/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/contact-center/sierra-hits-30b-valuation-on-175b-series-f/">Sierra raises $1.75B at a $30B valuation</a></h3>
+    <div class="meta">CMSWire · Nov 23, 2026</div>
+    <div class="why">core / cx – AI agents &amp; funding</div>
+    <p class="summary">AI customer-service agent company Sierra closed a $1.75 billion Series F led by Greenoaks and Lightspeed, doubling the $15 billion valuation from its May round. The company reports more than $400 million in ARR after about two and a half years and plans to expand in Europe and Asia and push its agents beyond support into sales and lifetime-value use cases.</p>
+  </article>
+  <article class="card" data-link="https://www.cmswire.com/digital-marketing/context-engineering-is-the-bill-coming-due-for-your-martech-stack/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.cmswire.com/digital-marketing/context-engineering-is-the-bill-coming-due-for-your-martech-stack/">Context engineering is the bill coming due for your martech stack</a></h3>
+    <div class="meta">CMSWire · Nov 23, 2026</div>
+    <div class="why">core / martech – data &amp; AI agents</div>
+    <p class="summary">Brian Riback argues that once AI agents start acting on a martech stack, long-tolerated gaps such as fragmented data, missing definitions and undocumented business rules turn into real costs. Giving agents reliable context means paying down that debt first, which is very relevant for anyone building on a CDP or AEP.</p>
+  </article>
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/">A legendary philosopher isn&#x27;t buying Anthropic&#x27;s AI consciousness argument</a></h3>
+    <div class="meta">MIT Technology Review · Nov 23, 2026</div>
+    <div class="why">core / ai – ethics &amp; philosophy</div>
+    <p class="summary">James O&#x27;Donnell reports on Thomas Nagel, author of &#x27;What Is It Like to Be a Bat?&#x27;, pushing back hard on the idea, taken seriously by Anthropic and others, that AI models might have experiences worth protecting. Nagel calls the AI-welfare camp &#x27;completely idiotic&#x27;, which sharpens a debate that is starting to shape how AI labs talk about their models.</p>
+  </article>
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/">Spreading crushed rock for carbon removal could hurt crop yields</a></h3>
+    <div class="meta">MIT Technology Review · Nov 23, 2026</div>
+    <div class="why">core / tech – climate tech</div>
+    <p class="summary">New CarbonPlan preprints suggest that enhanced rock weathering, which means spreading crushed rock on farmland to lock up CO2, could reduce crop growth at the high application rates needed for large removals. One analysis puts the practical ceiling near 600 million tonnes of CO2 a year, far below some model estimates. The findings have not yet been peer-reviewed.</p>
   </article>
   <footer>
-    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. Another short edition: the search index had nothing new from MarTech, CMSWire or MIT Technology Review over the weekend, and there are no Bundesliga or Premier League items (international break, and the BBC is unreachable). Swiss federal votes are on Nov 29.
+    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. There's no Adobe item today (nothing new since MAX), and there are no Bundesliga or Premier League items (Kicker had nothing indexed and the BBC is unreachable). The Swiss federal votes are on Nov 29 and the Federal Council election is on Dec 9.
   </footer>
 </div>
 <script>
