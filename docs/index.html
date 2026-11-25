@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-24</title>
+<title>Morning News Digest — 2026-11-25</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,99 +95,92 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-24, Tuesday):
-  - Direct RSS/Atom fetching still blocked: curl returns HTTP 000 for every feed host. Fallback: WebSearch limited to each source's domain, with every publish date checked (all items below are from Nov 23).
-  - Used (7 core / 4 outside): MarTech.org x3, CMSWire x2, MIT Technology Review x2; SRF Schweiz x2 (Femizid-Recherche, Klimafonds Interlaken), SRF International (Merkury sunk off Libya), SRF Sport (Ajeti suspension cut).
-  - Skipped: Adobe blog/newsroom: newest Experience Cloud posts are MAX (Nov 9-10), too old, and the release notes found were already shown. MeasureCamp: no new post. Kicker: no 2026/27 matchday-10 result report found in the index. BBC News / BBC Sport: the search tool can't reach those domains (400). MarTech's Walmart/ChatGPT-checkout item skipped because its publish date couldn't be confirmed. CMSWire Emplifi CMO press release skipped as low value. MIT TR 'The Download' (Nov 23) skipped because it repeats the two MIT TR items. SRF SVP-ticket follow-ups skipped as repeats of the Nov 21 story.
-  - The mix is 11 articles instead of 15 (freshness beats quota per CLAUDE.md). Layout: Outside above Core; Mark read via localStorage kept.
+  Run notes (2026-11-25, Wednesday):
+  - Direct RSS/Atom fetching still blocked (proxy rejects every feed host with 403; WebFetch can't resolve them either). Fallback: WebSearch limited to each source's domain; every item below has a confirmed Nov 24 publish date.
+  - Used (6 core / 4 outside): CMSWire x3, MarTech.org x2, MIT Technology Review x1; SRF Schweiz (Einbrüche), SRF International x2 (EGMR pushbacks, Iran), SRF Sport (Champions League, Arsenal vs BVB).
+  - Skipped: Adobe blog/newsroom: newest Experience Cloud news is from MAX / Nov 4-10, too old. MeasureCamp: only event pages, no new post. Kicker: no article with a confirmed date this week in the index. BBC News / BBC Sport: the search tool can't reach those domains (400). MarTech mid-market AI piece: already shown Nov 24. MIT TR 'The Download' (Nov 24): repeats the data-center item and the already-shown Nagel story; MIT TR enterprise-networks piece: sponsored content. CMSWire Optimove item: sponsored press release. SRF Super League: no new item since matchday 14 (already covered). SRF Luzern water shortage: publish date couldn't be confirmed.
+  - The mix is 10 articles instead of 15 (freshness beats quota per CLAUDE.md). Layout: Outside above Core; Mark read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Tuesday, November 24, 2026 · 11 articles</div>
+    <div class="date">Wednesday, November 25, 2026 · 10 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/exklusive-recherche-169-versuchte-femizide-so-brutal-ist-die-gewalt-gegen-frauen">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/haeufiger-und-teurer-einbrueche-in-der-schweiz-nehmen-weiter-zu">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/exklusive-recherche-169-versuchte-femizide-so-brutal-ist-die-gewalt-gegen-frauen">SRF-Recherche: Mindestens 166 Männer wegen versuchter Femizide verurteilt</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 23, 2026</div>
-    <div class="why">outside / schweiz – Gesellschaft &amp; Justiz</div>
-    <p class="summary">SRF Investigativ hat alle Gerichtsurteile seit 2020 zu versuchten Tötungen von Frauen ausgewertet: 165 Fälle mit 166 Tätern und 169 Opfern. Rund drei Viertel der Opfer waren (Ex-)Partnerinnen des Täters, Würgen war die häufigste Methode, und Eifersucht spielte in fast der Hälfte der Fälle mit. Eine offizielle Statistik zu überlebten Tötungsversuchen gibt es nicht, deshalb hat SRF den Datensatz selbst aufgebaut.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/haeufiger-und-teurer-einbrueche-in-der-schweiz-nehmen-weiter-zu">Einbrüche in der Schweiz werden häufiger und teurer</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 24, 2026</div>
+    <div class="why">outside / schweiz – Sicherheit</div>
+    <p class="summary">Laut Schadenzahlen der Versicherungsgruppe Helvetia Baloise ist die Zahl der Einbruchdiebstähle über fünf Jahre um rund 60 Prozent gestiegen, von 27 auf 42 Fälle pro 10'000 Policen. Besonders betroffen sind Einfamilienhäuser, und die meisten Einbrüche passieren in den dunklen Monaten November und Dezember. Regional steht Genf an der Spitze.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/region-um-interlaken-kampf-gegen-klimawandel-feriengaeste-sollen-zahlen">
+  <article class="card" data-link="https://www.srf.ch/news/international/gerichtshof-fuer-menschenrechte-egmr-erlaubt-pushbacks-an-eu-grenzen-unter-bedingungen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/region-um-interlaken-kampf-gegen-klimawandel-feriengaeste-sollen-zahlen">Interlaken-Region plant Klimafonds, den Feriengäste finanzieren</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 23, 2026</div>
-    <div class="why">outside / schweiz – Tourismus &amp; Klima</div>
-    <p class="summary">Im Berner Oberland soll ein regionaler Klimafonds die Klimaspuren des Tourismus ausgleichen, gespeist aus freiwilligen Beiträgen von Gästen in Hotels, Bergbahnen und Restaurants. Unterstützt von der Regionalkonferenz Oberland-Ost, dem Kanton und der Wyss Academy könnten so mehrere hunderttausend Franken pro Jahr zusammenkommen. Der Fonds wird noch rechtlich geprüft, das Sammeln soll 2027 beginnen.</p>
+    <h3><a href="https://www.srf.ch/news/international/gerichtshof-fuer-menschenrechte-egmr-erlaubt-pushbacks-an-eu-grenzen-unter-bedingungen">EGMR: Pushbacks an EU-Grenzen unter Bedingungen zulässig</a></h3>
+    <div class="meta">SRF News – International · Nov 24, 2026</div>
+    <div class="why">outside / world – Migration &amp; Recht</div>
+    <p class="summary">Der Europäische Gerichtshof für Menschenrechte hat in Fällen von der belarussischen Grenze 2021/22 entschieden, dass Staaten Migranten zurückweisen dürfen, wenn diese von einem anderen Land gezielt instrumentalisiert werden und nicht besonders schutzbedürftig sind. Polen, Lettland und Litauen wurden wegen der Behandlung der Betroffenen trotzdem in einzelnen Punkten verurteilt. Das Urteil dürfte die künftige Arbeit von Frontex prägen.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/ukraine/drohnenangriffe-vor-libyen-das-ist-ueber-den-angriff-auf-das-russische-kriegsschiff-bekannt">
+  <article class="card" data-link="https://www.srf.ch/news/international/74-hiebe-iranische-popsaengerin-wegen-livestream-ausgepeitscht">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/ukraine/drohnenangriffe-vor-libyen-das-ist-ueber-den-angriff-auf-das-russische-kriegsschiff-bekannt">Russische Korvette «Merkury» in Bengasi versenkt, Kiew bekennt sich</a></h3>
-    <div class="meta">SRF News – International · Nov 23, 2026</div>
-    <div class="why">outside / world – Ukraine-Krieg</div>
-    <p class="summary">Am Wochenende ist das russische Kriegsschiff «Merkury» im ostlibyschen Hafen Bengasi nach einem Angriff mit Drohnenbooten gesunken. Selenski schreibt die Aktion dem Geheimdienst SBU zu, offen bleibt, welche Frachter zusätzlich getroffen wurden. SRF-Korrespondent David Nauer spricht von einem symbolischen Nadelstich, der militärisch wenig ändere, und die UNO verlangt eine Untersuchung.</p>
+    <h3><a href="https://www.srf.ch/news/international/74-hiebe-iranische-popsaengerin-wegen-livestream-ausgepeitscht">Iranische Popsängerin wegen Livestream-Konzert ausgepeitscht</a></h3>
+    <div class="meta">SRF News – International · Nov 24, 2026</div>
+    <div class="why">outside / world – Iran</div>
+    <p class="summary">Eine bekannte iranische Sängerin hat 74 Peitschenhiebe erhalten, weil sie in einem live übertragenen Konzert gemeinsam mit männlichen Musikern aufgetreten war. SRF ordnet den Fall in eine breitere Welle der Repression gegen die Bevölkerung ein, die das Regime derzeit verschärft.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-ajetis-sperre-auf-zwei-spiele-reduziert">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/5-runde-der-champions-league-bvb-bietet-arsenal-die-stirn-und-nimmt-einen-punkt-mit">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-ajetis-sperre-auf-zwei-spiele-reduziert">Ajetis Sperre auf zwei Spiele reduziert</a></h3>
-    <div class="meta">SRF Sport – Super League · Nov 23, 2026</div>
-    <div class="why">outside / sport – Super League</div>
-    <p class="summary">Die Swiss Football League hat den Rekurs von Leader Lugano teilweise gutgeheissen und die Sperre gegen Stürmer Albian Ajeti von drei auf zwei Spiele gekürzt. Er hatte beim 0:5 in St. Gallen am 8. November, Luganos einziger Liganiederlage, Rot gesehen. Ajeti ist im Cup-Achtelfinal gegen St. Gallen am 2. Dezember wieder spielberechtigt.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/5-runde-der-champions-league-bvb-bietet-arsenal-die-stirn-und-nimmt-einen-punkt-mit">Champions League: Dortmund holt 1:1 bei Arsenal</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 24, 2026</div>
+    <div class="why">outside / sport – Bundesliga &amp; Premier League</div>
+    <p class="summary">In der 5. Runde der Ligaphase hat Borussia Dortmund beim Premier-League-Klub Arsenal ein 1:1 erkämpft. Am gleichen Abend drehte Real Madrid die Partie gegen PSV zu einem 5:1, RB Leipzig schlug Lens 3:1 und Manchester City kam gegen Napoli nicht über ein 2:2 hinaus.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://martech.org/whats-missing-from-your-2027-marketing-ai-budget/">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/unlabeled-agent-edits-are-quietly-skewing-your-marketing-attribution-data/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/whats-missing-from-your-2027-marketing-ai-budget/">What&#x27;s missing from your 2027 marketing AI budget?</a></h3>
-    <div class="meta">MarTech.org · Nov 23, 2026</div>
-    <div class="why">core / martech – AI budgeting</div>
-    <p class="summary">Melissa Reeve argues that marketing teams over-fund AI tools and under-fund the people, process redesign and training needed to get value from them. Citing Gartner&#x27;s estimate that CMOs now spend about 15.3% of their budget on AI initiatives, she makes the case for setting aside budget lines for change management and workflow work in 2027 planning.</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/unlabeled-agent-edits-are-quietly-skewing-your-marketing-attribution-data/">Unlabeled AI-agent edits are quietly skewing your attribution data</a></h3>
+    <div class="meta">CMSWire · Nov 24, 2026</div>
+    <div class="why">core / analytics – attribution &amp; AI agents</div>
+    <p class="summary">Pierre DeBois warns that when AI agents change pages, offers or content in a DXP without leaving a clear trace, analysts end up attributing performance shifts to the wrong causes. He argues for labelling and logging agent changes like any other release, so the analytics layer can separate agent effects from campaign effects, which matters for anyone running CJA or Adobe Analytics on top of an agent-driven stack.</p>
   </article>
-  <article class="card" data-link="https://martech.org/how-to-vet-ai-capabilities-during-martech-rfps/">
+  <article class="card" data-link="https://www.cmswire.com/customer-experience/why-united-airlines-drew-a-line-on-agents-at-the-checkout/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/how-to-vet-ai-capabilities-during-martech-rfps/">How to vet AI capabilities during martech RFPs</a></h3>
-    <div class="meta">MarTech.org · Nov 23, 2026</div>
-    <div class="why">core / martech – vendor selection</div>
-    <p class="summary">A practical checklist for telling real AI features from rebranded rules-based automation when evaluating martech vendors. It suggests six questions for RFPs, covering what models sit underneath, how outputs are governed, and what data the feature actually needs, so buyers can push past &#x27;AI-powered&#x27; claims.</p>
+    <h3><a href="https://www.cmswire.com/customer-experience/why-united-airlines-drew-a-line-on-agents-at-the-checkout/">Why United Airlines drew a line on agents at the checkout</a></h3>
+    <div class="meta">CMSWire · Nov 24, 2026</div>
+    <div class="why">core / cx – agentic commerce</div>
+    <p class="summary">United has updated its contract of carriage to forbid booking, changing or servicing tickets through third-party AI agents. Scott Clark looks at the airline's reasoning, which includes regulatory duties such as passengers personally confirming what is in their bags, and what it signals for brands deciding how far to let outside agents into their transaction flows.</p>
   </article>
-  <article class="card" data-link="https://martech.org/how-ai-is-re-shaping-mid-market-marketing/">
+  <article class="card" data-link="https://www.cmswire.com/customer-experience/the-end-of-plausible-deniability-when-customer-intelligence-demands-accountability/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/how-ai-is-re-shaping-mid-market-marketing/">How AI is re-shaping mid-market marketing</a></h3>
-    <div class="meta">MarTech.org · Nov 23, 2026</div>
-    <div class="why">core / martech – AI adoption</div>
-    <p class="summary">In this Conversations with MarTech episode, Marketri founder Debra Andrews talks about how mid-market marketing teams are actually adopting generative AI. The focus is on where smaller teams with limited budgets see gains and where adoption stalls, a useful counterpoint to enterprise-focused AI coverage.</p>
+    <h3><a href="https://www.cmswire.com/customer-experience/the-end-of-plausible-deniability-when-customer-intelligence-demands-accountability/">When customer intelligence demands accountability</a></h3>
+    <div class="meta">CMSWire · Nov 24, 2026</div>
+    <div class="why">core / cx – voice of customer</div>
+    <p class="summary">Lauren Turner argues that collecting customer feedback is no longer enough: companies now have so much customer data that not acting on it becomes a visible choice. She proposes the CustomerCentrx Responsiveness Index as a way to measure how reliably organisations turn feedback into concrete changes.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/contact-center/sierra-hits-30b-valuation-on-175b-series-f/">
+  <article class="card" data-link="https://martech.org/what-you-need-to-know-about-chatgpt-ads-vs-google-ads/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/contact-center/sierra-hits-30b-valuation-on-175b-series-f/">Sierra raises $1.75B at a $30B valuation</a></h3>
-    <div class="meta">CMSWire · Nov 23, 2026</div>
-    <div class="why">core / cx – AI agents &amp; funding</div>
-    <p class="summary">AI customer-service agent company Sierra closed a $1.75 billion Series F led by Greenoaks and Lightspeed, doubling the $15 billion valuation from its May round. The company reports more than $400 million in ARR after about two and a half years and plans to expand in Europe and Asia and push its agents beyond support into sales and lifetime-value use cases.</p>
+    <h3><a href="https://martech.org/what-you-need-to-know-about-chatgpt-ads-vs-google-ads/">ChatGPT ads vs. Google Ads: what B2B tests show so far</a></h3>
+    <div class="meta">MarTech.org · Nov 24, 2026</div>
+    <div class="why">core / martech – paid media</div>
+    <p class="summary">Tyler Jordan compares early B2B campaigns on ChatGPT's new ad product with Google Ads. Cost per click came out roughly on par, but engagement and conversions were weaker, and advertisers get far less control over targeting and optimisation, so for now it looks like an experiment budget, not a replacement for search.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/digital-marketing/context-engineering-is-the-bill-coming-due-for-your-martech-stack/">
+  <article class="card" data-link="https://martech.org/3-ways-neglecting-your-brand-undermines-sales/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-marketing/context-engineering-is-the-bill-coming-due-for-your-martech-stack/">Context engineering is the bill coming due for your martech stack</a></h3>
-    <div class="meta">CMSWire · Nov 23, 2026</div>
-    <div class="why">core / martech – data &amp; AI agents</div>
-    <p class="summary">Brian Riback argues that once AI agents start acting on a martech stack, long-tolerated gaps such as fragmented data, missing definitions and undocumented business rules turn into real costs. Giving agents reliable context means paying down that debt first, which is very relevant for anyone building on a CDP or AEP.</p>
+    <h3><a href="https://martech.org/3-ways-neglecting-your-brand-undermines-sales/">3 ways neglecting your brand undermines sales</a></h3>
+    <div class="meta">MarTech.org · Nov 24, 2026</div>
+    <div class="why">core / martech – brand vs. performance</div>
+    <p class="summary">Reid Holmes makes the case that cutting brand investment in favour of short-term performance spend creates a cost that shows up later, usually when sales are needed most. He uses the example of a Dubai handmade-soap maker that depended on tourist traffic and lost most of its revenue when that dried up, and outlines three ways weak brand equity erodes pipeline.</p>
   </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/">A legendary philosopher isn&#x27;t buying Anthropic&#x27;s AI consciousness argument</a></h3>
-    <div class="meta">MIT Technology Review · Nov 23, 2026</div>
-    <div class="why">core / ai – ethics &amp; philosophy</div>
-    <p class="summary">James O&#x27;Donnell reports on Thomas Nagel, author of &#x27;What Is It Like to Be a Bat?&#x27;, pushing back hard on the idea, taken seriously by Anthropic and others, that AI models might have experiences worth protecting. Nagel calls the AI-welfare camp &#x27;completely idiotic&#x27;, which sharpens a debate that is starting to shape how AI labs talk about their models.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/">Spreading crushed rock for carbon removal could hurt crop yields</a></h3>
-    <div class="meta">MIT Technology Review · Nov 23, 2026</div>
-    <div class="why">core / tech – climate tech</div>
-    <p class="summary">New CarbonPlan preprints suggest that enhanced rock weathering, which means spreading crushed rock on farmland to lock up CO2, could reduce crop growth at the high application rates needed for large removals. One analysis puts the practical ceiling near 600 million tonnes of CO2 a year, far below some model estimates. The findings have not yet been peer-reviewed.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/">Data centers are getting their own natural gas power plants</a></h3>
+    <div class="meta">MIT Technology Review · Nov 24, 2026</div>
+    <div class="why">core / ai – infrastructure &amp; energy</div>
+    <p class="summary">Because grid connections can take years, AI data-center developers are increasingly building gas plants directly on site. Cleanview data counts more than 100 such behind-the-meter projects announced in the US as of October, and the piece estimates they would emit substantially more CO2 than drawing the same power from the grid.</p>
   </article>
   <footer>
-    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. There's no Adobe item today (nothing new since MAX), and there are no Bundesliga or Premier League items (Kicker had nothing indexed and the BBC is unreachable). The Swiss federal votes are on Nov 29 and the Federal Council election is on Dec 9.
+    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. There's no Adobe item today (nothing new since MAX), and Kicker and the BBC had nothing reachable with a confirmed date. The Swiss federal votes are on Nov 29 and the Federal Council election is on Dec 9.
   </footer>
 </div>
 <script>

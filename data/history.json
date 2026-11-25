@@ -1,76 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-17",
-      "link": "https://www.srf.ch/news/schweiz/eu-vertragspaket-nationalratskommission-will-staendemehr-fuer-eu-vertragspaket",
-      "title": "EU-Vertragspaket: Nationalratskommission will das Ständemehr"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://www.srf.ch/news/international/autonome-waffensysteme-128-staaten-ringen-in-genf-um-regeln-fuer-killerroboter",
-      "title": "Genf: 128 Staaten ringen um Regeln für Killerroboter"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://www.srf.ch/news/international/migration-nach-europa-neue-zentren-fuer-asylsuchende-aus-europa-in-ostafrika",
-      "title": "Fünf EU-Länder planen Rückkehrzentren in Ruanda"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://www.srf.ch/sport/fussball/nationalmannschaft/4-0-gegen-schottland-zwei-jubilare-und-zwei-debuet-tore-erfolgreiche-nati-feiert-sieg",
-      "title": "Nati schlägt Schottland 4:0 – zwei Jubilare, zwei Debüt-Tore"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/latest",
-      "title": "Customer Journey Analytics: read-only MCP access and Coworker in Workspace"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://martech.org/bloomreach-goes-back-to-its-roots-with-athenahq-acquisition/",
-      "title": "Bloomreach buys AI-visibility startup AthenaHQ"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://martech.org/marketing-ops-can-turn-ai-agent-readiness-from-a-blind-spot-to-a-strength/",
-      "title": "Marketing ops and the AI-agent readiness gap"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://martech.org/ai-agents-make-cx-marketings-problem/",
-      "title": "AI buying agents make CX a marketing problem"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://www.cmswire.com/digital-marketing/your-customers-reply-off-schedule-your-marketing-automation-should-keep-up/",
-      "title": "Your customers reply off-schedule – automation should keep up"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://www.cmswire.com/digital-marketing/threads-shows-why-trending-measures-acceleration-not-customer-adoption/",
-      "title": "Threads shows why \"trending\" measures acceleration, not adoption"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://www.cmswire.com/customer-experience/your-service-partner-says-its-rebuilding-its-earnings-tell-the-truth/",
-      "title": "Your service partner says it's rebuilding – its earnings tell the truth"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://www.technologyreview.com/2026/11/16/1148599/the-download-testing-tech-promises-cognitive-immortality-quest/",
-      "title": "The Download: testing tech promises, plus a global AI-oversight push"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://www.technologyreview.com/2026/11/16/1148624/the-open-source-movement-wants-jensen-huang-back/",
-      "title": "The open-source movement wants Jensen Huang back"
-    },
-    {
-      "date": "2026-11-17",
-      "link": "https://www.technologyreview.com/2026/11/16/1148565/building-trustworthy-ai-by-fencing-it-in-not-predicting-it/",
-      "title": "Building trustworthy AI by fencing it in, not predicting it"
-    },
-    {
       "date": "2026-11-18",
       "link": "https://www.srf.ch/news/wirtschaft/datenleck-bei-deutsche-bank-die-schweiz-als-drehscheibe-fuer-heikle-geschaefte-mit-oligarchen",
       "title": "Datenleck bei der Deutschen Bank: die Schweiz als Drehscheibe"
@@ -389,6 +319,56 @@
       "date": "2026-11-24",
       "link": "https://www.technologyreview.com/2026/11/23/1149392/why-using-rocks-for-carbon-removal-could-eventually-reduce-crop-growth/",
       "title": "Spreading crushed rock for carbon removal could hurt crop yields"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://www.srf.ch/news/schweiz/haeufiger-und-teurer-einbrueche-in-der-schweiz-nehmen-weiter-zu",
+      "title": "Einbrüche in der Schweiz werden häufiger und teurer"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://www.srf.ch/news/international/gerichtshof-fuer-menschenrechte-egmr-erlaubt-pushbacks-an-eu-grenzen-unter-bedingungen",
+      "title": "EGMR: Pushbacks an EU-Grenzen unter Bedingungen zulässig"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://www.srf.ch/news/international/74-hiebe-iranische-popsaengerin-wegen-livestream-ausgepeitscht",
+      "title": "Iranische Popsängerin wegen Livestream-Konzert ausgepeitscht"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://www.srf.ch/sport/fussball/champions-league/5-runde-der-champions-league-bvb-bietet-arsenal-die-stirn-und-nimmt-einen-punkt-mit",
+      "title": "Champions League: Dortmund holt 1:1 bei Arsenal"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://www.cmswire.com/digital-experience/unlabeled-agent-edits-are-quietly-skewing-your-marketing-attribution-data/",
+      "title": "Unlabeled AI-agent edits are quietly skewing your attribution data"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://www.cmswire.com/customer-experience/why-united-airlines-drew-a-line-on-agents-at-the-checkout/",
+      "title": "Why United Airlines drew a line on agents at the checkout"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://www.cmswire.com/customer-experience/the-end-of-plausible-deniability-when-customer-intelligence-demands-accountability/",
+      "title": "When customer intelligence demands accountability"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://martech.org/what-you-need-to-know-about-chatgpt-ads-vs-google-ads/",
+      "title": "ChatGPT ads vs. Google Ads: what B2B tests show so far"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://martech.org/3-ways-neglecting-your-brand-undermines-sales/",
+      "title": "3 ways neglecting your brand undermines sales"
+    },
+    {
+      "date": "2026-11-25",
+      "link": "https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/",
+      "title": "Data centers are getting their own natural gas power plants"
     }
   ]
 }
