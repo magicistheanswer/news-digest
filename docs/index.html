@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-25</title>
+<title>Morning News Digest — 2026-11-26</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,92 +95,99 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-25, Wednesday):
-  - Direct RSS/Atom fetching still blocked (proxy rejects every feed host with 403; WebFetch can't resolve them either). Fallback: WebSearch limited to each source's domain; every item below has a confirmed Nov 24 publish date.
-  - Used (6 core / 4 outside): CMSWire x3, MarTech.org x2, MIT Technology Review x1; SRF Schweiz (Einbrüche), SRF International x2 (EGMR pushbacks, Iran), SRF Sport (Champions League, Arsenal vs BVB).
-  - Skipped: Adobe blog/newsroom: newest Experience Cloud news is from MAX / Nov 4-10, too old. MeasureCamp: only event pages, no new post. Kicker: no article with a confirmed date this week in the index. BBC News / BBC Sport: the search tool can't reach those domains (400). MarTech mid-market AI piece: already shown Nov 24. MIT TR 'The Download' (Nov 24): repeats the data-center item and the already-shown Nagel story; MIT TR enterprise-networks piece: sponsored content. CMSWire Optimove item: sponsored press release. SRF Super League: no new item since matchday 14 (already covered). SRF Luzern water shortage: publish date couldn't be confirmed.
-  - The mix is 10 articles instead of 15 (freshness beats quota per CLAUDE.md). Layout: Outside above Core; Mark read via localStorage kept.
+  Run notes (2026-11-26, Thursday):
+  - Direct RSS/Atom fetching still blocked (proxy returns 403 for martech.org, technologyreview.com, srf.ch, feeds.bbci.co.uk). Fallback: WebSearch limited to each source's domain; every item below has a confirmed Nov 25 publish date.
+  - Used (7 core / 4 outside): CMSWire x3, MarTech.org x2, MIT Technology Review x2; SRF Schweiz/International (US tariffs), SRF International (North Korea), SRF Sport x2 (Champions League round-up, Bayern in Lille).
+  - Skipped: Adobe blog/newsroom: newest Experience Cloud items are Oct 14 / Nov 5, too old. MeasureCamp: only event pages, no new post. Kicker: no dated Bundesliga article found in the index (Bundesliga is covered through SRF's Bayern piece instead). BBC News / BBC Sport: not reachable via the search tool. MarTech AI-news roundup: rolling evergreen URL with unclear dating. MarTech IAB attribution blueprint and AI-agents measurement piece: ~Nov 13, too old for a daily source. MIT TR 'data centers driving a gas boom' (Nov 25): same story as yesterday's data-center gas item. MIT TR enterprise-networks piece: sponsored. SRF Venezuela military deal: follow-up to the Nov 19 Hegseth story. SRF Super League: nothing new since Ajeti ruling (already shown). SRF groundwater story: no article URL found.
+  - The mix is 11 articles instead of 15 (freshness beats quota per CLAUDE.md). Layout: Outside above Core; Mark read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Wednesday, November 25, 2026 · 10 articles</div>
+    <div class="date">Thursday, November 26, 2026 · 11 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/haeufiger-und-teurer-einbrueche-in-der-schweiz-nehmen-weiter-zu">
+  <article class="card" data-link="https://www.srf.ch/news/international/erhoehung-bis-zu-15-prozent-was-die-neu-angekuendigten-us-zoelle-fuer-die-schweiz-bedeuten">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/haeufiger-und-teurer-einbrueche-in-der-schweiz-nehmen-weiter-zu">Einbrüche in der Schweiz werden häufiger und teurer</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 24, 2026</div>
-    <div class="why">outside / schweiz – Sicherheit</div>
-    <p class="summary">Laut Schadenzahlen der Versicherungsgruppe Helvetia Baloise ist die Zahl der Einbruchdiebstähle über fünf Jahre um rund 60 Prozent gestiegen, von 27 auf 42 Fälle pro 10'000 Policen. Besonders betroffen sind Einfamilienhäuser, und die meisten Einbrüche passieren in den dunklen Monaten November und Dezember. Regional steht Genf an der Spitze.</p>
+    <h3><a href="https://www.srf.ch/news/international/erhoehung-bis-zu-15-prozent-was-die-neu-angekuendigten-us-zoelle-fuer-die-schweiz-bedeuten">USA schlagen neue Zölle von bis zu 15 Prozent gegen die Schweiz vor</a></h3>
+    <div class="meta">SRF News – Schweiz/International · Nov 25, 2026</div>
+    <div class="why">outside / schweiz – Handel &amp; Wirtschaft</div>
+    <p class="summary">Der US-Handelsbeauftragte will gegen die Schweiz, die EU und zwölf weitere Handelspartner neue Zölle verhängen, für die Schweiz bis zu 15 Prozent inklusive bestehender Abgaben, begründet mit angeblich unfairen Handelspraktiken. SRF ordnet ein: Der Satz entspricht dem Rahmen der Absichtserklärung und den Bedingungen der EU und ist weit weniger hart als die 39 Prozent von 2025. Wegen einer Anhörungsfrist dürfte das Inkrafttreten erst im Januar kommen; Seco und Swissmem weisen die Vorwürfe zurück.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/gerichtshof-fuer-menschenrechte-egmr-erlaubt-pushbacks-an-eu-grenzen-unter-bedingungen">
+  <article class="card" data-link="https://www.srf.ch/news/international/schweizer-buero-in-nordkorea-nordkorea-weist-schweizer-diplomaten-aus-und-schliesst-vertretung">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/gerichtshof-fuer-menschenrechte-egmr-erlaubt-pushbacks-an-eu-grenzen-unter-bedingungen">EGMR: Pushbacks an EU-Grenzen unter Bedingungen zulässig</a></h3>
-    <div class="meta">SRF News – International · Nov 24, 2026</div>
-    <div class="why">outside / world – Migration &amp; Recht</div>
-    <p class="summary">Der Europäische Gerichtshof für Menschenrechte hat in Fällen von der belarussischen Grenze 2021/22 entschieden, dass Staaten Migranten zurückweisen dürfen, wenn diese von einem anderen Land gezielt instrumentalisiert werden und nicht besonders schutzbedürftig sind. Polen, Lettland und Litauen wurden wegen der Behandlung der Betroffenen trotzdem in einzelnen Punkten verurteilt. Das Urteil dürfte die künftige Arbeit von Frontex prägen.</p>
+    <h3><a href="https://www.srf.ch/news/international/schweizer-buero-in-nordkorea-nordkorea-weist-schweizer-diplomaten-aus-und-schliesst-vertretung">Nordkorea weist Schweizer Diplomaten aus und schliesst das Büro in Pjöngjang</a></h3>
+    <div class="meta">SRF News – International · Nov 25, 2026</div>
+    <div class="why">outside / world – Diplomatie</div>
+    <p class="summary">Nur rund einen Monat nach der Wiedereröffnung hat Nordkorea den Leiter des Schweizer Büros in Pjöngjang ausgewiesen und die Vertretung geschlossen. Auslöser sind Schweizer Sanktionen gegen ein nordkoreanisches Kinderlager, dem die EU eine Beteiligung an der Deportation ukrainischer Kinder vorwirft. Das EDA bedauert den Schritt, hält aber an der Sanktionspolitik fest und sieht die diplomatischen Beziehungen nicht grundsätzlich in Frage gestellt.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/74-hiebe-iranische-popsaengerin-wegen-livestream-ausgepeitscht">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-sommer-fehler-leitet-bruegge-niederlage-ein-psg-gibt-punkte-ab">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/74-hiebe-iranische-popsaengerin-wegen-livestream-ausgepeitscht">Iranische Popsängerin wegen Livestream-Konzert ausgepeitscht</a></h3>
-    <div class="meta">SRF News – International · Nov 24, 2026</div>
-    <div class="why">outside / world – Iran</div>
-    <p class="summary">Eine bekannte iranische Sängerin hat 74 Peitschenhiebe erhalten, weil sie in einem live übertragenen Konzert gemeinsam mit männlichen Musikern aufgetreten war. SRF ordnet den Fall in eine breitere Welle der Repression gegen die Bevölkerung ein, die das Regime derzeit verschärft.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-sommer-fehler-leitet-bruegge-niederlage-ein-psg-gibt-punkte-ab">Champions League: Sommer-Fehler bei Brügges 0:3, Inter schlägt Stuttgart</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 25, 2026</div>
+    <div class="why">outside / sport – Champions League &amp; Premier League</div>
+    <p class="summary">Am Mittwoch der 5. Runde leitete ein Fehler von Goalie Yann Sommer die 0:3-Niederlage von Brügge gegen Liverpool ein. Inter Mailand gewann verdient 2:0 gegen den VfB Stuttgart, PSG und die AS Roma trennten sich 2:2, Barcelona schlug Neuling Sabah 4:1.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/5-runde-der-champions-league-bvb-bietet-arsenal-die-stirn-und-nimmt-einen-punkt-mit">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/5-runde-der-champions-league-horror-eigentor-von-pavlovic-bayern-verliert-in-lille">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/5-runde-der-champions-league-bvb-bietet-arsenal-die-stirn-und-nimmt-einen-punkt-mit">Champions League: Dortmund holt 1:1 bei Arsenal</a></h3>
-    <div class="meta">SRF Sport – Fussball · Nov 24, 2026</div>
-    <div class="why">outside / sport – Bundesliga &amp; Premier League</div>
-    <p class="summary">In der 5. Runde der Ligaphase hat Borussia Dortmund beim Premier-League-Klub Arsenal ein 1:1 erkämpft. Am gleichen Abend drehte Real Madrid die Partie gegen PSV zu einem 5:1, RB Leipzig schlug Lens 3:1 und Manchester City kam gegen Napoli nicht über ein 2:2 hinaus.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/5-runde-der-champions-league-horror-eigentor-von-pavlovic-bayern-verliert-in-lille">Bayern verliert nach Pavlovic-Eigentor in Lille</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 25, 2026</div>
+    <div class="why">outside / sport – Bundesliga</div>
+    <p class="summary">Bayern München hat in der Champions League beim OSC Lille 1:2 verloren, entscheidend war ein missglücktes Eigentor von Aleksandar Pavlovic. Für die Münchner ist es ein Rückschlag in der Ligaphase, bevor am Samstag die Bundesliga mit dem 11. Spieltag weitergeht.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/unlabeled-agent-edits-are-quietly-skewing-your-marketing-attribution-data/">
+  <article class="card" data-link="https://www.cmswire.com/digital-experience/acquia-says-attackers-may-have-copied-configuration-data-customer-credentials/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/unlabeled-agent-edits-are-quietly-skewing-your-marketing-attribution-data/">Unlabeled AI-agent edits are quietly skewing your attribution data</a></h3>
-    <div class="meta">CMSWire · Nov 24, 2026</div>
-    <div class="why">core / analytics – attribution &amp; AI agents</div>
-    <p class="summary">Pierre DeBois warns that when AI agents change pages, offers or content in a DXP without leaving a clear trace, analysts end up attributing performance shifts to the wrong causes. He argues for labelling and logging agent changes like any other release, so the analytics layer can separate agent effects from campaign effects, which matters for anyone running CJA or Adobe Analytics on top of an agent-driven stack.</p>
+    <h3><a href="https://www.cmswire.com/digital-experience/acquia-says-attackers-may-have-copied-configuration-data-customer-credentials/">Acquia: attackers may have copied configuration data and customer credentials</a></h3>
+    <div class="meta">CMSWire · Nov 25, 2026</div>
+    <div class="why">core / dxp – security</div>
+    <p class="summary">Acquia's security incident was still unresolved on Nov. 25, and the company now says attackers may have copied configuration data, including customer credentials, from customer environments. Dom Nicastro notes it comes only ten days after the Optimizely Web Experimentation incident, so it is the second DXP-adjacent breach in a month, which is a good prompt to rotate any credentials stored in connected martech tools.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/customer-experience/why-united-airlines-drew-a-line-on-agents-at-the-checkout/">
+  <article class="card" data-link="https://www.cmswire.com/web-cms/replatforming-a-cms-in-the-age-of-ai-what-has-actually-changed/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/customer-experience/why-united-airlines-drew-a-line-on-agents-at-the-checkout/">Why United Airlines drew a line on agents at the checkout</a></h3>
-    <div class="meta">CMSWire · Nov 24, 2026</div>
-    <div class="why">core / cx – agentic commerce</div>
-    <p class="summary">United has updated its contract of carriage to forbid booking, changing or servicing tickets through third-party AI agents. Scott Clark looks at the airline's reasoning, which includes regulatory duties such as passengers personally confirming what is in their bags, and what it signals for brands deciding how far to let outside agents into their transaction flows.</p>
+    <h3><a href="https://www.cmswire.com/web-cms/replatforming-a-cms-in-the-age-of-ai-what-has-actually-changed/">The CMS migration decisions engineers and editors still have to own</a></h3>
+    <div class="meta">CMSWire · Nov 25, 2026</div>
+    <div class="why">core / dxp – CMS replatforming</div>
+    <p class="summary">Scott Clark looks at what AI has really changed in CMS migrations: it now writes first drafts of migration code, tests and scripts, as in a Webflow move of about 200 pages and 1,200 content items. Content modelling, governance and fit with the AI infrastructure a company has already vetted still need human decisions, a point Real Story Group's Tony Byrne makes.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/customer-experience/the-end-of-plausible-deniability-when-customer-intelligence-demands-accountability/">
+  <article class="card" data-link="https://www.cmswire.com/customer-experience/what-kevin-durants-austin-sports-club-teaches-brands-about-cx/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/customer-experience/the-end-of-plausible-deniability-when-customer-intelligence-demands-accountability/">When customer intelligence demands accountability</a></h3>
-    <div class="meta">CMSWire · Nov 24, 2026</div>
-    <div class="why">core / cx – voice of customer</div>
-    <p class="summary">Lauren Turner argues that collecting customer feedback is no longer enough: companies now have so much customer data that not acting on it becomes a visible choice. She proposes the CustomerCentrx Responsiveness Index as a way to measure how reliably organisations turn feedback into concrete changes.</p>
+    <h3><a href="https://www.cmswire.com/customer-experience/what-kevin-durants-austin-sports-club-teaches-brands-about-cx/">Austin Sports Club shows brands how to fix what customers tolerate</a></h3>
+    <div class="meta">CMSWire · Nov 25, 2026</div>
+    <div class="why">core / cx – experience design</div>
+    <p class="summary">Justin Racine uses Kevin Durant's Austin sports-bar venue as a case study in removing small frictions that guests have learned to accept, such as bad sightlines and slow service. His argument for brands is to audit what customers merely tolerate, not just what they complain about.</p>
   </article>
-  <article class="card" data-link="https://martech.org/what-you-need-to-know-about-chatgpt-ads-vs-google-ads/">
+  <article class="card" data-link="https://martech.org/the-more-ai-can-do-the-more-marketers-need-to-know/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/what-you-need-to-know-about-chatgpt-ads-vs-google-ads/">ChatGPT ads vs. Google Ads: what B2B tests show so far</a></h3>
-    <div class="meta">MarTech.org · Nov 24, 2026</div>
-    <div class="why">core / martech – paid media</div>
-    <p class="summary">Tyler Jordan compares early B2B campaigns on ChatGPT's new ad product with Google Ads. Cost per click came out roughly on par, but engagement and conversions were weaker, and advertisers get far less control over targeting and optimisation, so for now it looks like an experiment budget, not a replacement for search.</p>
+    <h3><a href="https://martech.org/the-more-ai-can-do-the-more-marketers-need-to-know/">The more AI can do, the more marketers need to know</a></h3>
+    <div class="meta">MarTech.org · Nov 25, 2026</div>
+    <div class="why">core / martech – skills &amp; governance</div>
+    <p class="summary">Ryan Phelan argues that faster AI execution brings risks of its own: when campaigns can be assembled in minutes, mistakes also ship in minutes. He says marketers need more strategic thinking, explicit AI guardrails and enough technical understanding to judge what the tools produce, not less.</p>
   </article>
-  <article class="card" data-link="https://martech.org/3-ways-neglecting-your-brand-undermines-sales/">
+  <article class="card" data-link="https://martech.org/how-to-create-expert-content-your-competitors-cant-copy/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/3-ways-neglecting-your-brand-undermines-sales/">3 ways neglecting your brand undermines sales</a></h3>
-    <div class="meta">MarTech.org · Nov 24, 2026</div>
-    <div class="why">core / martech – brand vs. performance</div>
-    <p class="summary">Reid Holmes makes the case that cutting brand investment in favour of short-term performance spend creates a cost that shows up later, usually when sales are needed most. He uses the example of a Dubai handmade-soap maker that depended on tourist traffic and lost most of its revenue when that dried up, and outlines three ways weak brand equity erodes pipeline.</p>
+    <h3><a href="https://martech.org/how-to-create-expert-content-your-competitors-cant-copy/">How to create expert content your competitors can't copy</a></h3>
+    <div class="meta">MarTech.org · Nov 25, 2026</div>
+    <div class="why">core / martech – content strategy</div>
+    <p class="summary">A. Lee Judge of Content Monsta recommends recorded video interviews with in-house experts as a source of content that generative AI can't easily replicate. He cites a Seismic/NewtonX survey of 200 senior revenue leaders in which three in four said they trust human guidance over AI-generated material when the two conflict.</p>
   </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/24/1149622/data-centers-natural-gas/">Data centers are getting their own natural gas power plants</a></h3>
-    <div class="meta">MIT Technology Review · Nov 24, 2026</div>
-    <div class="why">core / ai – infrastructure &amp; energy</div>
-    <p class="summary">Because grid connections can take years, AI data-center developers are increasingly building gas plants directly on site. Cleanview data counts more than 100 such behind-the-meter projects announced in the US as of October, and the piece estimates they would emit substantially more CO2 than drawing the same power from the grid.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/">AI is straining America's open-records systems</a></h3>
+    <div class="meta">MIT Technology Review · Nov 25, 2026</div>
+    <div class="why">core / ai – society &amp; data</div>
+    <p class="summary">Chatbots make it trivial to file freedom-of-information requests, and startups are mining public records at scale to resell the data. One analysis of the US Department of Education's July request log found that at least 29% of requests were at least partly AI-written. Some states are responding with laws that make it easier to refuse requests, which may reduce transparency for everyone.</p>
+  </article>
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/">The Download: AI tool used to breach US spy agencies, and fighting permafrost fires</a></h3>
+    <div class="meta">MIT Technology Review · Nov 25, 2026</div>
+    <div class="why">core / ai – security</div>
+    <p class="summary">The newsletter leads with reports that hackers repurposed an AI tool originally built for cyber defense to break into US intelligence agencies, a concrete example of dual-use risk in AI security tooling. It also covers efforts to fight Arctic wildfires to keep carbon locked in permafrost.</p>
   </article>
   <footer>
-    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. There's no Adobe item today (nothing new since MAX), and Kicker and the BBC had nothing reachable with a confirmed date. The Swiss federal votes are on Nov 29 and the Federal Council election is on Dec 9.
+    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. There's no Adobe item today (nothing new since early November), and Kicker and the BBC had nothing reachable with a confirmed date. The Swiss federal votes are on Nov 29.
   </footer>
 </div>
 <script>
