@@ -1,61 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-19",
-      "link": "https://www.srf.ch/news/schweiz/2-srg-umfrage-auf-einen-blick-dem-bund-drohen-mindestens-zwei-niederlagen",
-      "title": "2. SRG-Umfrage: Dem Bund drohen mindestens zwei Niederlagen am 29. November"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://www.srf.ch/news/international/usa/hegseth-in-caracas-die-usa-und-venezuela-wollen-militaerisch-zusammenarbeiten",
-      "title": "Hegseth in Caracas: USA und Venezuela wollen militärisch zusammenarbeiten"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://www.srf.ch/sport/fussball/super-league/news-aus-der-super-league-stocker-bleibt-bei-basel-sportlicher-leiter",
-      "title": "Super-League-News: Stocker bleibt beim FC Basel Sportlicher Leiter"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://www.cmswire.com/digital-experience/optimizely-works-through-web-experimentation-security-incident/",
-      "title": "Optimizely signup flaw let an attacker inject code into customer projects"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://martech.org/enterprise-ai-governance-alone-cant-protect-your-brand/",
-      "title": "Enterprise AI governance alone can't protect your brand"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://martech.org/even-the-smartest-ai-needs-your-business-knowledge/",
-      "title": "Even the smartest AI needs your business knowledge"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://martech.org/doing-more-work-wont-make-you-a-more-valuable-marketer/",
-      "title": "Doing more work won't make you a more valuable marketer"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://www.cmswire.com/the-wire/thoughtspot-introduces-customer-hosted-deployment/",
-      "title": "ThoughtSpot launches a fully customer-hosted deployment option"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://www.cmswire.com/the-wire/nice-unites-ai-and-human-agents-with-microsoft-on-one-connected-customer-service-stack/",
-      "title": "NiCE ties Cognigy AI agents into Teams, Azure and Dynamics 365"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://www.cmswire.com/the-wire/invoca-messaging-agents-turn-rcs-into-an-ai-powered-revenue-channel/",
-      "title": "Invoca extends its AI Messaging Agents to RCS"
-    },
-    {
-      "date": "2026-11-19",
-      "link": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
-      "title": "This smell startup says its AI nose is as good as a human's"
-    },
-    {
       "date": "2026-11-20",
       "link": "https://www.srf.ch/news/international/urteil-des-uno-gerichtshofs-historischer-schuldspruch-gegen-myanmar-wegen-voelkermords",
       "title": "Historischer Schuldspruch: UNO-Gericht verurteilt Myanmar wegen Völkermords an den Rohingya"
@@ -369,6 +314,46 @@
       "date": "2026-11-26",
       "link": "https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/",
       "title": "The Download: AI tool used to breach US spy agencies, and fighting permafrost fires"
+    },
+    {
+      "date": "2026-11-27",
+      "link": "https://www.srf.ch/news/schweiz/nach-vierjaehriger-blockade-schweiz-fuehrt-erste-asylsuchende-nach-italien-zurueck",
+      "title": "Nach vier Jahren Blockade: Schweiz schafft erste Asylsuchende nach Italien zurück"
+    },
+    {
+      "date": "2026-11-27",
+      "link": "https://www.srf.ch/news/international/hybrider-krieg-wie-russland-europa-immer-staerker-unter-druck-setzt",
+      "title": "Hybrider Krieg: Wie Russland Europa immer stärker unter Druck setzt"
+    },
+    {
+      "date": "2026-11-27",
+      "link": "https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-lugano-muss-gegen-jablonec-erstmals-als-verlierer-vom-platz",
+      "title": "Lugano verliert in Jablonec erstmals in der Conference League"
+    },
+    {
+      "date": "2026-11-27",
+      "link": "https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-ajax-eine-nummer-zu-gross-fuer-den-fc-thun",
+      "title": "Ajax eine Nummer zu gross für den FC Thun"
+    },
+    {
+      "date": "2026-11-27",
+      "link": "https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes",
+      "title": "Adobe Target 26.11.1 puts Coworker into the Activities list"
+    },
+    {
+      "date": "2026-11-27",
+      "link": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
+      "title": "AI-powered martech releases: MCP servers everywhere"
+    },
+    {
+      "date": "2026-11-27",
+      "link": "https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/",
+      "title": "The next generation of bionic hands is here, and they can feel"
+    },
+    {
+      "date": "2026-11-27",
+      "link": "https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/",
+      "title": "The Download: FCC clears a million SpaceX data-center satellites"
     }
   ]
 }

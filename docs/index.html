@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-26</title>
+<title>Morning News Digest — 2026-11-27</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,99 +95,79 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-26, Thursday):
-  - Direct RSS/Atom fetching still blocked (proxy returns 403 for martech.org, technologyreview.com, srf.ch, feeds.bbci.co.uk). Fallback: WebSearch limited to each source's domain; every item below has a confirmed Nov 25 publish date.
-  - Used (7 core / 4 outside): CMSWire x3, MarTech.org x2, MIT Technology Review x2; SRF Schweiz/International (US tariffs), SRF International (North Korea), SRF Sport x2 (Champions League round-up, Bayern in Lille).
-  - Skipped: Adobe blog/newsroom: newest Experience Cloud items are Oct 14 / Nov 5, too old. MeasureCamp: only event pages, no new post. Kicker: no dated Bundesliga article found in the index (Bundesliga is covered through SRF's Bayern piece instead). BBC News / BBC Sport: not reachable via the search tool. MarTech AI-news roundup: rolling evergreen URL with unclear dating. MarTech IAB attribution blueprint and AI-agents measurement piece: ~Nov 13, too old for a daily source. MIT TR 'data centers driving a gas boom' (Nov 25): same story as yesterday's data-center gas item. MIT TR enterprise-networks piece: sponsored. SRF Venezuela military deal: follow-up to the Nov 19 Hegseth story. SRF Super League: nothing new since Ajeti ruling (already shown). SRF groundwater story: no article URL found.
-  - The mix is 11 articles instead of 15 (freshness beats quota per CLAUDE.md). Layout: Outside above Core; Mark read via localStorage kept.
+  Run notes (2026-11-27, Friday):
+  - Direct RSS/Atom fetching still blocked (curl gets no connection; WebFetch can't resolve martech.org, cmswire.com or srf.ch). Fallback: WebSearch limited to each source's domain. Every item below has a confirmed publish date: Nov 26, or Nov 12 for the Adobe Target release (a monthly-cadence source, within the 2-week window).
+  - Nov 26 was US Thanksgiving, so the US sources published very little.
+  - Used (4 core / 4 outside): Adobe Experience League (Target 26.11.1), MarTech.org AI-releases roundup (rolling URL, but this edition is headed Nov 26 and confirmed by two searches), MIT Technology Review x2; SRF Schweiz (Dublin returns to Italy), SRF International (Russia's hybrid war), SRF Sport x2 (Lugano and Thun in the Conference League).
+  - Skipped: CMSWire: newest items are Nov 24/25 and were already shown. MeasureCamp: no new post. Kicker: no dated Bundesliga article in the index, and there was no midweek Bundesliga round. BBC News / BBC Sport: the search tool refuses bbc.com/bbc.co.uk. SRF US-tariffs follow-up: shown yesterday. Journey Optimizer release notes: URL already shown on Nov 22.
+  - 8 articles instead of 15 (freshness beats quota per CLAUDE.md). Layout: Outside above Core; Mark read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Thursday, November 26, 2026 · 11 articles</div>
+    <div class="date">Friday, November 27, 2026 · 8 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/international/erhoehung-bis-zu-15-prozent-was-die-neu-angekuendigten-us-zoelle-fuer-die-schweiz-bedeuten">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/nach-vierjaehriger-blockade-schweiz-fuehrt-erste-asylsuchende-nach-italien-zurueck">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/erhoehung-bis-zu-15-prozent-was-die-neu-angekuendigten-us-zoelle-fuer-die-schweiz-bedeuten">USA schlagen neue Zölle von bis zu 15 Prozent gegen die Schweiz vor</a></h3>
-    <div class="meta">SRF News – Schweiz/International · Nov 25, 2026</div>
-    <div class="why">outside / schweiz – Handel &amp; Wirtschaft</div>
-    <p class="summary">Der US-Handelsbeauftragte will gegen die Schweiz, die EU und zwölf weitere Handelspartner neue Zölle verhängen, für die Schweiz bis zu 15 Prozent inklusive bestehender Abgaben, begründet mit angeblich unfairen Handelspraktiken. SRF ordnet ein: Der Satz entspricht dem Rahmen der Absichtserklärung und den Bedingungen der EU und ist weit weniger hart als die 39 Prozent von 2025. Wegen einer Anhörungsfrist dürfte das Inkrafttreten erst im Januar kommen; Seco und Swissmem weisen die Vorwürfe zurück.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/nach-vierjaehriger-blockade-schweiz-fuehrt-erste-asylsuchende-nach-italien-zurueck">Nach vier Jahren Blockade: Schweiz schafft erste Asylsuchende nach Italien zurück</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 26, 2026</div>
+    <div class="why">outside / schweiz – Asyl &amp; Migration</div>
+    <p class="summary">Zum ersten Mal seit Ende 2022 konnte die Schweiz wieder Dublin-Fälle nach Italien überstellen. Laut SEM sind es bisher nur wenige Männer, Familien und Minderjährige sind nicht betroffen. Hintergrund ist offenbar Druck aus Brüssel im Rahmen des EU-Asylpakts; die Flüchtlingshilfe kritisiert die Rückführungen wegen des überlasteten italienischen Systems.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/schweizer-buero-in-nordkorea-nordkorea-weist-schweizer-diplomaten-aus-und-schliesst-vertretung">
+  <article class="card" data-link="https://www.srf.ch/news/international/hybrider-krieg-wie-russland-europa-immer-staerker-unter-druck-setzt">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/schweizer-buero-in-nordkorea-nordkorea-weist-schweizer-diplomaten-aus-und-schliesst-vertretung">Nordkorea weist Schweizer Diplomaten aus und schliesst das Büro in Pjöngjang</a></h3>
-    <div class="meta">SRF News – International · Nov 25, 2026</div>
-    <div class="why">outside / world – Diplomatie</div>
-    <p class="summary">Nur rund einen Monat nach der Wiedereröffnung hat Nordkorea den Leiter des Schweizer Büros in Pjöngjang ausgewiesen und die Vertretung geschlossen. Auslöser sind Schweizer Sanktionen gegen ein nordkoreanisches Kinderlager, dem die EU eine Beteiligung an der Deportation ukrainischer Kinder vorwirft. Das EDA bedauert den Schritt, hält aber an der Sanktionspolitik fest und sieht die diplomatischen Beziehungen nicht grundsätzlich in Frage gestellt.</p>
+    <h3><a href="https://www.srf.ch/news/international/hybrider-krieg-wie-russland-europa-immer-staerker-unter-druck-setzt">Hybrider Krieg: Wie Russland Europa immer stärker unter Druck setzt</a></h3>
+    <div class="meta">SRF News – International · Nov 26, 2026</div>
+    <div class="why">outside / world – Sicherheit Europa</div>
+    <p class="summary">SRF stützt sich auf eine Lagekarte des Londoner Instituts IISS: Sabotage, Cyberangriffe und Drohnen treffen inzwischen Ziele von Südspanien bis Nordnorwegen, im Fokus stehen das Baltikum, Polen und Deutschland. Europa fehle eine geschlossene Gegenstrategie, einzelne Abwehrmassnahmen wie in der Ostsee schreckten Moskau kaum ab.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-sommer-fehler-leitet-bruegge-niederlage-ein-psg-gibt-punkte-ab">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-lugano-muss-gegen-jablonec-erstmals-als-verlierer-vom-platz">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/champions-league-round-up-sommer-fehler-leitet-bruegge-niederlage-ein-psg-gibt-punkte-ab">Champions League: Sommer-Fehler bei Brügges 0:3, Inter schlägt Stuttgart</a></h3>
-    <div class="meta">SRF Sport – Fussball · Nov 25, 2026</div>
-    <div class="why">outside / sport – Champions League &amp; Premier League</div>
-    <p class="summary">Am Mittwoch der 5. Runde leitete ein Fehler von Goalie Yann Sommer die 0:3-Niederlage von Brügge gegen Liverpool ein. Inter Mailand gewann verdient 2:0 gegen den VfB Stuttgart, PSG und die AS Roma trennten sich 2:2, Barcelona schlug Neuling Sabah 4:1.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-lugano-muss-gegen-jablonec-erstmals-als-verlierer-vom-platz">Lugano verliert in Jablonec erstmals in der Conference League</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 26, 2026</div>
+    <div class="why">outside / sport – Super League im Europacup</div>
+    <p class="summary">Der FC Lugano unterlag in Tschechien 0:2, nach einem Freistoss von Martin Cedidla und einem Abpraller-Tor von Lamin Jawo in der Schlussphase. Es ist die erste Niederlage der Tessiner in dieser Europacup-Kampagne; mit neun Punkten aus vier Spielen bleibt der direkte Achtelfinal-Einzug in Reichweite.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/champions-league/5-runde-der-champions-league-horror-eigentor-von-pavlovic-bayern-verliert-in-lille">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-ajax-eine-nummer-zu-gross-fuer-den-fc-thun">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/champions-league/5-runde-der-champions-league-horror-eigentor-von-pavlovic-bayern-verliert-in-lille">Bayern verliert nach Pavlovic-Eigentor in Lille</a></h3>
-    <div class="meta">SRF Sport – Fussball · Nov 25, 2026</div>
-    <div class="why">outside / sport – Bundesliga</div>
-    <p class="summary">Bayern München hat in der Champions League beim OSC Lille 1:2 verloren, entscheidend war ein missglücktes Eigentor von Aleksandar Pavlovic. Für die Münchner ist es ein Rückschlag in der Ligaphase, bevor am Samstag die Bundesliga mit dem 11. Spieltag weitergeht.</p>
+    <h3><a href="https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-ajax-eine-nummer-zu-gross-fuer-den-fc-thun">Ajax eine Nummer zu gross für den FC Thun</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 26, 2026</div>
+    <div class="why">outside / sport – Super League im Europacup</div>
+    <p class="summary">Der Schweizer Meister verlor in Amsterdam 0:4. Ajax ging früh durch Rayan Bounida in Führung, Marcos Leonardo erhöhte vor der Pause, und Steven Berghuis setzte spät den Schlusspunkt. Thun hatte durch einen Pfostenschuss von Furkan Dursun noch eine gute Chance, wirkte aber vor allem defensiv überfordert.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://www.cmswire.com/digital-experience/acquia-says-attackers-may-have-copied-configuration-data-customer-credentials/">
+  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/digital-experience/acquia-says-attackers-may-have-copied-configuration-data-customer-credentials/">Acquia: attackers may have copied configuration data and customer credentials</a></h3>
-    <div class="meta">CMSWire · Nov 25, 2026</div>
-    <div class="why">core / dxp – security</div>
-    <p class="summary">Acquia's security incident was still unresolved on Nov. 25, and the company now says attackers may have copied configuration data, including customer credentials, from customer environments. Dom Nicastro notes it comes only ten days after the Optimizely Web Experimentation incident, so it is the second DXP-adjacent breach in a month, which is a good prompt to rotate any credentials stored in connected martech tools.</p>
+    <h3><a href="https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes">Adobe Target 26.11.1 puts Coworker into the Activities list</a></h3>
+    <div class="meta">Adobe Experience League – Target release notes · Nov 12, 2026</div>
+    <div class="why">core / adobe – Target &amp; AI agents</div>
+    <p class="summary">Target's November release adds two AI entry points for organizations that have Coworker rights: a "Review my live tests" button that recommends which running activities to ship, fix or stop (or "Plan my next test" if nothing is live), and an "Ask Coworker" menu on each activity that summarizes it, checks its configuration and suggests improvements. This is the first time Adobe's agent appears directly in Target's day-to-day test-management view.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/web-cms/replatforming-a-cms-in-the-age-of-ai-what-has-actually-changed/">
+  <article class="card" data-link="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/web-cms/replatforming-a-cms-in-the-age-of-ai-what-has-actually-changed/">The CMS migration decisions engineers and editors still have to own</a></h3>
-    <div class="meta">CMSWire · Nov 25, 2026</div>
-    <div class="why">core / dxp – CMS replatforming</div>
-    <p class="summary">Scott Clark looks at what AI has really changed in CMS migrations: it now writes first drafts of migration code, tests and scripts, as in a Webflow move of about 200 pages and 1,200 content items. Content modelling, governance and fit with the AI infrastructure a company has already vetted still need human decisions, a point Real Story Group's Tony Byrne makes.</p>
+    <h3><a href="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">AI-powered martech releases: MCP servers everywhere</a></h3>
+    <div class="meta">MarTech.org · Nov 26, 2026</div>
+    <div class="why">core / martech – vendor news roundup</div>
+    <p class="summary">The latest MarTech roundup shows how quickly vendors are adopting the Model Context Protocol. Iterable, Basis and Cision now offer MCP servers so outside agents like Claude or ChatGPT can work with their data, and ActiveCampaign added connectors linking its Active Intelligence to tools such as Stripe and Google Ads. Other items include CallRail's Amazon Ads integration, which sends offline call conversions back for bidding, and Twilio's expanded Voice AI stack.</p>
   </article>
-  <article class="card" data-link="https://www.cmswire.com/customer-experience/what-kevin-durants-austin-sports-club-teaches-brands-about-cx/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.cmswire.com/customer-experience/what-kevin-durants-austin-sports-club-teaches-brands-about-cx/">Austin Sports Club shows brands how to fix what customers tolerate</a></h3>
-    <div class="meta">CMSWire · Nov 25, 2026</div>
-    <div class="why">core / cx – experience design</div>
-    <p class="summary">Justin Racine uses Kevin Durant's Austin sports-bar venue as a case study in removing small frictions that guests have learned to accept, such as bad sightlines and slow service. His argument for brands is to audit what customers merely tolerate, not just what they complain about.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/">The next generation of bionic hands is here, and they can feel</a></h3>
+    <div class="meta">MIT Technology Review · Nov 26, 2026</div>
+    <div class="why">core / ai – neurotech</div>
+    <p class="summary">Avi Davidson's prosthetic hand is wired to three forearm nerves through 100-needle electrode arrays, so he can feel pressure and handle grapes or eggs again. He is the ninth person to get the experimental device but the first to use it at home on his own, which he has done since July. Researchers want to learn what everyday use means for its usefulness and for his nervous system.</p>
   </article>
-  <article class="card" data-link="https://martech.org/the-more-ai-can-do-the-more-marketers-need-to-know/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/the-more-ai-can-do-the-more-marketers-need-to-know/">The more AI can do, the more marketers need to know</a></h3>
-    <div class="meta">MarTech.org · Nov 25, 2026</div>
-    <div class="why">core / martech – skills &amp; governance</div>
-    <p class="summary">Ryan Phelan argues that faster AI execution brings risks of its own: when campaigns can be assembled in minutes, mistakes also ship in minutes. He says marketers need more strategic thinking, explicit AI guardrails and enough technical understanding to judge what the tools produce, not less.</p>
-  </article>
-  <article class="card" data-link="https://martech.org/how-to-create-expert-content-your-competitors-cant-copy/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/how-to-create-expert-content-your-competitors-cant-copy/">How to create expert content your competitors can't copy</a></h3>
-    <div class="meta">MarTech.org · Nov 25, 2026</div>
-    <div class="why">core / martech – content strategy</div>
-    <p class="summary">A. Lee Judge of Content Monsta recommends recorded video interviews with in-house experts as a source of content that generative AI can't easily replicate. He cites a Seismic/NewtonX survey of 200 senior revenue leaders in which three in four said they trust human guidance over AI-generated material when the two conflict.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/">AI is straining America's open-records systems</a></h3>
-    <div class="meta">MIT Technology Review · Nov 25, 2026</div>
-    <div class="why">core / ai – society &amp; data</div>
-    <p class="summary">Chatbots make it trivial to file freedom-of-information requests, and startups are mining public records at scale to resell the data. One analysis of the US Department of Education's July request log found that at least 29% of requests were at least partly AI-written. Some states are responding with laws that make it easier to refuse requests, which may reduce transparency for everyone.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/25/1149808/the-download-ai-open-records-permafrost-fires/">The Download: AI tool used to breach US spy agencies, and fighting permafrost fires</a></h3>
-    <div class="meta">MIT Technology Review · Nov 25, 2026</div>
-    <div class="why">core / ai – security</div>
-    <p class="summary">The newsletter leads with reports that hackers repurposed an AI tool originally built for cyber defense to break into US intelligence agencies, a concrete example of dual-use risk in AI security tooling. It also covers efforts to fight Arctic wildfires to keep carbon locked in permafrost.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/">The Download: FCC clears a million SpaceX data-center satellites</a></h3>
+    <div class="meta">MIT Technology Review · Nov 26, 2026</div>
+    <div class="why">core / ai – infrastructure</div>
+    <p class="summary">Besides the bionic-hand story, Thursday's newsletter covers the FCC's approval for SpaceX to launch up to one million data-center satellites to meet AI compute demand, a plan critics say could crowd orbit and hinder astronomy. It also mentions a trillion-dollar tech selloff that is adding to fears of an AI bubble.</p>
   </article>
   <footer>
-    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. There's no Adobe item today (nothing new since early November), and Kicker and the BBC had nothing reachable with a confirmed date. The Swiss federal votes are on Nov 29.
+    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. Today's edition is short: Thanksgiving left the US sources mostly quiet, CMSWire had nothing new, and Kicker and the BBC had nothing reachable with a confirmed date. The Swiss federal votes are on Sunday, Nov 29.
   </footer>
 </div>
 <script>
