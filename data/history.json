@@ -1,61 +1,6 @@
 {
   "shown": [
     {
-      "date": "2026-11-20",
-      "link": "https://www.srf.ch/news/international/urteil-des-uno-gerichtshofs-historischer-schuldspruch-gegen-myanmar-wegen-voelkermords",
-      "title": "Historischer Schuldspruch: UNO-Gericht verurteilt Myanmar wegen Völkermords an den Rohingya"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://www.srf.ch/news/schweiz/kantonsspital-baselland-nach-jahrelangem-ringen-will-der-landrat-beide-standorte-behalten",
-      "title": "Kantonsspital Baselland: Landrat behält Liestal und Bruderholz und bewilligt 750-Millionen-Garantie"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://martech.org/intuit-finds-a-buyer-for-mailchimp-in-bending-spoons/",
-      "title": "Intuit sells Mailchimp to Bending Spoons for $3.68 billion"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://www.cmswire.com/customer-experience/who-won-the-faa-ground-stop-for-customer-experience-humans-or-ai/",
-      "title": "FAA ground stop stress test: human agents beat AI channels"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://www.cmswire.com/digital-marketing/the-cmo-playbook-the-ai-marketing-readiness-illusion/",
-      "title": "Using AI every day isn't the same as being ready for it"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://www.cmswire.com/the-wire/surveymonkey-brings-real-human-feedback-into-google-gemini/",
-      "title": "SurveyMonkey launches an MCP connector for Google Gemini"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://martech.org/how-psychology-can-make-ai-powered-customer-personas-more-useful/",
-      "title": "Grounding synthetic personas in psychology and real behavioural data"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://martech.org/brand-legal-and-regulatory-risks-of-ai-generated-creative/",
-      "title": "The brand, legal and regulatory exposure of auto-generated creative"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://www.technologyreview.com/2026/11/19/1148979/the-download-liver-kept-alive-sila-battery-deal-ai-hype/",
-      "title": "The Download: Anthropic's record IPO, a call for a global AI body, and the AI Hype Index"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://www.technologyreview.com/2026/11/19/1148922/sila-panasonic-battery-deal/",
-      "title": "What Sila's billion-dollar Panasonic deal says about the US battery market"
-    },
-    {
-      "date": "2026-11-20",
-      "link": "https://www.technologyreview.com/2026/11/19/1148934/a-human-liver-has-been-kept-alive-outside-the-body-for-seven-weeks-setting-a-record/",
-      "title": "A human liver kept alive outside the body for a record seven weeks"
-    },
-    {
       "date": "2026-11-21",
       "link": "https://www.srf.ch/news/schweiz/nachfolger-von-guy-parmelin-graber-und-aeschi-auf-svp-ticket-gewaehlt-ticker-zum-nachlesen",
       "title": "SVP schickt Thomas Aeschi und Michael Graber ins Rennen um den Parmelin-Sitz"
@@ -354,6 +299,41 @@
       "date": "2026-11-27",
       "link": "https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/",
       "title": "The Download: FCC clears a million SpaceX data-center satellites"
+    },
+    {
+      "date": "2026-11-28",
+      "link": "https://www.srf.ch/news/schweiz/arena-zu-bundesbudget-2027-schon-vor-dem-showdown-im-parlament-fliegen-die-fetzen",
+      "title": "«Arena» zum Bundesbudget 2027: Schon vor dem Showdown fliegen die Fetzen"
+    },
+    {
+      "date": "2026-11-28",
+      "link": "https://www.srf.ch/news/international/eu-finanzplanung-bis-2034-sondergipfel-wird-vorzeitig-beendet",
+      "title": "EU-Sondergipfel zum Budget 2028–2034 vorzeitig abgebrochen"
+    },
+    {
+      "date": "2026-11-28",
+      "link": "https://www.srf.ch/sport/fussball/internationale-ligen/bundesliga-11-runde-wieder-fuellkrug-bremen-kommt-nach-1-3-rueckstand-zurueck",
+      "title": "Wieder Füllkrug: Bremen holt gegen Gladbach ein 1:3 auf"
+    },
+    {
+      "date": "2026-11-28",
+      "link": "https://www.srf.ch/sport/fussball/europa-league/europa-league-round-up-milan-mit-wende-im-schweizer-duell-pilsen-ueberrascht",
+      "title": "Europa League: Milan dreht das «Schweizer Duell» in Piräus"
+    },
+    {
+      "date": "2026-11-28",
+      "link": "https://www.cmswire.com/customer-experience/customers-are-bringing-their-own-ai-to-the-customer-journey/",
+      "title": "Customers are bringing their own AI to the customer journey"
+    },
+    {
+      "date": "2026-11-28",
+      "link": "https://www.technologyreview.com/2026/11/27/1149960/the-download-the-download-innovators-under-35-nominations-bionic-hand",
+      "title": "The Download: Nvidia halts server shipments to four Southeast Asian countries"
+    },
+    {
+      "date": "2026-11-28",
+      "link": "https://www.technologyreview.com/2026/11/27/1149857/2027-innovators-under-35-competition-nominate",
+      "title": "Nominations open for MIT Technology Review's 2027 Innovators Under 35"
     }
   ]
 }

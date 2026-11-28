@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Morning News Digest — 2026-11-27</title>
+<title>Morning News Digest — 2026-11-28</title>
 <style>
   :root {
     color-scheme: light dark;
@@ -95,79 +95,72 @@
 </head>
 <body>
 <!--
-  Run notes (2026-11-27, Friday):
-  - Direct RSS/Atom fetching still blocked (curl gets no connection; WebFetch can't resolve martech.org, cmswire.com or srf.ch). Fallback: WebSearch limited to each source's domain. Every item below has a confirmed publish date: Nov 26, or Nov 12 for the Adobe Target release (a monthly-cadence source, within the 2-week window).
-  - Nov 26 was US Thanksgiving, so the US sources published very little.
-  - Used (4 core / 4 outside): Adobe Experience League (Target 26.11.1), MarTech.org AI-releases roundup (rolling URL, but this edition is headed Nov 26 and confirmed by two searches), MIT Technology Review x2; SRF Schweiz (Dublin returns to Italy), SRF International (Russia's hybrid war), SRF Sport x2 (Lugano and Thun in the Conference League).
-  - Skipped: CMSWire: newest items are Nov 24/25 and were already shown. MeasureCamp: no new post. Kicker: no dated Bundesliga article in the index, and there was no midweek Bundesliga round. BBC News / BBC Sport: the search tool refuses bbc.com/bbc.co.uk. SRF US-tariffs follow-up: shown yesterday. Journey Optimizer release notes: URL already shown on Nov 22.
-  - 8 articles instead of 15 (freshness beats quota per CLAUDE.md). Layout: Outside above Core; Mark read via localStorage kept.
+  Run notes (2026-11-28, Saturday):
+  - Direct RSS/Atom fetching still blocked (curl gets no connection to any feed host). Fallback: WebSearch limited to each source's domain. Every item below has a confirmed publish date between Nov 25 and Nov 27.
+  - Day after US Thanksgiving: the US martech sources published almost nothing new.
+  - Used (3 core / 4 outside): CMSWire (shadow CX, Nov 25), MIT Technology Review x2 (Nov 27 Download, Innovators Under 35); SRF Schweiz (Arena on the 2027 budget), SRF International (EU budget summit), SRF Sport x2 (Bremen-Gladbach 3:3, Milan vs Olympiakos in the Europa League).
+  - Skipped: MarTech.org: nothing dated Nov 27, and the Nov 25/26 pieces (incl. the rolling AI roundup) were already shown. Adobe Experience Cloud blog / Experience League: newest dated items are the Nov 12 Target notes (already shown) and the Journey Optimizer notes (URL shown Nov 22); the MAX press releases from early November are outside the 2-week window. MeasureCamp: no new post (Zurich, the last camp of 2026, was on Nov 21). MIT TR "prosthetics probe the mind" (Nov 27) left out because it repeats yesterday's bionic-hand story. Kicker: no dated Bundesliga article found; SRF's report covers the Friday game. BBC News / BBC Sport: the search tool refuses bbc.com/bbc.co.uk.
+  - 7 articles instead of 15 (freshness beats quota per CLAUDE.md). Layout: Outside above Core; Mark read via localStorage kept.
 -->
 <div class="wrap">
   <header>
     <h1>Morning News Digest</h1>
-    <div class="date">Friday, November 27, 2026 · 8 articles</div>
+    <div class="date">Saturday, November 28, 2026 · 7 articles</div>
     <button id="reset-read" class="reset-read" type="button">Reset read articles</button>
   </header>
   <h2 class="section">Outside — Schweiz / Weltgeschehen / Sport</h2>
-  <article class="card" data-link="https://www.srf.ch/news/schweiz/nach-vierjaehriger-blockade-schweiz-fuehrt-erste-asylsuchende-nach-italien-zurueck">
+  <article class="card" data-link="https://www.srf.ch/news/schweiz/arena-zu-bundesbudget-2027-schon-vor-dem-showdown-im-parlament-fliegen-die-fetzen">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/schweiz/nach-vierjaehriger-blockade-schweiz-fuehrt-erste-asylsuchende-nach-italien-zurueck">Nach vier Jahren Blockade: Schweiz schafft erste Asylsuchende nach Italien zurück</a></h3>
-    <div class="meta">SRF News – Schweiz · Nov 26, 2026</div>
-    <div class="why">outside / schweiz – Asyl &amp; Migration</div>
-    <p class="summary">Zum ersten Mal seit Ende 2022 konnte die Schweiz wieder Dublin-Fälle nach Italien überstellen. Laut SEM sind es bisher nur wenige Männer, Familien und Minderjährige sind nicht betroffen. Hintergrund ist offenbar Druck aus Brüssel im Rahmen des EU-Asylpakts; die Flüchtlingshilfe kritisiert die Rückführungen wegen des überlasteten italienischen Systems.</p>
+    <h3><a href="https://www.srf.ch/news/schweiz/arena-zu-bundesbudget-2027-schon-vor-dem-showdown-im-parlament-fliegen-die-fetzen">«Arena» zum Bundesbudget 2027: Schon vor dem Showdown fliegen die Fetzen</a></h3>
+    <div class="meta">SRF News – Schweiz · Nov 27, 2026</div>
+    <div class="why">outside / schweiz – Bundesfinanzen</div>
+    <p class="summary">Die Finanzkommission des Nationalrats empfiehlt das Budget 2027 zur Ablehnung, getragen von einer ungewöhnlichen Allianz aus SP, Grünen und SVP. Die Linke stört sich an Sparmassnahmen zugunsten der Armee, die SVP an den geplanten Mehrwertsteuer-Erhöhungen im Finanzplan. In der «Arena» prallten die Positionen kurz vor der Wintersession aufeinander, in der beide Räte über den Voranschlag entscheiden.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/news/international/hybrider-krieg-wie-russland-europa-immer-staerker-unter-druck-setzt">
+  <article class="card" data-link="https://www.srf.ch/news/international/eu-finanzplanung-bis-2034-sondergipfel-wird-vorzeitig-beendet">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/news/international/hybrider-krieg-wie-russland-europa-immer-staerker-unter-druck-setzt">Hybrider Krieg: Wie Russland Europa immer stärker unter Druck setzt</a></h3>
-    <div class="meta">SRF News – International · Nov 26, 2026</div>
-    <div class="why">outside / world – Sicherheit Europa</div>
-    <p class="summary">SRF stützt sich auf eine Lagekarte des Londoner Instituts IISS: Sabotage, Cyberangriffe und Drohnen treffen inzwischen Ziele von Südspanien bis Nordnorwegen, im Fokus stehen das Baltikum, Polen und Deutschland. Europa fehle eine geschlossene Gegenstrategie, einzelne Abwehrmassnahmen wie in der Ostsee schreckten Moskau kaum ab.</p>
+    <h3><a href="https://www.srf.ch/news/international/eu-finanzplanung-bis-2034-sondergipfel-wird-vorzeitig-beendet">EU-Sondergipfel zum Budget 2028–2034 vorzeitig abgebrochen</a></h3>
+    <div class="meta">SRF News – International · Nov 27, 2026</div>
+    <div class="why">outside / world – Europäische Union</div>
+    <p class="summary">Nach stundenlangen Verhandlungen haben die EU-Staats- und Regierungschefs ihren Sondergipfel zur langfristigen Finanzplanung beendet, ohne wie geplant am Freitag weiterzutagen. Kanzler Merz, der mit sechs weiteren Nettozahlern Kürzungen in Höhe mehrerer hundert Milliarden Euro fordert, sprach von weit auseinanderliegenden Positionen. Eine Einigung soll nun am Dezembergipfel kurz vor Weihnachten gelingen.</p>
   </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-lugano-muss-gegen-jablonec-erstmals-als-verlierer-vom-platz">
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/internationale-ligen/bundesliga-11-runde-wieder-fuellkrug-bremen-kommt-nach-1-3-rueckstand-zurueck">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-lugano-muss-gegen-jablonec-erstmals-als-verlierer-vom-platz">Lugano verliert in Jablonec erstmals in der Conference League</a></h3>
+    <h3><a href="https://www.srf.ch/sport/fussball/internationale-ligen/bundesliga-11-runde-wieder-fuellkrug-bremen-kommt-nach-1-3-rueckstand-zurueck">Wieder Füllkrug: Bremen holt gegen Gladbach ein 1:3 auf</a></h3>
+    <div class="meta">SRF Sport – Fussball · Nov 27, 2026</div>
+    <div class="why">outside / sport – Bundesliga</div>
+    <p class="summary">Im Freitagsspiel der 11. Bundesliga-Runde lag Werder bis zur 85. Minute 1:3 gegen Borussia Mönchengladbach zurück. Eren Dinkci mit seinem zweiten Tor und Niclas Füllkrug in der Nachspielzeit retteten noch ein 3:3. Für Gladbach bleibt es eine schwierige Saison: Die Borussia steht mit fünf Punkten weiter am Tabellenende.</p>
+  </article>
+  <article class="card" data-link="https://www.srf.ch/sport/fussball/europa-league/europa-league-round-up-milan-mit-wende-im-schweizer-duell-pilsen-ueberrascht">
+    <button class="mark-read" type="button">Mark read</button>
+    <h3><a href="https://www.srf.ch/sport/fussball/europa-league/europa-league-round-up-milan-mit-wende-im-schweizer-duell-pilsen-ueberrascht">Europa League: Milan dreht das «Schweizer Duell» in Piräus</a></h3>
     <div class="meta">SRF Sport – Fussball · Nov 26, 2026</div>
-    <div class="why">outside / sport – Super League im Europacup</div>
-    <p class="summary">Der FC Lugano unterlag in Tschechien 0:2, nach einem Freistoss von Martin Cedidla und einem Abpraller-Tor von Lamin Jawo in der Schlussphase. Es ist die erste Niederlage der Tessiner in dieser Europacup-Kampagne; mit neun Punkten aus vier Spielen bleibt der direkte Achtelfinal-Einzug in Reichweite.</p>
-  </article>
-  <article class="card" data-link="https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-ajax-eine-nummer-zu-gross-fuer-den-fc-thun">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.srf.ch/sport/fussball/conference-league/conference-league-4-runde-ajax-eine-nummer-zu-gross-fuer-den-fc-thun">Ajax eine Nummer zu gross für den FC Thun</a></h3>
-    <div class="meta">SRF Sport – Fussball · Nov 26, 2026</div>
-    <div class="why">outside / sport – Super League im Europacup</div>
-    <p class="summary">Der Schweizer Meister verlor in Amsterdam 0:4. Ajax ging früh durch Rayan Bounida in Führung, Marcos Leonardo erhöhte vor der Pause, und Steven Berghuis setzte spät den Schlusspunkt. Thun hatte durch einen Pfostenschuss von Furkan Dursun noch eine gute Chance, wirkte aber vor allem defensiv überfordert.</p>
+    <div class="why">outside / sport – Schweizer im Europacup</div>
+    <p class="summary">Milan lag bei Olympiakos nach Jota Silvas Tor, vorbereitet von Remo Freuler, 0:2 zurück und gewann noch 4:2. Omari Hutchinson leitete die Wende mit dem Anschlusstreffer ein, Alphadjo Cisse und der eingewechselte Christian Pulisic bereiteten weitere Tore vor. Damit entschied Ardon Jashari das Duell der beiden Nati-Spieler für sich; für Milan ist es erst der zweite Sieg in dieser Ligaphase.</p>
   </article>
   <h2 class="section">Core — Adobe / Martech / AI</h2>
-  <article class="card" data-link="https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes">
+  <article class="card" data-link="https://www.cmswire.com/customer-experience/customers-are-bringing-their-own-ai-to-the-customer-journey/">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes">Adobe Target 26.11.1 puts Coworker into the Activities list</a></h3>
-    <div class="meta">Adobe Experience League – Target release notes · Nov 12, 2026</div>
-    <div class="why">core / adobe – Target &amp; AI agents</div>
-    <p class="summary">Target's November release adds two AI entry points for organizations that have Coworker rights: a "Review my live tests" button that recommends which running activities to ship, fix or stop (or "Plan my next test" if nothing is live), and an "Ask Coworker" menu on each activity that summarizes it, checks its configuration and suggests improvements. This is the first time Adobe's agent appears directly in Target's day-to-day test-management view.</p>
+    <h3><a href="https://www.cmswire.com/customer-experience/customers-are-bringing-their-own-ai-to-the-customer-journey/">Customers are bringing their own AI to the customer journey</a></h3>
+    <div class="meta">CMSWire · Nov 25, 2026</div>
+    <div class="why">core / cx – AI assistants &amp; journey measurement</div>
+    <p class="summary">Dan Hartman describes "shadow CX": the growing share of service interactions that happens inside a customer's personal AI assistant, outside any channel a brand owns or measures. Roughly three in four consumers have already used a general-purpose assistant to resolve a brand issue, often because automated support feels like more effort. His advice is to measure resolution instead of containment, fix broken journeys before automating them, and keep policies and support content consistent so outside AI tools give correct answers.</p>
   </article>
-  <article class="card" data-link="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/27/1149960/the-download-the-download-innovators-under-35-nominations-bionic-hand">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://martech.org/the-latest-ai-powered-martech-news-and-releases/">AI-powered martech releases: MCP servers everywhere</a></h3>
-    <div class="meta">MarTech.org · Nov 26, 2026</div>
-    <div class="why">core / martech – vendor news roundup</div>
-    <p class="summary">The latest MarTech roundup shows how quickly vendors are adopting the Model Context Protocol. Iterable, Basis and Cision now offer MCP servers so outside agents like Claude or ChatGPT can work with their data, and ActiveCampaign added connectors linking its Active Intelligence to tools such as Stripe and Google Ads. Other items include CallRail's Amazon Ads integration, which sends offline call conversions back for bidding, and Twilio's expanded Voice AI stack.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/27/1149960/the-download-the-download-innovators-under-35-nominations-bionic-hand">The Download: Nvidia halts server shipments to four Southeast Asian countries</a></h3>
+    <div class="meta">MIT Technology Review · Nov 27, 2026</div>
+    <div class="why">core / ai – chips &amp; export controls</div>
+    <p class="summary">Friday's newsletter reports that Nvidia has stopped server shipments to four Southeast Asian countries. This follows a new US rule aimed at Chinese firms that reach Nvidia chips remotely through data centers in places like Malaysia. The issue also covers fraud involving high-end vehicles and the opening of the 2027 Innovators Under 35 nominations.</p>
   </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/">
+  <article class="card" data-link="https://www.technologyreview.com/2026/11/27/1149857/2027-innovators-under-35-competition-nominate">
     <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/26/1149923/the-next-generation-of-bionic-hands-is-here-and-they-can-feel/">The next generation of bionic hands is here, and they can feel</a></h3>
-    <div class="meta">MIT Technology Review · Nov 26, 2026</div>
-    <div class="why">core / ai – neurotech</div>
-    <p class="summary">Avi Davidson's prosthetic hand is wired to three forearm nerves through 100-needle electrode arrays, so he can feel pressure and handle grapes or eggs again. He is the ninth person to get the experimental device but the first to use it at home on his own, which he has done since July. Researchers want to learn what everyday use means for its usefulness and for his nervous system.</p>
-  </article>
-  <article class="card" data-link="https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/">
-    <button class="mark-read" type="button">Mark read</button>
-    <h3><a href="https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/">The Download: FCC clears a million SpaceX data-center satellites</a></h3>
-    <div class="meta">MIT Technology Review · Nov 26, 2026</div>
-    <div class="why">core / ai – infrastructure</div>
-    <p class="summary">Besides the bionic-hand story, Thursday's newsletter covers the FCC's approval for SpaceX to launch up to one million data-center satellites to meet AI compute demand, a plan critics say could crowd orbit and hinder astronomy. It also mentions a trillion-dollar tech selloff that is adding to fears of an AI bubble.</p>
+    <h3><a href="https://www.technologyreview.com/2026/11/27/1149857/2027-innovators-under-35-competition-nominate">Nominations open for MIT Technology Review's 2027 Innovators Under 35</a></h3>
+    <div class="meta">MIT Technology Review · Nov 27, 2026</div>
+    <div class="why">core / ai – tech talent</div>
+    <p class="summary">The magazine is taking nominations for its annual list of young technologists across AI, computing, biotech, climate and other fields. Nominees must be under 35 on October 1, 2027, and the deadline is January 19. The list is a useful early signal of which research directions are about to reach industry.</p>
   </article>
   <footer>
-    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. Today's edition is short: Thanksgiving left the US sources mostly quiet, CMSWire had nothing new, and Kicker and the BBC had nothing reachable with a confirmed date. The Swiss federal votes are on Sunday, Nov 29.
+    Generated automatically. The summaries are original wording based on source headlines and reporting, not copies of article text. Follow the links for the full stories. Today's edition is short: the US sources were quiet after Thanksgiving, and Kicker and the BBC had nothing reachable with a confirmed date. Swiss federal votes are tomorrow, Sunday, Nov 29; Super League round 15 is played this weekend.
   </footer>
 </div>
 <script>
